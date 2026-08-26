@@ -1,0 +1,1164 @@
+﻿# ####################################################################first forest
+# ######## c_slurry_shore - d_drowned_forest ########
+# 5883 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################ b_shivering_thatch ###############
+# ########## c_gravewash - d_drowned_forest #########
+# 5889 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_eagles_nest ##################
+# ######## c_eagles_grove - d_drowned_forest ########
+# 5895 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_frorefield ##################
+# ########## c_omenwood - d_drowned_forest ##########
+# 5901 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_bonewoods ###################
+# ####### c_bone_lhark_vale - d_drowned_forest ######
+# 5906 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_cold_hearth ##################
+# ########### c_forests_end - d_bleakwater ##########
+# 5911 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+
+# ################### b_last_green ##################
+# ########## c_night_harbor - d_bleakwater ##########
+# 5914 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# #################### b_fireweed ###################
+# ############ c_pyrewater - d_bleakwater ###########
+# 5920 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_icy_shore ###################
+# ########## c_shadow_break - d_bleakwater ##########
+# 5926 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_last_whisper #################
+# ########## c_silent_hills - d_bleakwater ##########
+# 5930 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_snarknest ###################
+# ############ c_coldwood - d_bleakwater ############
+# 5938 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_ygons_lodge ##################
+# ########## c_bow_mounds - d_jagged_hills ##########
+# 5943 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_horned_keep ##################
+# ######### c_hornpoint_way - d_jagged_hills ########
+# 5948 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################ b_midforest_hearth ###############
+# ######## c_cursed_grounds - d_jagged_hills ########
+# 5953 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################# b_charred_weald #################
+# ########### c_blazewood - d_jagged_hills ##########
+# 5957 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_harsh_hills ##################
+# ########### c_free_vale - d_jagged_hills ##########
+# 5960 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+
+# ################### b_high_spear ##################
+# ########### c_spearwood - d_jagged_hills ##########
+# 5964 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_flakemarsh ##################
+# ########## c_corpse_cove - d_antler_river #########
+# 5969 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_slopepoint ##################
+# ######## c_hollow_marshes - d_antler_river ########
+# 5973 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_copperhead ##################
+# ########## c_bronzebrook - d_antler_river #########
+# 5978 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# #################### b_clubmoss ###################
+# ########## c_denbarrows - d_antler_river ##########
+# 5983 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_tusk_lodge ##################
+# ########## c_tusk_point - d_antler_river ##########
+# 5989 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# 	8313.3.3 = {
+# 		holding = tribal_holding
+# 		buildings = { tribe_02 }
+# 	}
+# }
+# ################# b_hulders_grove #################
+# ########## c_hulder_lake - d_antler_river #########
+# 5992 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ##################### b_haggen ####################
+# ######## c_restburn - d_oldheart_woodlands ########
+# 5997 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ##################### b_warmwood ####################
+# ######## c_restburn - d_oldheart_woodlands ########
+# 6002 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_last_remorse #################
+# ##### c_deadwood_grove - d_oldheart_woodlands #####
+# 6004 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_hags_peak ###################
+# ######## c_stagsdol - d_oldheart_woodlands ########
+# 6011 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ############### b_childrens_thicket ###############
+# ######### c_oldweir - d_oldheart_woodlands ########
+# 6014 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################## b_hidden_camp ##################
+# ####### c_misted_vale - d_oldheart_woodlands ######
+# 6021 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################# b_flowater_lodge ################
+# ###### c_knuckle_ridge - d_oldheart_woodlands #####
+# 6024 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_bentbirch ###################
+# ########### c_bentbrush - d_auld_groves ###########
+# 6029 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# 	8313.7.3 = {
+# 		holding = tribal_holding
+# 		buildings = { tribe_02 }
+# 	}
+# }
+# #################### b_dogwood ####################
+# ########### c_dellwater - d_auld_groves ###########
+# 6031 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################# b_goutweed_hall #################
+# ############ c_goutweed - d_auld_groves ###########
+# 6038 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# #################### b_auldern ####################
+# ########### c_auldhalls - d_auld_groves ###########
+# 6042 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_woundwort ###################
+# ########### c_yarrow - d_haunted_forest ###########
+# 6047 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################# b_crasters_keep #################
+# ######## c_crasters_keep - d_haunted_forest #######
+# 6052 = {
+# 8303.4.28 = {
+# 	religion = old_gods_btw_fnf
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_creekdrift ##################
+# ######### c_crows_creek - d_haunted_forest ########
+# 6055 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_wargs_hall ##################
+# ########## c_huskmere - d_haunted_forest ##########
+# 6059 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ##################### b_curlap ####################
+# ########## c_huskmere - d_haunted_forest ##########
+# 6064 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_whitetree ###################
+# ########## c_whitetree - d_haunted_forest #########
+# 6065 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# #################### b_fellcut ####################
+# ########## c_whitetree - d_haunted_forest #########
+# 6066 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+#################### b_hardhome ###################
+########## c_hardhome - d_storrolds_point #########
+6070 = {
+    8303.4.28 = {
+        holding = ruin_holding
+        buildings = { small_ruin_01 }
+    }
+    8314.12.6 = {
+		holding = city_holding
+        buildings = { city_01 }
+        culture = skagosi
+	}
+}
+8222 = {
+    8303.4.28 = {
+        holding = ruin_holding
+        buildings = { small_ruin_01 }
+    }
+    8314.12.6 = {
+		holding = castle_holding
+        buildings = { castle_01 }
+	}
+}
+
+# #################### b_storrolds_fort ###################
+# ########## c_storrolds_point - d_storrolds_point #########
+# 6069 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_brokenwood ##################
+# ######### c_brokenwood - d_storrolds_point ########
+# 6076 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# #################### b_treeling ###################
+# ######### c_brokenwood - d_storrolds_point ########
+# 6077 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_crabeater ###################
+# ###### c_skittering_cove - d_storrolds_point ######
+# 6081 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_kelp_shore ##################
+# ###### c_skittering_cove - d_storrolds_point ######
+# 6082 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################# b_beaters_lodge #################
+# ###### c_the_bay_of_seals - d_storrolds_point #####
+# 6087 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################### b_stainrock ###################
+# ###### c_the_bay_of_seals - d_storrolds_point #####
+# 6088 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ################# b_bear_root_hill ################
+# ######### c_woodvetch - d_storrolds_point #########
+# 6093 = {
+# 8303.4.28 = {
+# 	religion = old_gods_btw_sas
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ##################### b_bough #####################
+# ######### c_woodvetch - d_storrolds_point #########
+# 6094 = {
+# 8303.4.28 = {
+# 	holding = ruin_holding
+# 	buildings = { small_ruin_01 }
+# }
+# }
+# ####################################################################frost fangs
+# ################# b_mountains_end #################
+# ######### c_chained_maw - d_pale_mountains ########
+# 5510 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_sheltered_grotto #################
+# ######### c_chained_maw - d_pale_mountains ########
+# 5512 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################ b_travelers_lodge ################
+# ####### c_wanderers_ridge - d_pale_mountains ######
+# 5516 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_bendburrow ##################
+# ######### c_frost_caves - d_pale_mountains ########
+# 5521 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_ramsledge ##################
+# ######### c_frost_caves - d_pale_mountains ########
+# 5523 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_rock_and_stone ################
+# ########## c_ironskin - d_pale_mountains ##########
+# 5527 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_horskes_fior ################
+# ########## c_ironskin - d_pale_mountains ##########
+# 5530 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_glacierscar ##################
+# ###### c_owl_mountain_path - d_pale_mountains #####
+# 5532 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_eagle_heights #################
+# ######## c_the_doorstep - d_pale_mountains ########
+# 5539 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_shaggy_home ##################
+# ######## c_giants_stair - d_pale_mountains ########
+# 5542 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_axelodge ###################
+# ######## c_skirling_pass - d_keening_ridges #######
+# 5549 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_bladerest ###################
+# ########## c_dirkviss - d_keening_ridges ##########
+# 5554 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_seer_peak ###################
+# ######### c_wurns_head - d_keening_ridges #########
+# 5559 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_tuskcairn ###################
+# ####### c_mammoth_cairns - d_keening_ridges #######
+# 5565 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_rotten_lodge #################
+# ######## c_rotten_valley - d_keening_ridges #######
+# 5571 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_tripflow ###################
+# ############ c_fangspear - d_milkwater ############
+# 5576 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_south_prong ##################
+# ############# c_forktop - d_milkwater #############
+# 5580 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################ b_shadowskin_lodge ###############
+# ########### c_hunters_fall - d_milkwater ##########
+# 5584 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_swill_rock ##################
+# ############ c_swill_rock - d_milkwater ###########
+# 5588 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_shattered_jaw #################
+# ########### c_skull_peaks - d_milkwater ###########
+# 5591 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_gnarled_rock #################
+# ############ c_the_gorge - d_milkwater ############
+# 5595 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_giants_step ##################
+# ########### c_cape_walrus - d_walrus_bay ##########
+# 5614 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_ruddy_hall ##################
+# ############ c_taldrsek - d_walrus_bay ############
+# 5599 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 		effect = {
+# 			remove_building = agot_ruddy_hall_01
+# 		}
+# 	}
+# 	8313.3.3 = {
+# 		holding = tribal_holding
+# 		buildings = { tribe_02 }
+# 	}
+# }
+# ################### b_the_plunge ##################
+# ############ c_duskremr - d_walrus_bay ############
+# 5606 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_duskrpeak ##################
+# ############ c_duskremr - d_walrus_bay ############
+# 5608 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_wealdholm ###################
+# ########### c_wealdstone - d_walrus_bay ###########
+# 5609 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_tuskhal ####################
+# ########### c_white_tusk - d_walrus_bay ###########
+# 5621 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #########################################################################################frozen shore
+# ################# b_maulnock_hold #################
+# ########## c_maulnock_gap - d_wintermouth #########
+# 5626 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_hightribe ###################
+# ########### c_pack_land - d_wintermouth ###########
+# 5633 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_horkstone_hold ################
+# ########### c_horkstone - d_wintermouth ###########
+# 5639 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################ b_whitetooth_hold ################
+# ############# c_toothline - d_flatfang ############
+# 5646 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_yaeger_huts ##################
+# ############ c_yeager_nest - d_flatfang ###########
+# 5650 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################ b_white_bear_hold ################
+# ######### c_white_bear_slope - d_flatfang #########
+# 5658 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_skihold ####################
+# ############# c_the_slip - d_flatfang #############
+# 5664 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_echoheights ##################
+# ########### c_echoing_flats - d_flatfang ##########
+# 5669 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_ridgewatch ##################
+# ############ c_frozen_drop - d_flatfang ###########
+# 5674 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_sweat_lodge ##################
+# ######## c_thawed_haven - d_great_ice_river #######
+# 5678 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_feldhead ###################
+# ######### c_final_feld - d_great_ice_river ########
+# 5682 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_pulkwaters ##################
+# ########## c_pulkbush - d_great_ice_river #########
+# 5689 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_herdwell ###################
+# ########## c_herdway - d_great_ice_river ##########
+# 5694 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_lorns_rest ##################
+# ########### c_lorn_point - d_bay_of_ice ###########
+# 5701 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_candleflow ##################
+# ########### c_rotting_ice - d_bay_of_ice ##########
+# 5705 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_voltussyk ###################
+# ############ c_voltussyk - d_bay_of_ice ###########
+# 5711 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_lichen_wall ##################
+# ############ c_greytuft - d_bay_of_ice ############
+# 5717 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ############### b_yellowgrass_hearth ##############
+# ########### c_still_flow - d_bay_of_ice ###########
+# 5719 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_gravehold ###################
+# ########## c_bone_hummock - d_bay_of_ice ##########
+# 5724 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_grazingfield #################
+# ######## c_reindeer_heath - d_stalkingshore #######
+# 5728 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_the_pods_flow #################
+# ######### c_frozen_gulch - d_stalkingshore ########
+# 5735 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_icehome ####################
+# ########## c_hide_point - d_stalkingshore #########
+# 5742 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_selkie_sund ##################
+# ######### c_selkie_sund - d_stalkingshore #########
+# 5748 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_peltwash ###################
+# ########## c_riverpelt - d_stalkingshore ##########
+# 5753 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_still_flats ##################
+# ######### c_musklight - d_gleaming_plains #########
+# 5757 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_glintstone ##################
+# ######### c_glintstone - d_gleaming_plains ########
+# 5762 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_bonebroth ###################
+# ######### c_glintstone - d_gleaming_plains ########
+# 5763 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_brevelyk ###################
+# ########## c_brevelyk - d_gleaming_plains #########
+# 5769 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_sheer_wall ##################
+# ######### c_sheer_wall - d_gleaming_plains ########
+# 5776 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_good_web ###################
+# ########### c_spider_flow - d_west_shelf ##########
+# 5783 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################ b_bigwalruss_camp ################
+# ########## c_trappers_rest - d_west_shelf #########
+# 5790 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_the_drop ###################
+# ########## c_shining_ledge - d_west_shelf #########
+# 5797 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_gahurl_mag ##################
+# ########### c_shurl_arer - d_west_shelf ###########
+# 5804 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ##################### b_sunder ####################
+# ########## c_cracked_sund - d_west_shelf ##########
+# 5807 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ############################################################################################the ice lakes
+# ################# b_mag_narkannih #################
+# ############ c_vurk_ryg - d_tor_rag_dur ###########
+# 5814 = {
+# 	8303.4.28 = {
+# 		religion = old_gods_btw_sas
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_on_tun_degvoss ################
+# ########### c_basordryn - d_tor_rag_dur ###########
+# 5826 = {
+# 	8303.4.28 = {
+# 		religion = old_gods_btw_sas
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_wud_monm ###################
+# ############ c_ask_vith - d_tor_rag_dur ###########
+# 5833 = {
+# 	8303.4.28 = {
+# 		religion = old_gods_btw_sas
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_roveggih ###################
+# ######### c_roveggs_spine - d_tor_rag_dur #########
+# 5820 = {
+# 	8303.4.28 = {
+# 		religion = old_gods_btw_sas
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_wightwell ###################
+# ########## c_wights_well - d_ghost_lakes ##########
+# 5836 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################## b_sruhmonm_veg #################
+# ########## c_idle_barrens - d_ghost_lakes #########
+# 5840 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ##################### b_anmrud ####################
+# ######## c_the_frigid_rise - d_ghost_lakes ########
+# 5847 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_hoarmot ####################
+# ########### c_hoarmarrow - d_ghost_lakes ##########
+# 5851 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_iceblud ####################
+# ########### c_bloodbend - d_ghost_lakes ###########
+# 5855 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_icepoint ###################
+# ########## c_axe_camp - d_shivering_shore #########
+# 5859 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################# b_voss_lysk_anag ################
+# ####### c_clear_ice_lake - d_shivering_shore ######
+# 5861 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_ain_oslhak ##################
+# ######## c_lhark_vakar - d_shivering_shore ########
+# 5865 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_trasdryn ###################
+# ######## c_gerras_dryn - d_shivering_shore ########
+# 5869 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_blue_ice ###################
+# ######### c_hail_coast - d_shivering_shore ########
+# 5873 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_gluhmyag ###################
+# ######## c_torch_river - d_shivering_shore ########
+# 5879 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ######################################################################################thenn
+# ################### b_tun_vunag ###################
+# ############## c_tun_vunag - d_thenn ##############
+5474 = {
+	8303.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+		effect = {
+			remove_building = agot_thenn_great_kilns_01
+		}
+	}
+	8314.12.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+# #################### b_srunmued ###################
+# ############### c_srunmued - d_thenn ##############
+5480 = {
+	8303.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+		effect = {
+			remove_building = agot_srunmued_copper_mines_01
+		}
+	}
+	8314.12.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+# ###################### b_krih #####################
+# ################# c_krih - d_thenn ################
+# 5485 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 		effect = {
+# 			remove_building = agot_krih_tin_mines_01
+# 		}
+# 	}
+# }
+# #################### b_lisskel ####################
+# ############## c_thurmiiyk - d_thenn ##############
+# 5489 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_kelskam ####################
+# ############## c_thurmiiyk - d_thenn ##############
+# 5490 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_yaykdeas ###################
+# ############### c_thurmiiyk - d_thenn ##############
+# 5484 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# #################### b_ndurmyt ####################
+# ############# c_ndurmyt - d_uchveseck #############
+# 5492 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_voss_voln ###################
+# ############ c_voss_voln - d_uchveseck ############
+5498 = {
+	8303.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8314.12.6 = {
+		holding = tribal_holding
+		buildings = { tribe_01 }
+	}
+}
+# ###################### b_vark #####################
+# ############### c_vark - d_uchveseck ##############
+# 5502 = {
+# 	8303.4.28 = {
+# 		holding = ruin_holding
+# 		buildings = { small_ruin_01 }
+# 	}
+# }
+# ################### b_arergludak ##################
+# ############## c_gludak - d_uchveseck #############
+5507 = {
+	8303.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8314.12.6 = {
+		holding = tribal_holding
+		buildings = { tribe_01 }
+	}
+}

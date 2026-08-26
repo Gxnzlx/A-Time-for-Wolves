@@ -1,0 +1,11 @@
+﻿agot_group_agot_tfw = {
+	default_start_date = 8305.1.1
+}
+
+# agot_group_agot_tfw2 = {
+# 	default_start_date = 8366.1.1
+# }
+
+# agot_group_agot_tfw310 = {
+# 	default_start_date = 8310.1.1
+# }

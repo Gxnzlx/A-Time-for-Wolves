@@ -1,0 +1,10 @@
+﻿nick_the_incredibly_old_one = {}
+nick_the_big_fat_one = {}
+nick_redwolf = {}
+nick_halfmaester = {}
+nick_griff = {}
+nick_griff_victorius = {}
+nick_duck = {}
+nick_duck_victorius = {}
+nick_aegon_griff = {}
+nick_aegon_dragon = {}

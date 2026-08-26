@@ -1,0 +1,343 @@
+﻿namespace = agot_tfw_five_queens
+
+agot_tfw_five_queens.0001 = {
+	type = character_event
+	title = agot_tfw_five_queens.0001.t
+	desc = agot_tfw_five_queens.0001.desc
+	hidden = yes
+
+	immediate = {
+
+		spawn_army = {
+			name = agot_tfw_five_queens_targ_army_name
+			men_at_arms = { type = unsullied men = 8000 }
+			men_at_arms = { type = dothraki_archers men = 5000 }
+			men_at_arms = { type = light_horsemen men = 5000 }
+			men_at_arms = { type = dothraki_screamers men = 5000 }
+			location = capital_province
+		}
+
+		start_war = {
+			casus_belli = claim_cb
+			target = title:h_the_iron_throne.holder
+			claimant = root
+			target_title = title:h_the_iron_throne
+			target_title = title:e_the_crownlands
+			target_title = title:k_the_blackwater
+			target_title = title:d_kings_landing
+			target_title = title:c_kings_landing
+			target_title = title:e_the_stormlands
+		}
+
+		character:Targaryen_9 = {
+			add_character_flag = targ_host_invasion
+			trigger_event = {
+				id = agot_tfw_five_queens.0004
+				days = 365
+			}
+		}
+
+		title:h_the_iron_throne.holder = {
+			spawn_army = {
+				name = agot_tfw_five_queens_throne_army_name
+				men_at_arms = { type = redcloaks men = 5000 }
+				men_at_arms = { type = rain_bringers men = 1500 }
+				men_at_arms = { type = goldcloaks men = 3000 }
+				men_at_arms = { type = armored_footmen men = 1500 }
+				location = capital_province
+			}
+			add_character_flag = { flag = mw_init_event_blocker days = 2 }
+			every_character_war = {
+				add_defender = character:Lannister_24
+				add_defender = character:Swift_1
+				add_defender = character:Bracken_3
+				add_defender = character:Tarly_1
+				add_defender = character:Buckwell_1
+				add_defender = character:Blackwater_1
+				add_defender = character:Hayford_2
+				add_defender = character:Charlton_1
+				add_defender = character:Crakehall_3
+				add_defender = character:Banefort_1
+				add_defender = character:Brax_4
+				add_defender = character:Foote_6
+				add_defender = character:Norcross_1
+				add_defender = character:Varner_2
+				add_defender = character:Footly_1
+				add_defender = character:Meadows_3
+				add_defender = character:Strickland_1
+				add_defender = character:Frey_24
+			}
+		}
+	}
+}
+
+agot_tfw_five_queens.0002 = {
+	type = character_event
+	title = agot_tfw_five_queens.0002.t
+	desc = agot_tfw_five_queens.0002.desc
+	hidden = yes
+
+	immediate = {
+
+		spawn_army = {
+			name = agot_tfw_five_queens_ironborn_army_name
+			men_at_arms = { type = ironborn_reavers men = 1000 }
+			men_at_arms = { type = armored_footmen men = 3000 }
+			location = capital_province
+		}
+
+	}
+}
+
+agot_tfw_five_queens.0003 = {
+	type = character_event
+	title = agot_tfw_five_queens.0003.t
+	desc = agot_tfw_five_queens.0003.desc
+	hidden = yes
+
+	immediate = {
+		character:Targaryen_9 = {
+			every_character_war = {
+				limit = {
+					primary_defender = title:h_the_iron_throne.holder
+				}
+				add_attacker = root
+				add_attacker = character:Mallister_4
+				add_attacker = character:Paege_31
+				add_attacker = character:Charlton_1
+				add_attacker = character:Vance_Wayfarers_Rest_3
+				add_attacker = character:Ryger_1
+				add_attacker = character:Rykker_2
+				add_attacker = character:Staunton_2
+				add_attacker = character:Mooton_2
+				add_attacker = character:Ryker_2
+				add_attacker = character:Goodbrook_4
+				add_attacker = character:Frey_50
+				add_attacker = character:Piper_1
+				add_attacker = character:Massey_1
+				add_attacker = character:Fell_3
+				add_attacker = character:Peasebury_1
+				add_attacker = character:Grandison_3
+				add_attacker = character:Morrigen_2
+				add_attacker = character:Errol_2
+				add_attacker = character:Penrose_45
+				add_attacker = character:Farring_1
+				add_attacker = character:Wylde_4
+				add_attacker = character:Farring_3
+				add_attacker = character:Miller_14
+				add_attacker = character:Buckler_1
+				add_attacker = character:Pointe_64
+				add_attacker = character:Bolling_5
+				add_attacker = character:Grimsby_74
+				add_attacker = character:Wensington_6
+				add_attacker = character:Vypren_1
+			}
+		}
+	}
+}
+
+agot_tfw_five_queens.0004 = { 
+	type = character_event
+	theme = crown
+	hidden = yes
+
+	trigger = {
+		has_character_flag = targ_host_invasion
+		holds_title = title:h_the_iron_throne
+	}
+
+	immediate = {
+		create_title_and_vassal_change = {
+			type = returned
+			save_scope_as = change
+			add_claim_on_loss = no
+		}
+
+		title:e_the_reach.holder = {
+			change_liege = {
+				liege = title:h_the_iron_throne.holder
+				change = scope:change
+			}
+		}
+
+		title:e_the_north.holder = {
+			change_liege = {
+				liege = title:h_the_iron_throne.holder
+				change = scope:change
+			}
+		}
+		title:e_the_vale.holder = {
+			change_liege = {
+				liege = title:h_the_iron_throne.holder
+				change = scope:change
+			}
+		}
+
+		title:e_dorne.holder = {
+			change_liege = {
+				liege = title:h_the_iron_throne.holder
+				change = scope:change
+			}
+		}
+
+		title:c_casterly_rock = {
+			change_title_holder = {
+				holder = character:Lannister_8
+				change = scope:change
+			}
+		}
+
+		title:c_fang_hill = {
+			change_title_holder = {
+				holder = character:Lannister_8
+				change = scope:change
+			}
+		}
+
+		title:d_casterly_rock = {
+			change_title_holder_include_vassals = {
+				holder = character:Lannister_8
+				change = scope:change
+			}
+		}
+
+		title:k_the_rock = {
+			change_title_holder_include_vassals = {
+				holder = character:Lannister_8
+				change = scope:change
+			}
+		}
+
+		title:e_the_westerlands = {
+			change_title_holder_include_vassals = {
+				holder = character:Lannister_8
+				change = scope:change
+			}
+		}
+			
+		title:c_storms_end = {
+			change_title_holder_include_vassals = {
+				holder = character:Baratheon_9
+				change = scope:change
+			}
+		}
+				
+		title:d_shipbreaker_bay = {
+			change_title_holder_include_vassals = {
+				holder = character:Baratheon_9
+				change = scope:change
+			}
+		}
+				
+		title:k_shipbreaker_bay = {
+			change_title_holder_include_vassals = {
+				holder = character:Baratheon_9
+				change = scope:change
+			}
+		}
+		
+		title:e_the_stormlands = {
+			change_title_holder_include_vassals = {
+				holder = character:Baratheon_9
+				change = scope:change
+			}
+		}
+		
+		title:c_riverrun = {
+			change_title_holder_include_vassals = {
+				holder = character:Tully_7
+				change = scope:change
+			}
+		}
+		
+		title:d_riverrun = {
+			change_title_holder_include_vassals = {
+				holder = character:Tully_7
+				change = scope:change
+			}
+		}
+		
+		title:k_armistia = {
+			change_title_holder_include_vassals = {
+				holder = character:Tully_7
+				change = scope:change
+			}
+		}
+		
+		title:e_the_riverlands = {
+			change_title_holder_include_vassals = {
+				holder = character:Tully_7
+				change = scope:change
+			}
+		}
+
+		title:c_heathersage = {
+			change_title_holder_include_vassals = {
+				holder = character:Stripe_26
+				change = scope:change
+			}
+		}
+
+		title:d_tridents_mouth = {
+			change_title_holder_include_vassals = {
+				holder = character:Frey_50
+				change = scope:change
+			}
+			change_liege = {
+				liege = title:h_the_iron_throne.holder
+				change = scope:change
+			}
+		}
+
+		title:d_laamp_blackwind.holder = {
+			trigger_event = agot_tfw_five_queens.0005
+		}
+
+		remove_character_flag = targ_host_invasion
+
+		resolve_title_and_vassal_change = scope:change
+	}
+}
+
+agot_tfw_five_queens.0005 = {
+	type = character_event
+	title = agot_tfw_five_queens.0005.t
+	desc = agot_tfw_five_queens.0005.desc
+	hidden = yes
+
+	immediate = {
+		start_war = {
+			casus_belli = claim_cb
+			target = title:e_the_iron_islands.holder
+			claimant = root
+			target_title = title:e_the_iron_islands
+			target_title = title:k_under_islands
+			target_title = title:d_pyke
+			target_title = title:c_pyke
+		}
+		character:Targaryen_9 = {
+			trigger_event = { 
+				id = agot_tfw_five_queens.0006 
+				days = 1
+			}
+		}
+	}
+}
+
+agot_tfw_five_queens.0006 = {
+	type = character_event
+	title = agot_tfw_five_queens.0006.t
+	desc = agot_tfw_five_queens.0006.desc
+	hidden = yes
+
+	immediate = {
+		character:Greyjoy_13 = {
+			random_character_war = {
+				limit = {
+					using_cb = claim_cb
+				}
+				add_attacker = root
+			}
+		}
+	}
+}

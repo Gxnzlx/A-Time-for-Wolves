@@ -1,0 +1,274 @@
+﻿# tfw_coal_mines_01 = {
+
+# 	construction_time = slow_construction_time
+
+# 	type_icon = "icon_structure_mines.dds"
+
+# 	asset = {
+# 		type = pdxmesh
+# 		name = "building_special_mines_mesh"
+# 	}
+
+# 	can_construct_potential = {
+# 		culture = {
+# 			has_innovation = innovation_crop_rotation
+# 		}
+# 	}
+
+# 	cost_gold = expensive_building_tier_3_cost
+
+# 	province_modifier = {
+# 		monthly_income = copper_mine_building_tax_tier_1
+# 	}
+
+# 	county_modifier = {
+# 		tax_mult = 0.05
+# 		development_growth_factor = 0.05
+# 	}
+
+# 	next_building = tfw_coal_mines_02
+
+# 	ai_value = {
+# 		base = 100
+# 	}
+
+# 	type = special
+# }
+
+tfw_coal_mines_02 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_2
+	}
+
+	county_modifier = {
+		tax_mult = 0.10
+		development_growth_factor = 0.10
+	}
+
+	next_building = tfw_coal_mines_03
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+}
+
+tfw_coal_mines_03 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_3
+	}
+
+	county_modifier = {
+		tax_mult = 0.15
+		development_growth_factor = 0.15
+	}
+
+	next_building = tfw_coal_mines_04
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+}
+
+tfw_coal_mines_04 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_4
+	}
+
+	county_modifier = {
+		tax_mult = 0.20
+		development_growth_factor = 0.20
+	}
+
+	next_building = tfw_coal_mines_05
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+}
+
+tfw_coal_mines_05 = {
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	can_construct_potential = {
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+
+	cost_gold = expensive_building_tier_3_cost
+
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_5
+	}
+
+	county_modifier = {
+		tax_mult = 0.25
+		development_growth_factor = 0.25
+	}
+
+	#next_building = 
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+}
+
+
+tfw_lumber_forest_01 = {
+	construction_time = slow_construction_time
+
+	type_icon = "icon_building_royal_forest.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = expensive_building_tier_1_cost
+
+	character_modifier = {
+		men_at_arms_maintenance = -0.1
+		monthly_dynasty_prestige_mult = 0.1
+		lifestyle_hunter_xp_gain_mult = 0.2
+	}
+	province_modifier = {
+		defender_holding_advantage = 5
+		fort_level = 2
+		monthly_income = good_building_tax_tier_3
+	}
+	county_modifier = {
+		tax_mult = 0.05
+		development_growth_factor = 0.2
+	}
+
+	ai_value = {
+		base = 100
+		culture_likely_to_fortify_modifier = yes
+	}
+
+	type = special
+}
+
+tfw_port_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_building_tradeport.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+
+	asset = {
+		type = pdxmesh
+		name = "port_3_mesh"
+	}
+
+	cost_gold = expensive_building_tier_1_cost
+
+	character_modifier = {
+		embarkation_cost_mult = -0.3
+		raid_speed = 0.1
+		diplomatic_range_mult = 0.1
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.2
+	}
+
+	province_modifier = {
+		monthly_income = good_building_tax_tier_6
+	}
+
+	ai_value = {
+		base = 100
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+
+	type = special
+
+	flag = travel_point_of_interest_economic
+}
+
+
+# TODO: These need to be moved into an on_action or event
+#effect title:b_wyndhall.title_province = {
+#			add_special_building_slot = tfw_coal_mines_01
+#			#add_special_building = tfw_coal_mines_01
+#		}
+
+#effect title:b_waneridge.title_province = {
+#			add_special_building_slot = the_red_keep_03
+#			add_special_building = the_red_keep_03
+#		}

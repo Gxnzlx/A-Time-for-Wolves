@@ -1,0 +1,997 @@
+﻿##################################################################################the wall
+################## b_castle_black #################
+########### c_castle_black - d_the_wall ###########
+5 = {
+	8304.4.28 = {		
+		culture = forestman
+		religion = old_gods_btw_fnf
+		holding = ruin_holding
+		buildings = { large_ruin_01 }
+	}
+}
+#################### b_icemark ####################
+########### c_castle_black - d_the_wall ###########
+2 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_deep_lake ###################
+########### c_castle_black - d_the_wall ###########
+3 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_queensgate ##################
+########### c_castle_black - d_the_wall ###########
+4 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################# b_the_nightfort #################
+########### c_castle_black - d_the_wall ###########
+1 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_fnf
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8313.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################## b_oakenshield ##################
+########### c_castle_black - d_the_wall ###########
+6 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+############# b_woodswatch_by_the_pool ############
+########### c_castle_black - d_the_wall ###########
+7 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################ b_the_shadow_tower ###############
+######### c_the_shadow_tower - d_the_wall #########
+8 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8313.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+############ b_westwatch_by_the_bridge ############
+######### c_the_shadow_tower - d_the_wall #########
+9 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################# b_sentinel_stand ################
+######### c_the_shadow_tower - d_the_wall #########
+10 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_greyguard ###################
+######### c_the_shadow_tower - d_the_wall #########
+11 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_stonedoor ###################
+######### c_the_shadow_tower - d_the_wall #########
+12 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################# b_hoarfrost_hill ################
+######### c_the_shadow_tower - d_the_wall #########
+13 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+############## b_eastwatch_by_the_sea #############
+############# c_eastwatch - d_the_wall ############
+14 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8315.3.6 = {
+		culture = skagosi
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################### b_sable_hall ##################
+############# c_eastwatch - d_the_wall ############
+15 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+#################### b_rimegate ###################
+############# c_eastwatch - d_the_wall ############
+16 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################## b_long_barrow ##################
+############# c_eastwatch - d_the_wall ############
+17 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################## b_the_torches ##################
+############# c_eastwatch - d_the_wall ############
+18 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_greenguard ##################
+############# c_eastwatch - d_the_wall ############
+19 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+############### b_weatherback_ridge ###############
+###### c_weatherback_ridge - d_brandons_gift ######
+20 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8313.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_toothcliff ##################
+###### c_weatherback_ridge - d_brandons_gift ######
+21 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################# b_the_crowsticks ################
+###### c_weatherback_ridge - d_brandons_gift ######
+24 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_moles_town ##################
+########## c_moles_town - d_brandons_gift #########
+28 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_fnf
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.11.11 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################### b_old_croft ###################
+########## c_moles_town - d_brandons_gift #########
+32 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################ b_brandons_castle ################
+########### c_hoarburn - d_brandons_gift ##########
+38 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8313.6.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+#################### b_hoarburn ###################
+########### c_hoarburn - d_brandons_gift ##########
+43 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_briarsward ##################
+########### c_hoarburn - d_brandons_gift ##########
+44 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################## b_queenscrown ##################
+########## c_boreharrow - d_new_gift #########
+61 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.6.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_antlerfell ##################
+############ c_boreharrow - d_new_gift ############
+63 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_whitecross ##################
+############ c_whitecross - d_new_gift ############
+57 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_fnf
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.6.6 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_old_hedge ###################
+############ c_whitecross - d_new_gift ############
+64 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_north_town ##################
+############ c_giantsbeard - d_new_gift ###########
+66 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8309.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################### b_north_town ##################
+############ c_starkstones - d_new_gift ###########
+72 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_stonestead ##################
+############ c_giantsbeard - d_new_gift ###########
+73 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8309.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################### b_norlinton ###################
+############# c_norlinton - d_new_gift ############
+47 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.8.9 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+#################### b_waysrest ###################
+############# c_norlinton - d_new_gift ############
+53 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+
+
+#############################################################################the_north
+
+################### b_woodhaven ###################
+############ c_woodhaven - d_last_lands ###########
+147 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################### b_dandridge ###################
+############ c_woodhaven - d_last_lands ###########
+153 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################ b_sullen_foothold ################
+########## c_sullen_hills - d_last_lands ##########
+165 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_fnf
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################## b_pothers_keep #################
+########## c_sullen_hills - d_last_lands ##########
+170 = {
+	8304.4.28 = {
+		culture = forestman
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################ b_whitemore_motte ################
+############ c_whitemore - d_last_lands ###########
+175 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8308.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################# b_whitemore_town ################
+############ c_whitemore - d_last_lands ###########
+180 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8308.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################### b_oldchamber ##################
+############ c_whitemore - d_last_lands ###########
+184 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8308.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################## b_pinns_ledge ##################
+########### c_seal_shore - d_last_lands ###########
+185 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################### b_pinns_port ##################
+########### c_seal_shore - d_last_lands ###########
+186 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = city_holding
+		buildings = { city_02 }
+	}
+}
+#################### b_finnwall ###################
+########### c_seal_shore - d_last_lands ###########
+188 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################# b_seabear_tower #################
+########### c_seal_shore - d_last_lands ###########
+189 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_long_hall ###################
+########## c_longstreams - d_frostfields ##########
+215 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8305.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################### b_spearhouse ##################
+########## c_longstreams - d_frostfields ##########
+216 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_pooleside ###################
+########## c_longstreams - d_frostfields ##########
+218 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################### b_shore_hold ##################
+########## c_longstreams - d_frostfields ##########
+220 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+#################################################
+#################################################
+223 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+################### b_holdwater ###################
+###### c_holdwater - d_the_northern_mountains #####
+1223 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8309.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+#################### b_oakcade ####################
+###### c_holdwater - d_the_northern_mountains #####
+1227 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8309.1.1 = {
+		holding = city_holding
+		buildings = { city_02 }
+	}
+}
+################### b_the_bucket ##################
+###### c_holdwater - d_the_northern_mountains #####
+1231 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8309.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################ b_breakstone_hill ################
+### c_breakstone_hill - d_the_northern_mountains ##
+1234 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################ b_breakstone_cave ################
+### c_breakstone_hill - d_the_northern_mountains ##
+1236 = {
+	8304.4.28 = {
+		culture = forestman
+		religion = old_gods_btw_sas
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+#################### b_flinney ####################
+### c_breakstone_hill - d_the_northern_mountains ##
+1241 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################## b_the_notch ###################
+###### c_braidmont - d_the_northern_mountains #####
+1253 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################### b_braidstone ##################
+###### c_braidmont - d_the_northern_mountains #####
+1259 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################## b_arwood_tower #################
+###### c_braidmont - d_the_northern_mountains #####
+1261 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_carvestone ##################
+##### c_carvestone - d_the_northern_mountains #####
+1263 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8307.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################## b_traders_mill #################
+##### c_carvestone - d_the_northern_mountains #####
+1265 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+}
+#################### b_firmont ####################
+###### c_pinesend - d_the_northern_mountains ######
+1272 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8305.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################# b_highwood_pass #################
+###### c_pinesend - d_the_northern_mountains ######
+1274 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_bronzemill ##################
+###### c_pinesend - d_the_northern_mountains ######
+1276 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = city_holding
+		buildings = { city_02 }
+	}
+}
+################### b_brookmont ###################
+###### c_pinesend - d_the_northern_mountains ######
+1281 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8306.1.1 = {
+		holding = city_holding
+		buildings = { city_02 }
+	}
+}
+################## b_the_thistle ##################
+###### c_stoutfast - d_the_northern_mountains #####
+1282 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################## b_brothersback #################
+###### c_stoutfast - d_the_northern_mountains #####
+1285 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################## b_norrkin_keep #################
+###### c_stoutfast - d_the_northern_mountains #####
+1286 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+#################### b_prickle ####################
+###### c_stoutfast - d_the_northern_mountains #####
+1291 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8310.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+############### b_trenchstone_watch ###############
+##### c_trenchstone - d_the_northern_mountains ####
+1292 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8309.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+#################### b_duggery ####################
+##### c_trenchstone - d_the_northern_mountains ####
+1293 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8309.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_downpoint ###################
+#### c_scar_mountain - d_the_northern_mountains ###
+1301 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8308.1.1 = {
+		holding = castle_holding
+		buildings = { castle_02 }
+	}
+}
+################## b_last_thorpe ##################
+#### c_scar_mountain - d_the_northern_mountains ###
+1304 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8308.1.1 = {
+		holding = city_holding
+		buildings = { city_01 }
+	}
+}
+################ b_hilltrade_forge ################
+#### c_scar_mountain - d_the_northern_mountains ###
+1305 = {
+	8304.4.28 = {
+		holding = ruin_holding
+		buildings = { small_ruin_01 }
+	}
+	8308.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+##################### b_skane #####################
+################ c_skane - d_skagos ###############
+1630 = {
+	8307.1.1 = {
+		holding = castle_holding
+		buildings = { castle_01 }
+	}
+}
+################### b_new_castle ##################
+######### c_white_harbor - d_white_harbor #########
+423 = {
+	8309.1.1 = {
+		religion = fots_oldnew
+	}
+}
+################### b_whetmarsh ###################
+########### c_whetmarsh - d_white_harbor ##########
+443 = {
+	8309.1.1 = {
+		religion = fots_oldnew
+	}
+}
+
+
+
+#d_flints_finger
+	#c_flints_finger
+	1457 = {
+		8309.1.1 = {
+			culture = krakenman
+			special_building_slot = tfw_port_01
+		}
+		8315.1.1 = {
+			special_building = tfw_port_01
+		}
+		8361.1.1 = {
+			culture = greenborn
+			religion = drowned_god
+		}
+	}
+	#c_cape_kraken
+	1479 = {
+		8309.1.1 = {
+			special_building_slot = tfw_lumber_forest_01
+		}
+		8317.1.1 = {
+			special_building = tfw_lumber_forest_01
+		}
+	}
+	#c_blazwwater_bay
+	1468 = {
+		8309.1.1 = {
+			special_building_slot = tfw_lumber_forest_01
+		}
+		8315.1.1 = {
+			special_building = tfw_lumber_forest_01
+		}
+	}
+	#b_pot_and_bowl
+	1478 = {
+		8316.1.1 = {
+			special_building_slot = agot_feastfires_01
+		}
+		8363.1.1 = {
+			holding = castle_holding
+			buildings = { castle_03 }
+			special_building = agot_feastfires_01
+		}
+	}
+	#c_arnscarre
+	1528 = {
+		8309.1.1 = {
+			special_building_slot = tfw_lumber_forest_01
+		}
+		8318.1.1 = {
+			special_building = tfw_lumber_forest_01
+		}
+		8330.1.1 = {
+			culture = krakenman
+		}
+	}
+	#c_cypress_rising
+	1565 = {
+		8309.1.1 = {
+			culture = krakenman
+		}
+	}
+	#c_murkwood
+	1576 = {
+		8309.1.1 = {
+		}
+		8321.1.1 = {
+			culture = krakenman
+		}
+	}
+	#c_wristerly
+	1519 = {
+		8325.1.1 = {
+			culture = krakenman
+		}
+	}
+	#c_morrenland
+	1557 = {
+		8309.1.1 = {
+		}
+		8324.1.1 = {
+			culture = krakenman
+		}
+	}
+	#c_waterstone
+	1539 = {
+		8309.1.1 = {
+		}
+		8327.1.1 = {
+			culture = krakenman
+		}
+	}
+	#c_spears_sound
+	1549 = {
+		8339.1.1 = {
+			culture = krakenman
+		}
+	}
+
+

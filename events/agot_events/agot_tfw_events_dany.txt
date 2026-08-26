@@ -1,0 +1,664 @@
+﻿namespace = agot_tfw_dany
+agot_tfw_dany.0001 = {
+	type = character_event
+	title = agot_tfw_dany.0001.t
+	desc = agot_tfw_dany.0001.desc
+	theme = faith
+	override_background = {
+		reference = bp1_bonfire
+	}
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { ai_zeal <= high_negative_ai_value }
+			animation = personality_cynical
+		}
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:red_priest
+		animation = personality_zealous
+	}
+
+	immediate = {
+		cp:councillor_court_chaplain = {
+			save_scope_as = red_priest
+		}
+		#Save potential target for the offering
+		if = {
+			limit = {
+				any_prisoner = {
+					has_kingsblood = yes
+				}
+			}
+			random_prisoner = {
+				limit = { has_kingsblood = yes }
+				save_scope_as = sacrifice_target
+			}
+		}
+	}
+
+	#There is power in king's blood...
+	option = {
+		trigger = { #A valid sacrifice target must exist for this option
+			exists = scope:sacrifice_target
+		}
+		name = tfw_look_into_flames.0001.prisoner
+		set_variable = {
+			name = offering
+			value = flag:kingsblood
+		}
+
+		scope:sacrifice_target = {
+			death = {
+				death_reason = death_burned_witch
+				killer = root
+			}
+		}
+
+		add_kinslayer_trait_or_nothing_effect = { VICTIM = scope:sacrifice_target }
+		execute_opinion_effect = { VICTIM = scope:sacrifice_target EXECUTIONER = root }
+
+		#Custom tooltips to prevent spam
+		custom_tooltip = tfw_look_into_flames.0001.prisoner.tt
+		hidden_effect = {
+			#Vassals that do not have same tenet or HumSac will HATE this
+			every_vassal_or_below = {
+				if = {
+					limit = {
+						has_trait = zealous
+						faith = { has_doctrine_parameter = human_sacrifice_active }
+					}
+					add_opinion = {
+						target = root
+						modifier = respect_opinion
+						opinion = 10
+					}
+				}
+				if = {
+					limit = {
+						NOT = { faith = { has_doctrine_parameter = human_sacrifice_active } }
+					}
+					add_opinion = {
+						target = root
+						modifier = cruelty_opinion
+						opinion = -30
+					}
+				}
+			}
+			#Zealous vassals of same religion might approve
+			every_courtier_or_guest = {
+				if = {
+					limit = {
+						has_trait = zealous
+						faith = { has_doctrine_parameter = human_sacrifice_active }
+					}
+					add_opinion = {
+						target = root
+						modifier = respect_opinion
+						opinion = 10
+					}
+				}
+				if = {
+					limit = {
+						NOT = { faith = { has_doctrine_parameter = human_sacrifice_active } }
+					}
+					add_opinion = {
+						target = root
+						modifier = cruelty_opinion
+						opinion = -30
+					}
+				}
+			}
+		}
+		add_dread = medium_dread_gain
+
+		#trigger_event = agot_tfw_dany.0002
+
+		add_character_flag = {
+			flag = res_dany_cooldown
+			days = 365
+		}
+
+		stress_impact = {
+			compassionate = major_stress_impact_gain
+			sadistic = major_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+			ai_value_modifier = {
+				ai_zeal = 3
+				ai_compassion = -2
+				ai_boldness = 2
+				ai_honor = -0.5
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					has_trait = zealous
+					has_trait = callous
+					has_trait = ambitious
+					has_trait = sadistic
+				}
+			}
+		}
+	}
+
+	#Burn peasants as an offering
+	option = {
+		name = tfw_look_into_flames.0001.peasants
+		set_variable = {
+			name = offering
+			value = flag:peasants
+		}
+		capital_county ?= {
+			add_county_modifier = {
+				modifier = burned_commoners
+				years = 5
+			}
+		}
+
+		custom_tooltip = tfw_look_into_flames.0001.peasants.tt
+		hidden_effect = {
+			every_courtier_or_guest = {
+				if = {
+					limit = {
+						has_trait = zealous
+						faith = { has_doctrine_parameter = human_sacrifice_active }
+					}
+					add_opinion = {
+						target = root
+						modifier = respect_opinion
+						opinion = 10
+					}
+				}
+				if = {
+					limit = {
+						NOT = { faith = { has_doctrine_parameter = human_sacrifice_active } }
+					}
+					add_opinion = {
+						target = root
+						modifier = cruelty_opinion
+						opinion = -15
+					}
+				}
+			}
+		}
+		add_dread = minor_dread_gain
+
+		add_character_flag = {
+			flag = res_dany_cooldown
+			days = 365
+		}
+
+		stress_impact = {
+			compassionate = medium_stress_impact_gain
+			sadistic = medium_stress_impact_loss
+		}
+
+		ai_chance = {
+			base = 0
+			ai_value_modifier = {
+				ai_zeal = 2
+				ai_compassion = -2
+				ai_boldness = 2
+				ai_honor = -0.25
+			}
+			modifier = {
+				factor = 0
+				NOR = {
+					has_trait = zealous
+					has_trait = callous
+					has_trait = ambitious
+					has_trait = sadistic
+				}
+			}
+		}
+	}
+
+	#Burn false idols as an offering
+	option = {
+		name = tfw_look_into_flames.0001.false_idols
+		custom_tooltip = tfw_look_into_flames.0001.false_idols.tt
+		set_variable = {
+			name = offering
+			value = flag:false_idols
+		}
+
+		add_character_flag = {
+			flag = res_dany_cooldown
+			days = 365
+		}
+
+		remove_short_term_gold = medium_gold_value
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = 1
+			}
+			modifier = {
+				add = -50
+				has_trait = greedy
+			}
+			modifier = {
+				factor = 0
+				short_term_gold < medium_gold_value_check
+			}
+		}
+	}
+
+	#Look into fire
+	option = {
+		name = tfw_look_into_flames.0001.a
+		custom_tooltip = tfw_look_into_flames.0001.a.tt
+		set_variable = {
+			name = offering
+			value = flag:none
+		}
+
+		add_character_flag = {
+			flag = res_dany_cooldown
+			days = 365
+		}
+
+		ai_chance = {
+			base = 100
+			ai_value_modifier = {
+				ai_zeal = -2
+				ai_boldness = -1
+				ai_compassion = 1
+
+			}
+		}
+
+	}
+
+	#Cancel, I'll do it another time
+	option = {
+		name = tfw_look_into_flames.0001.b
+		remove_character_flag = res_dany_cooldown
+		add_piety_no_experience = 100 #Refund piety cost
+
+		ai_chance = { #AI shouldn't opt out
+			base = 0
+		}
+	}
+
+	after = {
+		if = {
+			limit = { has_character_flag = res_dany_cooldown }
+
+			hidden_effect = {
+				random_list = {
+					20 = { #Yes!
+						compare_modifier = {
+							value = {
+								value = scope:red_priest.learning
+								multiply = 2
+							}
+						}
+						#Better chance if priest is mystic
+						modifier = {
+							add = 40
+							scope:red_priest = {
+								has_trait = lifestyle_mystic
+							}
+						}
+						modifier = {
+							add = 40
+							scope:red_priest = {
+								has_trait = lifestyle_mystic
+								has_trait_xp = {
+									trait = lifestyle_mystic
+									value >50
+								}
+							}
+						}
+						modifier = {
+							add = 40
+							scope:red_priest = {
+								has_trait = lifestyle_mystic
+								has_trait_xp = {
+									trait = lifestyle_mystic
+									value >=100
+								}
+							}
+						}
+						#Chance increase per level of devotion
+						modifier = {
+							add = 30
+							piety_level > 5
+						}
+						modifier = {
+							add = 30
+							piety_level > 4
+						}
+						modifier = {
+							add = 20
+							piety_level > 3
+						}
+						#Burned peasants
+						modifier = {
+							add = 40
+							var:offering ?= flag:peasants
+						}
+						#False idols offering
+						modifier = {
+							add = 20
+							var:offering ?= flag:false_idols
+						}
+						#Zealous characters are more likely to have a 'vision'
+						modifier = {
+							add = 20
+							has_trait = zealous
+						}
+						#Lunatic can see whatever they want
+						modifier = {
+							add = 60
+							OR = {
+								has_trait = lunatic_genetic
+								has_trait = lunatic_1
+							}
+						}
+						#Fire obsessed is much more likely to see something
+						modifier = {
+							add = 100
+							has_trait = fire_obsessed
+						}
+						#Sacrifice Kingsblood
+						modifier = {
+							add = 80
+							var:offering ?= flag:kingsblood
+						}
+
+						trigger_event = agot_tfw_dany.0002
+
+					}
+					80 = { #No...
+						modifier = { 
+							add = 120
+							has_trait = cynical
+						}
+						modifier = {
+							add = 60
+							piety_level < 1
+						}
+						modifier = { 
+							factor = 0
+							var:offering ?= flag:kingsblood
+						}
+						trigger_event = agot_tfw_dany.0003
+					}
+				}
+			}
+		}
+	}
+}
+
+agot_tfw_dany.0002 = {
+	type = character_event
+	window = fullscreen_event
+	title = agot_tfw_dany.0002.t
+	desc = agot_tfw_dany.0002.desc
+	theme = faith
+	override_background = {
+		reference = bp1_bonfire
+	}
+	immediate = {
+		play_music_cue = "mx_dragonflight_wonder"
+
+		create_character = {
+			name = "Daenerys"
+			gender = female
+			culture = culture:high_valyrian
+			faith = faith:rhllor_fots
+			location = title:h_the_iron_throne.holder.capital_province #change in T&T to somewhere in essos
+			age = 20
+			mother = character:Targaryen_2
+			father = character:Targaryen_1
+			dynasty_house = character:Targaryen_1.house
+
+			martial = 4
+			diplomacy = 3
+			intrigue = 2
+			stewardship = 3
+			learning = 5
+			prowess = 4
+
+			random_traits = no
+
+			trait = education_diplomacy_3
+			trait = intellect_good_1
+			trait = beauty_good_3
+			trait = ambitious
+			trait = generous
+
+			save_scope_as = dany
+
+			after_creation = {
+				agot_dragon_revival_effect = yes
+				hidden_effect = {
+					agot_tame_dragon = {
+						TAMER = scope:dany
+						DRAGON = character:dragon_drogon
+					}
+				}
+				give_nickname = nick_stormborn
+				make_trait_inactive = is_targaryen_9
+				set_sexuality = bisexual
+				add_character_flag = has_scripted_appearance
+				make_trait_inactive = cool_silver_hair
+				make_trait_inactive = purple_eyes_1
+				learn_language = language_common
+			}
+		}
+
+		hidden_effect = {
+			scope:dany = {
+				copy_traits = character:Targaryen_9
+
+				add_pressed_claim = title:h_the_iron_throne 
+				add_pressed_claim = title:e_the_crownlands
+				add_pressed_claim = title:d_kings_landing
+				add_pressed_claim = title:c_kings_landing
+
+				while = {
+					limit = {
+						number_of_personality_traits < personality_trait_limit
+					}
+					agot_add_random_trait_effect = yes
+				}
+
+				if = {
+					limit = {
+						NOR = {
+							has_trait = charming
+							has_trait = pensive
+							has_trait = rowdy
+							has_trait = bossy
+							has_trait = curious
+						}
+					}
+					add_trait = charming
+				}
+				
+
+				copy_inheritable_appearance_from = character:Targaryen_9
+				create_title_and_vassal_change = {
+					type = created
+					save_scope_as = change
+				}
+
+				make_trait_inactive = is_targaryen_9
+				add_character_flag = dany_fled_to_essos
+
+				hidden_effect = {
+					create_character = {
+						gender = female
+						age = 50
+						culture = culture:high_valyrian
+						faith = faith:fots_seven
+						location = scope:faegon.location
+
+						dynasty = none
+
+						save_scope_as = culler_mother
+
+						after_creation = {
+							death =  { death_reason = death_disappearance }
+						}
+					}
+
+					create_character = {
+						gender = male
+						age = 50
+						culture = culture:high_valyrian
+						faith = faith:fots_seven
+						location = scope:faegon.location
+
+						dynasty = generate
+
+						save_scope_as = culler_father
+
+						after_creation = {
+							death =  { death_reason = death_disappearance }
+						}
+					}
+					character:Targaryen_9 = {
+						set_mother = scope:culler_mother
+						set_father = scope:culler_father
+						set_house = character:Targaryen_1.house
+					}
+				}
+
+				resolve_title_and_vassal_change = scope:change
+
+				set_variable = {
+					name = faegon_main_character
+					value = flag:dany
+				}
+
+				remove_trait = trusting
+				remove_trait = temperate
+				remove_trait = generous
+				remove_trait = just
+				remove_trait = widowed
+				add_trait = vengeful
+				add_trait = fire_obsessed
+				add_trait = scarred
+				add_trait = faith_warrior
+
+				add_character_flag = {
+					flag = res_dany
+				}
+				set_global_variable = dany_res
+
+			}
+		}
+
+		title:c_dragonstone.holder = { save_scope_as = lordofdragonstone }
+
+		create_title_and_vassal_change = {
+			type = returned
+			save_scope_as = change
+			add_claim_on_loss = yes
+		}
+
+		title:c_dragonstone = {
+			change_title_holder = {
+				holder = scope:dany
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change
+
+		scope:dany = {
+			create_landless_adventurer_title_effect = {
+				REASON = flag:conquest
+				FLAVOR_CHAR = scope:attacker
+			}	
+		}
+
+		create_title_and_vassal_change = {
+			type = returned
+			save_scope_as = change
+			add_claim_on_loss = yes
+		}
+
+		title:c_dragonstone = {
+			change_title_holder = {
+				holder = scope:lordofdragonstone
+				change = scope:change
+			}
+		}
+		resolve_title_and_vassal_change = scope:change		
+
+	}
+
+	#Play as Dany
+	option = {
+		name = agot_tfw_dany.0002.a
+		#custom_tooltip = agot_tfw_dany.0002.a.tt
+
+    	set_player_character = scope:dany
+
+		death = {
+			death_reason = death_burned_witch
+		}
+
+	}	
+
+	#Don't play her
+	option = {
+		name = agot_tfw_dany.0002.b
+		custom_tooltip = agot_tfw_dany.0002.b.tt
+
+		death = {
+			death_reason = death_burned_witch
+		}	
+	}
+
+	# option = {
+	# 	name = agot_tfw_dany.0002.c
+	# 	custom_tooltip = agot_tfw_dany.0002.c.tt
+
+	# 	scope:dany = {
+	# 		destroy_title = primary_title
+	# 		liege = Scales_1
+	# 	}
+
+	# 	# death = {
+	# 	# 	death_reason = death_burned_witch
+	# 	# }	
+	# }
+}
+
+agot_tfw_dany.0003 = {
+	type = character_event
+	title = agot_tfw_dany.0003.t
+	desc = agot_tfw_dany.0003.desc
+	theme = faith
+	override_background = {
+		reference = bp1_bonfire
+	}
+	left_portrait = {
+		character = root
+		triggered_animation = {
+			trigger = { ai_zeal <= high_negative_ai_value }
+			animation = personality_cynical
+		}
+		animation = personality_zealous
+	}
+	right_portrait = {
+		character = scope:red_priest
+		animation = personality_zealous
+	}
+
+	option = {
+		name = tfw_look_into_flames.0003.a
+	}
+}
+
+

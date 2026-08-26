@@ -1,0 +1,504 @@
+﻿# Called from code after history generation
+# Empty scope
+on_game_start = {
+	on_actions = {
+		tfw_on_game_start
+		tfw_north_holding_cost
+	}
+}
+
+tfw_on_game_start = {
+	effect = {
+		##AGOT IS LOADED## - FOR OTHER MODS TO HOOK WITH
+		set_global_variable = {
+			name = AGOT_is_loaded
+			value = yes
+		}
+
+		if = { 
+			limit = { 
+				current_year > 8301
+			}
+			title:c_wilderness.holder = {
+				trigger_event = { id = agot_tfw_setup.0005 }
+				struggle:btw_struggle = { end_struggle = struggle_btw_ending_conciliation_decision }
+			}
+			title:h_the_iron_throne.holder = {
+				trigger_event = { id = agot_tfw_setup.0001 days = 0 }
+			}
+		}
+
+		if = { 
+			limit = { 
+				current_year = 8303
+			}
+			character:Stark_7 = {
+				house = { set_house_head = character:Stark_7 }
+			}
+			
+			# Stark_7 decides marriage for Stark_Dummy_8 & Hardyng_5
+			if = {
+				limit = {
+					character:Stark_Dummy_8 = { is_alive = yes is_married = no is_betrothed = no }
+					character:Hardyng_5 = { is_alive = yes is_married = no is_betrothed = no }
+				}
+				character:Stark_7 = {
+					trigger_event = { id = atfw_marriage_events.0005 days = 2 }
+				}
+			}
+			character:Lannister_7 = { 
+				release_from_prison = yes
+			}
+			character:Knight_Kings_Landing_3 = { 
+				release_from_prison = yes 
+			}
+			character:Swann_6 = { 
+				release_from_prison = yes 
+			}
+			character:Blount_3 = { 
+				release_from_prison = yes 
+			}
+			character:Kettleblack_3 = { 
+				release_from_prison = yes 
+			}
+			title:k_dragonstone.holder = {
+				trigger_event = { id = agot_tfw_five_queens.0001 days = 0 }
+			}
+			title:d_laamp_blackwind.holder = {
+				trigger_event = { id = agot_tfw_five_queens.0002 days = 0 }
+			}
+			title:e_the_reach.holder = {
+				trigger_event = { id = agot_tfw_five_queens.0003 days = 1 }
+			}
+			title:e_dorne.holder = {
+				trigger_event = { id = agot_tfw_five_queens.0003 days = 1 }
+			}
+		}
+
+		if = { 
+			limit = {
+				current_year > 8304
+			}
+
+			title:h_the_iron_throne.holder = {
+				trigger_event = { id = agot_tfw_setup.0002 days = 1 }
+			}
+			title:e_the_north.holder = {
+				every_held_title = {
+					limit = {
+						tier = tier_county
+					}
+					if = {
+						limit = {
+							current_year < 8310
+						}
+						change_development_level = -2
+					}
+					if = {
+						limit = {
+							current_year > 8320
+							current_year < 8330
+						}
+						change_development_level = 1
+					}
+					if = {
+						limit = {
+							current_year > 8330
+							current_year < 8340
+						}
+						change_development_level = 2
+					}
+					if = {
+						limit = {
+							current_year > 8340
+							current_year < 8350
+						}
+						change_development_level = 3
+					}
+					if = {
+						limit = {
+							current_year > 8350
+							current_year < 8360
+						}
+						change_development_level = 4
+					}
+					if = {
+						limit = {
+							current_year > 8360
+							current_year < 8370
+						}
+						change_development_level = 5
+					}
+				}
+				every_vassal_or_below = {
+					every_held_title = {
+						limit = {
+							tier = tier_county
+						}
+						if = {
+							limit = {
+								current_year < 8310
+							}
+							change_development_level = -2
+						}
+						if = {
+							limit = {
+								current_year > 8320
+								current_year < 8330
+							}
+							change_development_level = 1
+						}
+						if = {
+							limit = {
+								current_year > 8330
+								current_year < 8340
+							}
+							change_development_level = 2
+						}
+						if = {
+							limit = {
+								current_year > 8340
+								current_year < 8350
+							}
+							change_development_level = 3
+						}
+						if = {
+							limit = {
+								current_year > 8350
+								current_year < 8360
+							}
+							change_development_level = 4
+						}
+						if = {
+							limit = {
+								current_year > 8360
+								current_year < 8370
+							}
+							change_development_level = 5
+						}
+					}
+				}
+			}
+			title:e_the_north.holder ?= {
+				 agot_create_artifact_crown_of_winter_historical_2_effect = { OWNER = this } 
+			}
+	
+			create_title_and_vassal_change = {
+				type = returned
+				save_scope_as = change
+				add_claim_on_loss = no
+			}
+
+			title:c_wilderness.holder = {
+
+				trigger_event = { id = agot_tfw_setup.0005 }
+
+				every_vassal_or_below = {
+					every_held_title = {
+						change_title_holder = {
+							holder = title:c_kings_landing.holder
+							change = scope:change
+						}	
+					}
+				}
+				every_held_title = {
+					limit = {
+						tier = tier_county
+					}
+					if = {
+						limit = {
+							current_year > 8304
+						}
+						change_development_level = -10
+					}
+				}
+			}
+			resolve_title_and_vassal_change = scope:change
+
+			# Bran - Meera Marriage
+			if = {
+				limit = {
+					character:Stark_Dummy_10 = { is_alive = yes is_married = no is_betrothed = no }
+					character:Reed_2 = { is_alive = yes is_married = no is_betrothed = no }
+				}
+				character:Stark_Dummy_10 = {
+					trigger_event = { id = atfw_marriage_events.0001 days = 2 }
+				}
+			}
+
+			# Stark_Dummy_8 - Hardyng_5 Marriage
+			if = {
+				limit = {
+					character:Stark_Dummy_8 = { is_alive = yes is_married = no is_betrothed = no }
+					character:Hardyng_5 = { is_alive = yes is_married = no is_betrothed = no }
+				}
+				character:Stark_Dummy_8 = {
+					trigger_event = { id = atfw_marriage_events.0002 days = 2 }
+				}
+			}
+
+			# Stark_Dummy_9 - Baratheon_9 Marriage
+			if = {
+				limit = {
+					character:Stark_Dummy_9 = { is_alive = yes is_married = no is_betrothed = no }
+					character:Baratheon_9 = { is_alive = yes is_married = no is_betrothed = no }
+				}
+				character:Stark_Dummy_9 = {
+					trigger_event = { id = atfw_marriage_events.0003 days = 2 }
+				}
+			}
+
+			# Stark_7 - Rayder_hh_3 Marriage
+			if = {
+				limit = {
+					character:Stark_7 = { is_alive = yes is_married = no is_betrothed = no }
+					character:Rayder_hh_3 = { is_alive = yes is_married = no is_betrothed = no }
+				}
+				character:Stark_7 = {
+					trigger_event = { id = atfw_marriage_events.0004 days = 2 }
+				}
+			}
+		}
+
+		if = { 
+			limit = { 
+				current_year = 8303
+			}
+			title:k_dragonstone.holder ?= { 
+				create_confederation = {
+					name = e_targaryen_host_title
+				}
+				scope:new_confederation = {
+					set_variable = agot_confederation_is_targaryen_host
+					set_global_variable = {
+						name = the_targaryen_host
+						value = scope:new_confederation
+					}
+					if = {
+						limit = {
+							exists = title:e_the_reach.holder
+						}
+						add_confederation_member = title:e_the_reach.holder
+					}
+					if = {
+						limit = {
+							exists = title:e_dorne.holder
+						}
+						add_confederation_member = title:e_dorne.holder
+					}
+					set_coa = e_targaryen_host_title
+				}
+			}
+		
+			title:e_the_north.holder ?= { 
+				create_confederation = {
+					name = e_the_north
+				}
+				scope:new_confederation = {
+					set_variable = agot_confederation_is_north
+					set_global_variable = {
+						name = the_north
+						value = scope:new_confederation
+					}
+					if = {
+						limit = {
+							exists = title:e_the_vale.holder
+						}
+						add_confederation_member = title:e_the_vale.holder
+					}
+					set_coa = e_the_north
+				}
+			}
+		}
+
+		if = { 
+			limit = { 
+				current_year = 8305
+			}
+			character:Payne_16 = { 
+				release_from_prison = yes
+			}
+			character:Tarth_6 = { 
+				release_from_prison = yes
+			}
+		}
+
+		if = { 
+			limit = { 
+				current_year > 8365 
+				current_year < 8367
+			}
+
+			title:e_the_westerlands.holder ?= { 
+				create_confederation = {
+					name = e_the_western_alliance
+				}
+				scope:new_confederation = {
+					set_variable = agot_confederation_is_the_westerlands
+					set_global_variable = {
+						name = the_westerlands_confederation
+						value = scope:new_confederation
+					}
+					if = {
+						limit = {
+							exists = title:k_the_northmarch.holder
+						}
+						add_confederation_member = title:k_the_northmarch.holder
+					}
+					if = {
+						limit = {
+							exists = title:k_oldtown.holder
+						}
+						add_confederation_member = title:k_oldtown.holder
+					}
+					if = {
+						limit = {
+							exists = title:d_the_westmarch.holder
+						}
+						add_confederation_member = title:d_the_westmarch.holder
+					}
+					set_coa = e_the_westerlands
+				}
+			}
+
+			title:k_yronwood.holder = {
+			start_tributary = { contract_group = tributary_subjugated suzerain = title:e_dorne.holder }
+			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
+			add_truce_both_ways = {
+				character = title:e_dorne.holder
+				years = 5
+				name = TRUCE_TRIBUTARY
+			}
+			}
+			title:d_torrentine.holder = {
+				start_tributary = { contract_group = tributary_subjugated suzerain = title:h_the_iron_throne.holder }
+				tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
+				add_truce_both_ways = {
+					character = title:h_the_iron_throne.holder
+					years = 5
+					name = TRUCE_TRIBUTARY
+				}
+			}
+			title:d_blackmont.holder = {
+				start_tributary = { contract_group = tributary_subjugated suzerain = title:h_the_iron_throne.holder }
+				tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
+				add_truce_both_ways = {
+					character = title:h_the_iron_throne.holder
+					years = 5
+					name = TRUCE_TRIBUTARY
+				}
+			}
+			title:d_the_princes_pass.holder = {
+				start_tributary = { contract_group = tributary_subjugated suzerain = title:h_the_iron_throne.holder }
+				tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
+				add_truce_both_ways = {
+					character = title:h_the_iron_throne.holder
+					years = 5
+					name = TRUCE_TRIBUTARY
+				}
+			}
+			title:d_redmarch.holder = {
+				start_tributary = { contract_group = tributary_subjugated suzerain = title:h_the_iron_throne.holder }
+				tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
+				add_truce_both_ways = {
+					character = title:h_the_iron_throne.holder
+					years = 5
+					name = TRUCE_TRIBUTARY
+				}
+			}
+			title:d_the_stoneway.holder = {
+				start_tributary = { contract_group = tributary_subjugated suzerain = title:h_the_iron_throne.holder }
+				tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
+				add_truce_both_ways = {
+					character = title:h_the_iron_throne.holder
+					years = 5
+					name = TRUCE_TRIBUTARY
+				}
+			}
+		}
+		# Apply personal COA for specific characters at game start
+		character:Greyjoy_6 ?= {
+			every_held_title = {
+				limit = { agot_is_valid_dyn_coa_title = yes }
+				set_coa = holder.var:my_personal_coa.house
+				update_dynamic_coa = yes
+			}
+			add_character_flag = landed_coa_personalized
+			add_character_flag = { flag = claimed_personal_banner }
+		}
+		character:Redwyne_2 ?= {
+			every_held_title = {
+				limit = { agot_is_valid_dyn_coa_title = yes }
+				set_coa = holder.var:my_personal_coa.house
+				update_dynamic_coa = yes
+			}
+			add_character_flag = landed_coa_personalized
+			add_character_flag = { flag = claimed_personal_banner }
+		}
+		character:Frey_50 ?= {
+			every_held_title = {
+				limit = { agot_is_valid_dyn_coa_title = yes }
+				set_coa = holder.var:my_personal_coa.house
+				update_dynamic_coa = yes
+			}
+			add_character_flag = landed_coa_personalized
+			add_character_flag = { flag = claimed_personal_banner }
+		}
+		character:Frey_78 ?= {
+			every_held_title = {
+				limit = { agot_is_valid_dyn_coa_title = yes }
+				set_coa = holder.var:my_personal_coa.house
+				update_dynamic_coa = yes
+			}
+			add_character_flag = landed_coa_personalized
+			add_character_flag = { flag = claimed_personal_banner }
+		}
+		character:Lannister_6 ?= {
+			every_held_title = {
+				limit = { agot_is_valid_dyn_coa_title = yes }
+				set_coa = holder.var:my_personal_coa.house
+				update_dynamic_coa = yes
+			}
+			add_character_flag = landed_coa_personalized
+			add_character_flag = { flag = claimed_personal_banner }
+		}
+		character:Foote_6 ?= {
+			every_held_title = {
+				limit = { agot_is_valid_dyn_coa_title = yes }
+				set_coa = holder.var:my_personal_coa.house
+				update_dynamic_coa = yes
+			}
+			add_character_flag = landed_coa_personalized
+			add_character_flag = { flag = claimed_personal_banner }
+		}
+		character:Uller_6 ?= {
+			every_held_title = {
+				limit = { agot_is_valid_dyn_coa_title = yes }
+				set_coa = holder.var:my_personal_coa.house
+				update_dynamic_coa = yes
+			}
+			add_character_flag = landed_coa_personalized
+			add_character_flag = { flag = claimed_personal_banner }
+		}
+	}
+}
+
+tfw_north_holding_cost = {
+	effect = {
+		if = { 
+			limit = { current_year < 8305 }
+			every_county_in_region = {
+				region = world_westeros_the_north
+				add_county_modifier = agot_holding_build_speed_north
+			}
+			every_county_in_region = {
+				region = world_westeros_beyond_the_wall
+				add_county_modifier = agot_holding_build_speed_btw
+			}
+			every_county_in_region = {
+				region = world_westeros_the_wall
+				add_county_modifier = agot_holding_build_speed_north
+			}
+		}
+	}
+}

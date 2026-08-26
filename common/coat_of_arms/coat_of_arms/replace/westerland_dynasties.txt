@@ -1,0 +1,10 @@
+﻿house_FooteNG = {
+	pattern = "pattern_solid.dds"
+	color1 = "agot_yellow"
+	color2 = "agot_copper"
+	colored_emblem = {
+		color1 = "agot_copper"
+		color2 = "agot_black"
+		texture = "wl_foote.dds"
+	}
+}

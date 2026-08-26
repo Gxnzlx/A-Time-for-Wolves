@@ -1,0 +1,349 @@
+﻿historical_characters_accessories = {
+	usage = game
+	selection_behavior = max
+	priority = 2
+
+	Mutineers_1 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = northern_war_nobility_clothes
+				accessory = m_clothes_sec_northern_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = legwear
+				template = western_common_legwear
+				accessory = male_legwear_secular_western_common_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_all_fp1_cloaks
+				accessory = nw_male_clothes_furs_nw_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_04
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Mutineers_1
+			}
+		}
+	}
+	Mutineers_3 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = northern_war_nobility_clothes
+				accessory = m_clothes_sec_northern_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = legwear
+				template = western_common_legwear
+				accessory = male_legwear_secular_western_common_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_all_fp1_cloaks
+				accessory = nw_male_clothes_furs_nw_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_07
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Mutineers_3
+			}
+		}
+	}
+	Mutineers_4 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = northern_war_nobility_clothes
+				accessory = m_clothes_sec_northern_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = legwear
+				template = western_common_legwear
+				accessory = male_legwear_secular_western_common_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_all_fp1_cloaks
+				accessory = nw_male_clothes_furs_nw_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Mutineers_4
+			}
+		}
+	}
+	Mutineers_5 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = northern_war_nobility_clothes
+				accessory = m_clothes_sec_northern_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = legwear
+				template = western_common_legwear
+				accessory = male_legwear_secular_western_common_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_all_fp1_cloaks
+				accessory = nw_male_clothes_furs_nw_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_09
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Mutineers_5
+			}
+		}
+	}
+	Mutineers_12 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = northern_war_nobility_clothes
+				accessory = m_clothes_sec_northern_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = legwear
+				template = western_common_legwear
+				accessory = male_legwear_secular_western_common_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_all_fp1_cloaks
+				accessory = nw_male_clothes_furs_nw_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_06
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Mutineers_12
+			}
+		}
+	}
+	Gin_Alley_1 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = clothes
+				template = northern_war_nobility_clothes
+				accessory = m_clothes_sec_northern_war_nob_01_hi
+			}
+			accessory = {
+				mode = add
+				gene = legwear
+				template = western_common_legwear
+				accessory = male_legwear_secular_western_common_01
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = agot_all_fp1_cloaks
+				accessory = nw_male_clothes_furs_nw_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_03
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Gin_Alley_1
+			}
+		}
+	}
+	Umber_Dummy_11 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = agot_all_legwear
+				accessory = male_legwear_special_dragon_rider_01
+			}
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp2_beards_straight
+				accessory = male_beard_fp2_iberian_muslim_02
+			}
+			accessory = {
+				mode = add
+				gene = cloaks
+				template = ccp7_mino_com_01
+				accessory = male_furs_secular_fp1_nobility_03
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = ep2_hairstyles_western
+				accessory = male_hair_fp1_05
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = agot_all_clothes
+				accessory = male_clothes_secular_north_high_winter_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Umber_Dummy_11
+			}
+		}
+	}
+	Karstark_Dummy_62 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp2_beards_straight
+				accessory = male_beard_fp2_iberian_christian_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_02
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Karstark_Dummy_62
+			}
+		}
+	}
+	Karstark_62 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = fp2_beards_straight
+				accessory = male_beard_fp2_iberian_muslim_01
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = ep2_hairstyles_western
+				accessory = male_hair_fp1_08
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Karstark_62
+			}
+		}
+	}
+	Knight_Kings_Landing_3 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = beards
+				template = western_beards_straight
+				accessory = male_beard_western_03
+			}
+			accessory = {
+				mode = add
+				gene = hairstyles
+				template = agot_all_hairstyles
+				accessory = male_hair_custom_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Knight_Kings_Landing_3
+			}
+		}	
+	}
+	Clegane_Dummy_4 = {
+		dna_modifiers = {
+			accessory = {
+				mode = add
+				gene = legwear
+				template = agot_all_legwear
+				accessory = male_legwear_hedge_knight_war_01
+			}
+			accessory = {
+				mode = add
+				gene = clothes
+				template = agot_all_armors
+				accessory = male_clothes_hedge_knight_war_01
+			}
+		}
+		weight = {
+			base = 0
+			modifier = {
+				add = 100
+				this = character:Clegane_Dummy_4
+			}
+		}	
+	}
+}

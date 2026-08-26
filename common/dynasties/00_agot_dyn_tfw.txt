@@ -1,0 +1,16 @@
+﻿dynn_Pedraatho = {
+	name = "Pedraatho"
+	culture = "braavosi"
+	# motto = "dynn_Pedraatho_motto"
+}
+
+dynn_Jacobs = {
+	name = "Jacobs"
+	culture = "crownlander"
+	# motto = "dynn_Jacobs_motto"
+}
+
+dynn_Unused = {
+	name = "Unused"
+}
+

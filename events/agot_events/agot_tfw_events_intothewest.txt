@@ -1,0 +1,140 @@
+﻿namespace = agot_tfw_intothewest
+agot_tfw_intothewest.0001 = {
+	type = character_event
+	title = bookmark.tfw.t
+	desc = bookmark.tfw.desc_intro
+	theme = travel_sea
+	override_background = { reference = docks }
+	override_effect_2d = {
+		trigger = {
+			exists = scope:rain_day
+		}
+  		reference = rain	
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_succession"
+	}
+
+	option = {
+		name = bookmark.tfw.a
+
+		custom_tooltip = bookmark.tfw.a.tt
+
+		trigger_event = { id = agot_tfw_intothewest.0002 days = 5 }
+
+		ai_chance = {
+			base = 20
+		}
+	}
+	
+	option = {
+		name = bookmark.tfw.b
+
+		custom_tooltip = bookmark.tfw.b.tt
+
+		ai_chance = {
+			base = 80
+		}
+	}
+}
+
+
+agot_tfw_intothewest.0002 = {
+	type = character_event
+	title = bookmark.tfw.t
+	desc = bookmark.tfw.desc_2
+	theme = travel_sea
+	override_background = { reference = docks }
+	override_effect_2d = {
+		trigger = {
+			exists = scope:rain_day
+		}
+  		reference = rain	
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_succession"
+	}
+
+	option = {
+		name = bookmark.tfw.c
+
+		custom_tooltip = bookmark.tfw.c.tt
+
+		trigger_event = { id = agot_tfw_intothewest.0003 days = 7 }
+
+		ai_chance = {
+			base = 80
+		}
+	}
+	
+	option = {
+		name = bookmark.tfw.d
+
+		custom_tooltip = bookmark.tfw.d.tt
+
+		ai_chance = {
+			base = 20
+		}
+	}
+}
+
+agot_tfw_intothewest.0003 = {
+	type = character_event
+	title = bookmark.tfw.t
+	desc = bookmark.tfw.desc_3
+	theme = travel_sea
+	override_background = { reference = ocean }
+	override_effect_2d = {
+		trigger = {
+			exists = scope:rain_day
+		}
+  		reference = rain	
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_succession"
+	}
+
+	option = {
+		name = bookmark.tfw.e
+
+		custom_tooltip = bookmark.tfw.e.tt
+
+		trigger_event = { id = agot_tfw_intothewest.0004 }
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+
+agot_tfw_intothewest.0004 = {
+	type = character_event
+	title = bookmark.tfw.t
+	desc = bookmark.tfw.desc_3
+	hidden = yes
+
+	immediate = {
+
+		death = { death_reason = death_lost_at_sea }
+
+	}
+}

@@ -1,0 +1,5 @@
+﻿d_laamp_merc_golden_company = {
+	8304.12.25 = { 
+		holder = Fossoway_7 # Canon, Franklyn Flowers
+	}
+}

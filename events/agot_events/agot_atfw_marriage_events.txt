@@ -1,0 +1,301 @@
+﻿namespace = atfw_marriage_events
+
+atfw_marriage_events.0001 = {
+	type = character_event
+	title = atfw_marriage_events.0001.t
+	desc = atfw_marriage_events.0001.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+		is_married = no
+		is_betrothed = no
+	}
+
+	immediate = {
+		character:Reed_2 = {
+			save_scope_as = Reed_2_scope
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:Reed_2_scope
+		animation = personality_bold
+	}
+
+	option = { # Accept marriage with Meera Reed
+		name = atfw_marriage_events.0001.a
+
+		trigger = {
+			scope:Reed_2_scope = {
+				is_alive = yes
+				is_married = no
+				is_betrothed = no
+			}
+		}
+
+		scope:Reed_2_scope = {
+			marry = root
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Decline marriage
+		name = atfw_marriage_events.0001.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+atfw_marriage_events.0002 = {
+	type = character_event
+	title = atfw_marriage_events.0002.t
+	desc = atfw_marriage_events.0002.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+		is_married = no
+		is_betrothed = no
+	}
+
+	immediate = {
+		character:Hardyng_5 = {
+			save_scope_as = Hardyng_5_scope
+		}
+		character:Arryn_8 = {
+			save_scope_as = Arryn_8_scope
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:Hardyng_5_scope
+		animation = personality_bold
+	}
+
+	option = { # Accept matrilineal marriage with Harry the heir
+		name = atfw_marriage_events.0002.a
+
+		trigger = {
+			scope:Hardyng_5_scope = {
+				is_alive = yes
+				is_married = no
+				is_betrothed = no
+			}
+		}
+
+		scope:Hardyng_5_scope = {
+			marry_matrilineal = root
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Decline marriage
+		name = atfw_marriage_events.0002.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+atfw_marriage_events.0003 = {
+	type = character_event
+	title = atfw_marriage_events.0003.t
+	desc = atfw_marriage_events.0003.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+		is_married = no
+		is_betrothed = no
+	}
+
+	immediate = {
+		character:Baratheon_9 = {
+			save_scope_as = Baratheon_9_scope
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:Baratheon_9_scope
+		animation = personality_bold
+	}
+
+	option = { # Accept marriage with Gendry The bull
+		name = atfw_marriage_events.0003.a
+
+		trigger = {
+			scope:Baratheon_9_scope = {
+				is_alive = yes
+				is_married = no
+				is_betrothed = no
+			}
+		}
+
+		scope:Baratheon_9_scope = {
+			marry = root
+		}
+
+		ai_chance = {
+			base = 20
+		}
+	}
+
+	option = { # Decline marriage
+		name = atfw_marriage_events.0003.b
+
+		ai_chance = {
+			base = 80
+		}
+	}
+}
+
+atfw_marriage_events.0004 = {
+	type = character_event
+	title = atfw_marriage_events.0004.t
+	desc = atfw_marriage_events.0004.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+		is_married = no
+		is_betrothed = no
+	}
+
+	immediate = {
+		character:Rayder_hh_3 = {
+			save_scope_as = Rayder_hh_3_scope
+		}
+		character:Baratheon_3 = {
+			save_scope_as = Baratheon_3_scope
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:Rayder_hh_3_scope
+		animation = personality_bold
+	}
+
+	option = { # Accept marriage with Princess Val
+		name = atfw_marriage_events.0004.a
+
+		trigger = {
+			scope:Rayder_hh_3_scope = {
+				is_alive = yes
+				is_married = no
+				is_betrothed = no
+			}
+		}
+
+		scope:Rayder_hh_3_scope = {
+			marry = root
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Decline marriage
+		name = atfw_marriage_events.0004.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+atfw_marriage_events.0005 = { # Accept regular marriage with Harry the heir
+	type = character_event
+	title = atfw_marriage_events.0005.t
+	desc = atfw_marriage_events.0005.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+	}
+
+	immediate = {
+		character:Stark_Dummy_8 = {
+			save_scope_as = Stark_Dummy_8_scope
+		}
+		character:Hardyng_5 = {
+			save_scope_as = Hardyng_5_scope
+		}
+		character:Arryn_8 = {
+			save_scope_as = Arryn_8_scope
+		}
+	}
+
+	left_portrait = {
+		character = scope:Stark_Dummy_8_scope
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:Hardyng_5_scope
+		animation = personality_bold
+	}
+
+	option = { # Accept marriage
+		name = atfw_marriage_events.0005.a
+
+		trigger = {
+			scope:Stark_Dummy_8_scope = {
+				is_alive = yes
+				is_married = no
+				is_betrothed = no
+			}
+			scope:Hardyng_5_scope = {
+				is_alive = yes
+				is_married = no
+				is_betrothed = no
+			}
+		}
+
+		scope:Stark_Dummy_8_scope = {
+			marry = scope:Hardyng_5_scope
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = { # Decline marriage
+		name = atfw_marriage_events.0005.b
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

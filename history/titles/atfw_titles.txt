@@ -1,0 +1,5893 @@
+﻿#hegemon########################################################################
+ h_the_iron_throne = {
+	8303.10.22 = { 
+		holder = Lannister_6
+		effect = {
+			set_coa = house_BaratheonKL
+		}
+	}
+	8304.12.25 = { 
+		holder = Targaryen_9
+		effect = {
+			set_coa = h_the_iron_throne
+		}
+	}
+	8304.12.27 = { 
+		holder = 0
+	}
+	8305.1.1 = { 
+		holder = Stark_Dummy_10
+		succession_laws = { equal_law feudal_elective_succession_law }
+		effect = {
+			title:h_the_iron_throne = { set_title_name = e_westeros }
+		}
+	}
+	8359.1.1 = {
+		holder = Tully_tfw_1
+	}
+	8366.1.1 = {
+		holder = Lannister_tfw_4
+	}
+}
+h_targaryen_host_title = {
+	8303.12.12 = {
+		holder = Targaryen_9
+		liege = 0
+	}
+	8304.12.26 = { 
+		holder = 0
+	}
+}
+
+
+################################################################################
+
+#btw###########################################################################
+	################################first forest
+	c_bronzebrook = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_corpse_cove = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_denbarrows = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hollow_marshes = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hulder_lake = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_tusk_point = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8313.3.3 = {
+			holder = Wooden_Ear_2
+			government = tribal_government
+		}
+	}
+	c_auldhalls = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_bentbrush = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8313.7.3 = {
+			holder = Weeper_1
+			government = tribal_government
+		}
+	}
+	c_dellwater = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_goutweed = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_coldwood = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_forests_end = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_night_harbor = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_pyrewater = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_shadow_break = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_silent_hills = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_bone_lhark_vale = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_eagles_grove = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_gravewash = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_omenwood = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_slurry_shore = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_crasters_keep = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_crows_creek = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_huskmere = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_yarrow = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_whitetree = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_blazewood = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_bow_mounds = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_cursed_grounds = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_free_vale = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hornpoint_way = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_spearwood = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_deadwood_grove = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_knuckle_ridge = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_misted_vale = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_oldweir = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_restburn = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_warmwood = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_stagsdol = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_brokenwood = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hardhome = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8314.12.6 = {
+			holder = Magnar_75
+			government = lp_feudal_government
+			effect = { set_county_culture = culture:skagosi }
+		}
+	}
+	b_hardhome_2 = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8314.12.6 = {
+			holder = Magnar_75
+			government = lp_feudal_government
+		}
+	}
+	b_hardhome_3 = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_hardhome_4 = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_storrolds_point = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_skittering_cove = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_the_bay_of_seals = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_woodvetch = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	#############################frost fangs
+	c_dirkviss = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_mammoth_cairns = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_skirling_pass = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_rotten_valley = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_wurns_head = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_fangspear = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_forktop = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hunters_fall = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_skull_peaks = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_swill_rock = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_the_gorge = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_chained_maw = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_sheltered_grotto = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_frost_caves = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_ramsledge = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_giants_stair = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_ironskin = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_horskes_fior = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_owl_mountain_path = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_the_doorstep = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_wanderers_ridge = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_cape_walrus = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_duskremr = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_duskrpeak = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+	}
+	c_taldrsek = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8313.3.3 = {
+			holder = Giantsbane_2
+			government = tribal_government
+			liege = 0
+		}
+	}
+	c_wealdstone = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_white_tusk = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	###############################frozen shore
+	c_bone_hummock = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_greytuft = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_lorn_point = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_rotting_ice = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_still_flow = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_voltussyk = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_echoing_flats = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_frozen_drop = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_the_slip = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_toothline = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_yeager_nest = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_white_bear_slope = {
+		8300.1.29 = {
+			holder = Great_Other
+		}
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_brevelyk = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_glintstone = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_musklight = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_sheer_wall = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_final_feld = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_herdway = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_pulkbush = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_thawed_haven = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_frozen_gulch = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hide_point = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_reindeer_heath = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_riverpelt = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_selkie_sund = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_cracked_sund = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_shining_ledge = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_shurl_arer = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_spider_flow = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_trappers_rest = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_horkstone = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_maulnock_gap = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_pack_land = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	#############################the ice lakes
+	c_bloodbend = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hoarmarrow = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_idle_barrens = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_the_frigid_rise = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_wights_well = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_axe_camp = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_clear_ice_lake = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_gerras_dryn = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_hail_coast = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_lhark_vakar = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_torch_river = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_vurk_ryg = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_basordryn = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_ask_vith = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_roveggs_spine = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	d_milkwater = {
+		8300.1.29 = {
+			holder = 0
+		}
+	}
+	d_storrolds_point = {
+		8300.1.29 = {
+			holder = 0
+		}
+	}
+	################################thenn
+	c_krih = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_srunmued = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8314.12.6 = {
+			holder = Varrag_113
+			government = lp_feudal_government
+		}
+	}
+	c_thurmiiyk = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_tun_vunag = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8314.12.6 = {
+			holder = Varrag_113
+			government = lp_feudal_government
+		}
+	}
+	c_gludak = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8314.12.6 = {
+			holder = Sruthor_241
+			government = tribal_government
+		}
+	}
+	c_ndurmyt = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_vark = {
+		8303.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_voss_voln = {
+	8303.4.28 = {
+		holder = Wilderness_Empress
+		government = wilderness_government	
+	}
+	8314.12.6 = {
+		holder = Sril_160
+		government = tribal_government
+	}
+}
+
+
+###############################################################################
+
+#the wall########################################################################
+	k_the_wall = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = 0
+			de_jure_liege = e_the_north
+		}
+	}
+	d_the_wall = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = 0
+			de_jure_liege = k_last_lands
+		}
+	}
+	c_castle_black = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+	}
+	c_the_nightfort = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8313.6 = {
+			holder = Kell_55
+			government = lp_feudal_government	
+		}
+	}
+	b_deep_lake = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_queensgate = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_oakenshield = {
+		8303.11.7 = {
+			holder = Tollet_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_icemark = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_woodswatch_by_the_pool = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_the_shadow_tower = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8313.6 = {
+			holder = Kell_55
+			government = lp_feudal_government	
+		}
+	}
+	b_westwatch_by_the_bridge = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_sentinel_stand = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_stonedoor = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_greyguard = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_hoarfrost_hill = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	c_eastwatch = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8315.3.6 = {
+			holder = Magnar_75
+			government = lp_feudal_government
+			effect = { set_county_culture = culture:skagosi }
+		}
+	}
+	b_sable_hall = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_rimegate = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_long_barrow = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_the_torches = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	b_greenguard = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+	}
+	d_brandons_gift = {
+		8304.4.28 = {
+			holder = 0
+			liege = e_the_north
+			de_jure_liege = e_the_north
+		}
+	}
+	c_weatherback_ridge = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+			de_jure_liege = d_the_northern_mountains
+		}
+		8313.6 = {
+			holder = Kell_55
+			government = lp_feudal_government	
+		}
+	}
+	c_moles_town = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			de_jure_liege = d_the_wall
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8310.11.11 = {
+			holder = Mother_Mole_1
+			government = lp_feudal_government	
+		}
+	}
+	c_hoarburn = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+			de_jure_liege = d_last_lands
+		}
+		8313.6.6 = {
+			holder = Sixskins_5
+			government = tribal_government
+		}
+	}
+	b_hoarburn = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8313.6.6 = {
+			holder = Sixskins_5
+			government = tribal_government
+		}
+	}
+	c_norlinton = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Knott_2
+			de_jure_liege = d_the_northern_mountains
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8310.8.9 = {
+			holder = Knott_2
+			government = lp_feudal_government	
+		}
+	}
+	b_waysrest = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+	}
+	c_whitecross = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Umber_15
+			de_jure_liege = d_last_lands
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8310.6.6 = {
+			holder = Umber_15
+			government = lp_feudal_government	
+		}
+	}
+	b_old_hedge = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+	}
+	c_giantsbeard = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Umber_15
+			de_jure_liege = d_last_lands
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8309.1.1 = {
+			holder = Umber_15
+			government = lp_feudal_government	
+		}
+	}
+	b_stonestead = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+	}
+	c_boreharrow = {
+		8303.1.25 = {
+			holder = Tollett_6
+		}
+		8304.4.28 = {
+			holder = Norrey_1
+			de_jure_liege = d_the_northern_mountains
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8310.6.6 = {
+			holder = Norrey_1
+			government = lp_feudal_government	
+		}
+	}
+	b_antlerfell = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+	}
+
+
+#################################################################################
+
+#the north##############################################################################
+	e_the_north = {
+		8299.12.15 = {
+			#holder = 0
+		}
+		8303.7.13 = {
+			holder = Bolton_5
+		}
+		8303.11.7 = {
+			holder = Stark_7
+			liege = 0
+		}
+		8305.1.1 = { 
+			de_jure_liege = 0
+			holder = Stark_Dummy_8
+		}
+		8361.1.1 = {
+			holder = Stark_tfw_1
+		}
+	}
+	k_winterfell = {
+		8303.7.13 = {
+			holder = Bolton_5
+			liege = 0
+		}
+		8303.11.7 = {
+			holder = Stark_7
+		}
+		8305.1.1 = { 
+			liege = e_the_north
+			de_jure_liege = e_the_north
+			holder = Stark_Dummy_8
+		}
+		8361.1.1 = {
+			holder = Stark_tfw_1
+		}
+	}
+	d_winterfell = {
+		8303.11.7 = {
+			holder = Stark_7
+		}
+		8305.1.1 = { 
+			holder = Stark_Dummy_8
+		}
+		8361.1.1 = {
+			holder = Stark_tfw_1
+		}
+	}
+	c_winterfell = {
+		8303.11.7 = {
+			holder = Stark_7
+		}
+		8305.1.1 = { 
+			holder = Stark_Dummy_8
+		}
+		8361.1.1 = {
+			holder = Stark_tfw_1
+		}
+	}
+	c_longstreams = {
+		8299.9.12 = {
+			holder = Baratheon_3
+		}
+		8301.5.1 = { 
+			holder = Long_1
+		}
+		8303.1.30 = {
+			holder = Stark_7
+			liege = 0
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government
+		}
+		8305.1.1 = {
+			holder = Long_1
+			government = lp_feudal_government
+			liege = e_the_north
+		}
+	}
+	c_the_cinders = {
+		8303.11.7 = { 
+			liege = e_the_north
+		}
+		8305.1.1 = { 
+			liege = d_hornwood
+		}
+	}
+	c_velvet_grove = {
+		8303.11.7 = { 
+			liege = e_the_north
+		}
+		8305.1.1 = { 
+			liege = d_hornwood
+		}
+	}
+	c_wraithfeld = {
+		8304.12.31 ={
+			liege = d_hornwood
+			de_jure_liege = d_hornwood
+		}
+	}
+	c_branch_head = {
+		8304.12.31 ={
+			liege = d_hornwood
+			de_jure_liege = d_hornwood
+		}
+	}
+	d_karhold = {
+		8299.11.8 = {
+			holder = Karstark_Dummy_62
+		}
+		8303.11.8 = {
+			holder = Karstark_19
+		}
+	}
+	c_karhold = {
+		8299.11.8 = {
+			holder = Karstark_Dummy_62
+		}
+		8303.11.8 = {
+			holder = Karstark_19
+		}
+	}
+	c_seal_shore = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8307.1.1 = {
+			holder = Greenleaf_19
+			government = lp_feudal_government
+		}
+	}
+	c_woodhaven = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8306.1.1 = {
+			holder = Greenleaf_19
+			government = lp_feudal_government
+		}
+	}
+	k_skagos = {
+		8315.3.6 = { 
+			de_jure_liege = e_the_north
+			liege = 0
+			holder = Magnar_75
+		}
+	}
+	d_skagos = {
+		8310.1.1 = {
+			holder = Magnar_69
+			liege = e_the_north
+		}
+		8315.3.6 = {
+			holder = Magnar_75
+			liege = 0
+		}
+	}
+	c_drihisesk = {
+		8307.1.1 = {
+			holder = Magnar_69
+		}
+		8315.3.6 = {
+			holder = Magnar_75
+		}
+	}
+	c_skane = {
+		8307.1.1 = {
+			holder = Magnar_69
+		}
+		8315.3.6 = {
+			holder = Magnar_75
+		}
+	}
+	c_veksdaenk = {
+		8312.3.6 = {
+			liege = d_skagos
+		}
+	}
+	c_dreggan_arer = {
+		8312.12.27 = {
+			liege = d_skagos
+		}
+	}
+	c_rom_pursk = {
+		8313.5.11 = {
+			liege = d_skagos
+		}
+	}
+	c_sudyktig = {
+		8313.7.9 = {
+			liege = d_skagos
+		}
+	}
+	c_molksyr = {
+		8315.12.1 = {
+			liege = d_skagos
+		}
+	}
+	d_the_northern_mountains = {
+		8309.1.1 = {
+		}
+	}
+	c_holdwater = {
+		8300.1.29 = {
+			liege = k_dragonstone
+		}
+		8301.5.1 = { 
+			liege = e_the_north
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8309.1.1 = {
+			holder = Wull_2
+			government = lp_feudal_government
+			liege = 0
+		}
+	}
+	c_arrendell = {
+		8300.1.29 = {
+			liege = k_dragonstone
+		}
+		8301.5.1 = { 
+			liege = e_the_north
+		}
+		8306.1.1 = {
+			liege = 0
+		}
+	}
+	c_braidmont = {
+		8300.1.29 = {
+			liege = k_dragonstone
+		}
+		8301.5.1 = { 
+			liege = e_the_north
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8310.1.1 = {
+			holder = Knott_2
+			government = lp_feudal_government	
+			liege = 0
+		}
+	}
+	c_breakstone_hill = {
+		8300.1.29 = {
+			liege = k_dragonstone
+		}
+		8301.5.1 = { 
+			liege = e_the_north
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8307.1.1 = {
+			government = lp_feudal_government
+			holder = Flint_9
+			liege = 0
+		}
+	}
+	c_carvestone = {
+		8300.1.29 = {
+			liege = k_dragonstone
+		}
+		8301.5.1 = { 
+			government = lp_feudal_government
+			liege = e_the_north
+		}
+		8306.1.1 = {
+			liege = 0
+		}
+	}
+	c_pinesend = {
+		8300.1.29 = {
+			liege = k_dragonstone
+		}
+		8301.5.1 = { 
+			liege = e_the_north
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8305.1.1 = {
+			government = lp_feudal_government
+			holder = Liddle_1
+		}
+	}
+	c_scar_mountain = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8308.1.1 = {
+			holder = Wull_2
+			government = lp_feudal_government	
+			liege = 0
+		}
+	}
+	c_stoutfast = {
+		8300.1.29 = {
+			liege = k_dragonstone
+		}
+		8301.5.1 = { 
+			liege = e_the_north
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8310.1.1 = {
+			holder = Norrey_1
+			government = lp_feudal_government	
+			liege = 0
+		}
+	}
+	c_trenchstone = {
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+			de_jure_liege = d_the_northern_mountains
+		}
+		8309.1.1 = {
+			holder = Wull_2
+			government = lp_feudal_government
+			liege = 0
+		}
+	}
+	k_the_wolfswood = {
+		2570.1.1 = {
+			holder = Warg_King_1
+		}
+		2593.1.2 = {
+			holder = 0
+		}
+		5050.1.1 = {
+			holder = Greenwood_1
+		}
+		5121.1.1 = {
+			holder = Blackwood_132
+		}
+		5126.1.1 = {
+			holder = Glover_54
+		}
+		5140.1.2 = { # Flavorization bugfix
+			holder = 0
+		}
+		6500.1.1 = {
+			liege = e_the_north
+			effect = {
+				#save_title_name_change_data = yes
+				agot_turn_westerosi_kingdom_into_lordship_history_effect = { YEAR = 6500 }
+			}
+		}
+		7868.1.1 = {
+			holder = Glover_8
+		}
+		7880.1.1 = {
+			holder = Glover_9
+		}
+		7888.1.1 = {
+			holder = Glover_11
+		}
+		7939.1.1 = {
+			holder = Glover_15
+		}
+		7953.1.1 = {
+			holder = Glover_33
+		}
+		7970.1.1 = {
+			holder = Glover_34
+		}
+		7984.1.1 = {
+			holder = Glover_39
+		}
+		8018.1.1 = {
+			holder = Glover_40
+		}
+		8060.1.1 = {
+			holder = Glover_41
+		}
+		8088.1.1 = {
+			holder = Glover_19
+		}
+		8091.1.1 = {
+			holder = Glover_20
+		}
+		8108.1.1 = {
+			holder = Glover_22
+		}
+		8145.1.1 = {
+			holder = Glover_25
+		}
+		8178.1.1 = {
+			holder = Glover_26
+		}
+		8192.1.1 = {
+			holder = Glover_27
+		}
+		8222.1.1 = {
+			holder = Glover_29
+		}
+		8249.1.1 = {
+			holder = Glover_1
+		}
+		8284.1.1 = {
+			holder = Glover_4
+		}
+		8299.12.15 = {
+			holder = Glover_5
+		}
+	}
+	d_the_wolfswood = {
+		8299.12.15 = {
+			holder = Glover_5
+		}
+	}
+	c_deepwood = {
+		8299.12.15 = {
+			holder = Glover_5
+		}
+	}
+	d_sea_dragon_point = {
+		1450.1.1 = {
+			liege = k_the_wolfswood
+			effect = {
+				title:d_sea_dragon_point = {
+					set_capital_county = title:c_cloudforest
+				}
+			}
+		}
+		7856.1.1 = {
+			holder = Moss_6
+		}
+		7886.1.1 = {
+			holder = Moss_7
+		}
+		7908.1.1 = {
+			holder = Moss_9
+		}
+		7935.1.1 = {
+			holder = Moss_11
+		}
+		7952.1.1 = {
+			holder = Moss_18
+		}
+		7985.1.1 = {
+			holder = Moss_22
+		}
+		8001.1.1 = {
+			holder = Moss_25
+		}
+		8038.1.1 = {
+			holder = Moss_26
+		}
+		8047.1.1 = {
+			holder = Moss_33
+		}
+		8073.1.1 = {
+			holder = Moss_36
+		}
+		8103.1.1 = {
+			holder = Moss_41
+		}
+		8126.1.1 = {
+			holder = Moss_46
+		}
+		8165.1.1 = {
+			holder = Moss_47
+		}
+		8178.1.1 = {
+			holder = Moss_48
+		}
+		8198.1.1 = {
+			holder = Moss_52
+		}
+		8222.1.1 = {
+			holder = Moss_56
+		}
+		8255.1.1 = {
+			holder = Moss_1
+		}
+	}
+	c_highpoint = {
+		1.1.1 = {
+			de_jure_liege = d_the_dreadfort
+			liege = d_the_dreadfort
+		}
+		8303.11.1 = {
+			holder = Whitehill_4
+			liege = k_red_lands
+		}
+		8303.11.7 = {
+			liege = e_the_north
+		}
+	}
+	c_cloudforest = {
+		8304.12.31 ={
+			de_jure_liege = d_sea_dragon_point
+		}
+	}
+	c_flatmire = {
+		8304.12.31 ={
+			liege = d_sea_dragon_point
+		}
+	}
+	c_stillport = {
+		8304.12.31 ={
+			liege = d_sea_dragon_point
+		}
+	}
+	c_the_pale = {
+		8304.12.31 ={
+			de_jure_liege = d_frostfields
+			liege = d_last_lands
+		}
+	}
+	c_sea_dragon_point = {
+		8304.12.31 ={
+			liege = d_sea_dragon_point
+		}
+	}
+	d_grey_downs = {
+		8299.12.15 = {
+			de_jure_liege = k_barrows_and_rills
+		}
+	}
+	d_last_lands = {
+		8300.6.02 = {
+			holder = Umber_Dummy_11
+			liege = e_the_north
+		}
+		8303.11.7 = {
+			holder = Umber_11_son
+		}
+		8304.4.28 = {
+			holder = Umber_15
+		}
+	}
+	c_last_hearth = {
+		8300.6.02 = {
+			holder = Umber_Dummy_11
+		}
+		8303.11.7 = {
+			holder = Umber_11_son
+		}
+		8304.4.28 = {
+			holder = Umber_15
+		}
+	}
+	c_sullen_hills = {
+		8300.6.02 = {
+			holder = Umber_Dummy_11
+		}
+		8303.11.7 = {
+			holder = Umber_11_son
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8310.1.1 = {
+			holder = Umber_15
+		}
+	}
+	c_whitemore = {
+		8300.6.02 = {
+			holder = Umber_Dummy_11
+		}
+		8303.11.7 = {
+			holder = Umber_11_son
+		}
+		8304.4.28 = {
+			holder = Wilderness_Empress
+			government = wilderness_government	
+		}
+		8308.1.1 = {
+			holder = Umber_15
+			government = lp_feudal_government	
+		}
+	}
+	k_red_lands = {
+		8303.11.7 = {
+			holder = Stark_7
+		}
+		8305.1.1 = { 
+			holder = 0
+		}
+	}
+	d_the_dreadfort = {
+		8303.11.7 = {
+			holder = Stark_7
+		}
+		8303.11.7 = { 
+			holder = Giantsbane_1
+		}
+	}
+	c_the_dreadfort = {
+		8303.11.7 = {
+			holder = Stark_7
+		}
+		8303.11.7 = { 
+			holder = Giantsbane_1
+		}
+	}
+	c_grimm_lake = {
+		8303.11.7 ={
+			liege = d_the_dreadfort
+		}
+	}
+	c_rightwell = {
+		8303.11.7 ={
+			liege = d_the_dreadfort
+		}
+	}
+	d_bear_island = {
+		8299.12.15 = {
+			holder = Mormont_9
+			de_jure_liege = k_winterfell
+		}
+		8304.6.1 = {
+			holder = Mormont_10
+		}
+	}
+	c_mormont = {
+		8299.12.15 = {
+			holder = Mormont_9
+		}
+		8304.6.1 = {
+			holder = Mormont_10
+		}
+	}
+	d_hornwood = {
+		8305.1.1 = { 
+			holder = Hornwood_4
+		}
+	}
+	c_hornwood = {
+		8305.1.1 = { 
+			holder = Hornwood_4
+		}
+	}
+	c_calfton = {
+		8303.11.7 = { 
+			liege = e_the_north
+		}
+		8305.1.1 = { 
+			holder = Hornwood_4
+		}
+	}
+	c_matchwood = {
+		8304.12.26 = { 
+			de_jure_liege = d_hornwood
+			liege = d_hornwood		
+		}
+	}
+	c_the_weep = {
+		8305.1.1 = { 
+			de_jure_liege = d_crestview
+			liege = d_crestview
+		}
+	}
+	c_overton = {
+		8303.11.7 = { 
+			liege = e_the_north
+		}
+		8303.11.7 = { 
+			de_jure_liege = d_the_dreadfort
+			liege = d_the_dreadfort
+		}
+	}
+	d_everstead = {
+		6510.1.1 = {
+			liege = k_the_white_knife
+		}
+		7845.1.1 = {
+			holder = Woolfield_8
+		}
+		7856.1.1 = {
+			holder = Woolfield_10
+		}
+		7896.1.1 = {
+			holder = Woolfield_18
+		}
+		7906.1.1 = {
+			holder = Woolfield_19
+		}
+		7909.1.1 = {
+			holder = Woolfield_25
+		}
+		7967.1.1 = {
+			holder = Woolfield_26
+		}
+		7989.1.1 = {
+			holder = Woolfield_28
+		}
+		8017.1.1 = {
+			holder = Woolfield_31
+		}
+		8040.1.1 = {
+			holder = Woolfield_36
+		}
+		8077.1.1 = {
+			holder = Woolfield_38
+		}
+		8087.1.1 = {
+			holder = Woolfield_39
+		}
+		8135.1.1 = {
+			holder = Woolfield_48
+		}
+		8148.1.1 = {
+			holder = Woolfield_55
+		}
+		8163.1.1 = {
+			holder = Woolfield_58
+		}
+		8195.1.1 = {
+			holder = Woolfield_64
+		}
+		8233.1.1 = {
+			holder = Woolfield_67
+		}
+		8249.1.1 = {
+			holder = Woolfield_73
+		}
+		8292.1.1 = {
+			holder = Woolfield_1
+		}
+	}
+
+
+######################################################################################
+
+#dorne#########################################################################
+	e_dorne = {
+		8303.8.21 = {
+			holder = Uller_6
+			liege = 0
+		}
+		# 8303.12.12 = {
+		# 	liege = h_targaryen_host_title
+		# }
+		8304.2.2 = {
+			holder = Martell_20
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	k_the_greenblood = {
+		8303.8.21 = {
+			holder = Uller_6
+			liege = 0
+		}
+		8304.2.2 = {
+			holder = Martell_20
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_sunspear = {
+		8303.8.21 = {
+			holder = Uller_6
+		}
+		8303.8.22 = {
+			holder = Martell_20
+		}
+	}
+	c_sunspear = {
+		8303.8.21 = {
+			holder = Uller_6
+		}
+		8304.2.2 = {
+			holder = Martell_20
+		}
+	}
+	b_water_gardens = {
+		8303.8.21 = {
+			holder = Uller_6
+		}
+		8304.2.2 = {
+			holder = Martell_20
+		}
+	}
+	c_plankytown = {
+		8303.8.21 = {
+			holder = Uller_6
+		}
+		8303.8.22 = {
+			holder = Martelsdl_20
+		}
+	}
+	d_torrentine = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_blackmont = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_the_princes_pass = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_redmarch = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_the_stoneway = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	k_yronwood = {
+	8366.1.1 = {
+		liege = 0
+	}
+}
+
+
+#################################################################################
+
+#crownlands#######################################################################
+	e_the_crownlands = {
+		8303.10.22 = { 
+			holder = Lannister_6
+		}
+		8304.12.25 = { 
+			holder = Targaryen_9
+		}
+		8304.12.26 = { 
+			holder = 0
+		}
+		8305.1.1 = { 
+			holder = Stark_Dummy_10
+			succession_laws = { equal_law feudal_elective_succession_law }
+		}
+		8359.1.1 = {
+			holder = Tully_tfw_1
+		}
+		8366.1.1 = {
+			holder = Lannister_tfw_4
+		}
+	}
+	k_the_blackwater = {
+		8303.10.22 = { 
+			holder = Lannister_6
+		}
+		8304.12.25 = { 
+			holder = Targaryen_9
+		}
+		8304.12.26 = { 
+			holder = 0
+		}
+		8305.1.1 = { 
+			holder = Stark_Dummy_10
+			succession_laws = { equal_law feudal_elective_succession_law }
+		}
+		8359.1.1 = {
+			holder = Tully_tfw_1
+		}
+		8366.1.1 = {
+			holder = Lannister_tfw_4
+		}
+	}
+	d_kings_landing = {
+		8303.10.22 = { 
+			holder = Lannister_6
+		}
+		8304.12.25 = { 
+			holder = Targaryen_9
+		}
+		8304.12.26 = { 
+			holder = 0
+		}
+		8305.1.1 = { 
+			holder = Stark_Dummy_10
+			succession_laws = { equal_law feudal_elective_succession_law }
+		}
+		8359.1.1 = {
+			holder = Tully_tfw_1
+		}
+		8366.1.1 = {
+			holder = Lannister_tfw_4
+		}
+	}
+	c_kings_landing = {
+		8303.10.22 = { 
+			holder = Lannister_6
+		}
+		8304.12.25 = { 
+			holder = Targaryen_9
+		}
+		8305.1.1 = { 
+			holder = Stark_Dummy_10
+			succession_laws = { equal_law feudal_elective_succession_law }
+		}
+		8359.1.1 = {
+			holder = Tully_tfw_1
+		}
+		8366.1.1 = {
+			holder = Lannister_tfw_4
+		}
+	}
+	d_stokeworth = {
+		8300.5.9 = {
+			holder = Blackwater_1
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			holder = Stokeworth_6
+		}
+	}
+	c_stokeworth = {
+		8300.5.9 = {
+			holder = Blackwater_1
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			holder = Stokeworth_6
+		}
+	}
+	d_rosby = {
+		8300.5.9 = {
+			holder = Blackwater_1
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = {
+			holder = Frey_78
+		}
+	}
+	c_rosby = {
+		8300.5.16 = {
+			holder = Frey_78
+		}
+	}
+	k_kingswood = {
+		8309.9.29 = {
+			holder = Fell_4
+			de_jure_liege = e_the_crownlands
+			liege = e_the_crownlands
+		}
+	}
+	d_kingswood = {
+		8301.5.1 = { 
+			liege = h_the_iron_throne
+		}			
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+		8309.9.29 = {
+			holder = Fell_4
+			de_jure_liege = k_kingswood
+		}
+	}
+	d_greatstock = {
+		8301.5.1 = { 
+			liege = h_the_iron_throne
+		}			
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+		8309.9.29 = {
+			de_jure_liege = k_kingswood
+			liege = k_kingswood
+		}
+		8341.4.12 = {
+			holder = Peasebury_3
+		}
+	}
+	c_poddingfield = {
+		8341.4.12 = {
+			holder = Peasebury_3
+		}
+	}
+	c_blythedurn = {
+		8341.4.12 = {
+			holder = Peasebury_3
+		}
+	}
+	c_oldfield = {
+		8341.4.12 = {
+			holder = Peasebury_3
+		}
+	}
+	k_tumbleton = {
+		8310.1.1 = {
+			holder = Footly_1
+			de_jure_liege = e_the_crownlands
+			liege = e_the_crownlands
+		}
+	}
+	d_tumbleton = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = k_tumbleton
+		}
+	}
+	d_heartland_heights = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = k_tumbleton
+			liege = k_tumbleton
+		}
+	}
+	d_atranta = {
+		8310.1.1 = {
+			de_jure_liege = e_the_crownlands
+			liege = e_the_crownlands
+		}
+	}
+	d_lakehaven = {
+		8196.11.22 = {
+			de_jure_liege = k_armistia
+		}
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = {
+			liege = e_the_riverlands
+		}
+		8310.1.1 = {
+			de_jure_liege = e_the_crownlands
+			liege = e_the_crownlands
+		}
+	}
+	c_hagedorn = {
+		7999.1.1 = {
+			liege = d_lakehaven
+			de_jure_liege = d_lakehaven
+		}
+	}
+	c_darry = {
+		8303.10.22 = { 
+			holder = Frey_50
+			liege = h_the_iron_throne
+		}
+	}
+	d_tridents_mouth = {
+		8304.12.25 = { 
+			holder = Frey_50
+			liege = e_the_riverlands
+		}
+	}
+	c_the_gauntlet = {
+		8303.12.22 = { 
+			holder = Gaunt_5
+			liege = h_the_iron_throne
+		}
+	}
+	#dragonstone##############################################################
+	k_dragonstone = {
+		8303.12.12 = {
+			holder = Targaryen_9
+			liege = 0
+		}
+		8304.12.26 = { 
+			holder = 0
+		}
+	}
+	d_dragonstone = {
+		8303.12.12 = {
+			holder = Targaryen_9
+		}
+		8304.12.26 = { 
+			holder = 0
+		}
+	}
+	d_duskendale = {
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	d_rooks_rest = {
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = h_the_iron_throne
+		}
+	}
+	d_maidenpool = {
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = e_the_riverlands
+		}
+	}
+	c_lolliston = {
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = d_maidenpool
+		}
+	}
+	c_honeymaiden = {
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = d_maidenpool
+		}
+	}
+	d_sharp_point = {
+		8304.12.26 = {
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = h_the_iron_throne
+		}
+	}
+	d_masseys_hook = {
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+		8307.5.15 = {
+			holder = Massey_3
+		}
+		8313.12.13 = {
+			holder = Massey_7
+		}
+	}
+	d_vellum_coast = {
+		8299.6.12 = { 
+			liege = h_the_iron_throne
+		}
+		8303.10.22 = {
+			holder = Penrose_45
+		}
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = e_the_stormlands
+		}
+	}
+	d_wendwater_forest = {
+		8303.12.31 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+		8311.8.27 = {
+			holder = Farring_3
+		}
+	}
+	c_farring_cross = {
+		8311.8.27 = {
+			holder = Farring_3
+		}
+	}
+	c_brushmill = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+	}
+	d_driftmark = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_high_tide = {
+		8303.12.31 = { 
+			holder = Velaryon_4
+		}
+	}
+	c_the_scales = {
+		8303.12.12 = {
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = d_claw_isle
+		}
+	}
+	c_longbar = {
+		8304.12.26 = {
+			liege = d_driftmark
+		}
+	}
+	c_gullet_isle = {
+		8304.12.26 = {
+			liege = d_driftmark
+		}
+	}
+	c_sweetport_sound = {
+		8299.9.8 = {
+			holder = Baratheon_3
+		}
+		8300.2.24 = {
+			holder = Velaryon_3
+		}
+		8303.12.12 = {
+			holder = Sunglass_3
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = h_the_iron_throne
+		}
+	}
+	c_strongbox = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_needlewater = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_dyre_den = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_brownhollow = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_bronzeholm = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_hazewood = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_pointside = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	c_strongcliffs = {
+		8303.12.12 = { 
+			liege = k_dragonstone
+		}
+		8304.12.26 = {
+			liege = e_the_crownlands
+		}
+	}
+	b_gryphonrock = {
+		7868.1.1 = {
+			liege = d_claw_isle
+			holder = Celtigar_8
+		}
+		7883.1.1 = {
+			holder = Celtigar_9
+		}
+		7900.1.1 = {
+			holder = Celtigar_10
+		}
+		7957.1.1 = {
+			holder = Celtigar_11
+		}
+		7968.1.1 = {
+			holder = Celtigar_13
+		}
+		7980.1.1 = {
+			holder = Celtigar_15
+		}
+		8006.1.1 = {
+			holder = Celtigar_16
+		}
+		8017.1.1 = {
+			holder = Celtigar_18
+		}
+		8059.2.1 = {
+			holder = Celtigar_19
+		}
+		8059.2.4 = {
+			holder = Celtigar_22
+		}
+		8087.1.1 = {
+			holder = Celtigar_23
+		}
+		8087.2.1 = {
+			holder = Celtigar_61
+		}
+		8128.1.1 = {
+			holder = Celtigar_63
+		}	
+		8150.2.1 = {
+			holder = Celtigar_27
+		}
+		8176.1.1 = {
+			holder = Celtigar_32
+		}
+		8180.1.1 = {
+			holder = Celtigar_33
+		}
+		8203.1.1 = {
+			holder = Celtigar_40
+		}
+		8207.1.1 = {
+			holder = Celtigar_51
+		}
+		8222.1.1 = {
+			holder = Celtigar_52
+		}
+		8250.1.1 = {
+			holder = Celtigar_53
+		}
+		8260.1.1 = {
+			holder = Celtigar_54
+		}
+	}
+	b_swordpeaks = {
+		8260.1.1 = {
+			holder = Bar_Emmon_50
+		}
+	}
+	b_blackhull = {
+		8303.12.31 = {
+			holder = Velaryon_62
+		}
+	}
+	b_gaemons_tower = {
+		8303.12.31 = {
+			holder = Velaryon_63
+		}
+	}
+
+################################################################################
+
+#the iron islands###################################################################
+	e_the_iron_islands = {
+		8304.12.26 = { 
+			holder = Greyjoy_13
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	k_under_islands = {
+		8304.12.26 = { 
+			holder = Greyjoy_13
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_pyke = {
+		8304.12.26 = { 
+			holder = Greyjoy_13
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+	}
+	c_pyke = {
+		8304.12.26 = { 
+			holder = Greyjoy_13
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+	}
+	d_harlaw = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	d_hardstone_hills = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	d_old_wyk = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	d_blacktyde = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	c_orkwood = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	c_nettlemont = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	c_greygrave = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	c_trawling = {
+		8305.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	c_grey_garden = {
+	8300.4.29 = {
+		holder = Harlaw_9
+	}
+	8304.12.26 = {
+		holder = Harlaw_12
+	}
+}
+#######################################################################################
+
+#the westerlands#####################################################################################
+	e_the_westerlands = {
+		8300.2.7 = {
+			holder = Lannister_6
+		}
+		8300.12.1 = {
+			holder = 0
+		}
+		8304.12.26 = { 
+			holder = Lannister_8
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8357.9.3 = {
+			holder = Lannister_tfw_1
+		}
+		8363.3.17 = {
+			holder = Lannister_tfw_3
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	k_the_rock = {
+		8300.12.1 = {
+			holder = Lannister_24
+			liege = h_the_iron_throne
+			effect = {
+				set_title_name = e_the_westerlands
+			}
+		}
+		8304.12.26 = { 
+			holder = Lannister_8
+			effect = {
+				#save_title_name_change_data = yes
+				reset_title_name = yes
+			}
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8357.9.3 = {
+			holder = Lannister_tfw_1
+		}
+		8363.3.17 = {
+			holder = Lannister_tfw_3
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_casterly_rock = {
+		8300.12.1 = {
+			holder = 0
+		}
+		8304.12.26 = { 
+			holder = Lannister_8
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8357.9.3 = {
+			holder = Lannister_tfw_1
+		}
+		8363.3.17 = {
+			holder = Lannister_tfw_3
+		}
+	}
+	c_casterly_rock = {
+		8300.12.1 = {
+			holder = Lannister_6
+		}
+		8304.12.26 = { 
+			holder = Lannister_8
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8357.9.3 = {
+			holder = Lannister_tfw_1
+		}
+		8363.3.17 = {
+			holder = Lannister_tfw_3
+		}
+	}
+	c_fang_hill = {
+		8300.12.1 = {
+			holder = Lannister_24
+		}
+		8304.12.26 = { 
+			holder = Lannister_8
+		}
+		8357.9.3 = {
+			holder = Lannister_tfw_1
+		}
+		8363.3.17 = {
+			holder = Lannister_tfw_3
+		}
+	}
+	c_forthane = {
+		8304.12.30 = { 
+			liege = d_crakehall
+		}
+	}
+	c_wellsmere = {
+		8280.1.1 = {
+			holder = Voyald_4
+			liege = k_the_rock
+		}
+	}
+	c_midvale = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	c_seven_points = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	c_borrenline = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_the_gold_road = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_the_crag = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_castamere = {
+		8300.12.1 = { 
+			liege = k_the_rock
+			effect = {
+				save_title_name_change_data = { TRANSFER_VAR = no }
+				reset_title_name = yes
+				title:b_prides_keep = {
+					set_capital_barony = yes
+				}
+			}
+		}
+	}
+	d_lanns_point = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_denslane = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_haft_ridge = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_hornvale = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_the_golden_tooth = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_ashemark = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_withermoore = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_goldmarch = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	d_fair_isle = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+		8366.1.1 = {
+			holder = Greyjoy_13
+			liege = e_the_iron_islands
+		}
+	}
+	c_cornfield = {
+		8300.12.1 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_westerlands
+		}
+	}
+	c_toll_pass = {
+		8303.12.31 = { 
+			liege = k_the_rock
+		}
+	}
+	c_faircastle = {
+		8366.1.1 = {
+			holder = Greyjoy_13
+			liege = e_the_iron_islands
+		}
+	}
+	c_hetherfield = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	c_lannisport = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	c_hadersly = {
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	c_motley_hills = { 
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+	c_lonmont = { 
+		8300.12.1 = { 
+			liege = k_the_rock
+		}
+	}
+###########################################################################################
+
+#the reach#################################################################################
+	e_the_reach = {
+		8303.10.22 = { 
+			holder = Redwyne_2
+			liege = 0
+			effect = {
+				set_coa = dynn_Tyrell
+			}
+		}
+		# 8303.12.12 = {
+		# 	liege = h_targaryen_host_title
+		# }
+		8304.07.15 = {
+			holder = Tarly_1
+		 	liege = h_the_iron_throne
+			effect = {
+				set_coa = e_the_reach
+			}
+		}
+		8304.12.26 = { 
+			holder = 0
+		}
+		8305.1.1 = { 
+			holder = Blackwater_1
+			liege = h_the_iron_throne
+		}
+		8308.8.12 = {
+			holder = Peake_tfw_1
+		}
+		8309.1.21 = {
+			holder = Oldflowers_25
+		}
+		8309.9.9 = {
+			holder = 0
+		}
+	}
+	k_the_mander = {
+		8303.10.22 = { 
+			holder = Redwyne_2
+			liege = 0
+		}
+		8304.12.26 = { 
+			holder = Blackwater_1
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8308.8.12 = {
+			holder = Peake_tfw_1
+		}
+		8309.1.21 = {
+			holder = Oldflowers_25
+		}
+		8309.9.9 = {
+			de_jure_liege = e_goldengrove
+			holder = 0
+		}
+	}
+
+	d_highgarden = {
+		8303.10.22 = { 
+			holder = Redwyne_2
+		}
+		8304.12.26 = { 
+			holder = Blackwater_1
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8310.1.1 = {
+			de_jure_liege = k_the_westmarch
+			liege = k_the_westmarch
+			holder = Tarly_3
+		}
+		8351.11.9 = {
+			holder = Tarly_tfw_1
+		}
+		8363.12.19 = {
+			holder = Tarly_tfw_2
+			liege = 0
+		}
+	}
+	c_highgarden = {
+		8303.10.22 = { 
+			holder = Redwyne_2
+		}
+		8304.12.26 = { 
+			holder = Blackwater_1
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8310.1.1 = {
+			holder = Tarly_3
+		}
+		8351.11.9 = {
+			holder = Tarly_tfw_1
+		}
+		8363.12.19 = {
+			holder = Tarly_tfw_2
+		}
+	}
+
+	#oldtown
+	k_oldtown = {
+		8303.10.22 = {
+			holder = Hightower_7
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = e_oldtown
+		}
+	}
+	d_oldtown = {
+		8303.10.22 = {
+			holder = Hightower_7
+		}
+		8310.1.1 = {
+			de_jure_liege = k_oldtown
+		}
+	}
+	k_the_arbor = {
+		8310.1.1 = {
+			de_jure_liege = e_oldtown
+			liege = e_oldtown
+		}
+	}
+	d_the_arbor = {
+		8310.1.1 = {
+			liege = k_oldtown
+		}
+		8309.10.1 = {
+			holder = Redwyne_5
+		}
+		8310.1.1 = {
+			liege = k_oldtown
+		}
+		8366.1.1 = {
+			holder = Greyjoy_13
+			liege = e_the_iron_islands
+		}
+	}
+	c_wynegarde = {
+		8309.10.1 = {
+			holder = Redwyne_5
+		}
+		8310.1.1 = {
+			liege = k_oldtown
+		}
+		8366.1.1 = {
+			liege = e_the_iron_islands
+		}
+	}
+	c_peachtree = {
+		8366.1.1 = {
+			holder = Greyjoy_13
+			liege = e_the_iron_islands
+		}
+	}
+	d_garden_coast = {
+		8310.1.1 = {
+			de_jure_liege = k_oldtown
+			liege = k_oldtown
+		}
+	}
+	d_black_sound = {
+		8310.1.1 = {
+			de_jure_liege = k_oldtown
+			liege = k_oldtown
+		}
+	}
+	d_ridgeview = {
+		8310.1.1 = {
+			de_jure_liege = k_oldtown
+			liege = k_oldtown
+		}
+	}
+	d_oldhills = {
+		8310.1.1 = {
+			de_jure_liege = k_oldtown
+			liege = k_oldtown
+		}
+	}
+	d_honeylands = {
+		8310.1.1 = {
+			de_jure_liege = k_oldtown
+			liege = k_oldtown
+		}
+	}
+	c_echo_hills = {
+		8310.1.1 = {
+			de_jure_liege = d_ridgeview
+			liege = k_oldtown
+		}
+	}
+	c_grave_ridge = {
+		8310.1.1 = {
+			de_jure_liege = d_honeylands
+			liege = k_oldtown
+		}
+	}
+	#the marches
+	e_the_marches = {
+		8310.1.1 = {
+			de_jure_liege = h_the_iron_throne
+			liege = h_the_iron_throne
+			holder = Tarly_3
+			effect = {
+				title:e_the_marches = {
+					set_capital_county = title:c_longtable
+				}
+			}
+			succession_laws = { equal_law feudal_elective_succession_law }
+		}
+		8351.11.9 = {
+			holder = Tarly_tfw_1
+		}
+		8363.12.19 = {
+			holder = Dondarrion_3
+		}
+	}
+	k_the_westmarch = {
+		8310.1.1 = {
+			de_jure_liege = e_the_marches
+			liege = h_the_iron_throne
+			holder = Tarly_3
+		}
+		8351.11.9 = {
+			holder = Tarly_tfw_1
+		}
+		8363.12.19 = {
+			holder = Tarly_tfw_2
+			liege = 0
+		}
+	}
+	d_the_westmarch = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8304.07.15 = {
+		 	liege = e_the_reach
+		}
+		8304.07.18 = { 
+			holder = Tarly_3
+		}
+		8310.1.1 = {
+			de_jure_liege = k_the_westmarch
+			liege = k_the_westmarch
+		}
+		8351.11.9 = {
+			holder = Tarly_tfw_1
+		}
+		8363.12.19 = {
+			holder = Tarly_tfw_2
+			liege = 0
+		}
+	}
+	c_horn_hill = {
+		8304.07.18 = { 
+			holder = Tarly_3
+		}
+		8351.11.9 = {
+			holder = Tarly_tfw_1
+		}
+		8363.12.19 = {
+			holder = Tarly_tfw_2
+		}
+	}
+	d_brightwater = {
+		8303.12.12 ={
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = k_oldtown
+			liege = k_oldtown
+		}
+	}
+	k_fullharvest = {
+		8310.1.1 = {
+			de_jure_liege = e_the_marches
+			holder = Tarly_3
+			succession_laws = { equal_law feudal_elective_succession_law }
+		}
+	}
+	d_fullharvest = {
+		8310.1.1 = {
+			de_jure_liege = k_fullharvest
+			succession_laws = { equal_law feudal_elective_succession_law }
+		}
+	}
+	d_palemarch = {
+		8310.1.1 = {
+			de_jure_liege = k_the_westmarch
+			liege = k_the_westmarch
+		}
+	}
+	d_orchard_way = {
+		8303.10.22 = {
+			holder = Fossoway_4
+		}
+		8304.12.26 = {
+			holder = Fossoway_6
+		}
+		8310.1.1 = {
+			de_jure_liege = k_fullharvest
+			liege = k_fullharvest
+		}
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_cider_crossing = {
+		8303.10.22 = {
+			holder = Fossoway_5
+		}
+		8304.12.26 = {
+			holder = Fossoway_6
+		}
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+	}
+	c_burkley = {
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+	}
+	c_esterrace = {
+		8310.1.1 = {
+			de_jure_liege = k_the_westmarch
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_merrilene = {
+		8310.1.1 = {
+			de_jure_liege = k_the_westmarch
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_harvestyne = {
+		8303.10.22 = { 
+			liege = k_the_marches
+		}
+		8305.1.1 = { 
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = k_the_westmarch
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	d_cockleswhent = {
+		8303.10.22 = { 
+			liege = k_the_marches
+		}
+		8305.1.1 = { 
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = k_fullharvest
+			liege = k_fullharvest
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	d_blueburn = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = k_fullharvest
+			liege = k_fullharvest
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	d_nightsong = {
+		8304.1.1 = {
+			holder = Caron_6
+			de_jure_liege = k_the_marches
+			liege = e_the_stormlands
+		}
+		8310.1.1 = {
+			de_jure_liege = k_the_marches
+			liege = e_the_marches
+		}
+	}
+	c_nightsong = {
+		8305.1.1 = {
+			holder = Caron_6
+		}
+	}
+	c_nailstone = {
+		8310.1.1 = {
+			liege = d_nightsong
+		}
+	}
+	c_thrushing = {
+		8310.1.1 = {
+			liege = d_nightsong
+		}
+	}
+	c_laughing_hills = {
+		8310.1.1 = {
+			liege = d_nightsong
+		}
+	}
+	k_the_marches = {
+		8299.9.8 = {
+			holder = Foote_6
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			holder = 0
+		}
+		8310.1.1 = {
+			de_jure_liege = e_the_marches
+			effect = {
+				set_title_name = k_the_eastmarch
+			}
+		}
+	}
+	d_valor_meadows = {
+		8304.1.1 = {
+			liege = e_the_stormlands
+		}
+	}
+	d_dark_harrow = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = {
+			liege = e_the_stormlands
+		}
+		8310.1.1 = {
+			de_jure_liege = k_shipbreaker_bay
+			liege = k_shipbreaker_bay
+		}
+	}
+	c_dew_hills = {
+		8310.1.1 = {
+			holder = Suggs_1
+			liege = d_dark_harrow
+			de_jure_liege = d_dark_harrow
+		}
+	}
+	c_harrowfield = {
+		8310.1.1 = {
+			holder = Suggs_1
+		}
+	}
+	c_stalkvale = {
+		8303.10.22 = { 
+			liege = k_the_marches
+		}
+		8305.1.1 = { 
+			liege = e_the_reach
+		}
+	}
+	c_summerfield = {
+		8310.1.1 = {
+			holder = Staedmon_1
+			liege = d_valor_meadows
+			de_jure_liege = d_valor_meadows
+		}
+	}
+	c_leddan = {
+		8310.1.1 = {
+			holder = Staedmon_1
+			liege = d_valor_meadows
+			de_jure_liege = d_valor_meadows
+		}
+	}
+	c_scale_valley = {
+		8310.1.1 = {
+			liege = d_blackhaven
+			de_jure_liege = d_blackhaven
+		}
+	}
+	d_whentway = {
+		8303.10.22 = { 
+			liege = k_the_marches
+		}
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+		8310.1.1 = {
+			de_jure_liege = k_the_marches
+			liege = e_the_marches
+		}
+	}
+	d_marchfields = {
+		8303.10.22 = { 
+			liege = k_the_marches
+		}
+		8304.12.26 = { 
+			liege = e_the_stormlands
+		}
+		8310.1.1 = {
+			de_jure_liege = k_the_marches
+			liege = e_the_marches
+		}
+	}
+	d_blackhaven = {
+		8303.10.22 = { 
+			liege = k_the_marches
+		}
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+		8310.1.1 = {
+			de_jure_liege = k_the_marches
+			liege = e_the_marches
+		}
+	}
+	c_kildale = {
+		8310.1.1 = {
+			de_jure_liege = d_goldenfields
+			liege = d_goldenfields
+		}
+	}
+	c_dunstonbury = {
+		8310.1.1 = {
+			liege = e_the_reach
+		}
+	}
+	c_longtable = {
+		8310.1.1 = {
+			liege = e_the_marches
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_cobblestone = {
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_stalkvale = {
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_starpike = {
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+		8309.1.28 = {
+			holder = Peake_tfw_1
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_torrentpeak = {
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_bendtilling = {
+		8310.1.1 = {
+			liege = k_the_westmarch
+		}
+		8366.1.1 = {
+			liege = e_the_marches
+		}
+	}
+	c_riskmarch = {
+		8310.1.1 = {
+			de_jure_liege = d_blackhaven
+			liege = d_blackhaven
+		}
+	}
+	c_wakefield = {
+		1.1.1 = { 
+			de_jure_liege = d_the_westmarch
+			liege = d_the_westmarch
+		}
+	}
+	c_greenaway = {
+		8310.1.1 = {
+			de_jure_liege = d_highgarden
+			liege = d_highgarden
+		}
+	}
+
+	#goldengrove
+	e_goldengrove = {
+		8310.1.1 = { 
+			de_jure_liege = h_the_iron_throne
+			liege = h_the_iron_throne
+			holder = Rowan_1
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	k_the_northmarch = {
+		8310.1.1 = { 
+			de_jure_liege = e_goldengrove
+			holder = Rowan_1
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_goldengrove = {
+		8310.1.1 = {
+			
+			liege = k_the_northmarch
+		}
+	}
+	d_the_roseroad = {
+		8310.1.1 = {
+			
+			liege = k_the_northmarch
+		}
+	}
+	d_darkdell = {
+		8310.1.1 = {
+			
+			liege = k_the_northmarch
+		}
+	}
+	d_darstone = {
+		8310.1.1 = {
+			
+			liege = k_the_northmarch
+		}
+	}
+	#shield islands
+	k_the_shields = {
+		1.1.1 = {
+			de_jure_liege = e_the_reach
+		}
+		2000.1.1 = {
+			liege = 0
+			holder = Hewett_13
+		}
+		7860.1.1 = {
+			holder = Hewett_15
+			liege = e_the_reach
+			effect = {
+				agot_turn_westerosi_kingdom_into_lordship_history_effect = { YEAR = 7860 }
+			}
+		}
+		7876.1.1 = {
+			holder = Hewett_16
+		}
+		7890.1.1 = {
+			holder = Hewett_18
+		}
+		7921.1.1 = {
+			holder = Hewett_23
+		}
+		7949.1.1 = {
+			holder = Hewett_32
+		}
+		7987.1.1 = {
+			holder = Hewett_35
+		}
+		8013.1.1 = {
+			holder = Hewett_38
+		}
+		8050.1.1 = {
+			holder = Hewett_46
+		}
+		8062.1.1 = {
+			holder = Hewett_48
+		}
+		8091.1.1 = {
+			holder = Hewett_50
+		}
+		8112.1.1 = {
+			holder = Hewett_52
+		}
+		8129.4.1 = {
+			liege = 0
+		}
+		8130.2.11 = {
+			liege = h_the_iron_throne
+		}
+		8131.1.14 = {
+			liege = e_the_reach
+		}
+		8161.1.1 = {
+			holder = Hewett_28
+		}
+		8203.1.1 = {
+			holder = Hewett_29
+		}
+		8220.1.1 = {
+			holder = Hewett_30
+		}
+		8245.1.1 = {
+			holder = Hewett_1
+		}
+		8271.1.1 = {
+			holder = Hewett_3
+		}
+		8300.4.29 = {
+			holder = Hewett_4
+		}
+		8300.5.1 = {
+			holder = 0
+		}	
+		8304.12.26 = { 
+			holder = Hewett_4
+			de_jure_liege = e_the_reach
+			liege = e_the_reach
+		}
+	}
+	d_shield_islands = {
+		1.1.1 = {
+			de_jure_liege = k_the_shields
+		}
+		8300.4.29 = {
+			holder = Hewett_4
+		}
+		8300.5.1 = {
+			holder = 0
+		}	
+		8303.12.12 = { 
+			liege = k_the_shields
+		}
+		8304.12.26 = { 
+			holder = Hewett_4
+		}
+	}
+	c_oakenshield = {
+		8300.5.1 = {
+			holder = Codd_8
+		}
+		8303.12.12 = { 
+			liege = e_the_iron_islands
+		}
+		8304.12.26 = { 
+			holder = Hewett_4
+			liege = e_the_reach
+		}
+	}
+	c_small_shields = {
+		8300.5.1 = {
+			holder = Codd_8
+		}
+		8303.12.12 = { 
+			liege = e_the_iron_islands
+		}
+		8304.12.26 = { 
+			holder = Hythe_69
+			liege = e_the_reach
+		}
+	}
+	c_greenshield = {
+		8300.5.1 = {
+			holder = Greyjoy_hh_4
+		}
+		8303.12.12 = { 
+			liege = e_the_iron_islands
+		}
+		8304.12.26 = { 
+			holder = Chester_46
+			liege = e_the_reach
+		}
+	}
+	c_southshield = {
+		8300.4.29 = {
+			holder = Drumm_hh_1
+		}
+		8303.12.12 = { 
+			liege = e_the_iron_islands
+		}
+		8304.12.26 = { 
+			holder = Serry_5
+			liege = e_the_reach
+		}
+	}
+	c_greyshield = {
+		8300.4.29 = {
+			holder = Harlaw_12
+		}
+		8303.12.12 = { 
+			liege = e_the_iron_islands
+		}
+		8304.12.26 = { 
+			holder = Grimm_3
+			liege = e_the_reach
+		}
+	}
+	d_the_ocean_road = {
+		8309.5.10 = {
+			holder = Oakheart_2
+		}
+	}
+	d_the_northmarch = {
+		8310.1.1 = {		
+			liege = k_the_northmarch
+		}
+	}
+	d_red_front = {
+		8310.1.1 = {			
+			liege = k_the_northmarch
+		}
+	}
+	d_manderfields = {
+		8310.1.1 = {
+			de_jure_liege = k_bitterbridge						
+			liege = k_the_northmarch
+		}
+		8366.1.1 = {
+			de_jure_liege = k_bitterbridge	
+			holder = Caswell_7					
+			liege = 0
+		}
+	}
+	c_mandervale = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_windflower = {
+		8310.1.1 = {	
+			liege = k_the_northmarch
+		}
+	}
+	c_daisyfield = {
+		8310.1.1 = {	
+			liege = k_the_northmarch
+		}
+	}
+	k_bitterbridge = {
+		8310.1.1 = {
+			de_jure_liege = e_goldengrove					
+			liege = e_goldengrove
+		}
+		8366.1.1 = {
+			holder = Caswell_7
+			liege = h_the_iron_throne	
+		}
+	}
+	d_sunnyvale = {
+		8310.1.1 = {
+			de_jure_liege = k_bitterbridge						
+			liege = k_the_northmarch
+		}
+		8366.1.1 = {
+			liege = k_bitterbridge	
+		}
+	}
+	d_bitterbridge = {
+		8310.1.1 = {
+			de_jure_liege = k_bitterbridge			
+			liege = k_the_northmarch
+		}
+	}
+	d_goldenfields = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_reach
+		}
+		8310.1.1 = {
+			de_jure_liege = k_bitterbridge						
+			liege = k_the_northmarch
+		}
+		8366.1.1 = {
+			liege = k_bitterbridge	
+		}
+	}
+	c_rosewood = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_sagecrown = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_averdyre = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_grandseed = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_heartsmere = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_florynn = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_risley_glade = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+	c_oaken_rills = {
+		8310.1.1 = {
+			liege = k_the_northmarch
+		}
+	}
+
+
+##########################################################################################
+
+#the riverlands#################################################################################
+	e_the_riverlands = {
+		8299.12.15 = {
+			liege = h_the_iron_throne
+		}
+		8300.5.11 = {
+			holder = Frey_1
+			liege = h_the_iron_throne
+		}
+		8303.12.4 = { 
+			holder = 0	
+		}
+		8304.12.25 = { 
+			holder = Tully_7
+			liege = h_the_iron_throne
+		}
+		8309.10.12 = {
+			holder = Tully_tfw_1
+		}
+		8366.1.1 = {
+			holder = Tully_tfw_2 
+		}
+	}
+	d_riverrun = {
+		8303.12.4 = { 
+			holder = 0	
+		}
+		8304.12.25 = { 
+			holder = Tully_7
+			liege = e_the_riverlands
+		}
+		8309.10.12 = {
+			holder = Tully_tfw_1
+		}
+		8366.1.1 = {
+			holder = Tully_tfw_2 
+		}
+	}
+	c_riverrun = {
+		8303.12.4 = { 
+			holder = Lannister_6
+		}
+		8304.12.25 = { 
+			holder = Tully_7
+		}
+		8309.10.12 = {
+			holder = Tully_tfw_1
+		}
+		8366.1.1 = {
+			holder = Tully_tfw_2 
+		}
+	}
+	c_heathersage = {
+		8303.12.4 = { 
+			holder = Tully_7
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			holder = Stripe_26
+			liege = e_the_riverlands
+		}
+	}
+	c_martlet_bend = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_burnout = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_turnbridge = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_stars_ban = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_illfield = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			liege = e_the_riverlands
+		}
+	}
+	k_the_gods_eye = {
+		5020.1.1 = {
+			holder = Hook_1
+			effect = {
+				#save_title_name_change_data = yes
+				set_title_name = k_the_gods_eye
+			}
+		}
+		5050.1.1 = {
+			holder = Hook_2
+		}
+		5080.1.1 = {
+			holder = Hook_3
+		}
+		5100.1.1 = {
+			holder = Hook_4
+		}
+		5136.1.2 = { # Flavorization bugfix
+			holder = 0
+		}
+		5200.1.1 = {
+			holder = Roote_90
+		}
+		5222.1.2 = { # Flavorization bugfix
+			holder = 0
+		}
+		5911.1.1 = {
+			holder = Vance_Wayfarers_Rest_11
+		}
+		5950.1.1 = {
+			holder = Vance_Atranta_78
+		}
+		5951.1.2 = { # Flavorization bugfix
+			holder = 0
+		}
+		7999.8.15 = {
+			holder = Qoherys_1
+			liege = e_the_riverlands
+			effect = {
+				#save_title_name_change_data = yes
+				set_title_name = d_harrenhal
+				agot_turn_westerosi_kingdom_into_lordship_history_effect = { YEAR = 7999 }
+			}
+		}
+		8009.1.1 = {
+			holder = Qoherys_4
+		}
+		8037.9.9 = {
+			holder = 0
+		}
+		8073.7.1 = {
+			holder = Strong_9
+		}
+		8076.1.1 = {
+			holder = Strong_27
+		}
+		8086.1.1 = {
+			holder = Strong_29
+		}
+		8120.3.14 = {
+			holder = Strong_31
+		}
+		8129.4.1 = {
+			liege = h_the_iron_throne
+		}
+		8131.1.14 = {
+			liege = e_the_riverlands
+		}
+		8131.1.28 = {
+			holder = 0
+		}
+		8151.1.1 = {
+			holder = Lothston_5
+		}
+		8183.1.1 = {
+			holder = Lothston_16
+		}
+		8195.3.7 = {
+			liege = 0
+		}
+		8196.11.22 = {
+			liege = e_the_riverlands
+		}
+		8200.1.1 = {
+			holder = Lothston_17
+		}
+		8229.1.1 = {
+			holder = Whent_15
+		}
+		8233.1.1 = {
+			holder = Whent_1
+		}
+		8265.1.1 = {
+			holder = Whent_4
+		}
+		8282.9.15 = {
+			liege = 0
+			effect = {
+				holder = {
+					set_variable = { name = pre_war_liege value = title:e_the_riverlands.holder }
+					set_variable = { name = agot_pwl_top value = title:e_the_riverlands.holder.top_liege }
+				}
+			}
+		}
+		8282.12.31 = {
+			liege = e_the_riverlands
+			effect = {
+				holder = {
+					remove_variable = pre_war_liege
+				}
+			}
+		}
+		8296.1.1 = {
+			holder = Whent_3
+			effect = {
+				set_title_name = d_harrenhal
+			}
+		}
+		8298.12.23 = {
+			holder = Slynt_1
+		}
+		8299.12.15 = {
+			holder = Baelish_2
+			liege = e_the_vale
+		}
+		8304.3.9 = {
+			holder = 0
+		}
+		8304.12.15 = { 
+			holder = Tully_7
+		}
+		8359.1.1 = {
+			holder = Tully_tfw_1
+		}
+	}
+	d_harrenhal = {
+		8298.12.23 = {
+			holder = Slynt_1
+		}
+		8299.12.15 = {
+			holder = Baelish_2
+			liege = e_the_vale
+		}
+		8304.3.9 = {
+			holder = 0
+		}
+		8304.12.15 = { 
+			holder = Tully_7
+		}
+		8359.1.1 = {
+			holder = Tully_tfw_1
+		}
+	}
+	c_harrenhal = {
+		8304.3.9 = {
+			holder = Tully_7
+		}
+		8359.1.1 = {
+			holder = Tully_tfw_1
+		}
+	}
+	c_ferrybridge = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = d_harrenhal
+		}
+	}
+	c_rippledown_rill = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = d_harrenhal
+		}
+	}
+	c_milkstone = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = d_harrenhal
+		}
+	}
+	c_briarwhite = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = d_harrenhal
+		}
+	}
+	c_harroway = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = d_harrenhal
+		}
+	}
+	c_shorehedge = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = d_harrenhal
+		}
+	}
+	k_lakes_and_mires = {
+		7907.1.1 = {
+			holder = Frey_108
+			effect = {
+				agot_turn_westerosi_kingdom_into_lordship_history_effect = { YEAR = 7907 }
+			}
+		}
+		7916.1.1 = {
+			holder = Frey_145
+		}
+		7966.1.1 = {
+			holder = Frey_165
+		}
+		7970.1.1 = {
+			holder = Frey_166
+		}
+		8013.1.1 = {
+			holder = Frey_169
+		}
+		8026.1.1 = {
+			holder = Frey_174
+		}
+		8071.1.1 = {
+			holder = Frey_110
+		}
+		8091.1.1 = {
+			holder = Frey_111
+		}
+		8111.1.1 = {
+			holder = Frey_113
+		}
+		8122.1.1 = {
+			holder = Frey_116
+		}
+		8129.4.1 = {
+			liege = 0
+		}
+		8130.3.5 = {
+			holder = Frey_120
+		}
+		8130.10.15 = {
+			liege = e_the_riverlands
+		}
+		8169.1.1 = {
+			holder = Frey_131
+		}
+		8210.1.1 = {
+			holder = Frey_132
+		}
+		8231.1.1 = {
+			holder = Frey_1
+		}
+		8303.12.4 = {
+			holder = Frey_24
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			holder = 0
+		}
+	}
+	d_the_crossing = {
+		8303.12.4 = {
+			holder = Frey_24
+		}
+		8304.12.25 = { 
+			holder = 0
+		}
+	}
+	c_the_twins = {
+		7907.1.1 = {
+			liege = d_the_crossing
+		}
+		8303.12.4 = {
+			holder = Frey_24
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			holder = Crossing_1
+			liege = e_the_riverlands
+		}
+	}
+	c_arganbrook = {
+		7907.1.1 = {
+			liege = d_the_crossing
+		}
+		8303.12.4 = {
+			holder = Frey_24
+			liege = h_the_iron_throne
+		}
+		8304.12.25 = { 
+			holder = Crossing_1
+			liege = e_the_riverlands
+		}
+	}
+	c_woodrush = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_mistlewood = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_leechpool = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_erenford = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_blackpitch = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_ironwater = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_helney = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_stillfen = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_grimwind = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_wayleroot = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_wernell = {
+		8303.12.4 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_marstone = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+		8366.1.1 = { 
+			holder = Moonman_1
+		}
+	}
+	c_riverbend = {
+		8299.12.16 = {
+			liege = e_the_riverlands
+		}
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+		8366.1.1 = { 
+			holder = Moonman_1
+		}
+	}
+	c_saltpans_rise = {
+		8299.12.16 = {
+			liege = e_the_riverlands
+		}
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+		8366.1.1 = { 
+			holder = Moonman_1
+		}
+	}
+	c_stillside = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+		8366.1.1 = { 
+			holder = Moonman_1
+		}
+	}
+	c_spiderwood = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+		8366.1.1 = { 
+			holder = Moonman_1
+		}
+	}
+	c_saltpans = {
+		8299.12.16 = {
+			liege = e_the_riverlands
+		}
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+		8366.1.1 = { 
+			holder = Moonman_1
+		}
+	}
+	c_branstone = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_gaines = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_lancewood = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_speckleplum = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_cape_of_eagles = {
+		7907.1.1 = {
+		de_jure_liege = k_the_tines
+		}
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_fairmarket = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_blackwood_vale = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_southstone = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_atranta = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_pinkmaiden = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_wayfarers_rest = {
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	d_the_moonbrooks = {
+		1.1.1 = {
+			de_jure_liege = k_fishers_haft
+		}
+	}
+	d_willow_wood = {
+		8300.1.1 = {
+		de_jure_liege = k_fishers_haft
+		}
+		8303.12.4 = {
+			liege = h_the_iron_throne
+		}
+		8304.12.15 = { 
+			liege = e_the_riverlands
+		}
+	}
+	c_oldferns = {
+		8283.10.15 = {
+			liege = d_willow_wood
+		}
+	}
+	c_white_wood = {
+		8283.10.15 = {
+			liege = d_willow_wood
+		}
+	}
+	c_helmesmont = {
+		8283.10.15 = {
+			liege = d_willow_wood
+		}
+	}
+	c_greenlily = {
+		8285.1.1 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.25 = { 
+			liege = d_willow_wood
+		}
+	}
+	c_stonyhead = {
+		8285.1.1 = {
+			liege = k_lakes_and_mires
+		}
+		8304.12.25 = { 
+			liege = d_willow_wood
+		}
+	}
+
+#####################################################################################################
+
+#the stormlands######################################################################################
+	e_the_stormlands = {
+		8301.5.1 = { 
+			holder = 0
+		}
+		8304.12.26 = { 
+			holder = Baratheon_9
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+	}
+	k_shipbreaker_bay = {
+		8301.5.1 = { 
+			holder = 0
+		}
+		8304.12.26 = { 
+			holder = Baratheon_9
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+	}
+	d_shipbreaker_bay = {
+		8301.5.1 = { 
+			holder = 0
+		}
+		8304.12.26 = { 
+			holder = Baratheon_9
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+	}
+	c_storms_end = {
+		8301.5.1 = { 
+			liege = h_the_iron_throne
+			holder = Farring_3
+		}	
+		8304.12.26 = { 
+			holder = Baratheon_9
+		}
+		8305.1.1 = { 
+			liege = d_shipbreaker_bay
+		}
+	}
+	c_highwind = {
+		8301.5.1 = { 
+			liege = h_the_iron_throne
+		}
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = d_shipbreaker_bay
+		}
+	}
+	c_the_grief = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = d_shipbreaker_bay
+		}
+	}
+	c_bronzegate = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = d_shipbreaker_bay
+		}
+	}
+	c_shearfield = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = d_shipbreaker_bay
+		}
+	}
+	c_horncross_sound = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = d_shipbreaker_bay
+		}
+	}
+	d_estermont_isles = {
+		20.1.1 = {
+			liege = e_the_stormlands
+		}
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+		8305.6.11 = {
+			holder = Estermont_6
+		}
+		8318.10.2 = {
+			holder = Estermont_4
+		}
+		8332.1.20 = {
+			holder = Estermont_7
+		}
+	}
+	c_estermont = {
+		8300.1.4 = {
+			holder = Estermont_3
+		}
+		8305.6.11 = {
+			holder = Estermont_6
+		}
+		8318.10.2 = {
+			holder = Estermont_4
+		}
+		8332.1.20 = {
+			holder = Estermont_7
+		}
+	}
+	c_goodtilth = {
+		8303.10.22 = { 
+			liege = d_greatstock
+		}
+		8305.1.1 = { 
+			liege = d_greatstock
+		}
+	}
+	d_tarth = {
+		8299.6.12 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+	}
+	d_the_drench = {
+		8303.11.7 = {
+			liege = e_the_north
+		}
+		8305.1.1 = {
+			liege = h_the_iron_throne
+		}
+	}
+	c_wendover = {
+		8310.1.1 = {
+			holder = Trant_1
+			de_jure_liege = d_dark_harrow
+			liege = d_dark_harrow
+		}
+	}	
+	d_the_slayne = {
+		8299.6.12 = { 
+			liege = e_the_stormlands
+		}
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}	
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+	}
+	d_stackfield = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+	}
+	c_griffins_roost = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+	}
+	d_grandview = {
+		8301.5.1 = { 
+			liege = h_the_iron_throne
+			de_jure_liege = k_shipbreaker_bay
+		}	
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+	}
+	d_red_watch = {
+		8301.5.1 = { 
+			liege = h_the_iron_throne
+		}
+		8303.10.22 = { 
+			liege = k_the_marches
+		}
+		8305.1.1 = { 
+			liege = e_the_stormlands
+		}
+		8304.1.1 = {
+			de_jure_liege = k_the_marches
+			liege = e_the_stormlands
+		}
+	}
+	c_choicemarch = {
+		8303.10.22 = { 
+			liege = d_red_watch
+		}
+	}
+	k_the_rainwood = {
+		8305.1.1 = {
+			holder = Seaworth_1
+			liege = h_the_iron_throne
+			effect = {
+				title:k_the_rainwood = {
+					set_capital_county = title:c_rainshore
+				}
+			}
+		}
+	}
+	d_the_rainwood = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			de_jure_liege = k_the_rainwood
+			liege = k_the_rainwood
+		}
+	}
+	d_cape_wrath = {
+		8303.10.22 = { 
+			liege = h_the_iron_throne
+		}
+		8305.1.1 = { 
+			de_jure_liege = k_the_rainwood
+			liege = k_the_rainwood
+		}
+	}
+
+
+####################################################################################################
+
+#the vale############################################################################################
+	e_the_vale = {
+		8303.10.22 = {
+			liege = 0
+		}
+		8305.1.1 = { 
+			liege = h_the_iron_throne
+		}
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	k_the_sisters = {
+		8366.1.1 = { 
+			de_jure_liege = h_the_iron_throne
+			liege = 0
+			holder = Sunderland_1
+		}
+	}
+	d_the_sisters = {
+		8366.1.1 = { 
+			de_jure_liege = k_the_sisters
+			liege = k_the_sisters
+		}
+	}
+	d_northbreach = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	d_grimholm = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	c_bludden = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	c_rockle = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	c_sunrise_bite = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	c_moonbloom = {
+		8366.1.1 = { 
+			liege = d_the_crossing
+		}
+	}
+	c_crows_barrens = {
+		8366.1.1 = { 
+			liege = d_the_crossing
+		}
+	}
+	c_midlor_point = {
+		8304.3.9 = {
+			holder = Baelish_Alayne
+		}
+	}
+	c_tammerlan = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	c_grey_glen = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	c_coldwater_burn = {
+		8366.1.1 = { 
+			liege = k_the_sisters
+		}
+	}
+	d_snakewood_forest = {
+		8366.1.1 = { 
+			liege = 0
+		}
+	}
+	d_strongsong = {
+		8366.1.1 = { 
+			liege = 0
+		}
+	}
+	d_hearts_home = {
+		8366.1.1 = { 
+			liege = 0
+		}
+	}
+
+	k_the_stars = {
+		8366.1.1 = { 
+			de_jure_liege = h_the_iron_throne
+			liege = 0
+			holder = Melcolm_1
+		}
+	}
+	d_old_anchor = {
+		8366.1.1 = { 
+			liege = k_the_stars
+		}
+	}
+	d_eastweald = {
+		8366.1.1 = { 
+			liege = k_the_stars
+		}
+	}
+	d_ironoaks = {
+		8366.1.1 = { 
+			liege = k_the_stars
+		}
+	}
+	k_runestone = {
+		8366.1.1 = { 
+			de_jure_liege = h_the_iron_throne
+			liege = 0
+			holder = Royce_1
+		}
+	}
+	d_runestone = {
+		8366.1.1 = { 
+			liege = k_runestone
+		}
+	}
+	d_gulltown = {
+		8366.1.1 = { 
+			liege = k_runestone
+		}
+	}
+
+	k_the_redfort  = {
+		8366.1.1 = { 
+			de_jure_liege = h_the_iron_throne
+			liege = 0
+			holder = Redfort_1
+		}
+	}
+	d_strongstone = {
+		8366.1.1 = { 
+			liege = k_the_redfort
+		}
+	}
+	d_ninestars = {
+		8366.1.1 = { 
+			liege = k_the_redfort
+		}
+	}
+	c_crabs_shore = {
+		8366.1.1 = { 
+			liege = k_the_redfort
+		}
+	}
+	c_wickenden = {
+		8366.1.1 = { 
+			liege = k_the_redfort 
+		}
+	}
+	c_marbletoft = {
+		8366.1.1 = { 
+			liege = k_the_redfort
+		}
+	}
+
+	k_the_moonclans = {
+		8366.1.1 = { 
+			de_jure_liege = h_the_iron_throne
+			liege = 0
+			holder = Moonman_1
+		}
+	}
+	c_moongates = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_godsroost = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_the_bloody_gate = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_giants_scar = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_crestfall = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_donnersdown = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_crown_crescent = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_purling = {
+		8366.1.1 = {
+			holder = Moonman_1
+		}
+	}
+	c_morency = {
+	8366.1.1 = {
+		holder = Moonman_1
+	}
+}
+
+
+##############################################################################################
+
+
+###########################################################################laamp
+	d_laamp_stormchaser = {
+		8304.12.31 = {
+			liege = 0
+			holder = Stark_Dummy_9 # Arya
+			government = landless_adventurer_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				holder ?= {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_explorers
+							}
+						}
+						add_realm_law = camp_purpose_explorers
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+			effect = { agot_safe_move_laamp_history_effect = { CASTLE = title:b_purple_harbor } }
+		}
+		8305.12.31 = {
+			holder = 0
+		}
+	}
+	d_laamp_merc_jonsnow = {
+		8304.12.31 = {
+			liege = 0
+			holder = Stark_7 # Jon Snow
+			government = landless_adventurer_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				holder ?= {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_explorers
+							}
+						}
+						add_realm_law = camp_purpose_explorers
+					}
+					# 1000 infantry
+					create_maa_regiment = {
+						type = light_footmen
+						check_can_recruit = no
+						size = 5
+					}
+					create_maa_regiment = {
+						type = armored_footmen
+						check_can_recruit = no
+						size = 5
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+			effect = { agot_safe_move_laamp_history_effect = { CASTLE = title:b_castle_black } }
+		}
+	}
+	d_laamp_merc_the_weeper = {
+		8303.4.28 = {
+			liege = 0
+			holder = Weeper_1
+			government = landless_adventurer_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				holder ?= {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_explorers
+							}
+						}
+						add_realm_law = camp_purpose_explorers
+					}
+					# 1000 infantry
+					create_maa_regiment = {
+						type = light_footmen
+						check_can_recruit = no
+						size = 5
+					}
+					create_maa_regiment = {
+						type = armored_footmen
+						check_can_recruit = no
+						size = 5
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+		}
+	}
+	d_laamp_merc_mothers_mole = {
+		8303.4.28 = {
+			liege = 0
+			holder = Mother_Mole_1
+			government = landless_adventurer_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				holder ?= {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_explorers
+							}
+						}
+						add_realm_law = camp_purpose_explorers
+					}
+					# 1000 infantry
+					create_maa_regiment = {
+						type = light_footmen
+						check_can_recruit = no
+						size = 5
+					}
+					create_maa_regiment = {
+						type = armored_footmen
+						check_can_recruit = no
+						size = 5
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+		}
+	}
+	d_laamp_merc_nw_mutineers = {
+		8299.12.4 = {
+			liege = 0
+			holder = Gin_Alley_1
+			effect = {
+				set_coa = dynn_Crasters_Keep
+			}
+		}
+		8300.2.10 = {
+			liege = 0
+			holder = Mutineers_1
+			government = landless_adventurer_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				holder ?= {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_freebooters
+							}
+						}
+						add_realm_law = camp_purpose_freebooters
+					}
+					# 20 infantry
+					create_maa_regiment = {
+						type = nw_rangers
+						check_can_recruit = no
+						size = 10
+					}
+					create_maa_regiment = {
+						type = sworn_brothers
+						check_can_recruit = no
+						size = 10
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+			effect = { agot_safe_move_laamp_history_effect = { CASTLE = title:c_crasters_keep } }
+		}
+	}
+	d_laamp_merc_dothraki_company ={
+		8305.1.1 = {
+			holder = Dothraki_tfw_1
+			government = landless_adventurer_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				holder ?= {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_mercenaries
+							}
+						}
+						add_realm_law = camp_purpose_mercenaries
+					}
+					# 1000 infantry
+					create_maa_regiment = {
+						type = light_horsemen
+						check_can_recruit = no
+						size = 10
+					}
+					create_maa_regiment = {
+						type = light_horsemen
+						check_can_recruit = no
+						size = 10
+					}
+					create_maa_regiment = {
+						type = dothraki_screamers
+						check_can_recruit = no
+						size = 10
+					}
+					create_maa_regiment = {
+						type = dothraki_archers
+						check_can_recruit = no
+						size = 10
+					}
+					create_maa_regiment = {
+						type = dothraki_archers
+						check_can_recruit = no
+						size = 10
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+			effect = { agot_safe_move_laamp_history_effect = { CASTLE = title:b_longtable } }
+		}
+	}
+	d_laamp_blackwind = {
+		8299.11.15 = {
+			liege = k_dragonstone
+			holder = Greyjoy_13 
+			government = pirate_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+			effect = { agot_safe_move_laamp_history_effect = { CASTLE = title:c_dragonstone } }
+		}		
+	}
+	d_laamp_the_iron_fleet = {
+		8299.11.15 = {
+			liege = 0
+			holder = Greyjoy_7
+			government = pirate_government
+			succession_laws = { landless_adventurer_succession_law }
+			effect = {
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = { name = adventurer_creation_reason value = flag:historical }
+				if = {
+					limit = { NOT = { has_dlc_feature = roads_to_power } }
+					holder ?= { destroy_title = prev }
+				}
+			}
+			effect = { agot_safe_move_laamp_history_effect = { CASTLE = title:c_lys } }
+		}		
+	}
+	# The Conqueror's Band
+	d_laamp_the_conquerors_band = {
+		# Aegon VI — The Young Griff, claimant to the Iron Throne
+		# Exists from the first bookmark so he is playable before the invasion event
+		8303.12.31 = {
+			liege = 0
+			holder = Connington_4
+			government = landless_adventurer_government
+			effect = {
+				holder = {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_legitimists
+							}
+						}
+						add_realm_law_skip_effects = camp_purpose_legitimists
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = {
+					name = adventurer_creation_reason
+					value = flag:deposition
+				}
+			}
+			effect = {
+				agot_safe_move_laamp_history_effect = { CASTLE = title:c_goldfuror }
+			}
+		}
+	}
+	# The Brotherhood Without Banners
+	d_laamp_the_brotherhood_without_banners = {
+		8303.12.31 = {
+			liege = 0
+			holder = Dondarrion_Dummy_2
+			government = landless_adventurer_government
+			effect = {
+				holder = {
+					if = {
+						limit = {
+							NOT = {
+								has_realm_law = camp_purpose_freebooters
+							}
+						}
+						add_realm_law_skip_effects = camp_purpose_freebooters
+					}
+				}
+				create_landless_adventurer_title_history_effect = yes
+				set_variable = {
+					name = adventurer_creation_reason
+					value = flag:deposition
+				}
+			}
+			effect = {
+				agot_safe_move_laamp_history_effect = { CASTLE = title:c_winterfell }
+			}
+		}
+	}
+
+########################################################################faith
+	k_the_most_devout = {
+		8305.6.29 = {
+			holder = Most_Devout_tfw_1
+		}
+		8310.12.21 = {
+			holder = Most_Devout_tfw_2
+		}
+	}
+	b_the_starry_sept = {
+		8305.6.29 = {
+			holder = Most_Devout_tfw_1
+		}
+		8310.12.22 = {
+			holder = Most_Devout_tfw_2
+		}
+	}
+
+########################################################################braavos
+	e_daoryrdembos = {
+		8327.1.1 = {
+			holder = Pedraatho_1
+			government = administrative_government
+			succession_laws = { dictatorship_succession_law }
+		}
+	}
+	k_braavos = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	d_braavos = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	c_braavos = {
+		8306.4.5 = {
+			holder = Torone_84
+		}	
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	c_truth_canals = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	c_ragmans_harbor = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	c_abberyn = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	c_sellagoros_shields = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	d_teggarlozar = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Pedraatho_1
+		}
+	}
+	c_mothermont = {
+		8306.4.5 = {
+			holder = Torone_84
+		}
+		8320.1.1 = {
+			holder = Manterys_71
+		}
+	}
+
+#######################################################################andalos
+	# k_andalos = {
+
+# }
+	k_servants_of_the_star = {
+		8366.1.1 = {
+			holder = Melcolm_5
+		}
+	}
+	c_jaesford = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	c_jelfold = {
+		8366.1.1 = {
+			liege = 0 
+		}
+	}
+	c_morimark = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	c_crone_moors = {
+		8366.1.1 = {
+			liege = 0 
+		}
+	}
+	c_andal_coast = {
+		8366.1.1 = {
+			holder = Melcolm_5 
+		}
+	}
+	c_wincoast = {
+		8366.1.1 = {
+			liege = 0
+		}
+	}
+	d_sojourners_coast = {
+		8366.1.1 = {
+			liege = 0 
+		}
+	}
+	c_horost = {
+		8366.1.1 = {
+			holder = Melcolm_5
+		}
+	}
+	d_qhrinun_capis = {
+		8366.1.1 = {
+			liege = 0 
+		}
+	}
+
+#######################################################################pentos
+	k_pentos = {
+		8360.1.2 = {
+			liege = e_daoryrdembos
+		}
+	}
+	d_little_rhoyne = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	c_plush_approach = {
+		8360.1.1 = {
+			liege = 0	
+		}
+	}
+	c_dunbarra = {
+		8360.1.1 = {
+			liege = k_pentos
+		}
+	}
+	d_hinozobris = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	c_kastaeliton = {
+		8360.1.1 = {
+			liege = 0
+		}
+	}
+	c_phasios_hills = {
+		8360.1.1 = {
+			liege = 0	
+		}
+	}
+	d_konian_coast = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	d_nontelos = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	c_viigashos = {
+		8360.1.1 = {
+			holder = Mortalmaz_55
+		}
+	}
+	d_samaalis = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_samaalis = {
+		8360.1.1 = {
+			holder = Ran_Terrin_1
+		}
+	}
+	c_myllenios = {
+		8360.1.1 = {
+			liege = d_samaalis
+		}
+	}
+	c_gyrakos = {
+		8360.1.1 = {
+			liege = d_samaalis
+		}
+	}
+	d_the_baked_lands = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_dying_woods = {
+		8360.1.1 = {
+			liege = 0	
+		}
+	}
+	c_ejipvos = {
+		8360.1.1 = {
+			liege = 0	
+		}
+	}
+	d_nf_haratis = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	d_nf_bopatis = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	d_nf_phassios = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	d_nf_ozelmaar = {
+		8360.1.1 = {
+			liege = 0	
+		}
+		8360.1.2 = {
+			holder = 0	
+		}
+	}
+	c_gravan_pastures = {
+		8360.1.1 = {
+			liege = 0	
+		}
+	}
+	c_izulepsa = {
+		8360.1.1 = {
+			liege = 0	
+		}
+	}
+
+#######################################################################triarchy
+	e_three_daughters = {
+		8360.1.1 = {
+			holder = Abersys_1
+			government = administrative_government
+			effect = {
+				title:e_three_daughters = {
+					set_capital_county = title:c_myr
+				}
+			}
+		}
+	}
+
+	k_myr = {
+		8304.1.1 = {
+			holder = Abersys_1
+		}
+	}
+	d_myr = {
+		8304.1.1 = {
+			holder = Abersys_1
+		}
+	}
+	c_myr = {
+		8304.1.1 = {
+			holder = Abersys_1
+		}
+	}
+	c_myrish_docks = {
+		8304.1.1 = {
+			holder = Abersys_1
+		}
+	}
+
+	k_tyrosh = {
+		8360.1.1 = {
+			liege = e_daoryrdembos
+		}
+	}
+	d_ryrys = {
+		8360.1.1 = {
+			liege = k_myr
+		}
+	}
+	d_nf_zokan = {
+		8360.1.1 = {
+			liege = k_myr
+		}
+	}
+	c_tandaynish = {
+		8360.1.1 = {
+			liege = k_myr
+		}
+	}
+	c_pearridge = {
+		8360.1.1 = {
+			liege = k_myr
+		}
+	}
+	c_vilibosh = {
+		8360.1.1 = {
+			holder = Abersys_1
+		}
+	}
+	c_cape_basibosh = {
+		8360.1.1 = {
+			holder = Abersys_1
+		}
+	}
+
+	k_lys = {
+		8360.1.1 = {
+			liege = e_daoryrdembos
+		}
+	}
+	d_nf_bazanne = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_aercadar = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	d_mangrove_shoals = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	d_nf_orthys = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_erovosh = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+
+	# k_the_disputed_lands = {
+
+	# }
+	c_qorena = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_vysos_plains = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_ysilios = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_the_spar = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_kios = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_ragged_hill = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_lrolaembar = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_dyanosh = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_broken_lance = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_staherys = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_coin_hoard = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_sellswords_perch = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_goldfuror = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_qygaeryr = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_restianys = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_devosh = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_drelyia = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_triarchs_fall = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_timbercut = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_unmecaeros = {
+		8360.1.1 = {
+			liege = k_myr	
+		}
+	}
+	c_ozaonnos = {
+	8360.1.1 = {
+		liege = k_myr	
+	}
+}

@@ -1,0 +1,88 @@
+﻿@correct_culture_primary_score = 100
+@better_than_the_alternatives_score = 50
+@always_primary_score = 1000
+
+# Independent Titular Kingdoms
+# Amanes : Made this titles to clean Error log as you can apparently declare independence with them
+e_the_marches = {
+	landless = yes
+	capital = c_longtable
+		color = { 195 165 90 }
+}
+
+k_fullharvest = {
+	landless = yes
+	capital = c_longtable
+	color = { 20 170 90 }
+}
+
+e_goldengrove = {
+	landless = yes
+	capital = c_goldengrove
+	color = { 160 205 55 }
+}
+
+k_bitterbridge = {
+	landless = yes
+	capital = c_bitterbridge
+	color = { 200 255 45 }
+}
+
+e_oldtown = {
+	landless = yes
+	capital = c_oldtown
+		color = { 115 140 110 }
+}
+
+k_maidenpool = {
+	landless = yes
+	capital = c_maidenpool
+	color = { 100 50 100 }
+}
+
+k_tumbleton = {
+	landless = yes
+	capital = c_tumbleton
+	color = { 100 50 100 }
+}
+
+k_kingswood = {
+	landless = yes
+	capital = c_felwood
+	color = { 180 140 180 }
+}
+
+k_the_stars = {
+	landless = yes
+	capital = c_old_anchor
+	color = { 255 255 255 }
+}
+
+k_the_redfort = {
+	landless = yes
+	capital = c_the_redfort
+	color = { 158 25 13 }
+}
+
+k_the_moonclans = {
+	landless = yes
+	capital = c_moongates
+	color = { 40 40 40 }
+}
+
+k_servants_of_the_star = {
+	landless = yes
+	capital = c_old_anchor
+	color = { 255 255 255 }
+}
+
+h_targaryen_host_title = {
+	color = { 156 15 15 }
+
+	capital = c_kings_landing
+
+	landless = yes
+	definite_form = yes
+
+	can_create = { always = no }
+}

@@ -1,0 +1,556 @@
+﻿agot_8303 = {
+	start_date = 8303.12.31
+	is_playable = yes
+	group = agot_group_agot_tfw
+
+	weight = { value = 20 }
+
+	character = {
+		name = "bookmark_303_cersei_lannister"
+		dynasty = dynn_Lannister
+		type = female
+		title = h_the_iron_throne
+		religion = fots_seven
+ 		culture = westerman_main
+		birth = 8266.1.1
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Lannister_6
+		dynasty_splendor_level = 4
+		position = { 680 320 }
+
+		animation = personality_callous
+ 	}
+
+	character = {
+		name = "bookmark_303_daenerys_targaryen"
+		dynasty = dynn_Targaryen
+		type = female
+		title = k_dragonstone
+		religion = fots_seven
+ 		culture = high_valyrian
+		birth = 8284.5.10
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Targaryen_9
+		dynasty_splendor_level = 5
+		position = { 1000 160 }
+
+		animation = personality_bold
+ 	}
+
+	character = {
+		name = "bookmark_303_asha_greyjoy"
+		dynasty = dynn_Greyjoy
+		type = female
+		title = d_laamp_blackwind
+		religion = drowned_god
+ 		culture = ironborn
+		birth = 8276.1.1
+		government = pirate_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Greyjoy_13
+		dynasty_splendor_level = 3
+		position = { 950 420 }
+
+		animation = marshall                           
+ 	}
+
+	character = {
+		name = "bookmark_303_olenna_redwyne"
+		dynasty = dynn_Tyrell
+		type = female
+		title = e_the_reach
+		religion = fots_seven
+ 		culture = reachman
+		birth = 8228.1.1
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Redwyne_2
+		dynasty_splendor_level = 3
+		position = { 300 560 }
+
+		animation = personality_rational
+ 	}
+
+	character = {
+		name = "bookmark_303_ellaria_sand"
+		dynasty = dynn_Uller
+		type = female
+		title = e_dorne
+		religion = fots_seven
+ 		culture = sand_dornish
+		birth = 8267.1.1
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Uller_6
+		dynasty_splendor_level = 2
+		position = { 800 750 }
+
+		animation = personality_dishonorable
+ 	}
+}
+
+agot_8305 = {
+	start_date = 8305.1.1
+	is_playable = yes
+	group = agot_group_agot_tfw
+
+	weight = { value = 20 }
+
+	character = {
+		name = "bookmark_305_brandon_stark"
+		dynasty = dynn_Stark
+		dynasty_splendor_level = 5
+		type = male
+		birth = 8290.7.7
+		title = h_the_iron_throne
+		government = lp_feudal_government
+		culture = northman
+		religion = old_gods_children
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Stark_Dummy_10
+		position = { 600 800 }
+
+		animation = zealous                           
+ 	}
+
+	 character = {
+		name = "bookmark_305_sansa_stark"
+		dynasty = dynn_Stark
+		type = female
+		title = e_the_north
+		religion = old_gods_wnw
+		culture = northman
+		birth = 8286.12.5
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Stark_Dummy_8
+		dynasty_splendor_level = 5
+ 		position = { 480 370 }
+
+		animation = personality_rational
+ 	}
+
+	 character = {
+		name = "bookmark_305_jon_snow"
+		dynasty = dynn_Stark
+		type = male
+		title = d_laamp_merc_jonsnow
+		religion = old_gods_wnw
+		culture = northman
+		birth = 8283.8.2
+		government = landless_adventurer_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Stark_7
+		dynasty_splendor_level = 5
+ 		position = { 900 140 }
+
+		animation = shame                           
+ 	}
+
+	 character = {
+		name = "bookmark_305_arya_stark"
+		dynasty = dynn_Stark
+		type = female
+		title = d_laamp_stormchaser
+		religion = old_gods_wnw
+		culture = northman
+		birth = 8289.3.16
+		government = landless_adventurer_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Stark_Dummy_9
+		dynasty_splendor_level = 5
+		position = { 1300 750 }
+
+		animation = personality_dishonorable
+ 	}
+
+}
+
+agot_8305_2 = {
+	start_date = 8305.1.2
+	is_playable = yes
+	group = agot_group_agot_tfw
+
+	weight = { value = 20 }
+
+	character = {
+		name = "bookmark_305_aurane_waters"
+		dynasty = dynn_Velaryon
+		dynasty_splendor_level = 3
+		type = male
+		birth = 8278.1.1
+		title = k_the_stepstones
+		government = pirate_government
+		culture = high_valyrian
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Velaryon_5
+		position = { 1100 700 }
+
+
+		animation = marshal                           
+ 	}
+
+	character = {
+		name = "bookmark_305_monterys_velaryon"
+		dynasty = dynn_Velaryon
+		dynasty_splendor_level = 3
+		type = male
+		birth = 8293.1.1
+		title = d_driftmark
+		government = lp_feudal_government
+		culture = high_valyrian
+		religion = rhllor_fots
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Velaryon_3
+		position = { 1100 450 }
+
+
+		animation = personality_cynical
+ 	}
+
+	character = {
+		name = "bookmark_305_davos_seaworth"
+		dynasty = dynn_Seaworth
+		dynasty_splendor_level = 1
+		type = male
+		birth = 8293.1.1
+		title = d_the_drench
+		government = lp_feudal_government
+		culture = crownlander
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Seaworth_1
+		position = { 700 820 }
+
+
+		animation = personality_rational
+ 	}
+
+	character = {
+		name = "bookmark_305_elyas_scales"
+		dynasty = dynn_Saerygan
+		dynasty_splendor_level = 1
+		type = male
+		birth = 8260.1.1
+		title = c_the_scales
+		government = lp_feudal_government
+		culture = westerosi_valyrian
+		religion = rhllor_fots
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Scales_1
+		position = { 1200 200 }
+
+
+		animation = personality_callous                            
+ 	}
+
+	character = {
+		name = "bookmark_305_gendry_baratheon"
+		dynasty = dynn_Baratheon
+		dynasty_splendor_level = 4
+		type = male
+		birth = 8284.6.1
+		title = e_the_stormlands
+		government = lp_feudal_government
+		culture = crownlander
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Baratheon_9
+		position = { 800 570 }
+
+		animation = marshal                           
+ 	}
+
+	character = {
+		name = "bookmark_305_brandon_stark"
+		dynasty = dynn_Stark
+		dynasty_splendor_level = 5
+		type = male
+		birth = 8290.7.7
+		title = h_the_iron_throne
+		government = lp_feudal_government
+		culture = northman
+		religion = old_gods_children
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Stark_Dummy_10
+		position = { 500 440 }
+
+		animation = zealous                           
+ 	}
+
+	character = {
+		name = "bookmark_305_asha_greyjoy"
+		dynasty = dynn_Greyjoy
+		dynasty_splendor_level = 3
+		type = female
+		birth = 8276.1.1
+		title = e_the_iron_islands
+		government = lp_feudal_government
+		culture = ironborn
+		religion = drowned_god
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Greyjoy_13
+		position = { 320 160 }
+
+		animation = personality_bold
+ 	}
+
+	character = {
+		name = "bookmark_305_tyrion_lannister"
+		dynasty = dynn_Lannister
+		dynasty_splendor_level = 5
+		type = male
+		birth = 8273.1.1
+		title = e_the_westerlands
+		government = lp_feudal_government
+		culture = westerman_main
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Lannister_8
+		position = { 200 380 }
+
+		animation = steward                           
+ 	}
+
+	character = {
+		name = "bookmark_305_edmure_tully"
+		dynasty = dynn_Tully
+		dynasty_splendor_level = 3
+		type = male
+		birth = 8273.1.1
+		title = e_the_riverlands
+		government = lp_feudal_government
+		culture = riverman_main
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = Tully_7
+		position = { 570 190 }
+
+		animation = disapproval                           
+ 	}
+
+	character = {
+		name = "bookmark_305_robert_arryn"
+		dynasty = dynn_Arryn
+		dynasty_splendor_level = 4
+		type = male
+		birth = 8292.1.1
+		title = e_the_vale
+		government = lp_feudal_government
+		culture = valeman_main
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Arryn_8
+		position = { 870 140 }
+
+		animation = boredom                           
+ 	}
+
+	character = {
+		name = "bookmark_305_bronn_blackwater"
+		dynasty = dynn_Blackwater
+		dynasty_splendor_level = 1
+		type = male
+		birth = 8266.1.1
+		title = e_the_reach
+		government = lp_feudal_government
+		culture = crownlander
+		religion = fots_seven
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Blackwater_1
+		position = { 350 650 }
+
+		animation = personality_greedy
+ 	}
+}
+
+# agot_8310 = {
+# 	start_date = 8310.1.1
+# 	is_playable = yes
+# 	group = agot_group_agot_tfw310
+
+# 	weight = { value = 20 }
+
+# 	character = {
+# 		name = "bookmark_310_brandon_stark"
+# 		dynasty = dynn_Stark
+# 		dynasty_splendor_level = 5
+# 		type = male
+# 		birth = 8290.7.7
+# 		title = e_the_iron_throne
+# 		government = lp_feudal_government
+# 		culture = northman
+# 		religion = old_gods_children
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+# 		history_id = Stark_Dummy_10
+# 		position = { 1100 120 }
+
+
+# 		animation = marshal                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_manfrey_martell"
+# 		dynasty = dynn_Martell
+# 		dynasty_splendor_level = 4
+# 		type = male
+# 		birth = 8258.1.1
+# 		title = k_dorne
+# 		government = lp_feudal_government
+# 		culture = salt_dornish
+# 		religion = mother_orphan
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Martell_20
+# 		position = { 1100 700 }
+
+# 		animation = disapproval                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_gendry_baratheon"
+# 		dynasty = dynn_Baratheon
+# 		dynasty_splendor_level = 4
+# 		type = male
+# 		birth = 8284.6.1
+# 		title = k_the_stormlands
+# 		government = lp_feudal_government
+# 		culture = crownlander
+# 		religion = fots_seven
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Baratheon_9
+# 		position = { 1000 400}
+
+# 		animation = marshal                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_talla_tarly"
+# 		dynasty = dynn_Tarly
+# 		dynasty_splendor_level = 3
+# 		type = female
+# 		birth = 8284.1.1
+# 		title = k_westmarch
+# 		government = lp_feudal_government
+# 		culture = marcher
+# 		religion = fots_seven
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Tarly_3
+# 		position = { 680 320 }	
+
+# 		animation = marshal                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_mathis_rowan"
+# 		dynasty = dynn_Rowan
+# 		dynasty_splendor_level = 3
+# 		type = male
+# 		birth = 8255.1.1
+# 		title = k_goldengrove
+# 		government = lp_feudal_government
+# 		culture = reachman
+# 		religion = fots_seven
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Rowan_1
+# 		position = { 450 130 }
+
+# 		animation = marshal                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_leyton_hightower"
+# 		dynasty = dynn_Hightower
+# 		dynasty_splendor_level = 4
+# 		type = male
+# 		birth = 8235.1.1
+# 		title = k_oldtown
+# 		government = lp_feudal_government
+# 		culture = honeywiner
+# 		religion = fots_seven
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Hightower_5
+# 		position = { 100 650 }
+
+# 		animation = marshal                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_amanda_peake"
+# 		dynasty = dynn_Peake
+# 		dynasty_splendor_level = 2
+# 		type = female
+# 		birth = 8306.3.3
+# 		title = c_starpike
+# 		government = lp_feudal_government
+# 		culture = reachman
+# 		religion = fots_seven
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+# 		history_id = Peake_tfw_1
+# 		position = { 420 445 }
+
+
+# 		animation = marshal                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_alkeyne_florent"
+# 		dynasty = dynn_Florent
+# 		dynasty_splendor_level = 3
+# 		type = male
+# 		birth = 8254.1.1
+# 		title = d_brightwater
+# 		government = lp_feudal_government
+# 		culture = honeywiner
+# 		religion = fots_seven
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Florent_7
+# 		position = { 80 370 }
+
+# 		animation = marshal                           
+#  	}
+
+# 	character = {
+# 		name = "bookmark_310_anders_yronwood"
+# 		dynasty = dynn_Yronwood
+# 		dynasty_splendor_level = 3
+# 		type = male
+# 		birth = 8262.1.1
+# 		title = d_yronwood
+# 		government = lp_feudal_government
+# 		culture = stone_dornish
+# 		religion = fots_seven
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Yronwood_2
+# 		position = { 650 670 }
+
+# 		animation = marshal                           
+#  	}
+# }
+
+# agot_8366 = {
+# 	start_date = 8366.1.1
+# 	is_playable = yes
+# 	group = agot_group_agot_tfw2
+
+# 	weight = { value = 20 }
+
+# 	character = {
+# 		name = "bookmark_366_joffrey_lannister"
+# 		dynasty = dynn_Lannister
+# 		type = male
+# 		title = e_the_iron_throne
+# 		religion = fots_seven
+#  		culture = westerman
+# 		birth = 8327.12.11
+# 		government = lp_feudal_government
+# 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+# 		history_id = Lannister_tfw_4
+# 		dynasty_splendor_level = 5
+# 		position = { 280 370 }
+
+# 		animation = idle                           
+#  	}
+# }

@@ -1,0 +1,16 @@
+﻿house_Pedraatho = {
+	name = "dynn_Pedraatho"
+	dynasty = dynn_Pedraatho
+	motto = dynn_Pedraatho_motto
+}
+
+house_Jacobs = {
+	name = "dynn_Jacobs"
+	dynasty = dynn_Jacobs
+	motto = dynn_Jacobs_motto
+}
+
+house_Unused = {
+	name = "Unused"
+	dynasty = dynn_Unused
+}

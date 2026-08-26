@@ -7,6 +7,9 @@ tags={
 	"Translation"
 }
 name="AGOT - A Time for Wolves Fix"
+dependencies={
+	"A Game of Thrones"
+}
 picture="thumbnail.png"
 supported_version="1.19.0.6"
 path="C:/Users/Gonza/Documents/Paradox Interactive/Crusader Kings III/mod/A Time for Wolves Fix"

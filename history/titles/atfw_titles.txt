@@ -944,7 +944,7 @@ b_queensgate = {
 }
 b_oakenshield = {
 	8303.11.7 = {
-		holder = Tollet_6
+		holder = Tollett_6
 	}
 	8304.4.28 = {
 		holder = Wilderness_Empress
@@ -1323,12 +1323,20 @@ d_karhold = {
 	8299.11.8 = {
 		holder = Karstark_62
 	}
+	# Override CK3AGOT's book-continuity transfer to Harrion on this date.
+	8299.11.9 = {
+		holder = Karstark_62
+	}
 	8303.11.8 = {
 		holder = Karstark_19
 	}
 }
 c_karhold = {
 	8299.11.8 = {
+		holder = Karstark_62
+	}
+	# Override CK3AGOT's book-continuity transfer to Harrion on this date.
+	8299.11.9 = {
 		holder = Karstark_62
 	}
 	8303.11.8 = {
@@ -1808,6 +1816,19 @@ k_red_lands = {
 		holder = 0
 	}
 }
+c_moat_cailin = {
+	8303.11.7 = {
+		holder = Stark_7
+	}
+	8305.1.1 = {
+		holder = Stark_Dummy_8
+	}
+}
+c_ethering = {
+	8303.11.7 = {
+		holder = Giantsbane_1
+	}
+}
 d_the_dreadfort = {
 	8303.11.7 = {
 		holder = Stark_7
@@ -1852,11 +1873,17 @@ c_mormont = {
 	}
 }
 d_hornwood = {
+	8303.11.7 = {
+		holder = 0
+	}
 	8305.1.1 = {
 		holder = Hornwood_4
 	}
 }
 c_hornwood = {
+	8303.11.7 = {
+		holder = 0
+	}
 	8305.1.1 = {
 		holder = Hornwood_4
 	}
@@ -1999,7 +2026,7 @@ c_sunspear = {
 	8303.8.21 = {
 		holder = Uller_6
 	}
-	8304.2.2 = {
+	8303.8.22 = {
 		holder = Martell_20
 	}
 }
@@ -2016,7 +2043,15 @@ c_plankytown = {
 		holder = Uller_6
 	}
 	8303.8.22 = {
-		holder = Martelsdl_20
+		holder = Martell_20
+	}
+}
+d_ghaston_grey = {
+	8303.8.21 = {
+		holder = Uller_6
+	}
+	8304.2.2 = {
+		holder = Martell_20
 	}
 }
 d_torrentine = {
@@ -2274,12 +2309,23 @@ c_hagedorn = {
 	}
 }
 c_darry = {
+	# Martyn is already dead in ATFW's TV chronology; keep Lancel until the Sept explosion.
+	8300.4.15 = {
+		holder = Lannister_9
+	}
 	8303.10.22 = {
 		holder = Frey_50
 		liege = h_the_iron_throne
 	}
 }
 d_tridents_mouth = {
+	# Martyn is already dead in ATFW's TV chronology; keep Lancel until the Sept explosion.
+	8300.4.15 = {
+		holder = Lannister_9
+	}
+	8303.10.22 = {
+		holder = Frey_50
+	}
 	8304.12.25 = {
 		holder = Frey_50
 		liege = e_the_riverlands
@@ -2309,6 +2355,15 @@ d_dragonstone = {
 		holder = 0
 	}
 }
+c_dragonstone = {
+	8303.12.12 = {
+		holder = Targaryen_9
+	}
+	8304.12.26 = {
+		holder = 0
+	}
+}
+
 d_duskendale = {
 	8303.12.31 = {
 		liege = h_the_iron_throne
@@ -2385,6 +2440,12 @@ d_vellum_coast = {
 		liege = e_the_stormlands
 	}
 }
+c_parchments = {
+	8303.10.22 = {
+		holder = Penrose_45
+	}
+}
+
 d_wendwater_forest = {
 	8303.12.31 = {
 		liege = h_the_iron_throne
@@ -3055,6 +3116,12 @@ d_oldtown = {
 		de_jure_liege = k_oldtown
 	}
 }
+c_oldtown = {
+	8303.10.22 = {
+		holder = Hightower_7
+	}
+}
+
 k_the_arbor = {
 	8310.1.1 = {
 		de_jure_liege = e_oldtown
@@ -3250,16 +3317,11 @@ d_orchard_way = {
 }
 c_cider_crossing = {
 	8303.10.22 = {
-		holder = Fossoway_5
+		holder = Fossoway_4
 	}
 	8304.12.26 = {
 		holder = Fossoway_6
 	}
-	8310.1.1 = {
-		liege = k_the_westmarch
-	}
-}
-c_burkley = {
 	8310.1.1 = {
 		liege = k_the_westmarch
 	}
@@ -3592,90 +3654,9 @@ d_darstone = {
 	}
 }
 #shield islands
-k_the_shields = {
-	1.1.1 = {
-		de_jure_liege = e_the_reach
-	}
-	2000.1.1 = {
-		liege = 0
-		holder = Hewett_13
-	}
-	7860.1.1 = {
-		holder = Hewett_15
-		liege = e_the_reach
-		effect = {
-			agot_turn_westerosi_kingdom_into_lordship_history_effect = { YEAR = 7860 }
-		}
-	}
-	7876.1.1 = {
-		holder = Hewett_16
-	}
-	7890.1.1 = {
-		holder = Hewett_18
-	}
-	7921.1.1 = {
-		holder = Hewett_23
-	}
-	7949.1.1 = {
-		holder = Hewett_32
-	}
-	7987.1.1 = {
-		holder = Hewett_35
-	}
-	8013.1.1 = {
-		holder = Hewett_38
-	}
-	8050.1.1 = {
-		holder = Hewett_46
-	}
-	8062.1.1 = {
-		holder = Hewett_48
-	}
-	8091.1.1 = {
-		holder = Hewett_50
-	}
-	8112.1.1 = {
-		holder = Hewett_52
-	}
-	8129.4.1 = {
-		liege = 0
-	}
-	8130.2.11 = {
-		liege = h_the_iron_throne
-	}
-	8131.1.14 = {
-		liege = e_the_reach
-	}
-	8161.1.1 = {
-		holder = Hewett_28
-	}
-	8203.1.1 = {
-		holder = Hewett_29
-	}
-	8220.1.1 = {
-		holder = Hewett_30
-	}
-	8245.1.1 = {
-		holder = Hewett_1
-	}
-	8271.1.1 = {
-		holder = Hewett_3
-	}
-	8300.4.29 = {
-		holder = Hewett_4
-	}
-	8300.5.1 = {
-		holder = 0
-	}
-	8304.12.26 = {
-		holder = Hewett_4
-		de_jure_liege = e_the_reach
-		liege = e_the_reach
-	}
-}
 d_shield_islands = {
 	1.1.1 = {
-		de_jure_liege = k_the_shields
+		de_jure_liege = e_the_reach
 	}
 	8300.4.29 = {
 		holder = Hewett_4
@@ -3684,7 +3665,7 @@ d_shield_islands = {
 		holder = 0
 	}
 	8303.12.12 = {
-		liege = k_the_shields
+		liege = e_the_reach
 	}
 	8304.12.26 = {
 		holder = Hewett_4
@@ -3699,7 +3680,7 @@ c_oakenshield = {
 	}
 	8304.12.26 = {
 		holder = Hewett_4
-		liege = e_the_reach
+		liege = d_shield_islands
 	}
 }
 c_small_shields = {
@@ -3711,7 +3692,7 @@ c_small_shields = {
 	}
 	8304.12.26 = {
 		holder = Hythe_69
-		liege = e_the_reach
+		liege = d_shield_islands
 	}
 }
 c_greenshield = {
@@ -3723,7 +3704,7 @@ c_greenshield = {
 	}
 	8304.12.26 = {
 		holder = Chester_46
-		liege = e_the_reach
+		liege = d_shield_islands
 	}
 }
 c_southshield = {
@@ -3735,7 +3716,7 @@ c_southshield = {
 	}
 	8304.12.26 = {
 		holder = Serry_5
-		liege = e_the_reach
+		liege = d_shield_islands
 	}
 }
 c_greyshield = {
@@ -3747,7 +3728,7 @@ c_greyshield = {
 	}
 	8304.12.26 = {
 		holder = Grimm_3
-		liege = e_the_reach
+		liege = d_shield_islands
 	}
 }
 d_the_ocean_road = {
@@ -5384,10 +5365,16 @@ d_laamp_the_brotherhood_without_banners = {
 			agot_safe_move_laamp_history_effect = { CASTLE = title:c_winterfell }
 		}
 	}
+	8304.4.28 = {
+		holder = 0
+	}
 }
 
 ########################################################################faith
 k_the_most_devout = {
+	8303.10.22 = {
+		holder = 0
+	}
 	8305.6.29 = {
 		holder = Most_Devout_tfw_1
 	}
@@ -5888,5 +5875,30 @@ c_unmecaeros = {
 c_ozaonnos = {
 	8360.1.1 = {
 		liege = k_myr
+	}
+}
+
+
+# TV-continuity override: Doran dies in 8303 and Ellaria is executed in 8304.
+c_ghaston_grey = {
+	8303.8.21 = {
+		holder = Uller_6
+	}
+	8304.2.2 = {
+		holder = Martell_20
+	}
+}
+
+# The Great Other is killed at Winterfell in the TV chronology.
+d_wintermouth = {
+	8304.4.28 = {
+		holder = 0
+	}
+}
+
+# Aegon Bloodborn dies in ATFW's TV-continuity timeline.
+d_laamp_Frey_24 = {
+	8304.12.25 = {
+		holder = 0
 	}
 }

@@ -1,0 +1,194 @@
+﻿namespace = atfw_jon_daenerys
+
+# Jon Snow arrives before Daenerys Targaryen.
+atfw_jon_daenerys.0001 = {
+	type = character_event
+	title = atfw_jon_daenerys.0001.t
+	desc = atfw_jon_daenerys.0001.desc
+	theme = diplomacy
+
+	trigger = {
+		is_alive = yes
+		is_married = no
+		is_betrothed = no
+		has_trait = refusing_marriage
+		character:Targaryen_9 = {
+			is_alive = yes
+			is_married = no
+			is_betrothed = no
+			has_trait = refusing_marriage
+		}
+	}
+
+	immediate = {
+		character:Targaryen_9 = { save_scope_as = daenerys }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:daenerys
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0001.a
+		scope:daenerys = {
+			trigger_event = { id = atfw_jon_daenerys.0002 days = 1 }
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+# Daenerys weighs the King in the North.
+atfw_jon_daenerys.0002 = {
+	type = character_event
+	title = atfw_jon_daenerys.0002.t
+	desc = atfw_jon_daenerys.0002.desc
+	theme = diplomacy
+
+	trigger = {
+		is_alive = yes
+		has_trait = refusing_marriage
+		character:Stark_7 = {
+			is_alive = yes
+			has_trait = refusing_marriage
+		}
+	}
+
+	immediate = {
+		character:Stark_7 = { save_scope_as = jon }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:jon
+		animation = personality_bold
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0002.a
+		scope:jon = {
+			trigger_event = { id = atfw_jon_daenerys.0003 days = 2 }
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+# A private conversation turns political necessity into mutual understanding.
+atfw_jon_daenerys.0003 = {
+	type = character_event
+	title = atfw_jon_daenerys.0003.t
+	desc = atfw_jon_daenerys.0003.desc
+	theme = diplomacy
+
+	trigger = {
+		is_alive = yes
+		has_trait = refusing_marriage
+		character:Targaryen_9 = {
+			is_alive = yes
+			has_trait = refusing_marriage
+		}
+	}
+
+	immediate = {
+		character:Targaryen_9 = { save_scope_as = daenerys }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:daenerys
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0003.a
+		set_relation_friend = scope:daenerys
+		scope:daenerys = {
+			trigger_event = { id = atfw_jon_daenerys.0004 days = 2 }
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+# Daenerys proposes a union of crowns; both abandon their refusal to marry.
+atfw_jon_daenerys.0004 = {
+	type = character_event
+	title = atfw_jon_daenerys.0004.t
+	desc = atfw_jon_daenerys.0004.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+		is_married = no
+		is_betrothed = no
+		has_trait = refusing_marriage
+		character:Stark_7 = {
+			is_alive = yes
+			is_married = no
+			is_betrothed = no
+			has_trait = refusing_marriage
+		}
+	}
+
+	immediate = {
+		character:Stark_7 = { save_scope_as = jon }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:jon
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0004.a
+
+		remove_trait = refusing_marriage
+		scope:jon = {
+			remove_trait = refusing_marriage
+			create_betrothal = root
+		}
+
+		# The political union follows the personal one:
+		# the North and the Vale swear fealty directly to Daenerys.
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = jon_daenerys_union_change
+			add_claim_on_loss = no
+		}
+
+		title:e_the_north.holder ?= {
+			change_liege = {
+				liege = root
+				change = scope:jon_daenerys_union_change
+			}
+		}
+
+		title:e_the_vale.holder ?= {
+			change_liege = {
+				liege = root
+				change = scope:jon_daenerys_union_change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:jon_daenerys_union_change
+
+		ai_chance = { base = 100 }
+	}
+}

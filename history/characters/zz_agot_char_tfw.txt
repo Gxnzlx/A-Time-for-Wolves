@@ -1005,7 +1005,7 @@ Uller_6 = {
 	#name = Ellaria # Canon, THE Ellaria Sand
 	8303.12.31 = {
 		effect = {
-			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Uller_6 COA_KEY = dynn_Martell }
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Uller_6 COA_KEY = house_Martell }
 		}
 	}
 	8304.2.2 = {
@@ -1256,6 +1256,9 @@ Stark_7 = {
 		add_trait = unyielding_defender
 		add_trait = lifestyle_blademaster
 		add_trait = scarred
+	}
+	8303.12.12 = {
+		add_trait = refusing_marriage
 	}
 	8304.12.27 = {
 		effect = {
@@ -3970,6 +3973,7 @@ Targaryen_9 = {
 	}
 	8303.12.11 = {
 		remove_trait = widowed
+		add_trait = refusing_marriage
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
 		}

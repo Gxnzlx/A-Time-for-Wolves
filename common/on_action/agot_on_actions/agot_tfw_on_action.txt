@@ -73,6 +73,28 @@ tfw_on_game_start = {
 			title:e_dorne.holder = {
 				trigger_event = { id = agot_tfw_five_queens.0003 days = 1 }
 			}
+
+			# Jon Snow and Daenerys Targaryen meeting / betrothal chain.
+			# Exclusive to the 8303 bookmark timeline; both begin with refusing_marriage.
+			if = {
+				limit = {
+					character:Stark_7 = {
+						is_alive = yes
+						is_married = no
+						is_betrothed = no
+						has_trait = refusing_marriage
+					}
+					character:Targaryen_9 = {
+						is_alive = yes
+						is_married = no
+						is_betrothed = no
+						has_trait = refusing_marriage
+					}
+				}
+				character:Stark_7 = {
+					trigger_event = { id = atfw_jon_daenerys.0001 days = 3 }
+				}
+			}
 		}
 
 		# ATFW realm setup events that were previously orphaned.
@@ -264,6 +286,7 @@ tfw_on_game_start = {
 			}
 
 			# Stark_7 - Rayder_hh_3 Marriage
+			# Intended for the later 8305 bookmark; preserved from ATFW.
 			if = {
 				limit = {
 					character:Stark_7 = { is_alive = yes is_married = no is_betrothed = no }

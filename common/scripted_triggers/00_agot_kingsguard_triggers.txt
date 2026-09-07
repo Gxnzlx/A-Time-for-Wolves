@@ -61,10 +61,10 @@ can_be_kingsguard_trigger = {
 }
 
 valid_kingsguard_gender_trigger = {
-    OR = {
-        is_male = yes
-        has_character_flag = bypass_councillor_gender_requirements
-    }
+	OR = {
+		is_male = yes
+		has_character_flag = bypass_councillor_gender_requirements
+	}
 }
 
 highborn_kingsguard_candidate = {

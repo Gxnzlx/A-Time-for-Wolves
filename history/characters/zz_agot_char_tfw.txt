@@ -1,4829 +1,4829 @@
 ﻿#a_speacial_
-	Most_Devout_22 = {
-		#High Sparrow
-		8303.10.22 = { 
-			death = {
-				death_reason = death_burned
-			}
+Most_Devout_22 = {
+	#High Sparrow
+	8303.10.22 = {
+		death = {
+			death_reason = death_burned
 		}
 	}
-	Most_Devout_tfw_1 = {
-		#The incredibly old one
-		name = Old
-		dynasty = dynn_Most_Devout
+}
+Most_Devout_tfw_1 = {
+	#The incredibly old one
+	name = Old
+	dynasty = dynn_Most_Devout
 
 
-		female = no
+	female = no
 
-		culture = honeywiner
-		religion = fots_seven
+	culture = honeywiner
+	religion = fots_seven
 
-		disallow_random_traits = yes
+	disallow_random_traits = yes
 
-		trait = education_learning_4
-		trait = calm
-		trait = compassionate
-		trait = patient
-		trait = humble
+	trait = education_learning_4
+	trait = calm
+	trait = compassionate
+	trait = patient
+	trait = humble
 
-		8232.1.1 = {
-			birth = yes
-		}
-		8249.1.1 = {
-			add_trait = septon
-			add_trait = theologian
-			add_trait = lifestyle_mystic
-			add_trait = whole_of_body
-		}
-		8305.6.17 = {
-			give_nickname = nick_the_incredibly_old_one
-			effect = { add_character_flag = nickname_event }
+	8232.1.1 = {
+		birth = yes
+	}
+	8249.1.1 = {
+		add_trait = septon
+		add_trait = theologian
+		add_trait = lifestyle_mystic
+		add_trait = whole_of_body
+	}
+	8305.6.17 = {
+		give_nickname = nick_the_incredibly_old_one
+		effect = { add_character_flag = nickname_event }
+	}
+}
+Most_Devout_tfw_2 = {
+	#Lucas
+	name = Lucas
+	dynasty = dynn_Most_Devout
+	dna = Stark_3
+
+	culture = westerman_main
+	religion = fots_seven
+
+	disallow_random_traits = yes
+
+	trait = education_learning_4
+	trait = gluttonous
+	trait = shy
+	trait = paranoid
+
+	8272.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		add_character_flag = sexuality_ensure_heterosexual
+		effect = { change_current_weight = 100 }
+	}
+	8249.1.1 = {
+		add_trait = septon
+		add_trait = wheezing
+	}
+	8305.6.17 = {
+		effect = {
+			agot_assign_high_septon_effect = yes
+			give_nickname = nick_the_big_fat_one
+			add_character_flag = nickname_event
 		}
 	}
-	Most_Devout_tfw_2 = {
-		#Lucas
-		name = Lucas
-		dynasty = dynn_Most_Devout
-		dna = Stark_3
+}
+Dothraki_tfw_1 = {
+	#Jeffers
+	name = Jeffro
 
-		culture = westerman_main
-		religion = fots_seven
+	female = no
 
-		disallow_random_traits = yes
+	culture = dothraki
+	religion = dothraki_faith
 
-		trait = education_learning_4
-		trait = gluttonous
-		trait = shy
-		trait = paranoid
+	disallow_random_traits = yes
 
-		8272.1.1 = {
-			birth = yes
-			add_character_flag = has_scripted_appearance
-			add_character_flag = sexuality_ensure_heterosexual
-			effect = { change_current_weight = 100 }
-		}
-		8249.1.1 = {
-			add_trait = septon
-			add_trait = wheezing
-		}
-		8305.6.17 = {
-			effect = {
-				agot_assign_high_septon_effect = yes
-				give_nickname = nick_the_big_fat_one
-				add_character_flag = nickname_event
-			}
+	trait = education_martial_4
+	trait = callous
+	trait = arrogant
+	trait = ambitious
+
+	8282.1.1 = {
+		birth = yes
+	}
+	8305.1.1 = {
+		add_trait = deviant
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Dothraki_tfw_1 COA_KEY = jeffro_personal_coa }
 		}
 	}
-	Dothraki_tfw_1 = {
-		#Jeffers
-		name = Jeffro
-
-		female = no
-
-		culture = dothraki
-		religion = dothraki_faith
-
-		disallow_random_traits = yes
-
-		trait = education_martial_4
-		trait = callous
-		trait = arrogant
-		trait = ambitious
-
-		8282.1.1 = {
-			birth = yes
-		}
-		8305.1.1 = {
-			add_trait = deviant
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Dothraki_tfw_1 COA_KEY = jeffro_personal_coa }
-			}
-		}
-	}
+}
 
 #btw
-	Rayder_hh_3 = {
-		#name = Val # Canon
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+Rayder_hh_3 = {
+	#name = Val # Canon
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Thenn_2 = {
+	#name = Sigorn # Canon
+	8305.1.1 = {
+		dynasty = dynn_Thenn # House Thenn
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_karhold}
+		}
+	}
+}
+Giantsbane_1 = {
+	#name = Tormund # Canon, THE Tormund Giantsbane, a lord
+	8305.1.1 = {
+		add_spouse = Flade_90
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
+		}
+	}
+}
+Giantsbane_2 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
+		}
+	}
+}
+Giantsbane_5 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
+		}
+	}
+}
+Giantsbane_6 = {
+	8305.1.1 = {
+		add_spouse = Overton_83
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
+		}
+	}
+}
+Lowborn_Wildling_2 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
+		}
+	}
+}
+Wildling_Nightswatch_3 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Wildling_Nightswatch_4 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Wildling_Nightswatch_5 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Wildling_Nightswatch_6 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Wildling_Nightswatch_7 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Wildling_Nightswatch_8 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Gorn_2 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Gorn_rs_1 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Deglor_6 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Dalba_1 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Hallowbluff_1 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Hallowbluff_2 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Hallowbluff_3 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Hallowbluff_4 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Rattleshirt_1 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Dogshead_16 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Dogshead_14 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Dogshead_3 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
+		}
+	}
+}
+Mutineers_1 = {
+	religion = fots_seven
+	trait = lifestyle_hunter
+	8300.3.1 = {
+		religion = cold_gods_wildling
+		add_spouse = Craster_8
+		add_spouse = Craster_9
+		add_spouse = Craster_14
+		add_spouse = Craster_15
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_crasters_keep }
+		}
+	}
+	8300.3.2 = {
+		effect = {
+			if = {
+				limit = { character:Mutineers_12 = { is_alive = yes } }
+				set_relation_friend = character:Mutineers_12
+			}
+		}
+		effect = {
+			if = {
+				limit = { character:Mutineers_3 = { is_alive = yes } }
+				set_relation_friend = character:Mutineers_3
+			}
+		}
+		effect = {
+			if = {
+				limit = { character:Mutineers_4 = { is_alive = yes } }
+				set_relation_friend = character:Mutineers_4
+			}
+		}
+		effect = {
+			if = {
+				limit = { character:Mutineers_5 = { is_alive = yes } }
+				set_relation_friend = character:Mutineers_5
 			}
 		}
 	}
-	Thenn_2 = {
-		#name = Sigorn # Canon
-		8305.1.1 = {
-			dynasty = dynn_Thenn # House Thenn
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_karhold}
-			}
+}
+Mutineers_12 = {
+	religion = fots_seven
+	8300.3.1 = {
+		religion = cold_gods_wildling
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_16 }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_17 }
 		}
 	}
-	Giantsbane_1 = {
-		#name = Tormund # Canon, THE Tormund Giantsbane, a lord
-		8305.1.1 = {
-			add_spouse = Flade_90
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
-			}
+}
+Mutineers_3 = {
+	religion = fots_seven
+	8300.3.1 = {
+		religion = cold_gods_wildling
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_18 }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_20 }
 		}
 	}
-	Giantsbane_2 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
-			}
+}
+Mutineers_4 = {
+	religion = fots_seven
+	8300.3.1 = {
+		religion = cold_gods_wildling
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_21 }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_22 }
 		}
 	}
-	Giantsbane_5 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
-			}
+}
+Mutineers_5 = {
+	religion = fots_seven
+	8300.3.1 = {
+		religion = cold_gods_wildling
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_23 }
+			agot_safe_concubine_history_effect = { TARGET = character:Craster_24 }
 		}
 	}
-	Giantsbane_6 = {
-		8305.1.1 = {
-			add_spouse = Overton_83
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
-			}
+}
+Gin_Alley_1 = {
+	religion = fots_seven
+	8299.12.4 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_crasters_keep }
 		}
 	}
-	Lowborn_Wildling_2 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_the_dreadfort }
-			}
+	8300.2.10 = {
+		death = {
+			death_reason = death_battle
+			killer = Stark_7
 		}
 	}
-	Wildling_Nightswatch_3 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_4 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Wildling_Nightswatch_4 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_5 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Wildling_Nightswatch_5 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_6 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Wildling_Nightswatch_6 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_7 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Wildling_Nightswatch_7 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_8 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Wildling_Nightswatch_8 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_9 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Gorn_2 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_10 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Gorn_rs_1 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_11 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Deglor_6 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_12 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Dalba_1 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_13 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Hallowbluff_1 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_14 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Hallowbluff_2 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_15 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Hallowbluff_3 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_16 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Hallowbluff_4 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_17 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Rattleshirt_1 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_18 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Dogshead_16 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_20 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Dogshead_14 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_21 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Dogshead_3 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Craster_22 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
 		}
 	}
-	Mutineers_1= {
+}
+Craster_23 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
+		}
+	}
+}
+Craster_24 = {
+	religion = cold_gods_wildling
+	8300.3.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
+		}
+	}
+}
+Craster_19 = {
+	religion = cold_gods_wildling
+	8302.1.1 = {
 		religion = fots_seven
-		trait = lifestyle_hunter
-		8300.3.1 = {
-			religion = cold_gods_wildling
-			add_spouse = Craster_8
-			add_spouse = Craster_9
-			add_spouse = Craster_14
-			add_spouse = Craster_15
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_crasters_keep }
-			}
-		}
-		8300.3.2 = {
-			effect = {
-				if = {
-					limit = { character:Mutineers_12 = { is_alive = yes } }
-					set_relation_friend = character:Mutineers_12
-				}
-			}
-			effect = {
-				if = {
-					limit = { character:Mutineers_3 = { is_alive = yes } }
-					set_relation_friend = character:Mutineers_3
-				}
-			}
-			effect = {
-				if = {
-					limit = { character:Mutineers_4 = { is_alive = yes } }
-					set_relation_friend = character:Mutineers_4
-				}
-			}
-			effect = {
-				if = {
-					limit = { character:Mutineers_5 = { is_alive = yes } }
-					set_relation_friend = character:Mutineers_5
-				}
-			}
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_castle_black }
 		}
 	}
-	Mutineers_12= {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_horn_hill }
+		}
+	}
+}
+Craster_25 = {
+	religion = cold_gods_wildling
+	8302.1.1 = {
 		religion = fots_seven
-		8300.3.1 = {
-			religion = cold_gods_wildling
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_16 }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_17 } 
-			}
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:b_castle_black }
 		}
 	}
-	Mutineers_3= {
-		religion = fots_seven
-		8300.3.1 = {
-			religion = cold_gods_wildling
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_18 }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_20 } 
-			}
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_horn_hill }
 		}
 	}
-	Mutineers_4= {
-		religion = fots_seven
-		8300.3.1 = {
-			religion = cold_gods_wildling
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_21 }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_22 } 
-			}
-		}
-	}
-	Mutineers_5= {
-		religion = fots_seven
-		8300.3.1 = {
-			religion = cold_gods_wildling
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_23 }
-				agot_safe_concubine_history_effect = { TARGET = character:Craster_24 } 
-			}
-		}
-	}
-	Gin_Alley_1= {
-		religion = fots_seven
-		8299.12.4 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_crasters_keep }
-			}
-		}
-		8300.2.10 = {
-			death = {
-				death_reason = death_battle
-				killer = Stark_7
-			}
-		}
-	}
-	Craster_4 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_5 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_6 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_7 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_8 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_9 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_10 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_11 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_12 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_13 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_14 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_15 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_16 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_17 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_18 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_20 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_21 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_22 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_23 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_24 = {
-		religion = cold_gods_wildling
-		8300.3.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_nw_mutineers }
-			}
-		}
-	}
-	Craster_19 = {
-		religion = cold_gods_wildling
-		8302.1.1 = {
-			religion = fots_seven
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:b_castle_black }
-			}
-		}
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_horn_hill }
-			}
-		}
-	}
-	Craster_25 = {
-		religion = cold_gods_wildling
-		8302.1.1 = {
-			religion = fots_seven
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:b_castle_black }
-			}
-		}
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_horn_hill }
-			}
-		}
-	}
+}
 
 #crownlands
-	Blount_3 = {
-		#name = Boros # Canon, a Kingsguard, Modcanon one of knights defeated by Knight of the Laughing Tree
-		8303.12.31 = {
-			effect = {
-				agot_safe_imprison_in_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					RELEASE_DATE = 8304.1.1
-					TYPE = dungeon
-				}
-				agot_appoint_as_court_position_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = food_taster_court_position
-				}
+Blount_3 = {
+	#name = Boros # Canon, a Kingsguard, Modcanon one of knights defeated by Knight of the Laughing Tree
+	8303.12.31 = {
+		effect = {
+			agot_safe_imprison_in_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				RELEASE_DATE = 8304.1.1
+				TYPE = dungeon
 			}
-		}
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-				killer = Clegane_Dummy_4
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = food_taster_court_position
 			}
 		}
 	}
-	Thorne_3 = {
-		#name = Alliser # Canon, Night's Watch
-		8301.4.17 = {
-			death = {
-				death_reason = death_execution
-				killer = Stark_7
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = Clegane_Dummy_4
+		}
+	}
+}
+Thorne_3 = {
+	#name = Alliser # Canon, Night's Watch
+	8301.4.17 = {
+		death = {
+			death_reason = death_execution
+			killer = Stark_7
+		}
+	}
+}
+Blackwater_1 = {
+	#name = Bronn # Canon, THE Bronn, a lord
+	8305.1.1 = {
+		remove_spouse = Stokeworth_6
+		effect = { # Master of Coin
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_steward
 			}
 		}
 	}
-	Blackwater_1 = {
-		#name = Bronn # Canon, THE Bronn, a lord
-		8305.1.1 = {
-			remove_spouse = Stokeworth_6
-			effect = { # Master of Coin
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_steward
-				}
-			}
-		}
-		8308.5.10 = {
-			add_spouse = Peake_tfw_1
-		}
-		8308.8.12 = {
-			death = {
-				death_reason = death_mysterious
-			}
+	8308.5.10 = {
+		add_spouse = Peake_tfw_1
+	}
+	8308.8.12 = {
+		death = {
+			death_reason = death_mysterious
 		}
 	}
-	Longwaters_2 = {
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Longwaters_2 = {
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Gaunt_2 = {
-		#name = Leyton # Canon, a lord
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Gaunt_2 = {
+	#name = Leyton # Canon, a lord
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Jacobs_1 = {
-		name = Preston
-		dna = Manderly_8
-		dynasty = dynn_Jacobs
+}
+Jacobs_1 = {
+	name = Preston
+	dna = Manderly_8
+	dynasty = dynn_Jacobs
 
-		religion = fots_seven
-		culture = crownlander
+	religion = fots_seven
+	culture = crownlander
 
-		trait = education_learning_4
-		trait = giant
+	trait = education_learning_4
+	trait = giant
 
-		8267.1.1 = {
-			birth = yes
-			add_character_flag = has_scripted_appearance
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_kings_landing }
-			}
+	8267.1.1 = {
+		birth = yes
+		add_character_flag = has_scripted_appearance
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_kings_landing }
 		}
-		8305.1.1 = {
-			effect = { # Warden of the North?
+	}
+	8305.1.1 = {
+		effect = { # Warden of the North?
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:h_the_iron_throne
 				POSITION = chronicler_court_position
 			}
+		}
+	}
+}
+Xho_1 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Kettleblack_2 = {
+	8303.10.22 = {
+		trait = kingsguard
+		death = {
+			death_reason = death_wildfire_killer
+		}
+	}
+}
+Kettleblack_3 = {
+	8303.9.30 = {
+		employer = Baelish_2
+	}
+}
+Kettleblack_4 = {
+	8303.9.30 = {
+		death = {
+			death_reason = death_execution
+		}
+	}
+}
+Knight_Kings_Landing_3 = {
+	#name = Clegane # Canon, THE Clegane, continued here
+	dna = Clegane_3
+	8303.12.31 = {
+		employer = Lannister_6
+		effect = {
+			agot_safe_imprison_in_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				RELEASE_DATE = 8304.1.1
+				TYPE = dungeon
 			}
 		}
 	}
-	Xho_1 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8304.12.26 = {
+		trait = kingsguard
+		death = {
+			death_reason = death_battle
+			killer = Clegane_Dummy_4
 		}
 	}
-	Kettleblack_2 = {
-		8303.10.22 = {
-			trait = kingsguard
-			death = {
-				death_reason = death_wildfire_killer
+}
+Blackberry_12 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Blackberry_14 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Blackberry_16 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Quince_16 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Quince_18 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Quince_19 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Bullock_15 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Bullock_16 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Farring_1 = {
+	8311.8.27 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+Massey_1 = {
+	8307.5.15 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+Massey_3 = {
+	8313.12.13 = {
+		death = {
+			death_reason = death_cancer
+		}
+	}
+}
+Massey_6 = {
+	8314.6.6 = {
+		religion = rhllor_fots
+	}
+}
+Massey_7 = {
+	8314.6.6 = {
+		religion = rhllor_fots
+	}
+}
+Massey_8 = {
+	8314.6.6 = {
+		religion = rhllor_fots
+	}
+}
+Massey_9 = {
+	8314.6.6 = {
+		religion = rhllor_fots
+	}
+}
+Stokeworth_6 = {
+	8305.1.1 = {
+		remove_spouse = Blackwater_1
+		add_trait = refusing_marriage
+	}
+}
+Stokeworth_7 = {
+	8305.1.1 = {
+		remove_trait = bastard
+		add_trait = legitimized_bastard
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stokeworth_7 COA_KEY = tyrion_tanner_personal_coa }
+		}
+	}
+}
+Pyle_1 = {
+	8303.12.31 = {
+		effect = { # Spymaster
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_spymaster
 			}
 		}
 	}
-	Kettleblack_3 = {
-		8303.9.30 = {
-			employer = Baelish_2
-		}
-	}
-	Kettleblack_4 = {
-		8303.9.30 = {
-			death = {
-				death_reason = death_execution
-			}
-		}
-	}
-	Knight_Kings_Landing_3 = {
-		#name = Clegane # Canon, THE Clegane, continued here
-		dna = Clegane_3
-		8303.12.31 = {
-			employer = Lannister_6
-			effect = {
-				agot_safe_imprison_in_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					RELEASE_DATE = 8304.1.1
-					TYPE = dungeon
-				}
-			}
-		}
-		8304.12.26 = { 
-			trait = kingsguard
-			death = {
-				death_reason = death_battle
-				killer = Clegane_Dummy_4
-			}
-		}
-	}
-	Blackberry_12 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Blackberry_14 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Blackberry_16 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Quince_16 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Quince_18 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Quince_19 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Bullock_15 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Bullock_16 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Farring_1 = {
-		8311.8.27 = {
-			death = {
-				death_reason = death_natural_causes
-			}
-		}
-	}
-	Massey_1 = {
-		8307.5.15 = {
-			death = {
-				death_reason = death_cancer
-			}
-		}
-	}
-	Massey_3 = {
-		8313.12.13 = {
-			death = {
-				death_reason = death_cancer
-			}
-		}
-	}
-	Massey_6 = {
-		8314.6.6 = {
-			religion = rhllor_fots
-		}
-	}
-	Massey_7 = {
-		8314.6.6 = {
-			religion = rhllor_fots
-		}
-	}
-	Massey_8 = {
-		8314.6.6 = {
-			religion = rhllor_fots
-		}
-	}
-	Massey_9 = {
-		8314.6.6 = {
-			religion = rhllor_fots
-		}
-	}
-	Stokeworth_6 = {
-		8305.1.1 = {
-			remove_spouse = Blackwater_1
-			add_trait = refusing_marriage
-		}
-	}
-	Stokeworth_7 = {
-		8305.1.1 = {
-			remove_trait = bastard
-			add_trait = legitimized_bastard
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stokeworth_7 COA_KEY = tyrion_tanner_personal_coa }
-			}
-		}
-	}
-	Pyle_1 = {
-		8303.12.31 = {
-			effect = { # Spymaster
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_spymaster
-				}
-			}
-		}
-	}
+}
 
 # The Conqueror's Band
-	Martell_9 = {
-		# Arianne Martell — Princess of Dorne, future wife of Faegon
-		8300.10.15 = {
-			trait = refusing_marriage
-			trait = adventurer_follower
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
-			}
+Martell_9 = {
+	# Arianne Martell — Princess of Dorne, future wife of Faegon
+	8300.10.15 = {
+		trait = refusing_marriage
+		trait = adventurer_follower
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
 		}
 	}
-	Connington_4 = {
-		# Jon Connington — Hand of the true King, loyal companion
-		8301.06.01 = {
-			give_nickname = nick_griff
-		}
-		8300.10.15 = {
-			trait = adventurer_follower
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_goldfuror }
-			}
+}
+Connington_4 = {
+	# Jon Connington — Hand of the true King, loyal companion
+	8301.06.01 = {
+		give_nickname = nick_griff
+	}
+	8300.10.15 = {
+		trait = adventurer_follower
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_goldfuror }
 		}
 	}
-	Duckfield_1 = {
-		# Rolly Duckfield — Kingsguard, loyal companion
-		8300.10.15 = {
-			trait = adventurer_follower
-			give_nickname = nick_duck
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
-			}
+}
+Duckfield_1 = {
+	# Rolly Duckfield — Kingsguard, loyal companion
+	8300.10.15 = {
+		trait = adventurer_follower
+		give_nickname = nick_duck
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
 		}
 	}
-	Lamore_1 = {
-		name = Lemore # Lemore — A septa, loyal companion
-		female = yes
-		dna = Dayne_4
+}
+Lamore_1 = {
+	name = Lemore # Lemore — A septa, loyal companion
+	female = yes
+	dna = Dayne_4
 
-		diplomacy = 7
+	diplomacy = 7
 
-		religion = fots_seven
-		culture = stone_dornish
-		sexuality = heterosexual
+	religion = fots_seven
+	culture = stone_dornish
+	sexuality = heterosexual
 
-		trait = education_intrigue_3
-		trait = beauty_good_3
-		trait = fashionable
-		trait = gregarious
-		trait = deceitful
-		trait = disputed_heritage
-		trait = compassionate
-		trait = trusting
-		trait = charming
-		trait = loyal
-		trait = scarred
-		trait = celibate
-		trait = depressed_1
+	trait = education_intrigue_3
+	trait = beauty_good_3
+	trait = fashionable
+	trait = gregarious
+	trait = deceitful
+	trait = disputed_heritage
+	trait = compassionate
+	trait = trusting
+	trait = charming
+	trait = loyal
+	trait = scarred
+	trait = celibate
+	trait = depressed_1
 
 
-		disallow_random_traits = yes
+	disallow_random_traits = yes
 
-		8262.1.1 = {
-			birth = yes
-			make_trait_inactive = scripted_appearance
-			add_character_flag = canon_status_canon
-			add_character_flag = sexuality_ensure_not_asexual
-			add_character_flag = sexuality_ensure_not_homosexual
-			effect = {
-				make_trait_inactive = black_hair
-				make_trait_inactive = purple_eyes_1
-				add_character_flag = do_not_assign_strong_seed
-				set_real_father = Dayne_1
-				set_real_mother = Vaith_110
-			}
-		}
-		8283.11.1 = { 
-			trait = septon # Septa
-		}
-		8300.10.15 = {
-			trait = adventurer_follower
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
-			}
+	8262.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+		add_character_flag = canon_status_canon
+		add_character_flag = sexuality_ensure_not_asexual
+		add_character_flag = sexuality_ensure_not_homosexual
+		effect = {
+			make_trait_inactive = black_hair
+			make_trait_inactive = purple_eyes_1
+			add_character_flag = do_not_assign_strong_seed
+			set_real_father = Dayne_1
+			set_real_mother = Vaith_110
 		}
 	}
-	Haldon_1 = {
-		name = Haldon # THE Haldon, Halfmaester, loyal companion
-
-		religion = fots_seven
-		culture = crownlander
-
-		trait = education_learning_3
-		trait = education_martial_prowess_3
-		trait = intellect_good_2
-		trait = diligent
-		trait = loyal
-		trait = lifestyle_physician
-		trait = lifestyle_herbalist
-
-		disallow_random_traits = yes
-
-		8260.1.1 = {
-			birth = yes
-			add_character_flag = canon_status_canon
-		}
-		8260.1.1 = {
-			give_nickname = nick_halfmaester
-		}
-		8300.10.15 = {
-			trait = adventurer_follower
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
-			}
+	8283.11.1 = {
+		trait = septon # Septa
+	}
+	8300.10.15 = {
+		trait = adventurer_follower
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
 		}
 	}
+}
+Haldon_1 = {
+	name = Haldon # THE Haldon, Halfmaester, loyal companion
+
+	religion = fots_seven
+	culture = crownlander
+
+	trait = education_learning_3
+	trait = education_martial_prowess_3
+	trait = intellect_good_2
+	trait = diligent
+	trait = loyal
+	trait = lifestyle_physician
+	trait = lifestyle_herbalist
+
+	disallow_random_traits = yes
+
+	8260.1.1 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+	}
+	8260.1.1 = {
+		give_nickname = nick_halfmaester
+	}
+	8300.10.15 = {
+		trait = adventurer_follower
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_conquerors_band }
+		}
+	}
+}
 
 
 #dorne
-	Martell_4 = {
-		#name = Doran # Canon, a lord, THE Doran Martell
-		8303.8.21 = {
-			death = {
-				death_reason = death_murder 
-				killer = Uller_6
-			}
+Martell_4 = {
+	#name = Doran # Canon, a lord, THE Doran Martell
+	8303.8.21 = {
+		death = {
+			death_reason = death_murder
+			killer = Uller_6
 		}
 	}
-	Martell_10 = {
-		#name = Quentyn # Canon
-		8302.1.1 = { 
-			death = {
-				death_reason = death_burned
-			}
+}
+Martell_10 = {
+	#name = Quentyn # Canon
+	8302.1.1 = {
+		death = {
+			death_reason = death_burned
 		}
 	}
-	Martell_11 = {
-		#name = Trystane # Canon
-		8303.8.21 = {
-			death = {
-				death_reason = death_murder 
-				killer = Uller_6
-			}
+}
+Martell_11 = {
+	#name = Trystane # Canon
+	8303.8.21 = {
+		death = {
+			death_reason = death_murder
+			killer = Uller_6
 		}
 	}
-	Martell_12 = {
-		#name = Obara # Canon
-		8302.6.28 = {
-			death = {
-				death_reason = death_battle
-				killer = Greyjoy_6
-			}
+}
+Martell_12 = {
+	#name = Obara # Canon
+	8302.6.28 = {
+		death = {
+			death_reason = death_battle
+			killer = Greyjoy_6
 		}
 	}
-	Martell_13 = {
-		#name = Nymeria # Canon
-		8302.6.28 = {
-			death = {
-				death_reason = death_battle
-				killer = Greyjoy_6
-			}
+}
+Martell_13 = {
+	#name = Nymeria # Canon
+	8302.6.28 = {
+		death = {
+			death_reason = death_battle
+			killer = Greyjoy_6
 		}
 	}
-	Martell_14 = {
-		#name = Tyene # Canon
-		mother = Uller_6
-		8304.2.3 = {
-			death = {
-				death_reason = death_poison
-				killer = Lannister_6
-			}
+}
+Martell_14 = {
+	#name = Tyene # Canon
+	mother = Uller_6
+	8304.2.3 = {
+		death = {
+			death_reason = death_poison
+			killer = Lannister_6
 		}
 	}
-	Martell_20 = {
-		#name = Manfrey # Canon
-		8305.1.1 = {
-			religion = fots_sands
+}
+Martell_20 = {
+	#name = Manfrey # Canon
+	8305.1.1 = {
+		religion = fots_sands
+	}
+}
+Martell_rs_20 = {
+	#name = Allyria
+	8305.1.1 = {
+		religion = mother_orphan
+	}
+}
+Uller_6 = {
+	#name = Ellaria # Canon, THE Ellaria Sand
+	8303.12.31 = {
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Uller_6 COA_KEY = dynn_Martell }
 		}
 	}
-	Martell_rs_20 = {
-		#name = Allyria
-		8305.1.1 = {
-			religion = mother_orphan
+	8304.2.2 = {
+		death = {
+			death_reason = death_execution
+			killer = Lannister_6
 		}
 	}
-	Uller_6 = {
-		#name = Ellaria # Canon, THE Ellaria Sand
-		8303.12.31 = {
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Uller_6 COA_KEY = dynn_Martell }
-			}
-		}
-		8304.2.2 = {
-			death = {
-				death_reason = death_execution
-				killer = Lannister_6
-			}
+}
+Hotah_1 = {
+	8303.8.21 = {
+		death = {
+			death_reason = death_murder
+			killer = Martell_14
 		}
 	}
-	Hotah_1 = {
-		8303.8.21 = {
-			death = {
-				death_reason = death_murder
-				killer = Martell_14
-			}
-		}
-	}
+}
 
 
 #dragons
-	dragon_drogon = {
-		#name = Drogon # Canon
+dragon_drogon = {
+	#name = Drogon # Canon
 
-		8299.1.22 = {
-			add_trait = dragon_destined
+	8299.1.22 = {
+		add_trait = dragon_destined
+	}
+	8300.1.5 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_artisanal_way }
 		}
-		8300.1.5 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_artisanal_way }
+	}
+	8303.12.31 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
+		}
+	}
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_the_scales }
+		}
+	}
+}
+dragon_rhaegal = {
+	#name = Rhaegal # Canon
+	8299.1.22 = {
+		add_trait = dragon_destined
+	}
+	8300.1.5 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_artisanal_way }
+		}
+	}
+	8303.12.31 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
+		}
+	}
+	8304.5.5 = {
+		death = {
+			death_reason = death_dragon_scorpion
+			killer = Greyjoy_6
+		}
+	}
+}
+dragon_viserion = {
+	name = Viserion # Canon
+	female = yes
+
+	religion = valyrian_pan_freehold
+	culture = dragon_culture
+
+	mother = dragon_dreamfyre
+
+	trait = dragon
+	trait = education_dragon_2
+	trait = dragon_physique_good_2
+	trait = dragon_voracious
+	trait = dragon_aggressive
+
+	disallow_random_traits = yes
+
+	8299.1.22 = {
+		birth = yes
+		add_character_flag = canon_status_canon
+		effect = {
+			set_variable = {
+				name = primary_color_grading
+				value = flag:middle
 			}
-		}
-		8303.12.31 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
-			}
-		}
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_the_scales }
+			set_variable = {
+				name = primary_color
+				value = flag:white
 			}
 		}
 	}
-	dragon_rhaegal = {
-		#name = Rhaegal # Canon
-		8299.1.22 = {
-			add_trait = dragon_destined
-		}
-		8300.1.5 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_artisanal_way }
-			}
-		}
-		8303.12.31 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
-			}
-		}
-		8304.5.5 = {
-			death = {
-				death_reason = death_dragon_scorpion
-				killer = Greyjoy_6
-			}
+	8300.1.5 = {
+		trait = dragon_bloodthirsty
+		effect = {
+			# agot_assign_dragon_to_pit_history_effect = {
+			# DRAGONPIT_COUNTY = title:c_meereen
+			# }
 		}
 	}
-	dragon_viserion = {
-		name = Viserion # Canon
-		female = yes
-
-		religion = valyrian_pan_freehold
-		culture = dragon_culture
-
-		mother = dragon_dreamfyre
-
-		trait = dragon
-		trait = education_dragon_2
-		trait = dragon_physique_good_2
-		trait = dragon_voracious
-		trait = dragon_aggressive
-
-		disallow_random_traits = yes
-
-		8299.1.22 = {
-			birth = yes
-			add_character_flag = canon_status_canon
-			effect = {
-				set_variable = {
-					name = primary_color_grading
-					value = flag:middle
-				}
-				set_variable = {
-					name = primary_color
-					value = flag:white
-				}
-			}
-		}
-		8300.1.5 = {
-			trait = dragon_bloodthirsty
-			effect = {
-				# agot_assign_dragon_to_pit_history_effect = {
-					# DRAGONPIT_COUNTY = title:c_meereen
-				# }
-			}
-		}
-		8300.7.15 = {
-			effect = {
-				# agot_free_dragon_from_pit_history_effect = {
-					# DRAGONPIT_COUNTY = title:c_meereen
-				# }
-			}
-		}
-		8303.12.31 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
-			}
-		}
-		8304.8.20 = {
-			death = {
-				death_reason = death_dragon_slain
-				killer = Great_Other
-			}
+	8300.7.15 = {
+		effect = {
+			# agot_free_dragon_from_pit_history_effect = {
+			# DRAGONPIT_COUNTY = title:c_meereen
+			# }
 		}
 	}
+	8303.12.31 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
+		}
+	}
+	8304.8.20 = {
+		death = {
+			death_reason = death_dragon_slain
+			killer = Great_Other
+		}
+	}
+}
 
 #iron_islands
-	Greyjoy_6 = {
-		#name = Euron # Canon, AKA: Crow's Eye
-		8290.1.1 = {
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Greyjoy_6 COA_KEY = crows_eye_personal_coa }
-			}
-		}
-		8304.12.26 = { 
-			trait = refusing_marriage
-			death = {
-				death_reason = death_beaten
-				killer = Lannister_7
-			}
+Greyjoy_6 = {
+	#name = Euron # Canon, AKA: Crow's Eye
+	8290.1.1 = {
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Greyjoy_6 COA_KEY = crows_eye_personal_coa }
 		}
 	}
-	Greyjoy_9 = {
-		
-	}
-	Greyjoy_13 = {
-		#name = Asha # Canon, THE Asha
-		8303.1.1 = {
-			change_first_name = Yara
-			effect = { release_from_prison = yes }
-			remove_spouse = Ironmaker_1
-			effect = { 
-				remove_trait = bastard 
-			}
-			add_spouse = Greyjoy_hh_9
-			add_character_flag = bypass_councillor_gender_requirements
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
-			}
-			effect = {
-				add_gold = 24
-			}
+	8304.12.26 = {
+		trait = refusing_marriage
+		death = {
+			death_reason = death_beaten
+			killer = Lannister_7
 		}
-		8304.4.28 = {
+	}
+}
+Greyjoy_9 = {
+
+}
+Greyjoy_13 = {
+	#name = Asha # Canon, THE Asha
+	8303.1.1 = {
+		change_first_name = Yara
+		effect = { release_from_prison = yes }
+		remove_spouse = Ironmaker_1
+		effect = {
+			remove_trait = bastard
+		}
 		add_spouse = Greyjoy_hh_9
+		add_character_flag = bypass_councillor_gender_requirements
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
+		}
+		effect = {
+			add_gold = 24
 		}
 	}
-	Greyjoy_14 = {
-		#name = Theon # Canon, THE Theon
-		8303.1.1 = {
-			effect = { release_from_prison = yes }
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackwind }
-			}
-		}
-		8304.4.28 = {
-			death = {
-				death_reason = death_battle
-				killer = Great_Other
-			}
+	8304.4.28 = {
+		add_spouse = Greyjoy_hh_9
+	}
+}
+Greyjoy_14 = {
+	#name = Theon # Canon, THE Theon
+	8303.1.1 = {
+		effect = { release_from_prison = yes }
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_blackwind }
 		}
 	}
-	Greyjoy_hh_9 = {
-		name = Qarl # Canon, Qarl the Maid, Asha supporter
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
+			killer = Great_Other
 		}
-		8304.4.28 = {
+	}
+}
+Greyjoy_hh_9 = {
+	name = Qarl # Canon, Qarl the Maid, Asha supporter
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
+	}
+	8304.4.28 = {
 		add_spouse = Greyjoy_13
+	}
+}
+Drowned_Men_1 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Blacktyde_7 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Codd_8 = {
+	8300.5.1 = {
+		add_spouse = Hewett_7
+		effect = {
+			agot_safe_concubine_history_effect = { TARGET = character:Hewett_8 }
+			agot_safe_concubine_history_effect = { TARGET = character:Courtnall_86 }
 		}
 	}
-	Drowned_Men_1 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = Hightower_7
 		}
 	}
-	Blacktyde_7 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Drumm_hh_1 = {
+	8300.4.30 = {
+		add_spouse = Hewett_9
+		effect = {
+			agot_safe_concubine_history_effect = { TARGET = character:Hewett_10 }
 		}
 	}
-	Codd_8 = {
-		8300.5.1 = {
-			add_spouse = Hewett_7
-			effect = {
-				agot_safe_concubine_history_effect = { TARGET = character:Hewett_8 }
-				agot_safe_concubine_history_effect = { TARGET = character:Courtnall_86 }
-			}
-		}
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-				killer = Hightower_7
-			}
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = Costayne_4
 		}
 	}
-	Drumm_hh_1 = {
-		8300.4.30 = {
-			add_spouse = Hewett_9
-			effect = {
-				agot_safe_concubine_history_effect = { TARGET = character:Hewett_10 }
-			}
-		}
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-				killer = Costayne_4
-			}
+}
+Greyjoy_hh_4 = {
+	8300.5.1 = {
+		add_spouse = Chester_50
+		effect = {
+			agot_safe_concubine_history_effect = { TARGET = character:Chester_48 }
 		}
 	}
-	Greyjoy_hh_4 = {
-		8300.5.1 = {
-			add_spouse = Chester_50
-			effect = {
-				agot_safe_concubine_history_effect = { TARGET = character:Chester_48 }
-			}
-		}
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-			}
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Harlaw_12 = {
-		8300.4.30 = {
-			add_spouse = Grimm_2
-		}
+}
+Harlaw_12 = {
+	8300.4.30 = {
+		add_spouse = Grimm_2
 	}
+}
 
 #nightswatch
-	Castle_Black_6 = {
-		#name = Pypar # Canon, THE Pyp
-		8300.6.8 = { 
-			death = {
-				death_reason = death_battle
-			}
+Castle_Black_6 = {
+	#name = Pypar # Canon, THE Pyp
+	8300.6.8 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Castle_Black_7 = {
-		#name = Grenn # Canon, THE Grenn
-		8300.6.8 = { 
-			death = {
-				death_reason = death_battle
-			}
+}
+Castle_Black_7 = {
+	#name = Grenn # Canon, THE Grenn
+	8300.6.8 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Castle_Black_8 = {
-		#name = Todder # Canon, AKA: Toad
-		8300.6.8 = { 
-			death = {
-				death_reason = death_battle
-			}
+}
+Castle_Black_8 = {
+	#name = Todder # Canon, AKA: Toad
+	8300.6.8 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
+}
 
 #north
-	Stark_7 = {
-		#name = Jon
-    	religion = old_gods_wnw
-		8303.1.25 = {
-			clear_traits = yes
-			effect = {
-				remove_trait = nightswatch_historical
-				remove_trait = night_watch
-			}
-			give_nickname = nick_agot_the_white_wolf
+Stark_7 = {
+	#name = Jon
+	religion = old_gods_wnw
+	8303.1.25 = {
+		clear_traits = yes
+		effect = {
+			remove_trait = nightswatch_historical
+			remove_trait = night_watch
 		}
-		8303.1.26 = {
-			add_trait = bastard
-			add_trait = education_martial_4
-			add_trait = compassionate
-			add_trait = brave
-			add_trait = just
-			add_trait = unyielding_defender
-			add_trait = lifestyle_blademaster
-			add_trait = scarred
-		}
-		8304.12.27 = {
-			effect = {
-				add_secret = {
-					type = secret_agot_disputed_heritage
-					target = character:Stark_7
-				}
-			}
-		}
-		8305.1.1 = {
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stark_7 COA_KEY = jon_snow_personal_coa }
-			}
-			effect = {
-				if = {
-					limit = { character:Giantsbane_1 = { is_alive = yes } }
-					set_relation_friend = character:Giantsbane_1 # Tormund
-				}
-			}
-			effect = {
-				if = {
-					limit = { character:Rayder_hh_3 = { is_alive = yes } }
-					set_relation_friend = character:Rayder_hh_3 # Val
-				}
-			}
-			effect = {
-				if = {
-					limit = { character:Lowborn_Reach_3 = { is_alive = yes } }
-					set_relation_friend = character:Lowborn_Reach_3 # Satin
-				}
+		give_nickname = nick_agot_the_white_wolf
+	}
+	8303.1.26 = {
+		add_trait = bastard
+		add_trait = education_martial_4
+		add_trait = compassionate
+		add_trait = brave
+		add_trait = just
+		add_trait = unyielding_defender
+		add_trait = lifestyle_blademaster
+		add_trait = scarred
+	}
+	8304.12.27 = {
+		effect = {
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = character:Stark_7
 			}
 		}
 	}
-	Stark_8 = {
-		#name = Sansa # Canon, THE Sansa, married Tyrion Lannister
-		8299.11.7 = {
-			death = { death_reason = death_vanished }
+	8305.1.1 = {
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stark_7 COA_KEY = jon_snow_personal_coa }
 		}
-	}
-	Stark_Dummy_8 = {
-		name = Sansa # Sansa Stark continued here
-		religion = fots_oldnew
-		8299.11.8 = {
-			add_spouse = Lannister_8 # Tyrion Lannister
-		}
-		8300.1.1 = {
-			remove_spouse = Lannister_8 # Tyrion Lannister
-		}
-		8300.1.2 = {
-			name = Sansa # Override AGOT's Alayne alias
-			dynasty_house = house_Stark
-			dynasty = dynn_Stark
-			effect = {
-				remove_trait = bastard
-				make_trait_active = surname_stone
-				make_trait_inactive = auburn_hair
-				remove_trait = surname_stone
-				set_father = character:Stark_3 # Eddard Stark
-				set_mother = character:Tully_4 # Catelyn Tully
-				agot_set_as_ward_history_effect = { GUARDIAN = character:Baelish_2 } # Petyr Baelish
+		effect = {
+			if = {
+				limit = { character:Giantsbane_1 = { is_alive = yes } }
+				set_relation_friend = character:Giantsbane_1 # Tormund
 			}
 		}
-		8300.1.3 = {
-			add_spouse = Bolton_5 # Ramsay Snow
-		}
-		8303.1.25 = {
-			remove_spouse = Bolton_5 # Ramsay Snow
-			effect = {
-				remove_trait = content
-				remove_trait = patient
-				remove_trait = education_diplomacy_1
-			}
-			add_trait = just
-			add_trait = brave
-			add_trait = arrogant
-			add_trait = cynical
-			add_trait = education_diplomacy_4
-		}
-		8303.12.12 = {
-			add_character_flag = bypass_councillor_gender_requirements
-			effect = { # Hand of the King
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:e_the_north
-					POSITION = councillor_castellan
-				}
+		effect = {
+			if = {
+				limit = { character:Rayder_hh_3 = { is_alive = yes } }
+				set_relation_friend = character:Rayder_hh_3 # Val
 			}
 		}
-		8305.1.1 = {
-			effect = {
-				create_alliance = character:Stark_Dummy_10
-			}
-		}
-		8361.1.1 = {
-			death = {
-				death_reason = death_old_age
+		effect = {
+			if = {
+				limit = { character:Lowborn_Reach_3 = { is_alive = yes } }
+				set_relation_friend = character:Lowborn_Reach_3 # Satin
 			}
 		}
 	}
-	Stark_9 = {
-		#name = Arya # Canon, THE Arya Stark
-		8298.10.24 = {
-			death = { death_reason = death_vanished }
-		}
+}
+Stark_8 = {
+	#name = Sansa # Canon, THE Sansa, married Tyrion Lannister
+	8299.11.7 = {
+		death = { death_reason = death_vanished }
 	}
-	Stark_Dummy_9 = {
-		name = Arya # Arya Stark continued here
-		8300.2.8 = {
-			name = Arya
-			add_trait = refusing_marriage
-		}
-		8305.1.1 = {
-			name = Arya
-			dynasty_house = house_Stark
-			dynasty = dynn_Stark
+}
+Stark_Dummy_8 = {
+	name = Sansa # Sansa Stark continued here
+	religion = fots_oldnew
+	8299.11.8 = {
+		add_spouse = Lannister_8 # Tyrion Lannister
+	}
+	8300.1.1 = {
+		remove_spouse = Lannister_8 # Tyrion Lannister
+	}
+	8300.1.2 = {
+		name = Sansa # Override AGOT's Alayne alias
+		dynasty_house = house_Stark
+		dynasty = dynn_Stark
+		effect = {
+			remove_trait = bastard
+			make_trait_active = surname_stone
+			make_trait_inactive = auburn_hair
+			remove_trait = surname_stone
 			set_father = character:Stark_3 # Eddard Stark
 			set_mother = character:Tully_4 # Catelyn Tully
-			religion = fc_pan_faceless
-			culture = northman
-			add_trait = lifestyle_traveler
-			#death = { death_reason = death_vanished }
-			effect = {
-				trigger_event = { id = agot_tfw_intothewest.0001 days = 2 }
-			}
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stark_Dummy_9 COA_KEY = arya_stark_personal_coa }
-			}
+			agot_set_as_ward_history_effect = { GUARDIAN = character:Baelish_2 } # Petyr Baelish
 		}
-		8305.1.2 = {
-			name = Arya
+	}
+	8300.1.3 = {
+		add_spouse = Bolton_5 # Ramsay Snow
+	}
+	8303.1.25 = {
+		remove_spouse = Bolton_5 # Ramsay Snow
+		effect = {
+			remove_trait = content
+			remove_trait = patient
+			remove_trait = education_diplomacy_1
 		}
-		8305.3.1 = {
-			death = {
-				death_reason = death_lost_at_sea
+		add_trait = just
+		add_trait = brave
+		add_trait = arrogant
+		add_trait = cynical
+		add_trait = education_diplomacy_4
+	}
+	8303.12.12 = {
+		add_character_flag = bypass_councillor_gender_requirements
+		effect = { # Hand of the King
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_north
+				POSITION = councillor_castellan
 			}
 		}
 	}
-	Stark_10 = {
-		#name = Brandon # Canon, THE Bran
-	
-		8299.8.14 = {
-			death = {
-				death_reason = death_vanished
-			}
+	8305.1.1 = {
+		effect = {
+			create_alliance = character:Stark_Dummy_10
 		}
 	}
-	Stark_Dummy_10 = {
-		name = Bran # Brandon Stark continued here
-		8305.1.1 = {
-			dynasty_house = house_Stark
-			dynasty = dynn_Stark
-			set_father = character:Stark_3 # Eddard Stark
-			set_mother = character:Tully_4 # Catelyn Tully
-			religion = old_gods_children
-			effect = {
-				if = {
-					limit = { character:Lannister_8 = { is_alive = yes } }
-					add_opinion = {
-						modifier = respect_opinion
-						target = character:Lannister_8 # Bran
-						opinion = 100
-					}
+	8361.1.1 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+Stark_9 = {
+	#name = Arya # Canon, THE Arya Stark
+	8298.10.24 = {
+		death = { death_reason = death_vanished }
+	}
+}
+Stark_Dummy_9 = {
+	name = Arya # Arya Stark continued here
+	8300.2.8 = {
+		name = Arya
+		add_trait = refusing_marriage
+	}
+	8305.1.1 = {
+		name = Arya
+		dynasty_house = house_Stark
+		dynasty = dynn_Stark
+		set_father = character:Stark_3 # Eddard Stark
+		set_mother = character:Tully_4 # Catelyn Tully
+		religion = fc_pan_faceless
+		culture = northman
+		add_trait = lifestyle_traveler
+		#death = { death_reason = death_vanished }
+		effect = {
+			trigger_event = { id = agot_tfw_intothewest.0001 days = 2 }
+		}
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stark_Dummy_9 COA_KEY = arya_stark_personal_coa }
+		}
+	}
+	8305.1.2 = {
+		name = Arya
+	}
+	8305.3.1 = {
+		death = {
+			death_reason = death_lost_at_sea
+		}
+	}
+}
+Stark_10 = {
+	#name = Brandon # Canon, THE Bran
+
+	8299.8.14 = {
+		death = {
+			death_reason = death_vanished
+		}
+	}
+}
+Stark_Dummy_10 = {
+	name = Bran # Brandon Stark continued here
+	8305.1.1 = {
+		dynasty_house = house_Stark
+		dynasty = dynn_Stark
+		set_father = character:Stark_3 # Eddard Stark
+		set_mother = character:Tully_4 # Catelyn Tully
+		religion = old_gods_children
+		effect = {
+			if = {
+				limit = { character:Lannister_8 = { is_alive = yes } }
+				add_opinion = {
+					modifier = respect_opinion
+					target = character:Lannister_8 # Bran
+					opinion = 100
 				}
 			}
-			remove_trait = brave
-			remove_trait = inquisitive
+		}
+		remove_trait = brave
+		remove_trait = inquisitive
 
-			add_trait = intellect_good_1
-			add_trait = calm
-			add_trait = patient
-			add_trait = shrewd
-			add_trait = lifestyle_mystic_3_history
-			give_nickname = nick_agot_the_broken
-			
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stark_Dummy_10 COA_KEY = bran_stark_personal_coa }
-			}
-		}
-		8359.1.1 = {
-			death = {
-				death_reason = death_mysterious
-			}
-		}
-	}
-	Stark_11 = {
-		#name = Rickon # Canon, THE Rickon
-	}
-	Stark_Dummy_11 = {
-		name = Rickon
-		8303.11.7 = {
-			dynasty_house = house_Stark
-			dynasty = dynn_Stark
-			set_father = character:Stark_3 # Eddard Stark
-			set_mother = character:Tully_4 # Catelyn Tully
-			death =  {
-				death_reason = death_murder_known
-				killer = Bolton_5
-			} 		
-		}
-	}
-	Stark_hh_23 = { # Old Nan
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_hh_2 = {
-		8302.1.1 = { 
-			death = {
-				death_reason = death_vanished
-			}
-		}
-	}
-	Stark_hh_rs_7 = {
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_hh_18 = {
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_hh_8 = {
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_hh_10 = {
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_hh_16 = {
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_hh_21 = {
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_hh_22 = {
-		8303.12.31 = {
-			employer = Stark_7
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-				release_from_prison = yes
-			}
-		}
-	}
-	Stark_tfw_1 = {
-		name = Arya # tfw-canon, Arya 'Redwolf', daughter of Sansa
-		dynasty = dynasty:dynn_Stark
-		female = yes
+		add_trait = intellect_good_1
+		add_trait = calm
+		add_trait = patient
+		add_trait = shrewd
+		add_trait = lifestyle_mystic_3_history
+		give_nickname = nick_agot_the_broken
 
-		religion = fots_oldnew
-		culture = northman
-		sexuality = heterosexual
-
-		mother = Stark_Dummy_8
-
-		trait = education_intrigue_3
-		trait = beauty_good_2
-		trait = bossy
-
-		disallow_random_traits = yes
-
-		8345.12.5 = {
-			birth = yes
-			effect = {
-				add_character_flag = do_not_assign_strong_seed
-				make_trait_inactive = auburn_hair
-				make_trait_inactive = blue_eyes
-			}
-		}
-		8358.1.1 = {
-			give_nickname = nick_redwolf
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stark_Dummy_10 COA_KEY = bran_stark_personal_coa }
 		}
 	}
-	Umber_8 = {
-		#name = Jon # Canon, AKA: THE Greatjon
-		8300.6.02 = {
-			death = {
-				death_reason = death_dungeon
-			}
+	8359.1.1 = {
+		death = {
+			death_reason = death_mysterious
 		}
 	}
-	Umber_9 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Stark_11 = {
+	#name = Rickon # Canon, THE Rickon
+}
+Stark_Dummy_11 = {
+	name = Rickon
+	8303.11.7 = {
+		dynasty_house = house_Stark
+		dynasty = dynn_Stark
+		set_father = character:Stark_3 # Eddard Stark
+		set_mother = character:Tully_4 # Catelyn Tully
+		death = {
+			death_reason = death_murder_known
+			killer = Bolton_5
 		}
 	}
-	Umber_10 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Stark_hh_23 = { # Old Nan
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
 		}
 	}
-	Umber_11 = {
-		religion = old_gods_wnw
+}
+Stark_hh_2 = {
+	8302.1.1 = {
+		death = {
+			death_reason = death_vanished
+		}
 	}
-	Umber_Dummy_11 = {
-		name = Jon # Canon, AKA: Smalljon
-		dynasty = dynn_Umber
-		dna = Umber_11
+}
+Stark_hh_rs_7 = {
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
+		}
+	}
+}
+Stark_hh_18 = {
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
+		}
+	}
+}
+Stark_hh_8 = {
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
+		}
+	}
+}
+Stark_hh_10 = {
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
+		}
+	}
+}
+Stark_hh_16 = {
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
+		}
+	}
+}
+Stark_hh_21 = {
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
+		}
+	}
+}
+Stark_hh_22 = {
+	8303.12.31 = {
+		employer = Stark_7
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
+			release_from_prison = yes
+		}
+	}
+}
+Stark_tfw_1 = {
+	name = Arya # tfw-canon, Arya 'Redwolf', daughter of Sansa
+	dynasty = dynasty:dynn_Stark
+	female = yes
 
-		martial = 8
-		diplomacy = 5
-		intrigue = 5
-		stewardship = 5
-		learning = 5
-		prowess = 6
+	religion = fots_oldnew
+	culture = northman
+	sexuality = heterosexual
 
-		religion = old_gods_wnw
-		culture = northman
+	mother = Stark_Dummy_8
 
-		father = Umber_8
-		mother = Moss_70
+	trait = education_intrigue_3
+	trait = beauty_good_2
+	trait = bossy
 
-		trait = education_martial_2
-		trait = education_martial_prowess_4
-		trait = physique_good_2
-		trait = strong
-		trait = shrewd
-		trait = authoritative
-		trait = brave
-		trait = honest
-		trait = just
-		trait = arrogant
+	disallow_random_traits = yes
 
-		disallow_random_traits = yes
-
-		8279.1.1 = {
-			birth = yes
-		}
-		8281.1.1 = { give_nickname = nick_agot_historical_smalljon }
-		8303.11.7 = {
-			death = {
-				death_reason = death_battle
-				killer = Giantsbane_1
-			}
+	8345.12.5 = {
+		birth = yes
+		effect = {
+			add_character_flag = do_not_assign_strong_seed
+			make_trait_inactive = auburn_hair
+			make_trait_inactive = blue_eyes
 		}
 	}
-	Umber_11_son = {
-		name = Ned
-		dynasty = dynn_Umber
-		dna = Umber_12
-		religion = old_gods_wnw
-		culture = northman
-		father = Umber_Dummy_11
-		trait = education_martial_2
-		trait = physique_good_2
-		disallow_random_traits = yes
-		8294.1.1 = {
-			birth = yes
-		}
-		8304.4.28 = {
-			death = {
-				death_reason = death_battle
-				killer = Great_Other
-			}
+	8358.1.1 = {
+		give_nickname = nick_redwolf
+	}
+}
+Umber_8 = {
+	#name = Jon # Canon, AKA: THE Greatjon
+	8300.6.02 = {
+		death = {
+			death_reason = death_dungeon
 		}
 	}
-	Umber_12 = {
-		#name = Eddard # Mentioned
-		8303.11.7 = {
-			death = {
-				death_reason = death_battle
-			}
+}
+Umber_9 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Umber_10 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Umber_11 = {
+	religion = old_gods_wnw
+}
+Umber_Dummy_11 = {
+	name = Jon # Canon, AKA: Smalljon
+	dynasty = dynn_Umber
+	dna = Umber_11
+
+	martial = 8
+	diplomacy = 5
+	intrigue = 5
+	stewardship = 5
+	learning = 5
+	prowess = 6
+
+	religion = old_gods_wnw
+	culture = northman
+
+	father = Umber_8
+	mother = Moss_70
+
+	trait = education_martial_2
+	trait = education_martial_prowess_4
+	trait = physique_good_2
+	trait = strong
+	trait = shrewd
+	trait = authoritative
+	trait = brave
+	trait = honest
+	trait = just
+	trait = arrogant
+
+	disallow_random_traits = yes
+
+	8279.1.1 = {
+		birth = yes
+	}
+	8281.1.1 = { give_nickname = nick_agot_historical_smalljon }
+	8303.11.7 = {
+		death = {
+			death_reason = death_battle
+			killer = Giantsbane_1
 		}
 	}
-	Umber_13 = {
-		#name = Branda # Mentioned
-		8283.1.2 = {
-			death = { death_reason = death_vanished }
+}
+Umber_11_son = {
+	name = Ned
+	dynasty = dynn_Umber
+	dna = Umber_12
+	religion = old_gods_wnw
+	culture = northman
+	father = Umber_Dummy_11
+	trait = education_martial_2
+	trait = physique_good_2
+	disallow_random_traits = yes
+	8294.1.1 = {
+		birth = yes
+	}
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
+			killer = Great_Other
 		}
 	}
-	Umber_14 = {
-		#name = Brandon # Mentioned
-		8286.1.2 = {
-			death = { death_reason = death_vanished }
+}
+Umber_12 = {
+	#name = Eddard # Mentioned
+	8303.11.7 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Umber_15 = {
-		8304.4.28 = {
+}
+Umber_13 = {
+	#name = Branda # Mentioned
+	8283.1.2 = {
+		death = { death_reason = death_vanished }
+	}
+}
+Umber_14 = {
+	#name = Brandon # Mentioned
+	8286.1.2 = {
+		death = { death_reason = death_vanished }
+	}
+}
+Umber_15 = {
+	8304.4.28 = {
 		add_spouse = Umber_62
-		}
 	}
-	Umber_62 = {
-		8304.4.28 = {
+}
+Umber_62 = {
+	8304.4.28 = {
 		add_spouse = Umber_15
+	}
+}
+Poole_Dummy_3 = {
+	#name = Dummy # Jeyne Poole continued here
+	8286.1.2 = {
+		death = { death_reason = death_vanished }
+	}
+}
+Karstark_4 = {
+	#name = Rickard # Canon
+	8299.11.8 = {
+		death = {
+			death_reason = death_execution # Executed for killing prisoners
+			killer = Stark_6 # Robb Stark
 		}
 	}
-	Poole_Dummy_3 = {
-		#name = Dummy # Jeyne Poole continued here
-		8286.1.2 = {
-			death = { death_reason = death_vanished }
+}
+Karstark_16 = {
+	#name = Harrion # Canon, a lord
+	8299.1.9 = {
+		death = {
+			death_reason = death_battle # Battle of Whispering Wood
 		}
 	}
-	Karstark_4 = {
-		#name = Rickard # Canon
-		8299.11.8 = {
-			death = {
-				death_reason = death_execution # Executed for killing prisoners
-				killer = Stark_6 # Robb Stark
-			}
-		}
-	}
-	Karstark_16 = {
-		#name = Harrion # Canon, a lord
-		8299.1.9 = {
-			death = {
-				death_reason = death_battle # Battle of Whispering Wood
-			}
-		}
-	}
-	Karstark_Dummy_62 = {
-		name = Harald # Semi-Canon, Harald Karstark
-		dynasty_house = house_Karstark
+}
+Karstark_Dummy_62 = {
+	name = Harald # Semi-Canon, Harald Karstark
+	dynasty_house = house_Karstark
 
-		dna = Karstark_62
+	dna = Karstark_62
 
-		religion = old_gods_wnw
-		culture = northman
+	religion = old_gods_wnw
+	culture = northman
 
-		father = Karstark_4
-		mother = Woolfield_77
+	father = Karstark_4
+	mother = Woolfield_77
 
-		trait = education_stewardship_2
-		trait = education_martial_prowess_3
-		trait = diligent
-		trait = logistician
-		trait = wrathful
-		trait = arrogant
-		trait = stubborn
-		trait = bossy
+	trait = education_stewardship_2
+	trait = education_martial_prowess_3
+	trait = diligent
+	trait = logistician
+	trait = wrathful
+	trait = arrogant
+	trait = stubborn
+	trait = bossy
 
-		disallow_random_traits = yes
+	disallow_random_traits = yes
 
-		8259.1.1 = {
-			birth = yes
-			make_trait_inactive = scripted_appearance
-			make_trait_inactive = grey_eyes
-			make_trait_inactive = dark_brown_hair
-			add_character_flag = canon_status_semicanon
-		}
-		8280.1.1 = {
-			add_spouse = Pinn_73
-		}
-		8303.11.1 = {
-			death = {
-				death_reason = death_battle
-				killer = Stark_7
-			}
+	8259.1.1 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+		make_trait_inactive = grey_eyes
+		make_trait_inactive = dark_brown_hair
+		add_character_flag = canon_status_semicanon
+	}
+	8280.1.1 = {
+		add_spouse = Pinn_73
+	}
+	8303.11.1 = {
+		death = {
+			death_reason = death_battle
+			killer = Stark_7
 		}
 	}
-	Karstark_19 = {
-		8284.1.1 = {
-			trait = beauty_good_2
+}
+Karstark_19 = {
+	8284.1.1 = {
+		trait = beauty_good_2
+	}
+}
+Pinn_73 = {
+	#name = Roose # Canon, a lord, THE Roose Bolton
+	8258.1.1 = {
+		trait = beauty_good_2
+	}
+}
+Bolton_1 = {
+	#name = Roose # Canon, a lord, THE Roose Bolton
+	8303.7.13 = {
+		death = {
+			death_reason = death_murder
+			killer = Bolton_5
 		}
 	}
-	Pinn_73 = {
-		#name = Roose # Canon, a lord, THE Roose Bolton
-		8258.1.1 = {
-			trait = beauty_good_2
+}
+Bolton_5 = {
+	#name = Ramsay # Canon, THE Ramsay
+	8303.11.7 = {
+		death = {
+			death_reason = death_torture
+			killer = Stark_Dummy_8 # Sansa Stark
 		}
 	}
-	Bolton_1 = {
-		#name = Roose # Canon, a lord, THE Roose Bolton
-		8303.7.13 = {
-			death = {
-				death_reason = death_murder 
-				killer = Bolton_5
-			}
+}
+Whitehill_1 = {
+	8303.11.1 = {
+		death = {
+			death_reason = death_execution # Beheaded
+			killer = Forrester_3
 		}
 	}
-	Bolton_5 = {
-		#name = Ramsay # Canon, THE Ramsay
-		8303.11.7 = {
-			death = {
-				death_reason = death_torture
-				killer = Stark_Dummy_8 # Sansa Stark
-			}	
+}
+Whitehill_6 = {
+	8303.11.1 = {
+		death = {
+			death_reason = death_execution # Beheaded
+			killer = Forrester_3
 		}
 	}
-	Whitehill_1 = {
-		8303.11.1 = {
-			death = {
-				death_reason = death_execution # Beheaded
-				killer = Forrester_3
-			}
+}
+Mormont_3 = {
+	#Name = Jorah # Canon, THE Jorah Mormont, a lord
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Whitehill_6 = {
-		8303.11.1 = {
-			death = {
-				death_reason = death_execution # Beheaded
-				killer = Forrester_3
-			}
+}
+Mormont_4 = {
+	#name = Maege # Canon, a lord
+	8299.12.15 = { # Red Wedding
+		death = {
+			death_reason = death_bloody_wedding
 		}
 	}
-	Mormont_3 = {
-		#Name = Jorah # Canon, THE Jorah Mormont, a lord
-		8304.4.28 = { 
-			death = {
-				death_reason = death_battle
-			}
+}
+Mormont_6 = {
+	#name = Alysane # Canon
+	8301.5.1 = { # Red Wedding
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Mormont_4 = {
-		#name = Maege # Canon, a lord
-		8299.12.15 = { # Red Wedding
-			death = {
-				death_reason = death_bloody_wedding
-			}
+}
+Mormont_7 = {
+	#name = Lyra # Canon
+	8280.1.2 = {
+		death = yes
+	}
+}
+Mormont_8 = {
+	#name = Jorelle # Canon
+	8284.1.2 = {
+		death = yes
+	}
+}
+Mormont_9 = {
+	#name = Lyanna # Canon
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Mormont_6 = {
-		#name = Alysane # Canon
-		8301.5.1 = { # Red Wedding
-			death = {
-				death_reason = death_battle
-			}
+}
+Glover_4 = {
+	#name = Galbart # Canon, a lord
+	8299.12.15 = {
+		death = {
+			death_reason = death_bloody_wedding
 		}
 	}
-	Mormont_7 = {
-		#name = Lyra # Canon
-		8280.1.2 = {
-			death = yes
+}
+Glover_6 = {
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Glover_7 = {
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Magnar_69 = {
+	8315.3.6 = {
+		death = {
+			death_reason = death_old_age
 		}
 	}
-	Mormont_8 = {
-		#name = Jorelle # Canon
-		8284.1.2 = {
-			death = yes
-		}
+}
+Cassel_5 = {
+	8303.12.31 = {
+		effect = { release_from_prison = yes }
 	}
-	Mormont_9 = {
-		#name = Lyanna # Canon
-		8304.4.28 = {
-			death = {
-				death_reason = death_battle
-			}
-		}
+}
+Poole_3 = {
+	8303.12.31 = {
+		add_matrilineal_spouse = Barley_88
 	}
-	Glover_4 = {
-		#name = Galbart # Canon, a lord
-		8299.12.15 = {
-			death = {
-				death_reason = death_bloody_wedding
-			}
-		}
+}
+Condon_22 = {
+	8303.12.31 = {
+		add_spouse = Ashwood_87
 	}
-	Glover_6 = {
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
-		}
+}
+Condon_1 = {
+	8303.12.31 = {
+		add_spouse = Aldcreek_55
 	}
-	Glover_7 = {
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
-		}
-	}
-	Magnar_69 = {
-		8315.3.6 = {
-			death = {
-				death_reason = death_old_age
-			}
-		}
-	}
-	Cassel_5 = {
-		8303.12.31 = {
-			effect = { release_from_prison = yes }
-		}
-	}
-	Poole_3 = {
-		8303.12.31 = {
-			add_matrilineal_spouse = Barley_88
-		}
-	}
-	Condon_22 = {
-		8303.12.31 = {
-			add_spouse = Ashwood_87
-		}
-	}
-	Condon_1 = {
-		8303.12.31 = {
-			add_spouse = Aldcreek_55
-		}
-	}
-	Tallhart_3 = {
-		8303.12.31 = {
+}
+Tallhart_3 = {
+	8303.12.31 = {
 		add_spouse = Tallhart_6
-		}
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
-		}
 	}
-	Tallhart_5 = {
-		8303.12.31 = {
-			add_matrilineal_spouse = Tallhart_5
-		}
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
-		}
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
 	}
-	Tallhart_6 = {
-		8303.12.31 = {
+}
+Tallhart_5 = {
+	8303.12.31 = {
+		add_matrilineal_spouse = Tallhart_5
+	}
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Tallhart_6 = {
+	8303.12.31 = {
 		add_spouse = Tallhart_3
+	}
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Hornwood_4 = {
+	8304.1.1 = {
+		effect = {
+			remove_trait = bastard
 		}
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
+		add_trait = legitimized_bastard
+		effect = { release_from_prison = yes }
+	}
+	8305.1.1 = {
+		add_spouse = Ashwood_83
+	}
+}
+Hornwood_5 = {
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Ashwood_83 = {
+	8305.1.1 = {
+		add_spouse = Hornwood_4
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_hornwood }
 		}
 	}
-	Hornwood_4 = {
-		8304.1.1 = {
-			effect = { 
-				remove_trait = bastard
-			}
-			add_trait = legitimized_bastard
-			effect = { release_from_prison = yes }
-		}
-		8305.1.1 = { 
-			add_spouse = Ashwood_83
+}
+Cerwyn_2 = {
+	8303.12.31 = {
+		add_spouse = Cerwyn_6
+	}
+}
+Cerwyn_5 = {
+	8300.1.1 = {
+		add_spouse = Tyre_67
+	}
+}
+Cerwyn_6 = {
+	8303.12.31 = {
+		add_spouse = Cerwyn_2
+	}
+}
+Proud_106 = {
+	8303.12.31 = {
+		add_matrilineal_spouse = Tallhart_5
+	}
+	8304.4.28 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Reed_3 = {
+	8302.1.1 = {
+		death = {
+			death_reason = death_vanished
 		}
 	}
-	Hornwood_5 = {
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
-		}
-	}
-	Ashwood_83 = {
-		8305.1.1 = { 
-			add_spouse = Hornwood_4
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_hornwood }
-			}
-		}
-	}
-	Cerwyn_2 = {
-		8303.12.31 = {
-			add_spouse = Cerwyn_6
-		}
-	}
-	Cerwyn_5 = {
-		8300.1.1 = {
-			add_spouse = Tyre_67
-		}
-	}
-	Cerwyn_6 = {
-		8303.12.31 = {
-			add_spouse = Cerwyn_2
-		}
-	}
-	Proud_106 = {
-		8303.12.31 = {
-			add_matrilineal_spouse = Tallhart_5
-		}
-		8304.4.28 = {
-			effect = { release_from_prison = yes }
-		}
-	}
-	Reed_3 = {
-		8302.1.1 = { 
-			death = {
-				death_reason = death_vanished
-			}
-		}
-	}
-	Reed_2 = {
-		8305.1.1 = {
+}
+Reed_2 = {
+	8305.1.1 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_kings_landing }
-			}
 		}
 	}
+}
 
 #reach
-	Tyrell_6 = {
-		#name = Garth # Canon, Garth the Gross
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+Tyrell_6 = {
+	#name = Garth # Canon, Garth the Gross
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Tyrell_7 = {
-		#name = Moryn # Canon, Lord Commander of the City Watch of Oldtown
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Tyrell_7 = {
+	#name = Moryn # Canon, Lord Commander of the City Watch of Oldtown
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Tyrell_8 = {
-		#name = Mace # Canon, a lord, THE Mace Tyrell, MACE THE ACE
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Tyrell_8 = {
+	#name = Mace # Canon, a lord, THE Mace Tyrell, MACE THE ACE
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Tyrell_9 = {
-		#name = Mina # Canon, married Paxter Redwyne
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
-		}
-		8308.7.9 = {
-			death = {
-				death_reason = death_mysterious
-			}
+}
+Tyrell_9 = {
+	#name = Mina # Canon, married Paxter Redwyne
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_10 = {
-		#name = Janna # Canon, married Jon Fossoway
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+	8308.7.9 = {
+		death = {
+			death_reason = death_mysterious
 		}
 	}
-	Tyrell_11 = {
-		#name = Willas # Canon, THE Willas Tyrell
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Tyrell_10 = {
+	#name = Janna # Canon, married Jon Fossoway
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_12 = {
-		#name = Garlan # Canon, THE Garlan Tyrell
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Tyrell_11 = {
+	#name = Willas # Canon, THE Willas Tyrell
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Tyrell_13 = {
-		#name = Loras # Canon, THE Loras Tyrell, a Kingsguard
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Tyrell_12 = {
+	#name = Garlan # Canon, THE Garlan Tyrell
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Tyrell_14 = {
-		#name = Margaery # Canon, THE Margaery Tyrell
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Tyrell_13 = {
+	#name = Loras # Canon, THE Loras Tyrell, a Kingsguard
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Tyrell_15 = {
-		#name = Garse # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_14 = {
+	#name = Margaery # Canon, THE Margaery Tyrell
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Tyrell_16 = {
-		#name = Garrett # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_15 = {
+	#name = Garse # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_17 = {
-		8290.1.1 = { death = yes }
-	}
-	Tyrell_18 = {
-		#name = Leo # Canon, studying at the Citadel
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_16 = {
+	#name = Garrett # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_19 = {
-		#name = Theodore # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_17 = {
+	8290.1.1 = { death = yes }
+}
+Tyrell_18 = {
+	#name = Leo # Canon, studying at the Citadel
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_20 = {
-		#name = Olene # Canon, married Leo Blackbar
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_19 = {
+	#name = Theodore # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_22 = {
-		#name = Elinor # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_20 = {
+	#name = Olene # Canon, married Leo Blackbar
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_23 = {
-		#name = Luthor # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_22 = {
+	#name = Elinor # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_26 = {
-		#name = Victaria # Canon, married Jon Bulwer
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_23 = {
+	#name = Luthor # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_27 = {
-		#name = Leo # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_26 = {
+	#name = Victaria # Canon, married Jon Bulwer
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_28 = {
-		#name = Lyonel # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_27 = {
+	#name = Leo # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_29 = {
-		#name = Alla # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_28 = {
+	#name = Lyonel # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_30 = {
-		#name = Lucas # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_29 = {
+	#name = Alla # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_31 = {
-		#name = Lorent # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_30 = {
+	#name = Lucas # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_32 = {
-		#name = Leona # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_31 = {
+	#name = Lorent # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_34 = {
-		#name = Quentin # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_32 = {
+	#name = Leona # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_35 = {
-		#name = Olymer # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_34 = {
+	#name = Quentin # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_36 = {
-		#name = Raymund # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_35 = {
+	#name = Olymer # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_37 = {
-		#name = Rickard # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_36 = {
+	#name = Raymund # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Tyrell_38 = {
-		#name = Megga # Canon
-		8305.1.1 = {
-			effect = { 
-				add_pressed_claim = title:e_the_reach
-				add_pressed_claim = title:d_highgarden
-				add_pressed_claim = title:c_highgarden
-			}
+}
+Tyrell_37 = {
+	#name = Rickard # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Redwyne_2 = {
-		#name = Olenna # Canon, AKA: Queen of Thorns, married Luthor Tyrell
-		8303.10.22 = {
-			give_nickname = nick_agot_historical_the_queen_of_thorns
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Redwyne_2 COA_KEY = dynn_Tyrell }
-			}
-		}
-		8304.07.15 = { 
-			death = {
-				death_reason = death_poison
-				killer = Lannister_7
-			}
+}
+Tyrell_38 = {
+	#name = Megga # Canon
+	8305.1.1 = {
+		effect = {
+			add_pressed_claim = title:e_the_reach
+			add_pressed_claim = title:d_highgarden
+			add_pressed_claim = title:c_highgarden
 		}
 	}
-	Redwyne_4 = {
-		#name = Paxter # Canon, a lord, THE Paxter Redwyne
-		8305.1.1 = {
-			effect = { add_pressed_claim = title:e_the_reach }
-		}
-		8309.10.1 = {
-			death = {
-				death_reason = death_ill
-			}
+}
+Redwyne_2 = {
+	#name = Olenna # Canon, AKA: Queen of Thorns, married Luthor Tyrell
+	8303.10.22 = {
+		give_nickname = nick_agot_historical_the_queen_of_thorns
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Redwyne_2 COA_KEY = dynn_Tyrell }
 		}
 	}
-	Redwyne_5 = {
-		# 8309.9.11 = {
-		# 	death = {
-		# 		death_reason = death_ill
-		# 	}
-		# }
-	}
-	Redwyne_6 = {
-		8308.7.8 = {
-			death = {
-				death_reason = death_battle
-			}
+	8304.07.15 = {
+		death = {
+			death_reason = death_poison
+			killer = Lannister_7
 		}
 	}
-	Redwyne_7 = {
-		8309.9.27 = {
-			death = {
-				death_reason = death_ill
-			}
+}
+Redwyne_4 = {
+	#name = Paxter # Canon, a lord, THE Paxter Redwyne
+	8305.1.1 = {
+		effect = { add_pressed_claim = title:e_the_reach }
+	}
+	8309.10.1 = {
+		death = {
+			death_reason = death_ill
 		}
 	}
-	Hightower_5 = {
-		#name = Leyton # Canon, a lord
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Redwyne_5 = {
+	# 8309.9.11 = {
+	# 	death = {
+	# 		death_reason = death_ill
+	# 	}
+	# }
+}
+Redwyne_6 = {
+	8308.7.8 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Hightower_9 = {
-		#name = Leyton # Canon, a lord
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Redwyne_7 = {
+	8309.9.27 = {
+		death = {
+			death_reason = death_ill
 		}
 	}
-	Hightower_16 = {
-		#name = Leyton # Canon, a lord
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Hightower_5 = {
+	#name = Leyton # Canon, a lord
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Florent_7 = {
-		#name = Alekyne # Canon
-		8305.1.1 = {
-			effect = { add_pressed_claim = title:e_the_reach }
+}
+Hightower_9 = {
+	#name = Leyton # Canon, a lord
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
-		8309.8.20 = {
-			effect = {
-				if = {
-					limit = { character:Hightower_5 = { is_alive = yes } }
-					character:Hightower_5 = { 
-						imprison = {
-							target = ROOT
-							type = dungeon
-						}
+	}
+}
+Hightower_16 = {
+	#name = Leyton # Canon, a lord
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
+		}
+	}
+}
+Florent_7 = {
+	#name = Alekyne # Canon
+	8305.1.1 = {
+		effect = { add_pressed_claim = title:e_the_reach }
+	}
+	8309.8.20 = {
+		effect = {
+			if = {
+				limit = { character:Hightower_5 = { is_alive = yes } }
+				character:Hightower_5 = {
+					imprison = {
+						target = ROOT
+						type = dungeon
 					}
-					reverse_add_opinion = {
-						modifier = treachery_opinion
-						target = character:Hightower_5
-					}
+				}
+				reverse_add_opinion = {
+					modifier = treachery_opinion
+					target = character:Hightower_5
 				}
 			}
 		}
 	}
-	Florent_10 = {
-		#name = Selyse # Canon, married Stannis Baratheon
-		8301.4.2 = { # The day of Shireen's death
+}
+Florent_10 = {
+	#name = Selyse # Canon, married Stannis Baratheon
+	8301.4.2 = { # The day of Shireen's death
 		add_stress = 1000 # Maximum stress to trigger a breakdown
+	}
+	8301.4.2 = { # The day after Shireen's death
+		death = {
+			death_reason = death_suicide
 		}
-		8301.4.2 = { # The day after Shireen's death
-			death = {
-				death_reason = death_suicide
+	}
+}
+Tarly_1 = {
+	#name = Randyll # Canon, a lord
+	8303.12.31 = {
+		effect = { # Marshall
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_marshal
 			}
 		}
 	}
-	Tarly_1 = {
-		#name = Randyll # Canon, a lord
-		8303.12.31 ={
-			effect = { # Marshall
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_marshal
-				}
-			}
-		}
-		8304.07.18 = { 
-			death = {
-				death_reason = death_dragon_fire
-			}
+	8304.07.18 = {
+		death = {
+			death_reason = death_dragon_fire
 		}
 	}
-	Tarly_2 = {
-		#name = Samwell # Canon, THE Sam
-		8302.9.1 = {
-			trait = maester_historical
-			effect = {
-				agot_maester_in_the_citadel_history_effect = { METAL = lead }
-				agot_maester_starting_setup_history_effect = yes
-			}
-		}
-		8305.1.1 = { # Becomes grand maester
-			effect = {
-				agot_appoint_as_court_position_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = maester_court_position
-				}
-				make_trait_inactive = grandmaester
-			}
+}
+Tarly_2 = {
+	#name = Samwell # Canon, THE Sam
+	8302.9.1 = {
+		trait = maester_historical
+		effect = {
+			agot_maester_in_the_citadel_history_effect = { METAL = lead }
+			agot_maester_starting_setup_history_effect = yes
 		}
 	}
-	Tarly_3 = {
-		#name = Talla
+	8305.1.1 = { # Becomes grand maester
+		effect = {
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = maester_court_position
+			}
+			make_trait_inactive = grandmaester
+		}
+	}
+}
+Tarly_3 = {
+	#name = Talla
 
-		disallow_random_traits = yes
+	disallow_random_traits = yes
 
-		8305.1.1 = { 
-			clear_traits = yes
-			add_trait = education_diplomacy_4
-			add_trait = diligent
-			add_trait = gregarious
-			add_trait = humble
-			add_trait = trusting
-			add_trait = intellect_good_2
-			add_trait = shrewd
-		}
-		8310.1.1 = {
-			effect = { # Chancellor
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_chancellor
-				}
-			}
-		}
-		8351.11.9 ={
-			death = {
-				death_reason = death_old_age
+	8305.1.1 = {
+		clear_traits = yes
+		add_trait = education_diplomacy_4
+		add_trait = diligent
+		add_trait = gregarious
+		add_trait = humble
+		add_trait = trusting
+		add_trait = intellect_good_2
+		add_trait = shrewd
+	}
+	8310.1.1 = {
+		effect = { # Chancellor
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_chancellor
 			}
 		}
 	}
-	Tarly_6 = {
-		#name = Dickon # Canon
-		8304.07.18 = { 
-			death = {
-				death_reason = death_dragon_fire
+	8351.11.9 = {
+		death = {
+			death_reason = death_old_age
+		}
+	}
+}
+Tarly_6 = {
+	#name = Dickon # Canon
+	8304.07.18 = {
+		death = {
+			death_reason = death_dragon_fire
+		}
+	}
+}
+Tarly_tfw_1 = {
+	name = Samwell
+	mother = Tarly_3
+
+	dynasty = dynn_Tarly
+	culture = marcher
+	religion = fots_seven
+
+	8307.2.12 = {
+		birth = yes
+	}
+	8351.11.9 = {
+		capital = c_horn_hill
+	}
+	8363.12.19 = {
+		death = {
+			death_reason = death_ill
+		}
+	}
+}
+Tarly_tfw_2 = {
+	name = Samwell
+	father = Tarly_tfw_1
+
+	dynasty = dynn_Tarly
+	culture = marcher
+	religion = fots_seven
+
+	8336.4.21 = {
+		birth = yes
+	}
+}
+Peake_2 = {
+	#name = Titus # Canon, a lord
+	8305.1.1 = {
+		effect = { add_pressed_claim = title:e_the_reach }
+	}
+	8309.1.29 = {
+		death = {
+			death_reason = death_sickly
+		}
+	}
+}
+Peake_tfw_1 = {
+	name = Amanda
+	female = yes
+	father = Peake_2
+	mother = Lannister_133
+
+	culture = reachman
+	religion = fots_seven
+
+	8306.3.3 = {
+		birth = yes
+	}
+}
+Rowan_1 = {
+	#name = Mathis # Canon
+	8305.1.1 = {
+		effect = { add_pressed_claim = title:e_the_reach }
+	}
+	8310.1.1 = {
+		effect = { # Steward
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_steward
 			}
 		}
 	}
-	Tarly_tfw_1 = {
-		name = Samwell
-		mother = Tarly_3
-
-		dynasty = dynn_Tarly
-		culture = marcher
-		religion = fots_seven
-
-		8307.2.12 = {
-			birth = yes
-		}
-		8351.11.9 = {
-			capital = c_horn_hill
-		}
-		8363.12.19 = {
-			death = {
-				death_reason = death_ill
-			}
-		}
-	}
-	Tarly_tfw_2 = {
-		name = Samwell
-		father = Tarly_tfw_1
-
-		dynasty = dynn_Tarly
-		culture = marcher
-		religion = fots_seven
-
-		8336.4.21 = {
-			birth = yes
-		}
-	}
-	Peake_2 = {
-		#name = Titus # Canon, a lord
-		8305.1.1 = {
-			effect = { add_pressed_claim = title:e_the_reach }
-		}
-		8309.1.29 = {
-			death = {
-				death_reason = death_sickly
-			}
-		}
-	}
-	Peake_tfw_1 = {
-		name = Amanda
-		female = yes
-		father = Peake_2
-		mother = Lannister_133
-
-		culture = reachman
-		religion = fots_seven
-
-		8306.3.3 = {
-			birth = yes
-		}
-	}
-	Rowan_1 = {
-		#name = Mathis # Canon
-		8305.1.1 = {
-			effect = { add_pressed_claim = title:e_the_reach }
-		}
-		8310.1.1 = {
-			effect = { # Steward
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_steward
-				}
-			}
-		}
-	}
-	Rowan_2 = {
-		8300.1.1 = {
+}
+Rowan_2 = {
+	8300.1.1 = {
 		add_spouse = Rowan_56
-		}
-		8309.4.2 = {
-			death = {
-				death_reason = death_ill
-			}
+	}
+	8309.4.2 = {
+		death = {
+			death_reason = death_ill
 		}
 	}
-	Rowan_3 = {
-		8300.7.9 = {
-			add_spouse = Ashford_34
+}
+Rowan_3 = {
+	8300.7.9 = {
+		add_spouse = Ashford_34
+	}
+}
+Fossoway_1 = {
+	#name = Bennis # Mentioned, a lord
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Fossoway_1 = {
-		#name = Bennis # Mentioned, a lord
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
+}
+Fossoway_4 = {
+	8309.5.10 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Fossoway_4 = {
-		8309.5.10 = {
-			death = {
-				death_reason = death_battle
-			}
+}
+Fossoway_5 = {
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = Harlaw_12
 		}
 	}
-	Fossoway_5 = {
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-				killer = Harlaw_12
-			}
+}
+Fossoway_89 = {
+	8304.12.26 = {
+		death = {
+			death_reason = death_battlez
 		}
 	}
-	Fossoway_89 = {
-		8304.12.26 = {
-			death = {
-				death_reason = death_battlez
-			}
+}
+Oakheart_1 = {
+	8309.5.10 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Oakheart_1 = {
-		8309.5.10 = {
-			death = {
-				death_reason = death_battle
-			}
+}
+Oldflowers_25 = {
+	#name = Garth
+	8305.1.1 = {
+		effect = { add_pressed_claim = title:e_the_reach }
+	}
+	8309.1.21 = {
+		dynasty = dynn_Gardener
+	}
+	8309.9.9 = {
+		death = {
+			death_reason = death_ill
 		}
 	}
-	Oldflowers_25 = {
-		#name = Garth
-		8305.1.1 = {
-			effect = { add_pressed_claim = title:e_the_reach }
-		}
-		8309.1.21 = {
-			dynasty = dynn_Gardener
-		}
-		8309.9.9 = {
-			death = {
-				death_reason = death_ill
-			}
+}
+Lowborn_Reach_3 = {
+	#name = Satin # Canon
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
 		}
 	}
-	Lowborn_Reach_3 = {
-		#name = Satin # Canon	
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
+}
+Norcross_5 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Mullendore_2 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Kidwell_22 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Woodwright_2 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Durwell_3 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Lowther_4 = {
+	8300.5.1 = {
+		effect = {
+			release_from_prison = yes
+			agot_safe_set_location_history_effect = { CASTLE = title:c_highgarden }
 		}
 	}
-	Norcross_5 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8305.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:c_oakenshield }
+	}
+}
+Hewett_3 = {
+	name = Humfrey # Canon, a lord
+	8300.4.29 = {
+		death = {
+			death_reason = death_execution
+			killer = Greyjoy_6 # Euron Greyjoy
 		}
 	}
-	Mullendore_2 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Hewett_5 = {
+	8300.5.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_highgarden }
 		}
 	}
-	Kidwell_22 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8305.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:c_oakenshield }
+	}
+}
+Hewett_6 = {
+	8300.5.1 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Woodwright_2 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Hewett_7 = {
+	8300.4.30 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Hewett_8 = {
+	8300.4.30 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Hewett_9 = {
+	8300.4.30 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Hewett_10 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Hewett_11 = {
+	8301.1.1 = {
+		trait = pregnant
+		death = {
+			death_reason = death_execution
+			killer = Greyjoy_6
 		}
 	}
-	Durwell_3 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Chester_2 = {
+	8299.1.1 = {
+		add_spouse = Chester_50
+	}
+	8300.5.1 = {
+		death = {
+			death_reason = death_battle
+			killer = Greyjoy_hh_4
 		}
 	}
-	Lowther_4 = {
-		8300.5.1 = {
-			effect = { 
-				release_from_prison = yes
-				agot_safe_set_location_history_effect = { CASTLE = title:c_highgarden }
-			}
-		}
-		8305.1.1 = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_oakenshield }
+}
+Chester_3 = {
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Hewett_3 = {
-		name = Humfrey # Canon, a lord
-		8300.4.29 = {
-			death = {
-				death_reason = death_execution
-				killer = Greyjoy_6 # Euron Greyjoy
-			}
+}
+Serry_2 = {
+	8300.4.29 = {
+		death = {
+			death_reason = death_execution
+			killer = Drumm_hh_1
 		}
 	}
-	Hewett_5 = {
-		8300.5.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_highgarden }
-			}
-		}
-		8305.1.1 = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_oakenshield }
+}
+Ashford_33 = {
+	8300.4.29 = {
+		death = {
+			death_reason = death_execution
+			killer = Drumm_hh_1
 		}
 	}
-	Hewett_6 = {
-		8300.5.1 = {
-			death = {
-				death_reason = death_battle
-			}
+}
+Grimm_1 = {
+	8300.4.29 = {
+		death = {
+			death_reason = death_execution
+			killer = Greyjoy_6
 		}
 	}
-	Hewett_7 = {
-		8300.4.30 = {
-			effect = { release_from_prison = yes }
+}
+Grimm_2 = {
+	8300.4.30 = {
+		remove_spouse = Fossoway_4
+		add_spouse = Harlaw_12
+	}
+}
+Grimm_3 = {
+	8300.5.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_highgarden }
 		}
 	}
-	Hewett_8 = {
-		8300.4.30 = {
-			effect = { release_from_prison = yes }
+	8305.1.1 = {
+		agot_safe_set_location_history_effect = { CASTLE = title:c_greyshield }
+	}
+}
+Hythe_67 = {
+	8300.5.1 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Hewett_9 = {
-		8300.4.30 = {
-			effect = { release_from_prison = yes }
+}
+Hythe_61 = {
+	8300.5.1 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Hewett_10 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Strickland_1 = {
+	#name = Harry # Canon, AKA: Homeless Harry Strickland
+	8304.12.25 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Hewett_11 = {
-		8301.1.1 = {
-			trait = pregnant
-			death = {
-				death_reason = death_execution
-				killer = Greyjoy_6
-			}
-		}
-	}
-	Chester_2 = {
-		8299.1.1 = {
-			add_spouse = Chester_50
-			}
-		8300.5.1 = {
-			death = {
-				death_reason = death_battle
-				killer = Greyjoy_hh_4
-			}
-		}
-	}
-	Chester_3 = {
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-			}
-		}
-	}
-	Serry_2 = {
-		8300.4.29 = {
-			death = {
-				death_reason = death_execution
-				killer = Drumm_hh_1
-			}
-		}
-	}
-	Ashford_33 = {
-		8300.4.29 = {
-			death = {
-				death_reason = death_execution
-				killer = Drumm_hh_1
-			}
-		}
-	}
-	Grimm_1 = {
-		8300.4.29 = {
-			death = {
-				death_reason = death_execution
-				killer = Greyjoy_6
-			}
-		}
-	}
-	Grimm_2 = {
-		8300.4.30 = {
-			remove_spouse = Fossoway_4
-			add_spouse = Harlaw_12
-		}
-	}
-	Grimm_3 = {
-		8300.5.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_highgarden }
-			}
-		}
-		8305.1.1 = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_greyshield }
-		}
-	}
-	Hythe_67 = {
-		8300.5.1 = {
-			death = {
-				death_reason = death_battle
-			}
-		}
-	}
-	Hythe_61 = {
-		8300.5.1 = {
-			death = {
-				death_reason = death_battle
-			}
-		}
-	}
-	Strickland_1 = {
-		#name = Harry # Canon, AKA: Homeless Harry Strickland
-		8304.12.25 = { 
-			death = {
-				death_reason = death_battle
-			}
-		}
-	}
+}
 
 
 #riverlands
-	Tully_7 = {
-		#name = Edmure # Canon
-		8300.5.10 = {
-			employer = Lannister_6 # Cersei Lannister
-			effect = {
-				agot_safe_imprison_in_castle_history_effect = {
-					CASTLE = title:c_casterly_rock
-					RELEASE_DATE = 9999.1.1
-					TYPE = house_arrest
-				}
+Tully_7 = {
+	#name = Edmure # Canon
+	8300.5.10 = {
+		employer = Lannister_6 # Cersei Lannister
+		effect = {
+			agot_safe_imprison_in_castle_history_effect = {
+				CASTLE = title:c_casterly_rock
+				RELEASE_DATE = 9999.1.1
+				TYPE = house_arrest
 			}
 		}
-		8304.6.3 = {
-			release_from_prison = yes
-		}
-		8305.1.1 = {
-			effect = { # Warden of the North?
+	}
+	8304.6.3 = {
+		release_from_prison = yes
+	}
+	8305.1.1 = {
+		effect = { # Warden of the North?
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:h_the_iron_throne
 				POSITION = warden_of_the_north_court_position
 			}
-			}
-			effect = {
-				if = {
-					limit = { character:Stark_10 = { is_alive = yes } }
-					add_opinion = {
-						modifier = respect_opinion
-						target = character:Stark_10 # Bran
-						opinion = 60
-					}
-				}
-			}
 		}
-		8306.1.1 ={
-			effect = { # Chancellor
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_chancellor
-				}
-			}
-		}
-		8309.10.12 = {
-			death = {
-				death_reason = death_ill
-			}
-		}
-	}
-	Tully_tfw_1 = {
-		name = Oscar
-		dynasty = dynn_Tully
-
-		religion = fots_seven
-		culture = riverman_main
-
-		father = Tully_7
-		mother = Frey_82
-
-		trait = generous
-		trait = diligent
-		trait = gregarious
-		trait = honest
-
-		trait = intellect_good_3
-		trait = beauty_good_1
-		trait = education_diplomacy_5
-
-		8304.6.2 = { birth = yes }
-		8366.1.1 = {
-			death = {
-				death_reason = death_old_age
-			}
-		}
-	}
-	Tully_tfw_2 = {
-		name = Elmo
-		dynasty = dynn_Tully
-
-		religion = fots_seven
-		culture = riverman_main
-
-		father = Tully_7
-		mother = Frey_82
-
-		trait = generous
-		trait = diligent
-		trait = gregarious
-		trait = honest
-
-		trait = education_diplomacy_3
-
-		8334.6.2 = { birth = yes }
-	}
-	Tully_9 = {
-		#name = Brynden # Canon, AKA: Blackfish
-		8302.8.8 = {
-			death = {
-				death_reason = death_battle
-			}
-		}
-	}
-	Mallister_4 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
-		}
-		8306.1.1 ={
-			effect = { # Marshall
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_marshal
+		effect = {
+			if = {
+				limit = { character:Stark_10 = { is_alive = yes } }
+				add_opinion = {
+					modifier = respect_opinion
+					target = character:Stark_10 # Bran
+					opinion = 60
 				}
 			}
 		}
 	}
-	Piper_4 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8306.1.1 = {
+		effect = { # Chancellor
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_chancellor
+			}
 		}
 	}
-	Piper_5 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8309.10.12 = {
+		death = {
+			death_reason = death_ill
 		}
 	}
-	Piper_6 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Tully_tfw_1 = {
+	name = Oscar
+	dynasty = dynn_Tully
+
+	religion = fots_seven
+	culture = riverman_main
+
+	father = Tully_7
+	mother = Frey_82
+
+	trait = generous
+	trait = diligent
+	trait = gregarious
+	trait = honest
+
+	trait = intellect_good_3
+	trait = beauty_good_1
+	trait = education_diplomacy_5
+
+	8304.6.2 = { birth = yes }
+	8366.1.1 = {
+		death = {
+			death_reason = death_old_age
 		}
 	}
-	Piper_8 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Tully_tfw_2 = {
+	name = Elmo
+	dynasty = dynn_Tully
+
+	religion = fots_seven
+	culture = riverman_main
+
+	father = Tully_7
+	mother = Frey_82
+
+	trait = generous
+	trait = diligent
+	trait = gregarious
+	trait = honest
+
+	trait = education_diplomacy_3
+
+	8334.6.2 = { birth = yes }
+}
+Tully_9 = {
+	#name = Brynden # Canon, AKA: Blackfish
+	8302.8.8 = {
+		death = {
+			death_reason = death_battle
 		}
 	}
-	Piper_9 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+}
+Mallister_4 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+	8306.1.1 = {
+		effect = { # Marshall
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_marshal
+			}
 		}
 	}
-	Piper_10 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
-		}
+}
+Piper_4 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
 	}
-	Mallister_7 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
-		}
+}
+Piper_5 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
 	}
+}
+Piper_6 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Piper_8 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Piper_9 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Piper_10 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Mallister_7 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
 
 
-	#freys
-		Frey_1 = {
-			#name = Walder # Canon, THE Walder Frey
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_6 = {
-			#name = Walton # Canon
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_7 = {
-			#name = Edwyn # Canon
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_8 = {
-			#name = Walder # Canon, AKA: Black Walder
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_12 = {
-			#name = Steffon # Canon
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_13 = {
-			#name = Walda # Canon, AKA: Fair Walda
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_14 = {
-			#name = Bryan # Canon
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_15 = {
-			#name = Emmon # Canon, a lord of the Riverrun
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Lannister_3 = {
-			#name = Emmon # Canon, a lord of the Riverrun
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_17 = {
-			#name = Lyonel # Canon
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_19 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_20 = {
-			#name = Tywin # Canon
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_21 = {
-			#name = Willem # Canon
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_23 = {
-			#name = Perriane # Canon, married Leslyn Haigh
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_24 = {
-			8304.12.25 = { 
-				death = {
-					death_reason = death_dragon_fire
-				}
-			}
-		}
-		Frey_50 = {
-			name = Amerei # Canon, AKA: Gatehouse Amy, married Pate of the Blue Fork, Lancel Lannister and Martyn Lannister
-			8303.12.31 = {
-				dynasty = dynn_Darry
-				add_spouse = Darry_11
-				effect = {
-					agot_create_personal_coa_for_historical_ai = { ACTOR = character:Frey_50 COA_KEY = amerei_darry_personal_coa }
-				}
-			}
-		}
-		Frey_52 = {
-			#name = Walda # Canon, AKA: Fat Walda, married Roose Bolton
-			8303.7.13 = {
-				death = {
-					death_reason = death_murder 
-					killer = Bolton_5
-				}
-			}
-		}
-		Frey_53 = {
-			name = Marissa # Canon
-			8300.5.16 = {
-				add_spouse = Frey_78
-			}
-		}
-		Frey_64 = {
-			#name = Lothar # Canon, AKA: Lame Lothar
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_30 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_35 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_91 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_81 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_42 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_100 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_146 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_149 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_38 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_41 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_58 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_62 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_63 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_65 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_73 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_74 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_75 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_66 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_76 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_77 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_156 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_157 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_158 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_159 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_160 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_93 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_94 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_95 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_42 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		RoyceGOTM_13 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_43 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_44 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_45 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_46 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_96 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_150 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_146 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_84 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_49 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_47 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_34 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_26 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_27 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_28 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_86 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_55 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_56 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_76 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_77 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_87 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_88 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_89 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_10 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Paege_3 = {
-			8303.12.4 = {
-				death = {
-					death_reason = death_feast_accident
-				}
-			}
-		}
-		Frey_78 = {
-			name = Perwyn # Canon
-			8300.5.16 = {
-				dynasty = dynn_Rosby
-				add_spouse = Frey_53
-				effect = {
-					agot_create_personal_coa_for_historical_ai = { ACTOR = character:Frey_78 COA_KEY = perwyn_rosby_personal_coa }
-				}
-			}
-		}
-		Frey_81 = {
-			8300.5.16 = {
-				dynasty = dynn_Rosby
-			}
-		}
+#freys
+Frey_1 = {
+	#name = Walder # Canon, THE Walder Frey
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_6 = {
+	#name = Walton # Canon
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_7 = {
+	#name = Edwyn # Canon
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_8 = {
+	#name = Walder # Canon, AKA: Black Walder
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_12 = {
+	#name = Steffon # Canon
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_13 = {
+	#name = Walda # Canon, AKA: Fair Walda
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_14 = {
+	#name = Bryan # Canon
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_15 = {
+	#name = Emmon # Canon, a lord of the Riverrun
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Lannister_3 = {
+	#name = Emmon # Canon, a lord of the Riverrun
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_17 = {
+	#name = Lyonel # Canon
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_19 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_20 = {
+	#name = Tywin # Canon
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_21 = {
+	#name = Willem # Canon
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_23 = {
+	#name = Perriane # Canon, married Leslyn Haigh
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_24 = {
+	8304.12.25 = {
+		death = {
+			death_reason = death_dragon_fire
+		}
+	}
+}
+Frey_50 = {
+	name = Amerei # Canon, AKA: Gatehouse Amy, married Pate of the Blue Fork, Lancel Lannister and Martyn Lannister
+	8303.12.31 = {
+		dynasty = dynn_Darry
+		add_spouse = Darry_11
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Frey_50 COA_KEY = amerei_darry_personal_coa }
+		}
+	}
+}
+Frey_52 = {
+	#name = Walda # Canon, AKA: Fat Walda, married Roose Bolton
+	8303.7.13 = {
+		death = {
+			death_reason = death_murder
+			killer = Bolton_5
+		}
+	}
+}
+Frey_53 = {
+	name = Marissa # Canon
+	8300.5.16 = {
+		add_spouse = Frey_78
+	}
+}
+Frey_64 = {
+	#name = Lothar # Canon, AKA: Lame Lothar
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_30 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_35 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_91 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_81 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_42 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_100 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_146 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_149 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_38 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_41 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_58 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_62 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_63 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_65 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_73 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_74 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_75 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_66 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_76 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_77 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_156 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_157 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_158 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_159 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_160 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_93 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_94 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_95 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_42 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+RoyceGOTM_13 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_43 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_44 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_45 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_46 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_96 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_150 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_146 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_84 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_49 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_47 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_34 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_26 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_27 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_28 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_86 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_55 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_56 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_76 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_77 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_87 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_88 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_89 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_10 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Paege_3 = {
+	8303.12.4 = {
+		death = {
+			death_reason = death_feast_accident
+		}
+	}
+}
+Frey_78 = {
+	name = Perwyn # Canon
+	8300.5.16 = {
+		dynasty = dynn_Rosby
+		add_spouse = Frey_53
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Frey_78 COA_KEY = perwyn_rosby_personal_coa }
+		}
+	}
+}
+Frey_81 = {
+	8300.5.16 = {
+		dynasty = dynn_Rosby
+	}
+}
 
-	#Darry
-		Darry_11 = {
-			name = Willem # Mentioned, bastard of Darry overlooked in succession
-			8303.12.31 = {
-				add_spouse = Frey_50
-			}
-		}
+#Darry
+Darry_11 = {
+	name = Willem # Mentioned, bastard of Darry overlooked in succession
+	8303.12.31 = {
+		add_spouse = Frey_50
+	}
+}
 
-		Vance_Atranta_1 = {
-			8303.12.31 = {
-				effect = {
-					agot_appoint_as_councillor_for_castle_history_effect = {
-						CASTLE = title:h_the_iron_throne
-						POSITION = councillor_chancellor
-					}
-				}
+Vance_Atranta_1 = {
+	8303.12.31 = {
+		effect = {
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_chancellor
 			}
 		}
+	}
+}
 
 
 #Brotherhood without Banners
 
-	Dondarrion_2 = {
-		#name = Beric # Canon, AKA: The Lightning Lord
+Dondarrion_2 = {
+	#name = Beric # Canon, AKA: The Lightning Lord
+}
+Dondarrion_Dummy_2 = {
+	name = Beric # Canon, AKA: The Lightning Lord, a lord
+	dynasty = dynn_Dondarrion
+	dna = Dondarrion_2
+
+	martial = 7
+	diplomacy = 6
+	intrigue = 6
+	stewardship = 6
+	learning = 6
+	prowess = 8
+
+	religion = fots_seven
+	culture = marcher
+
+	father = Dondarrion_1
+	mother = Kings_Mountain_14
+
+	trait = education_diplomacy_3
+	trait = education_martial_prowess_4
+	trait = intellect_good_2
+	trait = brave
+	trait = zealous
+	trait = scarred
+	trait = beauty_good_1
+	trait = bossy
+
+	disallow_random_traits = yes
+
+	8277.1.2 = {
+		birth = yes
+		make_trait_inactive = scripted_appearance
+		add_character_flag = canon_status_canon
 	}
-	Dondarrion_Dummy_2 = {
-		name = Beric # Canon, AKA: The Lightning Lord, a lord
-		dynasty = dynn_Dondarrion
-		dna = Dondarrion_2
-
-		martial = 7
-		diplomacy = 6
-		intrigue = 6
-		stewardship = 6
-		learning = 6
-		prowess = 8
-
-		religion = fots_seven
-		culture = marcher
-
-		father = Dondarrion_1
-		mother = Kings_Mountain_14
-
-		trait = education_diplomacy_3
-		trait = education_martial_prowess_4
-		trait = intellect_good_2
-		trait = brave 
-		trait = zealous
+	8293.1.1 = {
+		trait = knight
+		effect = {
+			add_trait = arrogant
+			agot_set_signature_weapon_history_effect = { WEAPON = flag:sword_and_shield }
+		}
+	}
+	8298.10.28 = {
 		trait = scarred
-		trait = beauty_good_1
-		trait = bossy
-
-		disallow_random_traits = yes
-
-		8277.1.2 = {
-			birth = yes
-			make_trait_inactive = scripted_appearance
-			add_character_flag = canon_status_canon
-		}
-		8293.1.1 = {
-			trait = knight
-			effect = { 
-				add_trait = arrogant
-				agot_set_signature_weapon_history_effect = { WEAPON = flag:sword_and_shield }
-			}
-		}
-		8298.10.28 = {
-			trait = scarred
-			trait = temperate
-			trait = holy_warrior
-			religion = rhllor_fots
-			trait = faith_warrior # Favored by Rhllor
-			# trait = resurrected_by_rhllor # AGOT TODO trait
-			effect = {
-				remove_trait = arrogant
-				# change_variable = { which = "rhllor_fots_magic" value = 10 } # AGOT TODO
-				# add_character_flag = redgod_protection_battle
-				if = {
-					limit = { character:Brotherhood_8 = { is_alive = yes } }
-					set_relation_friend = {
-						target = character:Brotherhood_8 # Thoros of Myr
-						reason = friend_beric_thoros
-					}
+		trait = temperate
+		trait = holy_warrior
+		religion = rhllor_fots
+		trait = faith_warrior # Favored by Rhllor
+		# trait = resurrected_by_rhllor # AGOT TODO trait
+		effect = {
+			remove_trait = arrogant
+			# change_variable = { which = "rhllor_fots_magic" value = 10 } # AGOT TODO
+			# add_character_flag = redgod_protection_battle
+			if = {
+				limit = { character:Brotherhood_8 = { is_alive = yes } }
+				set_relation_friend = {
+					target = character:Brotherhood_8 # Thoros of Myr
+					reason = friend_beric_thoros
 				}
 			}
 		}
-		8299.2.11 = {
-			trait = one_eyed # Lost an eye in fight with Ser Gregor
-			effect = {
-				add_character_flag = beric_eyepatch
-				add_character_flag = one_eyed_healed
-			}
-		}
-		8303.12.31 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
-			}
-		}
-		8304.4.28 = {
-			death = {
-				death_reason = death_battle
-				killer = Great_Other
-			}
+	}
+	8299.2.11 = {
+		trait = one_eyed # Lost an eye in fight with Ser Gregor
+		effect = {
+			add_character_flag = beric_eyepatch
+			add_character_flag = one_eyed_healed
 		}
 	}
-	Brotherhood_8 = {
-		#name = Thoros # Canon, AKA: Thoros of Myr
-		8293.1.1 = {
-			trait = knight
-			religion = rhllor_fots
+	8303.12.31 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_winterfell }
 		}
-		8303.12.31 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
-			}
-		}	
 	}
-	Tully_hh_5 = {
-		8303.12.31 = {
-			trait = knight
-			religion = rhllor_fots
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
-			}
-		}	
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
+			killer = Great_Other
+		}
 	}
-	Brotherhood_7 = {
-		8303.12.31 = {
-			trait = knight
-			religion = rhllor_fots
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
-			}
-		}	
+}
+Brotherhood_8 = {
+	#name = Thoros # Canon, AKA: Thoros of Myr
+	8293.1.1 = {
+		trait = knight
+		religion = rhllor_fots
 	}
-	Brotherhood_1 = {
-		8303.12.31 = {
-			trait = knight
-			religion = rhllor_fots
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
-			}
-		}	
+	8303.12.31 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+		}
 	}
-	Brotherhood_3 = {
-		8303.12.31 = {
-			trait = knight
-			religion = rhllor_fots
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
-			}
-		}	
+}
+Tully_hh_5 = {
+	8303.12.31 = {
+		trait = knight
+		religion = rhllor_fots
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+		}
 	}
-	Stark_hh_5 = {
-		8303.12.31 = {
-			trait = knight
-			religion = rhllor_fots
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
-			}
-		}	
+}
+Brotherhood_7 = {
+	8303.12.31 = {
+		trait = knight
+		religion = rhllor_fots
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+		}
 	}
+}
+Brotherhood_1 = {
+	8303.12.31 = {
+		trait = knight
+		religion = rhllor_fots
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+		}
+	}
+}
+Brotherhood_3 = {
+	8303.12.31 = {
+		trait = knight
+		religion = rhllor_fots
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+		}
+	}
+}
+Stark_hh_5 = {
+	8303.12.31 = {
+		trait = knight
+		religion = rhllor_fots
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+		}
+	}
+}
 
 #stormlands
-	Baratheon_3 = {
-		#name = Stannis # Canon, THE Stannis the Mannis Baratheon, a lord
-		8301.5.1 = { 
-			death = {
-				death_reason = death_execution
-				killer = Tarth_6 # Brienne of Tarth
+Baratheon_3 = {
+	#name = Stannis # Canon, THE Stannis the Mannis Baratheon, a lord
+	8301.5.1 = {
+		death = {
+			death_reason = death_execution
+			killer = Tarth_6 # Brienne of Tarth
+		}
+	}
+}
+Baratheon_6 = {
+	#name = Myrcella # Canon
+	8301.9.5 = {
+		death = {
+			death_reason = death_poison # Poisioned
+			killer = Uller_6 #Ellaria Sand
+		}
+	}
+}
+Baratheon_7 = {
+	#name = Tommen # Canon
+	8303.10.22 = {
+		death = {
+			death_reason = death_suicide
+		}
+	}
+}
+Baratheon_9 = {
+	#name = Gendry # THE Gendry
+	8303.12.31 = {
+		religion = rhllor_fots
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+		}
+	}
+	8304.12.25 = {
+		remove_trait = bastard
+		add_trait = legitimized_bastard
+		set_father = character:Baratheon_2
+		dynasty = dynn_Baratheon
+		remove_character_flag = unlegitimize_on_load
+		effect = {
+			if = {
+				limit = { character:Stark_9 = { is_alive = yes } }
+				set_relation_friend = character:Stark_9
 			}
 		}
 	}
-	Baratheon_6 = {
-		#name = Myrcella # Canon
-		8301.9.5 = { 
-			death = {
-				death_reason = death_poison # Poisioned
-				killer = Uller_6 #Ellaria Sand
+}
+Baratheon_109 = {
+	#name = Manly # Mentioned
+	8303.12.31 = {
+		effect = {
+			if = {
+				limit = { character:Scales_1 = { is_alive = yes } }
+				character:Scales_1 = {
+					imprison = {
+						target = ROOT
+						type = dungeon
+					}
+				}
+				reverse_add_opinion = {
+					modifier = treachery_opinion
+					target = character:Scales_1
+				}
 			}
 		}
 	}
-	Baratheon_7 = {
-		#name = Tommen # Canon
-		8303.10.22 = { 
-			death = {
-				death_reason = death_suicide
+}
+Baratheon_13 = {
+	#name = Shireen # Canon
+	8301.4.1 = { # Burned at the stake as a sacrifice
+		death = yes
+		death_reason = "executed"
+		killer = Baratheon_3 # Stannis Baratheon (her father)
+	}
+}
+Melisandre_1 = {
+	#name = Melisandre # Canon, THE Melisandre of Asshai
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+Tarth_6 = {
+	religion = fots_seven
+	8304.12.27 = {
+		effect = {
+			agot_safe_imprison_in_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				RELEASE_DATE = 9999.1.1
+				TYPE = dungeon
 			}
 		}
 	}
-	Baratheon_9 = {
-		#name = Gendry # THE Gendry
-		8303.12.31 = {
-			religion = rhllor_fots
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
+	8305.1.1 = {
+		add_character_flag = bypass_councillor_gender_requirements
+		trait = kingsguard
+		trait = gallant
+		trait = loyal
+		trait = knight
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_kings_landing }
+			agot_join_kingsguard_char_history_effect = {
+				KING = character:Stark_Dummy_10
 			}
-		}	
-		8304.12.25 = {
+			agot_lc_kingsguard_char_history_effect = {
+				KING = character:Stark_Dummy_10
+			}
+		}
+	}
+}
+Penrose_1 = {
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
+		}
+	}
+}
+Trant_2 = {
+	#name = Meryn # Canon, a Kingsguard
+	8284.6.2 = {
+		add_trait = kingsguard
+	}
+	8301.6.15 = {
+		death = {
+			death_reason = death_murder
+			killer = Stark_Dummy_9
+		}
+	}
+}
+Seaworth_1 = {
+	#name = Davos # Canon, THE Davos, a lord
+	8303.12.12 = {
+		effect = { # Hand of the King
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:e_the_north
+				POSITION = councillor_chancellor
+			}
+		}
+	}
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+		effect = { # Master of Ships
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_admiral
+			}
+		}
+	}
+}
+Swann_6 = {
+	#name = Balon # Canon, a Kingsguard
+	8303.12.31 = {
+		effect = {
+			agot_safe_imprison_in_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				RELEASE_DATE = 8304.1.1
+				TYPE = dungeon
+			}
+		}
+	}
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = Clegane_Dummy_4
+		}
+	}
+}
+Fell_3 = {
+	8309.9.21 = {
+		effect = {
+			if = {
+				limit = { character:Baratheon_9 = { is_alive = yes } }
+				character:Baratheon_9 = {
+					imprison = {
+						target = ROOT
+						type = dungeon
+					}
+				}
+				reverse_add_opinion = {
+					modifier = treachery_opinion
+					target = character:Baratheon_9
+				}
+			}
+		}
+	}
+	8309.9.29 = {
+		death = {
+			death_reason = death_execution
+			killer = Baratheon_9
+		}
+	}
+}
+Estermont_3 = {
+	8305.6.11 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+Estermont_4 = {
+	8300.6.11 = {
+		religion = rhllor_fots
+	}
+	8332.1.20 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+Estermont_6 = {
+	8318.10.2 = {
+		death = {
+			death_reason = death_sea_storm
+		}
+	}
+}
+Estermont_7 = {
+	8300.6.11 = {
+		religion = rhllor_fots
+	}
+}
+Estermont_8 = {
+	8318.10.2 = {
+		death = {
+			death_reason = death_sea_storm
+		}
+	}
+}
+Peasebury_1 = {
+	8341.4.12 = {
+		death = {
+			death_reason = death_natural_causes
+		}
+	}
+}
+Peasebury_2 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Peasebury_3 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Caron_6 = {
+	8305.1.1 = {
+		effect = {
 			remove_trait = bastard
-			add_trait = legitimized_bastard
-			set_father = character:Baratheon_2
-			dynasty = dynn_Baratheon
-			remove_character_flag = unlegitimize_on_load
-			effect = {
-				if = {
-					limit = { character:Stark_9 = { is_alive = yes } }
-					set_relation_friend = character:Stark_9
-				}
+		}
+		add_trait = legitimized_bastard
+		religion = rhllor_fots
+		add_spouse = Frey_11
+	}
+}
+Selmy_3 = {
+	#name = Barristan # THE Barristan Selmy, Lord Commander of the Queensguard
+	8299.8.22 = {
+		employer = Targaryen_9
+		effect = {
+			if = {
+				limit = { character:Targaryen_9 = { is_alive = yes } }
+				set_relation_friend = character:Targaryen_9
 			}
 		}
 	}
-	Baratheon_109 = {
-		#name = Manly # Mentioned
-		8303.12.31 = {
-			effect = {
-				if = {
-					limit = { character:Scales_1 = { is_alive = yes } }
-					character:Scales_1 = { 
-						imprison = {
-							target = ROOT
-							type = dungeon
-						}
-					}
-					reverse_add_opinion = {
-						modifier = treachery_opinion
-						target = character:Scales_1
-					}
-				}
-			}
+	8302.1.1 = {
+		trait = kingsguard
+		death = {
+			death_reason = death_murder
 		}
 	}
-	Baratheon_13 = {
-		#name = Shireen # Canon
-		8301.4.1 = { # Burned at the stake as a sacrifice
-			death = yes
-				death_reason = "executed"
-				killer = Baratheon_3 # Stannis Baratheon (her father)
+}
+Bartheld_12 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
 		}
 	}
-	Melisandre_1 = {
-		#name = Melisandre # Canon, THE Melisandre of Asshai
-		8304.4.28 = { 
-			death = {
-				death_reason = death_battle
-			}
+}
+Dunn_29 = {
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
 		}
 	}
-	Tarth_6 = {
-		religion = fots_seven
-		8304.12.27 = {
-			effect = {
-				agot_safe_imprison_in_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					RELEASE_DATE = 9999.1.1
-					TYPE = dungeon
-				}
-			}		
-		}
-		8305.1.1 = {
-			add_character_flag = bypass_councillor_gender_requirements
-			trait = kingsguard
-			trait = gallant
-			trait = loyal
-			trait = knight
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_kings_landing }
-				agot_join_kingsguard_char_history_effect = {
-					KING = character:Stark_Dummy_10
-				}
-				agot_lc_kingsguard_char_history_effect = {
-					KING = character:Stark_Dummy_10
-				}
-			}
-		}
-	}
-	Penrose_1 = {
-		8303.10.22 = { 
-			death = {
-				death_reason = death_wildfire_killer
-			}
-		}
-	}
-	Trant_2 = {
-		#name = Meryn # Canon, a Kingsguard
-		8284.6.2 = { 
-			add_trait = kingsguard
-		}
-		8301.6.15 = { 
-			death = {
-				death_reason = death_murder
-				killer = Stark_Dummy_9
-			}
-		}
-	}
-	Seaworth_1 = {
-		#name = Davos # Canon, THE Davos, a lord
-		8303.12.12 = {
-			effect = { # Hand of the King
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:e_the_north
-					POSITION = councillor_chancellor
-				}
-			}
-		}
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
-			effect = { # Master of Ships
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_admiral
-				}
-			}
-		}
-	}
-	Swann_6 = {
-		#name = Balon # Canon, a Kingsguard
-		8303.12.31 = {
-			effect = {
-				agot_safe_imprison_in_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					RELEASE_DATE = 8304.1.1
-					TYPE = dungeon
-				}
-			}
-		}
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-				killer = Clegane_Dummy_4
-			}
-		}
-	}
-	Fell_3 = {
-		8309.9.21 = {
-			effect = {
-				if = {
-					limit = { character:Baratheon_9 = { is_alive = yes } }
-					character:Baratheon_9 = { 
-						imprison = {
-							target = ROOT
-							type = dungeon
-						}
-					}
-					reverse_add_opinion = {
-						modifier = treachery_opinion
-						target = character:Baratheon_9
-					}
-				}
-			}
-		}
-		8309.9.29 = {
-			death = {
-				death_reason = death_execution
-				killer = Baratheon_9
-			}
-		}
-	}
-	Estermont_3 = {
-		8305.6.11 = {
-			death = {
-				death_reason = death_natural_causes
-			}
-		}
-	}
-	Estermont_4 = {
-		8300.6.11 = {
-			religion = rhllor_fots
-		}
-		8332.1.20 = {
-			death = {
-				death_reason = death_natural_causes
-			}
-		}
-	}
-	Estermont_6 = {
-		8318.10.2 = {
-			death = {
-				death_reason = death_sea_storm
-			}
-		}
-	}
-	Estermont_7 = {
-		8300.6.11 = {
-			religion = rhllor_fots
-		}
-	}
-	Estermont_8 = {
-		8318.10.2 = {
-			death = {
-				death_reason = death_sea_storm
-			}
-		}
-	}
-	Peasebury_1 = {
-		8341.4.12 = {
-			death = {
-				death_reason = death_natural_causes
-			}
-		}
-	}
-	Peasebury_2 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Peasebury_3 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Caron_6 = {
-		8305.1.1 = {
-			effect = { 
-				remove_trait = bastard
-			}
-			add_trait = legitimized_bastard
-			religion = rhllor_fots
-			add_spouse = Frey_11
-		}
-	}
-	Selmy_3 = {
-		#name = Barristan # THE Barristan Selmy, Lord Commander of the Queensguard
-		8299.8.22 = { 
-			employer = Targaryen_9
-			effect = {
-				if = {
-					limit = { character:Targaryen_9 = { is_alive = yes } }
-					set_relation_friend = character:Targaryen_9
-				}
-			}
-		}
-		8302.1.1 = { 
-			trait = kingsguard
-			death = {
-				death_reason = death_murder
-			}
-		}
-	}
-	Bartheld_12 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
-		}
-	}
-	Dunn_29 = {
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_merc_jonsnow }
-			}
-		}
-	}
+}
 
 
 #vale
-	Arryn_8 = {
-		#name = Robert # Canon, AKA: Sweetrobin, a lord
-		8305.1.1 = {
-			effect = { # Warden of the East
+Arryn_8 = {
+	#name = Robert # Canon, AKA: Sweetrobin, a lord
+	8305.1.1 = {
+		effect = { # Warden of the East
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:h_the_iron_throne
 				POSITION = warden_of_the_east_court_position
-				}
 			}
-			effect = {
-				if = {
-					limit = { character:Stark_10 = { is_alive = yes } }
-					add_opinion = {
-						modifier = respect_opinion
-						target = character:Stark_10 # Bran
-						opinion = 60
-					}
+		}
+		effect = {
+			if = {
+				limit = { character:Stark_10 = { is_alive = yes } }
+				add_opinion = {
+					modifier = respect_opinion
+					target = character:Stark_10 # Bran
+					opinion = 60
 				}
 			}
 		}
-		8310.1.1 = {
-			religion = fots_oldnew
-			effect = { # Warden of the East
+	}
+	8310.1.1 = {
+		religion = fots_oldnew
+		effect = { # Warden of the East
 			agot_appoint_as_court_position_for_castle_history_effect = {
 				CASTLE = title:h_the_iron_throne
 				POSITION = warden_of_the_east_court_position
-				}
 			}
 		}
 	}
-	Tollett_6 = {
-		#name = Eddison # Canon, AKA: Dolorous Ed
-		8304.4.28 = { 
-			death = {
-				death_reason = death_battle
+}
+Tollett_6 = {
+	#name = Eddison # Canon, AKA: Dolorous Ed
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}
+Baelish_2 = {
+	#name = Petyr # Canon, THE Petyr Baelish, AKA: Littlefinger, a lord
+	8304.3.9 = {
+		death = {
+			death_reason = death_execution
+			killer = Stark_Dummy_9
+		}
+	}
+}
+Baelish_Alayne = {
+	name = Alayne
+	female = yes
+	dynasty = dynn_Baelish
+	father = Baelish_2
+	dna = Baelish_Alayne
+
+	culture = valeman_finger
+	religion = fots_seven
+
+	disallow_random_traits = yes
+
+	trait = education_intrigue_3
+	trait = bastard
+	trait = beauty_good_3
+	trait = shy
+	trait = callous
+	trait = fashionable
+	trait = avaricious
+
+	8286.12.5 = {
+		birth = yes
+		add_character_flag = sexuality_ensure_heterosexual
+	}
+
+	8299.7.1 = {
+		dynasty_house = house_BaelishHH
+	}
+
+	8303.12.13 = {
+		add_matrilineal_spouse = Hunter_6
+		effect = {
+			remove_trait = bastard
+		}
+		add_trait = legitimized_bastard
+	}
+}
+Sunderland_1 = {
+	8310.1.1 = {
+		clear_traits = yes
+		add_trait = education_intrigue_4
+		add_trait = callous
+		add_trait = cynical
+		add_trait = patient
+		add_trait = calm
+		add_trait = the_mark
+		add_trait = irritable
+		add_trait = shrewd
+		effect = { # Spymaster
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_spymaster
 			}
 		}
 	}
-	Baelish_2 = {
-		#name = Petyr # Canon, THE Petyr Baelish, AKA: Littlefinger, a lord
-		8304.3.9 = {
-			death = {
-				death_reason = death_execution
-				killer = Stark_Dummy_9
-			}
-		}
+}
+Melcolm_1 = {
+	8365.1.1 = {
+		religion = fots_tfw
 	}
-	Baelish_Alayne = {
-		name = Alayne
-		female = yes
-		dynasty = dynn_Baelish
-		father = Baelish_2
-		dna = Baelish_Alayne
-
-		culture = valeman_finger
-		religion = fots_seven
-
-		disallow_random_traits = yes
-
-		trait = education_intrigue_3
-		trait = bastard
-		trait = beauty_good_3
-		trait = shy
-		trait = callous
-		trait = fashionable
-		trait = avaricious
-
-		8286.12.5 = {
-			birth = yes
-			add_character_flag = sexuality_ensure_heterosexual
-		}
-
-		8299.7.1 = {
-			dynasty_house = house_BaelishHH
-		}
-
-		8303.12.13 = {
-			add_matrilineal_spouse = Hunter_6
-			effect = { 
-				remove_trait = bastard 
-			}
-			add_trait = legitimized_bastard
-		}
-	}
-	Sunderland_1 = {
-		8310.1.1 = {
-			clear_traits = yes
-			add_trait = education_intrigue_4
-			add_trait = callous
-			add_trait = cynical
-			add_trait = patient
-			add_trait = calm
-			add_trait = the_mark
-			add_trait = irritable
-			add_trait = shrewd
-			effect = { # Spymaster
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_spymaster
-				}
-			}
-		}
-	}
-	Melcolm_1 = {
-		8365.1.1 = {
-			religion = fots_tfw
-		}
-	}
+}
 
 #valyrian
-	Targaryen_9 = {
-		#name = Daenerys # Canon, THE Daenerys, AKA: Daenerys Stormborn, AKA: Dany
-		8300.12.3 = {
-			add_trait = widowed
-		}
-		8303.12.11 = {
-			remove_trait = widowed
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
-			}
-		}
-		8304.12.27 = { 
-			death = {
-				death_reason = death_murder_known
-				killer = Stark_7
-			}
+Targaryen_9 = {
+	#name = Daenerys # Canon, THE Daenerys, AKA: Daenerys Stormborn, AKA: Dany
+	8300.12.3 = {
+		add_trait = widowed
+	}
+	8303.12.11 = {
+		remove_trait = widowed
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
 		}
 	}
-	Scales_1 = {
-		#name = Elyas # a lord
-		8299.3.3 = { 
-			religion = rhllor_fots
-			clear_traits = yes
-			add_trait = zealous 
-			add_trait = knight
-			add_trait = ambitious
-			add_trait = patient
-			add_trait = loyal
-			add_trait = education_intrigue_3
-			add_trait = fire_obsessed
+	8304.12.27 = {
+		death = {
+			death_reason = death_murder_known
+			killer = Stark_7
 		}
 	}
-	Scales_2 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
+}
+Scales_1 = {
+	#name = Elyas # a lord
+	8299.3.3 = {
+		religion = rhllor_fots
+		clear_traits = yes
+		add_trait = zealous
+		add_trait = knight
+		add_trait = ambitious
+		add_trait = patient
+		add_trait = loyal
+		add_trait = education_intrigue_3
+		add_trait = fire_obsessed
 	}
-	Scales_8 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
+}
+Scales_2 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Scales_22 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_spouse = Velaryon_80
-		}
+}
+Scales_8 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Scales_83 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
+}
+Scales_22 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Scales_84 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
+	8303.12.31 = {
+		add_spouse = Velaryon_80
 	}
+}
+Scales_83 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Scales_84 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
 
-	Maester_Kings_Landing_2 = {
-		#name = Qyburn # Canon
-		8303.12.31 = {
-				effect = { # Hand of the Queen
-					agot_appoint_as_councillor_for_castle_history_effect = {
-						CASTLE = title:h_the_iron_throne
-						POSITION = councillor_castellan
-					}
-				}
-			}
-		8304.12.26 = {
-			death = {
-				death_reason = death_battle
-				killer = Knight_Kings_Landing_3
+Maester_Kings_Landing_2 = {
+	#name = Qyburn # Canon
+	8303.12.31 = {
+		effect = { # Hand of the Queen
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_castellan
 			}
 		}
 	}
-	Eunuch_1 = {
-		#name = Varys # Canon, THE Varys
-		8303.12.12 = {
-			effect = { # Spymaster
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:k_dragonstone
-					POSITION = councillor_spymaster
-				}
-			}
-		}
-		8303.5.12 = { 
-			death = {
-				death_reason = death_dragon_fire
-			}
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = Knight_Kings_Landing_3
 		}
 	}
-	Celtigar_2 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
-		}
-	}
-	Celtigar_3 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_spouse = Brightflame_15
-		}
-	}
-	Celtigar_4 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Celtigar_6 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-	}
-	Celtigar_54 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_spouse = Velaryon_79
-		}
-	}
-	Sunglass_2 = {
-		#name = Guncer # Canon, The Zealous lord
-		8299.9.7 = {
-			death = {
-				death_reason = death_burned_witch # Sacrificed to R'hllor
-				killer = Melisandre_1 # Melisandre of Asshai
+}
+Eunuch_1 = {
+	#name = Varys # Canon, THE Varys
+	8303.12.12 = {
+		effect = { # Spymaster
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:k_dragonstone
+				POSITION = councillor_spymaster
 			}
 		}
 	}
-	Velaryon_5 = {
-		8305.1.1 = {
-			effect = {
-				create_maa_regiment = {
-					type = sea_snakes
-					check_can_recruit = no
-					size = 12
-				}
-				create_maa_regiment = {
-					type = sea_snakes
-					check_can_recruit = no
-					size = 12
-				}
-				create_maa_regiment = {
-					type = armored_footmen
-					check_can_recruit = no
-					size = 12
-				}
-				create_maa_regiment = {
-					type = crossbowmen
-					check_can_recruit = no
-					size = 12
-				}
-				create_maa_regiment = {
-					type = crossbowmen
-					check_can_recruit = no
-					size = 12
-				}
-				create_maa_regiment = {
-					type = trebuchet
-					check_can_recruit = no
-					size = 12
-				}
+	8303.5.12 = {
+		death = {
+			death_reason = death_dragon_fire
+		}
+	}
+}
+Celtigar_2 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Celtigar_3 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+	8303.12.31 = {
+		add_spouse = Brightflame_15
+	}
+}
+Celtigar_4 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Celtigar_6 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+Celtigar_54 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+	8303.12.31 = {
+		add_spouse = Velaryon_79
+	}
+}
+Sunglass_2 = {
+	#name = Guncer # Canon, The Zealous lord
+	8299.9.7 = {
+		death = {
+			death_reason = death_burned_witch # Sacrificed to R'hllor
+			killer = Melisandre_1 # Melisandre of Asshai
+		}
+	}
+}
+Velaryon_5 = {
+	8305.1.1 = {
+		effect = {
+			create_maa_regiment = {
+				type = sea_snakes
+				check_can_recruit = no
+				size = 12
+			}
+			create_maa_regiment = {
+				type = sea_snakes
+				check_can_recruit = no
+				size = 12
+			}
+			create_maa_regiment = {
+				type = armored_footmen
+				check_can_recruit = no
+				size = 12
+			}
+			create_maa_regiment = {
+				type = crossbowmen
+				check_can_recruit = no
+				size = 12
+			}
+			create_maa_regiment = {
+				type = crossbowmen
+				check_can_recruit = no
+				size = 12
+			}
+			create_maa_regiment = {
+				type = trebuchet
+				check_can_recruit = no
+				size = 12
 			}
 		}
 	}
-	Velaryon_3 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_spouse = Brightflame_16
-		}
+}
+Velaryon_3 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Velaryon_62 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_spouse = Velaryon_77
-		}
+	8303.12.31 = {
+		add_spouse = Brightflame_16
 	}
-	Velaryon_63 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_spouse = Velaryon_78
-		}
+}
+Velaryon_62 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Velaryon_81 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_matrilineal_spouse = Velaryon_89
-		}
+	8303.12.31 = {
+		add_spouse = Velaryon_77
 	}
-	Bar_Emmon_3 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-		}
-		8303.12.31 = {
-			add_spouse = Velaryon_82
-		}
+}
+Velaryon_63 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Bar_Emmon_4 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-			add_trait = knight
-		}
-		8303.12.31 = {
-			add_spouse = Bar_Emmon_52
-		}
+	8303.12.31 = {
+		add_spouse = Velaryon_78
 	}
-	Bar_Emmon_51 = {
-		8300.1.1 = {
-			religion = rhllor_fots
-			add_trait = knight
-		}
-		8303.12.31 = {
-			add_spouse = Brownhollow_2
-		}
+}
+Velaryon_81 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Bullock_15 = {
-		8303.12.31 = {
-			add_spouse = Sweet_10
-		}
+	8303.12.31 = {
+		add_matrilineal_spouse = Velaryon_89
 	}
-	Bullock_16 = {
-		8303.12.31 = {
-			add_spouse = Cave_53
-		}
+}
+Bar_Emmon_3 = {
+	8300.1.1 = {
+		religion = rhllor_fots
 	}
-	Hardy_6 = {
-		8303.12.31 = {
-			add_spouse = Cave_54
-		}
+	8303.12.31 = {
+		add_spouse = Velaryon_82
 	}
-	Hardy_7 = {
-		8303.12.31 = {
-			add_spouse = Brune_7
-		}
+}
+Bar_Emmon_4 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+		add_trait = knight
 	}
-	Brune_4 = {
-		8303.12.31 = {
-			add_spouse = Crabb_12
-		}
+	8303.12.31 = {
+		add_spouse = Bar_Emmon_52
 	}
-	Brownhollow_1 = {
-		8303.12.31 = {
-			add_spouse = Bush_26
-		}
+}
+Bar_Emmon_51 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+		add_trait = knight
 	}
-	Bush_27 = {
-		8303.12.31 = {
-			add_spouse = Boggs_51
-		}
+	8303.12.31 = {
+		add_spouse = Brownhollow_2
 	}
-	Staunton_3 = {
-		8303.12.31 = {
-			add_spouse = Boggs_9
-		}
+}
+Bullock_15 = {
+	8303.12.31 = {
+		add_spouse = Sweet_10
 	}
-	Chelsted_6 = {
-		8303.12.31 = {
-			add_spouse = Celtigar_4
-		}
+}
+Bullock_16 = {
+	8303.12.31 = {
+		add_spouse = Cave_53
 	}
-	Rykker_4 = {
-		8303.12.31 = {
-			add_spouse = Goodbrook_6
-		}
+}
+Hardy_6 = {
+	8303.12.31 = {
+		add_spouse = Cave_54
 	}
-	Rykker_6 = {
-		8303.12.31 = {
-			add_spouse = bush_28
-		}
+}
+Hardy_7 = {
+	8303.12.31 = {
+		add_spouse = Brune_7
 	}
-	Goodbrook_4 = {
-		8303.12.31 = {
-			add_spouse = Rykker_5
-		}
+}
+Brune_4 = {
+	8303.12.31 = {
+		add_spouse = Crabb_12
 	}
-	Blackberry_14 = {
-		8303.12.31 = {
-			add_spouse = Lannister_137
-		}
+}
+Brownhollow_1 = {
+	8303.12.31 = {
+		add_spouse = Bush_26
 	}
-	Blackberry_12 = {
-		8303.12.31 = {
-			add_spouse = Hardy_10
-		}
+}
+Bush_27 = {
+	8303.12.31 = {
+		add_spouse = Boggs_51
 	}
-	Crabb_6 = {
-		8300.1.1 = {
-			add_trait = knight
-		}
-		8303.12.31 = {
-			add_spouse = Cave_51
-		}
+}
+Staunton_3 = {
+	8303.12.31 = {
+		add_spouse = Boggs_9
 	}
+}
+Chelsted_6 = {
+	8303.12.31 = {
+		add_spouse = Celtigar_4
+	}
+}
+Rykker_4 = {
+	8303.12.31 = {
+		add_spouse = Goodbrook_6
+	}
+}
+Rykker_6 = {
+	8303.12.31 = {
+		add_spouse = bush_28
+	}
+}
+Goodbrook_4 = {
+	8303.12.31 = {
+		add_spouse = Rykker_5
+	}
+}
+Blackberry_14 = {
+	8303.12.31 = {
+		add_spouse = Lannister_137
+	}
+}
+Blackberry_12 = {
+	8303.12.31 = {
+		add_spouse = Hardy_10
+	}
+}
+Crabb_6 = {
+	8300.1.1 = {
+		add_trait = knight
+	}
+	8303.12.31 = {
+		add_spouse = Cave_51
+	}
+}
 
 #westerlands
-	Lannister_6 = {
-		#name = Cersei # Canon, THE Cersei Lannister, a lord
-		8303.10.22 = {
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Lannister_6 COA_KEY = house_BaratheonKL }
-			}
+Lannister_6 = {
+	#name = Cersei # Canon, THE Cersei Lannister, a lord
+	8303.10.22 = {
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Lannister_6 COA_KEY = house_BaratheonKL }
 		}
-		8304.12.26 = {
-			death = {
-				death_reason = death_crushed
+	}
+	8304.12.26 = {
+		death = {
+			death_reason = death_crushed
+		}
+	}
+}
+Lannister_7 = {
+	#name = Jaime # Canon, AKA: The Kingslayer, Lord Commander of the Kingsguard
+	8303.12.31 = {
+		effect = {
+			agot_safe_imprison_in_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				RELEASE_DATE = 8304.1.1
+				TYPE = dungeon
 			}
 		}
 	}
-	Lannister_7 = {
-		#name = Jaime # Canon, AKA: The Kingslayer, Lord Commander of the Kingsguard
-		8303.12.31 = {
-			effect = {
-				agot_safe_imprison_in_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					RELEASE_DATE = 8304.1.1
-					TYPE = dungeon
+	8304.12.26 = {
+		death = {
+			death_reason = death_crushed
+		}
+	}
+}
+Lannister_8 = {
+	#name = Tyrion # Canon, AKA: The Imp
+	8299.11.8 = {
+		add_spouse = Stark_Dummy_8 # Sansa Stark
+	}
+	8300.2.7 = {
+		remove_spouse = Stark_Dummy_8 # Sansa Stark
+	}
+	8303.12.12 = {
+		effect = { # Hand of the King
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:k_dragonstone
+				POSITION = councillor_castellan
+			}
+		}
+	}
+	8305.1.1 = {
+		add_spouse = Rowan_4
+		effect = { # Hand of the King
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_castellan
+			}
+		}
+		effect = { # Warden of the West
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = warden_of_the_west_court_position
+			}
+		}
+		effect = {
+			if = {
+				limit = { character:Stark_10 = { is_alive = yes } }
+				add_opinion = {
+					modifier = respect_opinion
+					target = character:Stark_10 # Bran
+					opinion = 60
 				}
 			}
 		}
-		8304.12.26 = {
-			death = {
-				death_reason = death_crushed
-			}
+	}
+	8357.9.3 = {
+		death = {
+			death_reason = death_old_age
 		}
 	}
-	Lannister_8 = {
-		#name = Tyrion # Canon, AKA: The Imp
-		8299.11.8 = {
-			add_spouse = Stark_Dummy_8 # Sansa Stark
-		}
-		8300.2.7 = {
-			remove_spouse = Stark_Dummy_8 # Sansa Stark
-		}
-		8303.12.12 = {
-			effect = { # Hand of the King
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:k_dragonstone
-					POSITION = councillor_castellan
-				}
-			}
-		}
-		8305.1.1 = {
-			add_spouse = Rowan_4
-			effect = { # Hand of the King
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_castellan
-				}
-			}
-			effect = { # Warden of the West
-				agot_appoint_as_court_position_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = warden_of_the_west_court_position
-				}
-			}
-			effect = {
-				if = {
-					limit = { character:Stark_10 = { is_alive = yes } }
-					add_opinion = {
-						modifier = respect_opinion
-						target = character:Stark_10 # Bran
-						opinion = 60
-					}
-				}
-			}
-		}
-		8357.9.3 = {
-			death = {
-				death_reason = death_old_age
-			}
+}
+Lannister_9 = {
+	#name = Lancel # Canon
+	8303.10.22 = {
+		death = {
+			death_reason = death_wildfire_killer
 		}
 	}
-	Lannister_9 = {
-		#name = Lancel # Canon
-		8303.10.22 = {
-			death = {
-				death_reason = death_wildfire_killer
+}
+Lannister_11 = {
+	#name = Martyn # Canon
+	8299.11.8 = {
+		death = {
+			death_reason = death_murder_known
+			killer = Karstark_4 # Rickard Karstark
+		}
+	}
+}
+Lannister_14 = {
+	8300.1.1 = {
+		add_spouse = Stackspear_2
+	}
+}
+Lannister_24 = {
+	8303.12.31 = {
+		add_spouse = Lefford_5
+		effect = {
+			agot_appoint_as_councillor_for_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				POSITION = councillor_admiral
 			}
+			add_character_flag = { flag = lord_protector_flag }
 		}
 	}
-	Lannister_11 = {
-		#name = Martyn # Canon
-		8299.11.8 = {
-			death = {
-				death_reason = death_murder_known
-				killer = Karstark_4 # Rickard Karstark
-			}
+	8305.1.1 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:c_the_golden_tooth }
 		}
 	}
-	Lannister_14 = {
-		8300.1.1 = {
-			add_spouse = Stackspear_2
+}
+LannisterLP_6 = {
+	8300.1.1 = {
+		add_spouse = Lannister_12
+	}
+}
+Lannister_tfw_1 = {
+	name = Tytos # tfw-canon, son of Tyrion
+	dynasty = dynn_Lannister
+
+	religion = fots_seven
+	culture = westerman_main
+	sexuality = heterosexual
+
+	father = Lannister_8
+	mother = Rowan_4
+
+	trait = education_diplomacy_3
+	trait = intellect_good_1
+	trait = bossy
+
+	disallow_random_traits = yes
+
+	8308.4.5 = {
+		birth = yes
+		effect = {
+			add_character_flag = do_not_assign_strong_seed
 		}
 	}
-	Lannister_24 = {
-		8303.12.31 = {
-			add_spouse = Lefford_5
-			effect = {
-				agot_appoint_as_councillor_for_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					POSITION = councillor_admiral
-				}
-				add_character_flag = { flag = lord_protector_flag }
-			}
-		}
-		8305.1.1 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:c_the_golden_tooth }
-			}
+	8363.3.17 = {
+		death = {
+			death_reason = death_ill
 		}
 	}
-	LannisterLP_6 = {
-		8300.1.1 = {
-			add_spouse = Lannister_12
+}
+Lannister_tfw_2 = {
+	name = Gerion # tfw-canon, son of Tyrion
+	dynasty = dynn_Lannister
+
+	religion = fots_seven
+	culture = westerman_main
+	sexuality = heterosexual
+
+	father = Lannister_8
+	mother = Rowan_4
+
+	trait = education_diplomacy_3
+	trait = intellect_good_1
+	trait = bossy
+
+	disallow_random_traits = yes
+
+	8310.7.17 = {
+		birth = yes
+	}
+	8359.1.14 = {
+		death = {
+			death_reason = death_cancer
 		}
 	}
-	Lannister_tfw_1 = {
-		name = Tytos # tfw-canon, son of Tyrion
-		dynasty = dynn_Lannister
+}
+Lannister_tfw_3 = {
+	name = Jaime # tfw-canon, son of Tytos
+	dynasty = dynn_Lannister
 
-		religion = fots_seven
-		culture = westerman_main
-		sexuality = heterosexual
+	religion = fots_seven
+	culture = westerman_main
+	sexuality = heterosexual
 
-		father = Lannister_8
-		mother = Rowan_4
+	father = Lannister_tfw_1
 
-		trait = education_diplomacy_3
-		trait = intellect_good_1
-		trait = bossy
+	trait = education_intrigue_2
+	trait = bossy
 
-		disallow_random_traits = yes
+	disallow_random_traits = yes
 
-		8308.4.5 = {
-			birth = yes
-			effect = {
-				add_character_flag = do_not_assign_strong_seed
-			}
-		}
-		8363.3.17 = {
-			death = {
-				death_reason = death_ill
-			}
+	8330.9.11 = {
+		birth = yes
+	}
+}
+Lannister_tfw_4 = {
+	name = Joffrey # tfw-canon, son of Gerion
+	dynasty = dynn_Lannister
+
+	religion = fots_seven
+	culture = westerman_main
+	sexuality = heterosexual
+
+	father = Lannister_tfw_2
+
+	trait = education_diplomacy_4
+	trait = intellect_good_2
+	trait = bossy
+
+	disallow_random_traits = yes
+
+	8327.12.11 = {
+		birth = yes
+	}
+	8366.1.1 = {
+		give_nickname = nick_agot_the_silver_lion
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Lannister_tfw_4 COA_KEY = silverlion_coa }
 		}
 	}
-	Lannister_tfw_2 = {
-		name = Gerion # tfw-canon, son of Tyrion
-		dynasty = dynn_Lannister
-
-		religion = fots_seven
-		culture = westerman_main
-		sexuality = heterosexual
-
-		father = Lannister_8
-		mother = Rowan_4
-
-		trait = education_diplomacy_3
-		trait = intellect_good_1
-		trait = bossy
-
-		disallow_random_traits = yes
-
-		8310.7.17 = {
-			birth = yes
-		}
-		8359.1.14 = {
-			death = {
-				death_reason = death_cancer
-			}
-		}
+}
+Clegane_4 = {
+	#name = Sandor # Canon
+	8271.1.2 = {
+		death = { death_reason = death_erased_for_script }
 	}
-	Lannister_tfw_3 = {
-		name = Jaime # tfw-canon, son of Tytos
-		dynasty = dynn_Lannister
+}
+Clegane_Dummy_4 = {
+	name = Sandor # Canon, continued here
+	dynasty = dynn_Clegane
+	dna = Clegane_4
 
-		religion = fots_seven
-		culture = westerman_main
-		sexuality = heterosexual
+	martial = 9
+	diplomacy = 2
+	intrigue = 4
+	stewardship = 4
+	learning = 4
+	prowess = 5
 
-		father = Lannister_tfw_1
+	religion = fots_seven
+	culture = westerman_main
 
-		trait = education_intrigue_2
-		trait = bossy
+	father = Clegane_2
+	mother = Clegane_rs_2
 
-		disallow_random_traits = yes
+	trait = education_martial_1
+	trait = education_martial_prowess_4
+	trait = physique_good_3
+	trait = whole_of_body
+	trait = rude
+	trait = strong
+	trait = brave
+	trait = rowdy
+	trait = scarred
 
-		8330.9.11 = {
-			birth = yes
-		}
+	disallow_random_traits = yes
+
+	8271.1.1 = {
+		birth = yes
+		make_trait_inactive = tol
+		make_trait_inactive = scripted_appearance
+		add_character_flag = canon_status_canon
 	}
-	Lannister_tfw_4 = {
-		name = Joffrey # tfw-canon, son of Gerion
-		dynasty = dynn_Lannister
-
-		religion = fots_seven
-		culture = westerman_main
-		sexuality = heterosexual
-
-		father = Lannister_tfw_2
-
-		trait = education_diplomacy_4
-		trait = intellect_good_2
-		trait = bossy
-
-		disallow_random_traits = yes
-
-		8327.12.11 = {
-			birth = yes
-		}
-		8366.1.1 = {
-			give_nickname = nick_agot_the_silver_lion
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Lannister_tfw_4 COA_KEY = silverlion_coa }
-			}
-		}
-	}
-	Clegane_4 = {
-		#name = Sandor # Canon
-		8271.1.2 = {
-			death = { death_reason = death_erased_for_script }
-		}
-	}		
-	Clegane_Dummy_4 = {
-		name = Sandor # Canon, continued here
-		dynasty = dynn_Clegane
-		dna = Clegane_4
-
-		martial = 9
-		diplomacy = 2
-		intrigue = 4
-		stewardship = 4
-		learning = 4
-		prowess = 5
-
-		religion = fots_seven
-		culture = westerman_main
-
-		father = Clegane_2
-		mother = Clegane_rs_2
-
-		trait = education_martial_1
-		trait = education_martial_prowess_4
-		trait = physique_good_3
-		trait = whole_of_body
-		trait = rude
-		trait = strong
-		trait = brave
-		trait = rowdy
-		trait = scarred
-		
-		disallow_random_traits = yes
-
-		8271.1.1 = {
-			birth = yes
-			make_trait_inactive = tol
-			make_trait_inactive = scripted_appearance
-			add_character_flag = canon_status_canon
-		}
-		8277.1.1 = { # Age 6
+	8277.1.1 = { # Age 6
+		trait = burned
+		add_trait_xp = {
 			trait = burned
-			add_trait_xp = {
-				trait = burned
-				value = trait_third_level
-			}
-			effect = {
-				add_trait = vengeful
-				add_trait = cynical
-				if = {
-					limit = { character:Knight_Kings_Landing_3 = { is_alive = yes } }
-					set_relation_nemesis = {
-						target = character:Knight_Kings_Landing_3 # Gregor Clegane
-						reason = nemesis_sandor_gregor
-					}
+			value = trait_third_level
+		}
+		effect = {
+			add_trait = vengeful
+			add_trait = cynical
+			if = {
+				limit = { character:Knight_Kings_Landing_3 = { is_alive = yes } }
+				set_relation_nemesis = {
+					target = character:Knight_Kings_Landing_3 # Gregor Clegane
+					reason = nemesis_sandor_gregor
 				}
 			}
 		}
-		8278.1.1 = { trait = honest }
-		8283.9.1 = { # When he killed his first man, Sack of Kings Landing, age 12.
-			give_nickname = nick_agot_historical_the_hound
-			trait = brave
+	}
+	8278.1.1 = { trait = honest }
+	8283.9.1 = { # When he killed his first man, Sack of Kings Landing, age 12.
+		give_nickname = nick_agot_historical_the_hound
+		trait = brave
+		trait = lifestyle_blademaster
+		add_trait_xp = {
 			trait = lifestyle_blademaster
-			add_trait_xp = {
-				trait = lifestyle_blademaster
-				value = trait_third_level
-			}
-			effect = {
-				agot_set_signature_weapon_history_effect = { WEAPON = flag:sword }
-			}
+			value = trait_third_level
 		}
-		8287.1.1 = { # Age 16
-			trait = drunkard
-			employer = Baratheon_2 # Robert Baratheon
+		effect = {
+			agot_set_signature_weapon_history_effect = { WEAPON = flag:sword }
+		}
+	}
+	8287.1.1 = { # Age 16
+		trait = drunkard
+		employer = Baratheon_2 # Robert Baratheon
+		trait = tourney_participant
+		add_trait_xp = {
 			trait = tourney_participant
-			add_trait_xp = {
-				trait = tourney_participant
-				track = horse
-				value = 65
-			}
-			add_trait_xp = {
-				trait = tourney_participant
-				track = foot
-				value = 30
-			}
+			track = horse
+			value = 65
 		}
-		8298.9.23 = {
-			create_character_memory = {
-				type = agot_tournament_winner # Hand's Tourney
-				participants = {
-					TourneyHost = character:Baratheon_2 # Robert Baratheon
-				}
-			}
+		add_trait_xp = {
+			trait = tourney_participant
+			track = foot
+			value = 30
 		}
-		8298.10.24 = { employer = Baratheon_5 } # Joffrey Baratheon
-		8298.12.23 = {
-			effect = {
-				agot_join_kingsguard_char_history_effect = { # Predecessor: Barristan Selmy
-					KING = character:Baratheon_5 # Joffrey Baratheon
-				}
-			}
-		}
-		8299.9.8 = {
-			effect = {
-				agot_leave_kingsguard_char_history_effect = yes # Successor: Boros Blount
-				move_to_pool_at = title:b_stoney_sept.title_province
-			}
-		}
-		8300.1.31 = {
-			trait = wounded_3
-			effect = {
-				remove_trait = cynical
-			}
-			trait = stubborn
-			trait = former_kingsguard
-		}
-		8303.12.31 = {
-			effect = {
-				agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
-			}
-		}
-		8304.12.26 = { 
-			death = {
-				death_reason = death_battle
-				killer = Knight_Kings_Landing_3
+	}
+	8298.9.23 = {
+		create_character_memory = {
+			type = agot_tournament_winner # Hand's Tourney
+			participants = {
+				TourneyHost = character:Baratheon_2 # Robert Baratheon
 			}
 		}
 	}
-	Payne_16 = {
-		#name = Podrick # Canon, THE Podrick Payne
-		8304.12.27 = {
-			effect = {
-				agot_safe_imprison_in_castle_history_effect = {
-					CASTLE = title:h_the_iron_throne
-					RELEASE_DATE = 9999.1.1
-					TYPE = dungeon
-				}
-			}		
-		}
-		8305.1.1 = { 
-			trait = knight
-			trait = kingsguard
-			effect = {
-				agot_join_kingsguard_char_history_effect = {
-					KING = character:Stark_Dummy_10
-				}
+	8298.10.24 = { employer = Baratheon_5 } # Joffrey Baratheon
+	8298.12.23 = {
+		effect = {
+			agot_join_kingsguard_char_history_effect = { # Predecessor: Barristan Selmy
+				KING = character:Baratheon_5 # Joffrey Baratheon
 			}
 		}
 	}
-	Clifton_2 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8299.9.8 = {
+		effect = {
+			agot_leave_kingsguard_char_history_effect = yes # Successor: Boros Blount
+			move_to_pool_at = title:b_stoney_sept.title_province
 		}
 	}
-	Turnberry_5 = {
-		8305.1.1 = {
-			effect = { release_from_prison = yes }
+	8300.1.31 = {
+		trait = wounded_3
+		effect = {
+			remove_trait = cynical
+		}
+		trait = stubborn
+		trait = former_kingsguard
+	}
+	8303.12.31 = {
+		effect = {
+			agot_safe_set_location_history_effect = { CASTLE = title:d_laamp_the_brotherhood_without_banners }
 		}
 	}
-	Lefford_4 = {
-		8300.1.1 = {
+	8304.12.26 = {
+		death = {
+			death_reason = death_battle
+			killer = Knight_Kings_Landing_3
+		}
+	}
+}
+Payne_16 = {
+	#name = Podrick # Canon, THE Podrick Payne
+	8304.12.27 = {
+		effect = {
+			agot_safe_imprison_in_castle_history_effect = {
+				CASTLE = title:h_the_iron_throne
+				RELEASE_DATE = 9999.1.1
+				TYPE = dungeon
+			}
+		}
+	}
+	8305.1.1 = {
+		trait = knight
+		trait = kingsguard
+		effect = {
+			agot_join_kingsguard_char_history_effect = {
+				KING = character:Stark_Dummy_10
+			}
+		}
+	}
+}
+Clifton_2 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Turnberry_5 = {
+	8305.1.1 = {
+		effect = { release_from_prison = yes }
+	}
+}
+Lefford_4 = {
+	8300.1.1 = {
 		add_spouse = Lannister_25
-		}
 	}
-	Lannister_26 = {
-		8300.1.1 = {
+}
+Lannister_26 = {
+	8300.1.1 = {
 		add_spouse = Brax_4
+	}
+}
+Foote_6 = {
+	8299.9.8 = {
+		add_trait = deviant
+		effect = {
+			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Foote_6 COA_KEY = philip_foote_personal_coa }
 		}
 	}
-	Foote_6 = {
-		8299.9.8 = {
-			add_trait = deviant
-			effect = {
-				agot_create_personal_coa_for_historical_ai = { ACTOR = character:Foote_6 COA_KEY = philip_foote_personal_coa }
-			}
-		}
-		8304.12.25 = {
-			death = {
-				death_reason = death_dragon_fire
-			}
+	8304.12.25 = {
+		death = {
+			death_reason = death_dragon_fire
 		}
 	}
+}
 
 #dummy
-	Great_Other = {
-		#name = Great_Other
-		1.1.1 = {
-			birth = yes
-		}
-		33.1.1 = {
-			add_trait = immortal
-		}
-		8304.4.28 = {
-			death = {
-				death_reason = death_battle
-				killer = Stark_Dummy_9
-			}
+Great_Other = {
+	#name = Great_Other
+	1.1.1 = {
+		birth = yes
+	}
+	33.1.1 = {
+		add_trait = immortal
+	}
+	8304.4.28 = {
+		death = {
+			death_reason = death_battle
+			killer = Stark_Dummy_9
 		}
 	}
-	Moonman_1 = {
-		name = Timett
+}
+Moonman_1 = {
+	name = Timett
 
-		religion = old_gods_btw_mns
-		culture = moon_clan
+	religion = old_gods_btw_mns
+	culture = moon_clan
 
-		sexuality = heterosexual
+	sexuality = heterosexual
 
-		8281.8.19 = {
-			birth = yes
-		}
+	8281.8.19 = {
+		birth = yes
 	}
-	Unused_1 = {
-		name = "UnusedPapa"
-		dynasty = dynn_Unused
-		religion = old_gods_wnw
-		culture = northman
+}
+Unused_1 = {
+	name = "UnusedPapa"
+	dynasty = dynn_Unused
+	religion = old_gods_wnw
+	culture = northman
 
-		7200.1.1 = {
-			birth = yes
-		}
-		7260.1.1 = {
-			death = yes
-		}
+	7200.1.1 = {
+		birth = yes
 	}
-
-	Unused_2 = {
-		name = "UnusedMama"
-		female = yes
-		dynasty = dynn_Unused
-		religion = old_gods_wnw
-		culture = northman
-
-		7205.1.1 = {
-			birth = yes
-		}
-		7265.1.1 = {
-			death = yes
-		}
+	7260.1.1 = {
+		death = yes
 	}
+}
+
+Unused_2 = {
+	name = "UnusedMama"
+	female = yes
+	dynasty = dynn_Unused
+	religion = old_gods_wnw
+	culture = northman
+
+	7205.1.1 = {
+		birth = yes
+	}
+	7265.1.1 = {
+		death = yes
+	}
+}
 #essos
-	Antaryon_64 = {
-		8306.4.5 = {
-			death = {
-				death_reason = death_cancer
-			}
+Antaryon_64 = {
+	8306.4.5 = {
+		death = {
+			death_reason = death_cancer
 		}
 	}
-	Torone_84 = {
-		8320.1.1 = {
-			death = {
-				death_reason = death_peaceful
-			}
+}
+Torone_84 = {
+	8320.1.1 = {
+		death = {
+			death_reason = death_peaceful
 		}
 	}
-	Pedraatho_1 = {
+}
+Pedraatho_1 = {
 	name = Dahan
 	dynasty = dynn_Pedraatho
 

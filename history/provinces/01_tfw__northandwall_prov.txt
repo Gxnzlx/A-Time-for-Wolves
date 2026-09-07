@@ -2,7 +2,7 @@
 ################## b_castle_black #################
 ########### c_castle_black - d_the_wall ###########
 5 = {
-	8304.4.28 = {		
+	8304.4.28 = {
 		culture = forestman
 		religion = old_gods_btw_fnf
 		holding = ruin_holding
@@ -896,102 +896,102 @@
 
 
 #d_flints_finger
-	#c_flints_finger
-	1457 = {
-		8309.1.1 = {
-			culture = krakenman
-			special_building_slot = tfw_port_01
-		}
-		8315.1.1 = {
-			special_building = tfw_port_01
-		}
-		8361.1.1 = {
-			culture = greenborn
-			religion = drowned_god
-		}
+#c_flints_finger
+1457 = {
+	8309.1.1 = {
+		culture = krakenman
+		special_building_slot = tfw_port_01
 	}
-	#c_cape_kraken
-	1479 = {
-		8309.1.1 = {
-			special_building_slot = tfw_lumber_forest_01
-		}
-		8317.1.1 = {
-			special_building = tfw_lumber_forest_01
-		}
+	8315.1.1 = {
+		special_building = tfw_port_01
 	}
-	#c_blazwwater_bay
-	1468 = {
-		8309.1.1 = {
-			special_building_slot = tfw_lumber_forest_01
-		}
-		8315.1.1 = {
-			special_building = tfw_lumber_forest_01
-		}
+	8361.1.1 = {
+		culture = greenborn
+		religion = drowned_god
 	}
-	#b_pot_and_bowl
-	1478 = {
-		8316.1.1 = {
-			special_building_slot = agot_feastfires_01
-		}
-		8363.1.1 = {
-			holding = castle_holding
-			buildings = { castle_03 }
-			special_building = agot_feastfires_01
-		}
+}
+#c_cape_kraken
+1479 = {
+	8309.1.1 = {
+		special_building_slot = tfw_lumber_forest_01
 	}
-	#c_arnscarre
-	1528 = {
-		8309.1.1 = {
-			special_building_slot = tfw_lumber_forest_01
-		}
-		8318.1.1 = {
-			special_building = tfw_lumber_forest_01
-		}
-		8330.1.1 = {
-			culture = krakenman
-		}
+	8317.1.1 = {
+		special_building = tfw_lumber_forest_01
 	}
-	#c_cypress_rising
-	1565 = {
-		8309.1.1 = {
-			culture = krakenman
-		}
+}
+#c_blazwwater_bay
+1468 = {
+	8309.1.1 = {
+		special_building_slot = tfw_lumber_forest_01
 	}
-	#c_murkwood
-	1576 = {
-		8309.1.1 = {
-		}
-		8321.1.1 = {
-			culture = krakenman
-		}
+	8315.1.1 = {
+		special_building = tfw_lumber_forest_01
 	}
-	#c_wristerly
-	1519 = {
-		8325.1.1 = {
-			culture = krakenman
-		}
+}
+#b_pot_and_bowl
+1478 = {
+	8316.1.1 = {
+		special_building_slot = agot_feastfires_01
 	}
-	#c_morrenland
-	1557 = {
-		8309.1.1 = {
-		}
-		8324.1.1 = {
-			culture = krakenman
-		}
+	8363.1.1 = {
+		holding = castle_holding
+		buildings = { castle_03 }
+		special_building = agot_feastfires_01
 	}
-	#c_waterstone
-	1539 = {
-		8309.1.1 = {
-		}
-		8327.1.1 = {
-			culture = krakenman
-		}
+}
+#c_arnscarre
+1528 = {
+	8309.1.1 = {
+		special_building_slot = tfw_lumber_forest_01
 	}
-	#c_spears_sound
-	1549 = {
-		8339.1.1 = {
-			culture = krakenman
-		}
+	8318.1.1 = {
+		special_building = tfw_lumber_forest_01
 	}
+	8330.1.1 = {
+		culture = krakenman
+	}
+}
+#c_cypress_rising
+1565 = {
+	8309.1.1 = {
+		culture = krakenman
+	}
+}
+#c_murkwood
+1576 = {
+	8309.1.1 = {
+	}
+	8321.1.1 = {
+		culture = krakenman
+	}
+}
+#c_wristerly
+1519 = {
+	8325.1.1 = {
+		culture = krakenman
+	}
+}
+#c_morrenland
+1557 = {
+	8309.1.1 = {
+	}
+	8324.1.1 = {
+		culture = krakenman
+	}
+}
+#c_waterstone
+1539 = {
+	8309.1.1 = {
+	}
+	8327.1.1 = {
+		culture = krakenman
+	}
+}
+#c_spears_sound
+1549 = {
+	8339.1.1 = {
+		culture = krakenman
+	}
+}
 
 

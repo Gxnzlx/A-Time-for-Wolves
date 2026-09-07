@@ -170,7 +170,7 @@ agot_tfw_setup.0002 = {
 	}
 }
 
-agot_tfw_setup.0003 = { 
+agot_tfw_setup.0003 = {
 	theme = crown
 	hidden = yes
 
@@ -430,7 +430,7 @@ agot_tfw_setup.0003 = {
 	}
 }
 
-agot_tfw_setup.0004 = { 
+agot_tfw_setup.0004 = {
 	theme = crown
 	hidden = yes
 
@@ -453,7 +453,7 @@ agot_tfw_setup.0004 = {
 			}
 		}
 		title:e_daoryrdembos.holder = {
-			every_vassal = {	
+			every_vassal = {
 				change_liege = {
 					liege = root
 					change = scope:change

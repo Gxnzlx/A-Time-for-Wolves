@@ -7,7 +7,7 @@
 e_the_marches = {
 	landless = yes
 	capital = c_longtable
-		color = { 195 165 90 }
+	color = { 195 165 90 }
 }
 
 k_fullharvest = {
@@ -31,7 +31,7 @@ k_bitterbridge = {
 e_oldtown = {
 	landless = yes
 	capital = c_oldtown
-		color = { 115 140 110 }
+	color = { 115 140 110 }
 }
 
 k_maidenpool = {

@@ -69,7 +69,7 @@ feudal_elective = {
 			is_diarch_of_target = scope:holder
 		}
 	}
-	
+
 	electors = {
 		add = holder
 		add = {
@@ -130,7 +130,7 @@ feudal_elective = {
 		##########################	Elector voting patterns (misc)	##########################
 		elector_voting_pattern_circumstances_misc_elective_modifier = yes
 	}
-	
+
 	#scope:candidate = Candidate, scope:title = Title, scope:holder_candidate = Candidate currently selected by ruler.
 	candidates = {
 		add = {

@@ -1255,7 +1255,7 @@ agot_kingsguard_init_white_book = {
 		}
 		agot_kingsguard_create_historical_white_book_page = { KINGSGUARD = character:Tarth_6 }
 	}
-    # Podrick Payne, joined under Stark_Dummy_10
+	# Podrick Payne, joined under Stark_Dummy_10
 	if = {
 		limit = { game_start_date >= 8305.1.1 }
 		add_to_global_variable_list = {

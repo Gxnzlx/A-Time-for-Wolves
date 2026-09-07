@@ -4,248 +4,248 @@
 
 # Stark
 jon_snow_personal_coa = {
-	pattern="pattern_solid.dds"
-	color1=rgb { 224 235 245 }
-	color2=agot_grey
-	color3=agot_grey
-	colored_emblem={
-		color1=agot_white
-		color2=agot_red
-		color3=agot_black
-		texture="no_stark_wolf.dds"
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 224 235 245 }
+	color2 = agot_grey
+	color3 = agot_grey
+	colored_emblem = {
+		color1 = agot_white
+		color2 = agot_red
+		color3 = agot_black
+		texture = "no_stark_wolf.dds"
 	}
 }
 crows_eye_personal_coa = {
-	pattern="pattern_solid.dds"
-	color1=agot_white
-	color2=agot_gold
-	color3=agot_black
-	colored_emblem={
-		color1=agot_red
-		color2=agot_crimson
-		color3=agot_bone
-		texture="ce_flint2_1_eye_single.dds"
-		instance={
-			position={ 0.490000 0.700000 }
-			scale={ 0.540000 0.540000 }
-			depth=4.010000
+	pattern = "pattern_solid.dds"
+	color1 = agot_white
+	color2 = agot_gold
+	color3 = agot_black
+	colored_emblem = {
+		color1 = agot_red
+		color2 = agot_crimson
+		color3 = agot_bone
+		texture = "ce_flint2_1_eye_single.dds"
+		instance = {
+			position = { 0.490000 0.700000 }
+			scale = { 0.540000 0.540000 }
+			depth = 4.010000
 		}
 
 	}
 
-	colored_emblem={
-		color1=agot_black
-		color2=agot_black
-		texture="rl_mudd.dds"
-		instance={
-			position={ 0.500000 0.480000 }
-			scale={ 0.740000 0.740000 }
-			depth=3.010000
+	colored_emblem = {
+		color1 = agot_black
+		color2 = agot_black
+		texture = "rl_mudd.dds"
+		instance = {
+			position = { 0.500000 0.480000 }
+			scale = { 0.740000 0.740000 }
+			depth = 3.010000
 		}
 
 	}
 
-	colored_emblem={
-		color1=agot_black
-		texture="ce_circle.dds"
-		instance={
-			position={ 0.520000 0.700000 }
-			scale={ 0.160000 0.160000 }
+	colored_emblem = {
+		color1 = agot_black
+		texture = "ce_circle.dds"
+		instance = {
+			position = { 0.520000 0.700000 }
+			scale = { 0.160000 0.160000 }
 		}
 
 	}
 
-	colored_emblem={
-		color1=agot_black
-		color2=agot_white
-		texture="ce_hoare_raven.dds"
-		instance={
-			position={ 0.030000 0.290000 }
-			scale={ -1.000000 1.000000 }
-			depth=1.010000
+	colored_emblem = {
+		color1 = agot_black
+		color2 = agot_white
+		texture = "ce_hoare_raven.dds"
+		instance = {
+			position = { 0.030000 0.290000 }
+			scale = { -1.000000 1.000000 }
+			depth = 1.010000
 		}
 
-		instance={
-			position={ 0.970000 0.290000 }
-			depth=2.010000
+		instance = {
+			position = { 0.970000 0.290000 }
+			depth = 2.010000
 		}
 	}
 }
 
-bran_stark_personal_coa={
-	pattern="pattern_solid.dds"
-	color1=rgb { 224 235 245 }
-	color2=agot_grey
-	color3=agot_grey
-	colored_emblem={
-		color1=agot_black
-		color2=agot_white
-		texture="st_morrigen.dds"
-		instance={
-			position={ 0.500000 0.480000 }
+bran_stark_personal_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 224 235 245 }
+	color2 = agot_grey
+	color3 = agot_grey
+	colored_emblem = {
+		color1 = agot_black
+		color2 = agot_white
+		texture = "st_morrigen.dds"
+		instance = {
+			position = { 0.500000 0.480000 }
 		}
 
 	}
 
 }
 
-arya_stark_personal_coa={
-	pattern="pattern_solid.dds"
-	color1=rgb { 224 235 245 }
-	color2=agot_grey
-	color3=agot_grey
-	colored_emblem={
-		color1=agot_grey
-		color2=agot_grey
-		color3=agot_grey
-		texture="no_stark_wolf.dds"
-		instance={
-			position={ 0.500000 0.560000 }
-			scale={ 0.830000 0.830000 }
-			depth=1.010000
+arya_stark_personal_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 224 235 245 }
+	color2 = agot_grey
+	color3 = agot_grey
+	colored_emblem = {
+		color1 = agot_grey
+		color2 = agot_grey
+		color3 = agot_grey
+		texture = "no_stark_wolf.dds"
+		instance = {
+			position = { 0.500000 0.560000 }
+			scale = { 0.830000 0.830000 }
+			depth = 1.010000
 		}
 
 	}
 
-	colored_emblem={
-		color1=rgb { 65 55 55 }
-		color2=rgb { 137 120 120 }
-		texture="ce_sword_01.dds"
-		instance={
-			position={ 0.500000 0.210000 }
-			scale={ 0.690000 0.500000 }
-			rotation=90
+	colored_emblem = {
+		color1 = rgb { 65 55 55 }
+		color2 = rgb { 137 120 120 }
+		texture = "ce_sword_01.dds"
+		instance = {
+			position = { 0.500000 0.210000 }
+			scale = { 0.690000 0.500000 }
+			rotation = 90
 		}
 
 	}
 }
 
 # Stokeworth
-tyrion_tanner_personal_coa={
-    pattern="pattern_solid.dds"
-    color1=rgb { 44 75 41 }
-    color2=asoiaf_bone_light
-    color3=rgb { 168 118 44 }
-    colored_emblem={
-        color1=asoiaf_bone_light
-        color2=rgb { 168 118 44 }
-        color3=rgb { 44 75 41 }
-        texture="asoiaf_lamb_goblet.dds"
-        instance={
-            position={ 0.305000 0.510000 }
-            scale={ -0.810000 0.810000 }
-            depth=5.010000
-        }
+tyrion_tanner_personal_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 44 75 41 }
+	color2 = asoiaf_bone_light
+	color3 = rgb { 168 118 44 }
+	colored_emblem = {
+		color1 = asoiaf_bone_light
+		color2 = rgb { 168 118 44 }
+		color3 = rgb { 44 75 41 }
+		texture = "asoiaf_lamb_goblet.dds"
+		instance = {
+			position = { 0.305000 0.510000 }
+			scale = { -0.810000 0.810000 }
+			depth = 5.010000
+		}
 
-    }
+	}
 
-    colored_emblem={
-        color1=rgb { 168 118 44 }
-        color2=asoiaf_green
-        color3=asoiaf_red
-        texture="ce_crown_lombard.dds"
-        instance={
-            position={ 0.500000 0.460000 }
-            scale={ 0.370000 0.370000 }
-        }
+	colored_emblem = {
+		color1 = rgb { 168 118 44 }
+		color2 = asoiaf_green
+		color3 = asoiaf_red
+		texture = "ce_crown_lombard.dds"
+		instance = {
+			position = { 0.500000 0.460000 }
+			scale = { 0.370000 0.370000 }
+		}
 
-    }
+	}
 
-    colored_emblem={
-        color1=rgb { 44 75 41 }
-        texture="ce_solidblock.dds"
-        instance={
-            position={ 0.255000 0.400000 }
-            scale={ 0.210000 0.210000 }
-            depth=1.010000
-            rotation=112
-        }
+	colored_emblem = {
+		color1 = rgb { 44 75 41 }
+		texture = "ce_solidblock.dds"
+		instance = {
+			position = { 0.255000 0.400000 }
+			scale = { 0.210000 0.210000 }
+			depth = 1.010000
+			rotation = 112
+		}
 
-    }
+	}
 
-    colored_emblem={
-        color1=rgb { 44 75 41 }
-        texture="historical_plain.dds"
-        instance={
-            position={ 0.075000 0.655000 }
-            scale={ 0.575000 0.575000 }
-            depth=3.010000
-        }
+	colored_emblem = {
+		color1 = rgb { 44 75 41 }
+		texture = "historical_plain.dds"
+		instance = {
+			position = { 0.075000 0.655000 }
+			scale = { 0.575000 0.575000 }
+			depth = 3.010000
+		}
 
-        instance={
-            position={ 0.500000 0.685000 }
-            scale={ 0.525000 0.525000 }
-            depth=4.010000
-        }
+		instance = {
+			position = { 0.500000 0.685000 }
+			scale = { 0.525000 0.525000 }
+			depth = 4.010000
+		}
 
-    }
+	}
 
-    colored_emblem={
-        color1=rgb { 168 118 44 }
-        texture="ce_chalice.dds"
-        instance={
-            position={ 0.500000 0.645000 }
-            scale={ 0.725000 0.725000 }
-            depth=2.010000
-        }
+	colored_emblem = {
+		color1 = rgb { 168 118 44 }
+		texture = "ce_chalice.dds"
+		instance = {
+			position = { 0.500000 0.645000 }
+			scale = { 0.725000 0.725000 }
+			depth = 2.010000
+		}
 
-    }
+	}
 
 }
 
 #Rosby
-perwyn_rosby_personal_coa={
-	pattern="pattern_solid.dds"
-	color1=agot_white
-	color2=agot_red
-	sub={
-		instance={
-			scale={ 0.500000 0.500000 }
+perwyn_rosby_personal_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_white
+	color2 = agot_red
+	sub = {
+		instance = {
+			scale = { 0.500000 0.500000 }
 		}
 
-		instance={
-			scale={ 0.500000 0.500000 }
-			offset={ 0.500000 0.500000 }
+		instance = {
+			scale = { 0.500000 0.500000 }
+			offset = { 0.500000 0.500000 }
 		}
 
-		pattern="pattern_solid.dds"
-		color1=agot_white
-		color2=agot_red
-		colored_emblem={
-			color1=agot_black
-			color2=agot_black
-			texture="ce_ermine_pattern.dds"
+		pattern = "pattern_solid.dds"
+		color1 = agot_white
+		color2 = agot_red
+		colored_emblem = {
+			color1 = agot_black
+			color2 = agot_black
+			texture = "ce_ermine_pattern.dds"
 		}
 
-		colored_emblem={
-			color1=agot_red
-			texture="ce_ordinary_chevron_3_inverted.dds"
-			instance={
-				position={ 0.500000 0.430000 }
-				scale={ 1.500000 1.500000 }
+		colored_emblem = {
+			color1 = agot_red
+			texture = "ce_ordinary_chevron_3_inverted.dds"
+			instance = {
+				position = { 0.500000 0.430000 }
+				scale = { 1.500000 1.500000 }
 			}
 
 		}
 
 	}
 
-	sub={
-		instance={
-			scale={ 0.500000 0.500000 }
-			offset={ 0.500000 0.000000 }
+	sub = {
+		instance = {
+			scale = { 0.500000 0.500000 }
+			offset = { 0.500000 0.000000 }
 		}
 
-		instance={
-			scale={ 0.500000 0.500000 }
-			offset={ 0.000000 0.500000 }
+		instance = {
+			scale = { 0.500000 0.500000 }
+			offset = { 0.000000 0.500000 }
 		}
 
-		pattern="pattern_solid.dds"
-		color1=agot_blue_dark
-		color2=agot_blue
-		colored_emblem={
-			color1=agot_white
-			texture="rl_frey.dds"
+		pattern = "pattern_solid.dds"
+		color1 = agot_blue_dark
+		color2 = agot_blue
+		colored_emblem = {
+			color1 = agot_white
+			texture = "rl_frey.dds"
 		}
 
 	}
@@ -253,57 +253,57 @@ perwyn_rosby_personal_coa={
 }
 
 #Darry
-amerei_darry_personal_coa={
-	pattern="pattern_solid.dds"
-	color1=agot_brown
-	color2=agot_black
-	sub={
-		instance={
-			scale={ 0.500000 0.500000 }
+amerei_darry_personal_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_brown
+	color2 = agot_black
+	sub = {
+		instance = {
+			scale = { 0.500000 0.500000 }
 		}
 
-		instance={
-			scale={ 0.500000 0.500000 }
-			offset={ 0.500000 0.500000 }
+		instance = {
+			scale = { 0.500000 0.500000 }
+			offset = { 0.500000 0.500000 }
 		}
 
-		pattern="pattern_solid.dds"
-		color1=agot_brown
-		color2=agot_black
-		colored_emblem={
-			color1=agot_black
-			texture="rl_darry.dds"
-			instance={
-				position={ 0.480000 0.550000 }
-				scale={ 1.200000 1.200000 }
+		pattern = "pattern_solid.dds"
+		color1 = agot_brown
+		color2 = agot_black
+		colored_emblem = {
+			color1 = agot_black
+			texture = "rl_darry.dds"
+			instance = {
+				position = { 0.480000 0.550000 }
+				scale = { 1.200000 1.200000 }
 			}
 
-			instance={
-				position={ 0.480000 0.550000 }
-				scale={ 1.200000 1.200000 }
+			instance = {
+				position = { 0.480000 0.550000 }
+				scale = { 1.200000 1.200000 }
 			}
 
 		}
 
 	}
 
-	sub={
-		instance={
-			scale={ 0.500000 0.500000 }
-			offset={ 0.500000 0.000000 }
+	sub = {
+		instance = {
+			scale = { 0.500000 0.500000 }
+			offset = { 0.500000 0.000000 }
 		}
 
-		instance={
-			scale={ 0.500000 0.500000 }
-			offset={ 0.000000 0.500000 }
+		instance = {
+			scale = { 0.500000 0.500000 }
+			offset = { 0.000000 0.500000 }
 		}
 
-		pattern="pattern_solid.dds"
-		color1=agot_blue_dark
-		color2=agot_blue
-		colored_emblem={
-			color1=agot_white
-			texture="rl_frey.dds"
+		pattern = "pattern_solid.dds"
+		color1 = agot_blue_dark
+		color2 = agot_blue
+		colored_emblem = {
+			color1 = agot_white
+			texture = "rl_frey.dds"
 		}
 
 	}
@@ -312,132 +312,132 @@ amerei_darry_personal_coa={
 
 
 #Foote
-philip_foote_personal_coa={
-	pattern="pattern_solid.dds"
-	color1=agot_yellow
-	color2=agot_copper
-	colored_emblem={
-		color1=agot_bone
-		color2=agot_black
-		texture="wl_foote.dds"
+philip_foote_personal_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_yellow
+	color2 = agot_copper
+	colored_emblem = {
+		color1 = agot_bone
+		color2 = agot_black
+		texture = "wl_foote.dds"
 	}
 
 }
 
 
 # Anothers
-jeffro_personal_coa={
-	pattern="pattern_solid.dds"
-	color1=agot_grey_light
-	color2=white
-	color3=black
-	color4=red
-	colored_emblem={
-		color1=agot_brown
-		color2=agot_crimson
-		color3=agot_black
-		texture="rl_bracken_bittersteel.dds"
-	}
-	
-}
-silverlion_coa={
-	pattern="pattern_solid.dds"
-	color1=rgb { 4 0 23 }
-	color2=agot_purple
-	color3=agot_white
-	colored_emblem={
-		color1=agot_white
-		color2=agot_white
-		texture="wl_lannister.dds"
-	}
-
-	colored_emblem={
-		color1=agot_white
-		color2=agot_white
-		texture="do_vaith.dds"
-		instance={
-			position={ 0.500000 0.610000 }
-			scale={ 1.000000 -0.840000 }
-			depth=1.010000
-		}
-
-	}
-
-	colored_emblem={
-		color1=rgb { 3 0 18 }
-		color2=agot_white
-		texture="st_dondarrion.dds"
-		instance={
-			position={ 0.500000 0.440000 }
-			depth=2.010000
-		}
-
-	}
-}
-
-dynn_Pedraatho={
-	pattern="pattern_solid.dds"
-	color1=agot_purple
-	color2=agot_black_light
-	color3=black
-	colored_emblem={
-		color1=rgb { 101 98 98 }
-		texture="vl_baelish_old.dds"
-		instance={
-			scale={ -1.000000 1.000000 }
-		}
-
+jeffro_personal_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_grey_light
+	color2 = white
+	color3 = black
+	color4 = red
+	colored_emblem = {
+		color1 = agot_brown
+		color2 = agot_crimson
+		color3 = agot_black
+		texture = "rl_bracken_bittersteel.dds"
 	}
 
 }
-dynn_Jacobs={
-	pattern="pattern__solid_designer.dds"
-	color1=agot_blue_light
-	color2=agot_red
-	color3=blue
-	colored_emblem={
-		color1=agot_white
-		color2=agot_black
-		texture="pirate_raaqos_head.dds"
-		instance={
-			position={ 0.520000 0.690000 }
-			rotation=360
+silverlion_coa = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 4 0 23 }
+	color2 = agot_purple
+	color3 = agot_white
+	colored_emblem = {
+		color1 = agot_white
+		color2 = agot_white
+		texture = "wl_lannister.dds"
+	}
+
+	colored_emblem = {
+		color1 = agot_white
+		color2 = agot_white
+		texture = "do_vaith.dds"
+		instance = {
+			position = { 0.500000 0.610000 }
+			scale = { 1.000000 -0.840000 }
+			depth = 1.010000
 		}
 
 	}
 
-	colored_emblem={
-		color1=agot_white
-		texture="ce_circle.dds"
-		instance={
-			position={ 0.200000 0.180000 }
-			scale={ 0.760000 0.760000 }
-			depth=3.010000
+	colored_emblem = {
+		color1 = rgb { 3 0 18 }
+		color2 = agot_white
+		texture = "st_dondarrion.dds"
+		instance = {
+			position = { 0.500000 0.440000 }
+			depth = 2.010000
 		}
 
-		instance={
-			position={ 0.800000 0.170000 }
-			scale={ 0.770000 0.770000 }
-			depth=4.010000
+	}
+}
+
+dynn_Pedraatho = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_purple
+	color2 = agot_black_light
+	color3 = black
+	colored_emblem = {
+		color1 = rgb { 101 98 98 }
+		texture = "vl_baelish_old.dds"
+		instance = {
+			scale = { -1.000000 1.000000 }
 		}
 
 	}
 
-	colored_emblem={
-		color1=agot_blue_sky
-		color2=agot_blue
-		color3=agot_blue_sky
-		texture="va_arryn_falc2.dds"
-		instance={
-			position={ 0.200000 0.210000 }
-			scale={ -0.430000 0.430000 }
-			depth=1.010000
+}
+dynn_Jacobs = {
+	pattern = "pattern__solid_designer.dds"
+	color1 = agot_blue_light
+	color2 = agot_red
+	color3 = blue
+	colored_emblem = {
+		color1 = agot_white
+		color2 = agot_black
+		texture = "pirate_raaqos_head.dds"
+		instance = {
+			position = { 0.520000 0.690000 }
+			rotation = 360
 		}
 
-		instance={
-			position={ 0.800000 0.210000 }
-			scale={ 0.440000 0.440000 }
-			depth=2.010000
+	}
+
+	colored_emblem = {
+		color1 = agot_white
+		texture = "ce_circle.dds"
+		instance = {
+			position = { 0.200000 0.180000 }
+			scale = { 0.760000 0.760000 }
+			depth = 3.010000
+		}
+
+		instance = {
+			position = { 0.800000 0.170000 }
+			scale = { 0.770000 0.770000 }
+			depth = 4.010000
+		}
+
+	}
+
+	colored_emblem = {
+		color1 = agot_blue_sky
+		color2 = agot_blue
+		color3 = agot_blue_sky
+		texture = "va_arryn_falc2.dds"
+		instance = {
+			position = { 0.200000 0.210000 }
+			scale = { -0.430000 0.430000 }
+			depth = 1.010000
+		}
+
+		instance = {
+			position = { 0.800000 0.210000 }
+			scale = { 0.440000 0.440000 }
+			depth = 2.010000
 		}
 
 	}
@@ -445,184 +445,184 @@ dynn_Jacobs={
 }
 
 #Laamp
-d_laamp_merc_dothraki_company={
-	pattern="pattern_solid.dds"
-	color1=agot_grey_light
-	color2=white
-	color3=black
-	color4=red
-	colored_emblem={
-		color1=agot_brown
-		color2=agot_crimson
-		color3=agot_black
-		texture="rl_bracken_bittersteel.dds"
+d_laamp_merc_dothraki_company = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_grey_light
+	color2 = white
+	color3 = black
+	color4 = red
+	colored_emblem = {
+		color1 = agot_brown
+		color2 = agot_crimson
+		color3 = agot_black
+		texture = "rl_bracken_bittersteel.dds"
 	}
 }
 
 
 #Titles
-k_the_stars={
-	pattern="pattern_solid.dds"
-	color1=rgb { 6 0 38 }
-	color2=red
-	color3=white
-	colored_emblem={
-		color1=rgb { 7 0 43 }
-		color2=agot_white
-		color3=rgb { 7 0 47 }
-		texture="ce_most_devout.dds"
-		instance={
-			position={ 0.500000 0.470000 }
-			scale={ 0.750000 0.750000 }
+k_the_stars = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 6 0 38 }
+	color2 = red
+	color3 = white
+	colored_emblem = {
+		color1 = rgb { 7 0 43 }
+		color2 = agot_white
+		color3 = rgb { 7 0 47 }
+		texture = "ce_most_devout.dds"
+		instance = {
+			position = { 0.500000 0.470000 }
+			scale = { 0.750000 0.750000 }
 		}
 
 	}
 
 }
 
-d_the_drench={
-	pattern="pattern_solid.dds"
-	color1=agot_grey_light
-	color2=agot_black
-	colored_emblem={
-		color1=agot_black
-		color2=agot_bone
-		texture="st_seaworth.dds"
-		instance={
-			scale={ 1.100000 1.100000 }
+d_the_drench = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_grey_light
+	color2 = agot_black
+	colored_emblem = {
+		color1 = agot_black
+		color2 = agot_bone
+		texture = "st_seaworth.dds"
+		instance = {
+			scale = { 1.100000 1.100000 }
 		}
 
 	}
 
 }
 
-c_the_scales={
-	pattern="pattern_solid.dds"
-	color1=agot_purple
-	color2=agot_white
-	colored_emblem={
-		color1=agot_white
-		color2=agot_purple
-		texture="cl_scales.dds"
+c_the_scales = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_purple
+	color2 = agot_white
+	colored_emblem = {
+		color1 = agot_white
+		color2 = agot_purple
+		texture = "cl_scales.dds"
 	}
 
 }
 
-k_goldengrove={
-	pattern="pattern_solid.dds"
-	color1=rgb { 209 219 224 }
-	color2=agot_gold
-	colored_emblem={
-		color1=agot_gold
-		color2=agot_gold
-		texture="re_rowan.dds"
+k_goldengrove = {
+	pattern = "pattern_solid.dds"
+	color1 = rgb { 209 219 224 }
+	color2 = agot_gold
+	colored_emblem = {
+		color1 = agot_gold
+		color2 = agot_gold
+		texture = "re_rowan.dds"
 	}
 
 }
 
-k_westmarch={
-	pattern="pattern_solid.dds"
-	color1=agot_green
-	color2=agot_red
-	textured_emblem={
-		texture="reach_tarly.dds"
-		instance={
-			scale={ 0.800000 0.800000 }
+k_westmarch = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_green
+	color2 = agot_red
+	textured_emblem = {
+		texture = "reach_tarly.dds"
+		instance = {
+			scale = { 0.800000 0.800000 }
 		}
 
 	}
 
 }
 
-d_yronwood={
-	pattern="pattern_solid.dds"
-	color1=agot_sand
-	color2=agot_black
-	colored_emblem={
-		color1=agot_black
-		color2=agot_black
-		texture="do_yronwood.dds"
-		instance={
-			scale={ 1.200000 1.200000 }
+d_yronwood = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_sand
+	color2 = agot_black
+	colored_emblem = {
+		color1 = agot_black
+		color2 = agot_black
+		texture = "do_yronwood.dds"
+		instance = {
+			scale = { 1.200000 1.200000 }
 		}
 
 	}
 
 }
 
-c_starpike={
-	pattern="pattern_solid.dds"
-	color1=agot_orange
-	color2=agot_black
-	colored_emblem={
-		color1=agot_black
-		texture="re_peake_alt.dds"
-		instance={
-			position={ 0.500000 0.470000 }
-			scale={ 1.100000 1.100000 }
+c_starpike = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_orange
+	color2 = agot_black
+	colored_emblem = {
+		color1 = agot_black
+		texture = "re_peake_alt.dds"
+		instance = {
+			position = { 0.500000 0.470000 }
+			scale = { 1.100000 1.100000 }
 		}
 
 	}
 
 }
 
-k_oldtown={
-	pattern="pattern_solid.dds"
-	color1=agot_smoke
-	color2=agot_white
-	colored_emblem={
-		color1=agot_white
-		color2=agot_white
-		texture="re_hightower_1.dds"
-		instance={
-			position={ 0.500000 0.525000 }
+k_oldtown = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_smoke
+	color2 = agot_white
+	colored_emblem = {
+		color1 = agot_white
+		color2 = agot_white
+		texture = "re_hightower_1.dds"
+		instance = {
+			position = { 0.500000 0.525000 }
 		}
 
 	}
-	colored_emblem={
-		color1=agot_orange
-		color2=agot_red
-		texture="re_hightower_2.dds"
-		instance={
-			position={ 0.500000 0.525000 }
+	colored_emblem = {
+		color1 = agot_orange
+		color2 = agot_red
+		texture = "re_hightower_2.dds"
+		instance = {
+			position = { 0.500000 0.525000 }
 		}
 
 	}
 
 }
 
-d_brightwater={
-	pattern="pattern_solid.dds"
-	color1=agot_white
-	color2=agot_blue
-	colored_emblem={
-		color1=agot_white
-		color2=agot_white
-		texture="ce_solidblock.dds"
+d_brightwater = {
+	pattern = "pattern_solid.dds"
+	color1 = agot_white
+	color2 = agot_blue
+	colored_emblem = {
+		color1 = agot_white
+		color2 = agot_white
+		texture = "ce_solidblock.dds"
 	}
 
-	colored_emblem={
-		color1=agot_black
-		color2=agot_black
-		texture="ce_ermine_pattern.dds"
+	colored_emblem = {
+		color1 = agot_black
+		color2 = agot_black
+		texture = "ce_ermine_pattern.dds"
 	}
 
-	colored_emblem={
-		color1=agot_red
-		color2=agot_sand
-		texture="re_florent_2.dds"
+	colored_emblem = {
+		color1 = agot_red
+		color2 = agot_sand
+		texture = "re_florent_2.dds"
 	}
 
-	colored_emblem={
-		color1=black
-		color2=white
-		texture="re_florent_3.dds"
+	colored_emblem = {
+		color1 = black
+		color2 = white
+		texture = "re_florent_3.dds"
 	}
 
-	colored_emblem={
-		color1=agot_blue
-		color2=agot_sand
-		texture="re_florent_4.dds"
+	colored_emblem = {
+		color1 = agot_blue
+		color2 = agot_sand
+		texture = "re_florent_4.dds"
 	}
 
 }

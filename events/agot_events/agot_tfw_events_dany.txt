@@ -322,7 +322,7 @@ agot_tfw_dany.0001 = {
 								has_trait = lifestyle_mystic
 								has_trait_xp = {
 									trait = lifestyle_mystic
-									value >=100
+									value >= 100
 								}
 							}
 						}
@@ -377,7 +377,7 @@ agot_tfw_dany.0001 = {
 
 					}
 					80 = { #No...
-						modifier = { 
+						modifier = {
 							add = 120
 							has_trait = cynical
 						}
@@ -385,7 +385,7 @@ agot_tfw_dany.0001 = {
 							add = 60
 							piety_level < 1
 						}
-						modifier = { 
+						modifier = {
 							factor = 0
 							var:offering ?= flag:kingsblood
 						}
@@ -459,7 +459,7 @@ agot_tfw_dany.0002 = {
 			scope:dany = {
 				copy_traits = character:Targaryen_9
 
-				add_pressed_claim = title:h_the_iron_throne 
+				add_pressed_claim = title:h_the_iron_throne
 				add_pressed_claim = title:e_the_crownlands
 				add_pressed_claim = title:d_kings_landing
 				add_pressed_claim = title:c_kings_landing
@@ -483,7 +483,7 @@ agot_tfw_dany.0002 = {
 					}
 					add_trait = charming
 				}
-				
+
 
 				copy_inheritable_appearance_from = character:Targaryen_9
 				create_title_and_vassal_change = {
@@ -507,7 +507,7 @@ agot_tfw_dany.0002 = {
 						save_scope_as = culler_mother
 
 						after_creation = {
-							death =  { death_reason = death_disappearance }
+							death = { death_reason = death_disappearance }
 						}
 					}
 
@@ -523,7 +523,7 @@ agot_tfw_dany.0002 = {
 						save_scope_as = culler_father
 
 						after_creation = {
-							death =  { death_reason = death_disappearance }
+							death = { death_reason = death_disappearance }
 						}
 					}
 					character:Targaryen_9 = {
@@ -578,7 +578,7 @@ agot_tfw_dany.0002 = {
 			create_landless_adventurer_title_effect = {
 				REASON = flag:conquest
 				FLAVOR_CHAR = scope:attacker
-			}	
+			}
 		}
 
 		create_title_and_vassal_change = {
@@ -593,7 +593,7 @@ agot_tfw_dany.0002 = {
 				change = scope:change
 			}
 		}
-		resolve_title_and_vassal_change = scope:change		
+		resolve_title_and_vassal_change = scope:change
 
 	}
 
@@ -602,13 +602,13 @@ agot_tfw_dany.0002 = {
 		name = agot_tfw_dany.0002.a
 		#custom_tooltip = agot_tfw_dany.0002.a.tt
 
-    	set_player_character = scope:dany
+		set_player_character = scope:dany
 
 		death = {
 			death_reason = death_burned_witch
 		}
 
-	}	
+	}
 
 	#Don't play her
 	option = {
@@ -617,7 +617,7 @@ agot_tfw_dany.0002 = {
 
 		death = {
 			death_reason = death_burned_witch
-		}	
+		}
 	}
 
 	# option = {
@@ -631,7 +631,7 @@ agot_tfw_dany.0002 = {
 
 	# 	# death = {
 	# 	# 	death_reason = death_burned_witch
-	# 	# }	
+	# 	# }
 	# }
 }
 

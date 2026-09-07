@@ -45,7 +45,7 @@ hegemon = {
 	global = hegemon
 }
 # Hegemoness
-hegemon_female ={
+hegemon_female = {
 	first = hegemon_female
 	third = hegemon_female
 	global = hegemon_female
@@ -494,13 +494,13 @@ king_free_city_female_spouse = {
 }
 
 # Grand Mayor
-duke_republic_male  = {
+duke_republic_male = {
 	first = duke_republic_male
 	third = duke_republic_male
 	global = duke_republic_male
 }
 # Grand Mayor
-duke_republic_female  = {
+duke_republic_female = {
 	first = duke_republic_female
 	third = duke_republic_female
 	global = duke_republic_female
@@ -533,13 +533,13 @@ duke_free_city_female = {
 }
 
 # Lord Mayor
-count_republic_male  = {
+count_republic_male = {
 	first = count_republic_male
 	third = count_republic_male
 	global = count_republic_male
 }
 # Lady
-count_republic_female  = {
+count_republic_female = {
 	first = count_republic_female
 	third = count_republic_female
 	global = count_republic_female

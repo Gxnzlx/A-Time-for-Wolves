@@ -321,7 +321,7 @@
 				add = 100
 				this = character:Knight_Kings_Landing_3
 			}
-		}	
+		}
 	}
 	Clegane_Dummy_4 = {
 		dna_modifiers = {
@@ -344,6 +344,6 @@
 				add = 100
 				this = character:Clegane_Dummy_4
 			}
-		}	
+		}
 	}
 }

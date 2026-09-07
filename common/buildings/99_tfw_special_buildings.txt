@@ -174,7 +174,7 @@ tfw_coal_mines_05 = {
 		development_growth_factor = 0.25
 	}
 
-	#next_building = 
+	#next_building =
 
 	ai_value = {
 		base = 100

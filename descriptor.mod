@@ -1,4 +1,4 @@
-version="2.0.9.2"
+version="2.1.0"
 tags={
 	"Fixes"
 	"Alternative History"
@@ -7,10 +7,6 @@ tags={
 	"Translation"
 }
 name="AGOT - A Time for Wolves Fix"
-dependencies={
-	"A Game of Thrones"
-}
 picture="thumbnail.png"
 supported_version="1.19.0.6"
-path="C:/Users/Gonza/Documents/Paradox Interactive/Crusader Kings III/mod/A Time for Wolves Fix"
 remote_file_id="3715624319"

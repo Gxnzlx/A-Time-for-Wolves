@@ -136,7 +136,7 @@ agot_tfw_five_queens.0003 = {
 	}
 }
 
-agot_tfw_five_queens.0004 = { 
+agot_tfw_five_queens.0004 = {
 	type = character_event
 	theme = crown
 	hidden = yes
@@ -214,56 +214,56 @@ agot_tfw_five_queens.0004 = {
 				change = scope:change
 			}
 		}
-			
+
 		title:c_storms_end = {
 			change_title_holder_include_vassals = {
 				holder = character:Baratheon_9
 				change = scope:change
 			}
 		}
-				
+
 		title:d_shipbreaker_bay = {
 			change_title_holder_include_vassals = {
 				holder = character:Baratheon_9
 				change = scope:change
 			}
 		}
-				
+
 		title:k_shipbreaker_bay = {
 			change_title_holder_include_vassals = {
 				holder = character:Baratheon_9
 				change = scope:change
 			}
 		}
-		
+
 		title:e_the_stormlands = {
 			change_title_holder_include_vassals = {
 				holder = character:Baratheon_9
 				change = scope:change
 			}
 		}
-		
+
 		title:c_riverrun = {
 			change_title_holder_include_vassals = {
 				holder = character:Tully_7
 				change = scope:change
 			}
 		}
-		
+
 		title:d_riverrun = {
 			change_title_holder_include_vassals = {
 				holder = character:Tully_7
 				change = scope:change
 			}
 		}
-		
+
 		title:k_armistia = {
 			change_title_holder_include_vassals = {
 				holder = character:Tully_7
 				change = scope:change
 			}
 		}
-		
+
 		title:e_the_riverlands = {
 			change_title_holder_include_vassals = {
 				holder = character:Tully_7
@@ -316,8 +316,8 @@ agot_tfw_five_queens.0005 = {
 			target_title = title:c_pyke
 		}
 		character:Targaryen_9 = {
-			trigger_event = { 
-				id = agot_tfw_five_queens.0006 
+			trigger_event = {
+				id = agot_tfw_five_queens.0006
 				days = 1
 			}
 		}

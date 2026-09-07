@@ -1,1268 +1,1268 @@
 ﻿#k_the_crownlands
-	#d_kings_landing
-		4153 = {
-			special_building_slot = generic_great_sept_01
-			holding = none
-			8010.1.1 = {
-				holding = city_holding
-				buildings = { city_03 }
-			}
-			8042.4.1 = { # Grand Sept
-				holding = church_holding
-				buildings = { temple_04 }
-			}
-			8176.1.1 = { # Great Sept of Baelor
-				special_building = holy_site_great_sept_01
-			}
-			8303.10.22 = {
-				holding = none
-			}
-		}
-	#k_dragonstone
-		#c_dragonstone
-		4415 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_high_tide
-		4424 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_driftmark
-		4419 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_the_scales
-		4435 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_claw_isle
-		4436 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_blackmark
-		4427 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_sharp_point
-		4428 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_gullet_isle
-		4432 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_longbar
-		4431 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_sweetport_sounds
-		4433 = {
-			8300.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-	#d_masseys_hook
-		#c_stonedance
-		4388 = {
-			8307.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_sweetmont
-		4393 = {
-			8309.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_glasswater
-		4408 = {
-			8309.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-	#d_wendwater_forest
-		#c_farring_cross
-		4373 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_stripeharbor
-		4378 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
+#d_kings_landing
+4153 = {
+	special_building_slot = generic_great_sept_01
+	holding = none
+	8010.1.1 = {
+		holding = city_holding
+		buildings = { city_03 }
+	}
+	8042.4.1 = { # Grand Sept
+		holding = church_holding
+		buildings = { temple_04 }
+	}
+	8176.1.1 = { # Great Sept of Baelor
+		special_building = holy_site_great_sept_01
+	}
+	8303.10.22 = {
+		holding = none
+	}
+}
+#k_dragonstone
+#c_dragonstone
+4415 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_high_tide
+4424 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_driftmark
+4419 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_the_scales
+4435 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_claw_isle
+4436 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_blackmark
+4427 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_sharp_point
+4428 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_gullet_isle
+4432 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_longbar
+4431 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_sweetport_sounds
+4433 = {
+	8300.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#d_masseys_hook
+#c_stonedance
+4388 = {
+	8307.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_sweetmont
+4393 = {
+	8309.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_glasswater
+4408 = {
+	8309.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#d_wendwater_forest
+#c_farring_cross
+4373 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_stripeharbor
+4378 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
 
 
 ###
 
 #k_the_riverlands
-	#d_cape_of_eagles
+#d_cape_of_eagles
 
-		1754 = {
-			8307.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		#################### b_moorkeep ###################
-		########## c_rushmoor - d_cape_of_eagles ##########
-		1745 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################ b_eagleside_castle ###############
-		########## c_eagleside - d_cape_of_eagles #########
-		1758 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################## b_stalecastle ##################
-		########## c_seasorrow - d_cape_of_eagles #########
-		1749 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################# b_seagard_castle ################
-		########### c_seagard - d_cape_of_eagles ##########
-		1729 = {
-			8309.1.1 = {
-				religion = fots_oldnew
-			}
-			8311.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################# b_whitefish_keep ################
-		########## c_hook_bay - d_cape_of_eagles ##########
-		1740 = {
-			8309.1.1 = {
-				religion = fots_oldnew
-			}
-			8313.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		1734 = {
-			8307.1.1 = {
-				religion = fots_oldnew
-			}
-			8313.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
+1754 = {
+	8307.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+#################### b_moorkeep ###################
+########## c_rushmoor - d_cape_of_eagles ##########
+1745 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################ b_eagleside_castle ###############
+########## c_eagleside - d_cape_of_eagles #########
+1758 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################## b_stalecastle ##################
+########## c_seasorrow - d_cape_of_eagles #########
+1749 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################# b_seagard_castle ################
+########### c_seagard - d_cape_of_eagles ##########
+1729 = {
+	8309.1.1 = {
+		religion = fots_oldnew
+	}
+	8311.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################# b_whitefish_keep ################
+########## c_hook_bay - d_cape_of_eagles ##########
+1740 = {
+	8309.1.1 = {
+		religion = fots_oldnew
+	}
+	8313.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+1734 = {
+	8307.1.1 = {
+		religion = fots_oldnew
+	}
+	8313.1.1 = {
+		religion = old_gods_wnw
+	}
+}
 
 
-	#d_the_crossing
-		1800 = {
-			8307.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		#################### b_woodrush ###################
-		########### c_woodrush - d_the_crossing ###########
-		7283 = {
-			8307.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################### b_mistlewood ##################
-		########## c_mistlewood - d_the_crossing ##########
-		1780 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
+#d_the_crossing
+1800 = {
+	8307.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+#################### b_woodrush ###################
+########### c_woodrush - d_the_crossing ###########
+7283 = {
+	8307.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################### b_mistlewood ##################
+########## c_mistlewood - d_the_crossing ##########
+1780 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
 
-		############### b_blackpitch_castle ###############
-		########## c_blackpitch - d_the_crossing ##########
-		1790 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################## b_helney_hill ##################
-		############ c_helney - d_the_crossing ############
-		1795 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################### b_the_twins ###################
-		########### c_the_twins - d_the_crossing ##########
-		1764 = {
-			8309.1.1 = {
-				religion = fots_oldnew
-			}
-			8311.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################### b_arganbrook ##################
-		########## c_arganbrook - d_the_crossing ##########
-		1771 = {
-			8309.1.1 = {
-				religion = fots_oldnew
-			}
-			8311.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################### b_hags_mire ###################
-		########### c_leechpool - d_the_crossing ##########
-		1775 = {
-			8310.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		################# b_erenford_hall #################
-		########### c_erenford - d_the_crossing ###########
-		1785 = {
-			8310.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
+############### b_blackpitch_castle ###############
+########## c_blackpitch - d_the_crossing ##########
+1790 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################## b_helney_hill ##################
+############ c_helney - d_the_crossing ############
+1795 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################### b_the_twins ###################
+########### c_the_twins - d_the_crossing ##########
+1764 = {
+	8309.1.1 = {
+		religion = fots_oldnew
+	}
+	8311.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################### b_arganbrook ##################
+########## c_arganbrook - d_the_crossing ##########
+1771 = {
+	8309.1.1 = {
+		religion = fots_oldnew
+	}
+	8311.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################### b_hags_mire ###################
+########### c_leechpool - d_the_crossing ##########
+1775 = {
+	8310.1.1 = {
+		religion = fots_oldnew
+	}
+}
+################# b_erenford_hall #################
+########### c_erenford - d_the_crossing ###########
+1785 = {
+	8310.1.1 = {
+		religion = old_gods_wnw
+	}
+}
 
-	#d_fairmarket
-		2203 = {
-			8310.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		2193 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		2188 = {
-			8313.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		2198 = {
-			8315.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-	#d_three_forks
-		2208 = {
-			8313.1.1 = {
-				religion = fots_oldnew
-			}
-		}	
-		2220 = {
-			8313.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		2216 = {
-			8313.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-	#d_blackwood_vale
-		1716 = {
-			8307.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		1693 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		1724 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		1721 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-	#d_riverrun
-		3122 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		1677 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-	#d_lakeleaf_highlands ########
-		1815 = {
-			8309.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		#################### b_stillfen ###################
-		######## c_stillfen - d_lakeleaf_highlands ########
-		1805 = {
-			8310.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################ b_wayleroot_circle ###############
-		######## c_wayleroot - d_lakeleaf_highlands #######
-		1819 = {
-			8310.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		1811 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		1824 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-		1830 = {
-			8311.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-	#d_harrenhal
-		1934 = {
-			8313.1.1 = {
-				religion = old_gods_children
-			}
-		}
-###	
+#d_fairmarket
+2203 = {
+	8310.1.1 = {
+		religion = fots_oldnew
+	}
+}
+2193 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+2188 = {
+	8313.1.1 = {
+		religion = fots_oldnew
+	}
+}
+2198 = {
+	8315.1.1 = {
+		religion = fots_oldnew
+	}
+}
+#d_three_forks
+2208 = {
+	8313.1.1 = {
+		religion = fots_oldnew
+	}
+}
+2220 = {
+	8313.1.1 = {
+		religion = fots_oldnew
+	}
+}
+2216 = {
+	8313.1.1 = {
+		religion = fots_oldnew
+	}
+}
+#d_blackwood_vale
+1716 = {
+	8307.1.1 = {
+		religion = fots_oldnew
+	}
+}
+1693 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+1724 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+1721 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+#d_riverrun
+3122 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+1677 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+#d_lakeleaf_highlands ########
+1815 = {
+	8309.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+#################### b_stillfen ###################
+######## c_stillfen - d_lakeleaf_highlands ########
+1805 = {
+	8310.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################ b_wayleroot_circle ###############
+######## c_wayleroot - d_lakeleaf_highlands #######
+1819 = {
+	8310.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+1811 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+1824 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+1830 = {
+	8311.1.1 = {
+		religion = fots_oldnew
+	}
+}
+#d_harrenhal
+1934 = {
+	8313.1.1 = {
+		religion = old_gods_children
+	}
+}
+###
 
 #k_the_vale
-	#d_the_cut
-		2703 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################### b_dawn_hall ###################
-		############# c_moonbloom - d_the_cut #############
-		2691 = {
-			8308.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		################## b_sunrise_keep #################
-		############ c_sunrise_bite - d_the_cut ###########
-		2687 = {
-			8309.1.1 = {
-				religion = old_gods_wnw
-			}
-		}
-		2698 = {
-			8310.1.1 = {
-				religion = fots_pure
-			}
-		}
-	
-	#d_grimholm
-		2619 = {
-			8306.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################### b_hullbreach ##################
-		############# c_brownden - d_grimholm #############
-		2641 = {
-			8306.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_midlors_fort #################
-		########### c_midlor_point - d_grimholm ###########
-		2626 = {
-			8306.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_midlor_hall ##################
-		############## c_midlor - d_grimholm ##############
-		2635 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_bommenstone ##################
-		############ c_bommenstone - d_grimholm ###########
-		2645 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-		}
-	#d_the_drainlands #########
-		2482 = {
-			8306.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################ b_coldwater_castle ###############
-		####### c_coldwater_burn - d_the_drainlands #######
-		2476 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################### b_grey_glen ###################
-		########## c_grey_glen - d_the_drainlands #########
-		2482 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-		}
-	#d_eastweald
-		2398 = {
-			8306.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################### b_stillwater ##################
-		############ c_the_stills - d_eastweald ###########
-		2427 = {
-			8306.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################## b_longbow_hall #################
-		########## c_longbow_hills - d_eastweald ##########
-		2392 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################### b_lymestone ###################
-		############### c_lyme - d_eastweald ##############
-		2410 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		#c_brackenbrick_point
-		2415 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		#c_sedgemore
-		2404 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		#c_bowlyn
-		2421 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-	#d_old_anchor
-		2383 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################### b_rusty_fort ##################
-		########### c_rustpointe - d_old_anchor ###########
-		2378 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################### b_tetchmere ###################
-		############ c_tetchmere - d_old_anchor ###########
-		2388 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################### b_old_anchor ##################
-		########### c_old_anchor - d_old_anchor ###########
-		2372 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
+#d_the_cut
+2703 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################### b_dawn_hall ###################
+############# c_moonbloom - d_the_cut #############
+2691 = {
+	8308.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+################## b_sunrise_keep #################
+############ c_sunrise_bite - d_the_cut ###########
+2687 = {
+	8309.1.1 = {
+		religion = old_gods_wnw
+	}
+}
+2698 = {
+	8310.1.1 = {
+		religion = fots_pure
+	}
+}
 
-	#d_hearts_home
-		2531 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_sledge_house #################
-		########### c_stonefall - d_hearts_home ###########
-		2525 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_bronzespear ##################
-		########## c_bronzespear - d_hearts_home ##########
-		2520 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_hearts_home ##################
-		########## c_hearts_home - d_hearts_home ##########
-		2514 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-		}
-		#################### b_standish ###################
-		############ c_standish - d_hearts_home ###########
-		2536 = {
-			8310.1.1 = {
-				religion = fots_pure
-			}
-		}
-	#d_northbreach 
-		2660 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################### b_portmouth ###################
-		########### c_portmouth - d_northbreach ###########
-		2665 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################ b_castle_reckshaw ################
-		############ c_reckshaw - d_northbreach ###########
-		2669 = {
-			8308.1.1 = {
-				religion = fots_pure
-			}
-		}
-		#################### b_newkeep ####################
-		############# c_hersy - d_northbreach #############
-		2650 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-		}
-		#################### b_biteport ###################
-		######### c_scorched_vale - d_northbreach #########
-		2674 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_strikeguard ##################
-		########## c_strikeguard - d_northbreach ##########
-		2684 = {
-			8310.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_shores_fort ##################
-		######## c_forgotten_shore - d_northbreach ########
-		2679 = {
-			8310.1.1 = {
-				religion = fots_pure
-			}
-		}
+#d_grimholm
+2619 = {
+	8306.1.1 = {
+		religion = fots_pure
+	}
+}
+################### b_hullbreach ##################
+############# c_brownden - d_grimholm #############
+2641 = {
+	8306.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_midlors_fort #################
+########### c_midlor_point - d_grimholm ###########
+2626 = {
+	8306.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_midlor_hall ##################
+############## c_midlor - d_grimholm ##############
+2635 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_bommenstone ##################
+############ c_bommenstone - d_grimholm ###########
+2645 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+}
+#d_the_drainlands #########
+2482 = {
+	8306.1.1 = {
+		religion = fots_pure
+	}
+}
+################ b_coldwater_castle ###############
+####### c_coldwater_burn - d_the_drainlands #######
+2476 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+}
+################### b_grey_glen ###################
+########## c_grey_glen - d_the_drainlands #########
+2482 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+}
+#d_eastweald
+2398 = {
+	8306.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################### b_stillwater ##################
+############ c_the_stills - d_eastweald ###########
+2427 = {
+	8306.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################## b_longbow_hall #################
+########## c_longbow_hills - d_eastweald ##########
+2392 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################### b_lymestone ###################
+############### c_lyme - d_eastweald ##############
+2410 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+#c_brackenbrick_point
+2415 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+#c_sedgemore
+2404 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+#c_bowlyn
+2421 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+#d_old_anchor
+2383 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################### b_rusty_fort ##################
+########### c_rustpointe - d_old_anchor ###########
+2378 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################### b_tetchmere ###################
+############ c_tetchmere - d_old_anchor ###########
+2388 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################### b_old_anchor ##################
+########### c_old_anchor - d_old_anchor ###########
+2372 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+
+#d_hearts_home
+2531 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_sledge_house #################
+########### c_stonefall - d_hearts_home ###########
+2525 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_bronzespear ##################
+########## c_bronzespear - d_hearts_home ##########
+2520 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_hearts_home ##################
+########## c_hearts_home - d_hearts_home ##########
+2514 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+}
+#################### b_standish ###################
+############ c_standish - d_hearts_home ###########
+2536 = {
+	8310.1.1 = {
+		religion = fots_pure
+	}
+}
+#d_northbreach
+2660 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+}
+################### b_portmouth ###################
+########### c_portmouth - d_northbreach ###########
+2665 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+}
+################ b_castle_reckshaw ################
+############ c_reckshaw - d_northbreach ###########
+2669 = {
+	8308.1.1 = {
+		religion = fots_pure
+	}
+}
+#################### b_newkeep ####################
+############# c_hersy - d_northbreach #############
+2650 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+}
+#################### b_biteport ###################
+######### c_scorched_vale - d_northbreach #########
+2674 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_strikeguard ##################
+########## c_strikeguard - d_northbreach ##########
+2684 = {
+	8310.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_shores_fort ##################
+######## c_forgotten_shore - d_northbreach ########
+2679 = {
+	8310.1.1 = {
+		religion = fots_pure
+	}
+}
 
 
-	#d_ironoaks 
-		2366 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		##################### b_hazen #####################
-		############### c_hazen - d_ironoaks ##############
-		2361 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################## b_hardyng_hall #################
-		############# c_hardvale - d_ironoaks #############
-		2350 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		################ b_ironoaks_castle ################
-		############# c_ironoaks - d_ironoaks #############
-		2344 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
-		#c_the_banners
-		2356 = {
-			8307.1.1 = {
-				religion = fots_pure
-			}
-			8366.1.1 = {
-				religion = fots_tfw
-			}
-		}
+#d_ironoaks
+2366 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+##################### b_hazen #####################
+############### c_hazen - d_ironoaks ##############
+2361 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################## b_hardyng_hall #################
+############# c_hardvale - d_ironoaks #############
+2350 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+################ b_ironoaks_castle ################
+############# c_ironoaks - d_ironoaks #############
+2344 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
+#c_the_banners
+2356 = {
+	8307.1.1 = {
+		religion = fots_pure
+	}
+	8366.1.1 = {
+		religion = fots_tfw
+	}
+}
 
-	#d_snakewood_forest
-		2579 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_rutley_hall ##################
-		######## c_misty_moor - d_snakewood_forest ########
-		2614 = {
-			8309.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_willowspire ##################
-		######## c_willowspire - d_snakewood_forest #######
-		2603 = {
-			8310.1.1 = {
-				#religion = fots_pure
-			}
-		}
-		################# b_sunken_castle #################
-		######## c_sunkenwood - d_snakewood_forest ########
-		2585 = {
-			8310.1.1 = {
-				religion = fots_pure
-			}
-		}
-		################## b_hunger_keep ##################
-		######## c_hungerford - d_snakewood_forest ########
-		2591 = {
-			8310.1.1 = {
-				religion = fots_pure
-			}
-		}
-	#d_runestone
-		2466 = {
-			8310.1.1 = {
-				religion = fots_oldnew
-			}
-		}
-	#d_the_sisters 
-		2715 = {
-			8310.1.1 = {
-				religion = fg_pan_sisters
-			}
-		}
-	#d_the_giants_lance
-		#c_the_bloody_gate
-		2263 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-		#c_godsroost
-		2265 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-		#c_moongates
-		2255 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-		#c_donnersdown
-		2267 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-		#c_giants_scar
-		2272 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-	#d_cowncrests
-		#c_crestfall
-		2505 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-		#c_purling
-		2510 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-		#c_crown_crescent
-		2494 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
-		#c_morency
-		2500 = {
-			8366.1.1 = {
-				religion = old_gods_btw_mns
-				culture = moon_clan
-			}
-		}
+#d_snakewood_forest
+2579 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_rutley_hall ##################
+######## c_misty_moor - d_snakewood_forest ########
+2614 = {
+	8309.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_willowspire ##################
+######## c_willowspire - d_snakewood_forest #######
+2603 = {
+	8310.1.1 = {
+		#religion = fots_pure
+	}
+}
+################# b_sunken_castle #################
+######## c_sunkenwood - d_snakewood_forest ########
+2585 = {
+	8310.1.1 = {
+		religion = fots_pure
+	}
+}
+################## b_hunger_keep ##################
+######## c_hungerford - d_snakewood_forest ########
+2591 = {
+	8310.1.1 = {
+		religion = fots_pure
+	}
+}
+#d_runestone
+2466 = {
+	8310.1.1 = {
+		religion = fots_oldnew
+	}
+}
+#d_the_sisters
+2715 = {
+	8310.1.1 = {
+		religion = fg_pan_sisters
+	}
+}
+#d_the_giants_lance
+#c_the_bloody_gate
+2263 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#c_godsroost
+2265 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#c_moongates
+2255 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#c_donnersdown
+2267 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#c_giants_scar
+2272 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#d_cowncrests
+#c_crestfall
+2505 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#c_purling
+2510 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#c_crown_crescent
+2494 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
+#c_morency
+2500 = {
+	8366.1.1 = {
+		religion = old_gods_btw_mns
+		culture = moon_clan
+	}
+}
 ###
 
 #k_dorne
-	#d_sunspear
-		4937 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_boneshield ####################
-		############## c_huskflats - d_sunspear ##############
-		4949 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_stinkwater ####################
-		############## c_stinkwater - d_sunspear ##############
-		4955 = {
-			8313.1.1 = {
-				religion = mother_orphan
-				culture = greenblood
-			}
-		}
-	#d_broken_arm
-		5032 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_the_lantern ####################
-		############## c_torchwood - d_broken_arm ##############
-		5038 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_rockwell ####################
-		############## c_rockwell - d_broken_arm ##############
-		5044 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_lemonwood
-		4960 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_sweetwater ####################
-		############## c_sweetwater - d_lemonwood ##############
-		4966 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_sourmarket ####################
-		############## c_sourmarket - d_lemonwood ##############
-		4971 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_salt_shore
-		4979 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_brackhold ####################
-		############## c_brackish - d_salt_shore ##############
-		4986 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_saltstone ####################
-		############## c_saltstone - d_salt_shore ##############
-		4996 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_white_stones ####################
-		############## b_white_stones - d_salt_shore ##############
-		4991 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_godsgrace
-		5002 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_goldpeppers ####################
-		############## c_goldpeppers - d_godsgrace ##############
-		5008 = {
-			8313.1.1 = {
-				religion = mother_orphan
-				culture = greenblood
-			}
-		}
-		#################### b_hullhold ####################
-		############## c_orangewood - d_godsgrace ##############
-		5013 = {
-			8313.1.1 = {
-				religion = mother_orphan
-				culture = greenblood
-			}
-		}
-		#################### b_great_andal_keep ####################
-		############## c_sevensdunes - d_godsgrace ##############
-		5022 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_ghost_hills
-		5049 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_nymercairn ####################
-		############## c_nymercairn - d_ghost_hills ##############
-		5056 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_faintkeep ####################
-		############## c_the_faint - d_ghost_hills ##############
-		5062 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_the_tor
-		5068 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_seven_towers ####################
-		############## c_barberry - d_the_tor ##############
-		5086 = {
-			8313.1.1 = {
-				religion = fots_sands
-				culture = salt_dornish
-			}
-		}
-		#################### b_stormlight ####################
-		############## c_dream_dunes - d_the_tor ##############
-		5081 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_murrandy ####################
-		############## c_murrandy - d_the_tor ##############
-		5077 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_tallor ####################
-		############## c_tallor_islands - d_the_tor ##############
-		5074 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_scourgehead
-		5091 = {
-			8313.1.1 = {
-				religion = mother_orphan
-				culture = greenblood
-			}
-		}
-		#################### b_swordcrown ####################
-		############## c_stedding - d_scourgehead ##############
-		5096 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_the_scourgehold ####################
-		############## c_scourge - d_scourgehead ##############
-		5335 = {
-			8313.1.1 = {
-				religion = mother_orphan
-				culture = greenblood
-			}
-		}
-		#################### b_flatwater ####################
-		############## c_flatwater - d_scourgehead ##############
-		5317 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_ghaston_grey ####################
-		############## b_ghaston_grey - d_scourgehead ##############
-		5472 = {
-			8313.1.1 = {
-				religion = fots_sands
-				culture = salt_dornish
-			}
-		}
-	#d_red_dunes
-		5102 = {
-			8313.1.1 = {
-				religion = fots_sands
-				culture = salt_dornish
-			}
-		}
-		#################### b_dustpalace ####################
-		############## b_the_barrens - d_red_dunes ##############
-		5130 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_blindwatch ####################
-		############## b_the_scablands - d_red_dunes ##############
-		5125 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#################### b_overwatch ####################
-		############## b_red_waste - d_red_dunes ##############
-		5120 = {
-			8313.1.1 = {
-				religion = fots_sands
-				culture = salt_dornish
-			}
-		}
-		#################### b_brittlebush ####################
-		############## b_brittlebush - d_red_dunes ##############
-		5114 = {
-			8313.1.1 = {
-				religion = mother_orphan
-				culture = greenblood
-			}
-		}
-		#################### b_old_glory ####################
-		############## b_killburne - d_red_dunes ##############
-		5108 = {
-			8313.1.1 = {
-				religion = mother_orphan
-				culture = greenblood
-			}
-		}
-	#d_brimstone 
-		#c_hellholt
-		5135 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_sulphur_flats
-		5141 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_jackalrun
-		5147 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_brimstone
-		5153 = {
-			8313.1.1 = {
-				religion = fots_sands
-				culture = salt_dornish
-			}
-		}
-		#c_steamfall
-		5159 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_willburn
-		5177 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_bloodbridge
-		5171 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_burning_dunes
-		5165 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_yronwood
-		#c_ironwood
-		5303 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_wayguard
-		5341 = {
-			8313.1.1 = {
-				religion = fots_sands
-				culture = salt_dornish
-			}
-		}
-		#c_royalmarch
-		5329 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_great_dunes
-		5323 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_blood_gulch
-		5346 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_greenbelt
-		5311 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_oldwell
-		#c_first_well
-		5183 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_the_dustbowl
-		5199 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_pronghorn
-		5189 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_drywell
-		5194 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_shady_sands
-		5205 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_sandstone
-		#c_sandstone
-		5211 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_stained_sands
-		5217 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_white_dunes
-		5222 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_arnight
-		5251 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_sandhorn
-		5245 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_barbmane
-		5239 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_dreadsands
-		5233 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-		#c_stinging_sands
-		5227 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
-	#d_the_princes_pass
-		#c_sthorntree
-		5373 = {
-			8313.1.1 = {
-				religion = fots_sands
-			}
-		}
+#d_sunspear
+4937 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_boneshield ####################
+############## c_huskflats - d_sunspear ##############
+4949 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_stinkwater ####################
+############## c_stinkwater - d_sunspear ##############
+4955 = {
+	8313.1.1 = {
+		religion = mother_orphan
+		culture = greenblood
+	}
+}
+#d_broken_arm
+5032 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_the_lantern ####################
+############## c_torchwood - d_broken_arm ##############
+5038 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_rockwell ####################
+############## c_rockwell - d_broken_arm ##############
+5044 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_lemonwood
+4960 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_sweetwater ####################
+############## c_sweetwater - d_lemonwood ##############
+4966 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_sourmarket ####################
+############## c_sourmarket - d_lemonwood ##############
+4971 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_salt_shore
+4979 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_brackhold ####################
+############## c_brackish - d_salt_shore ##############
+4986 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_saltstone ####################
+############## c_saltstone - d_salt_shore ##############
+4996 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_white_stones ####################
+############## b_white_stones - d_salt_shore ##############
+4991 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_godsgrace
+5002 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_goldpeppers ####################
+############## c_goldpeppers - d_godsgrace ##############
+5008 = {
+	8313.1.1 = {
+		religion = mother_orphan
+		culture = greenblood
+	}
+}
+#################### b_hullhold ####################
+############## c_orangewood - d_godsgrace ##############
+5013 = {
+	8313.1.1 = {
+		religion = mother_orphan
+		culture = greenblood
+	}
+}
+#################### b_great_andal_keep ####################
+############## c_sevensdunes - d_godsgrace ##############
+5022 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_ghost_hills
+5049 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_nymercairn ####################
+############## c_nymercairn - d_ghost_hills ##############
+5056 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_faintkeep ####################
+############## c_the_faint - d_ghost_hills ##############
+5062 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_the_tor
+5068 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_seven_towers ####################
+############## c_barberry - d_the_tor ##############
+5086 = {
+	8313.1.1 = {
+		religion = fots_sands
+		culture = salt_dornish
+	}
+}
+#################### b_stormlight ####################
+############## c_dream_dunes - d_the_tor ##############
+5081 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_murrandy ####################
+############## c_murrandy - d_the_tor ##############
+5077 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_tallor ####################
+############## c_tallor_islands - d_the_tor ##############
+5074 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_scourgehead
+5091 = {
+	8313.1.1 = {
+		religion = mother_orphan
+		culture = greenblood
+	}
+}
+#################### b_swordcrown ####################
+############## c_stedding - d_scourgehead ##############
+5096 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_the_scourgehold ####################
+############## c_scourge - d_scourgehead ##############
+5335 = {
+	8313.1.1 = {
+		religion = mother_orphan
+		culture = greenblood
+	}
+}
+#################### b_flatwater ####################
+############## c_flatwater - d_scourgehead ##############
+5317 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_ghaston_grey ####################
+############## b_ghaston_grey - d_scourgehead ##############
+5472 = {
+	8313.1.1 = {
+		religion = fots_sands
+		culture = salt_dornish
+	}
+}
+#d_red_dunes
+5102 = {
+	8313.1.1 = {
+		religion = fots_sands
+		culture = salt_dornish
+	}
+}
+#################### b_dustpalace ####################
+############## b_the_barrens - d_red_dunes ##############
+5130 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_blindwatch ####################
+############## b_the_scablands - d_red_dunes ##############
+5125 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#################### b_overwatch ####################
+############## b_red_waste - d_red_dunes ##############
+5120 = {
+	8313.1.1 = {
+		religion = fots_sands
+		culture = salt_dornish
+	}
+}
+#################### b_brittlebush ####################
+############## b_brittlebush - d_red_dunes ##############
+5114 = {
+	8313.1.1 = {
+		religion = mother_orphan
+		culture = greenblood
+	}
+}
+#################### b_old_glory ####################
+############## b_killburne - d_red_dunes ##############
+5108 = {
+	8313.1.1 = {
+		religion = mother_orphan
+		culture = greenblood
+	}
+}
+#d_brimstone
+#c_hellholt
+5135 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_sulphur_flats
+5141 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_jackalrun
+5147 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_brimstone
+5153 = {
+	8313.1.1 = {
+		religion = fots_sands
+		culture = salt_dornish
+	}
+}
+#c_steamfall
+5159 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_willburn
+5177 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_bloodbridge
+5171 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_burning_dunes
+5165 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_yronwood
+#c_ironwood
+5303 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_wayguard
+5341 = {
+	8313.1.1 = {
+		religion = fots_sands
+		culture = salt_dornish
+	}
+}
+#c_royalmarch
+5329 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_great_dunes
+5323 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_blood_gulch
+5346 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_greenbelt
+5311 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_oldwell
+#c_first_well
+5183 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_the_dustbowl
+5199 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_pronghorn
+5189 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_drywell
+5194 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_shady_sands
+5205 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_sandstone
+#c_sandstone
+5211 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_stained_sands
+5217 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_white_dunes
+5222 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_arnight
+5251 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_sandhorn
+5245 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_barbmane
+5239 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_dreadsands
+5233 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#c_stinging_sands
+5227 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
+#d_the_princes_pass
+#c_sthorntree
+5373 = {
+	8313.1.1 = {
+		religion = fots_sands
+	}
+}
 ###
 
 #k_the_stormlands
-	#d_estermont_isles
-		#c_estermont
-		4631 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_pikerock
-		4639 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-	#d_greatstock
-		#c_poddingfield
-		4803 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		#c_oldfield
-		4829 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-	#d_nightsong
-		#c_nightsong
-		4720 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-	#d_dark_harrow
-		#c_harrowfield
-		4544 = {
-			8330.1.1 = {
-				religion = rhllor_fots
-			}
-		}
-		
+#d_estermont_isles
+#c_estermont
+4631 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_pikerock
+4639 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#d_greatstock
+#c_poddingfield
+4803 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#c_oldfield
+4829 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#d_nightsong
+#c_nightsong
+4720 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
+#d_dark_harrow
+#c_harrowfield
+4544 = {
+	8330.1.1 = {
+		religion = rhllor_fots
+	}
+}
+
 ####
 
 

@@ -5,7 +5,7 @@
 	decision_group_type = adventurer_minor
 
 	ai_will_do = {
-        base = 100
+		base = 100
 	}
 
 	cooldown = { years = 1 }
@@ -33,7 +33,7 @@ res_dany_decision = {
 	decision_group_type = religion
 
 	ai_will_do = {
-        base = 0
+		base = 0
 	}
 
 	is_shown = {
@@ -223,7 +223,7 @@ leave_confederation_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
 	}
-	
+
 	desc = leave_confederation_decision_desc
 	selection_tooltip = leave_confederation_decision_tooltip
 
@@ -249,7 +249,7 @@ leave_confederation_decision = {
 		}
 		root.confederation = {
 			disband_confederation = yes
-	  	}
+		}
 
 		save_scope_as = leaver
 		trigger_event = {

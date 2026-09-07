@@ -15,8 +15,8 @@ tfw_on_game_start = {
 			value = yes
 		}
 
-		if = { 
-			limit = { 
+		if = {
+			limit = {
 				current_year > 8301
 			}
 			title:c_wilderness.holder = {
@@ -28,14 +28,14 @@ tfw_on_game_start = {
 			}
 		}
 
-		if = { 
-			limit = { 
+		if = {
+			limit = {
 				current_year = 8303
 			}
 			character:Stark_7 = {
 				house = { set_house_head = character:Stark_7 }
 			}
-			
+
 			# Stark_7 decides marriage for Stark_Dummy_8 & Hardyng_5
 			if = {
 				limit = {
@@ -46,20 +46,20 @@ tfw_on_game_start = {
 					trigger_event = { id = atfw_marriage_events.0005 days = 2 }
 				}
 			}
-			character:Lannister_7 = { 
+			character:Lannister_7 = {
 				release_from_prison = yes
 			}
-			character:Knight_Kings_Landing_3 = { 
-				release_from_prison = yes 
+			character:Knight_Kings_Landing_3 = {
+				release_from_prison = yes
 			}
-			character:Swann_6 = { 
-				release_from_prison = yes 
+			character:Swann_6 = {
+				release_from_prison = yes
 			}
-			character:Blount_3 = { 
-				release_from_prison = yes 
+			character:Blount_3 = {
+				release_from_prison = yes
 			}
-			character:Kettleblack_3 = { 
-				release_from_prison = yes 
+			character:Kettleblack_3 = {
+				release_from_prison = yes
 			}
 			title:k_dragonstone.holder = {
 				trigger_event = { id = agot_tfw_five_queens.0001 days = 0 }
@@ -75,7 +75,7 @@ tfw_on_game_start = {
 			}
 		}
 
-		if = { 
+		if = {
 			limit = {
 				current_year > 8304
 			}
@@ -180,9 +180,9 @@ tfw_on_game_start = {
 				}
 			}
 			title:e_the_north.holder ?= {
-				 agot_create_artifact_crown_of_winter_historical_2_effect = { OWNER = this } 
+				agot_create_artifact_crown_of_winter_historical_2_effect = { OWNER = this }
 			}
-	
+
 			create_title_and_vassal_change = {
 				type = returned
 				save_scope_as = change
@@ -198,7 +198,7 @@ tfw_on_game_start = {
 						change_title_holder = {
 							holder = title:c_kings_landing.holder
 							change = scope:change
-						}	
+						}
 					}
 				}
 				every_held_title = {
@@ -260,11 +260,11 @@ tfw_on_game_start = {
 			}
 		}
 
-		if = { 
-			limit = { 
+		if = {
+			limit = {
 				current_year = 8303
 			}
-			title:k_dragonstone.holder ?= { 
+			title:k_dragonstone.holder ?= {
 				create_confederation = {
 					name = e_targaryen_host_title
 				}
@@ -289,8 +289,8 @@ tfw_on_game_start = {
 					set_coa = e_targaryen_host_title
 				}
 			}
-		
-			title:e_the_north.holder ?= { 
+
+			title:e_the_north.holder ?= {
 				create_confederation = {
 					name = e_the_north
 				}
@@ -311,25 +311,25 @@ tfw_on_game_start = {
 			}
 		}
 
-		if = { 
-			limit = { 
+		if = {
+			limit = {
 				current_year = 8305
 			}
-			character:Payne_16 = { 
+			character:Payne_16 = {
 				release_from_prison = yes
 			}
-			character:Tarth_6 = { 
+			character:Tarth_6 = {
 				release_from_prison = yes
 			}
 		}
 
-		if = { 
-			limit = { 
-				current_year > 8365 
+		if = {
+			limit = {
+				current_year > 8365
 				current_year < 8367
 			}
 
-			title:e_the_westerlands.holder ?= { 
+			title:e_the_westerlands.holder ?= {
 				create_confederation = {
 					name = e_the_western_alliance
 				}
@@ -362,13 +362,13 @@ tfw_on_game_start = {
 			}
 
 			title:k_yronwood.holder = {
-			start_tributary = { contract_group = tributary_subjugated suzerain = title:e_dorne.holder }
-			tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
-			add_truce_both_ways = {
-				character = title:e_dorne.holder
-				years = 5
-				name = TRUCE_TRIBUTARY
-			}
+				start_tributary = { contract_group = tributary_subjugated suzerain = title:e_dorne.holder }
+				tributary_contract_set_obligation_level = { type = suzerain_war_participation_guarantee level = 1 }
+				add_truce_both_ways = {
+					character = title:e_dorne.holder
+					years = 5
+					name = TRUCE_TRIBUTARY
+				}
 			}
 			title:d_torrentine.holder = {
 				start_tributary = { contract_group = tributary_subjugated suzerain = title:h_the_iron_throne.holder }
@@ -485,7 +485,7 @@ tfw_on_game_start = {
 
 tfw_north_holding_cost = {
 	effect = {
-		if = { 
+		if = {
 			limit = { current_year < 8305 }
 			every_county_in_region = {
 				region = world_westeros_the_north

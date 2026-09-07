@@ -70,7 +70,7 @@
  launch_faegon_invasion_decision_desc: "The time has come. Westeros awaits its true king. I will launch my campaign for the Iron Throne."
  launch_faegon_invasion_decision_tooltip: "Launch the invasion of Westeros before the appointed time."
 
-# A TIME FOR WOLVES FIX MARRIAGE EVENT
+ # A TIME FOR WOLVES FIX MARRIAGE EVENT
 
  #Brand - Meera Reed
  atfw_marriage_events.0001.t: "Old Friendships"
@@ -78,31 +78,31 @@
  atfw_marriage_events.0001.a: "[Reed_2_scope.GetUIName] will make a suitable queen. That is all that matters."
  atfw_marriage_events.0001.b: "It is not necessary. Not yet."
 
-# Sansa - Harry the Heir 304
+ # Sansa - Harry the Heir 304
  atfw_marriage_events.0005.t: "The Vale's Demands"
  atfw_marriage_events.0005.desc: "The Lords Declarant of the Vale insist that [Stark_Dummy_8_scope.GetUIName] should wed one of their own in return for the swords and spears they have pledged.\n\nYoung [Hardyng_5_scope.GetUIName], heir to [Arryn_8_scope.GetShortUINameNoTooltip], is the match they put forward. Handsome, noble, and well-liked by the Vale lords, he would strengthen our ties to the Eyrie considerably."
  atfw_marriage_events.0005.a: "An alliance with the Vale may be worth the price."
  atfw_marriage_events.0005.b: "[Stark_Dummy_8_scope.GetUIName] will choose her own fate."
 
-# Sansa - Harry the Heir 305
+ # Sansa - Harry the Heir 305
  atfw_marriage_events.0002.t: "The Vale's Demands"
  atfw_marriage_events.0002.desc: "The Lords Declarant of the Vale press me to marry one of their own as recompense for the helped they have given.\n\n[Hardyng_5_scope.GetUIName], heir to my cousin [Arryn_8_scope.GetShortUINameNoTooltip], is young, handsome, and favored by the Vale lords. A marriage to him would bind the Vale and the North together."
  atfw_marriage_events.0002.a: "I'll wed him. But [Hardyng_5_scope.GetFirstNameNoTooltip] will join my house."
  atfw_marriage_events.0002.b: "I will not be bartered away."
 
-#Arya - Gendry
+ #Arya - Gendry
  atfw_marriage_events.0003.t: "A Familiar Face"
  atfw_marriage_events.0003.desc: "So much has changed since those days on the kingsroad. We were only children then, running from war, hunger, and death itself.\n\nNow [Baratheon_9_scope.GetUIName] stands before me no longer as a blacksmith's apprentice, but as a lord in his own right. Yet when I look at him, part of me still remembers the boy from Flea Bottom."
  atfw_marriage_events.0003.a: "[Baratheon_9_scope.GetUIName] would make a suitable husband."
  atfw_marriage_events.0003.b: "My path lies elsewhere."
 
-#Jon Snow - Princess Val
+ #Jon Snow - Princess Val
  atfw_marriage_events.0004.t: "The Pride of the Free Folk"
  atfw_marriage_events.0004.desc: "King Stannis once offered to legitimize me at the Wall as a true Stark of Winterfell and wed me to Princess Val of the Free Folk, to strengthen an alliance with her people.\n\nHe is dead now, and much has happened since then, but there was wisdom in his words. \n\nI now watch over the frozen lands of the North, and Princess Val has certain charms of her own."
  atfw_marriage_events.0004.a: "[Rayder_hh_3_scope.GetUIName] will make a suitable wife."
  atfw_marriage_events.0004.b: "It is not necessary. Not yet."
 
-#Five Queens Armies
+ #Five Queens Armies
  agot_tfw_five_queens_targ_army_name: "The Daenerys Host"
  agot_tfw_five_queens_throne_army_name: "The Lannister Retinues"
  agot_tfw_five_queens_ironborn_army_name: "The Ironborn Reavers"

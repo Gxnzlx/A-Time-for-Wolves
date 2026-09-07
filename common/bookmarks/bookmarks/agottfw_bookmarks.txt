@@ -11,7 +11,7 @@
 		type = female
 		title = h_the_iron_throne
 		religion = fots_seven
- 		culture = westerman_main
+		culture = westerman_main
 		birth = 8266.1.1
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
@@ -20,7 +20,7 @@
 		position = { 680 320 }
 
 		animation = personality_callous
- 	}
+	}
 
 	character = {
 		name = "bookmark_303_daenerys_targaryen"
@@ -28,7 +28,7 @@
 		type = female
 		title = k_dragonstone
 		religion = fots_seven
- 		culture = high_valyrian
+		culture = high_valyrian
 		birth = 8284.5.10
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
@@ -37,7 +37,7 @@
 		position = { 1000 160 }
 
 		animation = personality_bold
- 	}
+	}
 
 	character = {
 		name = "bookmark_303_asha_greyjoy"
@@ -45,7 +45,7 @@
 		type = female
 		title = d_laamp_blackwind
 		religion = drowned_god
- 		culture = ironborn
+		culture = ironborn
 		birth = 8276.1.1
 		government = pirate_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
@@ -53,8 +53,8 @@
 		dynasty_splendor_level = 3
 		position = { 950 420 }
 
-		animation = marshall                           
- 	}
+		animation = marshall
+	}
 
 	character = {
 		name = "bookmark_303_olenna_redwyne"
@@ -62,7 +62,7 @@
 		type = female
 		title = e_the_reach
 		religion = fots_seven
- 		culture = reachman
+		culture = reachman
 		birth = 8228.1.1
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
@@ -71,7 +71,7 @@
 		position = { 300 560 }
 
 		animation = personality_rational
- 	}
+	}
 
 	character = {
 		name = "bookmark_303_ellaria_sand"
@@ -79,7 +79,7 @@
 		type = female
 		title = e_dorne
 		religion = fots_seven
- 		culture = sand_dornish
+		culture = sand_dornish
 		birth = 8267.1.1
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
@@ -88,7 +88,7 @@
 		position = { 800 750 }
 
 		animation = personality_dishonorable
- 	}
+	}
 }
 
 agot_8305 = {
@@ -112,10 +112,10 @@ agot_8305 = {
 		history_id = Stark_Dummy_10
 		position = { 600 800 }
 
-		animation = zealous                           
- 	}
+		animation = zealous
+	}
 
-	 character = {
+	character = {
 		name = "bookmark_305_sansa_stark"
 		dynasty = dynn_Stark
 		type = female
@@ -127,12 +127,12 @@ agot_8305 = {
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Stark_Dummy_8
 		dynasty_splendor_level = 5
- 		position = { 480 370 }
+		position = { 480 370 }
 
 		animation = personality_rational
- 	}
+	}
 
-	 character = {
+	character = {
 		name = "bookmark_305_jon_snow"
 		dynasty = dynn_Stark
 		type = male
@@ -144,12 +144,12 @@ agot_8305 = {
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = Stark_7
 		dynasty_splendor_level = 5
- 		position = { 900 140 }
+		position = { 900 140 }
 
-		animation = shame                           
- 	}
+		animation = shame
+	}
 
-	 character = {
+	character = {
 		name = "bookmark_305_arya_stark"
 		dynasty = dynn_Stark
 		type = female
@@ -164,7 +164,7 @@ agot_8305 = {
 		position = { 1300 750 }
 
 		animation = personality_dishonorable
- 	}
+	}
 
 }
 
@@ -190,8 +190,8 @@ agot_8305_2 = {
 		position = { 1100 700 }
 
 
-		animation = marshal                           
- 	}
+		animation = marshal
+	}
 
 	character = {
 		name = "bookmark_305_monterys_velaryon"
@@ -209,7 +209,7 @@ agot_8305_2 = {
 
 
 		animation = personality_cynical
- 	}
+	}
 
 	character = {
 		name = "bookmark_305_davos_seaworth"
@@ -227,7 +227,7 @@ agot_8305_2 = {
 
 
 		animation = personality_rational
- 	}
+	}
 
 	character = {
 		name = "bookmark_305_elyas_scales"
@@ -244,8 +244,8 @@ agot_8305_2 = {
 		position = { 1200 200 }
 
 
-		animation = personality_callous                            
- 	}
+		animation = personality_callous
+	}
 
 	character = {
 		name = "bookmark_305_gendry_baratheon"
@@ -261,8 +261,8 @@ agot_8305_2 = {
 		history_id = Baratheon_9
 		position = { 800 570 }
 
-		animation = marshal                           
- 	}
+		animation = marshal
+	}
 
 	character = {
 		name = "bookmark_305_brandon_stark"
@@ -278,8 +278,8 @@ agot_8305_2 = {
 		history_id = Stark_Dummy_10
 		position = { 500 440 }
 
-		animation = zealous                           
- 	}
+		animation = zealous
+	}
 
 	character = {
 		name = "bookmark_305_asha_greyjoy"
@@ -296,7 +296,7 @@ agot_8305_2 = {
 		position = { 320 160 }
 
 		animation = personality_bold
- 	}
+	}
 
 	character = {
 		name = "bookmark_305_tyrion_lannister"
@@ -312,8 +312,8 @@ agot_8305_2 = {
 		history_id = Lannister_8
 		position = { 200 380 }
 
-		animation = steward                           
- 	}
+		animation = steward
+	}
 
 	character = {
 		name = "bookmark_305_edmure_tully"
@@ -329,8 +329,8 @@ agot_8305_2 = {
 		history_id = Tully_7
 		position = { 570 190 }
 
-		animation = disapproval                           
- 	}
+		animation = disapproval
+	}
 
 	character = {
 		name = "bookmark_305_robert_arryn"
@@ -346,8 +346,8 @@ agot_8305_2 = {
 		history_id = Arryn_8
 		position = { 870 140 }
 
-		animation = boredom                           
- 	}
+		animation = boredom
+	}
 
 	character = {
 		name = "bookmark_305_bronn_blackwater"
@@ -364,7 +364,7 @@ agot_8305_2 = {
 		position = { 350 650 }
 
 		animation = personality_greedy
- 	}
+	}
 }
 
 # agot_8310 = {
@@ -389,7 +389,7 @@ agot_8305_2 = {
 # 		position = { 1100 120 }
 
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 
 # 	character = {
@@ -406,7 +406,7 @@ agot_8305_2 = {
 # 		history_id = Martell_20
 # 		position = { 1100 700 }
 
-# 		animation = disapproval                           
+# 		animation = disapproval
 #  	}
 
 # 	character = {
@@ -423,7 +423,7 @@ agot_8305_2 = {
 # 		history_id = Baratheon_9
 # 		position = { 1000 400}
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 
 # 	character = {
@@ -438,9 +438,9 @@ agot_8305_2 = {
 # 		religion = fots_seven
 # 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 # 		history_id = Tarly_3
-# 		position = { 680 320 }	
+# 		position = { 680 320 }
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 
 # 	character = {
@@ -457,7 +457,7 @@ agot_8305_2 = {
 # 		history_id = Rowan_1
 # 		position = { 450 130 }
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 
 # 	character = {
@@ -474,7 +474,7 @@ agot_8305_2 = {
 # 		history_id = Hightower_5
 # 		position = { 100 650 }
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 
 # 	character = {
@@ -492,7 +492,7 @@ agot_8305_2 = {
 # 		position = { 420 445 }
 
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 
 # 	character = {
@@ -509,7 +509,7 @@ agot_8305_2 = {
 # 		history_id = Florent_7
 # 		position = { 80 370 }
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 
 # 	character = {
@@ -526,7 +526,7 @@ agot_8305_2 = {
 # 		history_id = Yronwood_2
 # 		position = { 650 670 }
 
-# 		animation = marshal                           
+# 		animation = marshal
 #  	}
 # }
 
@@ -551,6 +551,6 @@ agot_8305_2 = {
 # 		dynasty_splendor_level = 5
 # 		position = { 280 370 }
 
-# 		animation = idle                           
+# 		animation = idle
 #  	}
 # }

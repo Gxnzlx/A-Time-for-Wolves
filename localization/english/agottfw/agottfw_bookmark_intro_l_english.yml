@@ -1,0 +1,23 @@
+﻿l_english:
+ atfw_bookmark_intro.supporters.t:0 "The Dragon's Return"
+ atfw_bookmark_intro.enemies.t:0 "The Mad King's Daughter"
+
+ atfw_bookmark_intro.0001.desc:0 "After a lifetime in exile, you have finally returned to Westeros. Dragonstone, the ancient seat of your forebears, is once more in Targaryen hands, and the three-headed dragon flies above its battlements. Dorne and the Reach have rallied to your cause, while your dragons cast their shadows over the shores of the realm.\n\nIn King's Landing, Cersei Lannister clings to the Iron Throne you claim by blood. The great lords watch and wait, but the hour of choosing draws near.\n\n#bold You have returned to Westeros to claim the Seven Kingdoms.#!"
+ atfw_bookmark_intro.0001.a:0 "I will take what is mine with fire and blood."
+
+ atfw_bookmark_intro.0002.desc:0 "The dragon has returned to Westeros, and with her comes the chance to settle the debts owed to your house. Daenerys Targaryen has taken Dragonstone and raised her banner against Cersei Lannister, the woman responsible for the ruin of House Tyrell and the deaths of so many of your kin.\n\nThe Reach still commands men, gold, and harvests, and now its strength will march beside the dragon queen. The war for the Iron Throne has begun anew.\n\n#bold This time, the lion will learn the sting of thorns.#!"
+ atfw_bookmark_intro.0002.a:0 "Let Cersei remember what she did."
+
+ atfw_bookmark_intro.0003.desc:0 "Daenerys Targaryen has crossed the Narrow Sea and established her power on Dragonstone. For Dorne, her return brings more than another claimant to the Iron Throne: it brings a chance to avenge the dead and settle old accounts with House Lannister.\n\nThe spears of Dorne join the dragon. Cersei still sits the Iron Throne, but her rule will now be tested by fire, blood, and ancient debts.\n\n#bold Dorne has not forgotten.#!"
+ atfw_bookmark_intro.0003.a:0 "For Oberyn. For Dorne."
+
+ atfw_bookmark_intro.0004.desc:0 "Daenerys Targaryen has returned to Westeros, and her enemies are already preparing for war. You have debts of your own to settle. Euron stole the Iron Islands from you, and Cersei Lannister has found in him an ally willing to place his ships and cruelty at her service.\n\nDaenerys's cause offers a chance to reclaim what is yours and destroy those who stand in your path. As dragon challenges lion, the krakens will sail once more.\n\n#bold What is dead may never die.#!"
+ atfw_bookmark_intro.0004.a:0 "I will take back the Iron Islands."
+
+ atfw_bookmark_intro.0005.desc:0 "The Mad King's daughter has returned. Daenerys Targaryen has crossed the Narrow Sea, seized Dragonstone, and brought dragons, foreign armies, and allies determined to tear the crown from your head. Dorne and the Reach have already raised their banners in her name.\n\nBut you sit the Iron Throne. King's Landing is yours, and House Lannister did not survive this long by bowing to its enemies. If Aerys's daughter wants a crown, she will have to come and take it.\n\n#bold The dragon has returned, and she is coming for your throne.#!"
+ atfw_bookmark_intro.0005.a:0 "Let her come."
+
+ atfw_bookmark_intro.jon.t:0 "The Dragon's Return"
+ atfw_bookmark_intro.0006.desc:0 "While the South once again fights over the Iron Throne, word arrives that Daenerys Targaryen has landed on Dragonstone with three dragons and an army at her back. Cersei Lannister prepares to fight her, and the great houses once more choose their sides.\n\nNone of it changes what you saw beyond the Wall. The dead are marching, and no crown will matter if they cross into the South. Beneath Dragonstone lies the dragonglass you need, and the queen who holds it commands the only creatures capable of turning whole armies to ash.\n\n#bold Perhaps the time has come to look south.#!"
+ atfw_bookmark_intro.0006.a:0 "The South can fight its own wars."
+ atfw_bookmark_intro.0006.b:0 "I must meet this dragon queen."

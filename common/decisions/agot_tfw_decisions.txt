@@ -221,48 +221,6 @@ set_capital_kingslanding_decision = {
 
 # }
 
-leave_confederation_decision = {
-	ai_check_interval = 0
-	picture = {
-		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
-	}
-
-	desc = leave_confederation_decision_desc
-	selection_tooltip = leave_confederation_decision_tooltip
-
-	is_shown = {
-		is_adult = yes
-	}
-
-	is_valid = {
-		is_confederation_member = yes
-	}
-
-	effect = {
-		root.confederation = {
-			save_scope_as = confederation
-			every_confederation_member = {
-				limit = {
-					NOT = {
-						this = root
-					}
-				}
-				add_to_list = confederation_members
-			}
-		}
-		if = {
-			limit = { exists = root.confederation }
-			root.confederation = { disband_confederation = yes }
-		}
-
-		save_scope_as = leaver
-		trigger_event = {
-			#id = mpo_decisions_events.0002
-			#days = 1
-		}
-	}
-}
-
 launch_faegon_invasion_decision = {
 	ai_check_interval = 0
 	picture = { reference = "gfx/interface/illustrations/event_scenes/agot_iron_throne.dds" }

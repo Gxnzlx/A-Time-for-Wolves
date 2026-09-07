@@ -15,18 +15,6 @@ agot_tfw_five_queens.0001 = {
 			location = capital_province
 		}
 
-		start_war = {
-			casus_belli = claim_cb
-			target = title:h_the_iron_throne.holder
-			claimant = root
-			target_title = title:h_the_iron_throne
-			target_title = title:e_the_crownlands
-			target_title = title:k_the_blackwater
-			target_title = title:d_kings_landing
-			target_title = title:c_kings_landing
-			target_title = title:e_the_stormlands
-		}
-
 		character:Targaryen_9 = {
 			add_character_flag = targ_host_invasion
 			trigger_event = {
@@ -46,6 +34,10 @@ agot_tfw_five_queens.0001 = {
 			}
 			add_character_flag = { flag = mw_init_event_blocker days = 2 }
 			every_character_war = {
+				limit = {
+					using_cb = agot_rebellion_war
+					primary_attacker = character:Targaryen_9
+				}
 				add_defender = character:Lannister_24
 				add_defender = character:Swyft_1
 				add_defender = character:Bracken_3
@@ -93,6 +85,7 @@ agot_tfw_five_queens.0003 = {
 		character:Targaryen_9 = {
 			every_character_war = {
 				limit = {
+					using_cb = agot_rebellion_war
 					primary_defender = title:h_the_iron_throne.holder
 				}
 				add_attacker = root

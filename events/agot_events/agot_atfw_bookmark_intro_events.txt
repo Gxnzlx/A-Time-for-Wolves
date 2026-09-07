@@ -1,0 +1,150 @@
+﻿namespace = atfw_bookmark_intro
+
+# 8303 — Scenario exposition events.
+# Structure intentionally mirrors agot_scenario_roberts_rebellion_exp_events.txt:
+# one fullscreen war event for each featured bookmark actor.
+
+# Daenerys Targaryen
+atfw_bookmark_intro.0001 = {
+	type = character_event
+	window = fullscreen_event
+	title = atfw_bookmark_intro.supporters.t
+	desc = atfw_bookmark_intro.0001.desc
+
+	override_background = {
+		reference = agot_fullscreen_targaryen
+	}
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_war.dds"
+	}
+	theme = war
+
+	immediate = {
+	}
+
+	option = {
+		name = atfw_bookmark_intro.0001.a
+	}
+}
+
+# Olenna Tyrell
+atfw_bookmark_intro.0002 = {
+	type = character_event
+	window = fullscreen_event
+	title = atfw_bookmark_intro.supporters.t
+	desc = atfw_bookmark_intro.0002.desc
+
+	override_background = {
+		reference = agot_fullscreen_targaryen
+	}
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_war.dds"
+	}
+	theme = war
+
+	immediate = {
+	}
+
+	option = {
+		name = atfw_bookmark_intro.0002.a
+	}
+}
+
+# Ellaria Sand
+atfw_bookmark_intro.0003 = {
+	type = character_event
+	window = fullscreen_event
+	title = atfw_bookmark_intro.supporters.t
+	desc = atfw_bookmark_intro.0003.desc
+
+	override_background = {
+		reference = agot_fullscreen_targaryen
+	}
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_war.dds"
+	}
+	theme = war
+
+	immediate = {
+	}
+
+	option = {
+		name = atfw_bookmark_intro.0003.a
+	}
+}
+
+# Asha Greyjoy
+atfw_bookmark_intro.0004 = {
+	type = character_event
+	window = fullscreen_event
+	title = atfw_bookmark_intro.supporters.t
+	desc = atfw_bookmark_intro.0004.desc
+
+	override_background = {
+		reference = agot_fullscreen_targaryen
+	}
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_war.dds"
+	}
+	theme = war
+
+	immediate = {
+	}
+
+	option = {
+		name = atfw_bookmark_intro.0004.a
+	}
+}
+
+# Cersei Lannister
+atfw_bookmark_intro.0005 = {
+	type = character_event
+	window = fullscreen_event
+	title = atfw_bookmark_intro.enemies.t
+	desc = atfw_bookmark_intro.0005.desc
+
+	override_background = {
+		reference = agot_fullscreen_targaryen
+	}
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_war.dds"
+	}
+	theme = war
+
+	immediate = {
+	}
+
+	option = {
+		name = atfw_bookmark_intro.0005.a
+	}
+}
+
+# Jon Snow
+atfw_bookmark_intro.0006 = {
+	type = character_event
+	window = fullscreen_event
+	title = atfw_bookmark_intro.jon.t
+	desc = atfw_bookmark_intro.0006.desc
+
+	override_background = {
+		reference = agot_fullscreen_targaryen
+	}
+	override_icon = {
+		reference = "gfx/interface/icons/event_types/type_war.dds"
+	}
+	theme = war
+
+	immediate = {
+	}
+
+	option = {
+		name = atfw_bookmark_intro.0006.a
+	}
+
+	option = {
+		name = atfw_bookmark_intro.0006.b
+
+		# This is now the sole entry point into Jon and Daenerys's meeting chain.
+		trigger_event = { id = atfw_jon_daenerys.0001 days = 3 }
+	}
+}

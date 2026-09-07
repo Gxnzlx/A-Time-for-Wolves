@@ -15,12 +15,21 @@ tfw_on_game_start = {
 			value = yes
 		}
 
+		# First bookmark Mega War setup.
+		# Exposition is intentionally dispatched from on_game_start_after_lobby,
+		# mirroring CK3AGOT Vanilla's Robert's Rebellion exposition timing.
+		if = {
+			limit = {
+				game_start_date = 8303.12.31
+			}
+			atfw_8303_mega_war_setup = yes
+		}
+
 		if = {
 			limit = {
 				current_year > 8301
 			}
 			title:c_wilderness.holder = {
-				trigger_event = { id = agot_tfw_setup.0005 }
 				struggle:btw_struggle = { end_struggle = struggle_btw_ending_conciliation_decision }
 			}
 			title:h_the_iron_throne.holder = {
@@ -74,27 +83,6 @@ tfw_on_game_start = {
 				trigger_event = { id = agot_tfw_five_queens.0003 days = 1 }
 			}
 
-			# Jon Snow and Daenerys Targaryen meeting / betrothal chain.
-			# Exclusive to the 8303 bookmark timeline; both begin with refusing_marriage.
-			if = {
-				limit = {
-					character:Stark_7 = {
-						is_alive = yes
-						is_married = no
-						is_betrothed = no
-						has_trait = refusing_marriage
-					}
-					character:Targaryen_9 = {
-						is_alive = yes
-						is_married = no
-						is_betrothed = no
-						has_trait = refusing_marriage
-					}
-				}
-				character:Stark_7 = {
-					trigger_event = { id = atfw_jon_daenerys.0001 days = 3 }
-				}
-			}
 		}
 
 		# ATFW realm setup events that were previously orphaned.
@@ -228,8 +216,6 @@ tfw_on_game_start = {
 
 			title:c_wilderness.holder = {
 
-				trigger_event = { id = agot_tfw_setup.0005 }
-
 				every_vassal_or_below = {
 					every_held_title = {
 						change_title_holder = {
@@ -300,57 +286,6 @@ tfw_on_game_start = {
 
 		if = {
 			limit = {
-				current_year = 8303
-			}
-			title:k_dragonstone.holder ?= {
-				create_confederation = {
-					name = e_targaryen_host_title
-				}
-				scope:new_confederation = {
-					set_variable = agot_confederation_is_targaryen_host
-					set_global_variable = {
-						name = the_targaryen_host
-						value = scope:new_confederation
-					}
-					if = {
-						limit = {
-							exists = title:e_the_reach.holder
-						}
-						add_confederation_member = title:e_the_reach.holder
-					}
-					if = {
-						limit = {
-							exists = title:e_dorne.holder
-						}
-						add_confederation_member = title:e_dorne.holder
-					}
-					set_coa = e_targaryen_host_title
-				}
-			}
-
-			title:e_the_north.holder ?= {
-				create_confederation = {
-					name = e_the_north
-				}
-				scope:new_confederation = {
-					set_variable = agot_confederation_is_north
-					set_global_variable = {
-						name = the_north
-						value = scope:new_confederation
-					}
-					if = {
-						limit = {
-							exists = title:e_the_vale.holder
-						}
-						add_confederation_member = title:e_the_vale.holder
-					}
-					set_coa = e_the_north
-				}
-			}
-		}
-
-		if = {
-			limit = {
 				current_year = 8305
 			}
 			character:Payne_16 = {
@@ -365,38 +300,6 @@ tfw_on_game_start = {
 			limit = {
 				current_year > 8365
 				current_year < 8367
-			}
-
-			title:e_the_westerlands.holder ?= {
-				create_confederation = {
-					name = e_the_western_alliance
-				}
-				scope:new_confederation = {
-					set_variable = agot_confederation_is_the_westerlands
-					set_global_variable = {
-						name = the_westerlands_confederation
-						value = scope:new_confederation
-					}
-					if = {
-						limit = {
-							exists = title:k_the_northmarch.holder
-						}
-						add_confederation_member = title:k_the_northmarch.holder
-					}
-					if = {
-						limit = {
-							exists = title:k_oldtown.holder
-						}
-						add_confederation_member = title:k_oldtown.holder
-					}
-					if = {
-						limit = {
-							exists = title:d_the_westmarch.holder
-						}
-						add_confederation_member = title:d_the_westmarch.holder
-					}
-					set_coa = e_the_westerlands
-				}
 			}
 
 			title:k_yronwood.holder = {
@@ -517,6 +420,39 @@ tfw_on_game_start = {
 			}
 			add_character_flag = landed_coa_personalized
 			add_character_flag = { flag = claimed_personal_banner }
+		}
+	}
+}
+
+# Called after the lobby, when player character scopes are available.
+# This mirrors the exposition timing used by CK3AGOT Vanilla for Robert's Rebellion.
+on_game_start_after_lobby = {
+	on_actions = {
+		tfw_on_game_start_after_lobby
+	}
+}
+
+tfw_on_game_start_after_lobby = {
+	effect = {
+		if = {
+			limit = {
+				game_start_date = 8303.12.31
+			}
+			every_player = {
+				# The first bookmark has five featured actors.
+				# Each receives a scenario-specific fullscreen war exposition,
+				# following Robert's Rebellion's per-actor event structure.
+				switch = {
+					trigger = this
+
+					character:Targaryen_9 = { trigger_event = atfw_bookmark_intro.0001 }
+					character:Redwyne_2 = { trigger_event = atfw_bookmark_intro.0002 }
+					character:Uller_6 = { trigger_event = atfw_bookmark_intro.0003 }
+					character:Greyjoy_13 = { trigger_event = atfw_bookmark_intro.0004 }
+					character:Lannister_6 = { trigger_event = atfw_bookmark_intro.0005 }
+					character:Stark_7 = { trigger_event = atfw_bookmark_intro.0006 }
+				}
+			}
 		}
 	}
 }

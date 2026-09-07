@@ -462,16 +462,3 @@ agot_tfw_setup.0004 = {
 	}
 }
 
-agot_tfw_setup.0005 = {
-	type = character_event
-	hidden = yes
-
-	immediate = {
-		if = {
-			limit = { exists = root.confederation }
-			root.confederation = {
-				disband_confederation = yes
-			}
-		}
-	}
-}

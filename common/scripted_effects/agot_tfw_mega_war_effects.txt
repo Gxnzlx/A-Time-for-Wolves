@@ -1,0 +1,96 @@
+﻿### ATFW 8303 historical Mega War setup
+
+atfw_8303_mega_war_setup = {
+	# Prevent AGOT's generic on_war_started Mega War initializer from racing the historical setup.
+	character:Targaryen_9 = {
+		add_character_flag = { flag = mw_init_event_blocker days = 2 }
+	}
+	title:h_the_iron_throne.holder = {
+		add_character_flag = { flag = mw_init_event_blocker days = 2 }
+	}
+
+	# Daenerys begins the rebellion for the Iron Throne.
+	character:Targaryen_9 = {
+		start_war = {
+			cb = agot_rebellion_war
+			target = title:h_the_iron_throne.holder
+			target_title = title:h_the_iron_throne
+			target_title = title:e_the_crownlands
+			target_title = title:k_the_blackwater
+			target_title = title:d_kings_landing
+			target_title = title:c_kings_landing
+		}
+	}
+
+	# Establish the historical Mega War stories, mirroring Robert's Rebellion setup.
+	title:h_the_iron_throne.holder = { save_scope_as = historical_setup }
+
+	hidden_effect = {
+		agot_mw_scenario_rebel_setup = {
+			SOURCE = flag:mw_external
+			MODE = flag:mw_regular
+			REALM_BREAK_UP = flag:yes
+			REBEL_MAY_VASSALIZE = flag:no
+			HELD_TITLE = title:k_dragonstone
+			CASUS_BELLI = agot_rebellion_war
+			PRE_WAR_LIEGE = character:Targaryen_9
+			MW_TARGET = title:h_the_iron_throne.holder
+		}
+
+		character:Targaryen_9 = { save_scope_as = mw_rebel_leader_daenerys }
+
+		# The Reach and Dorne begin committed to Daenerys.
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:e_the_reach.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
+		}
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:e_dorne.holder
+			STORY_SCOPE = scope:mw_rebel_story
+			LIST = mw_rebel_supporter_list
+			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
+		}
+
+		# Set up the Crown side under Cersei.
+		agot_mw_scenario_crown_setup = {
+			MODE = flag:mw_regular
+			REALM_BREAK_UP = flag:yes
+			HELD_TITLE = title:h_the_iron_throne
+		}
+
+		# Existing Crown vassals begin as loyalists.
+		title:h_the_iron_throne.holder = {
+			every_vassal_or_below = {
+				limit = {
+					primary_title.tier > tier_barony
+					agot_is_high_septon = no
+				}
+				scope:mw_crown_story = {
+					add_to_variable_list = {
+						name = mw_loyalist_list
+						target = prev
+					}
+				}
+			}
+		}
+
+		# The North and the Vale begin neutral.
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:e_the_north.holder
+			STORY_SCOPE = scope:mw_crown_story
+			LIST = mw_neutral_list
+			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
+		}
+		agot_mw_add_character_to_mw_list = {
+			CHARACTER_SCOPE = title:e_the_vale.holder
+			STORY_SCOPE = scope:mw_crown_story
+			LIST = mw_neutral_list
+			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
+		}
+
+		# Populate the shared realm pool and Mega War opinion data.
+		agot_mw_set_opinions_up = { REBEL_STORY_OWNER_SCOPE = scope:mw_rebel_leader_daenerys }
+	}
+}

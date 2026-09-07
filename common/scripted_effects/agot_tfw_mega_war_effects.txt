@@ -1,4 +1,53 @@
-﻿### ATFW 8303 historical Mega War setup
+﻿### Temporarily separate a historical Daenerys supporter for the 8303 Mega War.
+# This mirrors Vanilla Mega War breakup behavior:
+# 1. preserve the actual pre-war direct/top lieges;
+# 2. become temporarily independent;
+# 3. register in the rebel story so realm rebuild can restore vassalage.
+atfw_8303_prepare_rebel_supporter = {
+	$CHARACTER_SCOPE$ ?= {
+		if = {
+			limit = {
+				is_landed = yes
+				is_independent_ruler = no
+			}
+
+			if = {
+				limit = {
+					NOT = { has_variable = agot_pwl_direct }
+				}
+				agot_set_mw_pwl_variables = {
+					SET_SCOPE = this
+					REF_SCOPE = this
+				}
+			}
+
+			agot_mw_become_independent = yes
+		}
+
+		scope:mw_rebel_story ?= {
+			add_to_variable_list = {
+				name = mw_rebel_supporter_list
+				target = prev
+			}
+		}
+
+		every_vassal_or_below = {
+			limit = {
+				highest_held_title_tier > tier_barony
+				agot_is_high_septon = no
+				NOT = { primary_title = title:d_kingsguard }
+			}
+			scope:mw_rebel_story ?= {
+				add_to_variable_list = {
+					name = mw_rebel_supporter_list
+					target = prev
+				}
+			}
+		}
+	}
+}
+
+### ATFW 8303 historical Mega War setup
 
 atfw_8303_mega_war_setup = {
 	# Prevent AGOT's generic on_war_started Mega War initializer from racing the historical setup.
@@ -12,7 +61,7 @@ atfw_8303_mega_war_setup = {
 	# Daenerys begins the rebellion for the Iron Throne.
 	character:Targaryen_9 = {
 		start_war = {
-			cb = agot_rebellion_war
+			cb = atfw_daenerys_conquest_war
 			target = title:h_the_iron_throne.holder
 			target_title = title:h_the_iron_throne
 			target_title = title:e_the_crownlands
@@ -32,12 +81,109 @@ atfw_8303_mega_war_setup = {
 			REALM_BREAK_UP = flag:yes
 			REBEL_MAY_VASSALIZE = flag:no
 			HELD_TITLE = title:k_dragonstone
-			CASUS_BELLI = agot_rebellion_war
+			CASUS_BELLI = atfw_daenerys_conquest_war
 			PRE_WAR_LIEGE = character:Targaryen_9
 			MW_TARGET = title:h_the_iron_throne.holder
 		}
 
+		# The Vanilla scenario helper only maps its stock rebellion CB.
+		# Keep the custom conquest classified identically for Mega War logic/UI.
+		scope:mw_rebel_story = {
+			set_variable = {
+				name = mw_war_cb
+				value = flag:rebellion_war
+			}
+		}
+
 		character:Targaryen_9 = { save_scope_as = mw_rebel_leader_daenerys }
+
+		# Historical minor supporters join Daenerys as temporarily independent
+		# co-belligerents. Their real pre-war lieges are preserved for Vanilla's
+		# Mega War realm rebuild when the conflict ends.
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Mallister_4
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Paege_31
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Charlton_1
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Vance_Wayfarers_Rest_3
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Ryger_1
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Rykker_2
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Staunton_2
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Mooton_2
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Goodbrook_4
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Frey_50
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Piper_1
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Massey_1
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Fell_3
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Peasebury_1
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Grandison_3
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Morrigen_2
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Errol_2
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Penrose_45
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Farring_1
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Wylde_4
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Farring_3
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Miller_14
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Buckler_1
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Pointe_64
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Bolling_5
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Grimsby_74
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Wensington_6
+		}
+		atfw_8303_prepare_rebel_supporter = {
+			CHARACTER_SCOPE = character:Vypren_1
+		}
 
 		# The Reach and Dorne begin committed to Daenerys.
 		agot_mw_add_character_to_mw_list = {

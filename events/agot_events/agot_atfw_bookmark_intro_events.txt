@@ -144,7 +144,13 @@ atfw_bookmark_intro.0006 = {
 	option = {
 		name = atfw_bookmark_intro.0006.b
 
-		# This is now the sole entry point into Jon and Daenerys's meeting chain.
-		trigger_event = { id = atfw_jon_daenerys.0001 days = 3 }
+		# Unlock the dedicated journey and open its activity planner.
+		# The meeting chain will continue only when Jon physically reaches Dragonstone.
+		add_character_flag = atfw_journey_to_dragonstone_unlocked
+		open_view_data = {
+			view = activity_list_detail_host_window
+			data = activity_type:activity_atfw_journey_to_dragonstone
+			player = root
+		}
 	}
 }

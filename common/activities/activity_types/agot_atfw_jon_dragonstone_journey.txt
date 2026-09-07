@@ -1,0 +1,111 @@
+﻿activity_atfw_journey_to_dragonstone = {
+	is_shown = {
+		this = character:Stark_7
+		has_character_flag = atfw_journey_to_dragonstone_unlocked
+	}
+
+	can_always_plan = no
+
+	can_start_showing_failures_only = {
+		is_available = yes
+		is_alive = yes
+		is_imprisoned = no
+		is_incapable = no
+		is_landed = yes
+		this = character:Stark_7
+		has_character_flag = atfw_journey_to_dragonstone_unlocked
+		character:Targaryen_9 = { is_alive = yes }
+	}
+
+	is_valid = {
+		scope:host = {
+			is_alive = yes
+			is_imprisoned = no
+			is_incapable = no
+			this = character:Stark_7
+			has_character_flag = atfw_journey_to_dragonstone_unlocked
+		}
+		character:Targaryen_9 = { is_alive = yes }
+	}
+
+	is_location_valid = {
+		this = title:c_dragonstone.capital_province
+	}
+
+	on_start = {
+		# on_start occurs once the host has physically reached the activity location.
+		scope:host = {
+			remove_character_flag = atfw_journey_to_dragonstone_unlocked
+			remove_character_flag = atfw_journey_to_dragonstone_travelling
+			add_character_flag = atfw_journey_to_dragonstone_arrived
+			trigger_event = atfw_jon_daenerys.0001
+		}
+	}
+
+	on_enter_travel_state = {
+		scope:host = {
+			add_character_flag = atfw_journey_to_dragonstone_travelling
+		}
+	}
+
+	on_invalidated = {
+		scope:host = {
+			remove_character_flag = atfw_journey_to_dragonstone_travelling
+			remove_character_flag = atfw_journey_to_dragonstone_unlocked
+		}
+	}
+
+	on_complete = {
+		scope:host = {
+			remove_character_flag = atfw_journey_to_dragonstone_arrived
+		}
+	}
+
+	on_host_death = {
+		invalidate_activity = scope:activity
+	}
+
+	province_filter = all
+	ai_province_filter = all
+	max_province_icons = 1
+	allow_zero_guest_invites = yes
+	open_invite = no
+
+	province_description = {
+		desc = activity_atfw_journey_to_dragonstone_province_desc
+	}
+
+	province_score = {
+		add = 100
+	}
+
+	cost = {
+		gold = 0
+	}
+
+	ui_predicted_cost = {
+		gold = 0
+	}
+
+	phases = {
+		atfw_journey_to_dragonstone_phase = {
+			is_predefined = yes
+			location_source = pickable
+			on_phase_active = {
+				scope:activity = {
+					progress_activity_phase_after = { days = 1 }
+				}
+			}
+		}
+	}
+
+	max_guest_arrival_delay_time = { days = 1 }
+
+	ai_will_do = { value = 0 }
+	ai_check_interval = 60
+	ai_will_select_province = { value = 100 }
+
+	can_be_activity_guest = { always = no }
+	max_guests = 0
+	guest_join_chance = { base = 0 }
+}

@@ -12,6 +12,8 @@ atfw_jon_daenerys.0001 = {
 		is_married = no
 		is_betrothed = no
 		has_trait = refusing_marriage
+		has_character_flag = atfw_journey_to_dragonstone_arrived
+		location = title:c_dragonstone.capital_province
 		character:Targaryen_9 = {
 			is_alive = yes
 			is_married = no
@@ -21,6 +23,7 @@ atfw_jon_daenerys.0001 = {
 	}
 
 	immediate = {
+		remove_character_flag = atfw_journey_to_dragonstone_arrived
 		character:Targaryen_9 = { save_scope_as = daenerys }
 	}
 
@@ -196,6 +199,48 @@ atfw_jon_daenerys.0004 = {
 		}
 
 		resolve_title_and_vassal_change = scope:jon_daenerys_union_change
+
+		# Once Jon has sworn fealty to Daenerys, preserve her as his
+		# pre-war liege, then temporarily separate him as a Mega War
+		# co-belligerent. Vanilla's realm rebuild will restore the
+		# vassalage after the conflict.
+		random_owned_story = {
+			limit = {
+				story_type = story_agot_mw_rebel
+				story_owner = root
+			}
+			save_scope_as = jon_daenerys_mw_rebel_story
+		}
+
+		scope:jon = {
+			if = {
+				limit = {
+					is_landed = yes
+					is_independent_ruler = no
+				}
+				agot_set_mw_pwl_variables = {
+					SET_SCOPE = this
+					REF_SCOPE = this
+				}
+				agot_mw_become_independent = yes
+			}
+
+			scope:jon_daenerys_mw_rebel_story ?= {
+				add_to_variable_list = {
+					name = mw_rebel_supporter_list
+					target = prev
+				}
+			}
+		}
+
+		every_character_war = {
+			limit = {
+				using_cb = atfw_daenerys_conquest_war
+				primary_attacker = root
+				primary_defender = title:h_the_iron_throne.holder
+			}
+			add_attacker = scope:jon
+		}
 
 		ai_chance = { base = 80 }
 	}

@@ -35,7 +35,7 @@ agot_tfw_five_queens.0001 = {
 			add_character_flag = { flag = mw_init_event_blocker days = 2 }
 			every_character_war = {
 				limit = {
-					using_cb = agot_rebellion_war
+					using_cb = atfw_daenerys_conquest_war
 					primary_attacker = character:Targaryen_9
 				}
 				add_defender = character:Lannister_24
@@ -85,7 +85,7 @@ agot_tfw_five_queens.0003 = {
 		character:Targaryen_9 = {
 			every_character_war = {
 				limit = {
-					using_cb = agot_rebellion_war
+					using_cb = atfw_daenerys_conquest_war
 					primary_defender = title:h_the_iron_throne.holder
 				}
 				add_attacker = root

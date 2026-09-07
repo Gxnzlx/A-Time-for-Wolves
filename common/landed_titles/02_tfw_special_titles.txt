@@ -2,6 +2,14 @@
 @better_than_the_alternatives_score = 50
 @always_primary_score = 1000
 
+
+# Titular Triarchy / Three Daughters
+e_three_daughters = {
+	landless = yes
+	capital = c_myr
+	color = { 82 72 112 }
+}
+
 # Independent Titular Kingdoms
 # Amanes : Made this titles to clean Error log as you can apparently declare independence with them
 e_the_marches = {

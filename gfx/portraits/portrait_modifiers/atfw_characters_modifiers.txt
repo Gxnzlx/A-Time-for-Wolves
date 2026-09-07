@@ -254,7 +254,7 @@
 			}
 		}
 	}
-	Karstark_Dummy_62 = {
+	Karstark_62 = {
 		dna_modifiers = {
 			accessory = {
 				mode = add
@@ -273,7 +273,7 @@
 			base = 0
 			modifier = {
 				add = 100
-				this = character:Karstark_Dummy_62
+				this = character:Karstark_62
 			}
 		}
 	}

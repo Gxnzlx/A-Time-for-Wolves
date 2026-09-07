@@ -70,7 +70,7 @@ challenge_character_305_brandon_stark = {
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = Stark_Dummy_10
 
-		animation = zealous
+		animation = personality_rational
 	}
 }
 
@@ -214,7 +214,7 @@ challenge_character_303_daenerys_targaryen = {
 		name = "bookmark_303_daenerys_targaryen"
 		dynasty = dynn_Targaryen
 		type = female
-		title = h_the_targaryen_host_title
+		title = h_targaryen_host_title
 		religion = fots_seven
 		culture = high_valyrian
 		birth = 8284.5.10
@@ -558,7 +558,7 @@ challenge_character_305_elyas_scales = {
 	start_date = 8305.1.1
 	character = {
 		name = "bookmark_305_elyas_scales"
-		dynasty = dynn_Scales
+		dynasty_house = house_Scales
 		dynasty_splendor_level = 1
 		type = male
 		birth = 8260.1.1

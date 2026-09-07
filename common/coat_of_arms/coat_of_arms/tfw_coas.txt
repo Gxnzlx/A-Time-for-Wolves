@@ -130,7 +130,7 @@ tyrion_tanner_personal_coa = {
 		color1 = asoiaf_bone_light
 		color2 = rgb { 168 118 44 }
 		color3 = rgb { 44 75 41 }
-		texture = "asoiaf_lamb_goblet.dds"
+		texture = "riverlands_pimm_chalice.dds"
 		instance = {
 			position = { 0.305000 0.510000 }
 			scale = { -0.810000 0.810000 }
@@ -165,7 +165,7 @@ tyrion_tanner_personal_coa = {
 
 	colored_emblem = {
 		color1 = rgb { 44 75 41 }
-		texture = "historical_plain.dds"
+		texture = "ce_solidblock.dds"
 		instance = {
 			position = { 0.075000 0.655000 }
 			scale = { 0.575000 0.575000 }

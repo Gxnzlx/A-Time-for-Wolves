@@ -445,13 +445,12 @@ agot_tfw_dany.0002 = {
 						DRAGON = character:dragon_drogon
 					}
 				}
-				give_nickname = nick_stormborn
-				make_trait_inactive = is_targaryen_9
+				give_nickname = nick_agot_historical_stormborn
 				set_sexuality = bisexual
 				add_character_flag = has_scripted_appearance
 				make_trait_inactive = cool_silver_hair
 				make_trait_inactive = purple_eyes_1
-				learn_language = language_common
+				learn_language = language_agot_westeros
 			}
 		}
 
@@ -491,7 +490,6 @@ agot_tfw_dany.0002 = {
 					save_scope_as = change
 				}
 
-				make_trait_inactive = is_targaryen_9
 				add_character_flag = dany_fled_to_essos
 
 				hidden_effect = {

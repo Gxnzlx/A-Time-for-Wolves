@@ -289,9 +289,6 @@ Mutineers_1 = {
 	8300.3.1 = {
 		religion = cold_gods_wildling
 		add_spouse = Craster_8
-		add_spouse = Craster_9
-		add_spouse = Craster_14
-		add_spouse = Craster_15
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_crasters_keep }
 		}
@@ -322,6 +319,9 @@ Mutineers_1 = {
 			}
 		}
 	}
+	8300.3.3 = { add_spouse = Craster_9 }
+	8300.3.4 = { add_spouse = Craster_14 }
+	8300.3.5 = { add_spouse = Craster_15 }
 }
 Mutineers_12 = {
 	religion = fots_seven
@@ -888,8 +888,8 @@ Lamore_1 = {
 			make_trait_inactive = black_hair
 			make_trait_inactive = purple_eyes_1
 			add_character_flag = do_not_assign_strong_seed
-			set_real_father = Dayne_1
-			set_real_mother = Vaith_110
+			set_real_father = character:Dayne_1
+			set_real_mother = character:Vaith_110
 		}
 	}
 	8283.11.1 = {
@@ -1071,51 +1071,8 @@ dragon_rhaegal = {
 	}
 }
 dragon_viserion = {
-	name = Viserion # Canon
+	# Defined by CK3AGOT; ATFW scenario-specific changes only.
 	female = yes
-
-	religion = valyrian_pan_freehold
-	culture = dragon_culture
-
-	mother = dragon_dreamfyre
-
-	trait = dragon
-	trait = education_dragon_2
-	trait = dragon_physique_good_2
-	trait = dragon_voracious
-	trait = dragon_aggressive
-
-	disallow_random_traits = yes
-
-	8299.1.22 = {
-		birth = yes
-		add_character_flag = canon_status_canon
-		effect = {
-			set_variable = {
-				name = primary_color_grading
-				value = flag:middle
-			}
-			set_variable = {
-				name = primary_color
-				value = flag:white
-			}
-		}
-	}
-	8300.1.5 = {
-		trait = dragon_bloodthirsty
-		effect = {
-			# agot_assign_dragon_to_pit_history_effect = {
-			# DRAGONPIT_COUNTY = title:c_meereen
-			# }
-		}
-	}
-	8300.7.15 = {
-		effect = {
-			# agot_free_dragon_from_pit_history_effect = {
-			# DRAGONPIT_COUNTY = title:c_meereen
-			# }
-		}
-	}
 	8303.12.31 = {
 		effect = {
 			agot_safe_set_location_history_effect = { CASTLE = title:c_dragonstone }
@@ -1469,7 +1426,7 @@ Stark_Dummy_10 = {
 		add_trait = calm
 		add_trait = patient
 		add_trait = shrewd
-		add_trait = lifestyle_mystic_3_history
+		add_trait = lifestyle_mystic
 		give_nickname = nick_agot_the_broken
 
 		effect = {
@@ -1579,7 +1536,7 @@ Stark_hh_22 = {
 }
 Stark_tfw_1 = {
 	name = Arya # tfw-canon, Arya 'Redwolf', daughter of Sansa
-	dynasty = dynasty:dynn_Stark
+	dynasty = dynn_Stark
 	female = yes
 
 	religion = fots_oldnew
@@ -1742,39 +1699,9 @@ Karstark_16 = {
 		}
 	}
 }
-Karstark_Dummy_62 = {
-	name = Harald # Semi-Canon, Harald Karstark
-	dynasty_house = house_Karstark
-
-	dna = Karstark_62
-
-	religion = old_gods_wnw
-	culture = northman
-
-	father = Karstark_4
-	mother = Woolfield_77
-
-	trait = education_stewardship_2
-	trait = education_martial_prowess_3
-	trait = diligent
-	trait = logistician
-	trait = wrathful
-	trait = arrogant
-	trait = stubborn
-	trait = bossy
-
-	disallow_random_traits = yes
-
-	8259.1.1 = {
-		birth = yes
-		make_trait_inactive = scripted_appearance
-		make_trait_inactive = grey_eyes
-		make_trait_inactive = dark_brown_hair
-		add_character_flag = canon_status_semicanon
-	}
-	8280.1.1 = {
-		add_spouse = Pinn_73
-	}
+Karstark_62 = {
+	# Current CK3AGOT ID for Harrald Karstark; ATFW timeline changes only.
+	8280.1.1 = { add_spouse = Pinn_73 }
 	8303.11.1 = {
 		death = {
 			death_reason = death_battle
@@ -3704,9 +3631,10 @@ Baratheon_109 = {
 Baratheon_13 = {
 	#name = Shireen # Canon
 	8301.4.1 = { # Burned at the stake as a sacrifice
-		death = yes
-		death_reason = "executed"
-		killer = Baratheon_3 # Stannis Baratheon (her father)
+		death = {
+			death_reason = death_execution
+			killer = Baratheon_3
+		} # Stannis Baratheon (her father)
 	}
 }
 Melisandre_1 = {
@@ -4754,13 +4682,11 @@ Foote_6 = {
 
 #dummy
 Great_Other = {
-	#name = Great_Other
-	1.1.1 = {
-		birth = yes
-	}
-	33.1.1 = {
-		add_trait = immortal
-	}
+	name = Great_Other
+	religion = cold_gods_wildling
+	culture = others_culture
+
+	33.1.1 = { add_trait = immortal }
 	8304.4.28 = {
 		death = {
 			death_reason = death_battle

@@ -615,15 +615,6 @@ agot_kingsguard_init_white_book = {
 		}
 		agot_kingsguard_create_historical_white_book_page = { KINGSGUARD = character:Belgrave_19 }
 	}
-	# Aleryn, joined under Targaryen_65
-	if = {
-		limit = { game_start_date >= 8130.12.25 }
-		add_to_global_variable_list = {
-			name = kingsguard_white_book
-			target = character:Kingsguard_10
-		}
-		agot_kingsguard_create_historical_white_book_page = { KINGSGUARD = character:Kingsguard_10 }
-	}
 	# Axel Kellington, joined under Targaryen_65
 	if = {
 		limit = { game_start_date >= 8130.12.25 }

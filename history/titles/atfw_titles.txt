@@ -1321,7 +1321,7 @@ c_branch_head = {
 }
 d_karhold = {
 	8299.11.8 = {
-		holder = Karstark_Dummy_62
+		holder = Karstark_62
 	}
 	8303.11.8 = {
 		holder = Karstark_19
@@ -1329,7 +1329,7 @@ d_karhold = {
 }
 c_karhold = {
 	8299.11.8 = {
-		holder = Karstark_Dummy_62
+		holder = Karstark_62
 	}
 	8303.11.8 = {
 		holder = Karstark_19
@@ -2521,7 +2521,6 @@ c_strongcliffs = {
 }
 b_gryphonrock = {
 	7868.1.1 = {
-		liege = d_claw_isle
 		holder = Celtigar_8
 	}
 	7883.1.1 = {
@@ -5215,10 +5214,10 @@ d_laamp_merc_nw_mutineers = {
 				if = {
 					limit = {
 						NOT = {
-							has_realm_law = camp_purpose_freebooters
+							has_realm_law = camp_purpose_brigands
 						}
 					}
-					add_realm_law = camp_purpose_freebooters
+					add_realm_law = camp_purpose_brigands
 				}
 				# 20 infantry
 				create_maa_regiment = {
@@ -5369,10 +5368,10 @@ d_laamp_the_brotherhood_without_banners = {
 				if = {
 					limit = {
 						NOT = {
-							has_realm_law = camp_purpose_freebooters
+							has_realm_law = camp_purpose_brigands
 						}
 					}
-					add_realm_law_skip_effects = camp_purpose_freebooters
+					add_realm_law_skip_effects = camp_purpose_brigands
 				}
 			}
 			create_landless_adventurer_title_history_effect = yes

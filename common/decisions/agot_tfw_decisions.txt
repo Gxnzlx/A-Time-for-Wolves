@@ -1,4 +1,5 @@
 ﻿sail_into_west_decision = {
+	ai_check_interval = 0
 	picture = { reference = "gfx/interface/illustrations/event_scenes/docks.dds" }
 	desc = sail_into_west_decision_desc
 	selection_tooltip = sail_into_west_decision_tooltip
@@ -27,6 +28,7 @@
 }
 
 res_dany_decision = {
+	ai_check_interval = 0
 	picture = { reference = "gfx/interface/illustrations/event_scenes/bp1_bonfire.dds" }
 	desc = res_dany_decision_desc
 	selection_tooltip = res_dany_decision_tooltip
@@ -220,6 +222,7 @@ set_capital_kingslanding_decision = {
 # }
 
 leave_confederation_decision = {
+	ai_check_interval = 0
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/mpo_decision_confederation.dds"
 	}
@@ -247,8 +250,9 @@ leave_confederation_decision = {
 				add_to_list = confederation_members
 			}
 		}
-		root.confederation = {
-			disband_confederation = yes
+		if = {
+			limit = { exists = root.confederation }
+			root.confederation = { disband_confederation = yes }
 		}
 
 		save_scope_as = leaver
@@ -260,6 +264,7 @@ leave_confederation_decision = {
 }
 
 launch_faegon_invasion_decision = {
+	ai_check_interval = 0
 	picture = { reference = "gfx/interface/illustrations/event_scenes/agot_iron_throne.dds" }
 	desc = launch_faegon_invasion_decision_desc
 	selection_tooltip = launch_faegon_invasion_decision_tooltip
@@ -271,7 +276,7 @@ launch_faegon_invasion_decision = {
 
 	is_shown = {
 		# Only shown to the player controlling Faegon
-		this = character:Blackfyre_atfw_Dummy_1
+		this = character:Targaryen_12
 		is_ai = no
 		is_landless_adventurer = yes
 		NOT = { has_global_variable = faegon_invasion }

@@ -2,8 +2,6 @@
 
 agot_tfw_five_queens.0001 = {
 	type = character_event
-	title = agot_tfw_five_queens.0001.t
-	desc = agot_tfw_five_queens.0001.desc
 	hidden = yes
 
 	immediate = {
@@ -49,7 +47,7 @@ agot_tfw_five_queens.0001 = {
 			add_character_flag = { flag = mw_init_event_blocker days = 2 }
 			every_character_war = {
 				add_defender = character:Lannister_24
-				add_defender = character:Swift_1
+				add_defender = character:Swyft_1
 				add_defender = character:Bracken_3
 				add_defender = character:Tarly_1
 				add_defender = character:Buckwell_1
@@ -73,8 +71,6 @@ agot_tfw_five_queens.0001 = {
 
 agot_tfw_five_queens.0002 = {
 	type = character_event
-	title = agot_tfw_five_queens.0002.t
-	desc = agot_tfw_five_queens.0002.desc
 	hidden = yes
 
 	immediate = {
@@ -91,8 +87,6 @@ agot_tfw_five_queens.0002 = {
 
 agot_tfw_five_queens.0003 = {
 	type = character_event
-	title = agot_tfw_five_queens.0003.t
-	desc = agot_tfw_five_queens.0003.desc
 	hidden = yes
 
 	immediate = {
@@ -110,7 +104,7 @@ agot_tfw_five_queens.0003 = {
 				add_attacker = character:Rykker_2
 				add_attacker = character:Staunton_2
 				add_attacker = character:Mooton_2
-				add_attacker = character:Ryker_2
+				add_attacker = character:Rykker_2
 				add_attacker = character:Goodbrook_4
 				add_attacker = character:Frey_50
 				add_attacker = character:Piper_1
@@ -143,7 +137,7 @@ agot_tfw_five_queens.0004 = {
 
 	trigger = {
 		has_character_flag = targ_host_invasion
-		holds_title = title:h_the_iron_throne
+		has_title = title:h_the_iron_throne
 	}
 
 	immediate = {
@@ -283,6 +277,8 @@ agot_tfw_five_queens.0004 = {
 				holder = character:Frey_50
 				change = scope:change
 			}
+		}
+		title:d_tridents_mouth.holder = {
 			change_liege = {
 				liege = title:h_the_iron_throne.holder
 				change = scope:change
@@ -301,8 +297,6 @@ agot_tfw_five_queens.0004 = {
 
 agot_tfw_five_queens.0005 = {
 	type = character_event
-	title = agot_tfw_five_queens.0005.t
-	desc = agot_tfw_five_queens.0005.desc
 	hidden = yes
 
 	immediate = {
@@ -326,8 +320,6 @@ agot_tfw_five_queens.0005 = {
 
 agot_tfw_five_queens.0006 = {
 	type = character_event
-	title = agot_tfw_five_queens.0006.t
-	desc = agot_tfw_five_queens.0006.desc
 	hidden = yes
 
 	immediate = {

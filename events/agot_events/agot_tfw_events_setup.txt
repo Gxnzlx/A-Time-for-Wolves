@@ -1,8 +1,6 @@
 ﻿namespace = agot_tfw_setup
 agot_tfw_setup.0001 = {
 	type = character_event
-	title = agot_tfw_setup.0001.t
-	desc = agot_tfw_setup.0001.desc
 	hidden = yes
 
 	immediate = {
@@ -58,8 +56,8 @@ agot_tfw_setup.0001 = {
 				}
 				character:Karstark_19 = {
 					set_mother = character:Pinn_73
-					set_father = character:Karstark_Dummy_62
-					set_house = character:Karstark_Dummy_62.house
+					set_father = character:Karstark_62
+					set_house = character:Karstark_62.house
 				}
 			}
 			else_if = {
@@ -133,8 +131,8 @@ agot_tfw_setup.0001 = {
 				}
 				character:Karstark_19 = {
 					set_mother = character:Pinn_73
-					set_father = character:Karstark_Dummy_62
-					set_house = character:Karstark_Dummy_62.house
+					set_father = character:Karstark_62
+					set_house = character:Karstark_62.house
 				}
 				if = {
 					limit = {
@@ -144,7 +142,7 @@ agot_tfw_setup.0001 = {
 						}
 					}
 					character:Tarth_6 = {
-						remove_nickname = nick_agot_historical_the_maid_Tarth_6
+						remove_nickname = yes
 					}
 				}
 			}
@@ -154,8 +152,6 @@ agot_tfw_setup.0001 = {
 
 agot_tfw_setup.0002 = {
 	type = character_event
-	title = agot_tfw_setup.0002.t
-	desc = agot_tfw_setup.0002.desc
 	hidden = yes
 
 	immediate = {
@@ -171,13 +167,11 @@ agot_tfw_setup.0002 = {
 }
 
 agot_tfw_setup.0003 = {
+	type = character_event
 	theme = crown
 	hidden = yes
 
-	trigger = {
-		scope:title = title:h_the_iron_throne
-		current_year >= 8305
-	}
+	trigger = { current_year >= 8305 }
 
 	immediate = {
 		create_title_and_vassal_change = {
@@ -431,13 +425,11 @@ agot_tfw_setup.0003 = {
 }
 
 agot_tfw_setup.0004 = {
+	type = character_event
 	theme = crown
 	hidden = yes
 
-	trigger = {
-		scope:title = title:k_braavos
-		current_year >= 8365
-	}
+	trigger = { current_year >= 8365 }
 
 	immediate = {
 		create_title_and_vassal_change = {
@@ -472,13 +464,14 @@ agot_tfw_setup.0004 = {
 
 agot_tfw_setup.0005 = {
 	type = character_event
-	title = agot_tfw_setup.0005.t
-	desc = agot_tfw_setup.0005.desc
 	hidden = yes
 
 	immediate = {
-		root.confederation = {
-			disband_confederation = yes
+		if = {
+			limit = { exists = root.confederation }
+			root.confederation = {
+				disband_confederation = yes
+			}
 		}
 	}
 }

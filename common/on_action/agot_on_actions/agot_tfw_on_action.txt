@@ -75,6 +75,21 @@ tfw_on_game_start = {
 			}
 		}
 
+		# ATFW realm setup events that were previously orphaned.
+		if = {
+			limit = { current_year >= 8305 }
+			title:h_the_iron_throne.holder ?= {
+				trigger_event = { id = agot_tfw_setup.0003 days = 0 }
+			}
+		}
+
+		if = {
+			limit = { current_year >= 8365 }
+			title:k_braavos.holder ?= {
+				trigger_event = { id = agot_tfw_setup.0004 days = 0 }
+			}
+		}
+
 		if = {
 			limit = {
 				current_year > 8304

@@ -26,7 +26,7 @@
 		name = "bookmark_303_daenerys_targaryen"
 		dynasty = dynn_Targaryen
 		type = female
-		title = k_dragonstone
+		title = h_targaryen_host_title
 		religion = fots_seven
 		culture = high_valyrian
 		birth = 8284.5.10
@@ -53,7 +53,7 @@
 		dynasty_splendor_level = 3
 		position = { 950 420 }
 
-		animation = marshall
+		animation = personality_bold
 	}
 
 	character = {
@@ -112,7 +112,7 @@ agot_8305 = {
 		history_id = Stark_Dummy_10
 		position = { 600 800 }
 
-		animation = zealous
+		animation = personality_rational
 	}
 
 	character = {
@@ -231,7 +231,7 @@ agot_8305_2 = {
 
 	character = {
 		name = "bookmark_305_elyas_scales"
-		dynasty = dynn_Saerygan
+		dynasty_house = house_Scales
 		dynasty_splendor_level = 1
 		type = male
 		birth = 8260.1.1
@@ -278,7 +278,7 @@ agot_8305_2 = {
 		history_id = Stark_Dummy_10
 		position = { 500 440 }
 
-		animation = zealous
+		animation = personality_rational
 	}
 
 	character = {

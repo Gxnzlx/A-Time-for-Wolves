@@ -1,0 +1,821 @@
+﻿# A Time for Wolves — Jon Snow storyline
+
+namespace = atfw_jon_north
+
+# Part I of Jon Snow's 8303 storyline.
+# This chain is deliberately Jon-only. It establishes the immediate
+# post-Battle-of-the-Bastards situation before the existing Dragonstone journey.
+
+# Bran reaches Winterfell before the northern council.
+atfw_jon_north.0001 = {
+	type = character_event
+	title = atfw_jon_north.0001.t
+	desc = atfw_jon_north.0001.desc
+	theme = family
+	override_background = {
+		reference = agot_pk_north
+	}
+
+	immediate = {
+		# Stark_Dummy_10 now represents Bran in the active timeline. Detach the
+		# vanished original so only the continuation appears among Ned and
+		# Catelyn's children in the family tree.
+		character:Stark_10 = {
+			set_father = character:Unused_1
+			set_mother = character:Unused_2
+		}
+
+		character:Stark_Dummy_10 = {
+			change_first_name = Brandon
+			set_father = character:Stark_3
+			set_mother = character:Tully_4
+			set_house = character:Stark_3.house
+			set_location = root.capital_province
+			save_scope_as = bran
+		}
+		root = { add_courtier = character:Stark_Dummy_10 }
+		character:Stark_Dummy_10 = { return_to_court = yes }
+	}
+
+	left_portrait = {
+		character = root
+		animation = shock
+	}
+
+	right_portrait = {
+		character = scope:bran
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_north.0001.a
+		trigger_event = { id = atfw_jon_north.0002 days = 10 }
+	}
+}
+
+# Arya follows Bran home.
+atfw_jon_north.0002 = {
+	type = character_event
+	title = atfw_jon_north.0002.t
+	desc = atfw_jon_north.0002.desc
+	theme = family
+	override_background = {
+		reference = agot_pk_north
+	}
+
+	immediate = {
+		# Stark_Dummy_9 now represents Arya in the active timeline. Detach the
+		# vanished original from the Stark family tree before restoring the
+		# continuation as Ned and Catelyn's daughter.
+		character:Stark_9 = {
+			set_father = character:Unused_1
+			set_mother = character:Unused_2
+		}
+
+		character:Stark_Dummy_9 = {
+			change_first_name = Arya
+			set_father = character:Stark_3
+			set_mother = character:Tully_4
+			set_house = character:Stark_3.house
+			set_location = root.capital_province
+			save_scope_as = arya
+		}
+		root = { add_courtier = character:Stark_Dummy_9 }
+		character:Stark_Dummy_9 = { return_to_court = yes }
+	}
+
+	left_portrait = {
+		character = root
+		animation = happiness
+	}
+
+	right_portrait = {
+		character = scope:arya
+		animation = personality_bold
+	}
+
+	option = {
+		name = atfw_jon_north.0002.a
+
+		# Give the North time to answer Jon's summons before the banners gather
+		# at Winterfell for the feast/council.
+		trigger_event = { id = atfw_jon_north.0007 days = 12 }
+	}
+}
+
+# The northern lords answer Jon's summons and proclaim him King in the North.
+atfw_jon_north.0003 = {
+	type = character_event
+	title = atfw_jon_north.0003.t
+	desc = atfw_jon_north.0003.desc
+	theme = feast_activity
+	override_background = {
+		reference = agot_pk_north
+	}
+
+	immediate = {
+		character:Stark_Dummy_8 = { save_scope_as = sansa }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	right_portrait = {
+		character = scope:sansa
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_north.0003.a
+
+		add_prestige = major_prestige_gain
+		add_character_flag = atfw_jon_proclaimed_king_in_the_north
+
+	}
+}
+
+# Jon turns the celebration into a war council: the true enemy is in the North.
+atfw_jon_north.0004 = {
+	type = character_event
+	title = atfw_jon_north.0004.t
+	desc = atfw_jon_north.0004.desc
+	theme = feast_activity
+	override_background = {
+		reference = agot_pk_north
+	}
+
+	immediate = {
+		character:Seaworth_1 = { save_scope_as = davos }
+		character:Stark_Dummy_8 = { save_scope_as = sansa }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:davos
+		animation = personality_honorable
+	}
+
+	lower_left_portrait = {
+		character = scope:sansa
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_north.0004.a
+
+		add_character_flag = atfw_jon_war_council_complete
+	}
+}
+
+# Northern lords renew their fealty as they arrive at Winterfell.
+# This is a guest-side subevent of the same feast activity.
+atfw_jon_north.0008 = {
+	type = activity_event
+	title = atfw_jon_north.0008.t
+	desc = atfw_jon_north.0008.desc
+	theme = feast_activity
+	override_background = {
+		reference = agot_pk_north
+	}
+
+	trigger = {
+		this = character:Stark_7
+		scope:activity = {
+			any_attending_character = {
+				this != scope:host
+				is_landed = yes
+				OR = {
+					is_vassal_of = scope:host
+					target_is_vassal_or_below = scope:host
+				}
+				NOT = { has_character_flag = atfw_northern_banners_fealty_renewed }
+			}
+		}
+	}
+
+	immediate = {
+		scope:activity = {
+			random_attending_character = {
+				limit = {
+					this != scope:host
+					is_landed = yes
+					OR = {
+						is_vassal_of = scope:host
+						target_is_vassal_or_below = scope:host
+					}
+					NOT = { has_character_flag = atfw_northern_banners_fealty_renewed }
+				}
+				save_scope_as = oath_lord
+			}
+		}
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	right_portrait = {
+		character = scope:oath_lord
+		animation = personality_honorable
+	}
+
+	option = {
+		name = atfw_jon_north.0008.a
+
+		scope:oath_lord = {
+			add_character_flag = atfw_northern_banners_fealty_renewed
+			add_opinion = {
+				target = root
+				modifier = grateful_opinion
+				opinion = 15
+			}
+		}
+
+		if = {
+			limit = {
+				scope:activity = {
+					any_attending_character = {
+						this != scope:host
+						is_landed = yes
+						OR = {
+							is_vassal_of = scope:host
+							target_is_vassal_or_below = scope:host
+						}
+						NOT = { has_character_flag = atfw_northern_banners_fealty_renewed }
+					}
+				}
+			}
+			trigger_event = {
+				id = atfw_jon_north.0008
+				days = 1
+			}
+		}
+	}
+}
+
+# Jon formally summons the northern banners to Winterfell.
+# This event opens a real hosted feast activity. The proclamation and the
+# speech about the Others are both scripted subevents of that same activity.
+atfw_jon_north.0007 = {
+	type = character_event
+	title = atfw_jon_north.0007.t
+	desc = atfw_jon_north.0007.desc
+	theme = diplomacy
+	override_background = {
+		reference = agot_pk_north
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	right_portrait = {
+		character = character:Seaworth_1
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_north.0007.a
+
+		add_character_flag = atfw_northern_banners_feast_unlocked
+		open_view_data = {
+			view = activity_list_detail_host_window
+			data = activity_type:activity_atfw_northern_banners_feast
+			player = root
+		}
+	}
+}
+
+# A private gathering reveals Jon's true parentage.
+# This adapts CK3AGOT's existing disputed-heritage/royal-bastard secret
+# mechanics without publicly exposing the secret or changing Jon's public house.
+atfw_jon_north.0005 = {
+	type = character_event
+	title = atfw_jon_north.0005.t
+	desc = atfw_jon_north.0005.desc
+	theme = family
+
+	trigger = {
+		has_character_flag = atfw_jon_proclaimed_king_in_the_north
+		has_character_flag = atfw_jon_war_council_complete
+		has_character_flag = atfw_jon_northern_feast_completed
+	}
+	override_background = study
+
+	immediate = {
+		character:Stark_Dummy_8 = { save_scope_as = sansa }
+		character:Stark_Dummy_10 = { save_scope_as = bran }
+		character:Tarly_2 = { save_scope_as = sam }
+		character:Reed_1 = { save_scope_as = howland }
+		character:Reed_2 = {
+			set_location = root.capital_province
+			save_scope_as = meera
+		}
+		root = { add_courtier = character:Reed_2 }
+		character:Reed_2 = { return_to_court = yes }
+
+		# Jon's real parents are already Rhaegar Targaryen and Lyanna Stark in
+		# CK3AGOT's base history. Reveal the existing disputed-heritage secret
+		# to Jon privately, using the same secret type as the base bastard events.
+		if = {
+			limit = {
+				knows_self_royal_bastard_secret = no
+			}
+			scope:howland = {
+				random_known_secret = {
+					limit = {
+						secret_type = secret_agot_disputed_heritage
+						secret_target = root
+					}
+					reveal_to = root
+				}
+			}
+		}
+
+		# Safety fallback for ATFW timelines where Howland's inherited secret
+		# was not instantiated. This remains private to Jon.
+		if = {
+			limit = {
+				knows_self_royal_bastard_secret = no
+			}
+			add_secret = {
+				type = secret_agot_disputed_heritage
+				target = root
+			}
+		}
+
+		add_character_flag = atfw_jon_knows_true_parentage
+	}
+
+	left_portrait = {
+		character = scope:bran
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:sansa
+		animation = shock
+	}
+
+	lower_left_portrait = {
+		character = scope:sam
+		animation = personality_honorable
+	}
+
+	lower_center_portrait = {
+		character = scope:howland
+		animation = personality_rational
+	}
+
+	lower_right_portrait = {
+		character = scope:meera
+		animation = personality_bold
+	}
+
+	option = {
+		name = atfw_jon_north.0005.a
+
+		# Jon learns the truth but refuses to expose it. He remains publicly
+		# Jon Snow/Stark as defined by ATFW; no public bastard-reveal story fires.
+		add_character_flag = atfw_jon_hides_true_parentage
+
+		trigger_event = { id = atfw_jon_north.0006 days = 12 }
+	}
+}
+
+# Part I ends by committing Jon to the journey south.
+atfw_jon_north.0006 = {
+	type = character_event
+	title = atfw_jon_north.0006.t
+	desc = atfw_jon_north.0006.desc
+	theme = diplomacy
+	override_background = {
+		reference = agot_pk_north
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	right_portrait = {
+		character = character:Seaworth_1
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_north.0006.a
+
+		# Hand off to the existing physical Dragonstone activity. The
+		# Jon/Daenerys chain itself still begins only after arrival.
+		add_character_flag = atfw_journey_to_dragonstone_unlocked
+		open_view_data = {
+			view = activity_list_detail_host_window
+			data = activity_type:activity_atfw_journey_to_dragonstone
+			player = root
+		}
+	}
+}
+
+namespace = atfw_jon_daenerys
+
+# Jon Snow has physically reached Dragonstone. This event is fired directly
+# from the active destination phase of activity_atfw_journey_to_dragonstone.
+atfw_jon_daenerys.0001 = {
+	type = activity_event
+	title = atfw_jon_daenerys.0001.t
+	desc = atfw_jon_daenerys.0001.desc
+	theme = diplomacy
+
+	immediate = {
+		remove_character_flag = atfw_journey_to_dragonstone_arrived
+		character:Targaryen_9 = { save_scope_as = daenerys }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0001.a
+		scope:daenerys = {
+			trigger_event = { id = atfw_jon_daenerys.0002 days = 1 }
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+# Daenerys decides whether Jon will be granted an audience.
+atfw_jon_daenerys.0002 = {
+	type = character_event
+	title = atfw_jon_daenerys.0002.t
+	desc = atfw_jon_daenerys.0002.desc
+	theme = diplomacy
+
+	trigger = {
+		is_alive = yes
+		character:Stark_7 = {
+			is_alive = yes
+			involved_activity ?= {
+				has_activity_type = activity_atfw_journey_to_dragonstone
+			}
+		}
+	}
+
+	immediate = {
+		character:Stark_7 = { save_scope_as = jon }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0002.a
+		scope:jon = {
+			trigger_event = { id = atfw_jon_daenerys.0003 days = 2 }
+		}
+		ai_chance = { base = 85 }
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0002.b
+		scope:jon = {
+			trigger_event = { id = atfw_jon_daenerys.0005 days = 1 }
+		}
+		ai_chance = { base = 15 }
+	}
+}
+
+# After Daenerys receives him, repeated councils turn distrust into respect.
+atfw_jon_daenerys.0003 = {
+	type = character_event
+	title = atfw_jon_daenerys.0003.t
+	desc = atfw_jon_daenerys.0003.desc
+	theme = diplomacy
+
+	trigger = {
+		is_alive = yes
+		involved_activity ?= {
+			has_activity_type = activity_atfw_journey_to_dragonstone
+		}
+		character:Targaryen_9 = {
+			is_alive = yes
+		}
+	}
+
+	immediate = {
+		character:Targaryen_9 = { save_scope_as = daenerys }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:daenerys
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0003.a
+		set_relation_friend = scope:daenerys
+		scope:daenerys = {
+			trigger_event = { id = atfw_jon_daenerys.0004 days = 2 }
+		}
+		ai_chance = { base = 100 }
+	}
+}
+
+# Daenerys decides whether political understanding will become a dynastic union.
+atfw_jon_daenerys.0004 = {
+	type = character_event
+	title = atfw_jon_daenerys.0004.t
+	desc = atfw_jon_daenerys.0004.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+		character:Stark_7 = {
+			is_alive = yes
+			involved_activity ?= {
+				has_activity_type = activity_atfw_journey_to_dragonstone
+			}
+		}
+	}
+
+	immediate = {
+		character:Stark_7 = { save_scope_as = jon }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	right_portrait = {
+		character = scope:jon
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0004.a
+
+		# Acceptance is only possible while both remain free to marry.
+		trigger = {
+			is_married = no
+			is_betrothed = no
+			has_trait = refusing_marriage
+			scope:jon = {
+				is_married = no
+				is_betrothed = no
+				has_trait = refusing_marriage
+			}
+		}
+
+		remove_trait = refusing_marriage
+		scope:jon = {
+			remove_trait = refusing_marriage
+			create_betrothal = root
+		}
+
+		# The personal union is followed by the political settlement established
+		# for this ATFW scenario: the North and Vale swear directly to Daenerys.
+		create_title_and_vassal_change = {
+			type = swear_fealty
+			save_scope_as = jon_daenerys_union_change
+			add_claim_on_loss = no
+		}
+
+		title:e_the_north.holder ?= {
+			change_liege = {
+				liege = root
+				change = scope:jon_daenerys_union_change
+			}
+		}
+
+		title:e_the_vale.holder ?= {
+			change_liege = {
+				liege = root
+				change = scope:jon_daenerys_union_change
+			}
+		}
+
+		resolve_title_and_vassal_change = scope:jon_daenerys_union_change
+
+		# Jon was independent before this union. Any PWL data left from the
+		# bookmark Mega War setup is stale and must not survive his voluntary
+		# vassalization to Daenerys.
+		scope:jon = {
+			remove_variable = agot_pwl_direct
+			remove_variable = agot_pwl_top
+		}
+
+		# If Daenerys's conquest is still active, Jon joins her as a
+		# co-belligerent WITHOUT breaking the vassalage just created above.
+		# His new liege relationship with Daenerys is intentional and must not
+		# be treated as temporary Mega War breakup data.
+		random_owned_story = {
+			limit = {
+				story_type = story_agot_mw_rebel
+				story_owner = root
+			}
+			save_scope_as = jon_daenerys_mw_rebel_story
+		}
+
+		random_character_war = {
+			limit = {
+				using_cb = atfw_daenerys_conquest_war
+				primary_attacker = root
+				primary_defender = title:h_the_iron_throne.holder
+			}
+			save_scope_as = jon_daenerys_conquest_war
+		}
+
+		if = {
+			limit = {
+				exists = scope:jon_daenerys_mw_rebel_story
+				exists = scope:jon_daenerys_conquest_war
+			}
+
+			scope:jon_daenerys_mw_rebel_story.var:mw_crown_story_var ?= {
+				save_scope_as = jon_daenerys_mw_crown_story
+			}
+
+			# Jon was initially registered as a neutral independent ruler.
+			# Clear that old stance and any stale PWL data before moving the
+			# North to Daenerys's side.
+			scope:jon = {
+				remove_variable = agot_pwl_direct
+				remove_variable = agot_pwl_top
+
+				scope:jon_daenerys_mw_crown_story ?= {
+					remove_list_variable = {
+						name = mw_neutral_list
+						target = prev
+					}
+					remove_list_variable = {
+						name = mw_loyalist_list
+						target = prev
+					}
+				}
+
+				scope:jon_daenerys_mw_rebel_story = {
+					add_to_variable_list = {
+						name = mw_rebel_supporter_list
+						target = prev
+					}
+				}
+
+				every_vassal_or_below = {
+					limit = {
+						highest_held_title_tier > tier_barony
+						agot_is_high_septon = no
+						NOT = { primary_title = title:d_kingsguard }
+					}
+
+					scope:jon_daenerys_mw_crown_story ?= {
+						remove_list_variable = {
+							name = mw_neutral_list
+							target = prev
+						}
+						remove_list_variable = {
+							name = mw_loyalist_list
+							target = prev
+						}
+					}
+
+					scope:jon_daenerys_mw_rebel_story = {
+						add_to_variable_list = {
+							name = mw_rebel_supporter_list
+							target = prev
+						}
+					}
+				}
+			}
+
+			scope:jon_daenerys_conquest_war = {
+				add_attacker = scope:jon
+			}
+		}
+
+		# The diplomatic visit has reached its successful conclusion.
+		scope:jon = {
+			remove_character_flag = atfw_journey_to_dragonstone_travelling
+			remove_character_flag = atfw_journey_to_dragonstone_arrived
+			involved_activity ?= {
+				progress_activity_phase_after = { days = 1 }
+			}
+		}
+
+		ai_chance = { base = 80 }
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0004.b
+
+		# Daenerys keeps refusing_marriage; no betrothal or realm transfer occurs.
+		scope:jon = {
+			trigger_event = { id = atfw_jon_daenerys.0006 days = 1 }
+		}
+
+		ai_chance = { base = 20 }
+	}
+}
+
+# Jon is informed that Daenerys will not receive him.
+atfw_jon_daenerys.0005 = {
+	type = character_event
+	title = atfw_jon_daenerys.0005.t
+	desc = atfw_jon_daenerys.0005.desc
+	theme = diplomacy
+
+	trigger = {
+		is_alive = yes
+	}
+
+	immediate = {
+		character:Targaryen_9 = { save_scope_as = daenerys }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:daenerys
+		animation = personality_arrogant
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0005.a
+
+		remove_character_flag = atfw_journey_to_dragonstone_travelling
+		remove_character_flag = atfw_journey_to_dragonstone_arrived
+		if = {
+			limit = {
+				involved_activity ?= {
+					has_activity_type = activity_atfw_journey_to_dragonstone
+				}
+			}
+			involved_activity = {
+				progress_activity_phase_after = { days = 1 }
+			}
+		}
+	}
+}
+
+# Jon is informed that Daenerys will not accept a betrothal.
+atfw_jon_daenerys.0006 = {
+	type = character_event
+	title = atfw_jon_daenerys.0006.t
+	desc = atfw_jon_daenerys.0006.desc
+	theme = marriage
+
+	trigger = {
+		is_alive = yes
+	}
+
+	immediate = {
+		character:Targaryen_9 = { save_scope_as = daenerys }
+	}
+
+	left_portrait = {
+		character = root
+		animation = personality_rational
+	}
+
+	right_portrait = {
+		character = scope:daenerys
+		animation = personality_rational
+	}
+
+	option = {
+		name = atfw_jon_daenerys.0006.a
+
+		remove_character_flag = atfw_journey_to_dragonstone_travelling
+		remove_character_flag = atfw_journey_to_dragonstone_arrived
+		if = {
+			limit = {
+				involved_activity ?= {
+					has_activity_type = activity_atfw_journey_to_dragonstone
+				}
+			}
+			involved_activity = {
+				progress_activity_phase_after = { days = 1 }
+			}
+		}
+	}
+}

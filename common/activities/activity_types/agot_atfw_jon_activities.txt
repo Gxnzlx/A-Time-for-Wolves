@@ -1,0 +1,363 @@
+﻿# A Time for Wolves — Jon Snow custom activities
+
+activity_atfw_northern_banners_feast = {
+	is_shown = {
+		this = character:Stark_7
+		has_character_flag = atfw_northern_banners_feast_unlocked
+	}
+
+	can_always_plan = no
+
+	can_start_showing_failures_only = {
+		is_available = yes
+		is_alive = yes
+		is_imprisoned = no
+		is_incapable = no
+		is_landed = yes
+		this = character:Stark_7
+		has_character_flag = atfw_northern_banners_feast_unlocked
+	}
+
+	is_valid = {
+		scope:host = {
+			is_alive = yes
+			is_imprisoned = no
+			is_incapable = no
+			this = character:Stark_7
+		}
+	}
+
+	on_start = {
+		scope:host = {
+			remove_character_flag = atfw_northern_banners_feast_unlocked
+		}
+	}
+
+	on_invalidated = {
+		if = {
+			limit = {
+				scope:host = {
+					NOT = { has_character_flag = atfw_jon_proclaimed_king_in_the_north }
+				}
+			}
+			scope:host = {
+				add_character_flag = atfw_northern_banners_feast_unlocked
+			}
+		}
+	}
+
+	on_complete = {
+		scope:host = {
+			add_character_flag = atfw_jon_northern_feast_completed
+
+			# Do not reveal Jon's parentage just because the activity ended.
+			if = {
+				limit = {
+					has_character_flag = atfw_jon_proclaimed_king_in_the_north
+					has_character_flag = atfw_jon_war_council_complete
+				}
+				trigger_event = {
+					id = atfw_jon_north.0005
+					days = 7
+				}
+			}
+		}
+	}
+
+	on_host_death = {
+		invalidate_activity = scope:activity
+	}
+
+	###################
+	# FEAST PARAMETERS
+	###################
+
+	is_single_location = yes
+	province_filter = capital
+	ai_province_filter = capital
+	max_province_icons = 1
+
+	is_location_valid = {
+		barony = title:b_winterfell
+	}
+
+	province_description = {
+		desc = activity_atfw_northern_banners_feast_province_desc
+	}
+
+	province_score = {
+		add = 100
+	}
+
+	cost = {
+		gold = 0
+	}
+
+	ui_predicted_cost = {
+		gold = 0
+	}
+
+	###################
+	# FEAST GRAPHICS
+	###################
+
+	map_entity = "building_western_feast_01_entity"
+
+	background = {
+		texture = "gfx/interface/illustrations/event_scenes/feast.dds"
+		environment = "environment_event_feast"
+		ambience = "event:/SFX/Events/Backgrounds/feasthall"
+		music = "grandfeast_cue"
+	}
+
+	###################
+	# GUESTS
+	###################
+
+	# Northern lords may need to cross most of the North to reach Winterfell.
+	max_guest_arrival_delay_time = { days = 45 }
+
+	allow_zero_guest_invites = no
+	open_invite = no
+	max_guests = 100
+
+	guest_invite_rules = {
+		defaults = {
+			1 = activity_invite_rule_vassals_and_below
+		}
+	}
+
+	can_be_activity_guest = {
+		is_adult = yes
+		is_healthy = yes
+		agot_can_be_activity_guest = yes
+		OR = {
+			is_vassal_of = scope:host
+			target_is_vassal_or_below = scope:host
+		}
+	}
+
+	guest_join_chance = {
+		base = 1000
+	}
+
+	host_intents = {
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+		player_defaults = { reduce_stress_intent }
+	}
+
+	guest_intents = {
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+	}
+
+	###################
+	# FEAST TYPE
+	###################
+
+	# A real feast has an option category. Without one, the generic activity
+	# planner falls back to the contest-selection presentation.
+	options = {
+		special_type = {
+			feast_type_generic = {
+				default = yes
+				ai_will_do = {
+					value = 100
+				}
+			}
+		}
+	}
+
+	special_option_category = special_type
+
+	###################
+	# SINGLE FEAST PHASE
+	###################
+
+	# Keep the whole gathering inside one feast phase. The loyalty oaths,
+	# proclamation and war council are narrative subevents of this phase,
+	# not selectable "contests".
+	phases = {
+		atfw_northern_banners_feast_phase = {
+			order = 1
+			is_predefined = yes
+			is_shown = { always = yes }
+
+			on_phase_active = {
+				if = {
+					limit = { this = scope:host }
+
+					# Hard end for the single feast phase.
+					scope:activity = {
+						progress_activity_phase_after = { days = 18 }
+					}
+
+					# Oaths are real subevents shown to Jon, not silent AI events.
+					trigger_event = {
+						id = atfw_jon_north.0008
+						days = 2
+					}
+
+					trigger_event = {
+						id = atfw_jon_north.0003
+						days = 10
+					}
+					trigger_event = {
+						id = atfw_jon_north.0004
+						days = 14
+					}
+				}
+			}
+		}
+	}
+
+	ai_will_do = { value = 0 }
+	ai_check_interval = 60
+	ai_will_select_province = { value = 100 }
+}
+
+activity_atfw_journey_to_dragonstone = {
+	is_shown = {
+		this = character:Stark_7
+		has_character_flag = atfw_journey_to_dragonstone_unlocked
+	}
+
+	can_always_plan = no
+
+	can_start_showing_failures_only = {
+		is_available = yes
+		is_alive = yes
+		is_imprisoned = no
+		is_incapable = no
+		is_landed = yes
+		this = character:Stark_7
+		has_character_flag = atfw_journey_to_dragonstone_unlocked
+		character:Targaryen_9 = { is_alive = yes }
+	}
+
+	is_valid = {
+		scope:host = {
+			is_alive = yes
+			is_imprisoned = no
+			is_incapable = no
+			this = character:Stark_7
+		}
+		character:Targaryen_9 = { is_alive = yes }
+	}
+
+	is_location_valid = {
+		barony = title:b_dragonstone
+	}
+
+	on_start = {
+		# Activity committed: consume the one-shot planner unlock.
+		# The Jon/Daenerys chain starts only when the destination phase becomes active.
+		scope:host = {
+			remove_character_flag = atfw_journey_to_dragonstone_unlocked
+		}
+	}
+
+	on_enter_travel_state = {
+		scope:host = {
+			add_character_flag = atfw_journey_to_dragonstone_travelling
+		}
+	}
+
+	on_invalidated = {
+		scope:host = {
+			remove_character_flag = atfw_journey_to_dragonstone_travelling
+			remove_character_flag = atfw_journey_to_dragonstone_unlocked
+		}
+	}
+
+	on_complete = {
+		scope:host = {
+			remove_character_flag = atfw_journey_to_dragonstone_arrived
+		}
+	}
+
+	on_host_death = {
+		invalidate_activity = scope:activity
+	}
+
+
+	### Graphics
+	# Reuse the Grand Tour travel scene for this diplomatic journey.
+	background = {
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_bridge.dds"
+		environment = "environment_travel_bridge"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
+	}
+
+	province_filter = all
+	ai_province_filter = all
+	max_province_icons = 1
+	allow_zero_guest_invites = yes
+	open_invite = no
+
+	province_description = {
+		desc = activity_atfw_journey_to_dragonstone_province_desc
+	}
+
+	province_score = {
+		add = 100
+	}
+
+	cost = {
+		gold = 0
+	}
+
+	ui_predicted_cost = {
+		gold = 0
+	}
+
+	phases = {
+		atfw_journey_to_dragonstone_phase = {
+			is_predefined = yes
+			location_source = pickable
+
+			on_phase_active = {
+				# Vanilla activities fire their destination/arrival events here.
+				# At this point the host has physically completed the travel plan
+				# and the activity is active at Dragonstone.
+				if = {
+					limit = {
+						this = scope:host
+					}
+					add_character_flag = atfw_journey_to_dragonstone_arrived
+					trigger_event = atfw_jon_daenerys.0001
+
+					# Keep Jon at Dragonstone long enough for the diplomatic
+					# event chain to play out before the activity concludes.
+					scope:activity = {
+						progress_activity_phase_after = { days = 7 }
+					}
+				}
+			}
+		}
+	}
+
+	max_guest_arrival_delay_time = { days = 1 }
+
+	ai_will_do = { value = 0 }
+	ai_check_interval = 60
+	ai_will_select_province = { value = 100 }
+
+	host_intents = {
+		# A neutral, targetless intent keeps the planner valid without
+		# forcing Jon to select an attendee before departure.
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+		player_defaults = { reduce_stress_intent }
+	}
+
+	guest_intents = {
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+	}
+
+	can_be_activity_guest = { always = no }
+	max_guests = 1
+	guest_join_chance = { base = 0 }
+}

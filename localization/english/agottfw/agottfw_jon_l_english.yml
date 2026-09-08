@@ -1,0 +1,80 @@
+﻿l_english:
+ atfw_jon_north.0001.t:0 "A Wolf Returns"
+ atfw_jon_north.0001.desc:0 "Before the first of the summoned banners can reach Winterfell, a familiar name passes from mouth to mouth through the castle: Brandon Stark lives.\n\nThe boy who vanished beyond the Wall has returned, though little remains of the brother I remember. Bran speaks quietly, almost distantly, of things no raven could have told him and of memories belonging to men long dead. Meera Reed has brought him through dangers I can scarcely imagine.\n\nFor the first time since taking Winterfell, one of the dead seems to have been returned to us."
+ atfw_jon_north.0001.a:0 "Bran... you're home."
+
+ atfw_jon_north.0002.t:0 "No One Comes Home"
+ atfw_jon_north.0002.desc:0 "Bran's return has scarcely settled over Winterfell when another rider passes beneath its gates.\n\nArya.\n\nThe little girl I remember is gone. The young woman before me carries herself like a blade kept beneath a cloak, and there is something in her eyes that speaks of roads far darker than any I travelled with the Watch. Yet when she looks upon the walls of Winterfell, for a moment she is my sister again.\n\nOne by one, the wolves are finding their way home."
+ atfw_jon_north.0002.a:0 "You took your time."
+
+ atfw_jon_north.0003.t:0 "The King in the North"
+ atfw_jon_north.0003.desc:0 "The great hall of Winterfell is filled from hearth to door. Lords, ladies, clan chiefs and captains crowd the benches while cups pass from hand to hand. It might almost be a feast, were there not so many empty seats left by the war.\n\nVoices rise over old grievances: wildlings, Boltons, southern kings, houses that answered the call and houses that did not. Then one voice cuts through them all. Another follows. Swords strike tables. Fists hammer shields.\n\n#bold \"The King in the North!\"#!\n\nThe cry spreads until the rafters themselves seem to answer it. They are not naming a Stark because of his birth. They are naming me because they chose me."
+ atfw_jon_north.0003.a:0 "The North remembers."
+
+ atfw_jon_north.0004.t:0 "The War That Matters"
+ atfw_jon_north.0004.desc:0 "I let the cheers fade before I speak again.\n\nThe crown they have placed upon me will mean nothing if the dead cross the Wall. I tell them what I saw at Hardhome: corpses rising, blue eyes opening in the dark, an army that grows with every man it kills. We need men, strong castles and weapons that can kill the Others.\n\nAnd we need dragonglass.\n\nRavens bring word that Daenerys Targaryen has landed at Dragonstone, the island beneath which great veins of dragonglass are said to lie. She has dragons as well—living fire against the dead.\n\nThe hall does not like the thought of its new king riding south to meet another queen. Neither do I. But I did not accept their crown so I could ignore the enemy that is coming."
+ atfw_jon_north.0004.a:0 "I will go to Dragonstone."
+
+ atfw_jon_north.0005.t:0 "A Name Buried in Snow"
+ atfw_jon_north.0005.desc:0 "Before I can leave, Bran asks that a handful of us meet in private. Sansa comes first. Samwell Tarly has brought what he learned among the records of the Citadel. Howland Reed, the last living man who rode with my father to the Tower of Joy, stands beside his daughter Meera.\n\nBran tells me what he has seen. Sam supplies the names written by dead maesters. Howland supplies the memory of a promise made beneath a bed of blood and winter roses.\n\nNed Stark was never my father.\n\nLyanna Stark was my mother. Rhaegar Targaryen was my father.\n\nThe truth should change everything. Instead, I can think only of the man who raised me, the family that called me brother, and a realm already balancing upon the edge of war. If this becomes known, every lord in Westeros will find a use for my blood."
+ atfw_jon_north.0005.a:0 "No one else can know. Not yet."
+
+ atfw_jon_north.0006.t:0 "South"
+ atfw_jon_north.0006.desc:0 "By morning the secret is buried again, though I know I will never look upon my own name in quite the same way.\n\nIt changes nothing about the dead. It changes nothing about the dragonglass beneath Dragonstone. Whatever blood runs through my veins, the North expects me to defend it.\n\nDavos has made the preparations. The road south waits."
+ atfw_jon_north.0006.a:0 "We ride for Dragonstone."
+ atfw_jon_north.0007.t:0 "The Banners Are Called"
+ atfw_jon_north.0007.desc:0 "The ravens have flown and the roads to Winterfell are filling with men beneath familiar colors. The war against the Boltons is won, but the North has not yet decided what comes after victory.\n\nI will not decide it alone. Every bannerman who bled for Winterfell, every lord who still owes the Starks his sword, will have a place in the great hall. There will be meat and ale enough to call it a feast, but no man will mistake why I have summoned them."
+ atfw_jon_north.0007.a:0 "Call the banners to Winterfell."
+
+ activity_atfw_northern_banners_feast:0 "Feast of the Northern Banners"
+ activity_atfw_northern_banners_feast_desc:0 "Jon Snow has summoned the lords and captains of the North to Winterfell. Beneath the cover of a feast, the realm will decide what follows the fall of the Boltons—and hear of the greater war gathering beyond the Wall."
+ activity_atfw_northern_banners_feast_province_desc:0 "The banners of the North will gather in Winterfell's great hall."
+ atfw_jon_north.0008.t:0 "The Banners Bend"
+ atfw_jon_north.0008.desc:0 "One by one, the lords of the North come before the high table. [ROOT.Char.GetTitledFirstName] places a hand upon the hilt of [ROOT.Char.GetHerHis] sword and bows before [jon.GetTitledFirstName]. Whatever quarrels survived the war with the Boltons are set aside before the gathered banners.\n\n#italic My sword is yours, Your Grace. My house remembers.#! "
+ atfw_jon_north.0008.a:0 "Rise. The North stands together."
+ activity_atfw_northern_banners_feast_host_desc:0 "The banners of the North have gathered at Winterfell at Jon Snow's command."
+ activity_atfw_northern_banners_feast_guest_desc:0 "You have answered Jon Snow's summons and come to Winterfell with the other northern banners."
+ activity_atfw_northern_banners_feast_conclusion_desc:0 "The northern lords have spoken, the realm has chosen its king, and the war council is ended."
+
+ atfw_jon_daenerys.0001.t: "Ice and Fire"
+ atfw_jon_daenerys.0001.desc: "Dragonstone rises black against the sea, all smoke, salt, and ancient Valyrian stone. I came here for dragonglass and for an ally against the dead, not to bend the knee to a southern queen.\n\nDaenerys Targaryen waits within the painted chamber. She is younger than the tales made her, yet there is nothing uncertain in the way she carries herself. Breaker of Chains, Mother of Dragons, claimant to the Iron Throne.\n\nHer violet eyes settle upon me. For a moment, neither king nor queen speaks."
+ atfw_jon_daenerys.0001.a: "So this is the Dragon Queen."
+
+ atfw_jon_daenerys.0002.t: "The White Wolf"
+ atfw_jon_daenerys.0002.desc: "Jon Snow does not look like a king from the songs. There is no gold upon him, no silk, no jeweled crown—only dark wool, old scars, and the grave manner of a man who has seen too much death.\n\nHe has come to ask for dragonglass and aid against an enemy I cannot see. He does not flatter me. Worse, he does not fear me.\n\nI had expected another proud northern lord. Instead I find myself wondering what sort of man his people chose to follow."
+ atfw_jon_daenerys.0002.a: "Let us hear what the King in the North has to say."
+
+ atfw_jon_daenerys.0003.t: "A Song Between Strangers"
+ atfw_jon_daenerys.0003.desc: "Days of councils and arguments give way to quieter words. Daenerys speaks of exile, of a brother who sold her dreams for a crown, and of the kingdoms she crossed before returning home. I speak of the Wall, of the dead, and of a name that was never truly mine.\n\nNeither of us has wanted marriage. Too often it is a chain forged by other hands. Yet between us there is something neither duty nor diplomacy can fully explain.\n\nFor the first time since arriving on Dragonstone, the distance between North and South feels a little smaller."
+ atfw_jon_daenerys.0003.a: "Perhaps we are not so different."
+
+ atfw_jon_daenerys.0004.t: "A Union of Ice and Fire"
+ atfw_jon_daenerys.0004.desc: "The war for the living will demand more than armies. The North needs dragons; Daenerys needs a realm that will stand beside her rather than beneath her.\n\nWhat began as distrust has become respect, and respect has grown into something neither of us expected. We had both sworn, in our own ways, that marriage would not decide our futures. Now the choice is ours.\n\nA betrothal between the last Targaryen queen and the White Wolf would bind our causes together before gods and men—and perhaps bind more than crowns."
+ atfw_jon_daenerys.0004.a: "Then let ice and fire stand together."
+
+ atfw_jon_daenerys.0002.b: "I did not come to Westeros to receive every king who knocks at my door."
+
+ atfw_jon_daenerys.0004.b: "No. Our cause does not need a marriage."
+
+ atfw_jon_daenerys.0005.t: "A Closed Door"
+ atfw_jon_daenerys.0005.desc: "The answer arrives before I can stand before the queen. Daenerys Targaryen will not receive me. To her, the war for the Iron Throne demands all her attention, and tales of walking dead are not enough to draw her away from her purpose.\n\nI came south seeking dragonglass and dragons. For now, I have found only a closed door."
+ atfw_jon_daenerys.0005.a: "We will have to find another way."
+
+ atfw_jon_daenerys.0006.t: "Two Crowns, Two Paths"
+ atfw_jon_daenerys.0006.desc: "Daenerys hears the proposal to the end, but her answer is clear. There may be respect between us, even friendship, but she will not surrender her future to a betrothal. The alliance I imagined will not be sealed before gods or men.\n\nIce and fire have found a common cause, but not a union."
+ atfw_jon_daenerys.0006.a: "Then we will fight as allies, not as husband and wife."
+
+ activity_atfw_journey_to_dragonstone:0 "Journey to Dragonstone"
+ activity_atfw_journey_to_dragonstone_host_an_a:0 "$host_activity_a$"
+ activity_atfw_journey_to_dragonstone_desc:0 "The dead are marching, and Dragonstone holds both the dragonglass and the dragon queen whose aid the North may need. I must travel south and meet Daenerys Targaryen in person."
+ activity_atfw_journey_to_dragonstone_destination_selection:0 "Dragonstone is the only destination for this journey."
+ activity_atfw_journey_to_dragonstone_selection_tooltip:0 "Travel to Dragonstone to seek an audience with Daenerys Targaryen. The meeting will begin only after Jon physically arrives there."
+ activity_atfw_journey_to_dragonstone_host_desc:0 "Travel to Dragonstone and seek an audience with Daenerys Targaryen."
+ activity_atfw_journey_to_dragonstone_guest_desc:0 "No guests are invited to this journey."
+ activity_atfw_journey_to_dragonstone_guest_help_text:0 "$activity_atfw_journey_to_dragonstone$"
+ activity_atfw_journey_to_dragonstone_province_desc:0 "Travel to Dragonstone and seek the dragon queen."
+ activity_atfw_journey_to_dragonstone_conclusion_desc:0 "Jon has reached Dragonstone."
+ activity_atfw_journey_to_dragonstone_predicted_cost:0 "This journey has no activity fee; only the normal risks and logistics of travel apply."
+ atfw_journey_to_dragonstone_phase:0 "Arrival at Dragonstone"
+ atfw_journey_to_dragonstone_phase_desc:0 "Jon makes his way to Dragonstone to seek an audience with Daenerys Targaryen."
+ TRAVEL_NAME_FOR_activity_atfw_journey_to_dragonstone:0 "Jon's Journey to Dragonstone"

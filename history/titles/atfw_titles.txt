@@ -5902,3 +5902,21 @@ d_laamp_Frey_24 = {
 		holder = 0
 	}
 }
+
+###########################################################
+# Consolidated title history
+d_laamp_merc_golden_company = {
+	8304.12.25 = {
+		holder = Fossoway_7 # Canon, Franklyn Flowers
+	}
+}
+
+
+###########################################################
+# Consolidated title history
+###########################################################
+d_laamp_merc_stormcrows = {
+	8303.11.12 = {
+		holder = Stormcrows_5
+	}
+}

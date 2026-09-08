@@ -1,0 +1,6 @@
+﻿# A Time for Wolves
+#
+# Intentionally empty.
+# Jon Snow's Vanilla automatic parentage discovery is disabled in
+# agot_yearly_on_actions.txt. ATFW's parentage scene is narrative-only and
+# does not create/reveal secret_agot_disputed_heritage.

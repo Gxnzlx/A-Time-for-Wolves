@@ -1260,14 +1260,6 @@ Stark_7 = {
 	8303.12.12 = {
 		add_trait = refusing_marriage
 	}
-	8304.12.27 = {
-		effect = {
-			add_secret = {
-				type = secret_agot_disputed_heritage
-				target = character:Stark_7
-			}
-		}
-	}
 	8305.1.1 = {
 		effect = {
 			agot_create_personal_coa_for_historical_ai = { ACTOR = character:Stark_7 COA_KEY = jon_snow_personal_coa }

@@ -1,0 +1,9 @@
+﻿# A Time for Wolves - custom event backgrounds
+
+atfw_battle_of_the_bastards = {
+	background = {
+		reference = "gfx/illustrations/battle_of_the_bastards.dds"
+		environment = "environment_frontend_west_main"
+		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+	}
+}

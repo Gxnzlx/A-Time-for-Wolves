@@ -307,31 +307,10 @@ atfw_jon_north.0005 = {
 			}
 		}
 
-		if = {
-			limit = {
-				knows_self_royal_bastard_secret = no
-			}
-			scope:howland = {
-				random_known_secret = {
-					limit = {
-						secret_type = secret_agot_disputed_heritage
-						secret_target = root
-					}
-					reveal_to = root
-				}
-			}
-		}
 
-		if = {
-			limit = {
-				knows_self_royal_bastard_secret = no
-			}
-			add_secret = {
-				type = secret_agot_disputed_heritage
-				target = root
-			}
-		}
-
+		# ATFW deliberately does NOT use CK3AGOT's disputed-heritage or
+		# royal-bastard secret mechanics here. The reveal is narrative-only.
+		# This prevents the Vanilla royal-bastard story/event chain from starting.
 		add_character_flag = atfw_jon_knows_true_parentage
 	}
 

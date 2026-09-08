@@ -127,13 +127,11 @@ atfw_bookmark_intro.0006 = {
 	desc = atfw_bookmark_intro.0006.desc
 
 	override_background = {
-		texture = "gfx/illustrations/battle_of_the_bastards.dds"
+		reference = atfw_battle_of_the_bastards
 	}
-
 	override_icon = {
 		reference = "gfx/interface/icons/event_types/type_war.dds"
 	}
-
 	theme = war
 
 	option = {

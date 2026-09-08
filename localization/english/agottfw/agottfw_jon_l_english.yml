@@ -30,7 +30,9 @@
  activity_atfw_northern_banners_feast_desc:0 "Jon Snow has summoned the lords and captains of the North to Winterfell. Beneath the cover of a feast, the realm will decide what follows the fall of the Boltons—and hear of the greater war gathering beyond the Wall."
  activity_atfw_northern_banners_feast_province_desc:0 "The banners of the North will gather in Winterfell's great hall."
  atfw_jon_north.0008.t:0 "The Banners Bend"
- atfw_jon_north.0008.desc:0 "One by one, the lords of the North come before the high table. [ROOT.Char.GetTitledFirstName] places a hand upon the hilt of [ROOT.Char.GetHerHis] sword and bows before [jon.GetTitledFirstName]. Whatever quarrels survived the war with the Boltons are set aside before the gathered banners.\n\n#italic My sword is yours, Your Grace. My house remembers.#! "
+ atfw_jon_north.0008.desc:0 "One by one, the lords of the North come before the high table. [scope:oath_lord.GetTitledFirstName] places a hand upon the hilt of [scope:oath_lord.GetHerHis] sword and bows before me. Whatever quarrels survived the war with the Boltons are set aside before the gathered banners.
+
+#italic My sword is yours, Your Grace. My house remembers.#!"
  atfw_jon_north.0008.a:0 "Rise. The North stands together."
  activity_atfw_northern_banners_feast_host_desc:0 "The banners of the North have gathered at Winterfell at Jon Snow's command."
  activity_atfw_northern_banners_feast_guest_desc:0 "You have answered Jon Snow's summons and come to Winterfell with the other northern banners."

@@ -30,7 +30,9 @@
  activity_atfw_northern_banners_feast_desc:0 "Jon Snow ha convocado a los señores y capitanes del Norte en Invernalia. Bajo la apariencia de un festín, el reino decidirá qué seguirá a la caída de los Bolton y escuchará hablar de la guerra mucho mayor que se cierne más allá del Muro."
  activity_atfw_northern_banners_feast_province_desc:0 "Los estandartes del Norte se reunirán en el gran salón de Invernalia."
  atfw_jon_north.0008.t:0 "Los estandartes se inclinan"
- atfw_jon_north.0008.desc:0 "Uno tras otro, los señores del Norte se presentan ante la mesa principal. [ROOT.Char.GetTitledFirstName] posa una mano sobre la empuñadura de su espada y se inclina ante [jon.GetTitledFirstName]. Cualquier disputa que haya sobrevivido a la guerra contra los Bolton queda a un lado ante los estandartes reunidos.\n\n#italic «Mi espada es vuestra, Majestad. Mi casa recuerda».#! "
+ atfw_jon_north.0008.desc:0 "Uno a uno, los señores del Norte se presentan ante la mesa principal. [scope:oath_lord.GetTitledFirstName] posa una mano sobre la empuñadura de [scope:oath_lord.GetHerHis] espada y se inclina ante mí. Las disputas que sobrevivieron a la guerra contra los Bolton quedan a un lado ante los estandartes reunidos.
+
+#italic Mi espada es vuestra, alteza. Mi casa recuerda.#!"
  atfw_jon_north.0008.a:0 "Alzaos. El Norte permanece unido."
  activity_atfw_northern_banners_feast_host_desc:0 "Los estandartes del Norte se han reunido en Invernalia por orden de Jon Snow."
  activity_atfw_northern_banners_feast_guest_desc:0 "Habéis respondido a la convocatoria de Jon Snow y acudido a Invernalia junto a los demás estandartes norteños."

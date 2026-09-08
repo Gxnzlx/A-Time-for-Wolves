@@ -47,18 +47,34 @@ activity_atfw_northern_banners_feast = {
 	}
 
 	on_complete = {
-		scope:host = {
-			add_character_flag = atfw_jon_northern_feast_completed
+		if = {
+			limit = {
+				this = scope:host
+			}
 
-			# Do not reveal Jon's parentage just because the activity ended.
 			if = {
 				limit = {
-					has_character_flag = atfw_jon_proclaimed_king_in_the_north
-					has_character_flag = atfw_jon_war_council_complete
+					NOT = { has_character_flag = atfw_jon_northern_feast_completed }
 				}
-				trigger_event = {
-					id = atfw_jon_north.0005
-					days = 7
+
+				add_character_flag = atfw_jon_northern_feast_completed
+
+				if = {
+					limit = {
+						has_character_flag = atfw_jon_proclaimed_king_in_the_north
+						has_character_flag = atfw_jon_war_council_complete
+						NOT = { has_character_flag = atfw_jon_parentage_scene_scheduled }
+						NOT = { has_character_flag = atfw_jon_parentage_scene_fired }
+					}
+
+					# Set BEFORE trigger_event. This prevents multiple completion
+					# callbacks from queuing the same scene.
+					add_character_flag = atfw_jon_parentage_scene_scheduled
+
+					trigger_event = {
+						id = atfw_jon_north.0005
+						days = 7
+					}
 				}
 			}
 		}
@@ -186,17 +202,37 @@ activity_atfw_northern_banners_feast = {
 
 			on_phase_active = {
 				if = {
-					limit = { this = scope:host }
-
-					# Hard end for the single feast phase.
-					scope:activity = {
-						progress_activity_phase_after = { days = 18 }
+					limit = {
+						this = scope:host
 					}
 
-					# Oaths are real subevents shown to Jon, not silent AI events.
-					trigger_event = {
-						id = atfw_jon_north.0008
-						days = 2
+					scope:activity = {
+						progress_activity_phase_after = { days = 18 }
+
+						every_attending_character = {
+							limit = {
+								this != scope:host
+								is_landed = yes
+								OR = {
+									is_vassal_of = scope:host
+									target_is_vassal_or_below = scope:host
+								}
+								NOT = {
+									has_character_flag = atfw_northern_banners_fealty_renewed
+								}
+							}
+
+							# Mark when scheduling so the same lord cannot be queued twice.
+							add_character_flag = atfw_northern_banners_fealty_renewed
+							save_scope_as = oath_lord
+
+							scope:host = {
+								trigger_event = {
+									id = atfw_jon_north.0008
+									days = { 2 8 }
+								}
+							}
+						}
 					}
 
 					trigger_event = {

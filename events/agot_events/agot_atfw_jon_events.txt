@@ -33,8 +33,13 @@ atfw_jon_north.0001 = {
 			set_location = root.capital_province
 			save_scope_as = bran
 		}
-		root = { add_courtier = character:Stark_Dummy_10 }
-		character:Stark_Dummy_10 = { return_to_court = yes }
+		character:Stark_Dummy_10 = {
+			if = {
+				limit = { NOT = { is_courtier_of = root } }
+				root = { add_courtier = prev }
+			}
+			return_to_court = yes
+		}
 	}
 
 	left_portrait = {
@@ -80,8 +85,13 @@ atfw_jon_north.0002 = {
 			set_location = root.capital_province
 			save_scope_as = arya
 		}
-		root = { add_courtier = character:Stark_Dummy_9 }
-		character:Stark_Dummy_9 = { return_to_court = yes }
+		character:Stark_Dummy_9 = {
+			if = {
+				limit = { NOT = { is_courtier_of = root } }
+				root = { add_courtier = prev }
+			}
+			return_to_court = yes
+		}
 	}
 
 	left_portrait = {
@@ -176,42 +186,34 @@ atfw_jon_north.0004 = {
 # Northern lords renew their fealty as they arrive at Winterfell.
 # This is a guest-side subevent of the same feast activity.
 atfw_jon_north.0008 = {
-	type = activity_event
+	type = character_event
 	title = atfw_jon_north.0008.t
 	desc = atfw_jon_north.0008.desc
 	theme = feast_activity
+
 	override_background = {
 		reference = agot_pk_north
 	}
 
 	trigger = {
 		this = character:Stark_7
-		scope:activity = {
-			any_attending_character = {
-				this != scope:host
-				is_landed = yes
-				OR = {
-					is_vassal_of = scope:host
-					target_is_vassal_or_below = scope:host
-				}
-				NOT = { has_character_flag = atfw_northern_banners_fealty_renewed }
-			}
+		exists = scope:oath_lord
+		scope:oath_lord = {
+			is_alive = yes
 		}
 	}
 
 	immediate = {
-		scope:activity = {
-			random_attending_character = {
+		scope:oath_lord = {
+			if = {
 				limit = {
-					this != scope:host
-					is_landed = yes
-					OR = {
-						is_vassal_of = scope:host
-						target_is_vassal_or_below = scope:host
-					}
-					NOT = { has_character_flag = atfw_northern_banners_fealty_renewed }
+					NOT = { is_courtier_of = root }
 				}
-				save_scope_as = oath_lord
+				add_opinion = {
+					target = root
+					modifier = grateful_opinion
+					opinion = 15
+				}
 			}
 		}
 	}
@@ -228,35 +230,6 @@ atfw_jon_north.0008 = {
 
 	option = {
 		name = atfw_jon_north.0008.a
-
-		scope:oath_lord = {
-			add_character_flag = atfw_northern_banners_fealty_renewed
-			add_opinion = {
-				target = root
-				modifier = grateful_opinion
-				opinion = 15
-			}
-		}
-
-		if = {
-			limit = {
-				scope:activity = {
-					any_attending_character = {
-						this != scope:host
-						is_landed = yes
-						OR = {
-							is_vassal_of = scope:host
-							target_is_vassal_or_below = scope:host
-						}
-						NOT = { has_character_flag = atfw_northern_banners_fealty_renewed }
-					}
-				}
-			}
-			trigger_event = {
-				id = atfw_jon_north.0008
-				days = 1
-			}
-		}
 	}
 }
 
@@ -307,24 +280,33 @@ atfw_jon_north.0005 = {
 		has_character_flag = atfw_jon_proclaimed_king_in_the_north
 		has_character_flag = atfw_jon_war_council_complete
 		has_character_flag = atfw_jon_northern_feast_completed
+		NOT = { has_character_flag = atfw_jon_parentage_scene_fired }
 	}
+
 	override_background = study
 
 	immediate = {
+		# Set first: queued duplicate copies will no longer pass this event's trigger.
+		add_character_flag = atfw_jon_parentage_scene_fired
+		remove_character_flag = atfw_jon_parentage_scene_scheduled
+
 		character:Stark_Dummy_8 = { save_scope_as = sansa }
 		character:Stark_Dummy_10 = { save_scope_as = bran }
 		character:Tarly_2 = { save_scope_as = sam }
 		character:Reed_1 = { save_scope_as = howland }
+
 		character:Reed_2 = {
 			set_location = root.capital_province
 			save_scope_as = meera
-		}
-		root = { add_courtier = character:Reed_2 }
-		character:Reed_2 = { return_to_court = yes }
 
-		# Jon's real parents are already Rhaegar Targaryen and Lyanna Stark in
-		# CK3AGOT's base history. Reveal the existing disputed-heritage secret
-		# to Jon privately, using the same secret type as the base bastard events.
+			if = {
+				limit = {
+					NOT = { is_courtier_of = root }
+				}
+				root = { add_courtier = prev }
+			}
+		}
+
 		if = {
 			limit = {
 				knows_self_royal_bastard_secret = no
@@ -340,8 +322,6 @@ atfw_jon_north.0005 = {
 			}
 		}
 
-		# Safety fallback for ATFW timelines where Howland's inherited secret
-		# was not instantiated. This remains private to Jon.
 		if = {
 			limit = {
 				knows_self_royal_bastard_secret = no
@@ -382,12 +362,11 @@ atfw_jon_north.0005 = {
 
 	option = {
 		name = atfw_jon_north.0005.a
-
-		# Jon learns the truth but refuses to expose it. He remains publicly
-		# Jon Snow/Stark as defined by ATFW; no public bastard-reveal story fires.
 		add_character_flag = atfw_jon_hides_true_parentage
-
-		trigger_event = { id = atfw_jon_north.0006 days = 12 }
+		trigger_event = {
+			id = atfw_jon_north.0006
+			days = 12
+		}
 	}
 }
 

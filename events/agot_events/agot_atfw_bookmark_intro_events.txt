@@ -127,30 +127,18 @@ atfw_bookmark_intro.0006 = {
 	desc = atfw_bookmark_intro.0006.desc
 
 	override_background = {
-		reference = agot_fullscreen_targaryen
+		reference = agot_pk_north
 	}
 	override_icon = {
 		reference = "gfx/interface/icons/event_types/type_war.dds"
 	}
 	theme = war
 
-	immediate = {
-	}
-
 	option = {
 		name = atfw_bookmark_intro.0006.a
-	}
 
-	option = {
-		name = atfw_bookmark_intro.0006.b
-
-		# Unlock the dedicated journey and open its activity planner.
-		# The meeting chain will continue only when Jon physically reaches Dragonstone.
-		add_character_flag = atfw_journey_to_dragonstone_unlocked
-		open_view_data = {
-			view = activity_list_detail_host_window
-			data = activity_type:activity_atfw_journey_to_dragonstone
-			player = root
-		}
+		# Jon's 8303 story now begins in Winterfell. Dragonstone is unlocked
+		# only after the northern council and the private parentage revelation.
+		trigger_event = { id = atfw_jon_north.0001 days = 1 }
 	}
 }

@@ -1,0 +1,35 @@
+﻿l_spanish:
+ atfw_jon_north.0001.t:0 "El regreso de un lobo"
+ atfw_jon_north.0001.desc:0 "Antes de que el primero de los estandartes convocados alcance Invernalia, un nombre familiar comienza a correr de boca en boca por el castillo: Brandon Stark vive.\n\nEl muchacho que desapareció más allá del Muro ha regresado, aunque queda poco del hermano que recuerdas. Bran habla en voz baja, casi distante, de cosas que ningún cuervo podría haberle contado y de recuerdos pertenecientes a hombres muertos hace mucho. Meera Reed lo ha traído a través de peligros que apenas puedes imaginar.\n\nPor primera vez desde que recuperaste Invernalia, parece que uno de los muertos te ha sido devuelto."
+ atfw_jon_north.0001.a:0 "Bran... estás en casa."
+
+ atfw_jon_north.0002.t:0 "Nadie vuelve a casa"
+ atfw_jon_north.0002.desc:0 "Apenas ha tenido tiempo de asentarse en Invernalia la noticia del regreso de Bran cuando otro jinete cruza sus puertas.\n\nArya.\n\nLa niña que recuerdas ha desaparecido. La joven que tienes ante ti se mueve como una hoja oculta bajo una capa, y hay algo en sus ojos que habla de caminos mucho más oscuros que cualquiera que hayas recorrido con la Guardia. Pero cuando contempla las murallas de Invernalia, por un instante vuelve a ser tu hermana.\n\nUno a uno, los lobos encuentran el camino de regreso a casa."
+ atfw_jon_north.0002.a:0 "Te has tomado tu tiempo."
+
+ atfw_jon_north.0003.t:0 "El Rey en el Norte"
+ atfw_jon_north.0003.desc:0 "El gran salón de Invernalia está abarrotado desde los hogares hasta las puertas. Señores, damas, jefes de clan y capitanes ocupan los bancos mientras las copas pasan de mano en mano. Casi podría parecer un festín, de no ser por tantos asientos vacíos que ha dejado la guerra.\n\nLas voces se alzan entre viejos agravios: los salvajes, los Bolton, los reyes del Sur, las casas que respondieron al llamado y aquellas que no lo hicieron. Entonces una voz se impone sobre todas las demás. Otra la sigue. Las espadas golpean las mesas. Los puños martillean los escudos.\n\n#bold «¡El Rey en el Norte!»#!\n\nEl grito se extiende hasta que las propias vigas parecen devolverlo. No están proclamando a un Stark por su nacimiento. Te proclaman porque te han elegido."
+ atfw_jon_north.0003.a:0 "El Norte recuerda."
+
+ atfw_jon_north.0004.t:0 "La guerra que importa"
+ atfw_jon_north.0004.desc:0 "Dejas que los vítores se apaguen antes de volver a hablar.\n\nLa corona que te han entregado no significará nada si los muertos cruzan el Muro. Les cuentas lo que viste en Casa Austera: cadáveres levantándose, ojos azules abriéndose en la oscuridad, un ejército que crece con cada hombre al que mata. Necesitáis hombres, fortalezas sólidas y armas capaces de matar a los Otros.\n\nY necesitáis vidriagón.\n\nLos cuervos traen noticias de que Daenerys Targaryen ha desembarcado en Rocadragón, la isla bajo la cual, según se dice, existen grandes vetas de vidriagón. También posee dragones: fuego viviente contra los muertos.\n\nAl salón no le agrada que su nuevo rey cabalgue hacia el Sur para encontrarse con otra reina. A ti tampoco. Pero no aceptaste su corona para ignorar al enemigo que se aproxima."
+ atfw_jon_north.0004.a:0 "Iré a Rocadragón."
+
+ atfw_jon_north.0005.t:0 "Un nombre enterrado en la nieve"
+ atfw_jon_north.0005.desc:0 "Antes de que puedas partir, Bran pide que unos pocos os reunáis en privado. Sansa llega primero. Samwell Tarly trae consigo lo que ha descubierto entre los registros de la Ciudadela. Howland Reed, el último hombre vivo que acompañó a tu padre hasta la Torre de la Alegría, permanece junto a su hija Meera.\n\nBran relata lo que ha visto. Sam aporta los nombres escritos por maestres muertos. Howland aporta el recuerdo de una promesa pronunciada entre sangre y rosas de invierno.\n\nEddard Stark nunca fue tu padre.\n\nLyanna Stark fue tu madre. Rhaegar Targaryen fue tu padre.\n\nLa verdad debería cambiarlo todo. Sin embargo, solo puedes pensar en el hombre que te crio, en la familia que te llamó hermano y en un reino que ya se sostiene al borde de la guerra. Si esto llega a saberse, todos los señores de Poniente encontrarán un uso para tu sangre."
+ atfw_jon_north.0005.a:0 "Nadie más debe saberlo. Todavía no."
+
+ atfw_jon_north.0006.t:0 "Hacia el Sur"
+ atfw_jon_north.0006.desc:0 "Al llegar la mañana, el secreto vuelve a quedar enterrado, aunque sabes que jamás volverás a contemplar tu propio nombre de la misma manera.\n\nEso no cambia nada acerca de los muertos. No cambia nada acerca del vidriagón bajo Rocadragón. Sea cual sea la sangre que corre por tus venas, el Norte espera que lo defiendas.\n\nDavos ha dispuesto los preparativos. El camino hacia el Sur aguarda."
+ atfw_jon_north.0006.a:0 "Cabalgamos hacia Rocadragón."
+ atfw_jon_north.0007.t:0 "La llamada de los estandartes"
+ atfw_jon_north.0007.desc:0 "Los cuervos ya han partido y los caminos hacia Invernalia comienzan a llenarse de hombres bajo colores conocidos. La guerra contra los Bolton ha terminado, pero el Norte aún debe decidir qué vendrá después de la victoria.
+
+No tomarás esa decisión solo. Cada abanderado que haya sangrado por Invernalia, cada señor que todavía deba su espada a los Stark, tendrá un lugar en el gran salón. Habrá carne y cerveza suficientes para llamarlo festín, aunque nadie confundirá el verdadero motivo de la convocatoria."
+ atfw_jon_north.0007.a:0 "Convocad a los estandartes en Invernalia."
+
+ activity_atfw_northern_banners_feast:0 "Festín de los Abanderados del Norte"
+ activity_atfw_northern_banners_feast_desc:0 "Jon Snow ha convocado a los señores y capitanes del Norte en Invernalia. Bajo la apariencia de un festín, el reino decidirá qué seguirá a la caída de los Bolton y escuchará hablar de la guerra mucho mayor que se cierne más allá del Muro."
+ activity_atfw_northern_banners_feast_province_desc:0 "Los estandartes del Norte se reunirán en el gran salón de Invernalia."
+ atfw_northern_banners_proclamation_phase:0 "El festín"
+ atfw_northern_banners_war_council_phase:0 "El consejo de guerra"

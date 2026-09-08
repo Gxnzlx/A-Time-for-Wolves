@@ -17,7 +17,10 @@
  atfw_bookmark_intro.0005.desc:0 "La hija del Rey Loco ha regresado. Daenerys Targaryen ha cruzado el mar Angosto, ha tomado Rocadragón y ha traído consigo dragones, ejércitos extranjeros y aliados dispuestos a arrancarte la corona. Dorne y el Dominio ya han levantado sus estandartes en su nombre.\n\nPero tú ocupas el Trono de Hierro. Desembarco del Rey es tuyo, y la Casa Lannister no ha sobrevivido hasta hoy inclinando la cabeza ante sus enemigos. Si la hija de Aerys desea una corona, tendrá que venir a buscarla.\n\n#bold El dragón ha vuelto, y viene por tu trono.#!"
  atfw_bookmark_intro.0005.a:0 "Que venga."
 
- atfw_bookmark_intro.jon.t:0 "El regreso del dragón"
- atfw_bookmark_intro.0006.desc:0 "Mientras el Sur vuelve a disputarse el Trono de Hierro, llegan noticias de que Daenerys Targaryen ha desembarcado en Rocadragón con tres dragones y un ejército a sus espaldas. Cersei Lannister se prepara para combatirla, y las grandes casas vuelven a escoger bandos.\n\nNada de ello cambia lo que has visto más allá del Muro. Los muertos marchan, y ninguna corona importará si atraviesan hacia el Sur. Bajo Rocadragón yace el vidriagón que necesitas, y la reina que lo posee comanda las únicas criaturas capaces de convertir ejércitos enteros en ceniza.\n\n#bold Quizá haya llegado el momento de mirar hacia el Sur.#!"
- atfw_bookmark_intro.0006.a:0 "El Sur puede librar sus propias guerras."
- atfw_bookmark_intro.0006.b:0 "Debo conocer a esta reina dragón."
+ atfw_bookmark_intro.jon.t:0 "La batalla ha terminado"
+ atfw_bookmark_intro.0006.desc:0 "Invernalia vuelve a ser tuya. Ramsay Bolton ha muerto, su ejército yace derrotado sobre las nieves que rodean el castillo y el huargo vuelve a ondear sobre las murallas del hogar de tu padre.
+
+Pero la victoria no ha traído la paz. El Norte está exhausto, viejas heridas dividen a sus casas y, más allá del Muro, aguarda un enemigo que la mayoría jamás ha visto. Antes de decidir qué vendrá después, los señores que sangraron por Invernalia —y aquellos que no lo hicieron— deberán reunirse bajo un mismo techo.
+
+#bold La batalla ha terminado. Ahora el Norte debe decidir qué hacer.#!"
+ atfw_bookmark_intro.0006.a:0 "Convocaré a todos los estandartes en Invernalia."

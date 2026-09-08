@@ -1,0 +1,150 @@
+﻿activity_atfw_northern_banners_feast = {
+	is_shown = {
+		this = character:Stark_7
+		has_character_flag = atfw_northern_banners_feast_unlocked
+	}
+
+	can_always_plan = no
+
+	can_start_showing_failures_only = {
+		is_available = yes
+		is_alive = yes
+		is_imprisoned = no
+		is_incapable = no
+		is_landed = yes
+		this = character:Stark_7
+		has_character_flag = atfw_northern_banners_feast_unlocked
+	}
+
+	is_valid = {
+		scope:host = {
+			is_alive = yes
+			is_imprisoned = no
+			is_incapable = no
+			this = character:Stark_7
+		}
+	}
+
+	is_single_location = yes
+	province_filter = capital
+	ai_province_filter = capital
+	max_province_icons = 1
+
+	is_location_valid = {
+		barony = title:b_winterfell
+	}
+
+	province_description = {
+		desc = activity_atfw_northern_banners_feast_province_desc
+	}
+
+	province_score = {
+		add = 100
+	}
+
+	cost = {
+		gold = 0
+	}
+
+	ui_predicted_cost = {
+		gold = 0
+	}
+
+	on_start = {
+		scope:host = {
+			remove_character_flag = atfw_northern_banners_feast_unlocked
+		}
+	}
+
+	on_invalidated = {
+		# If the activity is interrupted before Jon is proclaimed, allow the
+		# player to call the banners again rather than breaking Part I.
+		if = {
+			limit = {
+				scope:host = {
+					NOT = { has_character_flag = atfw_jon_proclaimed_king_in_the_north }
+				}
+			}
+			scope:host = {
+				add_character_flag = atfw_northern_banners_feast_unlocked
+			}
+		}
+	}
+
+	on_complete = {
+		# The public gathering is over. Jon's private parentage scene follows
+		# later, keeping the overall Part I pacing close to two months.
+		scope:host = {
+			trigger_event = { id = atfw_jon_north.0005 days = 12 }
+		}
+	}
+
+	on_host_death = {
+		invalidate_activity = scope:activity
+	}
+
+	allow_zero_guest_invites = yes
+	open_invite = no
+	max_guest_arrival_delay_time = { days = 5 }
+
+	can_be_activity_guest = {
+		is_adult = yes
+		is_healthy = yes
+		in_diplomatic_range = scope:host
+		agot_can_be_activity_guest = yes
+		OR = {
+			is_vassal_of = scope:host
+			target_is_vassal_or_below = scope:host
+			is_courtier_of = scope:host
+		}
+	}
+
+	max_guests = 40
+
+	guest_join_chance = {
+		base = 100
+	}
+
+	host_intents = {
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+		player_defaults = { reduce_stress_intent }
+	}
+
+	guest_intents = {
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+	}
+
+	phases = {
+		atfw_northern_banners_proclamation_phase = {
+			order = 1
+			is_predefined = yes
+			is_shown = { always = yes }
+
+			on_phase_active = {
+				if = {
+					limit = { this = scope:host }
+					trigger_event = atfw_jon_north.0003
+				}
+			}
+		}
+
+		atfw_northern_banners_war_council_phase = {
+			order = 2
+			is_predefined = yes
+			is_shown = { always = yes }
+
+			on_phase_active = {
+				if = {
+					limit = { this = scope:host }
+					trigger_event = atfw_jon_north.0004
+				}
+			}
+		}
+	}
+
+	ai_will_do = { value = 0 }
+	ai_check_interval = 60
+	ai_will_select_province = { value = 100 }
+}

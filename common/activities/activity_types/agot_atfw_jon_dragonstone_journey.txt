@@ -23,22 +23,19 @@
 			is_imprisoned = no
 			is_incapable = no
 			this = character:Stark_7
-			has_character_flag = atfw_journey_to_dragonstone_unlocked
 		}
 		character:Targaryen_9 = { is_alive = yes }
 	}
 
 	is_location_valid = {
-		this = title:c_dragonstone.capital_province
+		barony = title:b_dragonstone
 	}
 
 	on_start = {
-		# on_start occurs once the host has physically reached the activity location.
+		# Activity committed: consume the one-shot planner unlock.
+		# The Jon/Daenerys chain starts only when the destination phase becomes active.
 		scope:host = {
 			remove_character_flag = atfw_journey_to_dragonstone_unlocked
-			remove_character_flag = atfw_journey_to_dragonstone_travelling
-			add_character_flag = atfw_journey_to_dragonstone_arrived
-			trigger_event = atfw_jon_daenerys.0001
 		}
 	}
 
@@ -63,6 +60,15 @@
 
 	on_host_death = {
 		invalidate_activity = scope:activity
+	}
+
+
+	### Graphics
+	# Reuse the Grand Tour travel scene for this diplomatic journey.
+	background = {
+		texture = "gfx/interface/illustrations/event_scenes/ep2_travel_bridge.dds"
+		environment = "environment_travel_bridge"
+		ambience = "event:/SFX/Events/Backgrounds/mountains_day"
 	}
 
 	province_filter = all
@@ -91,9 +97,23 @@
 		atfw_journey_to_dragonstone_phase = {
 			is_predefined = yes
 			location_source = pickable
+
 			on_phase_active = {
-				scope:activity = {
-					progress_activity_phase_after = { days = 1 }
+				# Vanilla activities fire their destination/arrival events here.
+				# At this point the host has physically completed the travel plan
+				# and the activity is active at Dragonstone.
+				if = {
+					limit = {
+						this = scope:host
+					}
+					add_character_flag = atfw_journey_to_dragonstone_arrived
+					trigger_event = atfw_jon_daenerys.0001
+
+					# Keep Jon at Dragonstone long enough for the diplomatic
+					# event chain to play out before the activity concludes.
+					scope:activity = {
+						progress_activity_phase_after = { days = 7 }
+					}
 				}
 			}
 		}
@@ -104,6 +124,19 @@
 	ai_will_do = { value = 0 }
 	ai_check_interval = 60
 	ai_will_select_province = { value = 100 }
+
+	host_intents = {
+		# A neutral, targetless intent keeps the planner valid without
+		# forcing Jon to select an attendee before departure.
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+		player_defaults = { reduce_stress_intent }
+	}
+
+	guest_intents = {
+		intents = { reduce_stress_intent }
+		default = reduce_stress_intent
+	}
 
 	can_be_activity_guest = { always = no }
 	max_guests = 0

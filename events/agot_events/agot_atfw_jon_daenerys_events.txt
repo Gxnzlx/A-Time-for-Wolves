@@ -1,26 +1,12 @@
 ﻿namespace = atfw_jon_daenerys
 
-# Jon Snow arrives before Daenerys Targaryen.
+# Jon Snow has physically reached Dragonstone. This event is fired directly
+# from the active destination phase of activity_atfw_journey_to_dragonstone.
 atfw_jon_daenerys.0001 = {
-	type = character_event
+	type = activity_event
 	title = atfw_jon_daenerys.0001.t
 	desc = atfw_jon_daenerys.0001.desc
 	theme = diplomacy
-
-	trigger = {
-		is_alive = yes
-		is_married = no
-		is_betrothed = no
-		has_trait = refusing_marriage
-		has_character_flag = atfw_journey_to_dragonstone_arrived
-		location = title:c_dragonstone.capital_province
-		character:Targaryen_9 = {
-			is_alive = yes
-			is_married = no
-			is_betrothed = no
-			has_trait = refusing_marriage
-		}
-	}
 
 	immediate = {
 		remove_character_flag = atfw_journey_to_dragonstone_arrived
@@ -32,11 +18,6 @@ atfw_jon_daenerys.0001 = {
 		animation = personality_bold
 	}
 
-	right_portrait = {
-		character = scope:daenerys
-		animation = personality_rational
-	}
-
 	option = {
 		name = atfw_jon_daenerys.0001.a
 		scope:daenerys = {
@@ -46,7 +27,7 @@ atfw_jon_daenerys.0001 = {
 	}
 }
 
-# Daenerys weighs the King in the North.
+# Daenerys decides whether Jon will be granted an audience.
 atfw_jon_daenerys.0002 = {
 	type = character_event
 	title = atfw_jon_daenerys.0002.t
@@ -55,10 +36,11 @@ atfw_jon_daenerys.0002 = {
 
 	trigger = {
 		is_alive = yes
-		has_trait = refusing_marriage
 		character:Stark_7 = {
 			is_alive = yes
-			has_trait = refusing_marriage
+			involved_activity ?= {
+				has_activity_type = activity_atfw_journey_to_dragonstone
+			}
 		}
 	}
 
@@ -69,11 +51,6 @@ atfw_jon_daenerys.0002 = {
 	left_portrait = {
 		character = root
 		animation = personality_rational
-	}
-
-	right_portrait = {
-		character = scope:jon
-		animation = personality_bold
 	}
 
 	option = {
@@ -93,7 +70,7 @@ atfw_jon_daenerys.0002 = {
 	}
 }
 
-# A private conversation turns political necessity into mutual understanding.
+# After Daenerys receives him, repeated councils turn distrust into respect.
 atfw_jon_daenerys.0003 = {
 	type = character_event
 	title = atfw_jon_daenerys.0003.t
@@ -102,10 +79,11 @@ atfw_jon_daenerys.0003 = {
 
 	trigger = {
 		is_alive = yes
-		has_trait = refusing_marriage
+		involved_activity ?= {
+			has_activity_type = activity_atfw_journey_to_dragonstone
+		}
 		character:Targaryen_9 = {
 			is_alive = yes
-			has_trait = refusing_marriage
 		}
 	}
 
@@ -133,7 +111,7 @@ atfw_jon_daenerys.0003 = {
 	}
 }
 
-# Daenerys proposes a union of crowns; both abandon their refusal to marry.
+# Daenerys decides whether political understanding will become a dynastic union.
 atfw_jon_daenerys.0004 = {
 	type = character_event
 	title = atfw_jon_daenerys.0004.t
@@ -142,14 +120,11 @@ atfw_jon_daenerys.0004 = {
 
 	trigger = {
 		is_alive = yes
-		is_married = no
-		is_betrothed = no
-		has_trait = refusing_marriage
 		character:Stark_7 = {
 			is_alive = yes
-			is_married = no
-			is_betrothed = no
-			has_trait = refusing_marriage
+			involved_activity ?= {
+				has_activity_type = activity_atfw_journey_to_dragonstone
+			}
 		}
 	}
 
@@ -170,14 +145,26 @@ atfw_jon_daenerys.0004 = {
 	option = {
 		name = atfw_jon_daenerys.0004.a
 
+		# Acceptance is only possible while both remain free to marry.
+		trigger = {
+			is_married = no
+			is_betrothed = no
+			has_trait = refusing_marriage
+			scope:jon = {
+				is_married = no
+				is_betrothed = no
+				has_trait = refusing_marriage
+			}
+		}
+
 		remove_trait = refusing_marriage
 		scope:jon = {
 			remove_trait = refusing_marriage
 			create_betrothal = root
 		}
 
-		# The political union follows the personal one:
-		# the North and the Vale swear fealty directly to Daenerys.
+		# The personal union is followed by the political settlement established
+		# for this ATFW scenario: the North and Vale swear directly to Daenerys.
 		create_title_and_vassal_change = {
 			type = swear_fealty
 			save_scope_as = jon_daenerys_union_change
@@ -200,10 +187,18 @@ atfw_jon_daenerys.0004 = {
 
 		resolve_title_and_vassal_change = scope:jon_daenerys_union_change
 
-		# Once Jon has sworn fealty to Daenerys, preserve her as his
-		# pre-war liege, then temporarily separate him as a Mega War
-		# co-belligerent. Vanilla's realm rebuild will restore the
-		# vassalage after the conflict.
+		# Jon was independent before this union. Any PWL data left from the
+		# bookmark Mega War setup is stale and must not survive his voluntary
+		# vassalization to Daenerys.
+		scope:jon = {
+			remove_variable = agot_pwl_direct
+			remove_variable = agot_pwl_top
+		}
+
+		# If Daenerys's conquest is still active, Jon joins her as a
+		# co-belligerent WITHOUT breaking the vassalage just created above.
+		# His new liege relationship with Daenerys is intentional and must not
+		# be treated as temporary Mega War breakup data.
 		random_owned_story = {
 			limit = {
 				story_type = story_agot_mw_rebel
@@ -212,34 +207,89 @@ atfw_jon_daenerys.0004 = {
 			save_scope_as = jon_daenerys_mw_rebel_story
 		}
 
-		scope:jon = {
-			if = {
-				limit = {
-					is_landed = yes
-					is_independent_ruler = no
-				}
-				agot_set_mw_pwl_variables = {
-					SET_SCOPE = this
-					REF_SCOPE = this
-				}
-				agot_mw_become_independent = yes
-			}
-
-			scope:jon_daenerys_mw_rebel_story ?= {
-				add_to_variable_list = {
-					name = mw_rebel_supporter_list
-					target = prev
-				}
-			}
-		}
-
-		every_character_war = {
+		random_character_war = {
 			limit = {
 				using_cb = atfw_daenerys_conquest_war
 				primary_attacker = root
 				primary_defender = title:h_the_iron_throne.holder
 			}
-			add_attacker = scope:jon
+			save_scope_as = jon_daenerys_conquest_war
+		}
+
+		if = {
+			limit = {
+				exists = scope:jon_daenerys_mw_rebel_story
+				exists = scope:jon_daenerys_conquest_war
+			}
+
+			scope:jon_daenerys_mw_rebel_story.var:mw_crown_story_var ?= {
+				save_scope_as = jon_daenerys_mw_crown_story
+			}
+
+			# Jon was initially registered as a neutral independent ruler.
+			# Clear that old stance and any stale PWL data before moving the
+			# North to Daenerys's side.
+			scope:jon = {
+				remove_variable = agot_pwl_direct
+				remove_variable = agot_pwl_top
+
+				scope:jon_daenerys_mw_crown_story ?= {
+					remove_list_variable = {
+						name = mw_neutral_list
+						target = prev
+					}
+					remove_list_variable = {
+						name = mw_loyalist_list
+						target = prev
+					}
+				}
+
+				scope:jon_daenerys_mw_rebel_story = {
+					add_to_variable_list = {
+						name = mw_rebel_supporter_list
+						target = prev
+					}
+				}
+
+				every_vassal_or_below = {
+					limit = {
+						highest_held_title_tier > tier_barony
+						agot_is_high_septon = no
+						NOT = { primary_title = title:d_kingsguard }
+					}
+
+					scope:jon_daenerys_mw_crown_story ?= {
+						remove_list_variable = {
+							name = mw_neutral_list
+							target = prev
+						}
+						remove_list_variable = {
+							name = mw_loyalist_list
+							target = prev
+						}
+					}
+
+					scope:jon_daenerys_mw_rebel_story = {
+						add_to_variable_list = {
+							name = mw_rebel_supporter_list
+							target = prev
+						}
+					}
+				}
+			}
+
+			scope:jon_daenerys_conquest_war = {
+				add_attacker = scope:jon
+			}
+		}
+
+		# The diplomatic visit has reached its successful conclusion.
+		scope:jon = {
+			remove_character_flag = atfw_journey_to_dragonstone_travelling
+			remove_character_flag = atfw_journey_to_dragonstone_arrived
+			involved_activity ?= {
+				progress_activity_phase_after = { days = 1 }
+			}
 		}
 
 		ai_chance = { base = 80 }
@@ -284,6 +334,19 @@ atfw_jon_daenerys.0005 = {
 
 	option = {
 		name = atfw_jon_daenerys.0005.a
+
+		remove_character_flag = atfw_journey_to_dragonstone_travelling
+		remove_character_flag = atfw_journey_to_dragonstone_arrived
+		if = {
+			limit = {
+				involved_activity ?= {
+					has_activity_type = activity_atfw_journey_to_dragonstone
+				}
+			}
+			involved_activity = {
+				progress_activity_phase_after = { days = 1 }
+			}
+		}
 	}
 }
 
@@ -314,5 +377,18 @@ atfw_jon_daenerys.0006 = {
 
 	option = {
 		name = atfw_jon_daenerys.0006.a
+
+		remove_character_flag = atfw_journey_to_dragonstone_travelling
+		remove_character_flag = atfw_journey_to_dragonstone_arrived
+		if = {
+			limit = {
+				involved_activity ?= {
+					has_activity_type = activity_atfw_journey_to_dragonstone
+				}
+			}
+			involved_activity = {
+				progress_activity_phase_after = { days = 1 }
+			}
+		}
 	}
 }

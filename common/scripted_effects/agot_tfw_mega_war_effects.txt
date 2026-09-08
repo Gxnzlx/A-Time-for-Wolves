@@ -47,6 +47,37 @@ atfw_8303_prepare_rebel_supporter = {
 	}
 }
 
+### Add an ATFW realm that is already independent in title history to a Mega War list.
+# Unlike agot_mw_add_character_to_mw_list, this does NOT fabricate a pre-war liege.
+atfw_8303_add_independent_realm_to_mw_list = {
+	$CHARACTER_SCOPE$ ?= {
+		# Defensive cleanup: these rulers are explicitly independent at 8303.
+		remove_variable = agot_pwl_direct
+		remove_variable = agot_pwl_top
+
+		$STORY_SCOPE$ = {
+			add_to_variable_list = {
+				name = $LIST$
+				target = prev
+			}
+		}
+
+		every_vassal_or_below = {
+			limit = {
+				highest_held_title_tier > tier_barony
+				agot_is_high_septon = no
+				NOT = { primary_title = title:d_kingsguard }
+			}
+			$STORY_SCOPE$ = {
+				add_to_variable_list = {
+					name = $LIST$
+					target = prev
+				}
+			}
+		}
+	}
+}
+
 ### ATFW 8303 historical Mega War setup
 
 atfw_8303_mega_war_setup = {
@@ -84,6 +115,14 @@ atfw_8303_mega_war_setup = {
 			CASUS_BELLI = atfw_daenerys_conquest_war
 			PRE_WAR_LIEGE = character:Targaryen_9
 			MW_TARGET = title:h_the_iron_throne.holder
+		}
+
+		# Daenerys is an external independent conqueror. The historical setup
+		# helper requires a PRE_WAR_LIEGE parameter, but no such relationship
+		# exists in ATFW. Never allow the helper's temporary PWL data to survive.
+		character:Targaryen_9 = {
+			remove_variable = agot_pwl_direct
+			remove_variable = agot_pwl_top
 		}
 
 		# The Vanilla scenario helper only maps its stock rebellion CB.
@@ -185,18 +224,17 @@ atfw_8303_mega_war_setup = {
 			CHARACTER_SCOPE = character:Vypren_1
 		}
 
-		# The Reach and Dorne begin committed to Daenerys.
-		agot_mw_add_character_to_mw_list = {
+		# The Reach and Dorne begin committed to Daenerys and are already
+		# independent in ATFW title history. Do not invent Cersei as PWL.
+		atfw_8303_add_independent_realm_to_mw_list = {
 			CHARACTER_SCOPE = title:e_the_reach.holder
 			STORY_SCOPE = scope:mw_rebel_story
 			LIST = mw_rebel_supporter_list
-			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
 		}
-		agot_mw_add_character_to_mw_list = {
+		atfw_8303_add_independent_realm_to_mw_list = {
 			CHARACTER_SCOPE = title:e_dorne.holder
 			STORY_SCOPE = scope:mw_rebel_story
 			LIST = mw_rebel_supporter_list
-			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
 		}
 
 		# Set up the Crown side under Cersei.
@@ -222,18 +260,17 @@ atfw_8303_mega_war_setup = {
 			}
 		}
 
-		# The North and the Vale begin neutral.
-		agot_mw_add_character_to_mw_list = {
+		# The North and the Vale begin neutral and are already independent
+		# in ATFW title history. They have no pre-war liege under Cersei.
+		atfw_8303_add_independent_realm_to_mw_list = {
 			CHARACTER_SCOPE = title:e_the_north.holder
 			STORY_SCOPE = scope:mw_crown_story
 			LIST = mw_neutral_list
-			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
 		}
-		agot_mw_add_character_to_mw_list = {
+		atfw_8303_add_independent_realm_to_mw_list = {
 			CHARACTER_SCOPE = title:e_the_vale.holder
 			STORY_SCOPE = scope:mw_crown_story
 			LIST = mw_neutral_list
-			PRE_WAR_LIEGE_SCOPE = title:h_the_iron_throne.holder
 		}
 
 		# Populate the shared realm pool and Mega War opinion data.

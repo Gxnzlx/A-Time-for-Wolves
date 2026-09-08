@@ -1,5 +1,5 @@
 ﻿agot_group_agot_tfw = {
-	default_start_date = 8305.1.1
+	default_start_date = 8303.12.31
 }
 
 # agot_group_agot_tfw2 = {

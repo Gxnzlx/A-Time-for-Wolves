@@ -89,83 +89,24 @@
 
 		animation = personality_dishonorable
 	}
-}
 
-agot_8305 = {
-	start_date = 8305.1.1
-	is_playable = yes
-	group = agot_group_agot_tfw
-
-	weight = { value = 20 }
 
 	character = {
-		name = "bookmark_305_brandon_stark"
+		name = "bookmark_303_jon_snow"
 		dynasty = dynn_Stark
-		dynasty_splendor_level = 5
 		type = male
-		birth = 8290.7.7
-		title = h_the_iron_throne
-		government = lp_feudal_government
-		culture = northman
-		religion = old_gods_children
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-		history_id = Stark_Dummy_10
-		position = { 600 800 }
-
-		animation = personality_rational
-	}
-
-	character = {
-		name = "bookmark_305_sansa_stark"
-		dynasty = dynn_Stark
-		type = female
 		title = e_the_north
 		religion = old_gods_wnw
 		culture = northman
-		birth = 8286.12.5
+		birth = 8283.8.2
 		government = lp_feudal_government
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-		history_id = Stark_Dummy_8
+		history_id = Stark_7
 		dynasty_splendor_level = 5
 		position = { 480 370 }
 
-		animation = personality_rational
+		animation = personality_honorable
 	}
-
-	character = {
-		name = "bookmark_305_jon_snow"
-		dynasty = dynn_Stark
-		type = male
-		title = d_laamp_merc_jonsnow
-		religion = old_gods_wnw
-		culture = northman
-		birth = 8283.8.2
-		government = landless_adventurer_government
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = Stark_7
-		dynasty_splendor_level = 5
-		position = { 900 140 }
-
-		animation = shame
-	}
-
-	character = {
-		name = "bookmark_305_arya_stark"
-		dynasty = dynn_Stark
-		type = female
-		title = d_laamp_stormchaser
-		religion = old_gods_wnw
-		culture = northman
-		birth = 8289.3.16
-		government = landless_adventurer_government
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = Stark_Dummy_9
-		dynasty_splendor_level = 5
-		position = { 1300 750 }
-
-		animation = personality_dishonorable
-	}
-
 }
 
 agot_8305_2 = {
@@ -316,40 +257,6 @@ agot_8305_2 = {
 	}
 
 	character = {
-		name = "bookmark_305_edmure_tully"
-		dynasty = dynn_Tully
-		dynasty_splendor_level = 3
-		type = male
-		birth = 8273.1.1
-		title = e_the_riverlands
-		government = lp_feudal_government
-		culture = riverman_main
-		religion = fots_seven
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
-		history_id = Tully_7
-		position = { 570 190 }
-
-		animation = disapproval
-	}
-
-	character = {
-		name = "bookmark_305_robert_arryn"
-		dynasty = dynn_Arryn
-		dynasty_splendor_level = 4
-		type = male
-		birth = 8292.1.1
-		title = e_the_vale
-		government = lp_feudal_government
-		culture = valeman_main
-		religion = fots_seven
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-		history_id = Arryn_8
-		position = { 870 140 }
-
-		animation = boredom
-	}
-
-	character = {
 		name = "bookmark_305_bronn_blackwater"
 		dynasty = dynn_Blackwater
 		dynasty_splendor_level = 1
@@ -364,6 +271,58 @@ agot_8305_2 = {
 		position = { 350 650 }
 
 		animation = personality_greedy
+	}
+
+
+	character = {
+		name = "bookmark_305_sansa_stark"
+		dynasty = dynn_Stark
+		type = female
+		title = e_the_north
+		religion = old_gods_wnw
+		culture = northman
+		birth = 8286.12.5
+		government = lp_feudal_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = Stark_Dummy_8
+		dynasty_splendor_level = 5
+		position = { 570 190 }
+
+		animation = personality_rational
+	}
+
+	character = {
+		name = "bookmark_305_jon_snow"
+		dynasty = dynn_Stark
+		type = male
+		title = d_laamp_merc_jonsnow
+		religion = old_gods_wnw
+		culture = northman
+		birth = 8283.8.2
+		government = landless_adventurer_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Stark_7
+		dynasty_splendor_level = 5
+		position = { 870 140 }
+
+		animation = shame
+	}
+
+	character = {
+		name = "bookmark_305_arya_stark"
+		dynasty = dynn_Stark
+		type = female
+		title = d_laamp_stormchaser
+		religion = old_gods_wnw
+		culture = northman
+		birth = 8289.3.16
+		government = landless_adventurer_government
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
+		history_id = Stark_Dummy_9
+		dynasty_splendor_level = 5
+		position = { 900 760 }
+
+		animation = personality_dishonorable
 	}
 }
 

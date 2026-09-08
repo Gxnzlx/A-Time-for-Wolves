@@ -3704,6 +3704,12 @@ Seaworth_1 = {
 				POSITION = councillor_chancellor
 			}
 		}
+		effect = { # Caravan Master for Jon Snow
+			agot_appoint_as_court_position_for_castle_history_effect = {
+				CASTLE = title:e_the_north
+				POSITION = travel_leader_court_position
+			}
+		}
 	}
 	8305.1.1 = {
 		effect = { release_from_prison = yes }

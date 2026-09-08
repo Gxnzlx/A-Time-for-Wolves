@@ -120,9 +120,9 @@ activity_atfw_northern_banners_feast = {
 	map_entity = "building_western_feast_01_entity"
 
 	background = {
-		texture = "gfx/interface/illustrations/event_scenes/feast.dds"
-		environment = "environment_event_feast"
-		ambience = "event:/SFX/Events/Backgrounds/feasthall"
+		texture = "gfx/interface/illustrations/event_scenes/north/throneroom_winterfell.dds"
+		environment = "environment_throneroom_winterfell"
+		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
 		music = "grandfeast_cue"
 	}
 
@@ -206,42 +206,15 @@ activity_atfw_northern_banners_feast = {
 						this = scope:host
 					}
 
-					scope:activity = {
-						progress_activity_phase_after = { days = 18 }
-
-						every_attending_character = {
-							limit = {
-								this != scope:host
-								is_landed = yes
-								OR = {
-									is_vassal_of = scope:host
-									target_is_vassal_or_below = scope:host
-								}
-								NOT = {
-									has_character_flag = atfw_northern_banners_fealty_renewed
-								}
-							}
-
-							# Mark when scheduling so the same lord cannot be queued twice.
-							add_character_flag = atfw_northern_banners_fealty_renewed
-							save_scope_as = oath_lord
-
-							scope:host = {
-								trigger_event = {
-									id = atfw_jon_north.0008
-									days = { 2 8 }
-								}
-							}
-						}
-					}
-
+					# One feast scene contains the oaths, proclamation and war council.
+					# There are no per-lord or separate council event windows.
 					trigger_event = {
 						id = atfw_jon_north.0003
 						days = 10
 					}
-					trigger_event = {
-						id = atfw_jon_north.0004
-						days = 14
+
+					scope:activity = {
+						progress_activity_phase_after = { days = 18 }
 					}
 				}
 			}

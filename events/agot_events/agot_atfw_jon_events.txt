@@ -115,16 +115,47 @@ atfw_jon_north.0002 = {
 
 # The northern lords answer Jon's summons and proclaim him King in the North.
 atfw_jon_north.0003 = {
-	type = character_event
+	type = activity_event
 	title = atfw_jon_north.0003.t
 	desc = atfw_jon_north.0003.desc
 	theme = feast_activity
+
 	override_background = {
-		reference = agot_pk_north
+		reference = agot_winterfell_throneroom
+	}
+
+	trigger = {
+		this = character:Stark_7
+		NOT = { has_character_flag = atfw_jon_northern_feast_scene_complete }
 	}
 
 	immediate = {
 		character:Stark_Dummy_8 = { save_scope_as = sansa }
+		character:Seaworth_1 = { save_scope_as = davos }
+
+		# The attending northern lords renew their loyalty as part of this
+		# single feast scene. No separate oath event windows are created.
+		scope:activity = {
+			every_attending_character = {
+				limit = {
+					this != scope:host
+					is_landed = yes
+					OR = {
+						is_vassal_of = scope:host
+						target_is_vassal_or_below = scope:host
+					}
+					NOT = {
+						has_character_flag = atfw_northern_banners_fealty_renewed
+					}
+				}
+				add_character_flag = atfw_northern_banners_fealty_renewed
+				add_opinion = {
+					target = scope:host
+					modifier = grateful_opinion
+					opinion = 15
+				}
+			}
+		}
 	}
 
 	left_portrait = {
@@ -137,12 +168,20 @@ atfw_jon_north.0003 = {
 		animation = personality_rational
 	}
 
+	lower_left_portrait = {
+		character = scope:davos
+		animation = personality_honorable
+	}
+
 	option = {
 		name = atfw_jon_north.0003.a
 
+		# The proclamation and the war council conclude inside this same
+		# feast scene instead of opening additional event windows.
 		add_prestige = major_prestige_gain
 		add_character_flag = atfw_jon_proclaimed_king_in_the_north
-
+		add_character_flag = atfw_jon_war_council_complete
+		add_character_flag = atfw_jon_northern_feast_scene_complete
 	}
 }
 

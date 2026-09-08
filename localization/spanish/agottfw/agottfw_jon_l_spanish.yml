@@ -6,10 +6,13 @@
  atfw_jon_north.0002.t:0 "Nadie vuelve a casa"
  atfw_jon_north.0002.desc:0 "Apenas ha tenido tiempo de asentarse en Invernalia la noticia del regreso de Bran cuando otro jinete cruza sus puertas.\n\nArya.\n\nLa niña que recuerdas ha desaparecido. La joven que tienes ante ti se mueve como una hoja oculta bajo una capa, y hay algo en sus ojos que habla de caminos mucho más oscuros que cualquiera que hayas recorrido con la Guardia. Pero cuando contempla las murallas de Invernalia, por un instante vuelve a ser tu hermana.\n\nUno a uno, los lobos encuentran el camino de regreso a casa."
  atfw_jon_north.0002.a:0 "Te has tomado tu tiempo."
-
  atfw_jon_north.0003.t:0 "El Rey en el Norte"
- atfw_jon_north.0003.desc:0 "El gran salón de Invernalia está abarrotado desde los hogares hasta las puertas. Señores, damas, jefes de clan y capitanes ocupan los bancos mientras las copas pasan de mano en mano. Casi podría parecer un festín, de no ser por tantos asientos vacíos que ha dejado la guerra.\n\nLas voces se alzan entre viejos agravios: los salvajes, los Bolton, los reyes del Sur, las casas que respondieron al llamado y aquellas que no lo hicieron. Entonces una voz se impone sobre todas las demás. Otra la sigue. Las espadas golpean las mesas. Los puños martillean los escudos.\n\n#bold «¡El Rey en el Norte!»#!\n\nEl grito se extiende hasta que las propias vigas parecen devolverlo. No están proclamando a un Stark por su nacimiento. Te proclaman porque te han elegido."
- atfw_jon_north.0003.a:0 "El Norte recuerda."
+ atfw_jon_north.0003.desc:0 "El festín ha llenado el gran salón de Invernalia con los estandartes del Norte. Uno a uno, mis señores se presentan ante mí. Por una noche se dejan a un lado viejos agravios; se ofrecen espadas, las casas renuevan su lealtad y el salón responde con una sola voz.
+
+Entonces el grito se alza desde las mesas, primero de una garganta y luego de un centenar: #italic ¡El Rey en el Norte!#! No los convoqué para recibir una corona, pero me la entregan de todos modos.
+
+Cuando por fin cesan los vítores, Sansa, Davos y los señores reunidos vuelven su atención hacia la guerra que se avecina. Hablo de los muertos más allá del Muro, del vidriagón bajo Rocadragón y de Daenerys Targaryen. El Norte no sobrevivirá a las guerras venideras si solo mira hacia sí mismo. Les anuncio que viajaré al sur para reunirme personalmente con la Reina Dragón."
+ atfw_jon_north.0003.a:0 "El Norte recuerda. Y ahora debemos prepararnos."
 
  atfw_jon_north.0004.t:0 "La guerra que importa"
  atfw_jon_north.0004.desc:0 "Dejas que los vítores se apaguen antes de volver a hablar.\n\nLa corona que te han entregado no significará nada si los muertos cruzan el Muro. Les cuentas lo que viste en Casa Austera: cadáveres levantándose, ojos azules abriéndose en la oscuridad, un ejército que crece con cada hombre al que mata. Necesitáis hombres, fortalezas sólidas y armas capaces de matar a los Otros.\n\nY necesitáis vidriagón.\n\nLos cuervos traen noticias de que Daenerys Targaryen ha desembarcado en Rocadragón, la isla bajo la cual, según se dice, existen grandes vetas de vidriagón. También posee dragones: fuego viviente contra los muertos.\n\nAl salón no le agrada que su nuevo rey cabalgue hacia el Sur para encontrarse con otra reina. A ti tampoco. Pero no aceptaste su corona para ignorar al enemigo que se aproxima."

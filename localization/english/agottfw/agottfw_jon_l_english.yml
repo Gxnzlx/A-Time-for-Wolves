@@ -6,10 +6,13 @@
  atfw_jon_north.0002.t:0 "No One Comes Home"
  atfw_jon_north.0002.desc:0 "Bran's return has scarcely settled over Winterfell when another rider passes beneath its gates.\n\nArya.\n\nThe little girl I remember is gone. The young woman before me carries herself like a blade kept beneath a cloak, and there is something in her eyes that speaks of roads far darker than any I travelled with the Watch. Yet when she looks upon the walls of Winterfell, for a moment she is my sister again.\n\nOne by one, the wolves are finding their way home."
  atfw_jon_north.0002.a:0 "You took your time."
-
  atfw_jon_north.0003.t:0 "The King in the North"
- atfw_jon_north.0003.desc:0 "The great hall of Winterfell is filled from hearth to door. Lords, ladies, clan chiefs and captains crowd the benches while cups pass from hand to hand. It might almost be a feast, were there not so many empty seats left by the war.\n\nVoices rise over old grievances: wildlings, Boltons, southern kings, houses that answered the call and houses that did not. Then one voice cuts through them all. Another follows. Swords strike tables. Fists hammer shields.\n\n#bold \"The King in the North!\"#!\n\nThe cry spreads until the rafters themselves seem to answer it. They are not naming a Stark because of his birth. They are naming me because they chose me."
- atfw_jon_north.0003.a:0 "The North remembers."
+ atfw_jon_north.0003.desc:0 "The feast has filled Winterfell's great hall with the banners of the North. One by one, my lords come before me. Old grievances are swallowed for a night; swords are pledged, houses renew their fealty, and the hall answers with a single voice.
+
+Then the cry rises from the tables, first from one throat and then from a hundred: #italic The King in the North!#! I did not summon them for a crown, but they place one upon me all the same.
+
+When the shouting finally fades, Sansa, Davos and the gathered lords turn to the war ahead. I speak of the dead beyond the Wall, of the dragonglass beneath Dragonstone, and of Daenerys Targaryen. The North cannot survive the wars to come by looking only inward. I tell them that I will go south and meet the Dragon Queen myself."
+ atfw_jon_north.0003.a:0 "The North remembers. And now we prepare."
 
  atfw_jon_north.0004.t:0 "The War That Matters"
  atfw_jon_north.0004.desc:0 "I let the cheers fade before I speak again.\n\nThe crown they have placed upon me will mean nothing if the dead cross the Wall. I tell them what I saw at Hardhome: corpses rising, blue eyes opening in the dark, an army that grows with every man it kills. We need men, strong castles and weapons that can kill the Others.\n\nAnd we need dragonglass.\n\nRavens bring word that Daenerys Targaryen has landed at Dragonstone, the island beneath which great veins of dragonglass are said to lie. She has dragons as well—living fire against the dead.\n\nThe hall does not like the thought of its new king riding south to meet another queen. Neither do I. But I did not accept their crown so I could ignore the enemy that is coming."

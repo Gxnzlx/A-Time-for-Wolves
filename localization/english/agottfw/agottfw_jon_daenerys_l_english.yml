@@ -2,115 +2,87 @@
  atfw_jon_north.0007.t:0 "The Banners Are Called"
  atfw_jon_north.0007.desc:0 "Winterfell belongs to the Starks again, but victory over the Boltons has not settled the future of the North. Ravens fly to every castle that still recognizes the direwolf. The men who fought for Winterfell, and those who stood aside, will sit beneath one roof.\n\nThere will be meat, ale, and enough benches to call it a feast, though no one will mistake the true purpose of the gathering. The North must decide who will lead it after so many years of war."
  atfw_jon_north.0007.a:0 "Call the banners to Winterfell."
-
  atfw_jon_north.0003.t:0 "The King in the North"
  atfw_jon_north.0003.desc:0 "Winterfell's great hall is packed. The banners of the North hang from the rafters while the lords who survived the war against the Boltons fill the tables. One after another, they renew their loyalty to the Starks.\n\nThen Lyanna Mormont rises. Her voice is small, but it cuts through the hall more sharply than those of many grown men. She reminds them who answered the Stark call, who refused, and who was willing to die for Winterfell. Then she turns to you.\n\n#italic Jon Snow avenged the Red Wedding. He is the White Wolf. The King in the North.#!\n\nOne sword leaves its sheath. Then another. Within moments the whole hall is standing and a single cry strikes the stone walls.\n\n#bold The King in the North!#!"
  atfw_jon_north.0003.a:0 "The North remembers."
-
  atfw_jon_north.0009.t:0 "The Wolves of the North"
  atfw_jon_north.0009.desc:0 "The lords of the North and Vale fill Winterfell's great hall. You did not summon them to celebrate a victory, but to prepare them for a war unlike any they have fought before. The Night King is marching south, and when he comes he will not distinguish between men and women, noble and smallfolk. Everyone able to hold a weapon must learn to use one.\n\nYet the North's old wounds have not healed. Last Hearth and Karhold remain in the hands of Ned Umber and Alys Karstark, children of men who betrayed the Starks and died for it. Sansa demands that their castles be given to families who remained loyal, and more than a few lords agree.\n\nBut children are not guilty of their fathers' crimes. You call Ned and Alys before the hall and require them to renew their houses' loyalty. Both kneel and swear to serve House Stark. The Umbers will keep Last Hearth and the Karstarks, Karhold.\n\nYou cannot let yesterday's wars divide the North before the war that is coming."
  atfw_jon_north.0009.a:0 "Yesterday we were enemies. Today we must fight together."
-
  atfw_jon_north.0010.t:0 "The First Front"
  atfw_jon_north.0010.desc:0 "If the army of the dead crosses the Wall, Eastwatch-by-the-Sea will be one of the first places in its path. Tormund knows the Free Folk better than any kneeling lord in this hall, and he knows what waits beyond that wall of ice.\n\nYou order him to take his people to Eastwatch and strengthen the castle. The Wall can no longer be treated as a forgotten frontier. It is now the first line of defense for every living soul."
  atfw_jon_north.0010.a:0 "Tormund will strengthen Eastwatch."
-
  atfw_jon_north.0011.t:0 "A Letter from Dragonstone"
  atfw_jon_north.0011.desc:0 "A raven from the south carries a letter written in a hand you recognize. Tyrion Lannister writes from Dragonstone in the name of Daenerys Targaryen. The dragon queen has landed in Westeros and summons you before her. She expects you to travel south, recognize her as the rightful sovereign, and present your cause in person.\n\nYou do not trust the Targaryens, but you knew Tyrion at the Wall. Beneath the courtesies, you can still hear his voice."
  atfw_jon_north.0011.a:0 "Tyrion would not write this without reason."
-
  atfw_jon_north.0012.t:0 "Dragonglass"
  atfw_jon_north.0012.desc:0 "The next letter comes from the Citadel. Sam has been reading old records and believes he has found what the North needs. Beneath Dragonstone lies an enormous reserve of dragonglass. Not a few veins, but an entire mountain beneath the fortress.\n\nYou saw dragonglass kill a White Walker. If Sam is right, Daenerys Targaryen unknowingly possesses one of the most valuable weapons in the war to come."
  atfw_jon_north.0012.a:0 "Then I have two reasons to go to Dragonstone."
-
  atfw_jon_north.0004.t:0 "The War That Matters"
  atfw_jon_north.0004.desc:0 "The true war is still to come. What you saw at Hardhome leaves no room for doubt: the Night King marches south at the head of an army of dead, and every man who falls before them can rise again to swell their ranks. The North needs men, strongholds, and above all weapons capable of destroying them.\n\nSam says a mountain of dragonglass lies beneath Dragonstone, exactly the weapon you need. And Daenerys Targaryen, newly arrived in Westeros, has summoned you before her.\n\nThe news draws angry murmurs through the hall. The northern lords did not proclaim a king to see him ride south at the mercy of a Targaryen, and Sansa reminds you what happened to your grandfather and uncle when they were called south. Even Davos understands the risk.\n\nBut none of them saw what you saw at Hardhome. If there is a chance to secure the dragonglass and find an ally for the coming war, you cannot let fear of the past condemn the living."
  atfw_jon_north.0004.a:0 "I will go to Dragonstone."
-
  atfw_jon_north.0006.t:0 "Bound for Dragonstone"
  atfw_jon_north.0006.desc:0 "The decision is made. Despite the protests of the northern lords, you will leave for Dragonstone to meet Daenerys Targaryen. Sam says a mountain of dragonglass lies beneath the fortress, and if he is right it may be the living's best hope against the army of the dead.\n\nYou cannot take the North with you. While you are gone, Sansa will govern Winterfell and watch over its people. Davos will accompany you south, where a Targaryen queen waits with three dragons and little reason to trust a man who calls himself King in the North.\n\nPerhaps your lords are right and riding south is a mistake. But you saw the Night King at Hardhome. You know what is coming."
  atfw_jon_north.0006.a:0 "Dragonstone awaits."
-
  atfw_jon_north.0005.t:0 "A Name Buried"
  atfw_jon_north.0005.desc:0 "Sam finds you alone in Winterfell's crypts. There is something strange in his expression, something grief alone cannot explain. He says Bran told him something about your mother, and that what he found in the Citadel confirms the rest.\n\nEddard Stark was not your father.\n\nYour mother was Lyanna Stark. Your father was Rhaegar Targaryen. Rhaegar annulled his marriage to Elia Martell and secretly wed Lyanna before you were born. You are not Ned Stark's bastard. You never were.\n\nThen Sam speaks a name you have never heard and yet insists belongs to you: Aegon Targaryen.\n\nAll your life you bore the name Jon Snow and believed yourself the bastard son of the man who raised you. Now Sam says you are the legitimate son of Rhaegar Targaryen, with the blood of Stark and Targaryen in your veins. Worse, he insists on what that means: Daenerys is not the last heir of her house. You have a claim to the Iron Throne."
  atfw_jon_north.0005.a:0 "My father was the man who raised me."
-
  atfw_sansa_north.0001.t:0 "The Return of a Wolf"
  atfw_sansa_north.0001.desc:0 "The gate horns announce visitors while Jon is already on the road south. When you descend into the yard, you barely recognize the boy waiting there. Brandon Stark has returned to Winterfell.\n\nMeera Reed is with him. Bran is alive, but little remains of the child you remember. He speaks with a strange, distant calm, as if part of him were still watching places far away. After so many years of loss, another child of Eddard Stark has come home.\n\nYou want to embrace your brother. Looking at him, however, you have the unsettling feeling that he already knows everything you are about to say."
  atfw_sansa_north.0001.a:0 "Bran... you're home."
-
  atfw_sansa_north.0003.t:0 "Beneath the Heart Tree"
  atfw_sansa_north.0003.desc:0 "You find Bran beneath the white branches of the heart tree. You try to speak of home, of Jon, and of everything that happened while you were apart, but his answers follow paths you cannot understand.\n\nThen he mentions things you never told him. Memories that belong to locked rooms, to nights you thought buried, and to words spoken while he was hundreds of leagues away.\n\nBran does not explain how he knows. He only says that he can see many things now. For the first time since his return, you wish your brother would stop looking at you as though he had already lived through all your memories."
  atfw_sansa_north.0003.a:0 "I do not know what happened to you beyond the Wall."
-
  atfw_sansa_north.0002.t:0 "A She-Wolf Returns to Winterfell"
  atfw_sansa_north.0002.desc:0 "The guards at the gate bring a story that is difficult to believe. A girl arrived alone at Winterfell claiming to be Arya Stark. They took her for an impostor and tried to send her away, but somehow she entered the castle before vanishing.\n\nYou know where to look.\n\nYou find her in the crypts before your father's statue. Years have passed since you last saw your sister, and the child who left Winterfell is barely recognizable in the young woman before you. Arya smiles when she sees you, but something in her is different; something the long years away from home left behind.\n\nFor the first time since the Starks were scattered, three of Eddard Stark's children are beneath the same roof."
  atfw_sansa_north.0002.a:0 "Arya..."
-
  atfw_sansa_north.0004.t:0 "A Dagger for a Wolf"
  atfw_sansa_north.0004.desc:0 "Arya finds Bran beside the heart tree. After only a few words, he gives her a Valyrian-steel dagger: the same blade an assassin carried into his room years ago to kill him.\n\nBran says he no longer needs it. Arya weighs the weapon in her hand and keeps it, not understanding why her brother believes it should belong to her."
  atfw_sansa_north.0004.a:0 "Perhaps you need it more than I do."
-
  atfw_sansa_north.0005.t:0 "Ice and Fire, Blood and Name"
  atfw_sansa_north.0005.desc:0 "Samwell Tarly has reached Winterfell with books and records from the Citadel. When you tell him that Jon is the son of Rhaegar Targaryen and Lyanna Stark, Sam corrects you on one detail that changes everything. He found the record of an annulment and of a secret marriage performed in Dorne.\n\nYou look into the past again. This time you see Rhaegar and Lyanna speaking their vows. Jon was not born a bastard. He is their legitimate son.\n\nIn the vision of the Tower of Joy, you hear again the name Lyanna whispered before she died. Aegon Targaryen.\n\nFar from Winterfell, Jon still knows none of this. Neither does Daenerys."
  atfw_sansa_north.0005.a:0 "We must tell him when he returns."
-
  atfw_jon_daenerys.0007.t:0 "The Shores of Dragonstone"
  atfw_jon_daenerys.0007.desc:0 "The boat touches Dragonstone's black sand beneath a grey sky. Tyrion Lannister waits on the beach with Daenerys's men. After so many years, his smile is still recognizable.\n\nThe welcome is brief. Dothraki and Unsullied ask for your weapons before the climb to the fortress. Davos mutters a protest, but you hand over the swords.\n\nThen a shadow covers the path. A roar tears through the air and one of the dragons dives over the cliff before climbing back above the sea. You had heard stories. None of them looked like this."
  atfw_jon_daenerys.0007.a:0 "So the stories were true."
-
  atfw_jon_daenerys.0001.t:0 "Ice and Fire"
  atfw_jon_daenerys.0001.desc:0 "Dragonstone rises black against the sea, all smoke, salt, and ancient Valyrian stone. You came for dragonglass and an ally against the dead, not to bend the knee to a southern queen.\n\nDaenerys Targaryen waits in the fortress hall. She is younger than the tales made her, yet there is nothing uncertain in the way she carries herself. Breaker of Chains, Mother of Dragons, claimant to the Iron Throne.\n\nHer eyes settle upon you. For a moment, neither king nor queen speaks."
  atfw_jon_daenerys.0001.a:0 "So this is the Dragon Queen."
-
- atfw_jon_daenerys.0002.t:0 "The White Wolf"
- atfw_jon_daenerys.0002.desc:0 "Jon Snow does not look like a king from the songs. There is no gold upon him, no silk, no jeweled crown—only dark wool, old scars, and the grave manner of a man who has seen too much death.\n\nHe has come to ask for dragonglass and aid against an enemy I cannot see. He does not flatter me. Worse, he does not fear me.\n\nI expected another proud northern lord. Instead I find myself wondering what sort of man his people chose to follow."
- atfw_jon_daenerys.0002.a:0 "Let us hear what the King in the North has to say."
-
+ atfw_jon_daenerys.0002.t:0 "The King in the North"
+ atfw_jon_daenerys.0002.desc:0 "At the invitation of my Hand, Lord Jon Snow presents himself before me in the Chamber of the Painted Table. Lord of Winterfell, bastard son of the Usurper’s dog and, according to the northerners who follow him, King in the North.\n\nHe wears no crown and dresses nothing like the kings I have known. His companion, a certain Ser Davos, has barely finished announcing him when Jon makes his position clear: the lords of the North chose him as their king, and he did not cross half of Westeros to bend the knee. He has come for the dragonglass beneath Dragonstone and to warn me of an army of the dead that, he claims, is marching south.\n\nSo this is Jon Snow. The man who claims to be king of a part of my realm now stands before me to ask for my help, but not to acknowledge me as his queen."
+ atfw_jon_daenerys.0002.a:0 "So you are the King in the North."
  atfw_jon_daenerys.0008.t:0 "Two Sovereigns"
  atfw_jon_daenerys.0008.desc:0 "Daenerys recites her titles and recalls the oaths House Stark once swore to hers. She wants a simple answer: bend the knee and recognize her right to the Iron Throne.\n\nYou refuse. You did not cross half a continent to argue about who should sit an iron chair. You try to tell her of the Night King, the dead at Hardhome, and an army that will leave no kingdom to rule.\n\nThe queen listens, though skepticism remains on her face. Davos, irritated, begins listing everything you have done for your people and lets slip a phrase about a knife in the heart. You stop him before he can explain more.\n\nNeither of you yields. Neither leaves the room."
  atfw_jon_daenerys.0008.a:0 "I will not bend the knee."
-
  atfw_jon_daenerys.0009.t:0 "What You Need"
  atfw_jon_daenerys.0009.desc:0 "Daenerys finds you after another day of arguments that have gone nowhere. Tyrion has spoken with her. She does not yet believe everything you say about the dead, but she sees no reason to deny you a stone that holds little value to her.\n\nYou may mine Dragonstone's dragonglass. All you need. Her men will even help.\n\nIt is not the alliance you came for, but it is the first thing the Dragon Queen has granted you without demanding a knee in return."
  atfw_jon_daenerys.0009.a:0 "It is a beginning."
-
  atfw_jon_daenerys.0010.t:0 "What the Ancients Left Behind"
  atfw_jon_daenerys.0010.desc:0 "Deep in the mines you find something older than any castle. Figures carved into the stone show the Children of the Forest and the First Men. Farther on are spirals and shapes that look too much like the marks left by the dead.\n\nYou lead Daenerys to the paintings. You explain that the First Men and the Children were enemies for generations until a greater enemy forced them to fight together.\n\nFor the first time, Daenerys's disbelief gives way to something harder to dismiss. Even so, when you leave the cave she asks once more that you bend the knee."
  atfw_jon_daenerys.0010.a:0 "We do not need to be friends. We need to fight together."
-
  atfw_jon_daenerys.0003.t:0 "Among Strangers"
  atfw_jon_daenerys.0003.desc:0 "Days of arguments give way to quieter conversations. Daenerys speaks of exile, of men who tried to decide her life for her, and of the peoples she knew before returning to Westeros. You speak of the Wall, of the men who did not return from Hardhome, and of an enemy no one wants to believe is real.\n\nYou still disagree about crowns and oaths. Yet the distrust of the first days begins to matter less. You have seen that she listens even when she does not yield. She has seen that you did not come to Dragonstone for glory.\n\nIt is not friendship yet. But you are no longer merely two strangers arguing over who should kneel to whom."
  atfw_jon_daenerys.0003.a:0 "I am beginning to understand her."
-
  atfw_jon_daenerys.0011.t:0 "The Hand and the Dragon"
  atfw_jon_daenerys.0011.desc:0 "Daenerys returns to Dragonstone on Drogon after fighting the Lannister armies. The dragon lands near you, enormous, smoke and dried blood clinging to him. His head lowers until it is only a few paces away.\n\nEvery instinct tells you to step back. Instead you raise a hand. Drogon gives a low growl, but does not pull away when your fingers touch his scales.\n\nOn the other side of the dragon, Daenerys watches in silence. The surprise on her face lasts only an instant, but you saw it."
  atfw_jon_daenerys.0011.a:0 "Easy."
-
  atfw_jon_daenerys.0012.t:0 "Proof for a Queen"
  atfw_jon_daenerys.0012.desc:0 "The news from the North worsens. The army of the dead advances, and Cersei will never abandon her war for stories she considers tales for frightened children.\n\nTyrion proposes a desperate answer: capture one of the dead and bring it before her. If Cersei sees with her own eyes what is coming from the North, perhaps she will accept a truce.\n\nThe plan is absurd. It may also be the only way to force the living to look toward the true enemy. You know the North and have fought the dead before. If someone must cross the Wall, it will be you."
  atfw_jon_daenerys.0012.a:0 "I will go to Eastwatch."
-
  atfw_jon_daenerys.0013.t:0 "Beyond the Wall"
  atfw_jon_daenerys.0013.desc:0 "Beyond Eastwatch, the world narrows to snow, wind, and men who know any step might be their last. Tormund marches with you. So do Jorah Mormont, Beric Dondarrion, Thoros of Myr, Sandor Clegane, and others with reasons of their own to continue.\n\nYou manage to separate one of the dead from its group and capture it. The victory does not last. The Night King's army surrounds you on a frozen lake and the cold begins closing every way out.\n\nGendry runs back toward Eastwatch with one task: send a raven to Daenerys."
  atfw_jon_daenerys.0013.a:0 "Now we hold."
-
  atfw_jon_daenerys.0014.t:0 "Fire on the Ice"
  atfw_jon_daenerys.0014.desc:0 "The roar of dragons comes before their shadows. Daenerys descends upon the army of the dead with Drogon, Rhaegal, and Viserion, covering the ice in fire. For a few moments, it seems even the night can burn.\n\nThen the Night King casts his spear. Viserion falls from the sky and vanishes beneath the ice amid blood and steam. Daenerys barely has time to understand what she has lost.\n\nThe others climb onto Drogon. You stay behind to hold back the dead, and as the dragon pulls away you see in Daenerys's face that she believes she is leaving you to die.\n\nWhen you can no longer keep your feet, Benjen Stark emerges from the snow, gives you his horse, and stays behind to clear your escape. You return to Eastwatch half-dead, long after Daenerys has given up hope of seeing you again."
  atfw_jon_daenerys.0014.a:0 "I am not finished yet."
-
  atfw_jon_daenerys.0015.t:0 "Dany"
  atfw_jon_daenerys.0015.desc:0 "You wake wounded aboard a ship. Daenerys is beside the bed. You apologize for Viserion, but she will not accept your regret. She has seen the Night King and his army now. She needs no paintings or stories. She will fight with you against the dead.\n\nThe promise changes something between you. After everything that happened, the argument over a crown feels small. You tell her that you will recognize her as your queen. Daenerys looks down at your hand in hers when you call her Dany.\n\nNo one has called her that in years, she says. Not since Viserys.\n\nFor the first time, neither of you speaks as a king or queen."
  atfw_jon_daenerys.0015.a:0 "My queen."
-
  atfw_jon_daenerys.0016.t:0 "A King's Word"
  atfw_jon_daenerys.0016.desc:0 "The wight twists before Cersei in the ruins of the Dragonpit and, for a moment, even the queen seems to understand the scale of what you brought from the North.\n\nHer condition for helping is simple: the North must remain neutral in the war between her and Daenerys. You could say yes. One lie would be enough to gain what you need.\n\nBut you have already given your word. Daenerys is your queen. You tell Cersei so before everyone. The meeting begins to collapse almost at once.\n\nWhen you look at Daenerys, she does not seem surprised by your stubbornness. She seems to understand at last how much a promise is worth to you."
  atfw_jon_daenerys.0016.a:0 "I will not swear a false oath."
-
  atfw_jon_daenerys.0017.t:0 "Northward"
  atfw_jon_daenerys.0017.desc:0 "The ship moves north beneath a dark sky. After Dragonstone, the ice, and King's Landing, there is no court left before which to play king and queen. There are only two people who have survived too much and know what waits at the end of the journey.\n\nYou find Daenerys in her cabin. You do not speak of alliances or crowns. There is no betrothal, contract, or new oath to make. This time neither of you is obeying a duty.\n\nWhen the door closes behind you, the last distance between wolf and dragon disappears."
  atfw_jon_daenerys.0017.a:0 "Tonight there are no crowns between us."
-
  activity_atfw_northern_banners_feast:0 "Feast of the Northern Banners"
  activity_atfw_northern_banners_feast_desc:0 "Jon Snow has summoned the lords and captains of the North to Winterfell to decide what follows the fall of the Boltons. During the feast the banners will renew their loyalty and the North will choose who is to lead it."
  activity_atfw_northern_banners_feast_province_desc:0 "The banners of the North will gather in Winterfell's great hall."
@@ -119,7 +91,6 @@
  activity_atfw_northern_banners_feast_conclusion_desc:0 "The lords of the North have spoken and Jon Snow has been proclaimed King in the North."
  atfw_northern_banners_feast_phase:0 "The Gathered Banners"
  atfw_northern_banners_feast_phase_desc:0 "The lords of the North gather beneath one roof to decide the realm's future."
-
  activity_atfw_journey_to_dragonstone:0 "Journey to Dragonstone"
  activity_atfw_journey_to_dragonstone_host_an_a:0 "$host_activity_a$"
  activity_atfw_journey_to_dragonstone_desc:0 "The dead are marching, and Dragonstone holds both the dragonglass and the dragon queen whose aid the North may need. I must travel south and meet Daenerys Targaryen in person."
@@ -149,32 +120,26 @@
  atfw_jon_daenerys.0021.t:0 "No Crowns Between Us"
  atfw_jon_daenerys.0021.desc:0 "The sea stretches dark beyond the windows as the ship sails north. Jon has come to your cabin without guards, without councillors, and without a crown to place between you.\n\nSince Dragonstone you have argued, fought, and learned to trust one another. You watched him risk his life beyond the Wall, and for a moment you believed he would never return. Now he stands before you alive, and neither of you seems willing to keep pretending that what lies between you is merely an alliance.\n\nWhen the door closes, for one night you leave behind the queen who claims the Iron Throne. He leaves behind the King in the North. Only Daenerys and Jon remain."
  atfw_jon_daenerys.0021.a:0 "Tonight, let it be only us."
-
  atfw_jon_daenerys.0022.t:0 "The Green Dragon"
  atfw_jon_daenerys.0022.desc:0 "Rhaegal watches you from the snow, motionless save for the steam escaping his jaws. You have stood near Daenerys's dragons before, but never like this. When you step toward him, he neither roars nor retreats.\n\nYou extend a hand. Rhaegal slowly lowers his head until your fingers meet his scales.\n\nDaenerys watches in silence. You do not need her to explain what it means. No horse could have prepared you for this, yet you place your foot and climb onto the dragon's back.\n\nRhaegal spreads his wings."
  atfw_jon_daenerys.0022.a:0 "Let us see where you mean to take me."
-
  atfw_jon_daenerys.0023.t:0 "Rhaegal Has Chosen Him"
- atfw_jon_daenerys.0023.desc:0 "You have known many men who approached your dragons with fear, arrogance, or the recklessness of those who do not understand what stands before them. Jon does none of those things.\n\nRhaegal allows him to approach. He lowers his head beneath Jon's hand and, when Jon climbs onto his back, offers no resistance. The green dragon rises above the snow with the King in the North clinging to him.\n\nFor a moment you are left without words. Drogon accepted Jon's presence on Dragonstone; now Rhaegal has done far more than that.\n\nJon looks back at you from the dragon's back. You cannot help but smile."
+ atfw_jon_daenerys.0023.desc:0 "You have seen men approach your dragons with fear, arrogance, or the recklessness born of ignorance. Jon Snow does none of those things.\n\nRhaegal watches him as he approaches. He neither roars nor retreats. He lowers his head toward Jon's hand and allows him to touch him. Then Jon climbs onto his back, and the green dragon spreads his wings, rising above the snow with the King in the North upon his back.\n\nFor a few moments, you can only watch them in silence.\n\nJon is not a Targaryen. He has no Valyrian blood that you know of, nor does he belong to any line of dragonriders. Not since the days of Nettles, during the Dance of the Dragons, can you remember hearing of someone outside your blood accomplishing anything like this. Drogon had already tolerated his presence on Dragonstone, but this is different. Rhaegal is not merely allowing Jon near him: he has chosen him as his rider.\n\nJon looks back at you from the dragon's back. You still do not understand what you have just witnessed or what it means, but you cannot help but smile."
  atfw_jon_daenerys.0023.a:0 "Then let us fly together."
-
  atfw_jon_daenerys.0024.t:0 "On Dragon's Wings"
  atfw_jon_daenerys.0024.desc:0 "Rhaegal launches into the sky and the ground vanishes beneath you. Wind strikes your face as Winterfell shrinks among the snow and the forests of the North stretch toward the horizon.\n\nA roar rolls beside you. Daenerys flies upon Drogon and, for the first time since you met her, there is no table, war, or crown between you. Only two dragons crossing the sky and the woman who has come to mean far more than you expected when you left for Dragonstone.\n\nRhaegal banks toward Drogon and the two fly together above the frozen lands. Daenerys turns toward you. She is laughing.\n\nYou cannot remember the last time you saw her so free."
  atfw_jon_daenerys.0024.a:0 "Try to keep up."
-
- atfw_jon_daenerys.0025.t:0 "Beyond the Reach of Crowns"
- atfw_jon_daenerys.0025.desc:0 "Drogon and Rhaegal fly side by side above the North. Below lie Winterfell, the armies, and all those who expect something from you. Up here there is no Iron Throne and no King in the North.\n\nJon is no longer the stranger who arrived on Dragonstone refusing to bend the knee. You have watched him face the dead, risk his life for his men, and keep his word even when a lie would have been easier. Now he flies beside you upon Rhaegal as though he had always belonged in the sky.\n\nWhen both dragons descend far from the eyes of court, Jon comes closer. This time there is no duty that can explain what you feel, and no alliance that makes it necessary.\n\nYou could allow him to remain merely a lover. But you know he ceased to be merely that some time ago."
- atfw_jon_daenerys.0025.a:0 "I want this to be something more."
-
+ atfw_jon_daenerys.0025.t:0 "Where Crowns Cannot Reach"
+ atfw_jon_daenerys.0025.desc:0 "Rhaegal follows Drogon above the snow. For a little while, Winterfell and its suspicions fall behind you. When the dragons land, Jon draws close and you kiss him beside the frozen falls. You have already chosen each other aboard the ship. Here, away from the court, you can briefly enjoy what began there, before duty calls you back."
+ atfw_jon_daenerys.0025.a:0 "Let us stay a little longer."
  atfw_jon_daenerys.0018.t:0 "Blood, Love and Crown"
  atfw_jon_daenerys.0018.desc:0 "The truth changes your name, but not what you feel for Daenerys. You are the legitimate son of Rhaegar Targaryen and Lyanna Stark, and your birth creates a claim that threatens the woman to whom you swore fealty.\n\nThere is another possibility: unite both claims through marriage. Not as an alliance decided before you knew one another, but as a choice born from everything that happened since Dragonstone."
  atfw_jon_daenerys.0018.a:0 "I will ask her to unite our houses."
  atfw_jon_daenerys.0018.b:0 "I will not turn what we have into a question of crowns."
- atfw_jon_daenerys.0019.t:0 "A Shared Crown"
- atfw_jon_daenerys.0019.desc:0 "Jon is no longer merely the King in the North. The truth of his birth makes him Aegon Targaryen, legitimate son of Rhaegar and Lyanna. His blood could challenge your right to the Iron Throne.\n\nYet he does not come to demand a crown. He offers you a choice: unite the surviving branches of your house and turn two rival claims into a single cause."
+ atfw_jon_daenerys.0019.t:0 "The Last Dragon"
+ atfw_jon_daenerys.0019.desc:0 "Jon's words take a moment to make sense. Lyanna Stark was his mother, but Eddard Stark was never his father. His true father was Rhaegar Targaryen, your brother.\n\nRhaegar and Lyanna were secretly married before Jon was born. He is not Jon Snow. He was never a bastard. His true name is Aegon Targaryen.\n\nSuddenly, you remember Rhaegal lowering his head before him, allowing Jon to climb onto his back as though it were the most natural thing in the world. The dragon named for Rhaegar had recognized in his son what neither of you could see.\n\nJon is your own blood. Your nephew. And as Rhaegar's trueborn son, he has an even stronger claim to the Iron Throne than you do.\n\nBut Jon has not come to claim a crown from you. He speaks of the bond you have forged and of a possibility neither of you could have imagined until now: to unite the last two branches of House Targaryen and rule together."
  atfw_jon_daenerys.0019.a:0 "Then let ice and fire remain united."
- atfw_jon_daenerys.0019.b:0 "What I feel for you cannot settle this dispute."
-
+ atfw_jon_daenerys.0019.b:0 "What I feel for you cannot resolve this dispute."
  atfw_jon_daenerys.0020.t:0 "The Truth Between Us"
  atfw_jon_daenerys.0020.desc:0 "You cannot keep this from her. Daenerys deserves to hear from your own lips what Sam and Bran have discovered.\n\nYou tell her that Eddard Stark was not your father, but the man who raised you. Your mother was Lyanna Stark and your father Rhaegar Targaryen. You tell her of the secret marriage, your birth, and the name you were given: Aegon Targaryen.\n\nDaenerys falls silent. The revelation changes more than what exists between you; it alters the balance of the crown for which you have both risked so much. By blood you belong to House Targaryen, and before the world you can no longer remain simply Jon Snow.\n\nYet the truth also opens a possibility neither of you could have imagined when you first met on Dragonstone."
  atfw_jon_daenerys.0020.a:0 "There will be no more secrets between us."

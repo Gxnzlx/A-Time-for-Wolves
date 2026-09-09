@@ -2,115 +2,87 @@
  atfw_jon_north.0007.t:0 "La llamada de los estandartes"
  atfw_jon_north.0007.desc:0 "Invernalia vuelve a pertenecer a los Stark, pero la victoria sobre los Bolton no ha resuelto el futuro del Norte. Los cuervos parten hacia cada castillo que aún reconoce el huargo. Los hombres que lucharon por Invernalia y aquellos que se mantuvieron al margen deberán sentarse bajo un mismo techo.\n\nHabrá carne, cerveza y bancos suficientes para llamarlo festín, aunque nadie confundirá la verdadera razón de la convocatoria. El Norte debe decidir quién lo conducirá después de tantos años de guerra."
  atfw_jon_north.0007.a:0 "Convocad a los estandartes en Invernalia."
-
  atfw_jon_north.0003.t:0 "El Rey en el Norte"
  atfw_jon_north.0003.desc:0 "El gran salón de Invernalia está abarrotado. Los estandartes del Norte cuelgan entre las vigas y los señores que sobrevivieron a la guerra contra los Bolton ocupan las mesas. Uno tras otro renuevan su lealtad a los Stark.\n\nEntonces Lyanna Mormont se pone en pie. Su voz es pequeña, pero atraviesa el salón con más fuerza que la de muchos hombres hechos y derechos. Recuerda a todos quién respondió a la llamada de los Stark, quién se negó y quién estuvo dispuesto a morir por Invernalia. Después vuelve la mirada hacia ti.\n\n#italic Jon Snow vengó la Boda Roja. Es el Lobo Blanco. El Rey en el Norte.#!\n\nUna espada abandona su vaina. Luego otra. En pocos instantes todo el salón está en pie y un mismo grito golpea los muros de piedra.\n\n#bold ¡El Rey en el Norte!#!"
  atfw_jon_north.0003.a:0 "El Norte recuerda."
-
  atfw_jon_north.0009.t:0 "Los lobos del Norte"
  atfw_jon_north.0009.desc:0 "Los señores del Norte y del Valle llenan el gran salón de Invernalia. No los has convocado para celebrar una victoria, sino para prepararlos para una guerra como ninguna que hayan librado antes. El Rey de la Noche marcha hacia el sur, y cuando llegue no distinguirá entre hombres y mujeres, nobles y campesinos. Todos los que puedan empuñar un arma deberán aprender a usarla.\n\nPero las viejas heridas del Norte aún no han cerrado. Último Hogar y Bastión Kar han quedado en manos de Ned Umber y Alys Karstark, hijos de hombres que traicionaron a los Stark y murieron por ello. Sansa exige que sus castillos sean entregados a quienes permanecieron leales, y no pocos señores parecen compartir su parecer.\n\nPero los hijos no son culpables de los pecados de sus padres. Llamas a Ned y Alys ante todos los presentes y les exiges que renueven la lealtad de sus casas. Ambos se arrodillan y juran servir a la Casa Stark. Los Umber conservarán Último Hogar y los Karstark, Bastión Kar.\n\nNo puedes permitir que las guerras de ayer dividan al Norte ante la guerra que se avecina."
  atfw_jon_north.0009.a:0 "Ayer éramos enemigos. Hoy debemos luchar juntos."
-
  atfw_jon_north.0010.t:0 "El primer frente"
  atfw_jon_north.0010.desc:0 "Si el ejército de los muertos cruza el Muro, Guardiaoriente del Mar será uno de los primeros lugares en encontrarse en su camino. Tormund conoce a los salvajes mejor que cualquier señor arrodillado en este salón y sabe lo que existe al otro lado de aquella muralla de hielo.\n\nLe ordenas llevar a su gente hacia Guardiaoriente y reforzar la fortaleza. El Muro ya no puede tratarse como una frontera olvidada. Ahora es la primera línea de defensa de todos los vivos."
  atfw_jon_north.0010.a:0 "Que Tormund refuerce Guardiaoriente."
-
  atfw_jon_north.0011.t:0 "Una carta de Rocadragón"
  atfw_jon_north.0011.desc:0 "Un cuervo llegado del sur trae una carta escrita con una mano que reconoces. Tyrion Lannister escribe desde Rocadragón en nombre de Daenerys Targaryen. La reina dragón ha desembarcado en Poniente y te convoca ante ella. Espera que viajes al sur, la reconozcas como soberana legítima y presentes tu causa personalmente.\n\nNo confías en los Targaryen, pero conociste a Tyrion en el Muro. Entre las fórmulas de cortesía todavía puedes reconocer su voz."
  atfw_jon_north.0011.a:0 "Tyrion no escribiría esto sin motivo."
-
  atfw_jon_north.0012.t:0 "Vidriagón"
  atfw_jon_north.0012.desc:0 "La siguiente carta llega desde la Ciudadela. Sam ha estado leyendo registros antiguos y cree haber encontrado aquello que el Norte necesita. Bajo Rocadragón existe una enorme reserva de vidriagón. No unas pocas vetas, sino una montaña entera bajo la fortaleza.\n\nViste al vidriagón matar a un Caminante Blanco. Si Sam tiene razón, Daenerys Targaryen posee sin saberlo una de las armas más valiosas de la guerra que se aproxima."
  atfw_jon_north.0012.a:0 "Entonces tengo dos razones para ir a Rocadragón."
-
  atfw_jon_north.0004.t:0 "La guerra que importa"
  atfw_jon_north.0004.desc:0 "La verdadera guerra aún está por venir. Lo que viste en Casa Austera no deja lugar a dudas: el Rey de la Noche marcha hacia el sur al frente de un ejército de muertos, y cada hombre que cae ante ellos puede levantarse de nuevo para engrosar sus filas. El Norte necesita hombres, fortalezas y, sobre todo, armas capaces de destruirlos.\n\nSam asegura que bajo Rocadragón yace una montaña de vidriagón, precisamente el arma que necesitas. Y Daenerys Targaryen, recién llegada a Poniente, te ha convocado ante ella.\n\nLa noticia provoca un murmullo airado en el salón. Los señores del Norte no proclamaron un rey para verlo marchar al Sur a merced de una Targaryen, y Sansa te recuerda lo que les ocurrió a vuestro abuelo y a vuestro tío cuando fueron llamados al sur. Incluso Davos comprende el riesgo.\n\nPero ninguno de ellos vio lo que tú viste en Casa Austera. Si existe una oportunidad de conseguir el vidriagón y encontrar una aliada para la guerra que se aproxima, no puedes permitir que el miedo al pasado condene a los vivos."
  atfw_jon_north.0004.a:0 "Iré a Rocadragón."
-
  atfw_jon_north.0006.t:0 "Rumbo a Rocadragón"
  atfw_jon_north.0006.desc:0 "La decisión está tomada. Pese a las protestas de los señores del Norte, partirás hacia Rocadragón para reunirte con Daenerys Targaryen. Sam asegura que bajo la fortaleza yace una montaña de vidriagón, y si sus palabras son ciertas, podría ser la mejor esperanza de los vivos contra el ejército de los muertos.\n\nNo puedes llevar al Norte contigo. Mientras estés ausente, Sansa gobernará Invernalia y velará por sus gentes. Davos te acompañará al sur, donde aguarda una reina Targaryen con tres dragones y pocas razones para confiar en un hombre que se hace llamar Rey en el Norte.\n\nQuizá tus señores tengan razón y marchar al sur sea un error. Pero viste al Rey de la Noche en Casa Austera. Sabes lo que viene."
  atfw_jon_north.0006.a:0 "Rocadragón nos espera."
-
  atfw_jon_north.0005.t:0 "Un nombre enterrado"
  atfw_jon_north.0005.desc:0 "Sam te encuentra a solas en las criptas de Invernalia. Hay algo extraño en su semblante, algo que no se explica únicamente por el dolor de su regreso. Dice que Bran le contó algo sobre tu madre, y que lo que él mismo descubrió en la Ciudadela confirma el resto.\n\nEddard Stark no fue tu padre.\n\nTu madre fue Lyanna Stark. Tu padre, Rhaegar Targaryen. Rhaegar anuló su matrimonio con Elia Martell y se casó con Lyanna en secreto antes de que nacieras. No eres el bastardo de Ned Stark. Nunca lo fuiste.\n\nSam pronuncia entonces un nombre que jamás has oído y que, sin embargo, asegura que te pertenece: Aegon Targaryen.\n\nDurante toda tu vida llevaste el nombre de Jon Nieve y creíste ser el hijo bastardo del hombre que te crio. Ahora Sam afirma que eres hijo legítimo de Rhaegar Targaryen y que por tus venas corre la sangre de los Stark y los Targaryen. Peor aún, insiste en lo que significa: Daenerys no es la última heredera de su casa. Tú tienes una pretensión al Trono de Hierro."
  atfw_jon_north.0005.a:0 "Mi padre fue el hombre que me crio."
-
  atfw_sansa_north.0001.t:0 "El regreso de un lobo"
  atfw_sansa_north.0001.desc:0 "Los cuernos de la puerta anuncian visitantes mientras Jon se encuentra camino al sur. Cuando bajas al patio apenas reconoces al muchacho que espera allí. Brandon Stark ha regresado a Invernalia.\n\nMeera Reed lo acompaña. Bran está vivo, pero queda poco del niño que recuerdas. Habla con una calma extraña y distante, como si parte de él siguiera contemplando lugares muy lejanos. Después de tantos años de pérdidas, otro de los hijos de Eddard Stark ha vuelto a casa.\n\nQuieres abrazar a tu hermano. Al mirarlo, sin embargo, tienes la incómoda sensación de que él ya sabe todo lo que vas a decir."
  atfw_sansa_north.0001.a:0 "Bran... estás en casa."
-
  atfw_sansa_north.0003.t:0 "Bajo el arciano"
  atfw_sansa_north.0003.desc:0 "Encuentras a Bran bajo las ramas blancas del arciano. Intentas hablarle del hogar, de Jon y de todo lo que ha ocurrido desde que os separasteis, pero sus respuestas siguen caminos que no comprendes.\n\nEntonces menciona cosas que nunca le contaste. Recuerdos que pertenecen a habitaciones cerradas, a noches que creías enterradas y a palabras pronunciadas cuando él estaba a cientos de leguas de distancia.\n\nBran no explica cómo lo sabe. Solo dice que ahora puede ver muchas cosas. Por primera vez desde su regreso, deseas que tu hermano dejara de mirarte como si ya hubiera vivido todos tus recuerdos."
  atfw_sansa_north.0003.a:0 "No sé qué te ocurrió más allá del Muro."
-
  atfw_sansa_north.0002.t:0 "Una loba vuelve a Invernalia"
  atfw_sansa_north.0002.desc:0 "Los guardias de las puertas traen una historia difícil de creer. Una muchacha llegó sola a Invernalia asegurando ser Arya Stark. La tomaron por una impostora y trataron de echarla, pero de algún modo logró entrar en el castillo antes de desaparecer.\n\nSabes dónde buscarla.\n\nLa encuentras en las criptas, frente a la estatua de vuestro padre. Han pasado años desde la última vez que viste a tu hermana, y la niña que abandonó Invernalia apenas puede reconocerse en la joven que ahora tienes ante ti. Arya sonríe al verte, pero hay algo distinto en ella; algo que los largos años lejos de casa han dejado tras de sí.\n\nPor primera vez desde que los Stark fueron dispersados, tres de los hijos de Eddard Stark vuelven a encontrarse bajo el mismo techo."
  atfw_sansa_north.0002.a:0 "Arya..."
-
  atfw_sansa_north.0004.t:0 "Una daga para una loba"
  atfw_sansa_north.0004.desc:0 "Arya encuentra a Bran junto al arciano. Después de unas pocas palabras, él le entrega una daga de acero valyrio: la misma arma que años atrás un asesino llevó a su habitación para acabar con su vida.\n\nBran dice que ya no la necesita. Arya sopesa el arma en la mano y la guarda sin comprender por qué su hermano cree que debe pertenecerle."
  atfw_sansa_north.0004.a:0 "Quizá tú la necesites más que yo."
-
  atfw_sansa_north.0005.t:0 "Hielo y fuego, sangre y nombre"
  atfw_sansa_north.0005.desc:0 "Samwell Tarly ha llegado a Invernalia con libros y registros de la Ciudadela. Cuando le cuentas que Jon es hijo de Rhaegar Targaryen y Lyanna Stark, Sam te corrige en un detalle que cambia todo. Encontró el registro de una anulación y de un matrimonio secreto celebrado en Dorne.\n\nVuelves a mirar el pasado. Esta vez ves a Rhaegar y Lyanna pronunciando sus votos. Jon no nació bastardo. Es su hijo legítimo.\n\nEn la visión de la Torre de la Alegría vuelves a escuchar el nombre que Lyanna susurró antes de morir. Aegon Targaryen.\n\nMuy lejos de Invernalia, Jon todavía no sabe nada de esto. Tampoco Daenerys."
  atfw_sansa_north.0005.a:0 "Debemos decírselo cuando vuelva."
-
  atfw_jon_daenerys.0007.t:0 "Las costas de Rocadragón"
  atfw_jon_daenerys.0007.desc:0 "La barca toca la arena negra de Rocadragón bajo un cielo gris. Tyrion Lannister espera en la playa junto a los hombres de Daenerys. Después de tantos años, su sonrisa sigue siendo reconocible.\n\nLa bienvenida termina pronto. Los dothraki y los Inmaculados os piden las armas antes de iniciar el ascenso hacia la fortaleza. Davos protesta por lo bajo, pero entregáis las espadas.\n\nEntonces una sombra cubre el camino. Un rugido parte el aire y uno de los dragones desciende sobre el acantilado antes de volver a elevarse sobre el mar. Habías oído historias. Ninguna de ellas se parecía a esto."
  atfw_jon_daenerys.0007.a:0 "Así que las historias eran ciertas."
-
  atfw_jon_daenerys.0001.t:0 "Hielo y fuego"
  atfw_jon_daenerys.0001.desc:0 "Rocadragón se alza negra sobre el mar, entre humo, sal y antigua piedra valyria. Has venido en busca de vidriagón y de una aliada contra los muertos, no para hincar la rodilla ante una reina sureña.\n\nDaenerys Targaryen aguarda en el salón de la fortaleza. Es más joven de lo que hacían pensar las historias, pero no hay incertidumbre alguna en su porte. Rompedora de Cadenas, Madre de Dragones, pretendiente al Trono de Hierro.\n\nSus ojos se posan sobre ti. Por un instante, ni el rey ni la reina dicen palabra."
  atfw_jon_daenerys.0001.a:0 "Así que esta es la Reina Dragón."
-
  atfw_jon_daenerys.0002.t:0 "El Rey en el Norte"
- atfw_jon_daenerys.0002.desc:0 "Por invitación de mi Mano, Lord Jon Nieve se presenta ante mí en la Cámara de la Mesa Pintada. Señor de Invernalia, hijo bastardo de Eddard Stark y, según los norteños que lo siguen, Rey en el Norte.\n\nNo lleva corona ni viste como los reyes que he conocido. Su acompañante un tal Ser Davos apenas termina de anunciarlo cuando Jon deja clara su posición: los señores del Norte lo eligieron como su rey y no ha cruzado medio Poniente para doblar la rodilla. Ha venido por el vidriagón de Rocadragón y para advertirme de un ejército de muertos que, asegura, marcha hacia el sur.\n\nAsí que este es Jon Nieve. El hombre que afirma ser rey de una parte de mi reino comparece ahora ante mí para pedir mi ayuda, pero no para reconocerme como su reina."
+ atfw_jon_daenerys.0002.desc:0 "Por invitación de mi Mano, Lord Jon Nieve se presenta ante mí en la Cámara de la Mesa Pintada. Señor de Invernalia, hijo bastardo del perro del Usurpador y, según los norteños que lo siguen, Rey en el Norte.\n\nNo lleva corona ni viste como los reyes que he conocido. Su acompañante un tal Ser Davos apenas termina de anunciarlo cuando Jon deja clara su posición: los señores del Norte lo eligieron como su rey y no ha cruzado medio Poniente para doblar la rodilla. Ha venido por el vidriagón de Rocadragón y para advertirme de un ejército de muertos que, asegura, marcha hacia el sur.\n\nAsí que este es Jon Nieve. El hombre que afirma ser rey de una parte de mi reino comparece ahora ante mí para pedir mi ayuda, pero no para reconocerme como su reina."
  atfw_jon_daenerys.0002.a:0 "Así que vos sois el Rey en el Norte."
-
  atfw_jon_daenerys.0008.t:0 "Dos soberanos"
  atfw_jon_daenerys.0008.desc:0 "Daenerys enumera sus títulos y recuerda los juramentos que la Casa Stark prestó alguna vez a la suya. Quiere una respuesta sencilla: que hinques la rodilla y reconozcas su derecho al Trono de Hierro.\n\nTe niegas. No has cruzado medio continente para discutir quién debe sentarse en una silla de hierro. Intentas hablarle del Rey de la Noche, de los muertos de Casa Austera y de un ejército que no dejará reino alguno que gobernar.\n\nLa reina escucha, aunque el escepticismo permanece en su rostro. Davos, irritado, comienza a enumerar todo lo que has hecho por tu pueblo y deja escapar una frase acerca de una daga en el corazón. Le haces callar antes de que pueda explicar más.\n\nNinguno de los dos cede. Pero ninguno abandona la sala."
  atfw_jon_daenerys.0008.a:0 "No hincaré la rodilla."
-
  atfw_jon_daenerys.0009.t:0 "Lo que necesitas"
  atfw_jon_daenerys.0009.desc:0 "Daenerys te encuentra después de otro día de discusiones que no han llevado a ninguna parte. Tyrion ha hablado con ella. No cree todavía en todo lo que dices sobre los muertos, pero tampoco encuentra razón para negarte una piedra que para ella carece de valor.\n\nPuedes extraer el vidriagón de Rocadragón. Todo el que necesites. Sus hombres incluso te ayudarán.\n\nNo es la alianza que viniste a buscar, pero es la primera vez que la Reina Dragón te concede algo sin exigir una rodilla a cambio."
  atfw_jon_daenerys.0009.a:0 "Es un comienzo."
-
  atfw_jon_daenerys.0010.t:0 "Lo que dejaron los antiguos"
  atfw_jon_daenerys.0010.desc:0 "En las profundidades de las minas encuentras algo más antiguo que cualquier castillo. Figuras grabadas en la piedra muestran a los Hijos del Bosque y a los Primeros Hombres. Más adelante aparecen espirales y formas que recuerdan demasiado a las marcas dejadas por los muertos.\n\nConduces a Daenerys hasta las pinturas. Le explicas que los Primeros Hombres y los Hijos fueron enemigos durante generaciones, hasta que un enemigo mayor los obligó a luchar juntos.\n\nPor primera vez, la incredulidad de Daenerys cede ante algo más difícil de descartar. Aun así, cuando abandonáis la cueva vuelve a pedirte que hinques la rodilla."
  atfw_jon_daenerys.0010.a:0 "No necesitamos ser amigos. Necesitamos luchar juntos."
-
  atfw_jon_daenerys.0003.t:0 "Entre extraños"
  atfw_jon_daenerys.0003.desc:0 "Los días de disputas dejan paso a conversaciones más tranquilas. Daenerys habla del exilio, de los hombres que intentaron decidir su vida por ella y de los pueblos que conoció antes de regresar a Poniente. Tú hablas del Muro, de los hombres que no volvieron de Casa Austera y de un enemigo al que nadie quiere creer real.\n\nSeguís sin estar de acuerdo sobre coronas y juramentos. Sin embargo, la desconfianza de los primeros días comienza a parecer menos importante. Has visto que escucha incluso cuando no cede. Ella ha visto que no viniste a Rocadragón por gloria.\n\nNo es amistad todavía. Pero ya no sois únicamente dos extraños discutiendo sobre quién debe inclinarse ante quién."
  atfw_jon_daenerys.0003.a:0 "Empiezo a comprenderla."
-
  atfw_jon_daenerys.0011.t:0 "La mano y el dragón"
  atfw_jon_daenerys.0011.desc:0 "Daenerys regresa a Rocadragón sobre Drogon después de combatir a los ejércitos Lannister. El dragón aterriza cerca de ti, enorme, cubierto de humo y sangre seca. Su cabeza desciende hasta quedar a pocos pasos.\n\nTodo instinto te dice que retrocedas. En cambio, alzas una mano. Drogon deja escapar un gruñido grave, pero no se aparta cuando tus dedos rozan sus escamas.\n\nAl otro lado del dragón, Daenerys te observa en silencio. La sorpresa en su rostro dura apenas un instante, pero la viste."
  atfw_jon_daenerys.0011.a:0 "Buen chico."
-
  atfw_jon_daenerys.0012.t:0 "Una prueba para una reina"
  atfw_jon_daenerys.0012.desc:0 "Las noticias del Norte empeoran. El ejército de los muertos avanza y Cersei jamás abandonará su guerra por historias que considera cuentos para asustar niños.\n\nTyrion propone una respuesta desesperada: capturar uno de los muertos y llevarlo ante ella. Si Cersei ve con sus propios ojos aquello que se acerca desde el Norte, quizá acepte una tregua.\n\nEl plan es absurdo. También puede ser la única forma de obligar a los vivos a mirar hacia el verdadero enemigo. Tú conoces el Norte y has luchado contra los muertos antes. Si alguien ha de cruzar el Muro, serás tú."
  atfw_jon_daenerys.0012.a:0 "Iré a Guardiaoriente."
-
  atfw_jon_daenerys.0013.t:0 "Más allá del Muro"
  atfw_jon_daenerys.0013.desc:0 "Más allá de Guardiaoriente, el mundo se reduce a nieve, viento y hombres que saben que cualquiera de sus pasos puede ser el último. Tormund marcha contigo. También Jorah Mormont, Beric Dondarrion, Thoros de Myr, Sandor Clegane y otros que tienen sus propias razones para seguir adelante.\n\nConseguís separar a uno de los muertos de su grupo y capturarlo. La victoria dura poco. El ejército del Rey de la Noche os rodea sobre un lago helado y el frío comienza a cerrar todas las salidas.\n\nGendry corre hacia Guardiaoriente con un único encargo: enviar un cuervo a Daenerys."
  atfw_jon_daenerys.0013.a:0 "Ahora solo queda resistir."
-
  atfw_jon_daenerys.0014.t:0 "Fuego sobre el hielo"
  atfw_jon_daenerys.0014.desc:0 "El rugido de los dragones llega antes que su sombra. Daenerys desciende sobre el ejército de los muertos con Drogon, Rhaegal y Viserion, cubriendo el hielo de fuego. Durante unos instantes parece que incluso la noche puede arder.\n\nEntonces el Rey de la Noche arroja su lanza. Viserion cae del cielo y desaparece bajo el hielo entre sangre y vapor. Daenerys apenas tiene tiempo para comprender lo que ha perdido.\n\nLos demás consiguen subir a Drogon. Tú permaneces atrás para contener a los muertos y, cuando el dragón se aleja, ves en el rostro de Daenerys que cree estar dejándote morir.\n\nCuando ya no puedes mantenerte en pie, Benjen Stark surge entre la nieve, te entrega su caballo y se queda atrás para abrirte paso. Regresas a Guardiaoriente medio muerto, mucho después de que Daenerys haya perdido la esperanza de volver a verte."
  atfw_jon_daenerys.0014.a:0 "Aún no he terminado."
-
  atfw_jon_daenerys.0015.t:0 "Dany"
  atfw_jon_daenerys.0015.desc:0 "Despiertas herido a bordo de un barco. Daenerys está junto a la cama. Le pides perdón por Viserion, pero ella no acepta el arrepentimiento. Ahora ha visto al Rey de la Noche y a su ejército. Ya no necesita pinturas ni historias. Luchará contigo contra los muertos.\n\nLa promesa cambia algo entre vosotros. Después de todo lo ocurrido, la disputa por una corona parece pequeña. Le dices que la reconocerás como tu reina. Daenerys mira tu mano entre las suyas cuando la llamas Dany.\n\nHace años que nadie la llama así, dice. No desde Viserys.\n\nPor primera vez, ninguno de los dos habla como rey o reina."
  atfw_jon_daenerys.0015.a:0 "Mi reina."
-
  atfw_jon_daenerys.0016.t:0 "La palabra de un rey"
  atfw_jon_daenerys.0016.desc:0 "El espectro se retuerce ante Cersei en las ruinas del Pozo Dragón y, por un momento, incluso la reina parece comprender la magnitud de lo que habéis traído desde el Norte.\n\nSu condición para ayudar es sencilla: el Norte debe permanecer neutral en la guerra entre ella y Daenerys. Podrías decir que sí. Una mentira bastaría para obtener lo que necesitáis.\n\nPero ya diste tu palabra. Daenerys es tu reina. Se lo dices a Cersei ante todos. La reunión se desmorona casi de inmediato.\n\nCuando miras a Daenerys, no parece sorprendida por tu obstinación. Parece comprender por fin cuánto vale para ti una promesa."
  atfw_jon_daenerys.0016.a:0 "No prestaré un juramento falso."
-
  atfw_jon_daenerys.0017.t:0 "Hacia el Norte"
  atfw_jon_daenerys.0017.desc:0 "El barco avanza hacia el norte bajo un cielo oscuro. Después de Rocadragón, del hielo y de Desembarco del Rey, ya no queda ninguna corte ante la que representar el papel de rey y reina. Solo quedan dos personas que han sobrevivido demasiado y que saben lo que les espera al final del viaje.\n\nEncuentras a Daenerys en sus aposentos. No habláis de alianzas ni de coronas. No hay compromiso, contrato ni juramento nuevo que pronunciar. Esta vez ninguno de los dos está obedeciendo una obligación.\n\nCuando la puerta se cierra detrás de ti, la distancia que quedaba entre el lobo y el dragón desaparece."
  atfw_jon_daenerys.0017.a:0 "Esta noche no hay coronas entre nosotros."
-
  activity_atfw_northern_banners_feast:0 "Festín de los Abanderados del Norte"
  activity_atfw_northern_banners_feast_desc:0 "Jon Snow ha convocado a los señores y capitanes del Norte en Invernalia para decidir qué seguirá a la caída de los Bolton. Durante el festín, los estandartes renovarán su lealtad y el Norte escogerá a quien habrá de conducirlo."
  activity_atfw_northern_banners_feast_province_desc:0 "Los estandartes del Norte se reunirán en el gran salón de Invernalia."
@@ -119,7 +91,6 @@
  activity_atfw_northern_banners_feast_conclusion_desc:0 "Los señores del Norte han hablado y Jon Snow ha sido proclamado Rey en el Norte."
  atfw_northern_banners_feast_phase:0 "Los estandartes reunidos"
  atfw_northern_banners_feast_phase_desc:0 "Los señores del Norte se reúnen bajo un mismo techo para decidir el futuro del reino."
-
  activity_atfw_journey_to_dragonstone:0 "Viaje a Rocadragón"
  activity_atfw_journey_to_dragonstone_host_an_a:0 "$host_activity_a$"
  activity_atfw_journey_to_dragonstone_desc:0 "Los muertos marchan, y Rocadragón guarda tanto el vidriagón como a la reina dragón cuya ayuda podría necesitar el Norte. Debo viajar al Sur y conocer a Daenerys Targaryen en persona."
@@ -149,38 +120,26 @@
  atfw_jon_daenerys.0021.t:0 "Sin coronas entre nosotros"
  atfw_jon_daenerys.0021.desc:0 "El mar se extiende oscuro tras los ventanales mientras el barco avanza hacia el Norte. Jon ha acudido a tus aposentos sin escoltas, sin consejeros y sin una corona que interponer entre ambos.\n\nDesde Rocadragón habéis discutido, luchado y aprendido a confiar el uno en el otro. Lo viste arriesgar la vida más allá del Muro, y por un instante creíste que no regresaría. Ahora está ante ti, vivo, y ninguno de los dos parece dispuesto a seguir fingiendo que lo que existe entre vosotros es solamente una alianza.\n\nCuando la puerta se cierra, dejas atrás por una noche a la reina que pretende el Trono de Hierro. Él deja atrás al Rey en el Norte. Solo quedan Daenerys y Jon."
  atfw_jon_daenerys.0021.a:0 "Esta noche, que solo seamos nosotros."
-
  atfw_jon_daenerys.0022.t:0 "El dragón verde"
-
  atfw_jon_daenerys.0022.desc:0 "Rhaegal te observa desde la nieve, inmóvil salvo por el vapor que escapa de sus fauces. Ya habías estado cerca de los dragones de Daenerys, incluso habías sentido las escamas de Drogon bajo tu mano, pero nunca habías imaginado encontrarte frente a uno de ellos de esta manera.\n\nAvanzas con cautela. Rhaegal no ruge ni retrocede. Sus ojos permanecen fijos en ti mientras acortas la distancia y, cuando extiendes una mano, el enorme dragón baja lentamente la cabeza hasta permitir que tus dedos descansen sobre sus escamas.\n\nMiras a Daenerys buscando alguna explicación, pero ella parece tan sorprendida como tú. No sabes por qué Rhaegal te permite acercarte ni qué espera de ti. Entonces el dragón se inclina ante ti, ofreciéndote su lomo.\n\nHas montado caballos desde que eras un niño, pero nada podría haberte preparado para esto. Aun así, reúnes el valor para subir. Rhaegal no se resiste. Bajo tus manos sientes cómo su cuerpo se tensa y, un instante después, sus enormes alas se despliegan sobre la nieve.\n\nPor los dioses... vas a volar sobre un dragón."
-
  atfw_jon_daenerys.0022.a:0 "Bueno... ya he llegado hasta aquí."
-
  atfw_jon_daenerys.0023.t:0 "Rhaegal lo ha elegido"
-
  atfw_jon_daenerys.0023.desc:0 "Has visto a hombres acercarse a tus dragones con miedo, arrogancia o una temeridad nacida de la ignorancia. Jon Nieve no hace ninguna de esas cosas.\n\nRhaegal lo observa mientras se aproxima. No ruge ni retrocede. Inclina la cabeza hacia su mano y permite que lo toque. Entonces Jon monta sobre su lomo y el dragón verde abre las alas, alzándose sobre la nieve con el Rey en el Norte sobre su espalda.\n\nDurante unos instantes, solo puedes contemplarlos en silencio.\n\nJon no es un Targaryen. No tiene sangre valyria que tú conozcas, ni pertenece a ninguna estirpe de jinetes de dragón. Desde los tiempos de Ortigas, durante la Danza de los Dragones, no recuerdas haber oído de alguien ajeno a tu sangre que lograra algo semejante. Drogon ya había tolerado su presencia en Rocadragón, pero esto es distinto. Rhaegal no se limita a aceptarlo cerca de él: lo ha escogido como jinete.\n\nJon vuelve la mirada hacia ti desde el lomo del dragón. Todavía no comprendes qué significa lo que acabas de presenciar, pero no puedes evitar sonreír."
-
  atfw_jon_daenerys.0023.a:0 "Entonces volemos juntos."
-
  atfw_jon_daenerys.0024.t:0 "Sobre alas de dragón"
  atfw_jon_daenerys.0024.desc:0 "Rhaegal se lanza al cielo y el suelo desaparece bajo ti. El viento golpea tu rostro mientras Invernalia se hace pequeña entre la nieve y los bosques del Norte se extienden hasta perderse en el horizonte.\n\nUn rugido retumba a tu lado. Daenerys vuela sobre Drogon y, por primera vez desde que la conociste, no hay una mesa, una guerra ni una corona entre vosotros. Solo dos dragones cruzando el cielo y la mujer que ha llegado a significar mucho más de lo que esperabas cuando partiste hacia Rocadragón.\n\nRhaegal se inclina hacia Drogon y ambos vuelan juntos sobre las tierras heladas. Daenerys vuelve el rostro hacia ti. Está riendo.\n\nNo recuerdas la última vez que la viste tan libre."
  atfw_jon_daenerys.0024.a:0 "No te quedes atrás."
-
  atfw_jon_daenerys.0025.t:0 "Donde no alcanzan las coronas"
- atfw_jon_daenerys.0025.desc:0 "Drogon y Rhaegal vuelan lado a lado sobre el Norte. Abajo quedan Invernalia, los ejércitos y todos aquellos que esperan algo de vosotros. Aquí arriba no hay Trono de Hierro ni Rey en el Norte.\n\nJon ya no es el extraño que llegó a Rocadragón negándose a doblar la rodilla. Lo has visto enfrentarse a los muertos, arriesgar la vida por sus hombres y mantener su palabra incluso cuando mentir habría sido más fácil. Ahora vuela junto a ti sobre Rhaegal como si hubiera pertenecido al cielo desde siempre.\n\nCuando ambos dragones descienden lejos de las miradas de la corte, Jon se acerca. Esta vez no hay deber que pueda explicar lo que sientes ni alianza que lo haga necesario.\n\nPodrías permitir que siga siendo solamente un amante. Pero sabes que ya hace tiempo que dejó de ser solamente eso."
- atfw_jon_daenerys.0025.a:0 "Quiero que esto sea algo más."
-
+ atfw_jon_daenerys.0025.desc:0 "Rhaegal sigue a Drogon sobre la nieve. Durante un rato dejáis atrás Invernalia y sus recelos. Cuando los dragones aterrizan, Jon se acerca y lo besas junto a las cascadas heladas. Ya os elegisteis a bordo del barco. Aquí, lejos de la corte, podéis disfrutar por un instante de lo que comenzó allí, antes de que el deber os reclame."
+ atfw_jon_daenerys.0025.a:0 "Quedémonos un poco más."
  atfw_jon_daenerys.0018.t:0 "Sangre, amor y corona"
  atfw_jon_daenerys.0018.desc:0 "La verdad cambia tu nombre, pero no lo que sientes por Daenerys. Eres hijo legítimo de Rhaegar Targaryen y Lyanna Stark, y tu nacimiento crea una pretensión que amenaza a la mujer a la que juraste lealtad.\n\nExiste otra posibilidad: unir ambas pretensiones mediante matrimonio. No como una alianza decidida antes de conoceros, sino como una elección nacida de todo lo ocurrido desde Rocadragón."
  atfw_jon_daenerys.0018.a:0 "Le propondré que unamos nuestras casas."
  atfw_jon_daenerys.0018.b:0 "No convertiré lo nuestro en una cuestión de coronas."
-
  atfw_jon_daenerys.0019.t:0 "El último dragón"
  atfw_jon_daenerys.0019.desc:0 "Las palabras de Jon tardan un instante en cobrar sentido. Lyanna Stark fue su madre, pero Eddard Stark nunca fue su padre. Su verdadero padre fue Rhaegar Targaryen, tu hermano.\n\nRhaegar y Lyanna se casaron en secreto antes de que Jon naciera. No es Jon Nieve. Nunca fue un bastardo. Su verdadero nombre es Aegon Targaryen.\n\nDe pronto recuerdas a Rhaegal inclinando la cabeza ante él, permitiéndole montar sobre su lomo como si aquello fuese lo más natural del mundo. El dragón que lleva el nombre de Rhaegar había reconocido en su hijo aquello que ninguno de vosotros podía ver.\n\nJon es sangre de tu sangre. Tu sobrino. Y, como hijo legítimo de Rhaegar, posee una pretensión al Trono de Hierro incluso mayor que la tuya.\n\nPero Jon no ha venido a reclamarte una corona. Te habla del vínculo que habéis forjado y de una posibilidad que hasta ahora ninguno de los dos podía imaginar: unir las dos últimas ramas de la Casa Targaryen y gobernar juntos."
  atfw_jon_daenerys.0019.a:0 "Entonces que el hielo y el fuego permanezcan unidos."
  atfw_jon_daenerys.0019.b:0 "Lo que siento por ti no puede resolver esta disputa."
-
  atfw_jon_daenerys.0020.t:0 "La verdad entre nosotros"
  atfw_jon_daenerys.0020.desc:0 "Apenas has tenido tiempo de comprender lo que Sam y Bran te han revelado, pero hay alguien que debe conocer la verdad por tus propios labios. Después de todo lo que ha ocurrido entre vosotros, no puedes ocultársela a Daenerys.\n\nLe cuentas que Eddard Stark nunca fue tu padre, sino el hombre que te protegió y te crio como a un hijo. Tu madre fue Lyanna Stark y tu verdadero padre, Rhaegar Targaryen. Se casaron en secreto antes de tu nacimiento, y el nombre que te dieron no fue Jon Nieve, sino Aegon Targaryen.\n\nMientras pronuncias esas palabras, piensas en Rhaegal. En cómo inclinó la cabeza ante ti, en cómo te permitió subir sobre su lomo y alzar el vuelo junto a Daenerys. Lo que entonces parecía imposible adquiere ahora un significado que jamás habrías imaginado.\n\nDaenerys guarda silencio. Sabes lo que esta verdad significa para ella. Eres hijo legítimo de Rhaegar y, por tanto, tienes una pretensión al Trono de Hierro mayor que la suya. Pero la corona no es la razón por la que has venido a hablar con ella.\n\nNo quieres que un nombre que acabas de descubrir destruya aquello que ambos habéis encontrado juntos."
-
  atfw_jon_daenerys.0020.a:0 "Ya no habrá secretos entre nosotros."

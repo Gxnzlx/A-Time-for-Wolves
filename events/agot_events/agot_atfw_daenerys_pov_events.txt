@@ -1,0 +1,265 @@
+﻿namespace = atfw_daenerys_pov
+
+# Sequential POV handoff: atfw_jon_daenerys.0008 -> Daenerys -> atfw_jon_daenerys.0009.
+atfw_daenerys_pov.0001 = {
+ type = character_event
+ title = atfw_daenerys_pov.0001.t
+ desc = atfw_daenerys_pov.0001.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonstone_throneroom }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0001_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0001_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0001.a
+  add_character_flag = atfw_daenerys_pov_0001_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0009 days = 1 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0010 -> Daenerys -> atfw_jon_daenerys.0003.
+atfw_daenerys_pov.0002 = {
+ type = character_event
+ title = atfw_daenerys_pov.0002.t
+ desc = atfw_daenerys_pov.0002.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonstone_cave }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0002_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0002_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0002.a
+  add_character_flag = atfw_daenerys_pov_0002_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0003 days = 2 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0003 -> Daenerys -> atfw_jon_daenerys.0011.
+atfw_daenerys_pov.0003 = {
+ type = character_event
+ title = atfw_daenerys_pov.0003.t
+ desc = atfw_daenerys_pov.0003.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonstone_throneroom }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0003_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0003_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0003.a
+  add_character_flag = atfw_daenerys_pov_0003_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0011 days = 3 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0011 -> Daenerys -> atfw_jon_daenerys.0012.
+atfw_daenerys_pov.0004 = {
+ type = character_event
+ title = atfw_daenerys_pov.0004.t
+ desc = atfw_daenerys_pov.0004.desc
+ theme = diplomacy
+ override_background = { reference = AGOT_beach }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0004_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0004_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0004.a
+  add_character_flag = atfw_daenerys_pov_0004_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0012 days = 3 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0012 -> Daenerys -> atfw_jon_daenerys.0013.
+atfw_daenerys_pov.0005 = {
+ type = character_event
+ title = atfw_daenerys_pov.0005.t
+ desc = atfw_daenerys_pov.0005.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonstone_throneroom }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0005_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0005_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0005.a
+  add_character_flag = atfw_daenerys_pov_0005_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0013 days = 5 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0013 -> Daenerys -> atfw_jon_daenerys.0014.
+atfw_daenerys_pov.0006 = {
+ type = character_event
+ title = atfw_daenerys_pov.0006.t
+ desc = atfw_daenerys_pov.0006.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonstone_throneroom }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0006_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0006_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0006.a
+  add_character_flag = atfw_daenerys_pov_0006_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0014 days = 2 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0014 -> Daenerys -> atfw_jon_daenerys.0015.
+atfw_daenerys_pov.0007 = {
+ type = character_event
+ title = atfw_daenerys_pov.0007.t
+ desc = atfw_daenerys_pov.0007.desc
+ theme = diplomacy
+ override_background = { reference = agot_frozen_forest }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0007_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0007_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0007.a
+  add_character_flag = atfw_daenerys_pov_0007_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0015 days = 2 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0015 -> Daenerys -> atfw_jon_daenerys.0016.
+atfw_daenerys_pov.0008 = {
+ type = character_event
+ title = atfw_daenerys_pov.0008.t
+ desc = atfw_daenerys_pov.0008.desc
+ theme = diplomacy
+ override_background = { reference = AGOT_rowboat_night_moonlight }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0008_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0008_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0008.a
+  add_character_flag = atfw_daenerys_pov_0008_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0016 days = 4 } }
+  ai_chance = { base = 100 }
+ }
+}
+
+# Sequential POV handoff: atfw_jon_daenerys.0016 -> Daenerys -> atfw_jon_daenerys.0017.
+atfw_daenerys_pov.0009 = {
+ type = character_event
+ title = atfw_daenerys_pov.0009.t
+ desc = atfw_daenerys_pov.0009.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonpit }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0009_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0009_queued }
+ }
+ immediate = { character:Stark_7 = { save_scope_as = jon } }
+ left_portrait = { character = root animation = personality_rational }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0009.a
+  add_character_flag = atfw_daenerys_pov_0009_seen
+  trigger_event = { id = atfw_north_journey.0001 days = 3 }
+  ai_chance = { base = 100 }
+ }
+}
+
+atfw_daenerys_pov.0010 = {
+ type = character_event
+ title = atfw_daenerys_pov.0010.t
+ desc = atfw_daenerys_pov.0010.desc
+ theme = family
+ override_background = { reference = agot_underground }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0010_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0010_queued }
+ }
+ immediate = {
+  save_scope_as = daenerys
+  character:Stark_7 = { save_scope_as = jon }
+ }
+ right_portrait = { character = scope:jon animation = personality_honorable }
+ option = {
+  name = atfw_daenerys_pov.0010.a
+  add_character_flag = atfw_daenerys_pov_0010_seen
+  character:Stark_7 = {
+		add_character_flag = atfw_daenerys_knows_jons_true_parentage
+
+		# Jon is now publicly treated as a member of Daenerys's Targaryen house.
+		set_house = scope:daenerys.house
+
+		if = {
+			limit = { has_trait = bastard }
+			remove_trait = bastard
+		}
+
+		# The proposal route is only available after the established romance,
+		# Jon's bond with Rhaegal, and the shared flight with Daenerys.
+		if = {
+			limit = {
+				has_character_flag = atfw_jon_became_rhaegal_rider
+				has_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
+				scope:daenerys = { has_character_flag = atfw_daenerys_romance_deepened_after_flight }
+			}
+			add_character_flag = atfw_jon_marriage_route_unlocked
+		}
+		trigger_event = { id = atfw_jon_daenerys.0018 days = 2 }
+
+  }
+  ai_chance = { base = 100 }
+ }
+}

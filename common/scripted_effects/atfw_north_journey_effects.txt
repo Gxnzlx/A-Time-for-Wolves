@@ -1,0 +1,53 @@
+﻿atfw_start_north_journey = {
+ if = {
+  limit = {
+   this = character:Targaryen_9
+   is_alive = yes
+   is_imprisoned = no
+   NOT = { exists = current_travel_plan }
+   character:Stark_7 = { is_alive = yes is_imprisoned = no NOT = { exists = current_travel_plan } }
+  }
+  if = {
+   limit = { has_character_flag = atfw_north_trip_white_harbor }
+   set_location = title:c_white_harbor.title_province
+   character:Stark_7 = { set_location = title:c_white_harbor.title_province }
+   start_travel_plan = {
+    destination = title:b_winterfell.title_province
+    return_trip = no
+    on_start_on_action = atfw_north_land_started
+    on_arrival_event = atfw_north_journey.0005
+    on_arrival_destinations = last
+    on_travel_planner_cancel_event = atfw_north_journey.0009
+   }
+  }
+  else = {
+   # Stage the canonical departure from Dragonstone without cancelling unrelated travel.
+   set_location = title:b_dragonstone.title_province
+   character:Stark_7 = { set_location = title:b_dragonstone.title_province }
+   start_travel_plan = {
+    destination = title:c_white_harbor.title_province
+    return_trip = no
+    on_start_on_action = atfw_north_sea_started
+    on_arrival_event = atfw_north_journey.0004
+    on_arrival_destinations = last
+    on_travel_planner_cancel_event = atfw_north_journey.0009
+   }
+  }
+ }
+}
+atfw_try_sam_revelation = {
+ character:Stark_7 = {
+  if = {
+   limit = {
+    is_alive = yes
+    has_character_flag = atfw_sam_revelation_ready
+    has_character_flag = atfw_true_parentage_discovered_by_bran_and_sam
+    NOT = { has_character_flag = atfw_sam_revelation_queued }
+    NOT = { has_character_flag = atfw_jon_knows_true_parentage }
+    character:Tarly_2 = { is_alive = yes }
+   }
+   add_character_flag = atfw_sam_revelation_queued
+   trigger_event = { id = atfw_jon_north.0005 days = 4 }
+  }
+ }
+}

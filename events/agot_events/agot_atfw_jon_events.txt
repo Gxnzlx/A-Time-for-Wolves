@@ -351,20 +351,19 @@ atfw_jon_north.0013 = {
 }
 
 # -----------------------------------------------------------------------------
-# SEASON 8 — RESERVED: Jon does NOT learn this during the season 7 chain.
-# This event is intentionally dormant until a future Winterfell-return chain
-# adds atfw_jon_returned_to_winterfell_s8.
+# SEASON 8: Sam reveals the truth only after the return and the shared flight.
 # -----------------------------------------------------------------------------
 atfw_jon_north.0005 = {
 	type = character_event
 	title = atfw_jon_north.0005.t
 	desc = atfw_jon_north.0005.desc
 	theme = family
-	override_background = agot_underground
+	override_background = { reference = agot_underground }
 
 	trigger = {
 		this = character:Stark_7
 		has_character_flag = atfw_jon_returned_to_winterfell_s8
+		has_character_flag = atfw_jon_flew_with_daenerys
 		has_character_flag = atfw_true_parentage_discovered_by_bran_and_sam
 		NOT = { has_character_flag = atfw_jon_knows_true_parentage }
 	}
@@ -401,6 +400,7 @@ atfw_jon_north.0014 = {
 	trigger = {
 		this = character:Stark_7
 		has_character_flag = atfw_jon_daenerys_romance_consummated
+		character:Targaryen_9 = { has_character_flag = atfw_north_trip_arrived }
 		NOT = { has_character_flag = atfw_jon_returned_to_winterfell_s8 }
 	}
 	immediate = {
@@ -422,7 +422,7 @@ atfw_jon_north.0014 = {
 		}
 		# Let Jon and Daenerys live their romance first. Rhaegal and the shared
 		# flight happen before Sam's revelation.
-		trigger_event = { id = atfw_jon_daenerys.0022 days = 2 }
+		character:Targaryen_9 = { trigger_event = { id = atfw_north_journey.0006 days = 1 } }
 	}
 }
 
@@ -640,6 +640,7 @@ atfw_sansa_north.0005 = {
 		character:Stark_7 = { add_character_flag = atfw_true_parentage_discovered_by_bran_and_sam }
 		add_character_flag = atfw_bran_knows_jon_is_aegon
 		scope:sam = { add_character_flag = atfw_sam_knows_jon_is_aegon }
+		atfw_try_sam_revelation = yes
 	}
 }
 
@@ -743,6 +744,12 @@ atfw_jon_daenerys.0002 = {
 
 # The first audience is confrontational: bend the knee / refusal / dead army.
 atfw_jon_daenerys.0008 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0001_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0008.t
 	desc = atfw_jon_daenerys.0008.desc
@@ -771,7 +778,8 @@ atfw_jon_daenerys.0008 = {
 	option = {
 		name = atfw_jon_daenerys.0008.a
 		add_character_flag = atfw_jon_refused_to_bend_knee_dragonstone
-		trigger_event = { id = atfw_jon_daenerys.0009 days = 2 }
+		add_character_flag = atfw_daenerys_pov_0001_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0001 days = 1 } }
 	}
 }
 
@@ -801,6 +809,12 @@ atfw_jon_daenerys.0009 = {
 
 # Cave paintings: the Children and First Men fought together.
 atfw_jon_daenerys.0010 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0002_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0010.t
 	desc = atfw_jon_daenerys.0010.desc
@@ -824,12 +838,19 @@ atfw_jon_daenerys.0010 = {
 		name = atfw_jon_daenerys.0010.a
 		add_character_flag = atfw_jon_showed_cave_paintings
 		scope:daenerys = { add_character_flag = atfw_daenerys_takes_dead_threat_seriously }
-		trigger_event = { id = atfw_jon_daenerys.0003 days = 3 }
+		add_character_flag = atfw_daenerys_pov_0002_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0002 days = 1 } }
 	}
 }
 
 # Respect and trust grow gradually. No parentage, marriage, or explicit proposal.
 atfw_jon_daenerys.0003 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0003_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0003.t
 	desc = atfw_jon_daenerys.0003.desc
@@ -855,12 +876,19 @@ atfw_jon_daenerys.0003 = {
 		add_opinion = { target = scope:daenerys modifier = grateful_opinion opinion = 15 }
 		scope:daenerys = { add_opinion = { target = root modifier = grateful_opinion opinion = 15 } }
 		add_character_flag = atfw_jon_daenerys_mutual_respect
-		trigger_event = { id = atfw_jon_daenerys.0011 days = 4 }
+		add_character_flag = atfw_daenerys_pov_0003_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0003 days = 1 } }
 	}
 }
 
 # Jon touches Drogon after Daenerys returns from battle.
 atfw_jon_daenerys.0011 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0004_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0011.t
 	desc = atfw_jon_daenerys.0011.desc
@@ -880,12 +908,19 @@ atfw_jon_daenerys.0011 = {
 		name = atfw_jon_daenerys.0011.a
 		add_character_flag = atfw_jon_touched_drogon
 		scope:daenerys = { add_opinion = { target = root modifier = grateful_opinion opinion = 15 } }
-		trigger_event = { id = atfw_jon_daenerys.0012 days = 4 }
+		add_character_flag = atfw_daenerys_pov_0004_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0004 days = 1 } }
 	}
 }
 
 # News from the North: the plan to bring a wight to Cersei.
 atfw_jon_daenerys.0012 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0005_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0012.t
 	desc = atfw_jon_daenerys.0012.desc
@@ -916,12 +951,19 @@ atfw_jon_daenerys.0012 = {
 			}
 			involved_activity = { progress_activity_phase_after = { days = 1 } }
 		}
-		trigger_event = { id = atfw_jon_daenerys.0013 days = 6 }
+		add_character_flag = atfw_daenerys_pov_0005_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0005 days = 1 } }
 	}
 }
 
 # Expedition beyond the Wall.
 atfw_jon_daenerys.0013 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0006_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0013.t
 	desc = atfw_jon_daenerys.0013.desc
@@ -940,12 +982,19 @@ atfw_jon_daenerys.0013 = {
 	option = {
 		name = atfw_jon_daenerys.0013.a
 		add_character_flag = atfw_jon_captured_wight
-		trigger_event = { id = atfw_jon_daenerys.0014 days = 3 }
+		add_character_flag = atfw_daenerys_pov_0006_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0006 days = 1 } }
 	}
 }
 
 # Daenerys rescues the ranging party; Viserion dies.
 atfw_jon_daenerys.0014 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0007_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0014.t
 	desc = atfw_jon_daenerys.0014.desc
@@ -970,12 +1019,19 @@ atfw_jon_daenerys.0014 = {
 	option = {
 		name = atfw_jon_daenerys.0014.a
 		scope:daenerys = { add_character_flag = atfw_viserion_died_beyond_wall }
-		trigger_event = { id = atfw_jon_daenerys.0015 days = 3 }
+		add_character_flag = atfw_daenerys_pov_0007_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0007 days = 1 } }
 	}
 }
 
 # The ship scene: "Dany"; she commits to the war, Jon recognizes her as queen.
 atfw_jon_daenerys.0015 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0008_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0015.t
 	desc = atfw_jon_daenerys.0015.desc
@@ -1078,12 +1134,19 @@ atfw_jon_daenerys.0015 = {
 			scope:jon_daenerys_conquest_war = { add_attacker = root }
 		}
 
-		trigger_event = { id = atfw_jon_daenerys.0016 days = 5 }
+		add_character_flag = atfw_daenerys_pov_0008_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0008 days = 1 } }
 	}
 }
 
 # Dragonpit meeting: Jon refuses Cersei's demand for Northern neutrality.
 atfw_jon_daenerys.0016 = {
+	trigger = {
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0009_queued }
+	}
 	type = character_event
 	title = atfw_jon_daenerys.0016.t
 	desc = atfw_jon_daenerys.0016.desc
@@ -1109,12 +1172,20 @@ atfw_jon_daenerys.0016 = {
 		name = atfw_jon_daenerys.0016.a
 		add_character_flag = atfw_jon_refused_to_lie_to_cersei
 		scope:daenerys = { add_opinion = { target = root modifier = grateful_opinion opinion = 20 } }
-		trigger_event = { id = atfw_jon_daenerys.0017 days = 4 }
+		add_character_flag = atfw_daenerys_pov_0009_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0009 days = 1 } }
 	}
 }
 
 # Voyage north: the canonical season 7 romantic culmination.
 atfw_jon_daenerys.0017 = {
+ trigger = {
+  this = character:Stark_7
+  is_alive = yes
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_jon_daenerys_romance_pending }
+  NOT = { has_character_flag = atfw_jon_daenerys_romance_consummated }
+ }
 	type = character_event
 	title = atfw_jon_daenerys.0017.t
 	desc = atfw_jon_daenerys.0017.desc
@@ -1137,18 +1208,8 @@ atfw_jon_daenerys.0017 = {
 
 	option = {
 		name = atfw_jon_daenerys.0017.a
-		set_relation_lover = scope:daenerys
-		add_character_flag = atfw_jon_daenerys_romance_consummated
-		scope:daenerys = { add_character_flag = atfw_jon_daenerys_romance_consummated }
+		add_character_flag = atfw_jon_daenerys_romance_pending
 
-		# Parallel spectator-side discovery. It changes no knowledge state on Jon
-		# or Daenerys; it merely records that Bran and Sam now know the truth.
-		character:Stark_Dummy_10 = {
-			if = {
-				limit = { is_alive = yes }
-				trigger_event = { id = atfw_sansa_north.0005 days = 1 }
-			}
-		}
 		# Daenerys also receives the romantic culmination from her own POV.
 		scope:daenerys = { trigger_event = { id = atfw_jon_daenerys.0021 days = 1 } }
 	}
@@ -1164,8 +1225,14 @@ atfw_jon_daenerys.0021 = {
 
 	trigger = {
 		this = character:Targaryen_9
+		is_alive = yes
+		NOT = { has_character_flag = atfw_daenerys_accepts_romance_with_jon }
 		character:Stark_7 = {
-			has_character_flag = atfw_jon_daenerys_romance_consummated
+			is_alive = yes
+			OR = {
+				has_character_flag = atfw_jon_daenerys_romance_pending
+				has_character_flag = atfw_jon_daenerys_romance_consummated # Older saves may already have queued this event.
+			}
 		}
 	}
 	immediate = { character:Stark_7 = { save_scope_as = jon } }
@@ -1173,11 +1240,25 @@ atfw_jon_daenerys.0021 = {
 
 	option = {
 		name = atfw_jon_daenerys.0021.a
+		current_travel_plan ?= { resume_travel_plan = yes }
+		set_relation_lover = scope:jon
+		add_character_flag = atfw_jon_daenerys_romance_consummated
+		character:Stark_7 = {
+			remove_character_flag = atfw_jon_daenerys_romance_pending
+			add_character_flag = atfw_jon_daenerys_romance_consummated
+		}
+		character:Stark_Dummy_10 = {
+			if = {
+				limit = { is_alive = yes }
+				trigger_event = { id = atfw_sansa_north.0005 days = 1 }
+			}
+		}
 		add_character_flag = atfw_daenerys_accepts_romance_with_jon
 		add_opinion = { target = scope:jon modifier = grateful_opinion opinion = 20 }
 		scope:jon = {
 			add_opinion = { target = root modifier = grateful_opinion opinion = 20 }
-			trigger_event = { id = atfw_jon_north.0014 days = 13 }
+			# The actual travel arrival callback will dispatch Winterfell.
+
 		}
 	}
 }
@@ -1295,11 +1376,12 @@ atfw_jon_daenerys.0025 = {
 
 	option = {
 		name = atfw_jon_daenerys.0025.a
-		set_relation_soulmate = scope:jon
+		add_opinion = { target = scope:jon modifier = grateful_opinion opinion = 15 }
 		add_character_flag = atfw_daenerys_romance_deepened_after_flight
 		scope:jon = { add_character_flag = atfw_jon_daenerys_romance_deepened_after_flight }
 		# Only after the romance has had time to deepen does Sam reveal the truth.
-		scope:jon = { trigger_event = { id = atfw_jon_north.0005 days = 4 } }
+		scope:jon = { add_character_flag = atfw_sam_revelation_ready }
+		atfw_try_sam_revelation = yes
 	}
 }
 
@@ -1310,9 +1392,12 @@ atfw_jon_daenerys.0020 = {
 	title = atfw_jon_daenerys.0020.t
 	desc = atfw_jon_daenerys.0020.desc
 	theme = family
-	override_background = { reference = agot_winterfell_throneroom }
+	override_background = { reference = agot_underground }
 	trigger = {
 		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0010_queued }
 		has_character_flag = atfw_jon_knows_true_parentage
 		NOT = { has_character_flag = atfw_daenerys_knows_jons_true_parentage }
 	}
@@ -1321,31 +1406,8 @@ atfw_jon_daenerys.0020 = {
 	right_portrait = { character = scope:daenerys animation = personality_rational }
 	option = {
 		name = atfw_jon_daenerys.0020.a
-		add_character_flag = atfw_daenerys_knows_jons_true_parentage
-
-		# Jon is now publicly treated as a member of Daenerys's Targaryen house.
-		set_house = scope:daenerys.house
-
-		if = {
-			limit = { has_trait = bastard }
-			remove_trait = bastard
-		}
-		if = {
-			limit = { NOT = { has_trait = child_of_concubine_female } }
-			add_trait = child_of_concubine_female
-		}
-
-		# The proposal route is only available after the established romance,
-		# Jon's bond with Rhaegal, and the shared flight with Daenerys.
-		if = {
-			limit = {
-				has_character_flag = atfw_jon_became_rhaegal_rider
-				has_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
-				scope:daenerys = { has_character_flag = atfw_daenerys_romance_deepened_after_flight }
-			}
-			add_character_flag = atfw_jon_marriage_route_unlocked
-		}
-		trigger_event = { id = atfw_jon_daenerys.0018 days = 2 }
+		add_character_flag = atfw_daenerys_pov_0010_queued
+		character:Targaryen_9 = { trigger_event = { id = atfw_daenerys_pov.0010 days = 1 } }
 			ai_chance = { base = 100 }
 	}
 }

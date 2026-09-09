@@ -1,0 +1,182 @@
+﻿namespace = atfw_north_journey
+atfw_north_journey.0001 = {
+ type = character_event
+ title = atfw_north_journey.0001.t
+ desc = atfw_north_journey.0001.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonstone_throneroom }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0001_seen }
+  
+ }
+ immediate = {  }
+ right_portrait = { character = character:Stark_7 animation = personality_rational }
+ option = {
+  name = atfw_north_journey.0001.a
+  add_character_flag = atfw_north_journey_0001_seen
+  character:Stark_7 = { trigger_event = { id = atfw_north_journey.0002 days = 1 } }
+  ai_chance = { base = 100 }
+ }
+ 
+}
+atfw_north_journey.0002 = {
+ type = character_event
+ title = atfw_north_journey.0002.t
+ desc = atfw_north_journey.0002.desc
+ theme = diplomacy
+ override_background = { reference = AGOT_beach }
+ trigger = {
+  this = character:Stark_7
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0002_seen }
+  
+ }
+ immediate = {  }
+ right_portrait = { character = character:Targaryen_9 animation = personality_rational }
+ option = {
+  name = atfw_north_journey.0002.a
+  add_character_flag = atfw_north_journey_0002_seen
+  character:Targaryen_9 = { trigger_event = { id = atfw_north_journey.0003 days = 1 } }
+  ai_chance = { base = 100 }
+ }
+ 
+}
+atfw_north_journey.0003 = {
+ type = character_event
+ title = atfw_north_journey.0003.t
+ desc = atfw_north_journey.0003.desc
+ theme = diplomacy
+ override_background = { reference = AGOT_beach }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0003_seen }
+  
+ }
+ immediate = { add_character_flag = atfw_north_trip_ready }
+ right_portrait = { character = character:Stark_7 animation = personality_rational }
+ option = {
+  name = atfw_north_journey.0003.a
+  add_character_flag = atfw_north_journey_0003_seen
+  atfw_start_north_journey = yes
+  ai_chance = { base = 100 }
+ }
+ 
+}
+atfw_north_journey.0004 = {
+ type = character_event
+ title = atfw_north_journey.0004.t
+ desc = atfw_north_journey.0004.desc
+ theme = diplomacy
+ override_background = { reference = AGOT_beach }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0004_seen }
+  location = title:c_white_harbor.title_province
+  
+ }
+ immediate = { add_character_flag = atfw_north_trip_white_harbor
+ remove_character_flag = atfw_north_trip_active }
+ right_portrait = { character = character:Stark_7 animation = personality_rational }
+ option = {
+  name = atfw_north_journey.0004.a
+  add_character_flag = atfw_north_journey_0004_seen
+  add_character_flag = atfw_north_trip_ready
+  trigger_event = { id = atfw_north_journey.0008 days = 1 }
+  ai_chance = { base = 100 }
+ }
+ 
+}
+atfw_north_journey.0005 = {
+ type = character_event
+ hidden = yes
+ trigger = { this = character:Targaryen_9 location = title:b_winterfell.title_province NOT = { has_character_flag = atfw_north_trip_arrived } }
+ immediate = {
+  add_character_flag = atfw_north_trip_arrived
+  remove_character_flag = atfw_north_trip_active
+  remove_character_flag = atfw_north_trip_ready
+  # Keep the scripted principals and mounts at the destination after disbanding the entourage.
+  set_location = title:b_winterfell.title_province
+  character:Stark_7 = {
+   set_location = title:b_winterfell.title_province
+   trigger_event = { id = atfw_jon_north.0014 days = 1 }
+  }
+  character:dragon_rhaegal ?= { if = { limit = { is_alive = yes } set_location = title:b_winterfell.title_province } }
+  character:dragon_drogon ?= { if = { limit = { is_alive = yes } set_location = title:b_winterfell.title_province } }
+ }
+}
+atfw_north_journey.0006 = {
+ type = character_event
+ title = atfw_north_journey.0006.t
+ desc = atfw_north_journey.0006.desc
+ theme = diplomacy
+ override_background = { reference = agot_winterfell_throneroom }
+ trigger = {
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0006_seen }
+  has_character_flag = atfw_north_trip_arrived
+ }
+ immediate = {  }
+ right_portrait = { character = character:Stark_7 animation = personality_rational }
+ option = {
+  name = atfw_north_journey.0006.a
+  add_character_flag = atfw_north_journey_0006_seen
+  if = {
+ limit = { character:Stark_Dummy_8 = { is_alive = yes } }
+ character:Stark_Dummy_8 = { trigger_event = { id = atfw_north_journey.0007 days = 1 } }
+}
+else = { character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0022 days = 2 } } }
+  ai_chance = { base = 100 }
+ }
+ 
+}
+atfw_north_journey.0007 = {
+ type = character_event
+ title = atfw_north_journey.0007.t
+ desc = atfw_north_journey.0007.desc
+ theme = diplomacy
+ override_background = { reference = agot_winterfell_throneroom }
+ trigger = {
+  this = character:Stark_Dummy_8
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0007_seen }
+  
+ }
+ immediate = {  }
+ right_portrait = { character = character:Targaryen_9 animation = personality_rational }
+ option = {
+  name = atfw_north_journey.0007.a
+  add_character_flag = atfw_north_journey_0007_seen
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0022 days = 2 } }
+  ai_chance = { base = 100 }
+ }
+ 
+}
+atfw_north_journey.0009 = {
+ type = character_event
+ hidden = yes
+ immediate = { add_character_flag = atfw_north_trip_ready remove_character_flag = atfw_north_trip_active }
+}
+
+atfw_north_journey.0008 = {
+ type = character_event
+ hidden = yes
+ trigger = { this = character:Targaryen_9 is_alive = yes }
+ immediate = { atfw_start_north_journey = yes }
+}

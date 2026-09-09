@@ -1,0 +1,50 @@
+﻿atfw_north_sea_started = {
+ effect = {
+  remove_character_flag = atfw_north_trip_ready
+  add_character_flag = atfw_north_trip_active
+  current_travel_plan = { add_companion = character:Stark_7 }
+  if = {
+   limit = { NOT = { has_character_flag = atfw_daenerys_accepts_romance_with_jon } }
+   # Hold the route while either player reads the two boat POVs.
+   current_travel_plan = { pause_travel_plan = yes }
+   if = {
+    limit = {
+     character:Stark_7 = {
+      OR = {
+       has_character_flag = atfw_jon_daenerys_romance_pending
+       has_character_flag = atfw_jon_daenerys_romance_consummated
+      }
+     }
+    }
+    trigger_event = { id = atfw_jon_daenerys.0021 days = 1 }
+   }
+   character:Stark_7 = {
+    if = {
+     limit = {
+      NOT = { has_character_flag = atfw_jon_daenerys_romance_pending }
+      NOT = { has_character_flag = atfw_jon_daenerys_romance_consummated }
+     }
+     trigger_event = { id = atfw_jon_daenerys.0017 days = 1 }
+    }
+   }
+  }
+ }
+}
+atfw_north_land_started = {
+ effect = {
+  remove_character_flag = atfw_north_trip_ready
+  add_character_flag = atfw_north_trip_active
+  current_travel_plan = { add_companion = character:Stark_7 }
+ }
+}
+# If a trip is aborted, expose the same resumable decision; never replay completed scenes.
+on_travel_plan_cancel = { on_actions = { atfw_north_trip_cancelled } }
+atfw_north_trip_cancelled = {
+ trigger = { this = character:Targaryen_9 has_character_flag = atfw_north_trip_active }
+ effect = {
+  remove_character_flag = atfw_north_trip_active
+  add_character_flag = atfw_north_trip_ready
+ }
+}
+
+on_travel_plan_abort = { on_actions = { atfw_north_trip_cancelled } }

@@ -12,7 +12,7 @@ atfw_bookmark_intro.0001 = {
 	desc = atfw_bookmark_intro.0001.desc
 
 	override_background = {
-		reference = agot_fullscreen_targaryen
+		reference = atfw_dragonstone_opening
 	}
 	override_icon = {
 		reference = "gfx/interface/icons/event_types/type_war.dds"
@@ -137,8 +137,8 @@ atfw_bookmark_intro.0006 = {
 	option = {
 		name = atfw_bookmark_intro.0006.a
 
-		# Jon's 8303 story now begins in Winterfell. Dragonstone is unlocked
-		# only after the northern council and the private parentage revelation.
-		trigger_event = { id = atfw_jon_north.0001 days = 1 }
+		# Jon's 8303 story begins immediately after the Battle of the Bastards.
+		# The first step is the gathering that will proclaim him King in the North.
+		trigger_event = { id = atfw_jon_north.0007 days = 1 }
 	}
 }

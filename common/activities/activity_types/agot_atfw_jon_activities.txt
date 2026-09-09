@@ -1,6 +1,4 @@
-﻿# A Time for Wolves — Jon Snow custom activities
-
-activity_atfw_northern_banners_feast = {
+﻿activity_atfw_northern_banners_feast = {
 	is_shown = {
 		this = character:Stark_7
 		has_character_flag = atfw_northern_banners_feast_unlocked
@@ -59,20 +57,16 @@ activity_atfw_northern_banners_feast = {
 
 				add_character_flag = atfw_jon_northern_feast_completed
 
+				# The feast belongs to the end of season 6. The first season 7
+				# war council happens later and is deliberately not merged into it.
 				if = {
 					limit = {
 						has_character_flag = atfw_jon_proclaimed_king_in_the_north
-						has_character_flag = atfw_jon_war_council_complete
-						NOT = { has_character_flag = atfw_jon_parentage_scene_scheduled }
-						NOT = { has_character_flag = atfw_jon_parentage_scene_fired }
+						NOT = { has_character_flag = atfw_jon_first_s7_council_scheduled }
 					}
-
-					# Set BEFORE trigger_event. This prevents multiple completion
-					# callbacks from queuing the same scene.
-					add_character_flag = atfw_jon_parentage_scene_scheduled
-
+					add_character_flag = atfw_jon_first_s7_council_scheduled
 					trigger_event = {
-						id = atfw_jon_north.0005
+						id = atfw_jon_north.0009
 						days = 7
 					}
 				}
@@ -191,9 +185,9 @@ activity_atfw_northern_banners_feast = {
 	# SINGLE FEAST PHASE
 	###################
 
-	# Keep the whole gathering inside one feast phase. The loyalty oaths,
-	# proclamation and war council are narrative subevents of this phase,
-	# not selectable "contests".
+	# Keep the post-Battle-of-the-Bastards gathering inside one feast phase.
+	# The loyalty declarations and Jon's proclamation occur in the same scene.
+	# The later season 7 war council is deliberately outside this activity.
 	phases = {
 		atfw_northern_banners_feast_phase = {
 			order = 1
@@ -206,8 +200,8 @@ activity_atfw_northern_banners_feast = {
 						this = scope:host
 					}
 
-					# One feast scene contains the oaths, proclamation and war council.
-					# There are no per-lord or separate council event windows.
+					# One feast scene contains the lords' declarations of loyalty and
+					# the proclamation of Jon as King in the North.
 					trigger_event = {
 						id = atfw_jon_north.0003
 						days = 10
@@ -261,9 +255,21 @@ activity_atfw_journey_to_dragonstone = {
 
 	on_start = {
 		# Activity committed: consume the one-shot planner unlock.
-		# The Jon/Daenerys chain starts only when the destination phase becomes active.
 		scope:host = {
 			remove_character_flag = atfw_journey_to_dragonstone_unlocked
+
+			# Jon has now genuinely left Winterfell. Start the parallel Sansa/Bran
+			# chronology exactly once.
+			if = {
+				limit = { NOT = { has_character_flag = atfw_winterfell_parallel_chain_started } }
+				add_character_flag = atfw_winterfell_parallel_chain_started
+				character:Stark_Dummy_8 = {
+					if = {
+						limit = { is_alive = yes }
+						trigger_event = { id = atfw_sansa_north.0001 days = 5 }
+					}
+				}
+			}
 		}
 	}
 
@@ -282,6 +288,7 @@ activity_atfw_journey_to_dragonstone = {
 
 	on_complete = {
 		scope:host = {
+			remove_character_flag = atfw_journey_to_dragonstone_travelling
 			remove_character_flag = atfw_journey_to_dragonstone_arrived
 		}
 	}
@@ -335,12 +342,12 @@ activity_atfw_journey_to_dragonstone = {
 						this = scope:host
 					}
 					add_character_flag = atfw_journey_to_dragonstone_arrived
-					trigger_event = atfw_jon_daenerys.0001
+					trigger_event = atfw_jon_daenerys.0007
 
-					# Keep Jon at Dragonstone long enough for the diplomatic
-					# event chain to play out before the activity concludes.
+					# Failsafe only. The canonical Dragonstone chain normally ends
+					# this phase when Jon decides to leave for Eastwatch.
 					scope:activity = {
-						progress_activity_phase_after = { days = 7 }
+						progress_activity_phase_after = { days = 30 }
 					}
 				}
 			}

@@ -62,7 +62,7 @@ Most_Devout_tfw_2 = {
 		add_character_flag = sexuality_ensure_heterosexual
 		effect = { change_current_weight = 100 }
 	}
-	8249.1.1 = {
+	8288.1.1 = {
 		add_trait = septon
 		add_trait = wheezing
 	}
@@ -4051,11 +4051,6 @@ Eunuch_1 = {
 				CASTLE = title:k_dragonstone
 				POSITION = councillor_spymaster
 			}
-		}
-	}
-	8303.5.12 = {
-		death = {
-			death_reason = death_dragon_fire
 		}
 	}
 }

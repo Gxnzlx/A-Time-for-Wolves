@@ -7,3 +7,11 @@ atfw_battle_of_the_bastards = {
 		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
 	}
 }
+
+atfw_dragonstone_opening = {
+	background = {
+		reference = "gfx/illustrations/dragonstone_opening.dds"
+		environment = "environment_event_alley"
+		ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
+	}
+}

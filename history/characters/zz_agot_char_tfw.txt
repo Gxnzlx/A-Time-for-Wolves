@@ -714,10 +714,16 @@ Blackberry_12 = {
 	8300.1.1 = {
 		religion = rhllor_fots
 	}
+	8303.12.31 = {
+		add_spouse = Hardy_10
+	}
 }
 Blackberry_14 = {
 	8300.1.1 = {
 		religion = rhllor_fots
+	}
+	8303.12.31 = {
+		add_spouse = Lannister_137
 	}
 }
 Blackberry_16 = {
@@ -744,10 +750,16 @@ Bullock_15 = {
 	8300.1.1 = {
 		religion = rhllor_fots
 	}
+	8303.12.31 = {
+		add_spouse = Sweet_10
+	}
 }
 Bullock_16 = {
 	8300.1.1 = {
 		religion = rhllor_fots
+	}
+	8303.12.31 = {
+		add_spouse = Cave_53
 	}
 }
 Farring_1 = {
@@ -1301,7 +1313,6 @@ Stark_Dummy_8 = {
 	}
 	8300.1.2 = {
 		name = Sansa # Override AGOT's Alayne alias
-		dynasty_house = house_Stark
 		dynasty = dynn_Stark
 		effect = {
 			remove_trait = bastard
@@ -1363,7 +1374,6 @@ Stark_Dummy_9 = {
 	}
 	8305.1.1 = {
 		name = Arya
-		dynasty_house = house_Stark
 		dynasty = dynn_Stark
 		set_father = character:Stark_3 # Eddard Stark
 		set_mother = character:Tully_4 # Catelyn Tully
@@ -1399,7 +1409,6 @@ Stark_10 = {
 Stark_Dummy_10 = {
 	name = Bran # Brandon Stark continued here
 	8305.1.1 = {
-		dynasty_house = house_Stark
 		dynasty = dynn_Stark
 		set_father = character:Stark_3 # Eddard Stark
 		set_mother = character:Tully_4 # Catelyn Tully
@@ -1440,7 +1449,6 @@ Stark_11 = {
 Stark_Dummy_11 = {
 	name = Rickon
 	8303.11.7 = {
-		dynasty_house = house_Stark
 		dynasty = dynn_Stark
 		set_father = character:Stark_3 # Eddard Stark
 		set_mother = character:Tully_4 # Catelyn Tully
@@ -3019,6 +3027,9 @@ Frey_91 = {
 	}
 }
 Frey_81 = {
+	8300.5.16 = {
+		dynasty = dynn_Rosby
+	}
 	8303.12.4 = {
 		death = {
 			death_reason = death_feast_accident
@@ -3193,13 +3204,6 @@ Frey_95 = {
 		}
 	}
 }
-Frey_42 = {
-	8303.12.4 = {
-		death = {
-			death_reason = death_feast_accident
-		}
-	}
-}
 RoyceGOTM_13 = {
 	8303.12.4 = {
 		death = {
@@ -3243,13 +3247,6 @@ Frey_96 = {
 	}
 }
 Frey_150 = {
-	8303.12.4 = {
-		death = {
-			death_reason = death_feast_accident
-		}
-	}
-}
-Frey_146 = {
 	8303.12.4 = {
 		death = {
 			death_reason = death_feast_accident
@@ -3326,20 +3323,6 @@ Frey_56 = {
 		}
 	}
 }
-Frey_76 = {
-	8303.12.4 = {
-		death = {
-			death_reason = death_feast_accident
-		}
-	}
-}
-Frey_77 = {
-	8303.12.4 = {
-		death = {
-			death_reason = death_feast_accident
-		}
-	}
-}
 Frey_87 = {
 	8303.12.4 = {
 		death = {
@@ -3385,13 +3368,6 @@ Frey_78 = {
 		}
 	}
 }
-Frey_81 = {
-	8300.5.16 = {
-		dynasty = dynn_Rosby
-	}
-}
-
-#Darry
 Darry_11 = {
 	name = Willem # Mentioned, bastard of Darry overlooked in succession
 	8303.12.31 = {
@@ -3959,7 +3935,7 @@ Sunderland_1 = {
 }
 Melcolm_1 = {
 	8365.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 
@@ -4191,16 +4167,6 @@ Bar_Emmon_51 = {
 		add_spouse = Brownhollow_2
 	}
 }
-Bullock_15 = {
-	8303.12.31 = {
-		add_spouse = Sweet_10
-	}
-}
-Bullock_16 = {
-	8303.12.31 = {
-		add_spouse = Cave_53
-	}
-}
 Hardy_6 = {
 	8303.12.31 = {
 		add_spouse = Cave_54
@@ -4243,22 +4209,12 @@ Rykker_4 = {
 }
 Rykker_6 = {
 	8303.12.31 = {
-		add_spouse = bush_28
+		add_spouse = Bush_28
 	}
 }
 Goodbrook_4 = {
 	8303.12.31 = {
 		add_spouse = Rykker_5
-	}
-}
-Blackberry_14 = {
-	8303.12.31 = {
-		add_spouse = Lannister_137
-	}
-}
-Blackberry_12 = {
-	8303.12.31 = {
-		add_spouse = Hardy_10
 	}
 }
 Crabb_6 = {

@@ -2,6 +2,7 @@
 	on_actions = {
 		agot_assign_slave_master
 		agot_artifact_market_management
+		agot_jon_snow_learns
 		agot_citadel_yearly_pulse
 		agot_king_is_dying
 		agot_legitimate_house_maintenance
@@ -728,6 +729,26 @@ agot_faegon_invasion = {
 			}
 			title:c_princes_quarter.holder = {
 				trigger_event = { id = agot_faegon_invasion.0001 days = { 0 181 } }
+			}
+		}
+	}
+}
+
+agot_jon_snow_learns = {
+	trigger = { NOT = { game_start_date = 8303.12.31 } }
+	effect = {
+		random = {
+			chance = 10 # MTTH 10 years
+			every_ruler = {
+				limit = {
+					has_character_flag = is_Stark_7
+					exists = real_father
+					NOT = { father = real_father }
+				}
+				trigger_event = { # Can happen any time that year
+					id = agot_events_bastard.0920
+					days = { 1 364 }
+				}
 			}
 		}
 	}

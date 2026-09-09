@@ -45,19 +45,20 @@ res_dany_decision = {
 			has_doctrine_parameter = can_gaze_into_fire
 		}
 		NOT = { has_global_variable = dany_res }
+		character:Targaryen_9 = { is_alive = no }
 	}
 
 	is_valid = {
 		custom_description = {
 			text = decision_has_court_chaplain
-			root.cp:councillor_court_chaplain ?= {
+			root.cp:councillor_court_chaplain = {
 				has_trait = red_priest
 				is_available_adult = yes
 			}
 		}
 		custom_description = {
 			text = look_into_flames_decision_no_cooldown_requirement
-			NOT = { has_global_variable = dany_res }
+			NOT = { has_character_flag = res_dany_cooldown }
 		}
 	}
 
@@ -85,7 +86,7 @@ set_capital_kingslanding_decision = {
 	is_shown = {
 		is_ruler = yes
 		is_landed = yes
-		has_title = title:e_the_iron_throne
+		has_title = title:h_the_iron_throne
 		NOR = {
 			capital_county = {
 				this = title:c_kings_landing
@@ -163,8 +164,8 @@ set_capital_kingslanding_decision = {
 		}
 	}
 	ai_potential = {
-		primary_title.tier = tier_empire
-		has_title = title:e_the_iron_throne
+		primary_title.tier = tier_hegemony
+		has_title = title:h_the_iron_throne
 	}
 
 	ai_will_do = { #Do it always, for coherence.

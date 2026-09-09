@@ -1,4 +1,4 @@
-version="2.1.0"
+version="2.1.1"
 tags={
 	"Fixes"
 	"Alternative History"
@@ -10,3 +10,4 @@ name="AGOT - A Time for Wolves Fix"
 picture="thumbnail.png"
 supported_version="1.19.0.6"
 remote_file_id="3715624319"
+dependencies = { "A Game of Thrones" }

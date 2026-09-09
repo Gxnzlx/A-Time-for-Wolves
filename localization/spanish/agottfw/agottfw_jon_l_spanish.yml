@@ -147,11 +147,7 @@
  atfw_jon_north.0014.desc:0 "Las murallas de Invernalia aparecen entre la nieve. Regresas al hogar que dejaste meses atrás, pero ya no vuelves solo. Daenerys Targaryen cabalga contigo y dragones vuelan sobre el Norte.\n\nSansa ha gobernado en tu ausencia. Bran y Arya han regresado. Tu vuelta pone fin a la regencia, pero apenas cruzas las puertas queda claro que tu familia lleva tiempo esperando poder contarte algo."
  atfw_jon_north.0014.a:0 "Estoy en casa."
  atfw_jon_daenerys.0021.t:0 "Sin coronas entre nosotros"
- atfw_jon_daenerys.0021.desc:0 "El mar se extiende oscuro tras los ventanales mientras el barco avanza hacia el Norte. Jon ha acudido a tus aposentos sin escoltas, sin consejeros y sin una corona que interponer entre ambos.
-
-Desde Rocadragón habéis discutido, luchado y aprendido a confiar el uno en el otro. Lo viste arriesgar la vida más allá del Muro, y por un instante creíste que no regresaría. Ahora está ante ti, vivo, y ninguno de los dos parece dispuesto a seguir fingiendo que lo que existe entre vosotros es solamente una alianza.
-
-Cuando la puerta se cierra, dejas atrás por una noche a la reina que pretende el Trono de Hierro. Él deja atrás al Rey en el Norte. Solo quedan Daenerys y Jon."
+ atfw_jon_daenerys.0021.desc:0 "El mar se extiende oscuro tras los ventanales mientras el barco avanza hacia el Norte. Jon ha acudido a tus aposentos sin escoltas, sin consejeros y sin una corona que interponer entre ambos.\n\nDesde Rocadragón habéis discutido, luchado y aprendido a confiar el uno en el otro. Lo viste arriesgar la vida más allá del Muro, y por un instante creíste que no regresaría. Ahora está ante ti, vivo, y ninguno de los dos parece dispuesto a seguir fingiendo que lo que existe entre vosotros es solamente una alianza.\n\nCuando la puerta se cierra, dejas atrás por una noche a la reina que pretende el Trono de Hierro. Él deja atrás al Rey en el Norte. Solo quedan Daenerys y Jon."
  atfw_jon_daenerys.0021.a:0 "Esta noche, que solo seamos nosotros."
 
  atfw_jon_daenerys.0022.t:0 "El dragón verde"
@@ -167,23 +163,11 @@ Cuando la puerta se cierra, dejas atrás por una noche a la reina que pretende e
  atfw_jon_daenerys.0023.a:0 "Entonces volemos juntos."
 
  atfw_jon_daenerys.0024.t:0 "Sobre alas de dragón"
- atfw_jon_daenerys.0024.desc:0 "Rhaegal se lanza al cielo y el suelo desaparece bajo ti. El viento golpea tu rostro mientras Invernalia se hace pequeña entre la nieve y los bosques del Norte se extienden hasta perderse en el horizonte.
-
-Un rugido retumba a tu lado. Daenerys vuela sobre Drogon y, por primera vez desde que la conociste, no hay una mesa, una guerra ni una corona entre vosotros. Solo dos dragones cruzando el cielo y la mujer que ha llegado a significar mucho más de lo que esperabas cuando partiste hacia Rocadragón.
-
-Rhaegal se inclina hacia Drogon y ambos vuelan juntos sobre las tierras heladas. Daenerys vuelve el rostro hacia ti. Está riendo.
-
-No recuerdas la última vez que la viste tan libre."
+ atfw_jon_daenerys.0024.desc:0 "Rhaegal se lanza al cielo y el suelo desaparece bajo ti. El viento golpea tu rostro mientras Invernalia se hace pequeña entre la nieve y los bosques del Norte se extienden hasta perderse en el horizonte.\n\nUn rugido retumba a tu lado. Daenerys vuela sobre Drogon y, por primera vez desde que la conociste, no hay una mesa, una guerra ni una corona entre vosotros. Solo dos dragones cruzando el cielo y la mujer que ha llegado a significar mucho más de lo que esperabas cuando partiste hacia Rocadragón.\n\nRhaegal se inclina hacia Drogon y ambos vuelan juntos sobre las tierras heladas. Daenerys vuelve el rostro hacia ti. Está riendo.\n\nNo recuerdas la última vez que la viste tan libre."
  atfw_jon_daenerys.0024.a:0 "No te quedes atrás."
 
  atfw_jon_daenerys.0025.t:0 "Donde no alcanzan las coronas"
- atfw_jon_daenerys.0025.desc:0 "Drogon y Rhaegal vuelan lado a lado sobre el Norte. Abajo quedan Invernalia, los ejércitos y todos aquellos que esperan algo de vosotros. Aquí arriba no hay Trono de Hierro ni Rey en el Norte.
-
-Jon ya no es el extraño que llegó a Rocadragón negándose a doblar la rodilla. Lo has visto enfrentarse a los muertos, arriesgar la vida por sus hombres y mantener su palabra incluso cuando mentir habría sido más fácil. Ahora vuela junto a ti sobre Rhaegal como si hubiera pertenecido al cielo desde siempre.
-
-Cuando ambos dragones descienden lejos de las miradas de la corte, Jon se acerca. Esta vez no hay deber que pueda explicar lo que sientes ni alianza que lo haga necesario.
-
-Podrías permitir que siga siendo solamente un amante. Pero sabes que ya hace tiempo que dejó de ser solamente eso."
+ atfw_jon_daenerys.0025.desc:0 "Drogon y Rhaegal vuelan lado a lado sobre el Norte. Abajo quedan Invernalia, los ejércitos y todos aquellos que esperan algo de vosotros. Aquí arriba no hay Trono de Hierro ni Rey en el Norte.\n\nJon ya no es el extraño que llegó a Rocadragón negándose a doblar la rodilla. Lo has visto enfrentarse a los muertos, arriesgar la vida por sus hombres y mantener su palabra incluso cuando mentir habría sido más fácil. Ahora vuela junto a ti sobre Rhaegal como si hubiera pertenecido al cielo desde siempre.\n\nCuando ambos dragones descienden lejos de las miradas de la corte, Jon se acerca. Esta vez no hay deber que pueda explicar lo que sientes ni alianza que lo haga necesario.\n\nPodrías permitir que siga siendo solamente un amante. Pero sabes que ya hace tiempo que dejó de ser solamente eso."
  atfw_jon_daenerys.0025.a:0 "Quiero que esto sea algo más."
 
  atfw_jon_daenerys.0018.t:0 "Sangre, amor y corona"

@@ -422,9 +422,10 @@
 	8306.1.1 = {
 		religion = fots_pure
 	}
+	8308.1.1 = {
+		religion = fots_pure
+	}
 }
-################ b_coldwater_castle ###############
-####### c_coldwater_burn - d_the_drainlands #######
 2476 = {
 	8308.1.1 = {
 		religion = fots_pure
@@ -432,18 +433,12 @@
 }
 ################### b_grey_glen ###################
 ########## c_grey_glen - d_the_drainlands #########
-2482 = {
-	8308.1.1 = {
-		religion = fots_pure
-	}
-}
-#d_eastweald
 2398 = {
 	8306.1.1 = {
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################### b_stillwater ##################
@@ -453,7 +448,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################## b_longbow_hall #################
@@ -463,7 +458,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################### b_lymestone ###################
@@ -473,7 +468,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 #c_brackenbrick_point
@@ -482,7 +477,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 #c_sedgemore
@@ -491,7 +486,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 #c_bowlyn
@@ -500,7 +495,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 #d_old_anchor
@@ -509,7 +504,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################### b_rusty_fort ##################
@@ -519,7 +514,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################### b_tetchmere ###################
@@ -529,7 +524,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################### b_old_anchor ##################
@@ -539,7 +534,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 
@@ -633,7 +628,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ##################### b_hazen #####################
@@ -643,7 +638,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################## b_hardyng_hall #################
@@ -653,7 +648,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 ################ b_ironoaks_castle ################
@@ -663,7 +658,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 #c_the_banners
@@ -672,7 +667,7 @@
 		religion = fots_pure
 	}
 	8366.1.1 = {
-		religion = fots_tfw
+		religion = fots_seven
 	}
 }
 

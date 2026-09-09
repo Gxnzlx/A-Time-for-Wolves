@@ -121,35 +121,35 @@ tfw_on_game_start = {
 					}
 					if = {
 						limit = {
-							current_year > 8320
+							current_year >= 8320
 							current_year < 8330
 						}
 						change_development_level = 1
 					}
 					if = {
 						limit = {
-							current_year > 8330
+							current_year >= 8330
 							current_year < 8340
 						}
 						change_development_level = 2
 					}
 					if = {
 						limit = {
-							current_year > 8340
+							current_year >= 8340
 							current_year < 8350
 						}
 						change_development_level = 3
 					}
 					if = {
 						limit = {
-							current_year > 8350
+							current_year >= 8350
 							current_year < 8360
 						}
 						change_development_level = 4
 					}
 					if = {
 						limit = {
-							current_year > 8360
+							current_year >= 8360
 							current_year < 8370
 						}
 						change_development_level = 5
@@ -168,35 +168,35 @@ tfw_on_game_start = {
 						}
 						if = {
 							limit = {
-								current_year > 8320
+								current_year >= 8320
 								current_year < 8330
 							}
 							change_development_level = 1
 						}
 						if = {
 							limit = {
-								current_year > 8330
+								current_year >= 8330
 								current_year < 8340
 							}
 							change_development_level = 2
 						}
 						if = {
 							limit = {
-								current_year > 8340
+								current_year >= 8340
 								current_year < 8350
 							}
 							change_development_level = 3
 						}
 						if = {
 							limit = {
-								current_year > 8350
+								current_year >= 8350
 								current_year < 8360
 							}
 							change_development_level = 4
 						}
 						if = {
 							limit = {
-								current_year > 8360
+								current_year >= 8360
 								current_year < 8370
 							}
 							change_development_level = 5

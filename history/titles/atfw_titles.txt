@@ -2282,6 +2282,12 @@ d_heartland_heights = {
 	}
 }
 d_atranta = {
+	8303.12.4 = {
+		liege = h_the_iron_throne
+	}
+	8304.12.15 = {
+		liege = e_the_riverlands
+	}
 	8310.1.1 = {
 		de_jure_liege = e_the_crownlands
 		liege = e_the_crownlands
@@ -3471,6 +3477,12 @@ c_stalkvale = {
 	8305.1.1 = {
 		liege = e_the_reach
 	}
+	8310.1.1 = {
+		liege = k_the_westmarch
+	}
+	8366.1.1 = {
+		liege = e_the_marches
+	}
 }
 c_summerfield = {
 	8310.1.1 = {
@@ -3548,14 +3560,6 @@ c_longtable = {
 	}
 }
 c_cobblestone = {
-	8310.1.1 = {
-		liege = k_the_westmarch
-	}
-	8366.1.1 = {
-		liege = e_the_marches
-	}
-}
-c_stalkvale = {
 	8310.1.1 = {
 		liege = k_the_westmarch
 	}
@@ -4484,14 +4488,6 @@ d_blackwood_vale = {
 	}
 }
 d_southstone = {
-	8303.12.4 = {
-		liege = h_the_iron_throne
-	}
-	8304.12.15 = {
-		liege = e_the_riverlands
-	}
-}
-d_atranta = {
 	8303.12.4 = {
 		liege = h_the_iron_throne
 	}

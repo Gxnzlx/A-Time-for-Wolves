@@ -2197,6 +2197,10 @@ agot_events_bastard.0917 = { # Someone who knows is in the same location as chil
 				secret_type = secret_agot_disputed_heritage
 				secret_target = {
 					real_paternal_held_iron_throne_claim = yes
+					NOT = {
+						game_start_date = 8303.12.31
+						this = character:Stark_7
+					}
 					is_adult = yes
 					location = root.location
 					NOT = { employer = root } # Employers have a decision
@@ -2208,6 +2212,10 @@ agot_events_bastard.0917 = { # Someone who knows is in the same location as chil
 				secret_type = secret_disputed_heritage
 				secret_target = {
 					real_paternal_held_iron_throne_claim = yes
+					NOT = {
+						game_start_date = 8303.12.31
+						this = character:Stark_7
+					}
 					is_adult = yes
 					location = root.location
 					NOT = { employer = root } # Employers have a decision
@@ -2219,6 +2227,10 @@ agot_events_bastard.0917 = { # Someone who knows is in the same location as chil
 				secret_type = secret_unmarried_illegitimate_child
 				secret_target = {
 					real_paternal_held_iron_throne_claim = yes
+					NOT = {
+						game_start_date = 8303.12.31
+						this = character:Stark_7
+					}
 					is_adult = yes
 					location = root.location
 					NOT = { employer = root } # Employers have a decision
@@ -2239,6 +2251,10 @@ agot_events_bastard.0917 = { # Someone who knows is in the same location as chil
 				secret_type = secret_agot_disputed_heritage
 				secret_target = {
 					real_paternal_held_iron_throne_claim = yes
+					NOT = {
+						game_start_date = 8303.12.31
+						this = character:Stark_7
+					}
 					is_adult = yes
 					location = root.location
 					NOT = { employer = root } # Employers have a decision
@@ -2252,6 +2268,10 @@ agot_events_bastard.0917 = { # Someone who knows is in the same location as chil
 				secret_type = secret_disputed_heritage
 				secret_target = {
 					real_paternal_held_iron_throne_claim = yes
+					NOT = {
+						game_start_date = 8303.12.31
+						this = character:Stark_7
+					}
 					is_adult = yes
 					location = root.location
 					NOT = { employer = root } # Employers have a decision
@@ -2265,6 +2285,10 @@ agot_events_bastard.0917 = { # Someone who knows is in the same location as chil
 				secret_type = secret_unmarried_illegitimate_child
 				secret_target = {
 					real_paternal_held_iron_throne_claim = yes
+					NOT = {
+						game_start_date = 8303.12.31
+						this = character:Stark_7
+					}
 					is_adult = yes
 					location = root.location
 					NOT = { employer = root } # Employers have a decision
@@ -2374,7 +2398,24 @@ agot_events_bastard.0918 = { # Child responds to someone knowing in same locatio
 		name = agot_events_bastard.0918.a
 		flavor = agot_events_bastard.reveal_warning
 		ai_chance = {
-			base = 0
+			base = 50
+			ai_value_modifier = {
+				ai_boldness = 0.25
+				ai_honor = 0.25
+			}
+			modifier = {
+				add = 50
+				has_trait = honest
+			}
+			modifier = {
+				add = 50
+				has_trait = brave
+			}
+			modifier = {
+				factor = 0
+				game_start_date = 8303.12.31
+				this = character:Stark_7
+			}
 		}
 		save_scope_as = revealer
 		trigger_event = {
@@ -2387,7 +2428,15 @@ agot_events_bastard.0918 = { # Child responds to someone knowing in same locatio
 		name = agot_events_bastard.0918.b
 		flavor = agot_events_bastard.0918.b.flavor
 		ai_chance = {
-			base = 100
+			base = 50
+			ai_value_modifier = {
+				ai_rationality = 0.25
+				ai_boldness = -0.25
+			}
+			modifier = {
+				add = 50
+				has_trait = craven
+			}
 		}
 	}
 }

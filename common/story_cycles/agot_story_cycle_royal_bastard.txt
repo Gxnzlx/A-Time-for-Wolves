@@ -3,6 +3,7 @@
 		# ATFW: Jon's HBO parentage chain replaces the Vanilla royal-bastard story.
 		if = {
 			limit = {
+				game_start_date = 8303.12.31
 				story_owner = {
 					this = character:Stark_7
 				}

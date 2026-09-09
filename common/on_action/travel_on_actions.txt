@@ -1127,19 +1127,8 @@ on_travel_plan_arrival = {
 	}
 	effect = {
 		#AGOT Added
-		# Share bastard secret event if at same location (if valid).
-		# ATFW: Jon Snow's parentage is handled only by the scripted Season 8 chain.
-		if = {
-			limit = {
-				NOT = {
-					any_known_secret = {
-						secret_type = secret_agot_disputed_heritage
-						secret_target = character:Stark_7
-					}
-				}
-			}
-			trigger_event = agot_events_bastard.0917
-		}
+		# Share bastard secret event if at same location (if valid)
+		trigger_event = agot_events_bastard.0917
 		# Achievements.
 		if = {
 			limit = { is_ai = no }

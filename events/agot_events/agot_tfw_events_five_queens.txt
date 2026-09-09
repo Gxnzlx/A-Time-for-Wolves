@@ -17,10 +17,6 @@ agot_tfw_five_queens.0001 = {
 
 		character:Targaryen_9 = {
 			add_character_flag = targ_host_invasion
-			trigger_event = {
-				id = agot_tfw_five_queens.0004
-				days = 365
-			}
 		}
 
 		title:h_the_iron_throne.holder = {
@@ -45,7 +41,6 @@ agot_tfw_five_queens.0001 = {
 				add_defender = character:Buckwell_1
 				add_defender = character:Blackwater_1
 				add_defender = character:Hayford_2
-				add_defender = character:Charlton_1
 				add_defender = character:Crakehall_3
 				add_defender = character:Banefort_1
 				add_defender = character:Brax_4
@@ -94,7 +89,6 @@ agot_tfw_five_queens.0003 = {
 				add_attacker = character:Charlton_1
 				add_attacker = character:Vance_Wayfarers_Rest_3
 				add_attacker = character:Ryger_1
-				add_attacker = character:Rykker_2
 				add_attacker = character:Staunton_2
 				add_attacker = character:Mooton_2
 				add_attacker = character:Rykker_2

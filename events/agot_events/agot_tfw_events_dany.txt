@@ -1,5 +1,11 @@
 ﻿namespace = agot_tfw_dany
 agot_tfw_dany.0001 = {
+	trigger = {
+		NOT = { has_global_variable = dany_res }
+		NOT = { has_character_flag = res_dany_cooldown }
+		character:Targaryen_9 = { is_alive = no }
+		cp:councillor_court_chaplain = { has_trait = red_priest is_available_adult = yes }
+	}
 	type = character_event
 	title = agot_tfw_dany.0001.t
 	desc = agot_tfw_dany.0001.desc
@@ -279,7 +285,6 @@ agot_tfw_dany.0001 = {
 	option = {
 		name = tfw_look_into_flames.0001.b
 		remove_character_flag = res_dany_cooldown
-		add_piety_no_experience = 100 #Refund piety cost
 
 		ai_chance = { #AI shouldn't opt out
 			base = 0
@@ -398,6 +403,10 @@ agot_tfw_dany.0001 = {
 }
 
 agot_tfw_dany.0002 = {
+	trigger = {
+		NOT = { has_global_variable = dany_res }
+		character:Targaryen_9 = { is_alive = no }
+	}
 	type = character_event
 	window = fullscreen_event
 	title = agot_tfw_dany.0002.t
@@ -498,7 +507,7 @@ agot_tfw_dany.0002 = {
 						age = 50
 						culture = culture:high_valyrian
 						faith = faith:fots_seven
-						location = scope:faegon.location
+						location = scope:dany.location
 
 						dynasty = none
 
@@ -514,7 +523,7 @@ agot_tfw_dany.0002 = {
 						age = 50
 						culture = culture:high_valyrian
 						faith = faith:fots_seven
-						location = scope:faegon.location
+						location = scope:dany.location
 
 						dynasty = generate
 
@@ -575,7 +584,7 @@ agot_tfw_dany.0002 = {
 		scope:dany = {
 			create_landless_adventurer_title_effect = {
 				REASON = flag:conquest
-				FLAVOR_CHAR = scope:attacker
+				FLAVOR_CHAR = scope:dany
 			}
 		}
 

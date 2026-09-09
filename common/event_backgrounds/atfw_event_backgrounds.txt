@@ -23,3 +23,11 @@ atfw_cersei_kingslanding = {
 		ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
 	}
 }
+
+atfw_daenerys_win = {
+ background = {
+  reference = "gfx/illustrations/daenerys_win.dds"
+  environment = "environment_throneroom_iron_throne"
+  ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+ }
+}

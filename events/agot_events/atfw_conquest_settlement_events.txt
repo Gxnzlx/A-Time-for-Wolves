@@ -1,0 +1,55 @@
+﻿namespace = atfw_conquest
+atfw_conquest.0001 = {
+ type = character_event
+ hidden = yes
+ trigger = {
+  exists = scope:atfw_conquest_winner
+  exists = scope:atfw_conquest_loser
+  this = scope:atfw_conquest_winner
+  NOT = { has_character_flag = atfw_conquest_domains_settled }
+ }
+ immediate = {
+  if = { limit = { this = character:Lannister_6 } trigger_event = atfw_conquest.0003 }
+  else = { trigger_event = atfw_conquest.0002 }
+ }
+}
+
+atfw_conquest.0002 = {
+ type = character_event
+ title = atfw_conquest.0002.t
+ desc = atfw_conquest.0002.desc
+ theme = war
+ override_background = { reference = atfw_daenerys_win }
+ trigger = { NOT = { has_character_flag = atfw_conquest_domains_settled } }
+ immediate = {
+  # AI progression does not depend on clicking a window. The shared guard
+  # prevents the subsequent AI option from executing the consequences twice.
+  if = { limit = { is_ai = yes } atfw_conquest_resolve_victory_option_effect = yes }
+ }
+ option = {
+  name = atfw_conquest.0002.a
+  atfw_conquest_resolve_victory_option_effect = yes
+  ai_chance = { base = 100 }
+ }
+}
+
+atfw_conquest.0003 = {
+ type = character_event
+ title = atfw_conquest.0003.t
+ desc = atfw_conquest.0003.desc
+ theme = war
+ override_background = { reference = agot_iron_throne }
+ trigger = { NOT = { has_character_flag = atfw_conquest_domains_settled } }
+ left_portrait = { character = root animation = personality_bold }
+ right_portrait = { character = scope:atfw_conquest_loser animation = fear }
+ immediate = {
+  # AI progression does not depend on clicking a window. The shared guard
+  # prevents the subsequent AI option from executing the consequences twice.
+  if = { limit = { is_ai = yes } atfw_conquest_resolve_victory_option_effect = yes }
+ }
+ option = {
+  name = atfw_conquest.0003.a
+  atfw_conquest_resolve_victory_option_effect = yes
+  ai_chance = { base = 100 }
+ }
+}

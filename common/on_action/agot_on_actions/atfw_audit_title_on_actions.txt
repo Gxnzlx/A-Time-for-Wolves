@@ -1,4 +1,4 @@
-# root = new holder; scope:title = transferred title (AGOT title_on_actions.txt).
+﻿# root = new holder; scope:title = transferred title (AGOT title_on_actions.txt).
 on_title_gain = {
  on_actions = { atfw_audit_daenerys_gains_throne }
 }
@@ -7,6 +7,7 @@ atfw_audit_daenerys_gains_throne = {
   this = character:Targaryen_9
   scope:title = title:h_the_iron_throne
   has_character_flag = targ_host_invasion
+  NOT = { has_character_flag = atfw_conquest_victory_pending }
  }
  effect = {
   trigger_event = { id = agot_tfw_five_queens.0004 days = 1 }

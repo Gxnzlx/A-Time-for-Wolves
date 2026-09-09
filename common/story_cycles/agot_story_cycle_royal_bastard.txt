@@ -1,195 +1,183 @@
 ﻿agot_royal_bastard_story = {
 	on_setup = {
-		# ATFW: Jon's HBO parentage chain replaces the Vanilla royal-bastard story.
+# Set up variables via passthrough and then remove them
+		# First, the revealer
+		set_variable = {
+			name = revealer
+			value = story_owner.var:revealer_passthrough
+		}
+		story_owner = {
+			remove_variable = revealer_passthrough
+		}
+		# Then the bastard
+		set_variable = {
+			name = bastard
+			value = story_owner.var:bastard_passthrough
+		}
+		story_owner = {
+			remove_variable = bastard_passthrough
+		}
+		# Then the mother
 		if = {
 			limit = {
-				game_start_date = 8303.12.31
-				story_owner = {
-					this = character:Stark_7
-				}
+				exists = story_owner.var:real_mother_passthrough
 			}
-			end_story = yes
+			set_variable = {
+				name = real_mother
+				value = story_owner.var:real_mother_passthrough
+			}
+			story_owner = {
+				remove_variable = real_mother_passthrough
+			}
 		}
-		else = {
-			# Set up variables via passthrough and then remove them
-			# First, the revealer
+		# Then the father
+		if = {
+			limit = {
+				exists = story_owner.var:real_father_passthrough
+			}
 			set_variable = {
-				name = revealer
-				value = story_owner.var:revealer_passthrough
+				name = real_father
+				value = story_owner.var:real_father_passthrough
 			}
 			story_owner = {
-				remove_variable = revealer_passthrough
+				remove_variable = real_father_passthrough
 			}
-			# Then the bastard
+		}
+		# Then the employer if they exist
+		if = {
+			limit = {
+				exists = story_owner.var:bastard_employer_passthrough
+			}
 			set_variable = {
-				name = bastard
-				value = story_owner.var:bastard_passthrough
+				name = employer
+				value = story_owner.var:bastard_employer_passthrough
 			}
 			story_owner = {
-				remove_variable = bastard_passthrough
+				remove_variable = bastard_employer_passthrough
 			}
-			# Then the mother
+		}
+		# Then the IT holder if they exist
+		title:h_the_iron_throne = {
+			# Set the IT holder
 			if = {
 				limit = {
-					exists = story_owner.var:real_mother_passthrough
+					exists = holder
 				}
-				set_variable = {
-					name = real_mother
-					value = story_owner.var:real_mother_passthrough
-				}
-				story_owner = {
-					remove_variable = real_mother_passthrough
+				save_scope_as = ruler_scope
+				scope:story = {
+					set_variable = {
+						name = it_ruler
+						value = title:h_the_iron_throne.holder
+					}
+					set_variable = {
+						name = original_it_ruler # To handle title change conflicts
+						value = title:h_the_iron_throne.holder
+					}
 				}
 			}
-			# Then the father
-			if = {
+			# Get the realm for notifications
+			every_de_jure_county_holder = {
 				limit = {
-					exists = story_owner.var:real_father_passthrough
+					NOT = {
+						primary_title = title:h_the_iron_throne # Unique event for king
+						this = scope:story.var:revealer # Revealer already knows
+						scope:story.var:revealer.employer ?= this # Unique event for employer
+					}
 				}
-				set_variable = {
-					name = real_father
-					value = story_owner.var:real_father_passthrough
+				# Send the notifications
+				trigger_event = agot_events_bastard.0951
+			}
+		}
+		if = {
+			limit = { # Am I skipping the reveal stage
+				NOT = { exists = story_owner.var:rb_pressing_claim_directly }
+			}
+			# Send the event to the bastard if they do not know already
+			story_owner = {
+				# Give flags
+				add_character_flag = royal_bastard
+				# Send the notification event
+				if = { # If I am the revealer
+					limit = {
+						this = scope:story.var:revealer
+					}
+					# Do nothing
 				}
-				story_owner = {
-					remove_variable = real_father_passthrough
+				else_if = { # Send the event where they know already
+					limit = {
+						knows_self_royal_bastard_secret = yes
+					}
+					trigger_event = agot_events_bastard.0956
+				}
+				else = { # Or the event where they do not know
+					trigger_event = agot_events_bastard.0957
 				}
 			}
-			# Then the employer if they exist
-			if = {
-				limit = {
-					exists = story_owner.var:bastard_employer_passthrough
-				}
-				set_variable = {
-					name = employer
-					value = story_owner.var:bastard_employer_passthrough
-				}
-				story_owner = {
-					remove_variable = bastard_employer_passthrough
-				}
-			}
-			# Then the IT holder if they exist
-			title:h_the_iron_throne = {
-				# Set the IT holder
+			# Then send event to the revealer if they're not the ruler since that's handled in their own event
+			var:revealer = {
 				if = {
 					limit = {
-						exists = holder
+						NOT = { has_title = title:h_the_iron_throne }
 					}
-					save_scope_as = ruler_scope
-					scope:story = {
-						set_variable = {
-							name = it_ruler
-							value = title:h_the_iron_throne.holder
-						}
-						set_variable = {
-							name = original_it_ruler # To handle title change conflicts
-							value = title:h_the_iron_throne.holder
-						}
-					}
-				}
-				# Get the realm for notifications
-				every_de_jure_county_holder = {
-					limit = {
-						NOT = {
-							primary_title = title:h_the_iron_throne # Unique event for king
-							this = scope:story.var:revealer # Revealer already knows
-							scope:story.var:revealer.employer ?= this # Unique event for employer
-						}
-					}
-					# Send the notifications
-					trigger_event = agot_events_bastard.0951
+					trigger_event = agot_events_bastard.0958
 				}
 			}
-			if = {
-				limit = { # Am I skipping the reveal stage
-					NOT = { exists = story_owner.var:rb_pressing_claim_directly }
-				}
-				# Send the event to the bastard if they do not know already
-				story_owner = {
-					# Give flags
-					add_character_flag = royal_bastard
-					# Send the notification event
-					if = { # If I am the revealer
-						limit = {
-							this = scope:story.var:revealer
-						}
-						# Do nothing
-					}
-					else_if = { # Send the event where they know already
-						limit = {
-							knows_self_royal_bastard_secret = yes
-						}
-						trigger_event = agot_events_bastard.0956
-					}
-					else = { # Or the event where they do not know
-						trigger_event = agot_events_bastard.0957
-					}
-				}
-				# Then send event to the revealer if they're not the ruler since that's handled in their own event
-				var:revealer = {
+			# Set royal_bastard_story_stage to 1
+			set_variable = {
+				name = royal_bastard_story_stage
+				value = 1
+				# Values are:
+				# 1 - The bastard has been revealed and the ruler has been informed
+				# 2 - The ruler has made a ruling but the responder has not been informed yet
+				# 3 - The responder has been informed of the ruling and has made a decision
+				# 4 - The decision has been made and the story is over
+			}
+			# Finally, send the event to the ruler if they exist
+			var:it_ruler = {
+				if = {
+					limit = { NOT = { this = scope:story.var:bastard } } # Only if king is not themselves the bastard
 					if = {
-						limit = {
-							NOT = { has_title = title:h_the_iron_throne }
-						}
-						trigger_event = agot_events_bastard.0958
+						limit = { dynasty = scope:story.var:bastard.dynasty }
+						trigger_event = agot_events_bastard.0963
 					}
-				}
-				# Set royal_bastard_story_stage to 1
-				set_variable = {
-					name = royal_bastard_story_stage
-					value = 1
-					# Values are:
-					# 1 - The bastard has been revealed and the ruler has been informed
-					# 2 - The ruler has made a ruling but the responder has not been informed yet
-					# 3 - The responder has been informed of the ruling and has made a decision
-					# 4 - The decision has been made and the story is over
-				}
-				# Finally, send the event to the ruler if they exist
-				var:it_ruler = {
-					if = {
-						limit = { NOT = { this = scope:story.var:bastard } } # Only if king is not themselves the bastard
-						if = {
-							limit = { dynasty = scope:story.var:bastard.dynasty }
-							trigger_event = agot_events_bastard.0963
-						}
-						else = {
-							trigger_event = agot_events_bastard.0959
-						}
+					else = {
+						trigger_event = agot_events_bastard.0959
 					}
 				}
 			}
-			else = { # I am pressing the claim directly
-				set_variable = {
-					name = response_to_demand
-					value = flag:reject
-				}
-				set_variable = {
-					name = royal_bastard_story_stage
-					value = 3
-				}
-			}
-		
 		}
+		else = { # I am pressing the claim directly
+			set_variable = {
+				name = response_to_demand
+				value = flag:reject
+			}
+			set_variable = {
+				name = royal_bastard_story_stage
+				value = 3
+			}
+		}
+		
 	}
 
 
 	on_end = {
 		if = {
 			limit = {
-				var:revealer = {
+				var:revealer ?= {
 					has_character_flag = told_true_parentage
 				}
 			}
-			var:revealer = {
+			var:revealer ?= {
 				remove_character_flag ?= told_true_parentage
 			}
 		}
 		if = {
 			limit = {
-				var:employer = {
+				var:employer ?= {
 					has_character_flag = told_true_parentage
 				}
 			}
-			var:employer = {
+			var:employer ?= {
 				remove_character_flag ?= told_true_parentage
 			}
 		}

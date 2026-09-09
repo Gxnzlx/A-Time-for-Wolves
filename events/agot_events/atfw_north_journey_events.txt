@@ -13,12 +13,13 @@ atfw_north_journey.0001 = {
   NOT = { has_character_flag = atfw_north_journey_0001_seen }
   
  }
- immediate = {  }
+ immediate = {  
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_north_journey_0001 = yes }
+ }
  right_portrait = { character = character:Stark_7 animation = personality_rational }
  option = {
   name = atfw_north_journey.0001.a
-  add_character_flag = atfw_north_journey_0001_seen
-  character:Stark_7 = { trigger_event = { id = atfw_north_journey.0002 days = 1 } }
+  atfw_resolve_atfw_north_journey_0001 = yes
   ai_chance = { base = 100 }
  }
  
@@ -37,12 +38,13 @@ atfw_north_journey.0002 = {
   NOT = { has_character_flag = atfw_north_journey_0002_seen }
   
  }
- immediate = {  }
+ immediate = {  
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_north_journey_0002 = yes }
+ }
  right_portrait = { character = character:Targaryen_9 animation = personality_rational }
  option = {
   name = atfw_north_journey.0002.a
-  add_character_flag = atfw_north_journey_0002_seen
-  character:Targaryen_9 = { trigger_event = { id = atfw_north_journey.0003 days = 1 } }
+  atfw_resolve_atfw_north_journey_0002 = yes
   ai_chance = { base = 100 }
  }
  
@@ -61,17 +63,20 @@ atfw_north_journey.0003 = {
   NOT = { has_character_flag = atfw_north_journey_0003_seen }
   
  }
- immediate = { add_character_flag = atfw_north_trip_ready }
+ immediate = { add_character_flag = atfw_north_trip_ready 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_north_journey_0003 = yes }
+ }
  right_portrait = { character = character:Stark_7 animation = personality_rational }
  option = {
   name = atfw_north_journey.0003.a
-  add_character_flag = atfw_north_journey_0003_seen
-  atfw_start_north_journey = yes
+  atfw_resolve_atfw_north_journey_0003 = yes
   ai_chance = { base = 100 }
  }
  
 }
 atfw_north_journey.0004 = {
+ orphan = yes
+
  type = character_event
  title = atfw_north_journey.0004.t
  desc = atfw_north_journey.0004.desc
@@ -87,13 +92,13 @@ atfw_north_journey.0004 = {
   
  }
  immediate = { add_character_flag = atfw_north_trip_white_harbor
- remove_character_flag = atfw_north_trip_active }
+ remove_character_flag = atfw_north_trip_active 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_north_journey_0004 = yes }
+ }
  right_portrait = { character = character:Stark_7 animation = personality_rational }
  option = {
   name = atfw_north_journey.0004.a
-  add_character_flag = atfw_north_journey_0004_seen
-  add_character_flag = atfw_north_trip_ready
-  trigger_event = { id = atfw_north_journey.0008 days = 1 }
+  atfw_resolve_atfw_north_journey_0004 = yes
   ai_chance = { base = 100 }
  }
  
@@ -103,6 +108,7 @@ atfw_north_journey.0005 = {
  hidden = yes
  trigger = { this = character:Targaryen_9 location = title:b_winterfell.title_province NOT = { has_character_flag = atfw_north_trip_arrived } }
  immediate = {
+  debug_log = "ATFW: shared journey arrived at Winterfell"
   add_character_flag = atfw_north_trip_arrived
   remove_character_flag = atfw_north_trip_active
   remove_character_flag = atfw_north_trip_ready
@@ -130,16 +136,13 @@ atfw_north_journey.0006 = {
   NOT = { has_character_flag = atfw_north_journey_0006_seen }
   has_character_flag = atfw_north_trip_arrived
  }
- immediate = {  }
+ immediate = {  
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_north_journey_0006 = yes }
+ }
  right_portrait = { character = character:Stark_7 animation = personality_rational }
  option = {
   name = atfw_north_journey.0006.a
-  add_character_flag = atfw_north_journey_0006_seen
-  if = {
- limit = { character:Stark_Dummy_8 = { is_alive = yes } }
- character:Stark_Dummy_8 = { trigger_event = { id = atfw_north_journey.0007 days = 1 } }
-}
-else = { character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0022 days = 2 } } }
+  atfw_resolve_atfw_north_journey_0006 = yes
   ai_chance = { base = 100 }
  }
  
@@ -158,12 +161,13 @@ atfw_north_journey.0007 = {
   NOT = { has_character_flag = atfw_north_journey_0007_seen }
   
  }
- immediate = {  }
+ immediate = {  
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_north_journey_0007 = yes }
+ }
  right_portrait = { character = character:Targaryen_9 animation = personality_rational }
  option = {
   name = atfw_north_journey.0007.a
-  add_character_flag = atfw_north_journey_0007_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0022 days = 2 } }
+  atfw_resolve_atfw_north_journey_0007 = yes
   ai_chance = { base = 100 }
  }
  
@@ -177,6 +181,6 @@ atfw_north_journey.0009 = {
 atfw_north_journey.0008 = {
  type = character_event
  hidden = yes
- trigger = { this = character:Targaryen_9 is_alive = yes }
+ trigger = { this = character:Targaryen_9 is_alive = yes has_character_flag = atfw_north_trip_ready NOT = { has_character_flag = atfw_north_trip_arrived } character:Stark_7 = { is_alive = yes } }
  immediate = { atfw_start_north_journey = yes }
 }

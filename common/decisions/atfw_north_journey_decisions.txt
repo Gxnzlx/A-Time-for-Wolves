@@ -2,11 +2,11 @@
  picture = { reference = "gfx/interface/illustrations/event_scenes/ep2_travel_bridge.dds" }
  desc = atfw_resume_north_journey_desc
  selection_tooltip = atfw_resume_north_journey_tooltip
- decision_group_type = minor
+ decision_group_type = decisions
  ai_check_interval = 1
  is_shown = {
   this = character:Targaryen_9
-  has_character_flag = atfw_north_trip_ready
+  OR = { has_character_flag = atfw_north_trip_ready has_character_flag = atfw_daenerys_accepts_romance_with_jon }
   NOT = { has_character_flag = atfw_north_trip_arrived }
  }
  is_valid = {
@@ -17,4 +17,39 @@
  }
  effect = { atfw_start_north_journey = yes }
  ai_will_do = { base = 100 }
+}
+
+atfw_resume_winterfell_story = {
+ ai_check_interval = 0
+
+ picture = { reference = "gfx/interface/illustrations/event_scenes/ep2_travel_bridge.dds" }
+ desc = atfw_resume_winterfell_story_desc
+ selection_tooltip = atfw_resume_winterfell_story_tooltip
+ decision_group_type = decisions
+ cooldown = { days = 30 }
+ is_shown = {
+  this = character:Targaryen_9
+  is_ai = no
+  has_character_flag = atfw_north_trip_arrived
+  NOT = { has_character_flag = atfw_jon_daenerys_betrothed_after_parentage }
+  character:Stark_7 = {
+   is_alive = yes
+   NOT = { has_character_flag = atfw_daenerys_rejected_post_parentage_marriage }
+   OR = {
+    NOT = { has_character_flag = atfw_jon_marriage_route_resolved }
+    has_character_flag = atfw_jon_proposed_marriage_to_daenerys
+   }
+  }
+ }
+ is_valid = {
+  is_alive = yes
+  is_married = no
+  is_betrothed = no
+  character:Stark_7 = { is_married = no is_betrothed = no }
+  character:dragon_rhaegal = { is_alive = yes }
+  character:Tarly_2 = { is_alive = yes }
+  character:Stark_Dummy_10 = { is_alive = yes }
+ }
+ effect = { atfw_resume_winterfell_story_effect = yes }
+ ai_will_do = { base = 0 }
 }

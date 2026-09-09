@@ -1,6 +1,6 @@
 ﻿### ATFW historical war: Daenerys's Conquest
-# Exact functional clone of CK3AGOT Vanilla's agot_rebellion_war.
-# Only the CB identifier and displayed war name are changed.
+# Dedicated conquest settlement, retaining the existing CB for ongoing saves.
+# AGOT handles Mega War aftermath; ATFW settles the rival domains afterwards.
 
 atfw_daenerys_conquest_war = {
 	group = civil_war
@@ -23,100 +23,20 @@ atfw_daenerys_conquest_war = {
 		on_declared_war = yes
 	}
 
-	on_victory_desc = {
-		first_valid = {
-			#triggered_desc = {
-			#	trigger = { has_variable = mw_is_usurpation_war }
-			#	desc = depose_war_victory_desc_defender
-			#}
-			#triggered_desc = {
-			#	trigger = { NOT = { has_variable = mw_is_usurpation_war } }
-			#	desc = depose_war_victory_desc_defender
-			#}
-			desc = agot_rebellion_war_victory_desc
-		}
-	}
+	on_victory_desc = { desc = atfw_conquest_settlement_desc }
 
 	on_victory = {
-		scope:attacker = { show_pow_release_message_effect = yes }
-		hidden_effect = {
-			scope:attacker = {
-				add_truce_both_ways = {
-					character = scope:defender
-					days = 1825
-					war = root.war
-					result = victory
-				}
-			}
-		}
-		hidden_effect = {
-			scope:defender = {
-				if = {
-					limit = {
-						any_owned_story = {
-							story_type = story_agot_mw_crown
-							NOT = {
-								any_in_list = {
-									variable = mw_rebel_leader_list
-
-									NOT = { this = scope:attacker }
-
-									count >= 1
-								}
-							}
-						}
-					}
-
-					scope:attacker = {
-						imprison = {
-							target = scope:defender
-							type = dungeon
-						}
-					}
-				}
-			}
-		}
-
-		# TODO imprison important characters
-
-		scope:attacker = {
-			trigger_event = agot_mega_wars.0500
-
-			#every_in_list = { #AGOT TODO maybe needs work
-			#	list = target_titles
-			#	scope:attacker = { get_title = prev }
-			#}
-		}
-
-		scope:defender = {
-			# If we win the rebellion, our liege loses any legal right to imprison us/banish us/revoke our titles.
-			consume_all_criminal_reasons_effect = {
-				LIEGE = scope:defender
-				CRIMINAL = scope:attacker
-			}
-			# Remove offending HumSac modifiers.
-			hidden_effect = { fp1_remove_humsac_offended_counties_effect = yes }
-			# Then our liege is deposed (but the imprisonment loss remains true for their heir).
-		}
-
-		every_in_list = {
-			list = defenders
-
-			if = { # Imprison them if they aren't imprisoned.
-				limit = {
-					is_imprisoned = no
-					NOT = { this = scope:attacker }
-				}
-				hard_imprison_character_effect = {
-					TARGET = this
-					IMPRISONER = scope:attacker
-				}
-			}
-		}
-		custom_description_no_bullet = { text = agot_rebuild_realm_effect_loc }
-
-		agot_war_victory_effects = yes
-	}
+        scope:attacker = { save_scope_as = atfw_conquest_winner }
+        scope:defender = { save_scope_as = atfw_conquest_loser }
+        atfw_conquest_snapshot_effect = yes
+        scope:attacker = { show_pow_release_message_effect = yes }
+        # Transfer the war targets now, as a claim war does. The remaining
+        # domain is settled only AFTER AGOT has resolved its story ownership.
+        atfw_conquest_take_war_targets_effect = yes
+        scope:attacker = { trigger_event = { id = atfw_conquest.0001 days = 1 } }
+        custom_description_no_bullet = { text = atfw_conquest_settlement_desc }
+        agot_war_victory_effects = yes
+    }
 
 	on_white_peace_desc = {
 		first_valid = {
@@ -145,18 +65,13 @@ atfw_daenerys_conquest_war = {
 		on_white_peace_faction_revolt_war = yes
 	}
 
-	on_defeat_desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = { scope:defender = { is_local_player = yes } }
-				desc = agot_rebellion_war_defeat_desc_defender
-			}
-			desc = agot_rebellion_war_defeat_desc
-		}
-
-	}
+	on_defeat_desc = { desc = atfw_conquest_settlement_desc }
 
 	on_defeat = {
+        scope:defender = { save_scope_as = atfw_conquest_winner }
+        scope:attacker = { save_scope_as = atfw_conquest_loser }
+        atfw_conquest_snapshot_effect = yes
+
 		scope:attacker = { show_pow_release_message_effect = yes }
 		on_lost_faction_revolt_war = yes
 		scope:defender = {
@@ -175,7 +90,10 @@ atfw_daenerys_conquest_war = {
 				}
 			}
 		}
-	}
+	
+        scope:defender = { trigger_event = { id = atfw_conquest.0001 days = 1 } }
+        custom_description_no_bullet = { text = atfw_conquest_settlement_desc }
+    }
 
 	on_invalidated_desc = msg_invalidate_war_title
 

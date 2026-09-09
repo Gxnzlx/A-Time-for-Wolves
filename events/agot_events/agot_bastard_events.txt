@@ -2653,6 +2653,14 @@ agot_events_bastard.0920 = { # Jon discovers secret by accident
 agot_events_bastard.0950 = { # Handler event for reveal to create the story
 	hidden = yes
 	trigger = {
+        trigger_if = {
+            limit = { game_start_date = 8303.12.31 exists = scope:reveal_scope }
+            NOT = { scope:reveal_scope = character:Stark_7 }
+        }
+        trigger_if = {
+            limit = { game_start_date = 8303.12.31 exists = scope:heritage_secret }
+            scope:heritage_secret = { NOT = { secret_target = character:Stark_7 } }
+        }
 		exists = scope:revealer
 		OR = {
 			exists = scope:heritage_secret

@@ -1,0 +1,12 @@
+﻿l_english:
+ atfw_conquest_settlement_desc:0 "Victory decides the fate of the defeated queen, her domain and her followers."
+
+# Daenerys
+ atfw_conquest.0002.t:0 "I Have Come Home"
+ atfw_conquest.0002.desc:0 "The war is over. Cersei Lannister has been defeated, and the Iron Throne that was taken from my family now belongs to me. I was born on Dragonstone as my father's kingdom crumbled around him. I was carried across the Narrow Sea as an infant, hunted and exiled before I was old enough to understand why. All my life, I was told that Westeros was my home. At last, I have taken it back.\n\nCersei believed that fear would keep her upon the throne. She destroyed her enemies, murdered those who stood against her and dared the realm to challenge her. Now she stands defeated before the daughter of the king whose crown her husband stole.\n\nBut I did not cross the world merely to become another spoke in the wheel. The houses of Westeros have crushed the weak beneath them for generations while they fought over who would rule. Lannister, Baratheon, Stark, Targaryen. I promised that I would not stop the wheel. I would break it.\n\n#bold I am Daenerys Stormborn of House Targaryen, and I have come home.#!"
+ atfw_conquest.0002.a:0 "Fire and Blood"
+
+# Cercei
+ atfw_conquest.0003.t:0 "The Lion Still Roars"
+ atfw_conquest.0003.desc:0 "So much for the Dragon Queen. Daenerys Targaryen crossed the Narrow Sea with her savages, her eunuchs and her tales of dragons, certain that the realm would welcome the Mad King's daughter home. Dorne followed her. The Tyrells followed her. Even Ned Stark's bastard bent the knee to her. They all believed she would take my crown.\n\nThey were wrong.\n\nI have watched every enemy who thought themselves stronger than me fall. Robert is dead. Ned Stark is dead. The High Sparrow is dead. The Tyrells are dead. And now the last Targaryen conqueror has joined them. Jon Snow and those who placed their faith in her will share her fate. I will not leave enemies alive merely so they can return with another army and another claim.\n\nThey called me a monster when I destroyed the Sept. They will call me one again for what comes next. Let them. They may whisper whatever they please, so long as they remember who sits upon the Iron Throne.\n\n#bold Everyone who has tried to destroy me is dead. She will be no different.#!"
+ atfw_conquest.0003.a:0 "Hear Me Roar"

@@ -13,13 +13,14 @@ atfw_daenerys_pov.0001 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0001_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0001_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0001 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0001.a
-  add_character_flag = atfw_daenerys_pov_0001_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0009 days = 1 } }
+  atfw_resolve_atfw_daenerys_pov_0001 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -37,13 +38,14 @@ atfw_daenerys_pov.0002 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0002_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0002_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0002 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0002.a
-  add_character_flag = atfw_daenerys_pov_0002_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0003 days = 2 } }
+  atfw_resolve_atfw_daenerys_pov_0002 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -61,13 +63,14 @@ atfw_daenerys_pov.0003 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0003_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0003_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0003 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0003.a
-  add_character_flag = atfw_daenerys_pov_0003_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0011 days = 3 } }
+  atfw_resolve_atfw_daenerys_pov_0003 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -85,13 +88,14 @@ atfw_daenerys_pov.0004 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0004_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0004_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0004 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0004.a
-  add_character_flag = atfw_daenerys_pov_0004_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0012 days = 3 } }
+  atfw_resolve_atfw_daenerys_pov_0004 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -109,13 +113,14 @@ atfw_daenerys_pov.0005 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0005_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0005_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0005 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0005.a
-  add_character_flag = atfw_daenerys_pov_0005_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0013 days = 5 } }
+  atfw_resolve_atfw_daenerys_pov_0005 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -133,13 +138,14 @@ atfw_daenerys_pov.0006 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0006_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0006_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0006 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0006.a
-  add_character_flag = atfw_daenerys_pov_0006_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0014 days = 2 } }
+  atfw_resolve_atfw_daenerys_pov_0006 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -157,13 +163,14 @@ atfw_daenerys_pov.0007 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0007_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0007_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0007 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0007.a
-  add_character_flag = atfw_daenerys_pov_0007_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0015 days = 2 } }
+  atfw_resolve_atfw_daenerys_pov_0007 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -181,13 +188,14 @@ atfw_daenerys_pov.0008 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0008_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0008_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0008 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0008.a
-  add_character_flag = atfw_daenerys_pov_0008_seen
-  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0016 days = 4 } }
+  atfw_resolve_atfw_daenerys_pov_0008 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -205,13 +213,14 @@ atfw_daenerys_pov.0009 = {
   NOT = { has_character_flag = atfw_daenerys_pov_0009_seen }
   character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0009_queued }
  }
- immediate = { character:Stark_7 = { save_scope_as = jon } }
+ immediate = { character:Stark_7 = { save_scope_as = jon } 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0009 = yes }
+ }
  left_portrait = { character = root animation = personality_rational }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0009.a
-  add_character_flag = atfw_daenerys_pov_0009_seen
-  trigger_event = { id = atfw_north_journey.0001 days = 3 }
+  atfw_resolve_atfw_daenerys_pov_0009 = yes
   ai_chance = { base = 100 }
  }
 }
@@ -231,35 +240,13 @@ atfw_daenerys_pov.0010 = {
  immediate = {
   save_scope_as = daenerys
   character:Stark_7 = { save_scope_as = jon }
+ 
+  if = { limit = { is_ai = yes  } atfw_resolve_atfw_daenerys_pov_0010 = yes }
  }
  right_portrait = { character = scope:jon animation = personality_honorable }
  option = {
   name = atfw_daenerys_pov.0010.a
-  add_character_flag = atfw_daenerys_pov_0010_seen
-  character:Stark_7 = {
-		add_character_flag = atfw_daenerys_knows_jons_true_parentage
-
-		# Jon is now publicly treated as a member of Daenerys's Targaryen house.
-		set_house = scope:daenerys.house
-
-		if = {
-			limit = { has_trait = bastard }
-			remove_trait = bastard
-		}
-
-		# The proposal route is only available after the established romance,
-		# Jon's bond with Rhaegal, and the shared flight with Daenerys.
-		if = {
-			limit = {
-				has_character_flag = atfw_jon_became_rhaegal_rider
-				has_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
-				scope:daenerys = { has_character_flag = atfw_daenerys_romance_deepened_after_flight }
-			}
-			add_character_flag = atfw_jon_marriage_route_unlocked
-		}
-		trigger_event = { id = atfw_jon_daenerys.0018 days = 2 }
-
-  }
+  atfw_resolve_atfw_daenerys_pov_0010 = yes
   ai_chance = { base = 100 }
  }
 }

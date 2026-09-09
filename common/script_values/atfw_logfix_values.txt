@@ -1,0 +1,4 @@
+﻿atfw_safe_defender_warscore = {
+ value = 0
+ if = { limit = { exists = scope:war } add = scope:war.defender_war_score }
+}

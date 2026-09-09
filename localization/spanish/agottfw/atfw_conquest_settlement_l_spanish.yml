@@ -1,0 +1,12 @@
+﻿l_spanish:
+ atfw_conquest_settlement_desc:0 "La victoria decide el destino de la reina derrotada, sus dominios y sus seguidores."
+
+# Daenerys
+ atfw_conquest.0002.t:0 "He vuelto a casa"
+ atfw_conquest.0002.desc:0 "La guerra ha terminado. Cersei Lannister ha sido derrotada, y el Trono de Hierro que le fue arrebatado a mi familia ahora me pertenece. Nací en Rocadragón mientras el reino de mi padre se derrumbaba a su alrededor. Siendo apenas una recién nacida, fui llevada al otro lado del mar Angosto, perseguida y condenada al exilio antes de tener edad suficiente para comprender por qué. Toda mi vida me dijeron que Poniente era mi hogar. Por fin lo he recuperado.\n\nCersei creyó que el miedo bastaría para mantenerla en el trono. Destruyó a sus enemigos, asesinó a quienes se interpusieron en su camino y desafió al reino a enfrentarse a ella. Ahora se encuentra derrotada ante la hija del rey cuya corona robó su esposo.\n\nPero no crucé el mundo para convertirme en otro radio de la rueda. Durante generaciones, las casas de Poniente han aplastado a los débiles mientras luchaban por decidir quién gobernaría. Lannister, Baratheon, Stark, Targaryen. Prometí que no detendría la rueda. La rompería.\n\n#bold Soy Daenerys de la Tormenta de la Casa Targaryen, y he vuelto a casa.#!"
+ atfw_conquest.0002.a:0 "Fuego y Sangre"
+
+# Cercei
+ atfw_conquest.0003.t:0 "El león aún ruge"
+ atfw_conquest.0003.desc:0 "Así que esta era la Reina Dragón. Daenerys Targaryen cruzó el mar Angosto con sus salvajes, sus eunucos y sus historias de dragones, convencida de que el reino recibiría con los brazos abiertos a la hija del Rey Loco. Dorne la siguió. Los Tyrell la siguieron. Hasta el bastardo de Ned Stark dobló la rodilla ante ella. Todos creyeron que me arrebataría la corona.\n\nSe equivocaron.\n\nHe visto caer a todos los enemigos que se creyeron más fuertes que yo. Robert está muerto. Ned Stark está muerto. El Gorrión Supremo está muerto. Los Tyrell están muertos. Y ahora la última conquistadora Targaryen se ha unido a ellos. Jon Nieve y quienes depositaron su fe en ella compartirán su destino. No dejaré enemigos con vida para que regresen con otro ejército y otra pretensión.\n\nMe llamaron monstruo cuando destruí el Septo. Volverán a llamármelo por lo que vendrá ahora. Que lo hagan. Pueden susurrar cuanto quieran, siempre que recuerden quién ocupa el Trono de Hierro.\n\n#bold Todos los que intentaron destruirme están muertos. Ella no será diferente.#!"
+ atfw_conquest.0003.a:0 "Oye mi Rugido"

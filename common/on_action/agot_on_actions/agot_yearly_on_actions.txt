@@ -856,7 +856,8 @@ agot_legitimate_house_maintenance = {
 		every_in_global_list = {
 			variable = legitimate_house_titles
 			limit = {
-				exists = holder
+				exists = holder.house
+ exists = var:legitimate_house
 			}
 			save_scope_as = legitimate_house_title_for_maintenance
 			# First maintenance is simple - if the legitimate house is not the holder's house,
@@ -919,7 +920,7 @@ agot_legitimate_house_maintenance = {
 				# So we also need to change the legitimate house if their old house was legit.
 				if = {
 					limit = {
-						var:legitimate_house = scope:old_current_house
+						var:legitimate_house ?= scope:old_current_house
 					}
 					agot_set_legitimate_house = {
 						TITLE = scope:legitimate_house_title_for_maintenance

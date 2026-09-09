@@ -1,0 +1,1084 @@
+﻿# Shared, idempotent resolution for human and AI story participants.
+atfw_resolve_atfw_daenerys_pov_0001 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0001_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0001_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0001"
+  add_character_flag = atfw_daenerys_pov_0001_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0009
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0002 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0002_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0002_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0002"
+  add_character_flag = atfw_daenerys_pov_0002_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0003
+    days = 2
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0003 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0003_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0003_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0003"
+  add_character_flag = atfw_daenerys_pov_0003_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0011
+    days = 3
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0004 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0004_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0004_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0004"
+  add_character_flag = atfw_daenerys_pov_0004_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0012
+    days = 3
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0005 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0005_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0005_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0005"
+  add_character_flag = atfw_daenerys_pov_0005_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0013
+    days = 5
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0006 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0006_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0006_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0006"
+  add_character_flag = atfw_daenerys_pov_0006_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0014
+    days = 2
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0007 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0007_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0007_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0007"
+  add_character_flag = atfw_daenerys_pov_0007_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0015
+    days = 2
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0008 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0008_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0008_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0008"
+  add_character_flag = atfw_daenerys_pov_0008_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0016
+    days = 4
+   }
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0009 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0009_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0009_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0009"
+  add_character_flag = atfw_daenerys_pov_0009_seen
+  trigger_event = {
+   id = atfw_north_journey.0001
+   days = 3
+  }
+ }
+}
+atfw_resolve_atfw_daenerys_pov_0010 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_daenerys_pov_0010_done } }
+  add_character_flag = atfw_resolve_atfw_daenerys_pov_0010_done
+  debug_log = "ATFW: resolved atfw_daenerys_pov.0010"
+  add_character_flag = atfw_daenerys_pov_0010_seen
+  character:Stark_7 = {
+   add_character_flag = atfw_daenerys_knows_jons_true_parentage
+   set_house = scope:daenerys.house
+   if = {
+    limit = {
+     has_trait = bastard
+    }
+    remove_trait = bastard
+   }
+   if = {
+    limit = {
+     has_character_flag = atfw_jon_became_rhaegal_rider
+     has_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
+     scope:daenerys = {
+      has_character_flag = atfw_daenerys_romance_deepened_after_flight
+     }
+    }
+    add_character_flag = atfw_jon_marriage_route_unlocked
+   }
+   trigger_event = {
+    id = atfw_jon_daenerys.0018
+    days = 2
+   }
+  }
+ }
+}
+atfw_resolve_atfw_north_journey_0001 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_north_journey_0001_done } }
+  add_character_flag = atfw_resolve_atfw_north_journey_0001_done
+  debug_log = "ATFW: resolved atfw_north_journey.0001"
+  add_character_flag = atfw_north_journey_0001_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_north_journey.0002
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_north_journey_0002 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_north_journey_0002_done } }
+  add_character_flag = atfw_resolve_atfw_north_journey_0002_done
+  debug_log = "ATFW: resolved atfw_north_journey.0002"
+  add_character_flag = atfw_north_journey_0002_seen
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_north_journey.0003
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_north_journey_0003 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_north_journey_0003_done } }
+  add_character_flag = atfw_resolve_atfw_north_journey_0003_done
+  debug_log = "ATFW: resolved atfw_north_journey.0003"
+  add_character_flag = atfw_north_journey_0003_seen
+  atfw_start_north_journey = yes
+ }
+}
+atfw_resolve_atfw_north_journey_0004 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_north_journey_0004_done } }
+  add_character_flag = atfw_resolve_atfw_north_journey_0004_done
+  debug_log = "ATFW: resolved atfw_north_journey.0004"
+  add_character_flag = atfw_north_journey_0004_seen
+  add_character_flag = atfw_north_trip_ready
+  trigger_event = {
+   id = atfw_north_journey.0008
+   days = 1
+  }
+ }
+}
+atfw_resolve_atfw_north_journey_0006 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_north_journey_0006_done } }
+  add_character_flag = atfw_resolve_atfw_north_journey_0006_done
+  debug_log = "ATFW: resolved atfw_north_journey.0006"
+  add_character_flag = atfw_north_journey_0006_seen
+  if = {
+   limit = {
+    character:Stark_Dummy_8 = {
+     is_alive = yes
+    }
+   }
+   character:Stark_Dummy_8 = {
+    trigger_event = {
+     id = atfw_north_journey.0007
+     days = 1
+    }
+   }
+  }
+  else = {
+   character:Stark_7 = {
+    trigger_event = {
+     id = atfw_jon_daenerys.0022
+     days = 2
+    }
+   }
+  }
+ }
+}
+atfw_resolve_atfw_north_journey_0007 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_north_journey_0007_done } }
+  add_character_flag = atfw_resolve_atfw_north_journey_0007_done
+  debug_log = "ATFW: resolved atfw_north_journey.0007"
+  add_character_flag = atfw_north_journey_0007_seen
+  character:Stark_7 = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0022
+    days = 2
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0007 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0007_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0007_done
+  debug_log = "ATFW: resolved atfw_jon_north.0007"
+  if = {
+   limit = {
+    is_ai = no
+   }
+   add_character_flag = atfw_northern_banners_feast_unlocked
+   open_view_data = {
+    view = activity_list_detail_host_window
+    data = activity_type:activity_atfw_northern_banners_feast
+    player = root
+   }
+  }
+  else = {
+   add_character_flag = atfw_jon_proclaimed_king_in_the_north
+   add_character_flag = atfw_jon_northern_feast_completed
+   add_prestige = major_prestige_gain
+   trigger_event = {
+    id = atfw_jon_north.0009
+    days = 10
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0009 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0009_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0009_done
+  debug_log = "ATFW: resolved atfw_jon_north.0009"
+  add_character_flag = atfw_jon_war_council_complete
+  trigger_event = {
+   id = atfw_jon_north.0010
+   days = 3
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0010 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0010_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0010_done
+  debug_log = "ATFW: resolved atfw_jon_north.0010"
+  scope:tormund = {
+   add_character_flag = atfw_tormund_sent_to_eastwatch
+  }
+  trigger_event = {
+   id = atfw_jon_north.0011
+   days = 4
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0011 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0011_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0011_done
+  debug_log = "ATFW: resolved atfw_jon_north.0011"
+  add_character_flag = atfw_jon_received_tyrion_invitation
+  trigger_event = {
+   id = atfw_jon_north.0012
+   days = 4
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0012 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0012_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0012_done
+  debug_log = "ATFW: resolved atfw_jon_north.0012"
+  add_character_flag = atfw_jon_knows_dragonstone_dragonglass
+  trigger_event = {
+   id = atfw_jon_north.0004
+   days = 3
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0004 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0004_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0004_done
+  debug_log = "ATFW: resolved atfw_jon_north.0004"
+  add_character_flag = atfw_jon_decided_dragonstone
+  trigger_event = {
+   id = atfw_jon_north.0013
+   days = 1
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0006 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0006_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0006_done
+  debug_log = "ATFW: resolved atfw_jon_north.0006"
+  if = {
+   limit = {
+    is_ai = no
+   }
+   add_character_flag = atfw_journey_to_dragonstone_unlocked
+   open_view_data = {
+    view = activity_list_detail_host_window
+    data = activity_type:activity_atfw_journey_to_dragonstone
+    player = root
+   }
+  }
+  else = {
+   add_character_flag = atfw_journey_to_dragonstone_travelling
+   if = {
+    limit = {
+     NOT = {
+      has_character_flag = atfw_winterfell_parallel_chain_started
+     }
+    }
+    add_character_flag = atfw_winterfell_parallel_chain_started
+    character:Stark_Dummy_8 = {
+     if = {
+      limit = {
+       is_alive = yes
+      }
+      trigger_event = {
+       id = atfw_sansa_north.0001
+       days = 5
+      }
+     }
+    }
+   }
+   trigger_event = {
+    id = atfw_jon_daenerys.0007
+    days = 20
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0013 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0013_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0013_done
+  debug_log = "ATFW: resolved atfw_jon_north.0013"
+  scope:sansa = {
+   add_character_flag = atfw_sansa_rules_winterfell_during_jon_absence
+   add_character_flag = atfw_sansa_formally_named_regent
+  }
+  if = {
+   limit = {
+    has_active_diarchy = no
+   }
+   try_start_diarchy = regency
+   if = {
+    limit = {
+     has_active_diarchy = yes
+    }
+    set_diarch = scope:sansa
+   }
+  }
+  trigger_event = {
+   id = atfw_jon_north.0006
+   days = 1
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0005 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0005_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0005_done
+  debug_log = "ATFW: resolved atfw_jon_north.0005"
+  set_father = character:Targaryen_3
+  set_mother = character:Stark_5
+  add_character_flag = atfw_jon_knows_true_parentage
+  trigger_event = {
+   id = atfw_jon_daenerys.0020
+   days = 3
+  }
+ }
+}
+atfw_resolve_atfw_jon_north_0014 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_north_0014_done } }
+  add_character_flag = atfw_resolve_atfw_jon_north_0014_done
+  debug_log = "ATFW: resolved atfw_jon_north.0014"
+  add_character_flag = atfw_jon_returned_to_winterfell_s8
+  if = {
+   limit = {
+    has_active_diarchy = yes
+   }
+   end_diarchy = yes
+  }
+  scope:sansa = {
+   remove_character_flag = atfw_sansa_rules_winterfell_during_jon_absence
+   add_character_flag = atfw_sansa_regency_ended_on_jons_return
+  }
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_north_journey.0006
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_sansa_north_0001 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_sansa_north_0001_done } }
+  add_character_flag = atfw_resolve_atfw_sansa_north_0001_done
+  debug_log = "ATFW: resolved atfw_sansa_north.0001"
+  trigger_event = {
+   id = atfw_sansa_north.0003
+   days = 2
+  }
+ }
+}
+atfw_resolve_atfw_sansa_north_0003 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_sansa_north_0003_done } }
+  add_character_flag = atfw_resolve_atfw_sansa_north_0003_done
+  debug_log = "ATFW: resolved atfw_sansa_north.0003"
+  trigger_event = {
+   id = atfw_sansa_north.0006
+   days = 3
+  }
+ }
+}
+atfw_resolve_atfw_sansa_north_0002 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_sansa_north_0002_done } }
+  add_character_flag = atfw_resolve_atfw_sansa_north_0002_done
+  debug_log = "ATFW: resolved atfw_sansa_north.0002"
+  add_character_flag = atfw_arya_returned_while_jon_away
+  trigger_event = {
+   id = atfw_sansa_north.0007
+   days = 2
+  }
+ }
+}
+atfw_resolve_atfw_sansa_north_0006 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_sansa_north_0006_done } }
+  add_character_flag = atfw_resolve_atfw_sansa_north_0006_done
+  debug_log = "ATFW: resolved atfw_sansa_north.0006"
+  add_character_flag = atfw_sansa_held_north_in_jons_absence
+  add_prestige = minor_prestige_gain
+  trigger_event = {
+   id = atfw_sansa_north.0002
+   days = 5
+  }
+ }
+}
+atfw_resolve_atfw_sansa_north_0007 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_sansa_north_0007_done } }
+  add_character_flag = atfw_resolve_atfw_sansa_north_0007_done
+  debug_log = "ATFW: resolved atfw_sansa_north.0007"
+  add_character_flag = atfw_stark_siblings_reunited_without_jon
+  scope:bran = {
+   trigger_event = {
+    id = atfw_sansa_north.0004
+    days = 2
+   }
+  }
+ }
+}
+atfw_resolve_atfw_sansa_north_0004 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_sansa_north_0004_done } }
+  add_character_flag = atfw_resolve_atfw_sansa_north_0004_done
+  debug_log = "ATFW: resolved atfw_sansa_north.0004"
+  add_character_flag = atfw_bran_gave_arya_valyrian_dagger
+ }
+}
+atfw_resolve_atfw_sansa_north_0005 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_sansa_north_0005_done } }
+  add_character_flag = atfw_resolve_atfw_sansa_north_0005_done
+  debug_log = "ATFW: resolved atfw_sansa_north.0005"
+  character:Stark_7 = {
+   add_character_flag = atfw_true_parentage_discovered_by_bran_and_sam
+  }
+  add_character_flag = atfw_bran_knows_jon_is_aegon
+  scope:sam = {
+   add_character_flag = atfw_sam_knows_jon_is_aegon
+  }
+  atfw_try_sam_revelation = yes
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0007 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0007_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0007_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0007"
+  trigger_event = {
+   id = atfw_jon_daenerys.0001
+   days = 1
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0001 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0001_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0001_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0001"
+  scope:daenerys = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0002
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0002 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0002_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0002_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0002"
+  scope:jon = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0008
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0008 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0008_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0008_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0008"
+  add_character_flag = atfw_jon_refused_to_bend_knee_dragonstone
+  add_character_flag = atfw_daenerys_pov_0001_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0001
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0009 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0009_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0009_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0009"
+  add_character_flag = atfw_jon_allowed_to_mine_dragonglass
+  trigger_event = {
+   id = atfw_jon_daenerys.0010
+   days = 3
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0010 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0010_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0010_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0010"
+  add_character_flag = atfw_jon_showed_cave_paintings
+  scope:daenerys = {
+   add_character_flag = atfw_daenerys_takes_dead_threat_seriously
+  }
+  add_character_flag = atfw_daenerys_pov_0002_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0002
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0003 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0003_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0003_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0003"
+  add_opinion = {
+   target = scope:daenerys
+   modifier = grateful_opinion
+   opinion = 15
+  }
+  scope:daenerys = {
+   add_opinion = {
+    target = root
+    modifier = grateful_opinion
+    opinion = 15
+   }
+  }
+  add_character_flag = atfw_jon_daenerys_mutual_respect
+  add_character_flag = atfw_daenerys_pov_0003_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0003
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0011 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0011_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0011_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0011"
+  add_character_flag = atfw_jon_touched_drogon
+  scope:daenerys = {
+   add_opinion = {
+    target = root
+    modifier = grateful_opinion
+    opinion = 15
+   }
+  }
+  add_character_flag = atfw_daenerys_pov_0004_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0004
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0012 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0012_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0012_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0012"
+  add_character_flag = atfw_jon_wight_hunt_planned
+  if = {
+   limit = {
+    involved_activity ?= {
+     has_activity_type = activity_atfw_journey_to_dragonstone
+    }
+   }
+   involved_activity = {
+    progress_activity_phase_after = {
+     days = 1
+    }
+   }
+  }
+  add_character_flag = atfw_daenerys_pov_0005_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0005
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0013 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0013_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0013_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0013"
+  add_character_flag = atfw_jon_captured_wight
+  add_character_flag = atfw_daenerys_pov_0006_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0006
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0014 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0014_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0014_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0014"
+  scope:daenerys = {
+   add_character_flag = atfw_viserion_died_beyond_wall
+  }
+  add_character_flag = atfw_daenerys_pov_0007_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0007
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0015 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0015_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0015_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0015"
+  add_character_flag = atfw_jon_swore_fealty_to_daenerys
+  scope:daenerys = {
+   add_character_flag = atfw_daenerys_committed_to_great_war
+  }
+  set_relation_friend = scope:daenerys
+  create_title_and_vassal_change = {
+   type = swear_fealty
+   save_scope_as = jon_daenerys_fealty_change
+   add_claim_on_loss = no
+  }
+  title:e_the_north.holder ?= {
+   change_liege = {
+    liege = scope:daenerys
+    change = scope:jon_daenerys_fealty_change
+   }
+  }
+  title:e_the_vale.holder ?= {
+   change_liege = {
+    liege = scope:daenerys
+    change = scope:jon_daenerys_fealty_change
+   }
+  }
+  resolve_title_and_vassal_change = scope:jon_daenerys_fealty_change
+  remove_variable = agot_pwl_direct
+  remove_variable = agot_pwl_top
+  scope:daenerys = {
+   random_owned_story = {
+    limit = {
+     story_type = story_agot_mw_rebel
+     story_owner = scope:daenerys
+    }
+    save_scope_as = jon_daenerys_mw_rebel_story
+   }
+   random_character_war = {
+    limit = {
+     using_cb = atfw_daenerys_conquest_war
+     primary_attacker = scope:daenerys
+     primary_defender = title:h_the_iron_throne.holder
+    }
+    save_scope_as = jon_daenerys_conquest_war
+   }
+  }
+  if = {
+   limit = {
+    exists = scope:jon_daenerys_mw_rebel_story
+    exists = scope:jon_daenerys_conquest_war
+   }
+   scope:jon_daenerys_mw_rebel_story.var:mw_crown_story_var ?= {
+    save_scope_as = jon_daenerys_mw_crown_story
+   }
+   scope:jon_daenerys_mw_crown_story ?= {
+    remove_list_variable = {
+     name = mw_neutral_list
+     target = root
+    }
+    remove_list_variable = {
+     name = mw_loyalist_list
+     target = root
+    }
+   }
+   scope:jon_daenerys_mw_rebel_story = {
+    add_to_variable_list = {
+     name = mw_rebel_supporter_list
+     target = root
+    }
+   }
+   every_vassal_or_below = {
+    limit = {
+     highest_held_title_tier > tier_barony
+     agot_is_high_septon = no
+     NOT = {
+      primary_title = title:d_kingsguard
+     }
+    }
+    save_scope_as = northern_vassal
+    scope:jon_daenerys_mw_crown_story ?= {
+     remove_list_variable = {
+      name = mw_neutral_list
+      target = scope:northern_vassal
+     }
+     remove_list_variable = {
+      name = mw_loyalist_list
+      target = scope:northern_vassal
+     }
+    }
+    scope:jon_daenerys_mw_rebel_story = {
+     add_to_variable_list = {
+      name = mw_rebel_supporter_list
+      target = scope:northern_vassal
+     }
+    }
+   }
+   scope:jon_daenerys_conquest_war = {
+    add_attacker = root
+   }
+  }
+  add_character_flag = atfw_daenerys_pov_0008_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0008
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0016 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0016_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0016_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0016"
+  add_character_flag = atfw_jon_refused_to_lie_to_cersei
+  scope:daenerys = {
+   add_opinion = {
+    target = root
+    modifier = grateful_opinion
+    opinion = 20
+   }
+  }
+  add_character_flag = atfw_daenerys_pov_0009_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0009
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0017 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0017_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0017_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0017"
+  add_character_flag = atfw_jon_daenerys_romance_pending
+  scope:daenerys = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0021
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0021 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0021_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0021_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0021"
+  current_travel_plan ?= {
+   resume_travel_plan = yes
+  }
+  set_relation_lover = scope:jon
+  add_character_flag = atfw_jon_daenerys_romance_consummated
+  character:Stark_7 = {
+   remove_character_flag = atfw_jon_daenerys_romance_pending
+   add_character_flag = atfw_jon_daenerys_romance_consummated
+  }
+  character:Stark_Dummy_10 = {
+   if = {
+    limit = {
+     is_alive = yes
+    }
+    trigger_event = {
+     id = atfw_sansa_north.0005
+     days = 1
+    }
+   }
+  }
+  add_character_flag = atfw_daenerys_accepts_romance_with_jon
+  add_opinion = {
+   target = scope:jon
+   modifier = grateful_opinion
+   opinion = 20
+  }
+  scope:jon = {
+   add_opinion = {
+    target = root
+    modifier = grateful_opinion
+    opinion = 20
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0022 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0022_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0022_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0022"
+  agot_tame_dragon = {
+   TAMER = root
+   DRAGON = scope:rhaegal
+  }
+  add_character_flag = atfw_jon_became_rhaegal_rider
+  scope:daenerys = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0023
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0023 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0023_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0023_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0023"
+  add_character_flag = atfw_daenerys_saw_jon_claim_rhaegal
+  add_opinion = {
+   target = scope:jon
+   modifier = grateful_opinion
+   opinion = 15
+  }
+  scope:jon = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0024
+    days = 2
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0024 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0024_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0024_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0024"
+  add_character_flag = atfw_jon_flew_with_daenerys
+  add_opinion = {
+   target = scope:daenerys
+   modifier = grateful_opinion
+   opinion = 20
+  }
+  scope:daenerys = {
+   trigger_event = {
+    id = atfw_jon_daenerys.0025
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0025 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0025_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0025_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0025"
+  add_opinion = {
+   target = scope:jon
+   modifier = grateful_opinion
+   opinion = 15
+  }
+  add_character_flag = atfw_daenerys_romance_deepened_after_flight
+  scope:jon = {
+   add_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
+  }
+  scope:jon = {
+   add_character_flag = atfw_sam_revelation_ready
+  }
+  atfw_try_sam_revelation = yes
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0020 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0020_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0020_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0020"
+  add_character_flag = atfw_daenerys_pov_0010_queued
+  character:Targaryen_9 = {
+   trigger_event = {
+    id = atfw_daenerys_pov.0010
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0018 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0018_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0018_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0018"
+  add_character_flag = atfw_jon_marriage_route_resolved
+  add_character_flag = atfw_jon_proposed_marriage_to_daenerys
+  remove_trait = refusing_marriage
+  scope:daenerys = {
+   remove_trait = refusing_marriage
+   trigger_event = {
+    id = atfw_jon_daenerys.0019
+    days = 1
+   }
+  }
+ }
+}
+atfw_resolve_atfw_jon_daenerys_0019 = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_resolve_atfw_jon_daenerys_0019_done } }
+  add_character_flag = atfw_resolve_atfw_jon_daenerys_0019_done
+  debug_log = "ATFW: resolved atfw_jon_daenerys.0019"
+  remove_trait = refusing_marriage
+  scope:jon = {
+   remove_trait = refusing_marriage
+   create_betrothal = root
+   add_character_flag = atfw_jon_daenerys_betrothed_after_parentage
+  }
+  add_character_flag = atfw_jon_daenerys_betrothed_after_parentage
+ }
+}
+atfw_resume_winterfell_story_effect = {
+ debug_log = "ATFW: requested Winterfell story recovery"
+ if = {
+  limit = { character:Stark_7 = { NOT = { has_character_flag = atfw_jon_returned_to_winterfell_s8 } } }
+  character:Stark_7 = { trigger_event = { id = atfw_jon_north.0014 days = 1 } }
+ }
+ else_if = {
+  limit = { NOT = { has_character_flag = atfw_north_journey_0006_seen } }
+  trigger_event = { id = atfw_north_journey.0006 days = 1 }
+ }
+ else_if = {
+  limit = { character:Stark_Dummy_8 = { is_alive = yes NOT = { has_character_flag = atfw_north_journey_0007_seen } } }
+  character:Stark_Dummy_8 = { trigger_event = { id = atfw_north_journey.0007 days = 1 } }
+ }
+ else_if = {
+  limit = { character:Stark_7 = { NOT = { has_character_flag = atfw_jon_became_rhaegal_rider } } }
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0022 days = 1 } }
+ }
+ else_if = {
+  limit = { NOT = { has_character_flag = atfw_daenerys_saw_jon_claim_rhaegal } }
+  trigger_event = { id = atfw_jon_daenerys.0023 days = 1 }
+ }
+ else_if = {
+  limit = { character:Stark_7 = { NOT = { has_character_flag = atfw_jon_flew_with_daenerys } } }
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0024 days = 1 } }
+ }
+ else_if = {
+  limit = { NOT = { has_character_flag = atfw_daenerys_romance_deepened_after_flight } }
+  trigger_event = { id = atfw_jon_daenerys.0025 days = 1 }
+ }
+ else_if = {
+  limit = { character:Stark_7 = { NOT = { has_character_flag = atfw_true_parentage_discovered_by_bran_and_sam } } }
+  character:Stark_Dummy_10 = { trigger_event = { id = atfw_sansa_north.0005 days = 1 } }
+ }
+ else_if = {
+  limit = { character:Stark_7 = { NOT = { has_character_flag = atfw_jon_knows_true_parentage } } }
+  character:Stark_7 = { trigger_event = { id = atfw_jon_north.0005 days = 1 } }
+ }
+ else_if = {
+  limit = { character:Stark_7 = { NOT = { has_character_flag = atfw_daenerys_pov_0010_queued } } }
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0020 days = 1 } }
+ }
+ else_if = {
+  limit = { NOT = { has_character_flag = atfw_daenerys_pov_0010_seen } }
+  trigger_event = { id = atfw_daenerys_pov.0010 days = 1 }
+ }
+ else_if = {
+  limit = { character:Stark_7 = { NOT = { has_character_flag = atfw_jon_marriage_route_resolved } } }
+  character:Stark_7 = { trigger_event = { id = atfw_jon_daenerys.0018 days = 1 } }
+ }
+ else_if = {
+  limit = { character:Stark_7 = { has_character_flag = atfw_jon_proposed_marriage_to_daenerys } }
+  trigger_event = { id = atfw_jon_daenerys.0019 days = 1 }
+ }
+}

@@ -84,34 +84,34 @@ agot_tfw_five_queens.0003 = {
 					primary_defender = title:h_the_iron_throne.holder
 				}
 				add_attacker = root
-				add_attacker = character:Mallister_4
-				add_attacker = character:Paege_31
-				add_attacker = character:Charlton_1
-				add_attacker = character:Vance_Wayfarers_Rest_3
-				add_attacker = character:Ryger_1
-				add_attacker = character:Staunton_2
-				add_attacker = character:Mooton_2
-				add_attacker = character:Rykker_2
-				add_attacker = character:Goodbrook_4
-				add_attacker = character:Frey_50
-				add_attacker = character:Piper_1
-				add_attacker = character:Massey_1
-				add_attacker = character:Fell_3
-				add_attacker = character:Peasebury_1
-				add_attacker = character:Grandison_3
-				add_attacker = character:Morrigen_2
-				add_attacker = character:Errol_2
-				add_attacker = character:Penrose_45
-				add_attacker = character:Farring_1
-				add_attacker = character:Wylde_4
-				add_attacker = character:Farring_3
-				add_attacker = character:Miller_14
-				add_attacker = character:Buckler_1
-				add_attacker = character:Pointe_64
-				add_attacker = character:Bolling_5
-				add_attacker = character:Grimsby_74
-				add_attacker = character:Wensington_6
-				add_attacker = character:Vypren_1
+				if = { limit = { NOT = { is_participant = character:Mallister_4 } } add_attacker = character:Mallister_4 }
+				if = { limit = { NOT = { is_participant = character:Paege_31 } } add_attacker = character:Paege_31 }
+				if = { limit = { NOT = { is_participant = character:Charlton_1 } } add_attacker = character:Charlton_1 }
+				if = { limit = { NOT = { is_participant = character:Vance_Wayfarers_Rest_3 } } add_attacker = character:Vance_Wayfarers_Rest_3 }
+				if = { limit = { NOT = { is_participant = character:Ryger_1 } } add_attacker = character:Ryger_1 }
+				if = { limit = { NOT = { is_participant = character:Staunton_2 } } add_attacker = character:Staunton_2 }
+				if = { limit = { NOT = { is_participant = character:Mooton_2 } } add_attacker = character:Mooton_2 }
+				if = { limit = { NOT = { is_participant = character:Rykker_2 } } add_attacker = character:Rykker_2 }
+				if = { limit = { NOT = { is_participant = character:Goodbrook_4 } } add_attacker = character:Goodbrook_4 }
+				if = { limit = { NOT = { is_participant = character:Frey_50 } } add_attacker = character:Frey_50 }
+				if = { limit = { NOT = { is_participant = character:Piper_1 } } add_attacker = character:Piper_1 }
+				if = { limit = { NOT = { is_participant = character:Massey_1 } } add_attacker = character:Massey_1 }
+				if = { limit = { NOT = { is_participant = character:Fell_3 } } add_attacker = character:Fell_3 }
+				if = { limit = { NOT = { is_participant = character:Peasebury_1 } } add_attacker = character:Peasebury_1 }
+				if = { limit = { NOT = { is_participant = character:Grandison_3 } } add_attacker = character:Grandison_3 }
+				if = { limit = { NOT = { is_participant = character:Morrigen_2 } } add_attacker = character:Morrigen_2 }
+				if = { limit = { NOT = { is_participant = character:Errol_2 } } add_attacker = character:Errol_2 }
+				if = { limit = { NOT = { is_participant = character:Penrose_45 } } add_attacker = character:Penrose_45 }
+				if = { limit = { NOT = { is_participant = character:Farring_1 } } add_attacker = character:Farring_1 }
+				if = { limit = { NOT = { is_participant = character:Wylde_4 } } add_attacker = character:Wylde_4 }
+				if = { limit = { NOT = { is_participant = character:Farring_3 } } add_attacker = character:Farring_3 }
+				if = { limit = { NOT = { is_participant = character:Miller_14 } } add_attacker = character:Miller_14 }
+				if = { limit = { NOT = { is_participant = character:Buckler_1 } } add_attacker = character:Buckler_1 }
+				if = { limit = { NOT = { is_participant = character:Pointe_64 } } add_attacker = character:Pointe_64 }
+				if = { limit = { NOT = { is_participant = character:Bolling_5 } } add_attacker = character:Bolling_5 }
+				if = { limit = { NOT = { is_participant = character:Grimsby_74 } } add_attacker = character:Grimsby_74 }
+				if = { limit = { NOT = { is_participant = character:Wensington_6 } } add_attacker = character:Wensington_6 }
+				if = { limit = { NOT = { is_participant = character:Vypren_1 } } add_attacker = character:Vypren_1 }
 			}
 		}
 	}

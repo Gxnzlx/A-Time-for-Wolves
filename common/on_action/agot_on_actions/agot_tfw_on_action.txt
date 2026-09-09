@@ -453,6 +453,22 @@ tfw_on_game_start_after_lobby = {
 					character:Stark_7 = { trigger_event = atfw_bookmark_intro.0006 }
 				}
 			}
+
+			# Jon's HBO chronology is a world storyline, not a player-only storyline.
+			# If Jon is AI-controlled, start it independently of the selected player.
+			if = {
+				limit = {
+					character:Stark_7 = {
+						is_alive = yes
+						is_ai = yes
+						NOT = { has_character_flag = atfw_jon_story_bootstrapped }
+					}
+				}
+				character:Stark_7 = {
+					add_character_flag = atfw_jon_story_bootstrapped
+					trigger_event = { id = atfw_jon_north.0007 days = 1 }
+				}
+			}
 		}
 	}
 }

@@ -15,3 +15,11 @@ atfw_dragonstone_opening = {
 		ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
 	}
 }
+
+atfw_cersei_kingslanding = {
+	background = {
+		reference = "gfx/illustrations/cercei_kingslanding.dds"
+		environment = "environment_event_alley"
+		ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
+	}
+}

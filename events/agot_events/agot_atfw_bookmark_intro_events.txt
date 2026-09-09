@@ -104,7 +104,7 @@ atfw_bookmark_intro.0005 = {
 	desc = atfw_bookmark_intro.0005.desc
 
 	override_background = {
-		reference = agot_fullscreen_targaryen
+		reference = atfw_cersei_kingslanding
 	}
 	override_icon = {
 		reference = "gfx/interface/icons/event_types/type_war.dds"

@@ -28,11 +28,22 @@ atfw_jon_north.0007 = {
 
 	option = {
 		name = atfw_jon_north.0007.a
-		add_character_flag = atfw_northern_banners_feast_unlocked
-		open_view_data = {
-			view = activity_list_detail_host_window
-			data = activity_type:activity_atfw_northern_banners_feast
-			player = root
+		if = {
+			limit = { is_ai = no }
+			add_character_flag = atfw_northern_banners_feast_unlocked
+			open_view_data = {
+				view = activity_list_detail_host_window
+				data = activity_type:activity_atfw_northern_banners_feast
+				player = root
+			}
+		}
+		else = {
+			# AI cannot operate the activity planner. Resolve the gathering
+			# canonically and continue into the Season 7 council.
+			add_character_flag = atfw_jon_proclaimed_king_in_the_north
+			add_character_flag = atfw_jon_northern_feast_completed
+			add_prestige = major_prestige_gain
+			trigger_event = { id = atfw_jon_north.0009 days = 10 }
 		}
 	}
 }
@@ -283,12 +294,29 @@ atfw_jon_north.0006 = {
 
 	option = {
 		name = atfw_jon_north.0006.a
-		add_character_flag = atfw_journey_to_dragonstone_unlocked
-
-		open_view_data = {
-			view = activity_list_detail_host_window
-			data = activity_type:activity_atfw_journey_to_dragonstone
-			player = root
+		if = {
+			limit = { is_ai = no }
+			add_character_flag = atfw_journey_to_dragonstone_unlocked
+			open_view_data = {
+				view = activity_list_detail_host_window
+				data = activity_type:activity_atfw_journey_to_dragonstone
+				player = root
+			}
+		}
+		else = {
+			# AI cannot click the activity planner. Simulate the canonical trip.
+			add_character_flag = atfw_journey_to_dragonstone_travelling
+			if = {
+				limit = { NOT = { has_character_flag = atfw_winterfell_parallel_chain_started } }
+				add_character_flag = atfw_winterfell_parallel_chain_started
+				character:Stark_Dummy_8 = {
+					if = {
+						limit = { is_alive = yes }
+						trigger_event = { id = atfw_sansa_north.0001 days = 5 }
+					}
+				}
+			}
+			trigger_event = { id = atfw_jon_daenerys.0007 days = 20 }
 		}
 	}
 }
@@ -392,7 +420,9 @@ atfw_jon_north.0014 = {
 			remove_character_flag = atfw_sansa_rules_winterfell_during_jon_absence
 			add_character_flag = atfw_sansa_regency_ended_on_jons_return
 		}
-		trigger_event = { id = atfw_jon_north.0005 days = 4 }
+		# Let Jon and Daenerys live their romance first. Rhaegal and the shared
+		# flight happen before Sam's revelation.
+		trigger_event = { id = atfw_jon_daenerys.0022 days = 2 }
 	}
 }
 
@@ -620,7 +650,7 @@ namespace = atfw_jon_daenerys
 
 # True arrival transition: beach, Tyrion, disarmament, first dragon sighting.
 atfw_jon_daenerys.0007 = {
-	type = activity_event
+	type = character_event
 	title = atfw_jon_daenerys.0007.t
 	desc = atfw_jon_daenerys.0007.desc
 	theme = diplomacy
@@ -653,7 +683,7 @@ atfw_jon_daenerys.0007 = {
 
 # Jon's first sight of Daenerys in the throne room.
 atfw_jon_daenerys.0001 = {
-	type = activity_event
+	type = character_event
 	title = atfw_jon_daenerys.0001.t
 	desc = atfw_jon_daenerys.0001.desc
 	theme = diplomacy
@@ -968,14 +998,20 @@ atfw_jon_daenerys.0015 = {
 		scope:daenerys = { add_character_flag = atfw_daenerys_committed_to_great_war }
 		set_relation_friend = scope:daenerys
 
-		# HBO chronology: Jon bends the knee here, not through a betrothal.
-		# Only the North follows his oath; the Vale is not transferred.
+		# HBO chronology: Jon bends the knee here.
+		# The North and the Vale follow his oath to Daenerys.
 		create_title_and_vassal_change = {
 			type = swear_fealty
 			save_scope_as = jon_daenerys_fealty_change
 			add_claim_on_loss = no
 		}
 		title:e_the_north.holder ?= {
+			change_liege = {
+				liege = scope:daenerys
+				change = scope:jon_daenerys_fealty_change
+			}
+		}
+		title:e_the_vale.holder ?= {
 			change_liege = {
 				liege = scope:daenerys
 				change = scope:jon_daenerys_fealty_change
@@ -1082,7 +1118,7 @@ atfw_jon_daenerys.0017 = {
 	type = character_event
 	title = atfw_jon_daenerys.0017.t
 	desc = atfw_jon_daenerys.0017.desc
-	theme = romance
+	theme = family
 	override_background = {
 		reference = AGOT_rowboat_night_moonlight
 	}
@@ -1113,7 +1149,157 @@ atfw_jon_daenerys.0017 = {
 				trigger_event = { id = atfw_sansa_north.0005 days = 1 }
 			}
 		}
-		trigger_event = { id = atfw_jon_north.0014 days = 14 }
+		# Daenerys also receives the romantic culmination from her own POV.
+		scope:daenerys = { trigger_event = { id = atfw_jon_daenerys.0021 days = 1 } }
+	}
+}
+
+# Daenerys POV: the voyage north becomes a real romance, not just Jon's event.
+atfw_jon_daenerys.0021 = {
+	type = character_event
+	title = atfw_jon_daenerys.0021.t
+	desc = atfw_jon_daenerys.0021.desc
+	theme = family
+	override_background = { reference = AGOT_rowboat_night_moonlight }
+
+	trigger = {
+		this = character:Targaryen_9
+		character:Stark_7 = {
+			has_character_flag = atfw_jon_daenerys_romance_consummated
+		}
+	}
+	immediate = { character:Stark_7 = { save_scope_as = jon } }
+	right_portrait = { character = scope:jon animation = personality_rational }
+
+	option = {
+		name = atfw_jon_daenerys.0021.a
+		add_character_flag = atfw_daenerys_accepts_romance_with_jon
+		add_opinion = { target = scope:jon modifier = grateful_opinion opinion = 20 }
+		scope:jon = {
+			add_opinion = { target = root modifier = grateful_opinion opinion = 20 }
+			trigger_event = { id = atfw_jon_north.0014 days = 13 }
+		}
+	}
+}
+
+# Jon becomes Rhaegal's rider while he and Daenerys are already lovers.
+# This intentionally happens before Jon learns his true parentage.
+atfw_jon_daenerys.0022 = {
+	type = character_event
+	title = atfw_jon_daenerys.0022.t
+	desc = atfw_jon_daenerys.0022.desc
+	theme = family
+	override_background = { reference = agot_winterfell_throneroom }
+
+	trigger = {
+		this = character:Stark_7
+		has_character_flag = atfw_jon_returned_to_winterfell_s8
+		has_character_flag = atfw_jon_daenerys_romance_consummated
+		NOT = { has_character_flag = atfw_jon_became_rhaegal_rider }
+		character:dragon_rhaegal = { is_alive = yes }
+	}
+	immediate = {
+		character:Targaryen_9 = { save_scope_as = daenerys }
+		character:dragon_rhaegal = { save_scope_as = rhaegal }
+	}
+	right_portrait = { character = scope:daenerys animation = personality_rational }
+
+	option = {
+		name = atfw_jon_daenerys.0022.a
+		agot_tame_dragon = {
+			TAMER = root
+			DRAGON = scope:rhaegal
+		}
+		add_character_flag = atfw_jon_became_rhaegal_rider
+		scope:daenerys = { trigger_event = { id = atfw_jon_daenerys.0023 days = 1 } }
+	}
+}
+
+# Daenerys POV: Rhaegal has chosen Jon.
+atfw_jon_daenerys.0023 = {
+	type = character_event
+	title = atfw_jon_daenerys.0023.t
+	desc = atfw_jon_daenerys.0023.desc
+	theme = family
+	override_background = { reference = agot_winterfell_throneroom }
+
+	trigger = {
+		this = character:Targaryen_9
+		character:Stark_7 = { has_character_flag = atfw_jon_became_rhaegal_rider }
+	}
+	immediate = {
+		character:Stark_7 = { save_scope_as = jon }
+		character:dragon_rhaegal = { save_scope_as = rhaegal }
+	}
+	right_portrait = { character = scope:jon animation = personality_honorable }
+
+	option = {
+		name = atfw_jon_daenerys.0023.a
+		add_character_flag = atfw_daenerys_saw_jon_claim_rhaegal
+		add_opinion = { target = scope:jon modifier = grateful_opinion opinion = 15 }
+		scope:jon = { trigger_event = { id = atfw_jon_daenerys.0024 days = 2 } }
+	}
+}
+
+# Jon POV: Jon and Daenerys fly together on Rhaegal and Drogon.
+atfw_jon_daenerys.0024 = {
+	type = character_event
+	title = atfw_jon_daenerys.0024.t
+	desc = atfw_jon_daenerys.0024.desc
+	theme = family
+	override_background = { reference = agot_frozen_forest }
+
+	trigger = {
+		this = character:Stark_7
+		has_character_flag = atfw_jon_became_rhaegal_rider
+		has_relation_lover = character:Targaryen_9
+	}
+	immediate = {
+		character:Targaryen_9 = { save_scope_as = daenerys }
+		character:dragon_rhaegal = { save_scope_as = rhaegal }
+		character:dragon_drogon = { save_scope_as = drogon }
+	}
+	right_portrait = { character = scope:daenerys animation = personality_bold }
+
+	option = {
+		name = atfw_jon_daenerys.0024.a
+		add_character_flag = atfw_jon_flew_with_daenerys
+		add_opinion = { target = scope:daenerys modifier = grateful_opinion opinion = 20 }
+		scope:daenerys = { trigger_event = { id = atfw_jon_daenerys.0025 days = 1 } }
+	}
+}
+
+# Daenerys POV: their shared flight deepens the romance.
+# Inspired by DragonRaiders' "Ride Dragons Together" concept, but implemented
+# locally so ATFW does not depend on that mod.
+atfw_jon_daenerys.0025 = {
+	type = character_event
+	title = atfw_jon_daenerys.0025.t
+	desc = atfw_jon_daenerys.0025.desc
+	theme = family
+	override_background = { reference = agot_frozen_forest }
+
+	trigger = {
+		this = character:Targaryen_9
+		character:Stark_7 = {
+			has_character_flag = atfw_jon_flew_with_daenerys
+			has_relation_lover = root
+		}
+	}
+	immediate = {
+		character:Stark_7 = { save_scope_as = jon }
+		character:dragon_rhaegal = { save_scope_as = rhaegal }
+		character:dragon_drogon = { save_scope_as = drogon }
+	}
+	right_portrait = { character = scope:jon animation = personality_honorable }
+
+	option = {
+		name = atfw_jon_daenerys.0025.a
+		set_relation_soulmate = scope:jon
+		add_character_flag = atfw_daenerys_romance_deepened_after_flight
+		scope:jon = { add_character_flag = atfw_jon_daenerys_romance_deepened_after_flight }
+		# Only after the romance has had time to deepen does Sam reveal the truth.
+		scope:jon = { trigger_event = { id = atfw_jon_north.0005 days = 4 } }
 	}
 }
 
@@ -1145,26 +1331,20 @@ atfw_jon_daenerys.0020 = {
 			remove_trait = bastard
 		}
 		if = {
-			limit = { NOT = { has_trait = child_of_concubine } }
-			add_trait = child_of_concubine
+			limit = { NOT = { has_trait = child_of_concubine_female } }
+			add_trait = child_of_concubine_female
 		}
 
-		# HBO route: once Jon is revealed as Rhaegar and Lyanna's son,
-		# Rhaegal accepts him as his rider.
+		# The proposal route is only available after the established romance,
+		# Jon's bond with Rhaegal, and the shared flight with Daenerys.
 		if = {
 			limit = {
-				character:dragon_rhaegal = {
-					is_alive = yes
-				}
+				has_character_flag = atfw_jon_became_rhaegal_rider
+				has_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
+				scope:daenerys = { has_character_flag = atfw_daenerys_romance_deepened_after_flight }
 			}
-			agot_tame_dragon = {
-				TAMER = root
-				DRAGON = character:dragon_rhaegal
-			}
-			add_character_flag = atfw_jon_became_rhaegal_rider
+			add_character_flag = atfw_jon_marriage_route_unlocked
 		}
-
-		add_character_flag = atfw_jon_marriage_route_unlocked
 		trigger_event = { id = atfw_jon_daenerys.0018 days = 2 }
 			ai_chance = { base = 100 }
 	}
@@ -1175,7 +1355,7 @@ atfw_jon_daenerys.0018 = {
 	type = character_event
 	title = atfw_jon_daenerys.0018.t
 	desc = atfw_jon_daenerys.0018.desc
-	theme = romance
+	theme = family
 	override_background = { reference = agot_winterfell_throneroom }
 	trigger = {
 		this = character:Stark_7
@@ -1183,6 +1363,9 @@ atfw_jon_daenerys.0018 = {
 		has_character_flag = atfw_jon_daenerys_romance_consummated
 		has_character_flag = atfw_jon_marriage_route_unlocked
 		has_character_flag = atfw_daenerys_knows_jons_true_parentage
+		has_character_flag = atfw_jon_became_rhaegal_rider
+		has_character_flag = atfw_jon_flew_with_daenerys
+		has_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
 		NOT = { has_character_flag = atfw_jon_marriage_route_resolved }
 	}
 	immediate = { character:Targaryen_9 = { save_scope_as = daenerys } }
@@ -1208,7 +1391,7 @@ atfw_jon_daenerys.0019 = {
 	type = character_event
 	title = atfw_jon_daenerys.0019.t
 	desc = atfw_jon_daenerys.0019.desc
-	theme = romance
+	theme = family
 	override_background = { reference = agot_winterfell_throneroom }
 	trigger = {
 		this = character:Targaryen_9

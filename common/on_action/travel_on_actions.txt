@@ -1128,9 +1128,7 @@ on_travel_plan_arrival = {
 	effect = {
 		#AGOT Added
 		# Share bastard secret event if at same location (if valid).
-		# ATFW: do not allow Vanilla's generic royal-bastard system to reveal
-		# Jon Snow's parentage. His Rhaegar/Lyanna reveal is handled exclusively
-		# by the scripted ATFW Season 8 chain.
+		# ATFW: Jon Snow's parentage is handled only by the scripted Season 8 chain.
 		if = {
 			limit = {
 				NOT = {

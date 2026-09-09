@@ -146,6 +146,54 @@
  atfw_jon_north.0014.t:0 "The Queen Comes North"
  atfw_jon_north.0014.desc:0 "Winterfell's walls rise through the snow. You return to the home you left months ago, but you do not return alone. Daenerys Targaryen rides with you and dragons fly above the North.\n\nSansa has ruled in your absence. Bran and Arya have returned. Your return ends the regency, but you have barely crossed the gates before it becomes clear that your family has been waiting to tell you something."
  atfw_jon_north.0014.a:0 "I am home."
+ atfw_jon_daenerys.0021.t:0 "No Crowns Between Us"
+ atfw_jon_daenerys.0021.desc:0 "The sea stretches dark beyond the windows as the ship sails north. Jon has come to your cabin without guards, without councillors, and without a crown to place between you.
+
+Since Dragonstone you have argued, fought, and learned to trust one another. You watched him risk his life beyond the Wall, and for a moment you believed he would never return. Now he stands before you alive, and neither of you seems willing to keep pretending that what lies between you is merely an alliance.
+
+When the door closes, for one night you leave behind the queen who claims the Iron Throne. He leaves behind the King in the North. Only Daenerys and Jon remain."
+ atfw_jon_daenerys.0021.a:0 "Tonight, let it be only us."
+
+ atfw_jon_daenerys.0022.t:0 "The Green Dragon"
+ atfw_jon_daenerys.0022.desc:0 "Rhaegal watches you from the snow, motionless save for the steam escaping his jaws. You have stood near Daenerys's dragons before, but never like this. When you step toward him, he neither roars nor retreats.
+
+You extend a hand. Rhaegal slowly lowers his head until your fingers meet his scales.
+
+Daenerys watches in silence. You do not need her to explain what it means. No horse could have prepared you for this, yet you place your foot and climb onto the dragon's back.
+
+Rhaegal spreads his wings."
+ atfw_jon_daenerys.0022.a:0 "Let us see where you mean to take me."
+
+ atfw_jon_daenerys.0023.t:0 "Rhaegal Has Chosen Him"
+ atfw_jon_daenerys.0023.desc:0 "You have known many men who approached your dragons with fear, arrogance, or the recklessness of those who do not understand what stands before them. Jon does none of those things.
+
+Rhaegal allows him to approach. He lowers his head beneath Jon's hand and, when Jon climbs onto his back, offers no resistance. The green dragon rises above the snow with the King in the North clinging to him.
+
+For a moment you are left without words. Drogon accepted Jon's presence on Dragonstone; now Rhaegal has done far more than that.
+
+Jon looks back at you from the dragon's back. You cannot help but smile."
+ atfw_jon_daenerys.0023.a:0 "Then let us fly together."
+
+ atfw_jon_daenerys.0024.t:0 "On Dragon's Wings"
+ atfw_jon_daenerys.0024.desc:0 "Rhaegal launches into the sky and the ground vanishes beneath you. Wind strikes your face as Winterfell shrinks among the snow and the forests of the North stretch toward the horizon.
+
+A roar rolls beside you. Daenerys flies upon Drogon and, for the first time since you met her, there is no table, war, or crown between you. Only two dragons crossing the sky and the woman who has come to mean far more than you expected when you left for Dragonstone.
+
+Rhaegal banks toward Drogon and the two fly together above the frozen lands. Daenerys turns toward you. She is laughing.
+
+You cannot remember the last time you saw her so free."
+ atfw_jon_daenerys.0024.a:0 "Try to keep up."
+
+ atfw_jon_daenerys.0025.t:0 "Beyond the Reach of Crowns"
+ atfw_jon_daenerys.0025.desc:0 "Drogon and Rhaegal fly side by side above the North. Below lie Winterfell, the armies, and all those who expect something from you. Up here there is no Iron Throne and no King in the North.
+
+Jon is no longer the stranger who arrived on Dragonstone refusing to bend the knee. You have watched him face the dead, risk his life for his men, and keep his word even when a lie would have been easier. Now he flies beside you upon Rhaegal as though he had always belonged in the sky.
+
+When both dragons descend far from the eyes of court, Jon comes closer. This time there is no duty that can explain what you feel, and no alliance that makes it necessary.
+
+You could allow him to remain merely a lover. But you know he ceased to be merely that some time ago."
+ atfw_jon_daenerys.0025.a:0 "I want this to be something more."
+
  atfw_jon_daenerys.0018.t:0 "Blood, Love and Crown"
  atfw_jon_daenerys.0018.desc:0 "The truth changes your name, but not what you feel for Daenerys. You are the legitimate son of Rhaegar Targaryen and Lyanna Stark, and your birth creates a claim that threatens the woman to whom you swore fealty.\n\nThere is another possibility: unite both claims through marriage. Not as an alliance decided before you knew one another, but as a choice born from everything that happened since Dragonstone."
  atfw_jon_daenerys.0018.a:0 "I will ask her to unite our houses."

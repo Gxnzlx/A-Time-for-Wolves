@@ -63,9 +63,9 @@
  atfw_jon_daenerys.0001.desc:0 "Rocadragón se alza negra sobre el mar, entre humo, sal y antigua piedra valyria. Has venido en busca de vidriagón y de una aliada contra los muertos, no para hincar la rodilla ante una reina sureña.\n\nDaenerys Targaryen aguarda en el salón de la fortaleza. Es más joven de lo que hacían pensar las historias, pero no hay incertidumbre alguna en su porte. Rompedora de Cadenas, Madre de Dragones, pretendiente al Trono de Hierro.\n\nSus ojos se posan sobre ti. Por un instante, ni el rey ni la reina dicen palabra."
  atfw_jon_daenerys.0001.a:0 "Así que esta es la Reina Dragón."
 
- atfw_jon_daenerys.0002.t:0 "El Lobo Blanco"
- atfw_jon_daenerys.0002.desc:0 "Jon Snow no parece un rey de los cantares. No lleva oro, ni sedas, ni corona enjoyada; solo lana oscura, viejas cicatrices y el semblante grave de un hombre que ha visto demasiada muerte.\n\nHa venido a pedirme vidriagón y ayuda contra un enemigo que no puedo ver. No me adula. Peor aún, no me teme.\n\nEsperaba encontrar a otro orgulloso señor norteño. En cambio, me descubro preguntándome qué clase de hombre es aquel a quien su pueblo eligió seguir."
- atfw_jon_daenerys.0002.a:0 "Escuchemos lo que tiene que decir el Rey en el Norte."
+ atfw_jon_daenerys.0002.t:0 "El Rey en el Norte"
+ atfw_jon_daenerys.0002.desc:0 "Por invitación de mi Mano, Lord Jon Nieve se presenta ante mí en la Cámara de la Mesa Pintada. Señor de Invernalia, hijo bastardo de Eddard Stark y, según los norteños que lo siguen, Rey en el Norte.\n\nNo lleva corona ni viste como los reyes que he conocido. Su acompañante un tal Ser Davos apenas termina de anunciarlo cuando Jon deja clara su posición: los señores del Norte lo eligieron como su rey y no ha cruzado medio Poniente para doblar la rodilla. Ha venido por el vidriagón de Rocadragón y para advertirme de un ejército de muertos que, asegura, marcha hacia el sur.\n\nAsí que este es Jon Nieve. El hombre que afirma ser rey de una parte de mi reino comparece ahora ante mí para pedir mi ayuda, pero no para reconocerme como su reina."
+ atfw_jon_daenerys.0002.a:0 "Así que vos sois el Rey en el Norte."
 
  atfw_jon_daenerys.0008.t:0 "Dos soberanos"
  atfw_jon_daenerys.0008.desc:0 "Daenerys enumera sus títulos y recuerda los juramentos que la Casa Stark prestó alguna vez a la suya. Quiere una respuesta sencilla: que hinques la rodilla y reconozcas su derecho al Trono de Hierro.\n\nTe niegas. No has cruzado medio continente para discutir quién debe sentarse en una silla de hierro. Intentas hablarle del Rey de la Noche, de los muertos de Casa Austera y de un ejército que no dejará reino alguno que gobernar.\n\nLa reina escucha, aunque el escepticismo permanece en su rostro. Davos, irritado, comienza a enumerar todo lo que has hecho por tu pueblo y deja escapar una frase acerca de una daga en el corazón. Le haces callar antes de que pueda explicar más.\n\nNinguno de los dos cede. Pero ninguno abandona la sala."
@@ -146,15 +146,57 @@
  atfw_jon_north.0014.t:0 "La reina llega al Norte"
  atfw_jon_north.0014.desc:0 "Las murallas de Invernalia aparecen entre la nieve. Regresas al hogar que dejaste meses atrás, pero ya no vuelves solo. Daenerys Targaryen cabalga contigo y dragones vuelan sobre el Norte.\n\nSansa ha gobernado en tu ausencia. Bran y Arya han regresado. Tu vuelta pone fin a la regencia, pero apenas cruzas las puertas queda claro que tu familia lleva tiempo esperando poder contarte algo."
  atfw_jon_north.0014.a:0 "Estoy en casa."
+ atfw_jon_daenerys.0021.t:0 "Sin coronas entre nosotros"
+ atfw_jon_daenerys.0021.desc:0 "El mar se extiende oscuro tras los ventanales mientras el barco avanza hacia el Norte. Jon ha acudido a tus aposentos sin escoltas, sin consejeros y sin una corona que interponer entre ambos.
+
+Desde Rocadragón habéis discutido, luchado y aprendido a confiar el uno en el otro. Lo viste arriesgar la vida más allá del Muro, y por un instante creíste que no regresaría. Ahora está ante ti, vivo, y ninguno de los dos parece dispuesto a seguir fingiendo que lo que existe entre vosotros es solamente una alianza.
+
+Cuando la puerta se cierra, dejas atrás por una noche a la reina que pretende el Trono de Hierro. Él deja atrás al Rey en el Norte. Solo quedan Daenerys y Jon."
+ atfw_jon_daenerys.0021.a:0 "Esta noche, que solo seamos nosotros."
+
+ atfw_jon_daenerys.0022.t:0 "El dragón verde"
+
+ atfw_jon_daenerys.0022.desc:0 "Rhaegal te observa desde la nieve, inmóvil salvo por el vapor que escapa de sus fauces. Ya habías estado cerca de los dragones de Daenerys, incluso habías sentido las escamas de Drogon bajo tu mano, pero nunca habías imaginado encontrarte frente a uno de ellos de esta manera.\n\nAvanzas con cautela. Rhaegal no ruge ni retrocede. Sus ojos permanecen fijos en ti mientras acortas la distancia y, cuando extiendes una mano, el enorme dragón baja lentamente la cabeza hasta permitir que tus dedos descansen sobre sus escamas.\n\nMiras a Daenerys buscando alguna explicación, pero ella parece tan sorprendida como tú. No sabes por qué Rhaegal te permite acercarte ni qué espera de ti. Entonces el dragón se inclina ante ti, ofreciéndote su lomo.\n\nHas montado caballos desde que eras un niño, pero nada podría haberte preparado para esto. Aun así, reúnes el valor para subir. Rhaegal no se resiste. Bajo tus manos sientes cómo su cuerpo se tensa y, un instante después, sus enormes alas se despliegan sobre la nieve.\n\nPor los dioses... vas a volar sobre un dragón."
+
+ atfw_jon_daenerys.0022.a:0 "Bueno... ya he llegado hasta aquí."
+
+ atfw_jon_daenerys.0023.t:0 "Rhaegal lo ha elegido"
+
+ atfw_jon_daenerys.0023.desc:0 "Has visto a hombres acercarse a tus dragones con miedo, arrogancia o una temeridad nacida de la ignorancia. Jon Nieve no hace ninguna de esas cosas.\n\nRhaegal lo observa mientras se aproxima. No ruge ni retrocede. Inclina la cabeza hacia su mano y permite que lo toque. Entonces Jon monta sobre su lomo y el dragón verde abre las alas, alzándose sobre la nieve con el Rey en el Norte sobre su espalda.\n\nDurante unos instantes, solo puedes contemplarlos en silencio.\n\nJon no es un Targaryen. No tiene sangre valyria que tú conozcas, ni pertenece a ninguna estirpe de jinetes de dragón. Desde los tiempos de Ortigas, durante la Danza de los Dragones, no recuerdas haber oído de alguien ajeno a tu sangre que lograra algo semejante. Drogon ya había tolerado su presencia en Rocadragón, pero esto es distinto. Rhaegal no se limita a aceptarlo cerca de él: lo ha escogido como jinete.\n\nJon vuelve la mirada hacia ti desde el lomo del dragón. Todavía no comprendes qué significa lo que acabas de presenciar, pero no puedes evitar sonreír."
+
+ atfw_jon_daenerys.0023.a:0 "Entonces volemos juntos."
+
+ atfw_jon_daenerys.0024.t:0 "Sobre alas de dragón"
+ atfw_jon_daenerys.0024.desc:0 "Rhaegal se lanza al cielo y el suelo desaparece bajo ti. El viento golpea tu rostro mientras Invernalia se hace pequeña entre la nieve y los bosques del Norte se extienden hasta perderse en el horizonte.
+
+Un rugido retumba a tu lado. Daenerys vuela sobre Drogon y, por primera vez desde que la conociste, no hay una mesa, una guerra ni una corona entre vosotros. Solo dos dragones cruzando el cielo y la mujer que ha llegado a significar mucho más de lo que esperabas cuando partiste hacia Rocadragón.
+
+Rhaegal se inclina hacia Drogon y ambos vuelan juntos sobre las tierras heladas. Daenerys vuelve el rostro hacia ti. Está riendo.
+
+No recuerdas la última vez que la viste tan libre."
+ atfw_jon_daenerys.0024.a:0 "No te quedes atrás."
+
+ atfw_jon_daenerys.0025.t:0 "Donde no alcanzan las coronas"
+ atfw_jon_daenerys.0025.desc:0 "Drogon y Rhaegal vuelan lado a lado sobre el Norte. Abajo quedan Invernalia, los ejércitos y todos aquellos que esperan algo de vosotros. Aquí arriba no hay Trono de Hierro ni Rey en el Norte.
+
+Jon ya no es el extraño que llegó a Rocadragón negándose a doblar la rodilla. Lo has visto enfrentarse a los muertos, arriesgar la vida por sus hombres y mantener su palabra incluso cuando mentir habría sido más fácil. Ahora vuela junto a ti sobre Rhaegal como si hubiera pertenecido al cielo desde siempre.
+
+Cuando ambos dragones descienden lejos de las miradas de la corte, Jon se acerca. Esta vez no hay deber que pueda explicar lo que sientes ni alianza que lo haga necesario.
+
+Podrías permitir que siga siendo solamente un amante. Pero sabes que ya hace tiempo que dejó de ser solamente eso."
+ atfw_jon_daenerys.0025.a:0 "Quiero que esto sea algo más."
+
  atfw_jon_daenerys.0018.t:0 "Sangre, amor y corona"
  atfw_jon_daenerys.0018.desc:0 "La verdad cambia tu nombre, pero no lo que sientes por Daenerys. Eres hijo legítimo de Rhaegar Targaryen y Lyanna Stark, y tu nacimiento crea una pretensión que amenaza a la mujer a la que juraste lealtad.\n\nExiste otra posibilidad: unir ambas pretensiones mediante matrimonio. No como una alianza decidida antes de conoceros, sino como una elección nacida de todo lo ocurrido desde Rocadragón."
  atfw_jon_daenerys.0018.a:0 "Le propondré que unamos nuestras casas."
  atfw_jon_daenerys.0018.b:0 "No convertiré lo nuestro en una cuestión de coronas."
- atfw_jon_daenerys.0019.t:0 "Una corona compartida"
- atfw_jon_daenerys.0019.desc:0 "Jon ya no es solamente el Rey en el Norte. La verdad sobre su nacimiento lo convierte en Aegon Targaryen, hijo legítimo de Rhaegar y Lyanna. Su sangre podría disputar tu derecho al Trono de Hierro.\n\nPero no viene a exigirte una corona. Te ofrece una elección: unir las ramas supervivientes de vuestra casa y convertir dos pretensiones rivales en una sola causa."
+
+ atfw_jon_daenerys.0019.t:0 "El último dragón"
+ atfw_jon_daenerys.0019.desc:0 "Las palabras de Jon tardan un instante en cobrar sentido. Lyanna Stark fue su madre, pero Eddard Stark nunca fue su padre. Su verdadero padre fue Rhaegar Targaryen, tu hermano.\n\nRhaegar y Lyanna se casaron en secreto antes de que Jon naciera. No es Jon Nieve. Nunca fue un bastardo. Su verdadero nombre es Aegon Targaryen.\n\nDe pronto recuerdas a Rhaegal inclinando la cabeza ante él, permitiéndole montar sobre su lomo como si aquello fuese lo más natural del mundo. El dragón que lleva el nombre de Rhaegar había reconocido en su hijo aquello que ninguno de vosotros podía ver.\n\nJon es sangre de tu sangre. Tu sobrino. Y, como hijo legítimo de Rhaegar, posee una pretensión al Trono de Hierro incluso mayor que la tuya.\n\nPero Jon no ha venido a reclamarte una corona. Te habla del vínculo que habéis forjado y de una posibilidad que hasta ahora ninguno de los dos podía imaginar: unir las dos últimas ramas de la Casa Targaryen y gobernar juntos."
  atfw_jon_daenerys.0019.a:0 "Entonces que el hielo y el fuego permanezcan unidos."
  atfw_jon_daenerys.0019.b:0 "Lo que siento por ti no puede resolver esta disputa."
 
  atfw_jon_daenerys.0020.t:0 "La verdad entre nosotros"
- atfw_jon_daenerys.0020.desc:0 "No puedes ocultárselo. Daenerys merece escuchar de tus propios labios lo que Sam y Bran han descubierto.\n\nLe cuentas que Eddard Stark no fue tu padre, sino el hombre que te crio. Tu madre fue Lyanna Stark y tu padre, Rhaegar Targaryen. Le hablas del matrimonio secreto, de tu nacimiento y del nombre que te fue dado: Aegon Targaryen.\n\nDaenerys guarda silencio. La revelación no solo altera lo que existe entre vosotros; también cambia el equilibrio de la corona que ambos han arriesgado tanto por alcanzar. Por sangre perteneces a la Casa Targaryen, y ya no puedes seguir siendo ante el mundo simplemente Jon Nieve.\n\nPero la verdad también abre una posibilidad que ninguno de los dos habría contemplado al conocerse en Rocadragón."
+ atfw_jon_daenerys.0020.desc:0 "Apenas has tenido tiempo de comprender lo que Sam y Bran te han revelado, pero hay alguien que debe conocer la verdad por tus propios labios. Después de todo lo que ha ocurrido entre vosotros, no puedes ocultársela a Daenerys.\n\nLe cuentas que Eddard Stark nunca fue tu padre, sino el hombre que te protegió y te crio como a un hijo. Tu madre fue Lyanna Stark y tu verdadero padre, Rhaegar Targaryen. Se casaron en secreto antes de tu nacimiento, y el nombre que te dieron no fue Jon Nieve, sino Aegon Targaryen.\n\nMientras pronuncias esas palabras, piensas en Rhaegal. En cómo inclinó la cabeza ante ti, en cómo te permitió subir sobre su lomo y alzar el vuelo junto a Daenerys. Lo que entonces parecía imposible adquiere ahora un significado que jamás habrías imaginado.\n\nDaenerys guarda silencio. Sabes lo que esta verdad significa para ella. Eres hijo legítimo de Rhaegar y, por tanto, tienes una pretensión al Trono de Hierro mayor que la suya. Pero la corona no es la razón por la que has venido a hablar con ella.\n\nNo quieres que un nombre que acabas de descubrir destruya aquello que ambos habéis encontrado juntos."
+
  atfw_jon_daenerys.0020.a:0 "Ya no habrá secretos entre nosotros."

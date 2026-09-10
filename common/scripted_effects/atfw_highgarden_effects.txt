@@ -17,32 +17,20 @@ atfw_highgarden_start_effect = {
    if = {
     limit = { character:Lannister_6 ?= { is_alive = yes is_at_war_with = scope:atfw_hg_defender } }
     set_global_variable = { name = atfw_hg_offensive_started value = yes }
-    character:Lannister_6 = {
-     spawn_army = {
-      name = atfw_highgarden_lannister_host
-      levies = 19000
-      men_at_arms = { type = armored_footmen men = 7000 }
-      men_at_arms = { type = bowmen men = 3500 }
-      men_at_arms = { type = onager men = 500 }
-      location = title:b_highgarden.title_province
-      origin = title:b_highgarden.title_province
-      war = scope:atfw_hg_war
-      inheritable = no
-     }
-    }
+    # Scenario-only host; never handed to the military AI.
+    set_global_variable = { name = atfw_hg_lannister_strength value = 39500 }
+    set_global_variable = { name = atfw_hg_tarly_strength value = 6000 }
+    character:Lannister_6 = { trigger_event = atfw_siege_watch.0001 }
     if = {
      limit = { exists = character:Redwyne_2 character:Redwyne_2 ?= { is_alive = yes } }
      character:Redwyne_2 = { trigger_event = atfw_highgarden.0004 }
     }
     else = { atfw_highgarden_stay_effect = yes }
-    debug_log = "ATFW Highgarden: spawned 30000 Lannister troops at Highgarden"
+    debug_log = "ATFW Highgarden: created narrative host: 39500 Lannister and 6000 Tarly"
    }
   }
  }
- # The month has elapsed; Jon's existing plot must not wait indefinitely for a siege.
- character:Stark_7 ?= {
-  if = { limit = { is_alive = yes NOT = { has_character_flag = atfw_highgarden_jon_resumed } } trigger_event = { id = atfw_weekly.1012 days = 7 } }
- }
+
 }
 
 # Explicit list: never creates or resurrects historical characters.
@@ -103,7 +91,10 @@ atfw_highgarden_create_exiles_effect = {
    limit = { NOT = { this = scope:atfw_hg_leader } }
    if = { limit = { is_imprisoned = yes } release_from_prison = yes }
    atfw_highgarden_abandon_titles_effect = yes
-   scope:atfw_hg_leader = { add_courtier = prev }
+   if = {
+    limit = { NOT = { is_courtier_of = scope:atfw_hg_leader } }
+    scope:atfw_hg_leader = { add_courtier = prev }
+   }
   }
   set_global_variable = { name = atfw_hg_camp_created value = yes }
   debug_log = "ATFW Highgarden: protected Tyrells assembled in exile camp"
@@ -115,8 +106,8 @@ atfw_highgarden_stay_effect = {
   limit = { NOT = { has_global_variable = atfw_hg_choice_made } }
   set_global_variable = { name = atfw_hg_choice_made value = yes }
   atfw_highgarden_collect_survivors_effect = yes
-  # Leo is the requested leader; use another surviving adult only if he is unavailable.
-  if = { limit = { exists = character:Tyrell_18 character:Tyrell_18 ?= { is_alive = yes is_adult = yes } } character:Tyrell_18 = { save_scope_as = atfw_hg_leader } }
+  # Theodore is the requested leader; use another surviving adult only if he is unavailable.
+  if = { limit = { exists = character:Tyrell_19 character:Tyrell_19 ?= { is_alive = yes is_adult = yes } } character:Tyrell_19 = { save_scope_as = atfw_hg_leader } }
   else = { random_in_list = { list = atfw_hg_survivors limit = { is_adult = yes } save_scope_as = atfw_hg_leader } }
   if = { limit = { exists = character:Redwyne_2 character:Redwyne_2 ?= { is_alive = yes } } character:Redwyne_2 = { save_scope_as = atfw_hg_estate_receiver } }
   else = { character:Tarly_1 ?= { save_scope_as = atfw_hg_estate_receiver } }
@@ -141,11 +132,17 @@ atfw_highgarden_flee_effect = {
 
 atfw_highgarden_dispatch_fall_effect = {
  if = {
-  limit = { has_global_variable = atfw_hg_choice_made NOT = { has_global_variable = atfw_highgarden_fallen } NOT = { has_global_variable = atfw_hg_death_event_queued } }
+  limit = { has_global_variable = atfw_hg_narrative_ready NOT = { has_global_variable = atfw_hg_siege_relieved } has_global_variable = atfw_hg_choice_made NOT = { has_global_variable = atfw_highgarden_fallen } NOT = { has_global_variable = atfw_hg_death_event_queued } }
   if = {
    limit = { NOT = { has_global_variable = atfw_hg_olenna_fled } exists = character:Redwyne_2 character:Redwyne_2 ?= { is_alive = yes } }
    set_global_variable = { name = atfw_hg_death_event_queued value = yes }
-   character:Redwyne_2 = { trigger_event = atfw_highgarden.0007 }
+   character:Redwyne_2 = {
+    if = {
+     limit = { exists = character:Lannister_7 character:Lannister_7 ?= { is_alive = yes } }
+     trigger_event = atfw_highgarden.0008
+    }
+    else = { trigger_event = atfw_highgarden.0007 }
+   }
   }
   else = { atfw_highgarden_finish_fall_effect = yes }
  }
@@ -155,6 +152,15 @@ atfw_highgarden_finish_fall_effect = {
  if = {
   limit = { NOT = { has_global_variable = atfw_highgarden_fallen } }
   set_global_variable = { name = atfw_highgarden_fallen value = yes }
+  # Release the storyline only upon settlement, not upon army creation.
+  set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+  character:Stark_7 ?= {
+   if = {
+    limit = { is_alive = yes NOT = { has_character_flag = atfw_highgarden_jon_resumed } }
+    trigger_event = { id = atfw_weekly.1012 days = 14 }
+   }
+  }
+  debug_log = "ATFW Highgarden: settlement complete; weekly storyline released"
   character:Tarly_1 ?= {
    if = {
     limit = { is_alive = yes }
@@ -177,6 +183,7 @@ atfw_highgarden_finish_fall_effect = {
   title:c_highgarden = { change_county_control = -30 }
   every_living_character = {
    limit = { dynasty = dynasty:dynn_Tyrell
+     NOT = { this = character:Redwyne_2 }
      NOT = { this = character:Tyrell_18 }
      NOT = { this = character:Tyrell_19 }
      NOT = { this = character:Tyrell_20 }
@@ -195,8 +202,7 @@ atfw_highgarden_finish_fall_effect = {
   character:Targaryen_9 ?= { if = { limit = { is_alive = yes } trigger_event = { id = atfw_weekly.1011 days = 7 } } }
   character:Lannister_6 ?= { if = { limit = { is_alive = yes } trigger_event = { id = atfw_highgarden.0005 days = 1 } } }
   debug_log = "ATFW Highgarden: fortress lost, Reach transferred, survivors in exile"
-  # Olenna's death is last, after all state changes and notifications.
-  if = { limit = { NOT = { has_global_variable = atfw_hg_olenna_fled } } character:Redwyne_2 ?= { atfw_highgarden_execute_effect = yes } }
+  # Olenna is executed only by her separate captured-at-Highgarden event.
  }
 }
 
@@ -210,8 +216,29 @@ atfw_highgarden_execute_effect = {
 
 atfw_highgarden_resume_jon_effect = {
  if = {
-  limit = { NOT = { has_character_flag = atfw_highgarden_jon_resumed } }
+  limit = { OR = { has_global_variable = atfw_highgarden_fallen has_global_variable = atfw_hg_siege_relieved } NOT = { has_character_flag = atfw_highgarden_jon_resumed } }
   add_character_flag = atfw_highgarden_jon_resumed
   trigger_event = { id = atfw_weekly.1013 days = 7 }
+ }
+}
+
+# A successful defense or an ended offensive preserves Olenna and her titles.
+atfw_highgarden_relieve_siege_effect = {
+ if = {
+  limit = {
+   NOT = { has_global_variable = atfw_hg_siege_relieved }
+   NOT = { has_global_variable = atfw_highgarden_fallen }
+  }
+  set_global_variable = { name = atfw_hg_siege_relieved value = yes }
+  set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+  character:Redwyne_2 ?= { if = { limit = { is_alive = yes } trigger_event = atfw_siege_watch.0003 } }
+  character:Targaryen_9 ?= { if = { limit = { is_alive = yes } trigger_event = { id = atfw_siege_watch.0003 days = 1 } } }
+  character:Stark_7 ?= {
+   if = {
+    limit = { is_alive = yes NOT = { has_character_flag = atfw_highgarden_jon_resumed } }
+    trigger_event = { id = atfw_weekly.1012 days = 7 }
+   }
+  }
+  debug_log = "ATFW Highgarden: siege lifted; Olenna spared; storyline released"
  }
 }

@@ -1,0 +1,29 @@
+﻿namespace = atfw_convoy
+atfw_convoy.0001 = {
+ type = character_event
+ title = atfw_convoy.0001.t
+ desc = atfw_convoy.0001.desc
+ theme = war
+ trigger = { is_alive = yes NOT = { has_global_variable = atfw_convoy_resolved } }
+ override_background = { reference = atfw_highgarden_lions_approach }
+ option = {
+  name = atfw_convoy.0001.a
+  ai_chance = { base = 100 }
+  custom_tooltip = atfw_convoy.0001.tt
+  hidden_effect = {
+   set_global_variable = { name = atfw_convoy_resolved value = yes }
+   remove_global_variable = atfw_convoy_battle_pending
+   remove_global_variable = atfw_hg_lannister_strength
+   remove_global_variable = atfw_hg_tarly_strength
+   character:Tarly_6 ?= {
+    if = { limit = { is_alive = yes } death = { death_reason = death_dragon_fire killer = character:Targaryen_9 } }
+   }
+   if = { limit = { title:e_the_reach.holder = character:Tarly_1 } atfw_dissolve_randyll_reach_effect = yes }
+   character:Tarly_1 ?= {
+    if = { limit = { is_alive = yes } death = { death_reason = death_dragon_fire killer = character:Targaryen_9 } }
+   }
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   debug_log = "ATFW convoy: scenario host destroyed; Dickon executed before Randyll"
+  }
+ }
+}

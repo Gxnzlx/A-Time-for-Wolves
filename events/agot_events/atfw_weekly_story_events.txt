@@ -4,11 +4,10 @@
 atfw_weekly.1001 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0001 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1001 days = 1 }
   }
   else_if = {
@@ -28,11 +27,10 @@ atfw_weekly.1001 = {
 atfw_weekly.1002 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0002 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1002 days = 1 }
   }
   else_if = {
@@ -52,11 +50,10 @@ atfw_weekly.1002 = {
 atfw_weekly.1003 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0003 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1003 days = 1 }
   }
   else_if = {
@@ -76,11 +73,10 @@ atfw_weekly.1003 = {
 atfw_weekly.1004 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0004 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1004 days = 1 }
   }
   else_if = {
@@ -100,11 +96,10 @@ atfw_weekly.1004 = {
 atfw_weekly.1005 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0005 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1005 days = 1 }
   }
   else_if = {
@@ -124,11 +119,10 @@ atfw_weekly.1005 = {
 atfw_weekly.1006 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0006 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1006 days = 1 }
   }
   else_if = {
@@ -148,11 +142,10 @@ atfw_weekly.1006 = {
 atfw_weekly.1007 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0007 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1007 days = 1 }
   }
   else_if = {
@@ -172,11 +165,10 @@ atfw_weekly.1007 = {
 atfw_weekly.1008 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0008 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1008 days = 1 }
   }
   else_if = {
@@ -196,11 +188,10 @@ atfw_weekly.1008 = {
 atfw_weekly.1009 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0009 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1009 days = 1 }
   }
   else_if = {
@@ -220,11 +211,10 @@ atfw_weekly.1009 = {
 atfw_weekly.1010 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0010 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1010 days = 1 }
   }
   else_if = {
@@ -244,11 +234,10 @@ atfw_weekly.1010 = {
 atfw_weekly.1011 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_highgarden_0002 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1011 days = 1 }
   }
   else_if = {
@@ -263,11 +252,10 @@ atfw_weekly.1011 = {
 atfw_weekly.1012 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_highgarden_0003 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1012 days = 1 }
   }
   else_if = {
@@ -282,11 +270,10 @@ atfw_weekly.1012 = {
 atfw_weekly.1013 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0001 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1013 days = 1 }
   }
   else_if = {
@@ -301,11 +288,10 @@ atfw_weekly.1013 = {
 atfw_weekly.1014 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0002 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1014 days = 1 }
   }
   else_if = {
@@ -323,11 +309,10 @@ atfw_weekly.1014 = {
 atfw_weekly.1015 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0003 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1015 days = 1 }
   }
   else_if = {
@@ -347,11 +332,10 @@ atfw_weekly.1015 = {
 atfw_weekly.1016 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0007 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1016 days = 1 }
   }
   else_if = {
@@ -366,11 +350,10 @@ atfw_weekly.1016 = {
 atfw_weekly.1017 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0008 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1017 days = 1 }
   }
   else_if = {
@@ -390,11 +373,10 @@ atfw_weekly.1017 = {
 atfw_weekly.1018 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0009 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1018 days = 1 }
   }
   else_if = {
@@ -409,11 +391,10 @@ atfw_weekly.1018 = {
 atfw_weekly.1019 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0010 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1019 days = 1 }
   }
   else_if = {
@@ -433,11 +414,10 @@ atfw_weekly.1019 = {
 atfw_weekly.1020 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0011 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1020 days = 1 }
   }
   else_if = {
@@ -457,11 +437,10 @@ atfw_weekly.1020 = {
 atfw_weekly.1021 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0012 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1021 days = 1 }
   }
   else_if = {
@@ -481,11 +460,10 @@ atfw_weekly.1021 = {
 atfw_weekly.1022 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0013 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1022 days = 1 }
   }
   else_if = {
@@ -505,11 +483,10 @@ atfw_weekly.1022 = {
 atfw_weekly.1023 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0014 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1023 days = 1 }
   }
   else_if = {
@@ -529,11 +506,10 @@ atfw_weekly.1023 = {
 atfw_weekly.1024 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0015 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1024 days = 1 }
   }
   else_if = {
@@ -553,11 +529,10 @@ atfw_weekly.1024 = {
 atfw_weekly.1025 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0016 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1025 days = 1 }
   }
   else_if = {
@@ -577,11 +552,10 @@ atfw_weekly.1025 = {
 atfw_weekly.1026 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0017 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1026 days = 1 }
   }
   else_if = {
@@ -602,11 +576,10 @@ atfw_weekly.1026 = {
 atfw_weekly.1027 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0018 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1027 days = 1 }
   }
   else_if = {
@@ -631,11 +604,10 @@ atfw_weekly.1027 = {
 atfw_weekly.1028 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0019 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1028 days = 1 }
   }
   else_if = {
@@ -655,11 +627,10 @@ atfw_weekly.1028 = {
 atfw_weekly.1029 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0020 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1029 days = 1 }
   }
   else_if = {
@@ -681,11 +652,10 @@ atfw_weekly.1029 = {
 atfw_weekly.1030 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0021 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1030 days = 1 }
   }
   else_if = {
@@ -711,11 +681,10 @@ atfw_weekly.1030 = {
 atfw_weekly.1031 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0022 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1031 days = 1 }
   }
   else_if = {
@@ -736,11 +705,10 @@ atfw_weekly.1031 = {
 atfw_weekly.1032 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0023 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1032 days = 1 }
   }
   else_if = {
@@ -758,11 +726,10 @@ atfw_weekly.1032 = {
 atfw_weekly.1033 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0024 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1033 days = 1 }
   }
   else_if = {
@@ -781,11 +748,10 @@ atfw_weekly.1033 = {
 atfw_weekly.1034 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0025 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1034 days = 1 }
   }
   else_if = {
@@ -806,11 +772,10 @@ atfw_weekly.1034 = {
 atfw_weekly.1035 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0003 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1035 days = 1 }
   }
   else_if = {
@@ -828,11 +793,10 @@ atfw_weekly.1035 = {
 atfw_weekly.1036 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0004 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1036 days = 1 }
   }
   else_if = {
@@ -851,11 +815,10 @@ atfw_weekly.1036 = {
 atfw_weekly.1037 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0005 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1037 days = 1 }
   }
   else_if = {
@@ -876,11 +839,10 @@ atfw_weekly.1037 = {
 atfw_weekly.1038 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0006 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1038 days = 1 }
   }
   else_if = {
@@ -895,11 +857,10 @@ atfw_weekly.1038 = {
 atfw_weekly.1039 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0007 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1039 days = 1 }
   }
   else_if = {
@@ -914,11 +875,10 @@ atfw_weekly.1039 = {
 atfw_weekly.1040 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0009 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1040 days = 1 }
   }
   else_if = {
@@ -937,11 +897,10 @@ atfw_weekly.1040 = {
 atfw_weekly.1041 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0010 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1041 days = 1 }
   }
   else_if = {
@@ -956,11 +915,10 @@ atfw_weekly.1041 = {
 atfw_weekly.1042 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0011 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1042 days = 1 }
   }
   else_if = {
@@ -975,11 +933,10 @@ atfw_weekly.1042 = {
 atfw_weekly.1043 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0012 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1043 days = 1 }
   }
   else_if = {
@@ -994,11 +951,10 @@ atfw_weekly.1043 = {
 atfw_weekly.1044 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0013 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1044 days = 1 }
   }
   else_if = {
@@ -1013,11 +969,10 @@ atfw_weekly.1044 = {
 atfw_weekly.1045 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0014 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1045 days = 1 }
   }
   else_if = {
@@ -1037,11 +992,10 @@ atfw_weekly.1045 = {
 atfw_weekly.1046 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0001 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1046 days = 1 }
   }
   else_if = {
@@ -1063,11 +1017,10 @@ atfw_weekly.1046 = {
 atfw_weekly.1047 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0002 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1047 days = 1 }
   }
   else_if = {
@@ -1089,11 +1042,10 @@ atfw_weekly.1047 = {
 atfw_weekly.1048 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0003 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1048 days = 1 }
   }
   else_if = {
@@ -1115,11 +1067,10 @@ atfw_weekly.1048 = {
 atfw_weekly.1049 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0004 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1049 days = 1 }
   }
   else_if = {
@@ -1142,11 +1093,10 @@ atfw_weekly.1049 = {
 atfw_weekly.1050 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0006 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1050 days = 1 }
   }
   else_if = {
@@ -1168,11 +1118,10 @@ atfw_weekly.1050 = {
 atfw_weekly.1051 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0007 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1051 days = 1 }
   }
   else_if = {
@@ -1194,11 +1143,10 @@ atfw_weekly.1051 = {
 atfw_weekly.1052 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0001 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1052 days = 1 }
   }
   else_if = {
@@ -1213,11 +1161,10 @@ atfw_weekly.1052 = {
 atfw_weekly.1053 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0002 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1053 days = 1 }
   }
   else_if = {
@@ -1232,11 +1179,10 @@ atfw_weekly.1053 = {
 atfw_weekly.1054 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0003 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1054 days = 1 }
   }
   else_if = {
@@ -1251,11 +1197,10 @@ atfw_weekly.1054 = {
 atfw_weekly.1055 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0004 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1055 days = 1 }
   }
   else_if = {
@@ -1270,11 +1215,10 @@ atfw_weekly.1055 = {
 atfw_weekly.1056 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0005 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1056 days = 1 }
   }
   else_if = {
@@ -1292,11 +1236,10 @@ atfw_weekly.1056 = {
 atfw_weekly.1057 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0006 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1057 days = 1 }
   }
   else_if = {
@@ -1311,11 +1254,10 @@ atfw_weekly.1057 = {
 atfw_weekly.1058 = {
  type = character_event
  hidden = yes
- orphan = yes
  trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0007 } }
  immediate = {
   if = {
-   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   limit = { OR = { has_global_variable = atfw_story_weekly_cooldown atfw_highgarden_story_pending = yes } }
    trigger_event = { id = atfw_weekly.1058 days = 1 }
   }
   else_if = {

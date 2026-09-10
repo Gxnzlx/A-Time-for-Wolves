@@ -1,0 +1,20 @@
+﻿on_game_start_after_lobby = { on_actions = { atfw_start_baelish_watch } }
+atfw_start_baelish_watch = {
+ effect = {
+  if = {
+   limit = { game_start_date = 8303.12.31 }
+   character:Targaryen_9 ?= { trigger_event = { id = atfw_domain_watch.0001 days = 1 } }
+  }
+ }
+}
+on_death = { on_actions = { atfw_randyll_reach_death } }
+atfw_randyll_reach_death = {
+ trigger = {
+  this = character:Tarly_1
+  has_global_variable = atfw_highgarden_fallen
+  NOT = { has_global_variable = atfw_randyll_reach_dissolved }
+ }
+ effect = {
+  title:h_the_iron_throne.holder ?= { trigger_event = { id = atfw_domain_watch.0002 days = 1 } }
+ }
+}

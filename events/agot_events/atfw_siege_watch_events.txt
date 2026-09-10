@@ -1,0 +1,60 @@
+﻿namespace = atfw_siege_watch
+# Reuses the old entry point, including pending calls in existing saves.
+atfw_siege_watch.0001 = {
+ type = character_event
+ hidden = yes
+ trigger = {
+  has_global_variable = atfw_hg_offensive_started
+  NOT = { has_global_variable = atfw_highgarden_fallen }
+  NOT = { has_global_variable = atfw_hg_siege_relieved }
+  NOT = { has_global_variable = atfw_hg_narrative_started }
+ }
+ immediate = {
+  set_global_variable = { name = atfw_hg_narrative_started value = yes }
+  trigger_event = { id = atfw_siege_watch.0002 days = 30 }
+  debug_log = "ATFW Highgarden: narrative siege started, 30 days"
+ }
+}
+atfw_siege_watch.0002 = {
+ type = character_event
+ hidden = yes
+ trigger = {
+  NOT = { has_global_variable = atfw_highgarden_fallen }
+  NOT = { has_global_variable = atfw_hg_siege_relieved }
+ }
+ immediate = {
+  if = {
+   limit = {
+    is_alive = yes
+    exists = title:b_highgarden.holder
+    is_at_war_with = title:b_highgarden.holder
+    any_character_war = { using_cb = atfw_daenerys_conquest_war primary_defender = root }
+    has_global_variable = atfw_hg_lannister_strength
+   }
+   if = {
+    limit = {
+     any_army = {
+      is_army_in_combat = yes
+      location.county = title:c_highgarden
+     }
+    }
+    trigger_event = { id = atfw_siege_watch.0002 days = 1 }
+   }
+   else = {
+    set_global_variable = { name = atfw_hg_narrative_ready value = yes }
+    set_global_variable = { name = atfw_hg_castle_taken value = yes }
+    atfw_highgarden_dispatch_fall_effect = yes
+    debug_log = "ATFW Highgarden: narrative siege completed"
+   }
+  }
+  else = { atfw_highgarden_relieve_siege_effect = yes }
+ }
+}
+atfw_siege_watch.0003 = {
+ type = character_event
+ title = atfw_siege_watch.0003.t
+ desc = atfw_siege_watch.0003.desc
+ theme = war
+ override_background = { reference = atfw_highgarden_siege }
+ option = { name = atfw_siege_watch.0003.a ai_chance = { base = 100 } }
+}

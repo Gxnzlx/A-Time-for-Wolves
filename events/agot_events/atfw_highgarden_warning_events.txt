@@ -1,0 +1,58 @@
+﻿namespace = atfw_highgarden
+atfw_highgarden.0009 = {
+ type = character_event
+ hidden = yes
+ trigger = {
+  NOT = { has_global_variable = atfw_hg_warning_sent }
+  NOT = { has_global_variable = atfw_hg_offensive_started }
+  NOT = { has_global_variable = atfw_highgarden_fallen }
+ }
+ immediate = {
+  set_global_variable = { name = atfw_hg_warning_sent value = yes }
+  if = {
+   limit = { character:Redwyne_2 ?= { is_alive = yes } }
+   character:Redwyne_2 = { trigger_event = atfw_highgarden.0010 }
+  }
+  else = { trigger_event = { id = atfw_highgarden.0001 days = 3 } }
+ }
+}
+atfw_highgarden.0010 = {
+ type = character_event
+ title = atfw_highgarden.0010.t
+ desc = atfw_highgarden.0010.desc
+ theme = war
+ override_background = { reference = atfw_highgarden_lions_approach }
+ option = {
+  name = atfw_highgarden.0010.a
+  ai_chance = { base = 100 }
+  hidden_effect = {
+   if = {
+    limit = { NOT = { has_global_variable = atfw_hg_help_requested } }
+    set_global_variable = { name = atfw_hg_help_requested value = yes }
+    trigger_event = { id = atfw_highgarden.0001 days = 3 }
+    character:Targaryen_9 ?= {
+     if = { limit = { is_alive = yes } trigger_event = atfw_highgarden.0011 }
+    }
+   }
+  }
+ }
+}
+atfw_highgarden.0011 = {
+ type = character_event
+ title = atfw_highgarden.0011.t
+ desc = atfw_highgarden.0011.desc
+ theme = war
+ override_background = { reference = agot_dragonstone_throneroom }
+ left_portrait = { character = root animation = personality_bold }
+ right_portrait = { character = character:Lannister_8 animation = personality_rational }
+ option = {
+  name = atfw_highgarden.0011.a
+  ai_chance = { base = 100 }
+  hidden_effect = {
+   # Entry condition for the future convoy battle; no unimplemented event call.
+   set_global_variable = { name = atfw_hg_daenerys_marching value = yes }
+   set_global_variable = { name = atfw_convoy_battle_pending value = yes }
+   debug_log = "ATFW Highgarden: Daenerys answered the appeal; convoy battle pending"
+  }
+ }
+}

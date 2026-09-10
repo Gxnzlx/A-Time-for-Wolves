@@ -1,0 +1,22 @@
+﻿atfw_dissolve_randyll_reach_effect = {
+ if = {
+  limit = {
+   exists = title:e_the_reach.holder
+   exists = title:h_the_iron_throne.holder
+   NOT = { has_global_variable = atfw_randyll_reach_dissolved }
+  }
+  title:h_the_iron_throne.holder = { save_scope_as = atfw_reach_crown }
+  title:e_the_reach.holder = { save_scope_as = atfw_reach_lord }
+  create_title_and_vassal_change = { type = swear_fealty save_scope_as = atfw_reach_dissolution add_claim_on_loss = no }
+  scope:atfw_reach_lord = {
+   every_vassal = {
+    change_liege = { liege = scope:atfw_reach_crown change = scope:atfw_reach_dissolution }
+    set_variable = { name = agot_pwl_direct value = scope:atfw_reach_crown }
+    set_variable = { name = agot_pwl_top value = scope:atfw_reach_crown }
+   }
+  }
+  resolve_title_and_vassal_change = scope:atfw_reach_dissolution
+  scope:atfw_reach_lord = { destroy_title = title:e_the_reach }
+  set_global_variable = { name = atfw_randyll_reach_dissolved value = yes }
+ }
+}

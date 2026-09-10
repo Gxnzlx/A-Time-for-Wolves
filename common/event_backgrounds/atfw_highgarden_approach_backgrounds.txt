@@ -1,0 +1,7 @@
+﻿atfw_highgarden_lions_approach = {
+ background = {
+  reference = "gfx/illustrations/atfw_backgrounds/highgarden_lions_approach.dds"
+  environment = "environment_event_alley"
+  ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
+ }
+}

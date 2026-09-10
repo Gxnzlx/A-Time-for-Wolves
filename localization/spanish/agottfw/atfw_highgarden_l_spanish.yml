@@ -1,24 +1,36 @@
 ﻿l_spanish:
+
  atfw_highgarden.0002.t:0 "La caída de Altojardín"
- atfw_highgarden.0002.desc:0 "Altojardín ha caído ante el ejército Lannister. Olenna permaneció en la fortaleza y ha sido ejecutada; los Tyrell que no estaban protegidos tampoco han sido perdonados.\n\nLeo Tyrell y los supervivientes han formado un campamento en el exilio. Randyll Tarly recibe Altojardín y el Dominio bajo la autoridad de Cersei."
- atfw_highgarden.0002.fled:0 "Altojardín ha sido abandonado y ha caído en manos Lannister. Olenna logró huir con los Tyrell protegidos y encabeza ahora a las Rosas del Exilio.\n\nRandyll Tarly recibe Altojardín y el Dominio bajo la autoridad de Cersei. Hemos perdido una fortaleza, pero Olenna sigue viva."
+ atfw_highgarden.0002.desc:0 "Altojardín ha caído. El ejército Lannister arrasó sus defensas y tomó el castillo antes de que pudiera llegar ayuda. Olenna decidió quedarse, y con su muerte el dominio de los Tyrell sobre el Dominio ha llegado a su fin.\n\nTheodore Tyrell ha reunido a quienes escaparon de la caída y ahora dirige en el exilio a los restos de su casa. Como recompensa por volverse contra los Tyrell, Cersei ha concedido Altojardín y el Dominio a Randyll Tarly.\n\nLos leones nos han arrebatado nuestras tierras, nuestro castillo y a la última de la vieja generación. Pero la Casa Tyrell aún no ha desaparecido."
+ atfw_highgarden.0002.fled:0 "Altojardín ha caído. En lugar de quedarse a esperar al ejército Lannister, Olenna escapó con los Tyrell que pudo salvar y abandonó el castillo al enemigo.\n\nRandyll Tarly ha sido recompensado por su traición con Altojardín y el Dominio, mientras Olenna dirige ahora en el exilio a los restos de la Casa Tyrell.\n\nLos leones nos han arrebatado nuestras tierras y nuestro castillo, pero no pudieron atrapar a la Reina de las Espinas."
  atfw_highgarden.0002.a:0 "Los leones responderán por esto."
- atfw_highgarden.0003.t:0 "Un mes en Rocadragón"
- atfw_highgarden.0003.desc:0 "Ha pasado un mes desde mi llegada a Rocadragón. La guerra del sur sigue ocupando a esta corte, pero no puedo seguir esperando.\n\nDebo hablar con Daenerys. Los muertos no concederán al Norte una tregua."
+
+ atfw_highgarden.0003.t:0 "Noticias de Altojardín"
+ atfw_highgarden.0003.desc:0 "Las noticias de Altojardín han llegado a Rocadragón. La resistencia de Olenna y el destino del Dominio han ocupado a la reina y a su consejo mientras yo esperaba.\n\nVine por el vidriagón y por ayuda contra los muertos. Ahora que conocemos el desenlace, debo volver a hablar con Daenerys. El peligro más allá del Muro no ha esperado a que terminen las guerras del sur."
  atfw_highgarden.0003.a:0 "Es hora de hablar con la reina."
+
  atfw_highgarden.0004.t:0 "El asedio de Altojardín"
- atfw_highgarden.0004.desc:0 "Treinta mil soldados Lannister se han presentado ante Altojardín. Preparan sus máquinas de asedio y rodean nuestras defensas.\n\nAún puedo escapar con los miembros de nuestra familia que he decidido proteger. Abandonaría mis tierras para encabezar un campamento de aventureros en Lanza del Sol.\n\nSi me quedo, Leo conducirá a los supervivientes al exilio mientras intento defender la fortaleza. Si los leones la conquistan, me ejecutarán."
- atfw_highgarden.0004.stay:0 "Me quedaré. Leo pondrá a nuestra familia a salvo."
- atfw_highgarden.0004.flee:0 "Huiremos juntos. Aún no es nuestro final."
+ atfw_highgarden.0004.desc:0 "Los Lannister están aquí. Jaime ha traído su ejército al sur mientras esperábamos que Roca Casterly soportara el peso del ataque de Daenerys. Randyll Tarly marcha a su lado, y los hombres que antaño respondían ante Altojardín avanzan ahora contra sus murallas bajo los estandartes del león.\n\nSé lo que quiere Cersei. Ya me ha arrebatado a mi hijo, a mis nietos y el futuro de mi casa. Ahora pretende quitarme lo que queda.\n\nTodavía hay tiempo para partir. Podría reunir a los miembros de mi familia que puedo proteger y abandonar Altojardín antes de que la trampa se cierre sobre nosotros. O puedo permanecer en el castillo mientras Theodore los conduce a un lugar seguro. He pasado toda mi vida entre estas rosas. Quizá esta anciana ya ha huido suficiente."
+ atfw_highgarden.0004.stay:0 "Me quedaré. Theodore llevará a nuestra familia a un lugar seguro."
+ atfw_highgarden.0004.flee:0 "Cersei ya me ha arrebatado suficiente. No tendrá también mi vida."
+
  atfw_highgarden.0005.t:0 "La caída de Altojardín"
- atfw_highgarden.0005.desc:0 "El ejército ha conquistado Altojardín. Olenna se quedó y ha pagado con su vida, junto con los Tyrell que no escaparon a la sentencia.\n\nLeo y los supervivientes han formado un campamento en el exilio. Randyll Tarly recibe Altojardín y el Dominio en mi nombre."
- atfw_highgarden.0005.fled:0 "Olenna abandonó Altojardín y huyó con los Tyrell protegidos. Viven ahora en un campamento de aventureros, lejos de las tierras que han perdido.\n\nRandyll Tarly recibe Altojardín y el Dominio en mi nombre. La vieja espina ha escapado, pero su fortaleza es nuestra."
- atfw_highgarden.0005.a:0 "Oye mi rugido."
+ atfw_highgarden.0005.desc:0 "Altojardín es nuestro. El ejército de Jaime atravesó sus defensas sin apenas resistencia, y el asentamiento de los Tyrell pertenece ahora a la Corona. Olenna decidió permanecer en su castillo hasta el final. No volverá a causarme problemas.\n\nTheodore Tyrell escapó con los restos de su familia y ahora los dirige en el exilio, pero han perdido las tierras y riquezas que antaño hicieron poderosa a su casa. Randyll Tarly recibirá Altojardín y el Dominio por haber elegido el bando vencedor.\n\nLas rosas han sido arrancadas de su jardín. Lo que sobreviva puede marchitarse en otra parte."
+ atfw_highgarden.0005.fled:0 "Altojardín es nuestro, pero la vieja escapó antes de que Jaime pudiera ponerle las manos encima. Olenna huyó con los Tyrell que pudo salvar y ahora se aferra a los restos de su casa en el exilio.\n\nQue así sea. Randyll Tarly recibirá Altojardín y el Dominio, y las riquezas de los Tyrell pertenecen ahora a la Corona. Puede que Olenna aún conserve sus espinas, pero yo le he arrebatado su jardín."
+ atfw_highgarden.0005.a:0 "El Dominio es mío."
+
  atfw_highgarden.0007.t:0 "La última rosa de Altojardín"
- atfw_highgarden.0007.desc:0 "Las defensas han cedido. Los Lannister han conquistado Altojardín y mis esfuerzos por resistir han llegado a su fin.\n\nLeo y los Tyrell protegidos ya están lejos. Mi decisión les ha dado una oportunidad, pero para mí ya no habrá huida. Los vencedores han dictado mi sentencia."
- atfw_highgarden.0007.a:0 "No me verán suplicar."
- atfw_highgarden.stay_tt:0 "Permaneces en Altojardín. Leo Tyrell liderará a los once Tyrell protegidos en un campamento de aventureros. Solo morirás por esta cadena si los Lannister conquistan la fortaleza."
- atfw_highgarden.flee_tt:0 "Abandonas tus títulos territoriales y formas el campamento de aventureros «Las Rosas del Exilio» con los once Tyrell protegidos. Altojardín cae y el Dominio pasa a Randyll."
- atfw_highgarden.death_tt:0 "Olenna será ejecutada. Su partida puede terminar si no dispone de una sucesión jugable."
- atfw_highgarden_exiles_title:0 "Las Rosas del Exilio"
- atfw_highgarden_lannister_host:0 "Ejército Lannister de Altojardín"
+ atfw_highgarden.0007.desc:0 "Ha terminado antes de lo que esperaba. Los Lannister han tomado Altojardín, y quedan demasiado pocos hombres dentro de estas murallas como para fingir que la batalla puede continuar.\n\nAl menos Theodore y los demás ya están lejos. Pase lo que pase conmigo ahora, Cersei no nos tendrá a todos. El nombre Tyrell sobrevivirá más allá de estas murallas, aunque nuestros estandartes ya no ondeen sobre ellas.\n\nHe pasado toda una vida viendo a hombres orgullosos confundir la victoria con la sabiduría. Ahora Jaime Lannister ha venido a verme, sin duda portando consigo el juicio de su hermana.\n\nMuy bien. Veamos qué tiene que decir el león."
+ atfw_highgarden.0007.a:0 "Hazlo pasar."
+
+ atfw_highgarden.0008.t:0 "La Reina de las Espinas"
+ atfw_highgarden.0008.desc:0 "Jaime me encuentra sola en mis aposentos mientras sus soldados despojan Altojardín de sus riquezas. No habrá cadenas, ni mazmorra ni viaje a Desembarco del Rey. Vierte veneno en una copa de vino y me asegura que no sentiré dolor.\n\nUna muestra de bondad de un Lannister. Qué conmovedor.\n\nBebo. Solo entonces le hablo de Joffrey. Nunca fueron Tyrion ni Sansa. Yo preparé su muerte y vi al precioso niño de Cersei ahogarse en su propia boda. El rostro de Jaime cambia cuando comprende lo que le estoy diciendo.\n\nCersei me ha arrebatado mi hogar, mi familia y ahora mi vida. Pero aún queda una última cosa que puedo darle: la verdad."
+ atfw_highgarden.0008.a:0 "Díselo a Cersei. Quiero que sepa que fui yo."
+
+ atfw_highgarden.poison_tt:0 "Olenna muere por el veneno que le entrega Jaime Lannister. La caída de Altojardín queda resuelta; los once Tyrell protegidos quedan exentos de estas ejecuciones."
+ atfw_highgarden.stay_tt:0 "Permaneces en Altojardín mientras Theodore conduce al exilio a los Tyrell protegidos. El asedio narrativo dura 30 días desde la llegada del ejército. Una derrota del bando de Cersei en el condado interrumpe la ofensiva; si sigue sin ser derrotado al vencer el plazo, se resolverá la caída del castillo. Una batalla en curso aplaza la resolución."
+ atfw_highgarden.flee_tt:0 "Sobrevivirás y dirigirás el campamento de aventureros de las Rosas en el Exilio junto a los once Tyrell protegidos. Abandonarás tus títulos territoriales; Randyll recibirá Altojardín y el Dominio. Los demás Tyrell vivos serán ejecutados. Olenna no será ejecutada."
+
+ atfw_highgarden.death_tt:0 "Olenna será ejecutada. Tu partida puede terminar si no tienes una sucesión jugable."
+ atfw_highgarden_exiles_title:0 "Las Rosas en el Exilio"
+ atfw_highgarden_lannister_host:0 "Hueste Lannister de Altojardín"

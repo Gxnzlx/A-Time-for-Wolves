@@ -1,0 +1,43 @@
+﻿# Called only when the North and Vale swear fealty to Daenerys.
+atfw_baelish_loses_harrenhal_effect = {
+ if = {
+  limit = {
+   NOT = { has_global_variable = atfw_baelish_harrenhal_verified }
+   character:Lannister_6 ?= { is_alive = yes }
+   character:Baelish_2 ?= { is_alive = yes }
+  }
+  create_title_and_vassal_change = { type = granted save_scope_as = atfw_harrenhal_transfer add_claim_on_loss = no }
+  title:c_harrenhal = {
+   change_title_holder_include_vassals = { holder = character:Lannister_6 change = scope:atfw_harrenhal_transfer }
+  }
+  resolve_title_and_vassal_change = scope:atfw_harrenhal_transfer
+  character:Baelish_2 = {
+   every_held_title = {
+    limit = {
+     NOT = { this = title:c_midlor_point }
+     NOT = { this = title:c_harrenhal }
+     # Keep the holdings belonging to his one retained county.
+     NOT = { AND = { tier = tier_barony title_province ?= { county = title:c_midlor_point } } }
+    }
+    add_to_list = atfw_baelish_titles_to_destroy
+   }
+
+  }
+  every_in_list = {
+   list = atfw_baelish_titles_to_destroy
+   character:Baelish_2 = { destroy_title = prev }
+  }
+  character:Baelish_2 = {
+   if = {
+    limit = { has_title = title:c_midlor_point }
+    set_primary_title_to = title:c_midlor_point
+    set_realm_capital = title:c_midlor_point
+   }
+  }
+  if = {
+   limit = { title:c_harrenhal.holder = character:Lannister_6 character:Baelish_2 = { NOT = { has_title = title:d_harrenhal } } }
+   set_global_variable = { name = atfw_baelish_harrenhal_verified value = yes }
+  }
+  debug_log = "ATFW: Harrenhal transferred to Cersei; Baelish reduced to Midlor Point"
+ }
+}

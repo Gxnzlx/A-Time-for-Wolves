@@ -1,0 +1,14 @@
+﻿atfw_highgarden_story_pending = {
+ OR = {
+  AND = {
+   NOT = { has_global_variable = atfw_highgarden_fallen }
+   NOT = { has_global_variable = atfw_hg_siege_relieved }
+   OR = {
+    has_global_variable = atfw_hg_warning_sent
+    has_global_variable = atfw_hg_offensive_started
+    character:Stark_7 ?= { has_character_flag = atfw_resolve_atfw_jon_daenerys_0007_done }
+   }
+  }
+  AND = { has_global_variable = atfw_convoy_queued NOT = { has_global_variable = atfw_convoy_resolved } }
+ }
+}

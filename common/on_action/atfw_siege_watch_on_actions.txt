@@ -1,0 +1,16 @@
+﻿on_army_combat_finished = {
+ on_actions = { atfw_highgarden_assault_battle_finished }
+}
+atfw_highgarden_assault_battle_finished = {
+ trigger = {
+  this = character:Lannister_6
+  has_global_variable = atfw_hg_offensive_started
+  NOT = { has_global_variable = atfw_highgarden_fallen }
+  NOT = { has_global_variable = atfw_hg_siege_relieved }
+  exists = scope:victory
+  scope:victory = no
+  exists = scope:combat_side.combat.location
+  scope:combat_side.combat.location.county = title:c_highgarden
+ }
+ effect = { atfw_highgarden_relieve_siege_effect = yes }
+}

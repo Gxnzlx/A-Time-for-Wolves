@@ -5,12 +5,13 @@ atfw_highgarden_siege_completed = {
  trigger = {
   has_global_variable = atfw_hg_offensive_started
   NOT = { has_global_variable = atfw_highgarden_fallen }
+  NOT = { has_global_variable = atfw_hg_siege_relieved }
   scope:barony = title:b_highgarden
   exists = scope:war
   scope:war ?= { using_cb = atfw_daenerys_conquest_war primary_defender = character:Lannister_6 is_defender = root }
  }
  effect = {
   set_global_variable = { name = atfw_hg_castle_taken value = yes }
-  atfw_highgarden_dispatch_fall_effect = yes
+  # The narrative deadline dispatches the final event.
  }
 }

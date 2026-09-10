@@ -1,24 +1,37 @@
 ﻿l_english:
  atfw_highgarden.0002.t:0 "The Fall of Highgarden"
- atfw_highgarden.0002.desc:0 "Highgarden has fallen to the Lannister army. Olenna remained in the fortress and has been executed; the unprotected Tyrells were not spared either.\n\nLeo Tyrell and the survivors have formed an exile camp. Randyll Tarly receives Highgarden and the Reach under Cersei."
- atfw_highgarden.0002.fled:0 "Highgarden has been abandoned and fallen into Lannister hands. Olenna escaped with the protected Tyrells and now leads the Roses in Exile.\n\nRandyll Tarly receives Highgarden and the Reach under Cersei. We have lost a fortress, but Olenna lives."
+ atfw_highgarden.0002.desc:0 "Highgarden has fallen. The Lannister army swept aside its defenses and seized the castle before help could reach it. Olenna remained behind, and with her death the Tyrell hold over the Reach has come to an end.\n\nTheodore Tyrell has gathered those who escaped the fall and now leads the remnants of his house in exile. In reward for turning against the Tyrells, Randyll Tarly has been granted Highgarden and the Reach by Cersei.\n\nThe lions have taken our lands, our castle and the last of the old generation. But House Tyrell is not yet gone."
+ atfw_highgarden.0002.fled:0 "Highgarden has fallen. Rather than remain to await the Lannister army, Olenna escaped with the Tyrells she could save and abandoned the castle to the enemy.\n\nRandyll Tarly has been rewarded for his betrayal with Highgarden and the Reach, while Olenna now leads the remnants of House Tyrell in exile.\n\nThe lions have taken our lands and our castle, but they failed to take the Queen of Thorns."
  atfw_highgarden.0002.a:0 "The lions will answer for this."
- atfw_highgarden.0003.t:0 "A Month at Dragonstone"
- atfw_highgarden.0003.desc:0 "A month has passed since I reached Dragonstone. The southern war still occupies this court, but I cannot keep waiting.\n\nI must speak with Daenerys. The dead will grant the North no truce."
+
+ atfw_highgarden.0003.t:0 "News from Highgarden"
+ atfw_highgarden.0003.desc:0 "The news from Highgarden has reached Dragonstone. Olenna's stand and the fate of the Reach have occupied the queen and her council while I waited.\n\nI came here for dragonglass and for help against the dead. With word of the outcome now before us, I must speak to Daenerys again. The danger beyond the Wall has not waited for the wars of the south."
  atfw_highgarden.0003.a:0 "It is time to speak with the queen."
+
  atfw_highgarden.0004.t:0 "The Siege of Highgarden"
- atfw_highgarden.0004.desc:0 "Thirty thousand Lannister soldiers have arrived at Highgarden. They ready their siege engines and surround our defenses.\n\nI can still escape with the family members I have chosen to protect. I would abandon my lands to lead an adventurer camp at Sunspear.\n\nIf I stay, Leo will lead the survivors into exile while I defend the fortress. If the lions take it, they will execute me."
- atfw_highgarden.0004.stay:0 "I will stay. Leo will bring our family to safety."
- atfw_highgarden.0004.flee:0 "We will flee together. This is not our end."
+ atfw_highgarden.0004.desc:0 "The Lannisters are here. Jaime has brought his army south while we were expecting Casterly Rock to bear the weight of Daenerys's attack. Randyll Tarly marches beside him, and the men who once answered to Highgarden now come against its walls beneath the lion's banners.\n\nI know what Cersei wants. She has already taken my son, my grandchildren and the future of my house. Now she means to take what remains.\n\nThere is still time to leave. I could gather those of my family I can protect and abandon Highgarden before the trap closes around us. Or I can remain in the castle while Theodore leads them to safety. I have spent my life among these roses. Perhaps an old woman has run far enough."
+ atfw_highgarden.0004.stay:0 "I will stay. Theodore will bring our family to safety."
+ atfw_highgarden.0004.flee:0 "Cersei has taken enough from me. She will not have my life as well."
+
  atfw_highgarden.0005.t:0 "The Fall of Highgarden"
- atfw_highgarden.0005.desc:0 "The army has conquered Highgarden. Olenna remained and has paid with her life, along with the Tyrells who were not spared.\n\nLeo and the survivors have formed an exile camp. Randyll Tarly receives Highgarden and the Reach in my name."
- atfw_highgarden.0005.fled:0 "Olenna abandoned Highgarden and fled with the protected Tyrells. They now live in an adventurer camp, far from the lands they have lost.\n\nRandyll Tarly receives Highgarden and the Reach in my name. The old thorn escaped, but her fortress is ours."
- atfw_highgarden.0005.a:0 "Hear me roar."
+ atfw_highgarden.0005.desc:0 "Highgarden is ours. Jaime's army broke through its defenses with little resistance, and the Tyrell seat now belongs to the Crown. Olenna chose to remain in her castle until the end. She will trouble me no longer.\n\nTheodore Tyrell escaped with the remnants of his family and now leads them in exile, but they have lost the lands and wealth that once made their house powerful. Randyll Tarly will receive Highgarden and the Reach for choosing the winning side.\n\nThe roses have been cut from their garden. Whatever survives can wither elsewhere."
+ atfw_highgarden.0005.fled:0 "Highgarden is ours, but the old woman slipped away before Jaime could close his hand around her. Olenna fled with those Tyrells she could save and now clings to the remnants of her house in exile.\n\nLet her. Randyll Tarly will receive Highgarden and the Reach, and the wealth of the Tyrells now belongs to the Crown. Olenna may still have her thorns, but I have taken her garden."
+ atfw_highgarden.0005.a:0 "The Reach is mine."
+
  atfw_highgarden.0007.t:0 "The Last Rose of Highgarden"
- atfw_highgarden.0007.desc:0 "The defenses have failed. The Lannisters have conquered Highgarden, and my resistance has reached its end.\n\nLeo and the protected Tyrells are already far away. My choice gave them a chance, but there will be no escape for me. The victors have pronounced my sentence."
- atfw_highgarden.0007.a:0 "They will not hear me beg."
- atfw_highgarden.stay_tt:0 "You remain in Highgarden. Leo Tyrell will lead the eleven protected Tyrells in an adventurer camp. This chain only executes you if the Lannisters conquer the fortress."
- atfw_highgarden.flee_tt:0 "You abandon your territorial titles and form the Roses in Exile adventurer camp with the eleven protected Tyrells. Highgarden falls and Randyll receives the Reach."
+ atfw_highgarden.0007.desc:0 "It is over sooner than I expected. The Lannisters have taken Highgarden, and there are too few men left within these walls to pretend that the battle can continue.\n\nAt least Theodore and the others are gone. Whatever happens to me now, Cersei will not have all of us. The Tyrell name will survive beyond these walls, even if our banners no longer fly above them.\n\nI have spent a lifetime watching proud men mistake victory for wisdom. Now Jaime Lannister has come to see me, no doubt carrying his sister's judgment with him.\n\nVery well. Let us see what the lion has to say."
+ atfw_highgarden.0007.a:0 "Send him in."
+
+ atfw_highgarden.0008.t:0 "The Queen of Thorns"
+ atfw_highgarden.0008.desc:0 "Jaime finds me alone in my chamber while his soldiers strip Highgarden of its wealth. There will be no chains, no dungeon and no journey to King's Landing. He pours poison into a cup of wine and tells me it will be painless.\n\nA kindness from a Lannister. How touching.\n\nI drink it. Only then do I tell him about Joffrey. It was never Tyrion, nor Sansa. I arranged his death and watched Cersei's precious boy choke at his own wedding. Jaime's face changes as he understands what I am telling him.\n\nCersei has taken my home, my family and now my life. But there is one last thing I can give her: the truth."
+ atfw_highgarden.0008.a:0 "Tell Cersei. I want her to know it was me."
+
+ atfw_highgarden.poison_tt:0 "Olenna dies from the poison given to her by Jaime Lannister. The fall of Highgarden is resolved; the eleven protected Tyrells remain exempt from these executions."
+
+ atfw_highgarden.stay_tt:0 "You remain in Highgarden while Theodore leads the protected Tyrells into exile. The narrative siege lasts 30 days from the arrival of the army. A defeat of Cersei's side in the county interrupts the offensive; otherwise, the fall of the castle is resolved at the deadline. An ongoing battle delays that resolution."
+ atfw_highgarden.flee_tt:0 "You survive and lead the Roses in Exile adventurer camp with the eleven protected Tyrells. You abandon your territorial titles; Randyll receives Highgarden and the Reach. The other living Tyrells are executed. Olenna is not executed."
  atfw_highgarden.death_tt:0 "Olenna will be executed. Her game may end if she has no playable succession."
  atfw_highgarden_exiles_title:0 "The Roses in Exile"
  atfw_highgarden_lannister_host:0 "Lannister Host of Highgarden"
+
+

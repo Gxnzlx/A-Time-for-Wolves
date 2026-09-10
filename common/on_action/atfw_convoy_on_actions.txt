@@ -1,0 +1,14 @@
+﻿on_death = { on_actions = { atfw_olenna_convoy_death } }
+atfw_olenna_convoy_death = {
+ trigger = {
+  this = character:Redwyne_2
+  has_global_variable = atfw_highgarden_fallen
+  NOT = { has_global_variable = atfw_hg_olenna_fled }
+  NOT = { has_global_variable = atfw_convoy_queued }
+  character:Targaryen_9 ?= { is_alive = yes }
+ }
+ effect = {
+  set_global_variable = { name = atfw_convoy_queued value = yes }
+  character:Targaryen_9 = { trigger_event = { id = atfw_convoy.0001 days = 1 } }
+ }
+}

@@ -179,6 +179,35 @@ atfw_conquest_settle_domains_effect = {
  scope:atfw_conquest_loser = {
   if = { limit = { is_alive = yes } death = { death_reason = death_execution killer = scope:atfw_conquest_winner } }
  }
+ if = {
+  limit = { scope:atfw_conquest_winner = character:Lannister_6 character:Lannister_6 = { is_alive = yes has_title = title:h_the_iron_throne } }
+  every_ruler = {
+   limit = {
+    is_alive = yes
+    is_landed = yes
+    is_independent_ruler = yes
+    NOT = { this = character:Lannister_6 }
+    highest_held_title_tier < character:Lannister_6.highest_held_title_tier
+    OR = {
+     capital_county ?= { target_is_de_jure_liege_or_above = title:h_the_iron_throne }
+     has_title = title:e_the_north
+     has_title = title:e_the_vale
+     has_title = title:e_the_reach
+     has_title = title:e_dorne
+     has_title = title:e_the_iron_islands
+     has_title = title:e_the_riverlands
+     has_title = title:e_the_westerlands
+     has_title = title:e_the_stormlands
+     has_title = title:e_the_crownlands
+    }
+   }
+   create_title_and_vassal_change = { type = swear_fealty save_scope_as = atfw_cersei_unification add_claim_on_loss = no }
+   change_liege = { liege = character:Lannister_6 change = scope:atfw_cersei_unification }
+   resolve_title_and_vassal_change = scope:atfw_cersei_unification
+   set_variable = { name = agot_pwl_direct value = character:Lannister_6 }
+   set_variable = { name = agot_pwl_top value = character:Lannister_6 }
+  }
+ }
  debug_log = "ATFW conquest: victory option resolved"
 }
 

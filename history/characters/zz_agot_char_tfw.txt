@@ -549,8 +549,9 @@ Craster_19 = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_castle_black }
 		}
 	}
-	8305.1.1 = {
+	8303.12.30 = {
 		effect = {
+			if = { limit = { is_imprisoned = yes } release_from_prison = yes }
 			agot_safe_set_location_history_effect = { CASTLE = title:c_horn_hill }
 		}
 	}
@@ -563,8 +564,9 @@ Craster_25 = {
 			agot_safe_set_location_history_effect = { CASTLE = title:b_castle_black }
 		}
 	}
-	8305.1.1 = {
+	8303.12.30 = {
 		effect = {
+			if = { limit = { is_imprisoned = yes } release_from_prison = yes }
 			agot_safe_set_location_history_effect = { CASTLE = title:c_horn_hill }
 		}
 	}
@@ -3956,6 +3958,31 @@ Targaryen_9 = {
 		death = {
 			death_reason = death_murder_known
 			killer = Stark_7
+		}
+	}
+
+	# Resolve inherited Free Folk prisoners in history, before the 8303.12.31 bookmark.
+	8303.12.30 = {
+		effect = {
+			if = {
+				limit = {
+					game_start_date = 8303.12.31
+					character:Stark_7 ?= { is_alive = yes is_landed = yes }
+				}
+				# Snapshot before release mutates the prisoner's list.
+				every_prisoner = {
+					limit = { is_alive = yes culture = { agot_is_wildling_culture = yes } }
+					add_to_list = atfw_initial_free_folk_prisoners
+				}
+				every_in_list = {
+					list = atfw_initial_free_folk_prisoners
+					release_from_prison = yes
+					if = {
+						limit = { NOT = { is_courtier_of = character:Stark_7 } }
+						character:Stark_7 = { add_courtier = prev }
+					}
+				}
+			}
 		}
 	}
 }

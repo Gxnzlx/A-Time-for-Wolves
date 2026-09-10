@@ -1,0 +1,29 @@
+﻿namespace = atfw_domain_watch
+atfw_domain_watch.0001 = {
+ type = character_event
+ hidden = yes
+ trigger = {
+  is_alive = yes
+  character:Lannister_6 ?= { is_alive = yes }
+  character:Baelish_2 ?= { is_alive = yes }
+  NOT = { has_global_variable = atfw_baelish_harrenhal_verified }
+ }
+ immediate = {
+  if = {
+   limit = {
+    title:e_the_north.holder ?= { is_vassal_or_below_of = character:Targaryen_9 }
+    title:e_the_vale.holder ?= { is_vassal_or_below_of = character:Targaryen_9 }
+   }
+   atfw_baelish_loses_harrenhal_effect = yes
+  }
+  if = {
+   limit = { NOT = { has_global_variable = atfw_baelish_harrenhal_verified } }
+   trigger_event = { id = atfw_domain_watch.0001 days = 7 }
+  }
+ }
+}
+atfw_domain_watch.0002 = {
+ type = character_event
+ hidden = yes
+ immediate = { atfw_dissolve_randyll_reach_effect = yes }
+}

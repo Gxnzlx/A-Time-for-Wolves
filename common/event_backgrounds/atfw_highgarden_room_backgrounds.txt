@@ -1,0 +1,7 @@
+﻿atfw_highgarden_room = {
+ background = {
+  reference = "gfx/illustrations/atfw_backgrounds/Highgarden_room.dds"
+  environment = "environment_event_alley"
+  ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
+ }
+}

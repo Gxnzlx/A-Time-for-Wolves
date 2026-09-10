@@ -1,0 +1,1328 @@
+﻿namespace = atfw_weekly
+# Serializes the visible Jon/Daenerys storyline globally. Original scopes are carried by trigger_event.
+
+atfw_weekly.1001 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0001 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1001 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0001_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0001_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0001
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0001
+  }
+ }
+}
+
+atfw_weekly.1002 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0002 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1002 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0002_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0002_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0002
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0002
+  }
+ }
+}
+
+atfw_weekly.1003 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0003 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1003 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0003_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0003_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0003
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0003
+  }
+ }
+}
+
+atfw_weekly.1004 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0004 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1004 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0004_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0004_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0004
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0004
+  }
+ }
+}
+
+atfw_weekly.1005 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0005 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1005 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0005_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0005_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0005
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0005
+  }
+ }
+}
+
+atfw_weekly.1006 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0006 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1006 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0006_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0006_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0006
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0006
+  }
+ }
+}
+
+atfw_weekly.1007 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0007 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1007 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0007_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0007_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0007
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0007
+  }
+ }
+}
+
+atfw_weekly.1008 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0008 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1008 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0008_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0008_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0008
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0008
+  }
+ }
+}
+
+atfw_weekly.1009 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0009 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1009 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0009_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0009_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0009
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0009
+  }
+ }
+}
+
+atfw_weekly.1010 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0010 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1010 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  NOT = { has_character_flag = atfw_daenerys_pov_0010_seen }
+  character:Stark_7 = { is_alive = yes has_character_flag = atfw_daenerys_pov_0010_queued }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_daenerys_pov_0010
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_daenerys_pov.0010
+  }
+ }
+}
+
+atfw_weekly.1011 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_highgarden_0002 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1011 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_highgarden_0002
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_highgarden.0002
+  }
+ }
+}
+
+atfw_weekly.1012 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_highgarden_0003 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1012 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_highgarden_0003
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_highgarden.0003
+  }
+ }
+}
+
+atfw_weekly.1013 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0001 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1013 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0001
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0001
+  }
+ }
+}
+
+atfw_weekly.1014 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0002 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1014 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		is_alive = yes
+		character:Stark_7 = { is_alive = yes }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0002
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0002
+  }
+ }
+}
+
+atfw_weekly.1015 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0003 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1015 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0003_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0003
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0003
+  }
+ }
+}
+
+atfw_weekly.1016 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0007 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1016 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0007
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0007
+  }
+ }
+}
+
+atfw_weekly.1017 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0008 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1017 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0001_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0008
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0008
+  }
+ }
+}
+
+atfw_weekly.1018 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0009 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1018 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0009
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0009
+  }
+ }
+}
+
+atfw_weekly.1019 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0010 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1019 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0002_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0010
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0010
+  }
+ }
+}
+
+atfw_weekly.1020 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0011 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1020 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0004_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0011
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0011
+  }
+ }
+}
+
+atfw_weekly.1021 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0012 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1021 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0005_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0012
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0012
+  }
+ }
+}
+
+atfw_weekly.1022 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0013 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1022 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0006_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0013
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0013
+  }
+ }
+}
+
+atfw_weekly.1023 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0014 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1023 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0007_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0014
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0014
+  }
+ }
+}
+
+atfw_weekly.1024 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0015 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1024 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0008_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0015
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0015
+  }
+ }
+}
+
+atfw_weekly.1025 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0016 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1025 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0009_queued }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0016
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0016
+  }
+ }
+}
+
+atfw_weekly.1026 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0017 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1026 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Stark_7
+  is_alive = yes
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_jon_daenerys_romance_pending }
+  NOT = { has_character_flag = atfw_jon_daenerys_romance_consummated }
+  }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0017
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0017
+  }
+ }
+}
+
+atfw_weekly.1027 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0018 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1027 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		has_character_flag = atfw_jon_knows_true_parentage
+		has_character_flag = atfw_jon_daenerys_romance_consummated
+		has_character_flag = atfw_jon_marriage_route_unlocked
+		has_character_flag = atfw_daenerys_knows_jons_true_parentage
+		has_character_flag = atfw_jon_became_rhaegal_rider
+		has_character_flag = atfw_jon_flew_with_daenerys
+		has_character_flag = atfw_jon_daenerys_romance_deepened_after_flight
+		NOT = { has_character_flag = atfw_jon_marriage_route_resolved }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0018
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0018
+  }
+ }
+}
+
+atfw_weekly.1028 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0019 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1028 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Targaryen_9
+		is_married = no
+		is_betrothed = no
+		character:Stark_7 = { has_character_flag = atfw_jon_proposed_marriage_to_daenerys is_married = no is_betrothed = no }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0019
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0019
+  }
+ }
+}
+
+atfw_weekly.1029 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0020 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1029 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		is_alive = yes
+		character:Targaryen_9 = { is_alive = yes }
+		NOT = { has_character_flag = atfw_daenerys_pov_0010_queued }
+		has_character_flag = atfw_jon_knows_true_parentage
+		NOT = { has_character_flag = atfw_daenerys_knows_jons_true_parentage }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0020
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0020
+  }
+ }
+}
+
+atfw_weekly.1030 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0021 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1030 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Targaryen_9
+		is_alive = yes
+		NOT = { has_character_flag = atfw_daenerys_accepts_romance_with_jon }
+		character:Stark_7 = {
+			is_alive = yes
+			OR = {
+				has_character_flag = atfw_jon_daenerys_romance_pending
+				has_character_flag = atfw_jon_daenerys_romance_consummated # Older saves may already have queued this event.
+			}
+		}
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0021
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0021
+  }
+ }
+}
+
+atfw_weekly.1031 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0022 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1031 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		has_character_flag = atfw_jon_returned_to_winterfell_s8
+		has_character_flag = atfw_jon_daenerys_romance_consummated
+		NOT = { has_character_flag = atfw_jon_became_rhaegal_rider }
+		character:dragon_rhaegal = { is_alive = yes }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0022
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0022
+  }
+ }
+}
+
+atfw_weekly.1032 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0023 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1032 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Targaryen_9
+		character:Stark_7 = { has_character_flag = atfw_jon_became_rhaegal_rider }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0023
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0023
+  }
+ }
+}
+
+atfw_weekly.1033 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0024 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1033 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		has_character_flag = atfw_jon_became_rhaegal_rider
+		has_relation_lover = character:Targaryen_9
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0024
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0024
+  }
+ }
+}
+
+atfw_weekly.1034 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0025 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1034 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Targaryen_9
+		character:Stark_7 = {
+			has_character_flag = atfw_jon_flew_with_daenerys
+			has_relation_lover = root
+		}
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_daenerys_0025
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_daenerys.0025
+  }
+ }
+}
+
+atfw_weekly.1035 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0003 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1035 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		NOT = { has_character_flag = atfw_jon_proclaimed_king_in_the_north }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0003
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0003
+  }
+ }
+}
+
+atfw_weekly.1036 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0004 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1036 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		has_character_flag = atfw_jon_received_tyrion_invitation
+		has_character_flag = atfw_jon_knows_dragonstone_dragonglass
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0004
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0004
+  }
+ }
+}
+
+atfw_weekly.1037 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0005 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1037 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		has_character_flag = atfw_jon_returned_to_winterfell_s8
+		has_character_flag = atfw_jon_flew_with_daenerys
+		has_character_flag = atfw_true_parentage_discovered_by_bran_and_sam
+		NOT = { has_character_flag = atfw_jon_knows_true_parentage }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0005
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0005
+  }
+ }
+}
+
+atfw_weekly.1038 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0006 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1038 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0006
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0006
+  }
+ }
+}
+
+atfw_weekly.1039 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0007 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1039 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0007
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0007
+  }
+ }
+}
+
+atfw_weekly.1040 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0009 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1040 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		has_character_flag = atfw_jon_proclaimed_king_in_the_north
+		NOT = { has_character_flag = atfw_jon_war_council_complete }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0009
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0009
+  }
+ }
+}
+
+atfw_weekly.1041 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0010 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1041 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0010
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0010
+  }
+ }
+}
+
+atfw_weekly.1042 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0011 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1042 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0011
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0011
+  }
+ }
+}
+
+atfw_weekly.1043 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0012 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1043 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0012
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0012
+  }
+ }
+}
+
+atfw_weekly.1044 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0013 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1044 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0013
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0013
+  }
+ }
+}
+
+atfw_weekly.1045 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_jon_north_0014 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1045 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_7
+		has_character_flag = atfw_jon_daenerys_romance_consummated
+		character:Targaryen_9 = { has_character_flag = atfw_north_trip_arrived }
+		NOT = { has_character_flag = atfw_jon_returned_to_winterfell_s8 }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_jon_north_0014
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_jon_north.0014
+  }
+ }
+}
+
+atfw_weekly.1046 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0001 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1046 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0001_seen }
+  
+  }
+   add_character_flag = atfw_weekly_shown_atfw_north_journey_0001
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_north_journey.0001
+  }
+ }
+}
+
+atfw_weekly.1047 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0002 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1047 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Stark_7
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0002_seen }
+  
+  }
+   add_character_flag = atfw_weekly_shown_atfw_north_journey_0002
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_north_journey.0002
+  }
+ }
+}
+
+atfw_weekly.1048 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0003 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1048 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0003_seen }
+  
+  }
+   add_character_flag = atfw_weekly_shown_atfw_north_journey_0003
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_north_journey.0003
+  }
+ }
+}
+
+atfw_weekly.1049 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0004 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1049 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0004_seen }
+  location = title:c_white_harbor.title_province
+  
+  }
+   add_character_flag = atfw_weekly_shown_atfw_north_journey_0004
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_north_journey.0004
+  }
+ }
+}
+
+atfw_weekly.1050 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0006 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1050 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Targaryen_9
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0006_seen }
+  has_character_flag = atfw_north_trip_arrived
+  }
+   add_character_flag = atfw_weekly_shown_atfw_north_journey_0006
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_north_journey.0006
+  }
+ }
+}
+
+atfw_weekly.1051 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_north_journey_0007 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1051 days = 1 }
+  }
+  else_if = {
+   limit = { 
+  this = character:Stark_Dummy_8
+  is_alive = yes
+  character:Stark_7 = { is_alive = yes }
+  character:Targaryen_9 = { is_alive = yes }
+  NOT = { has_character_flag = atfw_north_journey_0007_seen }
+  
+  }
+   add_character_flag = atfw_weekly_shown_atfw_north_journey_0007
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_north_journey.0007
+  }
+ }
+}
+
+atfw_weekly.1052 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0001 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1052 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_sansa_north_0001
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_sansa_north.0001
+  }
+ }
+}
+
+atfw_weekly.1053 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0002 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1053 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_sansa_north_0002
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_sansa_north.0002
+  }
+ }
+}
+
+atfw_weekly.1054 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0003 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1054 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_sansa_north_0003
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_sansa_north.0003
+  }
+ }
+}
+
+atfw_weekly.1055 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0004 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1055 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_sansa_north_0004
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_sansa_north.0004
+  }
+ }
+}
+
+atfw_weekly.1056 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0005 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1056 days = 1 }
+  }
+  else_if = {
+   limit = { 
+		this = character:Stark_Dummy_10
+		character:Tarly_2 = { is_alive = yes }
+	 }
+   add_character_flag = atfw_weekly_shown_atfw_sansa_north_0005
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_sansa_north.0005
+  }
+ }
+}
+
+atfw_weekly.1057 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0006 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1057 days = 1 }
+  }
+  else_if = {
+   limit = {  this = character:Stark_Dummy_8 has_character_flag = atfw_sansa_rules_winterfell_during_jon_absence  }
+   add_character_flag = atfw_weekly_shown_atfw_sansa_north_0006
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_sansa_north.0006
+  }
+ }
+}
+
+atfw_weekly.1058 = {
+ type = character_event
+ hidden = yes
+ orphan = yes
+ trigger = { is_alive = yes NOT = { has_character_flag = atfw_weekly_shown_atfw_sansa_north_0007 } }
+ immediate = {
+  if = {
+   limit = { has_global_variable = atfw_story_weekly_cooldown }
+   trigger_event = { id = atfw_weekly.1058 days = 1 }
+  }
+  else_if = {
+   limit = { always = yes }
+   add_character_flag = atfw_weekly_shown_atfw_sansa_north_0007
+   set_global_variable = { name = atfw_story_weekly_cooldown value = yes days = 7 }
+   trigger_event = atfw_sansa_north.0007
+  }
+ }
+}

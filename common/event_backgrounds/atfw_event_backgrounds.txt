@@ -2,7 +2,7 @@
 
 atfw_battle_of_the_bastards = {
 	background = {
-		reference = "gfx/illustrations/battle_of_the_bastards.dds"
+		reference = "gfx/illustrations/atfw_backgrounds/battle_of_the_bastards.dds"
 		environment = "environment_frontend_west_main"
 		ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
 	}
@@ -10,7 +10,7 @@ atfw_battle_of_the_bastards = {
 
 atfw_dragonstone_opening = {
 	background = {
-		reference = "gfx/illustrations/dragonstone_opening.dds"
+		reference = "gfx/illustrations/atfw_backgrounds/dragonstone_opening.dds"
 		environment = "environment_event_alley"
 		ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
 	}
@@ -18,7 +18,7 @@ atfw_dragonstone_opening = {
 
 atfw_cersei_kingslanding = {
 	background = {
-		reference = "gfx/illustrations/cercei_kingslanding.dds"
+		reference = "gfx/illustrations/atfw_backgrounds/cercei_kingslanding.dds"
 		environment = "environment_event_alley"
 		ambience = "event:/SFX/Events/Backgrounds/city_alley_night"
 	}
@@ -26,8 +26,16 @@ atfw_cersei_kingslanding = {
 
 atfw_daenerys_win = {
  background = {
-  reference = "gfx/illustrations/daenerys_win.dds"
+  reference = "gfx/illustrations/atfw_backgrounds/daenerys_win.dds"
   environment = "environment_throneroom_iron_throne"
+  ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
+ }
+}
+
+atfw_daenerys_sailing = {
+ background = {
+  reference = "gfx/illustrations/atfw_backgrounds/daenerys_sailing.dds"
+  environment = "environment_frontend_west_main"
   ambience = "event:/DLC/FP1/SFX/Events/event_throneroom"
  }
 }

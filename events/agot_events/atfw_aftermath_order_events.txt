@@ -1,0 +1,26 @@
+﻿namespace = atfw_aftermath_order
+
+# Preserve AGOT's event scopes while the player resolves the conquest window.
+atfw_aftermath_order.0001 = {
+ type = character_event
+ hidden = yes
+ trigger = { is_alive = yes }
+ immediate = {
+  if = {
+   limit = { has_character_flag = atfw_conquest_victory_pending }
+   trigger_event = { id = atfw_aftermath_order.0001 days = 1 }
+  }
+  else = {
+   # Executed prisoners must not appear in the subsequent punishment audience.
+   every_in_list = {
+    variable = mw_traitors_list
+    limit = { is_alive = no }
+    prev = { remove_list_variable = { name = mw_traitors_list target = prev } }
+   }
+   if = {
+    limit = { any_in_list = { variable = mw_traitors_list is_alive = yes } }
+    trigger_event = agot_mega_wars.0600
+   }
+  }
+ }
+}

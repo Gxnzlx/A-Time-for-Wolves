@@ -44,7 +44,7 @@ atfw_try_sam_revelation = {
     character:Tarly_2 = { is_alive = yes }
    }
    add_character_flag = atfw_sam_revelation_queued
-   trigger_event = { id = atfw_jon_north.0005 days = 4 }
+   trigger_event = { id = atfw_weekly.1037 days = 7 }
   }
  }
 }

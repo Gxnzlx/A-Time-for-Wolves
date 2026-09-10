@@ -144,6 +144,19 @@ atfw_conquest_settle_domains_effect = {
   limit = { is_alive = yes is_landed = yes exists = capital_county capital_county ?= { target_is_de_jure_liege_or_above = title:h_the_iron_throne } }
   atfw_conquest_attach_ruler_effect = yes
  }
+ # Dissolve the victorious queen's invasion title only after securing her realm.
+ scope:atfw_conquest_winner = {
+  if = {
+   limit = {
+    this = character:Targaryen_9
+    has_title = title:h_the_iron_throne
+    has_title = title:h_targaryen_host_title
+   }
+   set_primary_title_to = title:h_the_iron_throne
+   destroy_title = title:h_targaryen_host_title
+   debug_log = "ATFW conquest: dissolved Targaryen host after victory"
+  }
+ }
  # All transfers and realm reconstruction precede the executions.
  if = {
   limit = { this = character:Lannister_6 }

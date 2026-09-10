@@ -16,7 +16,7 @@
       }
      }
     }
-    trigger_event = { id = atfw_jon_daenerys.0021 days = 1 }
+    trigger_event = { id = atfw_weekly.1030 days = 7 }
    }
    character:Stark_7 = {
     if = {
@@ -24,7 +24,7 @@
       NOT = { has_character_flag = atfw_jon_daenerys_romance_pending }
       NOT = { has_character_flag = atfw_jon_daenerys_romance_consummated }
      }
-     trigger_event = { id = atfw_jon_daenerys.0017 days = 1 }
+     trigger_event = { id = atfw_weekly.1026 days = 7 }
     }
    }
   }

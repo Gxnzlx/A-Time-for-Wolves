@@ -116,7 +116,7 @@ atfw_north_journey.0005 = {
   set_location = title:b_winterfell.title_province
   character:Stark_7 = {
    set_location = title:b_winterfell.title_province
-   trigger_event = { id = atfw_jon_north.0014 days = 1 }
+   trigger_event = { id = atfw_weekly.1045 days = 7 }
   }
   character:dragon_rhaegal ?= { if = { limit = { is_alive = yes } set_location = title:b_winterfell.title_province } }
   character:dragon_drogon ?= { if = { limit = { is_alive = yes } set_location = title:b_winterfell.title_province } }

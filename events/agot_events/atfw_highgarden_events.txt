@@ -1,0 +1,70 @@
+﻿namespace = atfw_highgarden
+atfw_highgarden.0001 = {
+ type = character_event
+ hidden = yes
+ immediate = { atfw_highgarden_start_effect = yes }
+}
+atfw_highgarden.0002 = {
+ type = character_event
+ title = atfw_highgarden.0002.t
+ desc = { first_valid = {
+  triggered_desc = { trigger = { has_global_variable = atfw_hg_olenna_fled } desc = atfw_highgarden.0002.fled }
+  desc = atfw_highgarden.0002.desc
+ } }
+ theme = war
+ override_background = { reference = atfw_highgarden_siege }
+ option = { name = atfw_highgarden.0002.a ai_chance = { base = 100 } }
+}
+atfw_highgarden.0003 = {
+ type = character_event
+ title = atfw_highgarden.0003.t
+ desc = atfw_highgarden.0003.desc
+ theme = diplomacy
+ override_background = { reference = agot_dragonstone_throneroom }
+ immediate = { if = { limit = { is_ai = yes } atfw_highgarden_resume_jon_effect = yes } }
+ option = { name = atfw_highgarden.0003.a atfw_highgarden_resume_jon_effect = yes ai_chance = { base = 100 } }
+}
+atfw_highgarden.0004 = {
+ type = character_event
+ title = atfw_highgarden.0004.t
+ desc = atfw_highgarden.0004.desc
+ theme = war
+ override_background = { reference = atfw_highgarden_siege }
+ option = {
+  name = atfw_highgarden.0004.stay
+  custom_tooltip = atfw_highgarden.stay_tt
+  atfw_highgarden_stay_effect = yes
+  ai_chance = { base = 100 }
+ }
+ option = {
+  name = atfw_highgarden.0004.flee
+  trigger = { NOT = { has_global_variable = atfw_hg_castle_taken } has_dlc_feature = roads_to_power exists = character:Tarly_1 character:Tarly_1 ?= { is_alive = yes } }
+  custom_tooltip = atfw_highgarden.flee_tt
+  atfw_highgarden_flee_effect = yes
+  ai_chance = { base = 0 }
+ }
+}
+atfw_highgarden.0005 = {
+ type = character_event
+ title = atfw_highgarden.0005.t
+ desc = { first_valid = {
+  triggered_desc = { trigger = { has_global_variable = atfw_hg_olenna_fled } desc = atfw_highgarden.0005.fled }
+  desc = atfw_highgarden.0005.desc
+ } }
+ theme = war
+ override_background = { reference = atfw_highgarden_siege }
+ option = { name = atfw_highgarden.0005.a ai_chance = { base = 100 } }
+}
+atfw_highgarden.0007 = {
+ type = character_event
+ title = atfw_highgarden.0007.t
+ desc = atfw_highgarden.0007.desc
+ theme = war
+ override_background = { reference = atfw_highgarden_siege }
+ option = {
+  name = atfw_highgarden.0007.a
+  custom_tooltip = atfw_highgarden.death_tt
+  atfw_highgarden_finish_fall_effect = yes
+  ai_chance = { base = 100 }
+ }
+}

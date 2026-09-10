@@ -35,7 +35,7 @@ atfw_bookmark_intro.0002 = {
 	desc = atfw_bookmark_intro.0002.desc
 
 	override_background = {
-		reference = agot_fullscreen_targaryen
+		reference = atfw_daenerys_sailing
 	}
 	override_icon = {
 		reference = "gfx/interface/icons/event_types/type_war.dds"
@@ -58,7 +58,7 @@ atfw_bookmark_intro.0003 = {
 	desc = atfw_bookmark_intro.0003.desc
 
 	override_background = {
-		reference = agot_fullscreen_targaryen
+		reference = atfw_daenerys_sailing
 	}
 	override_icon = {
 		reference = "gfx/interface/icons/event_types/type_war.dds"
@@ -81,7 +81,7 @@ atfw_bookmark_intro.0004 = {
 	desc = atfw_bookmark_intro.0004.desc
 
 	override_background = {
-		reference = agot_fullscreen_targaryen
+		reference = atfw_daenerys_sailing
 	}
 	override_icon = {
 		reference = "gfx/interface/icons/event_types/type_war.dds"
@@ -139,6 +139,6 @@ atfw_bookmark_intro.0006 = {
 
 		# Jon's 8303 story begins immediately after the Battle of the Bastards.
 		# The first step is the gathering that will proclaim him King in the North.
-		trigger_event = { id = atfw_jon_north.0007 days = 1 }
+		# The on_game_start_after_lobby bootstrap starts this chapter on day seven.
 	}
 }

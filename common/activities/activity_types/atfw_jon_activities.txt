@@ -66,7 +66,7 @@
 					}
 					add_character_flag = atfw_jon_first_s7_council_scheduled
 					trigger_event = {
-						id = atfw_jon_north.0009
+						id = atfw_weekly.1040
 						days = 7
 					}
 				}
@@ -203,7 +203,7 @@
 					# One feast scene contains the lords' declarations of loyalty and
 					# the proclamation of Jon as King in the North.
 					trigger_event = {
-						id = atfw_jon_north.0003
+						id = atfw_weekly.1035
 						days = 10
 					}
 
@@ -266,7 +266,7 @@ activity_atfw_journey_to_dragonstone = {
 				character:Stark_Dummy_8 = {
 					if = {
 						limit = { is_alive = yes }
-						trigger_event = { id = atfw_sansa_north.0001 days = 5 }
+						trigger_event = { id = atfw_weekly.1052 days = 7 }
 					}
 				}
 			}
@@ -342,12 +342,12 @@ activity_atfw_journey_to_dragonstone = {
 						this = scope:host
 					}
 					add_character_flag = atfw_journey_to_dragonstone_arrived
-					trigger_event = atfw_jon_daenerys.0007
+					trigger_event = { id = atfw_weekly.1016 days = 7 }
 
 					# Failsafe only. The canonical Dragonstone chain normally ends
 					# this phase when Jon decides to leave for Eastwatch.
 					scope:activity = {
-						progress_activity_phase_after = { days = 30 }
+						progress_activity_phase_after = { days = 365 }
 					}
 				}
 			}

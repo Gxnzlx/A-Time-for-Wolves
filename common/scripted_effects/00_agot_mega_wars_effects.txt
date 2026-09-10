@@ -2831,7 +2831,11 @@ agot_mw_set_mw_outcome = {
 								has_variable_list = mw_traitors_list
 							}
 
-							trigger_event = agot_mega_wars.0600
+							if = {
+ limit = { has_character_flag = atfw_conquest_victory_pending }
+ trigger_event = { id = atfw_aftermath_order.0001 days = 1 }
+}
+else = { trigger_event = agot_mega_wars.0600 }
 						}
 						else_if = {
 							limit = {
@@ -4370,7 +4374,11 @@ agot_mw_aftermath_ai_punishes_effect = {
 		every_in_list = {
 			list = mw_traitors_lp_list
 
-			trigger_event = agot_mega_wars.0600
+			if = {
+ limit = { has_character_flag = atfw_conquest_victory_pending }
+ trigger_event = { id = atfw_aftermath_order.0001 days = 1 }
+}
+else = { trigger_event = agot_mega_wars.0600 }
 		}
 	}
 }

@@ -1,0 +1,217 @@
+﻿# Character scope, first reached by Jon one month after his arrival.
+atfw_highgarden_start_effect = {
+ if = {
+  limit = { NOT = { has_global_variable = atfw_hg_offensive_started } NOT = { has_global_variable = atfw_highgarden_fallen } }
+  character:Lannister_6 ?= {
+   every_character_war = {
+    limit = { using_cb = atfw_daenerys_conquest_war primary_defender = character:Lannister_6 }
+    save_scope_as = atfw_hg_war
+   }
+  }
+  if = {
+   limit = { exists = scope:atfw_hg_war exists = title:b_highgarden.holder exists = character:Lannister_6 exists = character:Tarly_1 character:Tarly_1 ?= { is_alive = yes } }
+   title:b_highgarden.holder = { save_scope_as = atfw_hg_defender }
+   scope:atfw_hg_war = {
+    if = { limit = { NOT = { is_participant = scope:atfw_hg_defender } } add_attacker = scope:atfw_hg_defender }
+   }
+   if = {
+    limit = { character:Lannister_6 ?= { is_alive = yes is_at_war_with = scope:atfw_hg_defender } }
+    set_global_variable = { name = atfw_hg_offensive_started value = yes }
+    character:Lannister_6 = {
+     spawn_army = {
+      name = atfw_highgarden_lannister_host
+      levies = 19000
+      men_at_arms = { type = armored_footmen men = 7000 }
+      men_at_arms = { type = bowmen men = 3500 }
+      men_at_arms = { type = onager men = 500 }
+      location = title:b_highgarden.title_province
+      origin = title:b_highgarden.title_province
+      war = scope:atfw_hg_war
+      inheritable = no
+     }
+    }
+    if = {
+     limit = { exists = character:Redwyne_2 character:Redwyne_2 ?= { is_alive = yes } }
+     character:Redwyne_2 = { trigger_event = atfw_highgarden.0004 }
+    }
+    else = { atfw_highgarden_stay_effect = yes }
+    debug_log = "ATFW Highgarden: spawned 30000 Lannister troops at Highgarden"
+   }
+  }
+ }
+ # The month has elapsed; Jon's existing plot must not wait indefinitely for a siege.
+ character:Stark_7 ?= {
+  if = { limit = { is_alive = yes NOT = { has_character_flag = atfw_highgarden_jon_resumed } } trigger_event = { id = atfw_weekly.1012 days = 7 } }
+ }
+}
+
+# Explicit list: never creates or resurrects historical characters.
+atfw_highgarden_collect_survivors_effect = {
+ character:Tyrell_18 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_19 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_20 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_22 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_23 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_9 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_10 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_35 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_36 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_37 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+ character:Tyrell_38 ?= { if = { limit = { is_alive = yes } add_to_list = atfw_hg_survivors } }
+}
+
+# Transfer only the current character's territorial holdings, keeping an existing camp.
+atfw_highgarden_abandon_titles_effect = {
+ create_title_and_vassal_change = { type = granted save_scope_as = atfw_hg_abandon add_claim_on_loss = no }
+ every_held_title = {
+  limit = {
+   is_landless_type_title = no
+   NOT = { AND = { tier = tier_barony exists = title_province title_province ?= { is_county_capital = yes } } }
+  }
+  change_title_holder_include_vassals = { holder = scope:atfw_hg_estate_receiver change = scope:atfw_hg_abandon }
+ }
+ resolve_title_and_vassal_change = scope:atfw_hg_abandon
+}
+
+# Build the named camp using AGOT's own adventurer-title creation pattern.
+atfw_highgarden_create_exiles_effect = {
+ if = {
+  limit = { exists = scope:atfw_hg_leader NOT = { has_global_variable = atfw_hg_camp_created } }
+  scope:atfw_hg_leader = {
+   if = { limit = { is_imprisoned = yes } release_from_prison = yes }
+   atfw_highgarden_abandon_titles_effect = yes
+   if = {
+    limit = { NOT = { has_government = landless_adventurer_government } }
+    create_adventurer_title = { name = atfw_highgarden_exiles_title holder = scope:atfw_hg_leader save_scope_as = atfw_hg_camp }
+    scope:atfw_hg_camp = {
+     create_landless_adventurer_title_history_effect = yes
+     set_coa = dynasty:dynn_Tyrell
+    }
+    change_government = landless_adventurer_government
+    if = { limit = { NOT = { has_realm_law = landless_adventurer_succession_law } } add_realm_law = landless_adventurer_succession_law }
+    if = { limit = { has_realm_law = crown_authority_0 } remove_realm_law = crown_authority_0 }
+    add_to_global_variable_list = { name = laamps_tally target = primary_title }
+    set_variable = flavourise_camp_purpose_wanderers
+    domicile ?= { change_provisions = starting_provisions_value }
+   }
+   domicile ?= { move_domicile = title:b_sunspear.title_province }
+   add_gold = 150
+   set_global_variable = { name = atfw_hg_exile_leader value = this }
+  }
+  every_in_list = {
+   list = atfw_hg_survivors
+   limit = { NOT = { this = scope:atfw_hg_leader } }
+   if = { limit = { is_imprisoned = yes } release_from_prison = yes }
+   atfw_highgarden_abandon_titles_effect = yes
+   scope:atfw_hg_leader = { add_courtier = prev }
+  }
+  set_global_variable = { name = atfw_hg_camp_created value = yes }
+  debug_log = "ATFW Highgarden: protected Tyrells assembled in exile camp"
+ }
+}
+
+atfw_highgarden_stay_effect = {
+ if = {
+  limit = { NOT = { has_global_variable = atfw_hg_choice_made } }
+  set_global_variable = { name = atfw_hg_choice_made value = yes }
+  atfw_highgarden_collect_survivors_effect = yes
+  # Leo is the requested leader; use another surviving adult only if he is unavailable.
+  if = { limit = { exists = character:Tyrell_18 character:Tyrell_18 ?= { is_alive = yes is_adult = yes } } character:Tyrell_18 = { save_scope_as = atfw_hg_leader } }
+  else = { random_in_list = { list = atfw_hg_survivors limit = { is_adult = yes } save_scope_as = atfw_hg_leader } }
+  if = { limit = { exists = character:Redwyne_2 character:Redwyne_2 ?= { is_alive = yes } } character:Redwyne_2 = { save_scope_as = atfw_hg_estate_receiver } }
+  else = { character:Tarly_1 ?= { save_scope_as = atfw_hg_estate_receiver } }
+  if = { limit = { exists = scope:atfw_hg_estate_receiver } atfw_highgarden_create_exiles_effect = yes }
+  if = { limit = { has_global_variable = atfw_hg_castle_taken } atfw_highgarden_dispatch_fall_effect = yes }
+ }
+}
+
+atfw_highgarden_flee_effect = {
+ if = {
+  limit = { NOT = { has_global_variable = atfw_hg_choice_made } }
+  set_global_variable = { name = atfw_hg_choice_made value = yes }
+  set_global_variable = { name = atfw_hg_olenna_fled value = yes }
+  character:Tarly_1 = { save_scope_as = atfw_hg_estate_receiver }
+  character:Redwyne_2 = { save_scope_as = atfw_hg_leader }
+  atfw_highgarden_collect_survivors_effect = yes
+  atfw_highgarden_create_exiles_effect = yes
+  # Abandoning the fortress concedes it; a defending player otherwise gets a real siege.
+  atfw_highgarden_finish_fall_effect = yes
+}
+}
+
+atfw_highgarden_dispatch_fall_effect = {
+ if = {
+  limit = { has_global_variable = atfw_hg_choice_made NOT = { has_global_variable = atfw_highgarden_fallen } NOT = { has_global_variable = atfw_hg_death_event_queued } }
+  if = {
+   limit = { NOT = { has_global_variable = atfw_hg_olenna_fled } exists = character:Redwyne_2 character:Redwyne_2 ?= { is_alive = yes } }
+   set_global_variable = { name = atfw_hg_death_event_queued value = yes }
+   character:Redwyne_2 = { trigger_event = atfw_highgarden.0007 }
+  }
+  else = { atfw_highgarden_finish_fall_effect = yes }
+ }
+}
+
+atfw_highgarden_finish_fall_effect = {
+ if = {
+  limit = { NOT = { has_global_variable = atfw_highgarden_fallen } }
+  set_global_variable = { name = atfw_highgarden_fallen value = yes }
+  character:Tarly_1 ?= {
+   if = {
+    limit = { is_alive = yes }
+    create_title_and_vassal_change = { type = granted save_scope_as = atfw_highgarden_change add_claim_on_loss = no }
+    if = { limit = { NOT = { has_title = title:e_the_reach } } title:e_the_reach = { change_title_holder_include_vassals = { holder = character:Tarly_1 change = scope:atfw_highgarden_change } } }
+    if = { limit = { NOT = { has_title = title:d_highgarden } } title:d_highgarden = { change_title_holder_include_vassals = { holder = character:Tarly_1 change = scope:atfw_highgarden_change } } }
+    if = { limit = { NOT = { has_title = title:c_highgarden } } title:c_highgarden = { change_title_holder_include_vassals = { holder = character:Tarly_1 change = scope:atfw_highgarden_change } } }
+    resolve_title_and_vassal_change = scope:atfw_highgarden_change
+    set_primary_title_to = title:e_the_reach
+    if = {
+     limit = { NOT = { is_vassal_of = character:Lannister_6 } exists = character:Lannister_6 character:Lannister_6 ?= { is_alive = yes has_title = title:h_the_iron_throne } }
+     create_title_and_vassal_change = { type = swear_fealty save_scope_as = atfw_highgarden_fealty add_claim_on_loss = no }
+     change_liege = { liege = character:Lannister_6 change = scope:atfw_highgarden_fealty }
+     resolve_title_and_vassal_change = scope:atfw_highgarden_fealty
+     set_variable = { name = agot_pwl_direct value = character:Lannister_6 }
+     set_variable = { name = agot_pwl_top value = character:Lannister_6 }
+    }
+   }
+  }
+  title:c_highgarden = { change_county_control = -30 }
+  every_living_character = {
+   limit = { dynasty = dynasty:dynn_Tyrell
+     NOT = { this = character:Tyrell_18 }
+     NOT = { this = character:Tyrell_19 }
+     NOT = { this = character:Tyrell_20 }
+     NOT = { this = character:Tyrell_22 }
+     NOT = { this = character:Tyrell_23 }
+     NOT = { this = character:Tyrell_9 }
+     NOT = { this = character:Tyrell_10 }
+     NOT = { this = character:Tyrell_35 }
+     NOT = { this = character:Tyrell_36 }
+     NOT = { this = character:Tyrell_37 }
+     NOT = { this = character:Tyrell_38 }
+   }
+   add_to_list = atfw_highgarden_victims
+  }
+  every_in_list = { list = atfw_highgarden_victims atfw_highgarden_execute_effect = yes }
+  character:Targaryen_9 ?= { if = { limit = { is_alive = yes } trigger_event = { id = atfw_weekly.1011 days = 7 } } }
+  character:Lannister_6 ?= { if = { limit = { is_alive = yes } trigger_event = { id = atfw_highgarden.0005 days = 1 } } }
+  debug_log = "ATFW Highgarden: fortress lost, Reach transferred, survivors in exile"
+  # Olenna's death is last, after all state changes and notifications.
+  if = { limit = { NOT = { has_global_variable = atfw_hg_olenna_fled } } character:Redwyne_2 ?= { atfw_highgarden_execute_effect = yes } }
+ }
+}
+
+atfw_highgarden_execute_effect = {
+ if = {
+  limit = { is_alive = yes }
+  if = { limit = { exists = character:Lannister_7 character:Lannister_7 ?= { is_alive = yes } } death = { death_reason = death_execution killer = character:Lannister_7 } }
+  else = { death = { death_reason = death_execution } }
+ }
+}
+
+atfw_highgarden_resume_jon_effect = {
+ if = {
+  limit = { NOT = { has_character_flag = atfw_highgarden_jon_resumed } }
+  add_character_flag = atfw_highgarden_jon_resumed
+  trigger_event = { id = atfw_weekly.1013 days = 7 }
+ }
+}

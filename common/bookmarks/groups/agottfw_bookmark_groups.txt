@@ -1,3 +1,0 @@
-﻿agot_group_agot_tfw = {
-	default_start_date = 8303.12.31
-}

@@ -6,7 +6,7 @@ tags={
 	"Balance"
 	"Translation"
 }
-name="AGOT - A Time for Wolves Fix"
+name="AGOT - A Time for Wolves"
 picture="thumbnail.png"
 supported_version="1.19.0.6"
 remote_file_id="3715624319"
